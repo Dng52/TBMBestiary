@@ -1,10 +1,12 @@
 {
   "name": "Goblin",
+  "size": "Small",
   "type": "humanoid",
+  "alignment": "neutral evil",
   "cr": "1/4",
-  "hp": 7,
+  "hp": "7 (2d6)",
   "ac": 13,
-  "attack": "Scimitar +4 (1d6+2 slashing)",
+  "speed": "30 ft.",
   "abilities": {
     "str": 8,
     "dex": 14,
@@ -13,5 +15,22 @@
     "wis": 8,
     "cha": 8
   },
-  "description": "Sneaky little cave dwellers, prone to ambushes and dirty tricks."
+  "skills": "Stealth +6",
+  "languages": "Common, Goblin",
+  "traits": [
+    {
+      "name": "Nimble Escape",
+      "desc": "The goblin can take the Disengage or Hide action as a bonus action on each of its turns."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Scimitar",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage."
+    },
+    {
+      "name": "Shortbow",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    }
+  ]
 }
