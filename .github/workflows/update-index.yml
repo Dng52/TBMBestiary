@@ -6,12 +6,17 @@ on:
       - "data/*.json"
   workflow_dispatch:
 
+permissions:
+  contents: write   # <-- allow pushing changes back to the repo
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true  # keeps token for pushing
 
       - name: Set up Node
         uses: actions/setup-node@v4
