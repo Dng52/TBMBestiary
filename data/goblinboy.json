@@ -1,0 +1,16 @@
+{
+  "name": "Goblin Boy",
+  "tags": ["humanoid", "small", "cave"],
+  "hp": 7,
+  "ac": 13,
+  "attack": "Scimitar +4 (1d6+2 slashing)",
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 10,
+    "int": 10,
+    "wis": 8,
+    "cha": 8
+  },
+  "description": "Sneaky little cave dwellers, prone to ambushes and dirty tricks."
+}
