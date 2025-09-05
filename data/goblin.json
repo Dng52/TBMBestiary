@@ -1,6 +1,7 @@
 {
   "name": "Goblin",
-  "tags": ["humanoid", "small", "cave"],
+  "type": "humanoid",
+  "cr": "1/4",
   "hp": 7,
   "ac": 13,
   "attack": "Scimitar +4 (1d6+2 slashing)",

@@ -1,0 +1,72 @@
+body {
+  font-family: "Georgia", serif;
+  background: #fdfcf7;
+  color: #2c2c2c;
+  line-height: 1.5;
+}
+
+.wrapper {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.stat-block {
+  border: 1px solid #999;
+  background: #fff;
+  padding: 1rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+.stat-block h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.stat-block h2 {
+  font-size: 1rem;
+  font-style: italic;
+  margin: 0 0 0.5rem 0;
+  color: #444;
+}
+
+.orange-border {
+  border-top: 3px solid #e69a28;
+  margin: 0.5rem 0;
+}
+
+.property-line {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.25rem 0;
+}
+
+.abilities {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.abilities div {
+  text-align: center;
+  flex: 1;
+}
+
+.abilities h4 {
+  margin: 0;
+}
+
+.abilities p {
+  margin: 0;
+}
+h3 {
+  border-bottom: 1px solid #ccc;
+  margin-top: 1rem;
+}
+p {
+  margin: 0.5rem 0;
+}
+strong em {
+  font-weight: bold;
+  font-style: italic;
+}
