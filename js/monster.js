@@ -93,8 +93,12 @@ async function loadMonster() {
       `).join("")}
     ` : ""} `;
 
-// Add description outside of the stat block
-if (monster.description || monster.lairactions?.length) {
+// Add description, lair actions, and regional effects outside the stat block
+if (
+  monster.description ||
+  monster.lairactions?.length ||
+  monster.regionaleffects?.length
+) {
   const outsideContainer = document.createElement("div");
   outsideContainer.style.background = "transparent"; // optional
   outsideContainer.style.border = "none";           // optional
@@ -103,13 +107,12 @@ if (monster.description || monster.lairactions?.length) {
 
   // Monster description
   if (monster.description) {
-    // Preserve line breaks if desired
     outsideHTML += `<p>${monster.description.replace(/\n/g, "<br>")}</p>`;
   }
 
   // Lair Actions
   if (monster.lairactions?.length) {
-    const lair = monster.lairactions[0]; // one lair block per monster
+    const lair = monster.lairactions[0];
     outsideHTML += `<h3>Lair Actions</h3>`;
 
     if (lair.description) {
@@ -122,6 +125,29 @@ if (monster.description || monster.lairactions?.length) {
         outsideHTML += `<li>${b}</li>`;
       });
       outsideHTML += "</ul>";
+    }
+  }
+
+  // Regional Effects
+  if (monster.regionaleffects?.length) {
+    const regional = monster.regionaleffects[0];
+    outsideHTML += `<h3>Regional Effects</h3>`;
+
+    if (regional.description) {
+      outsideHTML += `<p>${regional.description.replace(/\n/g, "<br>")}</p>`;
+    }
+
+    if (regional.bullets?.length) {
+      outsideHTML += "<ul>";
+      regional.bullets.forEach(b => {
+        outsideHTML += `<li>${b}</li>`;
+      });
+      outsideHTML += "</ul>";
+    }
+
+    // Secondary description after bullet points
+    if (regional.secondaryDescription) {
+      outsideHTML += `<p>${regional.secondaryDescription.replace(/\n/g, "<br>")}</p>`;
     }
   }
 
