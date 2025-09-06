@@ -5,7 +5,7 @@
   "alignment": "chaotic good",
   "cr": "10",
   "hp": "100 (10d10 + 45)",
-  "ac": 18 (natural armor),
+  "ac": "18 (natural armor)",
   "speed": "30 ft., burrow 20ft., climb 10ft., fly 10ft., swim 10ft.",
   "abilities": {
     "str": 4,
