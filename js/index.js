@@ -9,29 +9,19 @@ function parseCR(cr) {
 }
 
 async function loadMonsters() {
-  const entries = await fetch("data/index.json").then(r => r.json());
+  try {
+    // Load list of monsters from index.json
+    const entries = await fetch("data/index.json").then(r => r.json());
 
-  const monsters = await Promise.all(
-    entries.map(e => fetch(`data/${e.file}`).then(r => r.json()))
-  );
+    // Fetch each monster
+    const monsters = await Promise.all(
+      entries.map(e => fetch(`data/${e.file}`).then(r => r.json()))
+    );
 
-  // attach file info so we can link correctly
-  monsters.forEach((m, i) => m._file = entries[i].file);
+    // Attach filename for linking
+    monsters.forEach((m, i) => (m._file = entries[i].file));
 
-  monsters.sort((a, b) => a.name.localeCompare(b.name));
-
-  const listEl = document.getElementById("monster-list");
-  listEl.innerHTML = "";
-
-  monsters.forEach(m => {
-    const li = document.createElement("li");
-    li.innerHTML = `<a href="monster.html?file=${encodeURIComponent(m._file)}">${m.name}</a>`;
-    listEl.appendChild(li);
-  });
-}
-
-
-    // Sort by CR, then alphabetically within each CR
+    // Sort by CR first, then alphabetically
     monsters.sort((a, b) => {
       const crA = parseCR(a.cr);
       const crB = parseCR(b.cr);
@@ -42,7 +32,7 @@ async function loadMonsters() {
     const listEl = document.getElementById("monster-list");
     const filtersEl = document.getElementById("filters");
 
-    // Hardcoded filter buttons
+    // Fixed set of creature type filters
     const creatureTypes = [
       "aberration", "beast", "celestial", "construct", "dragon", "elemental",
       "fey", "fiend", "giant", "humanoid", "monstrosity", "ooze", "plant", "undead"
@@ -55,7 +45,7 @@ async function loadMonsters() {
       filtersEl.appendChild(btn);
     });
 
-    // Render everything by default
+    // Render all monsters initially
     renderList(monsters);
 
     function renderList(data) {
@@ -75,8 +65,13 @@ async function loadMonsters() {
         }
 
         const li = document.createElement("li");
-        li.innerHTML = `<a href="monster.html?name=${encodeURIComponent(m.name)}">${m.name}</a>`;
+        li.innerHTML = `<a href="monster.html?file=${encodeURIComponent(m._file)}">${m.name}</a>`;
         listEl.appendChild(li);
       });
     }
+  } catch (err) {
+    console.error("Error loading monsters:", err);
+  }
+}
+
 loadMonsters();
