@@ -78,8 +78,6 @@ async function loadMonsters() {
         listEl.appendChild(li);
       });
     }
-  } catch (err) {
-    console.error("Error loading monsters:", err);
   }
 }
 
