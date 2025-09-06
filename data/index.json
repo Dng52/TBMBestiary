@@ -1,6 +1,3 @@
 [
-  [
-  { "name": "Goblin", "file": "goblin.json" },
-]
-
+  "goblin.json"
 ]
