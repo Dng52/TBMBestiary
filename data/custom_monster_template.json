@@ -1,0 +1,59 @@
+{
+  "name": "Template",
+  "size": "Medium",
+  "type": "ooze",
+  "alignment": "chaotic good",
+  "cr": "10",
+  "hp": "100 (10d10 + 45)",
+  "ac": 18 (natural armor),
+  "speed": "30 ft., burrow 20ft., climb 10ft., fly 10ft., swim 10ft.",
+  "abilities": {
+    "str": 4,
+    "dex": 8,
+    "con": 12,
+    "int": 16,
+    "wis": 20,
+    "cha": 24
+  },
+  "saves": "Con +11, Int +9",
+  "skills": "Stealth +6, Animal Handling +10",
+  "immunities": "cold",
+  "resistance": "fire",
+  "vulnerability": "force",
+  "conimmunities": "prone, poisoned",
+  "senses": "truesight 120ft., passive Perception 15",
+  "languages": "Common, Dwarvish",
+  "legendarynumber": "3",
+  "traits": [
+    {
+      "name": "Trait 1",
+      "desc": "This is a trait."
+    }
+    {
+      "name": "Magic Resistance",
+      "desc": "The template has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Scimitar",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage."
+    },
+    {
+      "name": "Shortbow",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    }
+  ]
+   "reactions": [
+    {
+      "name": "Riposte",
+      "desc": "When a creature misses the template with a melee attack, the template can make a melee weapon attack against that creature."
+    }
+  ]
+    "legendary": [
+    {
+      "name": "Chop",
+      "desc": "The template takes the Scimitar action."
+    }
+  ]
+}
