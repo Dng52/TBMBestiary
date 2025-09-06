@@ -56,5 +56,15 @@
             "desc": "The template takes the Scimitar action."
         }
     ],
-	"description": "The quick brown fox jumped over the lazy dog."
+	"description": "The quick brown fox jumped over the lazy dog.",
+	"lairactions": [
+  {
+    "description": "While in its lair, the creature can invoke dangerous effects.",
+    "bullets": [
+      "The creature causes poisonous gas to seep into the lair. Each hostile creature must succeed on a DC 15 Constitution saving throw or take 14 (4d6) poison damage.",
+      "The creature summons Quasits that fight until the start of its next turn.",
+      "The lair trembles violently; each creature on the ground must succeed on a DC 15 Dexterity saving throw or be knocked prone."
+    ]
+  }
+]
 }

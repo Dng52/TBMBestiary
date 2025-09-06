@@ -93,16 +93,42 @@ async function loadMonster() {
       `).join("")}
     ` : ""} `;
 
-  // Add description outside of the stat block
+// Add description outside of the stat block
+if (monster.description || monster.lairactions?.length) {
+  const outsideContainer = document.createElement("div");
+  outsideContainer.style.background = "transparent"; // optional
+  outsideContainer.style.border = "none";           // optional
+
+  let outsideHTML = "";
+
+  // Monster description
   if (monster.description) {
-    const descEl = document.createElement("p");
-    descEl.textContent = monster.description;
-    descEl.style.background = "transparent"; // optional
-    descEl.style.border = "none";           // optional
-    container.insertAdjacentElement("beforebegin", descEl); // places it above stat block
-    // Or use "afterend" to place below stat block:
-    // container.insertAdjacentElement("afterend", descEl);
+    // Preserve line breaks if desired
+    outsideHTML += `<p>${monster.description.replace(/\n/g, "<br>")}</p>`;
   }
+
+  // Lair Actions
+  if (monster.lairactions?.length) {
+    const lair = monster.lairactions[0]; // one lair block per monster
+    outsideHTML += `<h3>Lair Actions</h3>`;
+
+    if (lair.description) {
+      outsideHTML += `<p>${lair.description.replace(/\n/g, "<br>")}</p>`;
+    }
+
+    if (lair.bullets?.length) {
+      outsideHTML += "<ul>";
+      lair.bullets.forEach(b => {
+        outsideHTML += `<li>${b}</li>`;
+      });
+      outsideHTML += "</ul>";
+    }
+  }
+
+  // Insert the container after the stat block
+  outsideContainer.innerHTML = outsideHTML;
+  container.insertAdjacentElement("afterend", outsideContainer);
+	}
 }
 
 loadMonster();
