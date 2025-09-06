@@ -91,10 +91,18 @@ async function loadMonster() {
       ${monster.legendary.map(a => `
         <p><strong><em>${a.name}.</em></strong> ${a.desc}</p>
       `).join("")}
-    ` : ""}
+    ` : ""} `;
 
-    ${monster.description ? `<p>${monster.description}</p>` : ""}
-  `;
+  // Add description outside of the stat block
+  if (monster.description) {
+    const descEl = document.createElement("p");
+    descEl.textContent = monster.description;
+    descEl.style.background = "transparent"; // optional
+    descEl.style.border = "none";           // optional
+    container.insertAdjacentElement("beforebegin", descEl); // places it above stat block
+    // Or use "afterend" to place below stat block:
+    // container.insertAdjacentElement("afterend", descEl);
+  }
 }
 
 loadMonster();
