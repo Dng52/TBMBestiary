@@ -77,11 +77,12 @@ async function loadMonster() {
   `;
 
   // === Outside Sections ===
+// === Outside Sections ===
 let outsideHTML = "";
 
-// Lair Actions section
+// Lair Actions
 if (monster.lairactions?.length) {
-  const lair = monster.lairactions[0]; // one lair block per monster
+  const lair = monster.lairactions[0];
   outsideHTML += `<h3>Lair Actions</h3>`;
 
   if (lair.description) {
@@ -97,12 +98,12 @@ if (monster.lairactions?.length) {
   }
 }
 
-// Description section
+// Description (italicized)
 if (monster.description) {
   outsideHTML += `<p><em>${monster.description}</em></p>`;
 }
 
-// Put everything together
+// Combine with stat block
 container.innerHTML = statBlockHTML + outsideHTML;
 }
 
