@@ -209,7 +209,7 @@ strong em {
 /* Monster list */
 #monster-list {
   text-align: start;
-  margin-left: 20%;
+  margin-left: 10%;
 }
 #monster-list h3 {
   margin-top: 1rem;
@@ -226,6 +226,7 @@ strong em {
 .monster-link a {
   font-family: 'Bookmania', Georgia, serif;
   font-size: 1.3rem;
+  margin-left: 5%;
   text-decoration: none;
   color: #492468;
   transition: color 0.2s;
