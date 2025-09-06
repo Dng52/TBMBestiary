@@ -76,28 +76,34 @@ async function loadMonster() {
     </div>
   `;
 
-// === Outside Sections ===
-  // === Extras HTML (outside stat block) ===
-  let extrasHTML = "";
+  // === Outside Sections ===
+let outsideHTML = "";
 
-  if (monster.lairactions?.length) {
-    const lair = monster.lairactions[0];
-    extrasHTML += `<h3>Lair Actions</h3>`;
-    if (lair.description) {
-      extrasHTML += `<p>${lair.description}</p>`;
-    }
-    if (lair.bullets?.length) {
-      extrasHTML += "<ul>";
-      lair.bullets.forEach(b => { extrasHTML += `<li>${b}</li>`; });
-      extrasHTML += "</ul>";
-    }
+// Lair Actions section
+if (monster.lairactions?.length) {
+  const lair = monster.lairactions[0]; // one lair block per monster
+  outsideHTML += `<h3>Lair Actions</h3>`;
+
+  if (lair.description) {
+    outsideHTML += `<p>${lair.description}</p>`;
   }
 
-  if (monster.description) {
-    extrasHTML += `<p><em>${monster.description}</em></p>`;
+  if (lair.bullets?.length) {
+    outsideHTML += "<ul>";
+    lair.bullets.forEach(b => {
+      outsideHTML += `<li>${b}</li>`;
+    });
+    outsideHTML += "</ul>";
   }
+}
 
-  extrasEl.innerHTML = extrasHTML;
+// Description section
+if (monster.description) {
+  outsideHTML += `<p><em>${monster.description}</em></p>`;
+}
+
+// Put everything together
+container.innerHTML = statBlockHTML + outsideHTML;
 }
 
 loadMonster();

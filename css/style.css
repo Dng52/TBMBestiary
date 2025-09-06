@@ -234,28 +234,3 @@ strong em {
 .monster-link a:hover {
   color: #FFBF00;
 }
-
-/* Outside sections (Lair Actions, Description) */
-#monster h3 {
-  font-family: 'AlmendraSC', Georgia, serif;
-  font-weight: 400;
-  color: #492468;
-  border-bottom: 3px solid #FFBF00;
-  margin-top: 1.5rem;
-}
-
-#monster p em {
-  font-style: italic;
-}
-
-#monster ul {
-  margin: 0.5rem 1.5rem;
-  padding-left: 1rem;
-  list-style-type: disc;
-}
-
-#monster li {
-  margin-bottom: 0.3rem;
-}
-	 
-}
