@@ -52,10 +52,15 @@ async function loadMonster() {
 
     <hr class="orange-border">
 
+    ${monster.saves ? `<div class="property-line"><h4>Saving Throws&nbsp</h4><p>${monster.saves}</p></div>` : ""}
     ${monster.skills ? `<div class="property-line"><h4>Skills&nbsp</h4><p>${monster.skills}</p></div>` : ""}
+	${monster.immunities ? `<div class="property-line"><h4>Damage Immunities&nbsp</h4><p>${monster.immunities}</p></div>` : ""}
+	${monster.resistance ? `<div class="property-line"><h4>Damage Resistance&nbsp</h4><p>${monster.resistance}</p></div>` : ""}
+	${monster.vulnerability ? `<div class="property-line"><h4>Damage Vulnerability&nbsp</h4><p>${monster.vulnerability}</p></div>` : ""}
+	${monster.conimmunities ? `<div class="property-line"><h4>Condition Immunities&nbsp</h4><p>${monster.conimmunities}</p></div>` : ""}
+	${monster.senses ? `<div class="property-line"><h4>Senses&nbsp</h4><p>${monster.senses}</p></div>` : ""}
     ${monster.languages ? `<div class="property-line"><h4>Languages&nbsp</h4><p>${monster.languages}</p></div>` : ""}
-    <div class="property-line">
-      <h4>Challenge&nbsp</h4><p>${monster.cr}</p>
+    <div class="property-line"> <h4>Challenge&nbsp</h4><p>${monster.cr}</p>
     </div>
 
     <hr class="orange-border">
@@ -69,6 +74,13 @@ async function loadMonster() {
     ${monster.actions && monster.actions.length ? `
       <h3>Actions</h3>
       ${monster.actions.map(a => `
+        <p><strong><em>${a.name}.</em></strong> ${a.desc}</p>
+      `).join("")}
+    ` : ""}
+	
+    ${monster.reactions && monster.reactions.length ? `
+      <h3>Rections</h3>
+      ${monster.reactions.map(a => `
         <p><strong><em>${a.name}.</em></strong> ${a.desc}</p>
       `).join("")}
     ` : ""}
