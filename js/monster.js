@@ -32,12 +32,12 @@ async function loadMonster() {
     <hr class="orange-border">
 
     <div class="property-line">
-      <h4>Armor Class </h4><p>${monster.ac}</p>
+      <h4>Armor Class&nbsp</h4><p>${monster.ac}</p>
     </div>
     <div class="property-line">
-      <h4>Hit Points </h4><p>${monster.hp}</p>
+      <h4>Hit Points&nbsp</h4><p>${monster.hp}</p>
     </div>
-    ${monster.speed ? `<div class="property-line"><h4>Speed </h4><p>${monster.speed}</p></div>` : ""}
+    ${monster.speed ? `<div class="property-line"><h4>Speed&nbsp</h4><p>${monster.speed}</p></div>` : ""}
     
     <hr class="orange-border">
 
@@ -52,10 +52,10 @@ async function loadMonster() {
 
     <hr class="orange-border">
 
-    ${monster.skills ? `<div class="property-line"><h4>Skills </h4><p>${monster.skills}</p></div>` : ""}
-    ${monster.languages ? `<div class="property-line"><h4>Languages </h4><p>${monster.languages}</p></div>` : ""}
+    ${monster.skills ? `<div class="property-line"><h4>Skills&nbsp</h4><p>${monster.skills}</p></div>` : ""}
+    ${monster.languages ? `<div class="property-line"><h4>Languages&nbsp</h4><p>${monster.languages}</p></div>` : ""}
     <div class="property-line">
-      <h4>Challenge </h4><p>${monster.cr}</p>
+      <h4>Challenge&nbsp</h4><p>${monster.cr}</p>
     </div>
 
     <hr class="orange-border">
