@@ -1,6 +1,64 @@
+/* =========================
+   FONT IMPORTS
+   ========================= */
+@font-face {
+  font-family: 'AlmendraSC';
+  src: url('../fonts/AlmendraSC-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AlmendraSC';
+  src: url('../fonts/AlmendraSC-Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'AlmendraSC';
+  src: url('../fonts/AlmendraSC-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'AlmendraSC';
+  src: url('../fonts/AlmendraSC-BoldItalic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Bookmania';
+  src: url('../fonts/Bookmania Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bookmania';
+  src: url('../fonts/Bookmania Regular Italic.woff2') format('woff2');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Bookmania';
+  src: url('../fonts/Bookmania Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Bookmania';
+  src: url('../fonts/Bookmania Bold Italic.woff2') format('woff2');
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* =========================
+   GLOBAL STYLES
+   ========================= */
 body {
-  font-family: "Georgia", serif;
-  background: #fdfcf7;
+  font-family: Georgia, serif;
+  background-image: url("https://i.imgur.com/8XflKRc.png");
+  background-attachment: fixed;
+  background-size: cover;
   color: #2c2c2c;
   line-height: 1.5;
 }
@@ -11,61 +69,101 @@ body {
   padding: 1rem;
 }
 
+/* =========================
+   STAT BLOCK
+   ========================= */
 .stat-block {
   border: 1px solid #999;
-  background: #fff;
+  background: #EAEDEF;
   padding: 1rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-.stat-block h1 {
+/* =========================
+   HEADINGS
+   ========================= */
+h1 {
+  font-family: 'AlmendraSC', Georgia, serif;
+  font-weight: 700;
+  color: #492468;
   margin: 0;
   font-size: 2rem;
 }
 
-.stat-block h2 {
-  font-size: 1rem;
-  font-style: italic;
+h2 {
+  font-family: 'Bookmania', Georgia, serif;
+  font-weight: 700;
+  color: #492468;
   margin: 0 0 0.5rem 0;
-  color: #444;
+  font-size: 1.2rem;
 }
 
+h3 {
+  font-family: 'AlmendraSC', Georgia, serif;
+  font-weight: 400;
+  color: #492468;
+  border-bottom: 3px solid #FFBF00;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+
+h4 {
+  font-family: 'Bookmania', Georgia, serif;
+  font-weight: 400;
+  color: #492468;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+}
+
+/* =========================
+   DIVIDERS
+   ========================= */
 .orange-border {
-  border-top: 3px solid #e69a28;
+  border-top: 3px solid #FFBF00;
   margin: 0.5rem 0;
 }
 
+/* =========================
+   PROPERTY LINES
+   ========================= */
 .property-line {
   display: flex;
   justify-content: space-between;
   margin: 0.25rem 0;
 }
+.property-line h4 {
+  margin: 0;
+}
+.property-line p {
+  margin: 0;
+}
 
+/* =========================
+   ABILITY SCORES
+   ========================= */
 .abilities {
   display: flex;
   justify-content: space-between;
   margin: 1rem 0;
 }
-
 .abilities div {
   text-align: center;
   flex: 1;
 }
-
 .abilities h4 {
   margin: 0;
 }
-
 .abilities p {
   margin: 0;
 }
-h3 {
-  border-bottom: 1px solid #ccc;
-  margin-top: 1rem;
-}
+
+/* =========================
+   TEXT & ACTIONS
+   ========================= */
 p {
   margin: 0.5rem 0;
 }
+
 strong em {
   font-weight: bold;
   font-style: italic;
