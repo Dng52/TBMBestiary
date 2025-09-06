@@ -1,12 +1,17 @@
 async function loadMonster() {
   const params = new URLSearchParams(window.location.search);
-  const file = params.get("file");  // now using ?file=
+  const file = params.get("file"); // e.g. "goblin.json"
   if (!file) return;
 
+  // Load index.json to map file -> display name
+  const index = await fetch("data/index.json").then(r => r.json());
+  const entry = index.find(e => e.file === file);
+
+  // Load monster JSON
   const monster = await fetch(`data/${file}`).then(r => r.json());
 
-  const file = `data/${name.toLowerCase()}.json`;
-  const monster = await fetch(file).then(r => r.json());
+  // Use display name from index.json if available, fallback to JSON
+  const displayName = entry?.name || monster.name || file.replace(".json", "");
 
   const container = document.getElementById("monster");
 
@@ -20,7 +25,7 @@ async function loadMonster() {
   container.innerHTML = `
     <hr class="orange-border">
     <div class="creature-heading">
-      <h1>${monster.name}</h1>
+      <h1>${displayName}</h1>
       <h2>${monster.size || "Medium"} ${monster.type || ""}${
         monster.alignment ? `, ${monster.alignment}` : ""
       }</h2>
@@ -65,6 +70,13 @@ async function loadMonster() {
     ${monster.actions && monster.actions.length ? `
       <h3>Actions</h3>
       ${monster.actions.map(a => `
+        <p><strong><em>${a.name}.</em></strong> ${a.desc}</p>
+      `).join("")}
+    ` : ""}
+
+    ${monster.legendary && monster.legendary.length ? `
+      <h3>Legendary Actions</h3>
+      ${monster.legendary.map(a => `
         <p><strong><em>${a.name}.</em></strong> ${a.desc}</p>
       `).join("")}
     ` : ""}

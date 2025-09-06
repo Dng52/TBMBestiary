@@ -18,15 +18,18 @@ async function loadMonsters() {
       entries.map(e => fetch(`data/${e.file}`).then(r => r.json()))
     );
 
-    // Attach filename for linking
-    monsters.forEach((m, i) => (m._file = entries[i].file));
+    // Attach filename & display name
+    monsters.forEach((m, i) => {
+      m._file = entries[i].file;
+      m._displayName = entries[i].name;
+    });
 
     // Sort by CR first, then alphabetically
     monsters.sort((a, b) => {
       const crA = parseCR(a.cr);
       const crB = parseCR(b.cr);
       if (crA !== crB) return crA - crB;
-      return a.name.localeCompare(b.name);
+      return a._displayName.localeCompare(b._displayName);
     });
 
     const listEl = document.getElementById("monster-list");
@@ -65,7 +68,7 @@ async function loadMonsters() {
         }
 
         const li = document.createElement("li");
-        li.innerHTML = `<a href="monster.html?file=${encodeURIComponent(m._file)}">${m.name}</a>`;
+        li.innerHTML = `<a href="monster.html?file=${encodeURIComponent(m._file)}">${m._displayName}</a>`;
         listEl.appendChild(li);
       });
     }
