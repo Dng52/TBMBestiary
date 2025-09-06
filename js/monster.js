@@ -76,7 +76,6 @@ async function loadMonster() {
     </div>
   `;
 
-  // === Outside Sections ===
 // === Outside Sections ===
 let outsideHTML = "";
 
