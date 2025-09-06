@@ -56,3 +56,19 @@ async function loadMonster() {
 
     ${monster.traits && monster.traits.length ? `
       ${monster.traits.map(t => `
+        <p><strong><em>${t.name}.</em></strong> ${t.desc}</p>
+      `).join("")}
+    ` : ""}
+
+    ${monster.actions && monster.actions.length ? `
+      <h3>Actions</h3>
+      ${monster.actions.map(a => `
+        <p><strong><em>${a.name}.</em></strong> ${a.desc}</p>
+      `).join("")}
+    ` : ""}
+
+    ${monster.description ? `<p>${monster.description}</p>` : ""}
+  `;
+}
+
+loadMonster();
