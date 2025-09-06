@@ -9,12 +9,27 @@ function parseCR(cr) {
 }
 
 async function loadMonsters() {
-  try {
-    const files = await fetch("data/index.json").then(r => r.json());
+  const entries = await fetch("data/index.json").then(r => r.json());
 
-    const monsters = await Promise.all(
-      files.map(f => fetch(`data/${f}`).then(r => r.json()))
-    );
+  const monsters = await Promise.all(
+    entries.map(e => fetch(`data/${e.file}`).then(r => r.json()))
+  );
+
+  // attach file info so we can link correctly
+  monsters.forEach((m, i) => m._file = entries[i].file);
+
+  monsters.sort((a, b) => a.name.localeCompare(b.name));
+
+  const listEl = document.getElementById("monster-list");
+  listEl.innerHTML = "";
+
+  monsters.forEach(m => {
+    const li = document.createElement("li");
+    li.innerHTML = `<a href="monster.html?file=${encodeURIComponent(m._file)}">${m.name}</a>`;
+    listEl.appendChild(li);
+  });
+}
+
 
     // Sort by CR, then alphabetically within each CR
     monsters.sort((a, b) => {

@@ -1,7 +1,9 @@
 async function loadMonster() {
   const params = new URLSearchParams(window.location.search);
-  const name = params.get("name");
-  if (!name) return;
+  const file = params.get("file");  // now using ?file=
+  if (!file) return;
+
+  const monster = await fetch(`data/${file}`).then(r => r.json());
 
   const file = `data/${name.toLowerCase()}.json`;
   const monster = await fetch(file).then(r => r.json());
