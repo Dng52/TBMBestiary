@@ -56,15 +56,5 @@
             "desc": "The template takes the Scimitar action."
         }
     ],
-  "lairactions": [
-    {
-      "description": "On initiative count 20 (losing initiative ties), the dragon can use one of the following lair actions:",
-      "bullets": [
-        "Magical darkness spreads in a 30-foot radius, extinguishing nonmagical light sources.",
-        "Strong winds buffet creatures in the lair. Each creature must succeed on a DC 15 Strength saving throw or be pushed 20 ft. away from the template.",
-        "The lair trembles violently. Each creature on the ground must succeed on a DC 15 Dexterity saving throw or be knocked prone."
-      ]
-    }
-  ],
-  "description": "This mighty creature dwells in a volcanic mountain range, terrorizing all who enter its domain."
+	"description": "The quick brown fox jumped over the lazy dog."
 }
