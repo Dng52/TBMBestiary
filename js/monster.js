@@ -87,7 +87,7 @@ async function loadMonster() {
 
     ${monster.legendary && monster.legendary.length ? `
       <h3>Legendary Actions</h3>
-	  <p>The ${displayName} can take ${legendarynumber} legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The ${displayName} regains spent legendary actions at the start of its turn.</p>
+	  <p>The ${displayName} can take ${monster.legendarynumber || 3} legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The ${displayName} regains spent legendary actions at the start of its turn.</p>
       ${monster.legendary.map(a => `
         <p><strong><em>${a.name}.</em></strong> ${a.desc}</p>
       `).join("")}
