@@ -114,6 +114,14 @@ h4 {
   margin-bottom: 0.2em;
 }
 
+h5 {
+  font-family: 'Bookmania', Georgia, serif;
+  color: #492468;
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+  font-style: italic;
+}
+
 /* =========================
    DIVIDERS
    ========================= */
@@ -128,6 +136,7 @@ h4 {
 .property-line {
   display: flex;
   justify-content: start;
+  gap: 8px
   margin: 0.25rem 0;
 }
 .property-line h4 {

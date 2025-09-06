@@ -25,9 +25,9 @@ async function loadMonster() {
   container.innerHTML = `
     <div class="creature-heading">
       <h1>${displayName}</h1>
-      <h2>${monster.size || "Medium"} ${monster.type || ""}${
+      <h5>${monster.size || "Medium"} ${monster.type || ""}${
         monster.alignment ? `, ${monster.alignment}` : ""
-      }</h2>
+      }</h5>
     </div>
     <hr class="orange-border">
 
