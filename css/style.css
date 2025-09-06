@@ -74,7 +74,7 @@ body {
    ========================= */
 .stat-block {
   border: 1px solid #999;
-  background: #EAEDEF;
+  background: #EAEDEF; /* stat block background */
   padding: 1rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
@@ -102,7 +102,7 @@ h3 {
   font-family: 'AlmendraSC', Georgia, serif;
   font-weight: 400;
   color: #492468;
-  border-bottom: 3px solid #FFBF00;
+  border-bottom: 3px solid #FFBF00; /* gold underline */
   margin-top: 1rem;
   font-size: 1.1rem;
 }
@@ -119,7 +119,7 @@ h4 {
    DIVIDERS
    ========================= */
 .orange-border {
-  border-top: 3px solid #FFBF00;
+  border-top: 3px solid #FFBF00; /* gold border */
   margin: 0.5rem 0;
 }
 
