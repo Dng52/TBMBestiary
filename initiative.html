@@ -30,25 +30,30 @@
 <body>
   <h1 style="text-align:center">Initiative Tracker</h1>
   <div class="layout">
-    <!-- Left: Monster Table -->
-    <div class="panel" id="monster-panel">
-      <h2>Monsters</h2>
-      <input id="search" type="text" placeholder="Search by name..." style="width:100%">
-      <div>
-        <label>Type:</label>
-        <select id="filter-type"><option value="">All</option></select>
-        <label>CR:</label>
-        <select id="filter-cr"><option value="">All</option></select>
-        <label>Source:</label>
-        <select id="filter-source"><option value="">All</option></select>
-      </div>
-      <table id="monster-table">
-        <thead>
-          <tr><th>Name</th><th>Type</th><th>CR</th><th>Source</th></tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
+<!-- Left: Monster Table -->
+<div class="panel" id="monster-panel">
+  <h2>Monsters</h2>
+  <input id="search" type="text" placeholder="Search by name..." style="width:100%">
+
+  <div>
+    <h4>Type</h4>
+    <div id="filter-type" class="filter-container"></div>
+
+    <h4>CR</h4>
+    <div id="filter-cr" class="filter-container"></div>
+
+    <h4>Source</h4>
+    <div id="filter-source" class="filter-container"></div>
+  </div>
+
+  <table id="monster-table">
+    <thead>
+      <tr><th>Name</th><th>Type</th><th>CR</th><th>Source</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
 
     <!-- Middle: Initiative Tracker -->
     <div class="panel" id="tracker-panel">

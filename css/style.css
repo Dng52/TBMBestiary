@@ -268,3 +268,15 @@ strong em {
 .monster-link a:hover {
   color: #FFBF00;
 }
+.filter-button {
+  cursor: pointer;
+  padding: 2px 6px;
+  margin: 2px;
+  border: 1px solid #888;
+  border-radius: 4px;
+  display: inline-block;
+}
+.filter-button.active {
+  background: #444;
+  color: #fff;
+}

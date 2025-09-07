@@ -1,101 +1,207 @@
+// initiative.js
+
+// -----------------------------
+// CR Helpers
+// -----------------------------
+function parseCR(cr) {
+  if (!cr) return NaN;
+  cr = cr.replace(/\(.*?\)/, "").trim();
+  if (cr === "0") return 0;
+  if (cr.includes("/")) {
+    const [num, den] = cr.split("/").map(Number);
+    return den ? num / den : NaN;
+  }
+  const val = parseFloat(cr);
+  return isNaN(val) ? NaN : val;
+}
+
+function cleanCR(cr) {
+  if (!cr) return "?";
+  return cr.replace(/\(.*?\)/, "").trim();
+}
+
+// -----------------------------
+// State
+// -----------------------------
 let monsters = [];
-let tracker = [];
+const activeTypes = new Set();
+const activeCRs = new Set();
+const activeSources = new Set();
 
-document.addEventListener("DOMContentLoaded", async () => {
-  // Load monster data (adjust path if needed)
-  monsters = await fetch("data/monsters.json").then(r => r.json());
+// -----------------------------
+// Load Monsters
+// -----------------------------
+async function loadMonsters() {
+  try {
+    monsters = await fetch("data/monsters.json").then(r => {
+      if (!r.ok) throw new Error(`Failed to load monsters.json: ${r.status}`);
+      return r.json();
+    });
 
-  populateFilters();
-  renderMonsterTable(monsters);
+    // Compute fields
+    monsters.forEach(m => {
+      m._cleanCR = cleanCR(m.cr);
+      m._crSortValue = parseCR(m.cr);
+      if (!m.tags) m.tags = [];
+    });
 
-  document.getElementById("search").addEventListener("input", filterMonsters);
-  document.getElementById("filter-type").addEventListener("change", filterMonsters);
-  document.getElementById("filter-cr").addEventListener("change", filterMonsters);
-  document.getElementById("filter-source").addEventListener("change", filterMonsters);
-});
+    // Sort consistently: CR numeric → name
+    monsters.sort((a, b) => {
+      const crA = a._crSortValue, crB = b._crSortValue;
+      const aNaN = isNaN(crA), bNaN = isNaN(crB);
+      const nameA = a._displayName || a.name || a._file || "";
+      const nameB = b._displayName || b.name || b._file || "";
 
+      if (aNaN && bNaN) return nameA.localeCompare(nameB);
+      if (aNaN) return 1;
+      if (bNaN) return -1;
+      if (crA !== crB) return crA - crB;
+      return nameA.localeCompare(nameB);
+    });
+
+    populateFilters();
+    applyFilters();
+
+  } catch (err) {
+    console.error("Failed to load monsters:", err);
+  }
+}
+
+// -----------------------------
+// Populate Filter Buttons
+// -----------------------------
 function populateFilters() {
-  const types = [...new Set(monsters.map(m => m.type))].sort();
-  const crs = [...new Set(monsters.map(m => m.cr))].sort((a,b)=>a-b);
-  const sources = [...new Set(monsters.map(m => m.source))].sort();
-
-  fillSelect("filter-type", types);
-  fillSelect("filter-cr", crs);
-  fillSelect("filter-source", sources);
-}
-
-function fillSelect(id, items) {
-  const select = document.getElementById(id);
-  items.forEach(item => {
-    const opt = document.createElement("option");
-    opt.value = item;
-    opt.textContent = item;
-    select.appendChild(opt);
+  // Creature Types
+  const types = [
+    "aberration","beast","celestial","construct","dragon","elemental",
+    "fey","fiend","giant","humanoid","monstrosity","ooze","plant","undead"
+  ];
+  const typeEl = document.getElementById("filter-type");
+  typeEl.innerHTML = types.map(t =>
+    `<span class="filter-button" data-type="${t}">${t}</span>`
+  ).join("");
+  typeEl.querySelectorAll(".filter-button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const t = btn.dataset.type;
+      if (activeTypes.has(t)) { activeTypes.delete(t); btn.classList.remove("active"); }
+      else { activeTypes.add(t); btn.classList.add("active"); }
+      applyFilters();
+    });
   });
+
+  // CRs
+  const uniqueCRs = [...new Set(
+    monsters.map(m => isNaN(m._crSortValue) ? null : m._cleanCR).filter(Boolean)
+  )].sort((a, b) => parseCR(a) - parseCR(b));
+  const crEl = document.getElementById("filter-cr");
+  crEl.innerHTML = uniqueCRs.map(cr =>
+    `<span class="filter-button" data-cr="${cr}">${cr}</span>`
+  ).join("");
+  crEl.querySelectorAll(".filter-button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const cr = btn.dataset.cr;
+      if (activeCRs.has(cr)) { activeCRs.delete(cr); btn.classList.remove("active"); }
+      else { activeCRs.add(cr); btn.classList.add("active"); }
+      applyFilters();
+    });
+  });
+
+  // Sources
+  const uniqueSources = [...new Set(
+    monsters.map(m => m.tags[m.tags.length - 1]).filter(Boolean)
+  )].sort();
+  const sourceEl = document.getElementById("filter-source");
+  sourceEl.innerHTML = uniqueSources.map(src =>
+    `<span class="filter-button" data-source="${src}">${src}</span>`
+  ).join("");
+  sourceEl.querySelectorAll(".filter-button").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const src = btn.dataset.source;
+      if (activeSources.has(src)) { activeSources.delete(src); btn.classList.remove("active"); }
+      else { activeSources.add(src); btn.classList.add("active"); }
+      applyFilters();
+    });
+  });
+
+  // Search
+  document.getElementById("search").addEventListener("input", () => applyFilters());
 }
 
-function filterMonsters() {
+// -----------------------------
+// Apply Filters
+// -----------------------------
+function applyFilters() {
   const search = document.getElementById("search").value.toLowerCase();
-  const type = document.getElementById("filter-type").value;
-  const cr = document.getElementById("filter-cr").value;
-  const source = document.getElementById("filter-source").value;
 
   const filtered = monsters.filter(m => {
-    return (!search || m.name.toLowerCase().includes(search)) &&
-           (!type || m.type === type) &&
-           (!cr || m.cr == cr) &&
-           (!source || m.source === source);
+    const name = (m._displayName || m.name || "").toLowerCase();
+    if (search && !name.includes(search)) return false;
+
+    if (activeTypes.size > 0 && !activeTypes.has(m.type)) return false;
+    if (activeCRs.size > 0 && !activeCRs.has(m._cleanCR)) return false;
+
+    const src = m.tags[m.tags.length - 1];
+    if (activeSources.size > 0 && !activeSources.has(src)) return false;
+
+    return true;
   });
 
   renderMonsterTable(filtered);
 }
 
-function renderMonsterTable(list) {
+// -----------------------------
+// Render Left Monster Table
+// -----------------------------
+function renderMonsterTable(data) {
   const tbody = document.querySelector("#monster-table tbody");
   tbody.innerHTML = "";
-  list.forEach(m => {
-    const tr = document.createElement("tr");
-    tr.innerHTML = `<td>${m.name}</td><td>${m.type}</td><td>${m.cr}</td><td>${m.source}</td>`;
-    tr.addEventListener("click", () => addToTracker(m));
-    tbody.appendChild(tr);
-  });
-}
 
-function addToTracker(monster) {
-  const entry = {
-    ...monster,
-    initiative: 0,
-    ac: monster.ac || "",
-    hp: monster.hp || "",
-    notes: ""
-  };
-  tracker.push(entry);
-  renderTracker();
-}
-
-function renderTracker() {
-  const tbody = document.querySelector("#tracker-table tbody");
-  tbody.innerHTML = "";
-  tracker.forEach((t, i) => {
+  data.forEach(m => {
     const tr = document.createElement("tr");
     tr.innerHTML = `
-      <td contenteditable oninput="tracker[${i}].initiative=this.innerText">${t.initiative}</td>
-      <td style="cursor:pointer">${t.name}</td>
-      <td contenteditable oninput="tracker[${i}].ac=this.innerText">${t.ac}</td>
-      <td contenteditable oninput="tracker[${i}].hp=this.innerText">${t.hp}</td>
-      <td contenteditable oninput="tracker[${i}].notes=this.innerText">${t.notes}</td>
+      <td>${m._displayName || m.name || m._file}</td>
+      <td>${m.type || ""}</td>
+      <td>${m._cleanCR}</td>
+      <td>${m.tags[m.tags.length - 1] || ""}</td>
     `;
-    tr.querySelector("td:nth-child(2)").addEventListener("click", () => showStatBlock(t));
+    tr.addEventListener("click", () => addToInitiative(m));
     tbody.appendChild(tr);
   });
 }
 
+// -----------------------------
+// Middle Panel: Initiative Tracker
+// -----------------------------
+function addToInitiative(monster) {
+  const tracker = document.getElementById("initiative-table").querySelector("tbody");
+  const tr = document.createElement("tr");
+  tr.innerHTML = `
+    <td>${monster._displayName || monster.name || monster._file}</td>
+    <td><input type="number" value="0" style="width:50px"></td>
+    <td>${monster.ac || ""}</td>
+    <td>${monster.hp || ""}</td>
+    <td><input type="text" placeholder="Notes"></td>
+  `;
+  tr.addEventListener("click", () => showStatBlock(monster));
+  tracker.appendChild(tr);
+}
+
+// -----------------------------
+// Right Panel: Stat Block Preview
+// -----------------------------
 function showStatBlock(monster) {
-  const statblock = document.getElementById("statblock-content");
-  statblock.innerHTML = `
-    <h3>${monster.name}</h3>
-    <p><strong>Type:</strong> ${monster.type} | <strong>CR:</strong> ${monster.cr} | <strong>Source:</strong> ${monster.source}</p>
-    <p><strong>AC:</strong> ${monster.ac || "?"} | <strong>HP:</strong> ${monster.hp || "?"}</p>
-    <p>${monster.description || "No description."}</p>
+  const panel = document.getElementById("statblock-panel");
+  panel.innerHTML = `
+    <h2>${monster._displayName || monster.name}</h2>
+    <p><strong>Type:</strong> ${monster.size || "Medium"} ${monster.type || ""}</p>
+    <p><strong>CR:</strong> ${monster._cleanCR}</p>
+    <p><strong>AC:</strong> ${monster.ac || "?"}</p>
+    <p><strong>HP:</strong> ${monster.hp || "?"}</p>
+    <p><strong>Source:</strong> ${monster.tags[m.tags.length - 1] || ""}</p>
   `;
 }
+
+// -----------------------------
+// Init
+// -----------------------------
+loadMonsters();
