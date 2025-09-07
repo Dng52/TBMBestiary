@@ -5,27 +5,51 @@
   <title>Initiative Tracker</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
-    .container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 1rem;
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
     }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: 300px 1fr 1fr;
+      height: 100vh;
+    }
+
+    /* Left panel (filters + list) */
+    .sidebar {
+      border-right: 1px solid #ccc;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      overflow-y: auto;
+      padding: 0.5rem;
+    }
+
     .filter-section {
       margin-bottom: 1rem;
     }
-    .filter-button {
-      cursor: pointer;
-      padding: 0.25em 0.5em;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      margin: 0.2em;
-      display: inline-block;
+
+    .filter-section label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 0.25rem;
     }
-    .filter-button.active {
-      background: #492468;
-      color: white;
-      border-color: #492468;
+
+    select[multiple] {
+      width: 100%;
+      height: 6em;
     }
+
+    #monster-list {
+      flex: 1;
+      overflow-y: auto;
+      border-top: 1px solid #ccc;
+      padding-top: 0.5rem;
+    }
+
     .monster-row {
       cursor: pointer;
       padding: 0.25em 0.5em;
@@ -34,6 +58,14 @@
     .monster-row:hover {
       background: #f0f0f0;
     }
+
+    /* Middle panel (tracker) */
+    .tracker {
+      border-right: 1px solid #ccc;
+      overflow-y: auto;
+      padding: 0.5rem;
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
@@ -46,54 +78,57 @@
     th {
       background: #eee;
     }
+
+    /* Right panel (stat block) */
+    .statblock {
+      overflow-y: auto;
+      padding: 0.5rem;
+    }
   </style>
 </head>
 <body>
   <div class="wrapper">
-    <h1>Initiative Tracker</h1>
-    <div class="container">
-      <!-- Left: Monster List & Filters -->
-      <div>
-        <div class="filter-section">
-          <h3>Creature Types</h3>
-          <div id="creature-types"></div>
-        </div>
-        <div class="filter-section">
-          <h3>CR</h3>
-          <div id="cr-filters"></div>
-        </div>
-        <div class="filter-section">
-          <h3>Sources</h3>
-          <div id="source-filters"></div>
-        </div>
-        <div class="filter-section">
-          <input type="text" id="search" placeholder="Search creatures by name...">
-        </div>
-        <div id="monster-list"></div>
+    <!-- Left: Filters + Monster List -->
+    <div class="sidebar">
+      <div class="filter-section">
+        <label for="creature-types">Creature Types</label>
+        <select id="creature-types" multiple></select>
       </div>
+      <div class="filter-section">
+        <label for="cr-filters">CR</label>
+        <select id="cr-filters" multiple></select>
+      </div>
+      <div class="filter-section">
+        <label for="source-filters">Sources</label>
+        <select id="source-filters" multiple></select>
+      </div>
+      <div class="filter-section">
+        <input type="text" id="search" placeholder="Search creatures by name...">
+      </div>
+      <div id="monster-list"></div>
+    </div>
 
-      <!-- Middle: Initiative Tracker -->
-      <div>
-        <h3>Tracker</h3>
-        <table id="initiative-table">
-          <thead>
-            <tr>
-              <th>Initiative</th>
-              <th>Name</th>
-              <th>AC</th>
-              <th>HP</th>
-              <th>Notes</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
+    <!-- Middle: Initiative Tracker -->
+    <div class="tracker">
+      <h3>Tracker</h3>
+      <table id="initiative-table">
+        <thead>
+          <tr>
+            <th>Initiative</th>
+            <th>Name</th>
+            <th>AC</th>
+            <th>HP</th>
+            <th>Notes</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
 
-      <!-- Right: Stat Block -->
-      <div>
-        <h3>Stat Block</h3>
-        <div id="stat-block"></div>
-      </div>
+    <!-- Right: Stat Block -->
+    <div class="statblock">
+      <h3>Stat Block</h3>
+      <div id="stat-block"></div>
     </div>
   </div>
   <script src="js/initiative.js"></script>

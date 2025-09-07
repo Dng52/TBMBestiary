@@ -58,28 +58,17 @@ async function loadMonsters() {
     const trackerBody = document.querySelector("#initiative-table tbody");
     const statBlockEl = document.getElementById("stat-block");
 
-    // State
-    const activeTypes = new Set();
-    const activeCRs = new Set();
-    const activeSources = new Set();
-
     // Creature Types
     const creatureTypes = [
       "aberration","beast","celestial","construct","dragon","elemental",
       "fey","fiend","giant","humanoid","monstrosity","ooze","plant","undead"
     ];
 
-    typesEl.innerHTML = creatureTypes.map(t =>
-      `<span class="filter-button" data-type="${t}">${t}</span>`
-    ).join(" • ");
-
-    typesEl.querySelectorAll(".filter-button").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const t = btn.dataset.type;
-        if (activeTypes.has(t)) { activeTypes.delete(t); btn.classList.remove("active"); }
-        else { activeTypes.add(t); btn.classList.add("active"); }
-        applyFilters();
-      });
+    creatureTypes.forEach(t => {
+      const opt = document.createElement("option");
+      opt.value = t;
+      opt.textContent = t;
+      typesEl.appendChild(opt);
     });
 
     // CR Filters
@@ -87,17 +76,11 @@ async function loadMonsters() {
       monsters.map(m => isNaN(m._crSortValue) ? null : m._cleanCR).filter(Boolean)
     )].sort((a, b) => parseCR(a) - parseCR(b));
 
-    crEl.innerHTML = uniqueCRs.map(cr =>
-      `<span class="filter-button" data-cr="${cr}">${cr}</span>`
-    ).join(" • ");
-
-    crEl.querySelectorAll(".filter-button").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const cr = btn.dataset.cr;
-        if (activeCRs.has(cr)) { activeCRs.delete(cr); btn.classList.remove("active"); }
-        else { activeCRs.add(cr); btn.classList.add("active"); }
-        applyFilters();
-      });
+    uniqueCRs.forEach(cr => {
+      const opt = document.createElement("option");
+      opt.value = cr;
+      opt.textContent = cr;
+      crEl.appendChild(opt);
     });
 
     // Source Filters
@@ -105,25 +88,20 @@ async function loadMonsters() {
       monsters.map(m => m.tags[m.tags.length - 1]).filter(Boolean)
     )].sort();
 
-    sourceEl.innerHTML = uniqueSources.map(src =>
-      `<span class="filter-button" data-source="${src}">${formatSource(src)}</span>`
-    ).join(" • ");
-
-    sourceEl.querySelectorAll(".filter-button").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const src = btn.dataset.source;
-        if (activeSources.has(src)) { activeSources.delete(src); btn.classList.remove("active"); }
-        else { activeSources.add(src); btn.classList.add("active"); }
-        applyFilters();
-      });
+    uniqueSources.forEach(src => {
+      const opt = document.createElement("option");
+      opt.value = src;
+      opt.textContent = formatSource(src);
+      sourceEl.appendChild(opt);
     });
-
-    // Search
-    searchEl.addEventListener("input", () => applyFilters());
 
     // Apply Filters
     function applyFilters() {
       const query = searchEl.value.toLowerCase();
+
+      const activeTypes = new Set(Array.from(typesEl.selectedOptions).map(o => o.value));
+      const activeCRs = new Set(Array.from(crEl.selectedOptions).map(o => o.value));
+      const activeSources = new Set(Array.from(sourceEl.selectedOptions).map(o => o.value));
 
       const filtered = monsters.filter(m => {
         if (query && !(m._displayName || m.name || "").toLowerCase().includes(query)) return false;
@@ -174,6 +152,12 @@ async function loadMonsters() {
         statBlockEl.textContent = "Failed to load stat block.";
       }
     }
+
+    // Event Listeners
+    searchEl.addEventListener("input", applyFilters);
+    typesEl.addEventListener("change", applyFilters);
+    crEl.addEventListener("change", applyFilters);
+    sourceEl.addEventListener("change", applyFilters);
 
     // Initial render
     renderList(monsters);
