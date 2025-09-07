@@ -234,3 +234,27 @@ strong em {
 .monster-link a:hover {
   color: #FFBF00;
 }
+/* Filter Buttons */
+.filter-bar {
+  margin: 0.5em 0 1em;
+}
+
+.filter-button {
+  display: inline-block;
+  margin: 0 0.4em;
+  padding: 0.3em 0.6em;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #f4f4f4;
+  transition: background 0.2s, color 0.2s;
+}
+
+.filter-button:hover {
+  background: #ddd;
+}
+
+.filter-button.active {
+  background: #333;
+  color: #fff;
+  font-weight: bold;
+}
