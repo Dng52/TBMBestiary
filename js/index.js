@@ -1,40 +1,22 @@
-// -----------------------------
-// CR Parsing Helpers
-// -----------------------------
-
-// Parse CR for sorting: converts fractions to decimal, ignores XP
+// --- CR Helpers ---
 function parseCR(cr) {
   if (!cr) return NaN; // treat missing as NaN
-
   cr = cr.replace(/\(.*?\)/, "").trim(); // Remove XP
-
   if (cr === "0") return 0;
   if (cr.includes("/")) {
     const [num, den] = cr.split("/").map(Number);
     return den ? num / den : NaN;
   }
-
   const val = parseFloat(cr);
   return isNaN(val) ? NaN : val;
 }
 
-// Clean CR string for display (removes XP)
 function cleanCR(cr) {
   if (!cr) return "?";
   return cr.replace(/\(.*?\)/, "").trim();
 }
 
-// -----------------------------
-// State
-// -----------------------------
-let selectedFilters = {
-  type: new Set(),
-  cr: new Set()
-};
-
-// -----------------------------
-// Main Loader
-// -----------------------------
+// --- Main Loader ---
 async function loadMonsters() {
   try {
     const entries = await fetch("data/index.json")
@@ -43,7 +25,7 @@ async function loadMonsters() {
         return r.json();
       });
 
-    // Load each monster JSON with individual error handling
+    // Load each monster JSON
     const monsters = await Promise.all(entries.map(async e => {
       try {
         const res = await fetch(`data/${e.file}`);
@@ -51,131 +33,127 @@ async function loadMonsters() {
         const m = await res.json();
         m._file = e.file;
         m._displayName = e.name;
-        m._cleanCR = cleanCR(m.cr);        // for headings
-        m._crSortValue = parseCR(m.cr);    // numeric value for sorting
+        m._cleanCR = cleanCR(m.cr);
+        m._crSortValue = parseCR(m.cr);
         return m;
       } catch (err) {
         console.error(`Failed to load ${e.file}:`, err);
-        return null; // skip this monster
+        return null;
       }
     }));
 
-    // Remove any failed loads
+    // Valid monsters only
     const validMonsters = monsters.filter(m => m);
 
-    // Sort by CR numeric value, putting NaN CRs at the bottom, then name
+    // Sort by CR then name
     validMonsters.sort((a, b) => {
       const crA = a._crSortValue;
       const crB = b._crSortValue;
-
       const aIsNaN = isNaN(crA);
       const bIsNaN = isNaN(crB);
 
       if (aIsNaN && bIsNaN) return a._displayName.localeCompare(b._displayName);
-      if (aIsNaN) return 1; // a goes after b
-      if (bIsNaN) return -1; // b goes after a
-
+      if (aIsNaN) return 1;
+      if (bIsNaN) return -1;
       if (crA !== crB) return crA - crB;
       return a._displayName.localeCompare(b._displayName);
     });
 
-    // Setup UI
+    // Elements
     const listEl = document.getElementById("monster-list");
     const typesEl = document.getElementById("creature-types");
     const crEl = document.getElementById("cr-filters");
     const searchEl = document.getElementById("search");
 
+    // Active filters
+    const activeTypes = new Set();
+    const activeCRs = new Set();
+
+    // --- Creature Types ---
     const creatureTypes = [
-      "aberration", "beast", "celestial", "construct", "dragon", "elemental",
-      "fey", "fiend", "giant", "humanoid", "monstrosity", "ooze", "plant", "undead"
+      "aberration", "beast", "celestial", "construct", "dragon",
+      "elemental", "fey", "fiend", "giant", "humanoid",
+      "monstrosity", "ooze", "plant", "undead"
     ];
 
-    // Unique CRs from dataset (excluding NaN)
+    typesEl.innerHTML = creatureTypes
+      .map(t => `<span class="filter-button" data-type="${t}">${t}</span>`)
+      .join(" • ");
+
+    typesEl.querySelectorAll(".filter-button").forEach(el => {
+      el.addEventListener("click", () => {
+        const type = el.dataset.type;
+        if (activeTypes.has(type)) {
+          activeTypes.delete(type);
+          el.classList.remove("active");
+        } else {
+          activeTypes.add(type);
+          el.classList.add("active");
+        }
+        applyFilters();
+      });
+    });
+
+    // --- CR Filters ---
     const uniqueCRs = [...new Set(
       validMonsters
-        .map(m => m._cleanCR)
-        .filter(c => c !== "?" && c !== "Undefined")
-    )].sort((a, b) => parseCR(a) - parseCR(b));
+        .map(m => (isNaN(m._crSortValue) ? null : m._cleanCR))
+        .filter(Boolean)
+    )];
+    uniqueCRs.sort((a, b) => parseCR(a) - parseCR(b));
 
-    // Render type filters
-    typesEl.innerHTML = creatureTypes.map(t => 
-      `<button class="filter-button" data-type="type" data-value="${t}">${t}</button>`
-    ).join(" ");
+    crEl.innerHTML = uniqueCRs
+      .map(cr => `<span class="filter-button" data-cr="${cr}">${cr}</span>`)
+      .join(" • ");
 
-    // Render CR filters
-    crEl.innerHTML = uniqueCRs.map(c =>
-      `<button class="filter-button" data-type="cr" data-value="${c}">CR ${c}</button>`
-    ).join(" ");
-
-    // Hook up event listeners
-    document.querySelectorAll(".filter-button").forEach(btn => {
-      btn.addEventListener("click", () => {
-        const type = btn.dataset.type;
-        const val = btn.dataset.value;
-        toggleFilter(type, val);
-      });
-    });
-
-    searchEl.addEventListener("input", () => {
-      renderList(validMonsters);
-    });
-
-    renderList(validMonsters);
-
-    // -----------------------------
-    // Filtering + Rendering
-    // -----------------------------
-    function toggleFilter(filterType, value) {
-      const set = selectedFilters[filterType];
-      if (set.has(value)) {
-        set.delete(value); // turn off
-      } else {
-        set.add(value); // turn on
-      }
-      updateFilterUI();
-      renderList(validMonsters);
-    }
-
-    function updateFilterUI() {
-      document.querySelectorAll(".filter-button").forEach(btn => {
-        const type = btn.dataset.type;
-        const val = btn.dataset.value;
-        if (selectedFilters[type].has(val)) {
-          btn.classList.add("active");
+    crEl.querySelectorAll(".filter-button").forEach(el => {
+      el.addEventListener("click", () => {
+        const cr = el.dataset.cr;
+        if (activeCRs.has(cr)) {
+          activeCRs.delete(cr);
+          el.classList.remove("active");
         } else {
-          btn.classList.remove("active");
+          activeCRs.add(cr);
+          el.classList.add("active");
         }
+        applyFilters();
       });
-    }
+    });
 
-    function renderList(data) {
+    // --- Search ---
+    searchEl.addEventListener("input", () => {
+      applyFilters();
+    });
+
+    // --- Apply Filters ---
+    function applyFilters() {
       const query = searchEl.value.toLowerCase();
 
-      let filtered = data;
+      const filtered = validMonsters.filter(m => {
+        // Search filter
+        if (query && !m._displayName.toLowerCase().includes(query)) {
+          return false;
+        }
+        // Type filter
+        if (activeTypes.size > 0 && !activeTypes.has(m.type)) {
+          return false;
+        }
+        // CR filter
+        if (activeCRs.size > 0 && !activeCRs.has(m._cleanCR)) {
+          return false;
+        }
+        return true;
+      });
 
-      // Apply type filters (AND logic)
-      if (selectedFilters.type.size > 0) {
-        filtered = filtered.filter(m => selectedFilters.type.has(m.type));
-      }
+      renderList(filtered);
+    }
 
-      // Apply CR filters (OR logic)
-      if (selectedFilters.cr.size > 0) {
-        filtered = filtered.filter(m => selectedFilters.cr.has(m._cleanCR));
-      }
-
-      // Apply search
-      if (query) {
-        filtered = filtered.filter(m =>
-          m._displayName.toLowerCase().includes(query)
-        );
-      }
-
-      // Clear
+    // --- Render List ---
+    function renderList(data) {
       listEl.innerHTML = "";
       let currentCR = null;
 
-      filtered.forEach(m => {
-        // Display 'Undefined' for non-numeric CR
+      data.forEach(m => {
         let crVal = isNaN(m._crSortValue) ? "Undefined" : m._cleanCR;
 
         if (crVal !== currentCR) {
@@ -191,6 +169,9 @@ async function loadMonsters() {
         listEl.appendChild(li);
       });
     }
+
+    // Initial render
+    renderList(validMonsters);
 
   } catch (err) {
     console.error("Failed to load monsters:", err);
