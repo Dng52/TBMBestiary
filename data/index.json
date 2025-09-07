@@ -5248,6 +5248,10 @@
     "file": "monolith-footman.json"
   },
   {
+    "name": "monsters",
+    "file": "monsters.json"
+  },
+  {
     "name": "Moonlit King",
     "file": "moonlit-king.json"
   },
