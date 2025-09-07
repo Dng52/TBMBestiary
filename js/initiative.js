@@ -137,22 +137,34 @@ async function loadMonsters() {
       });
     }
 
-    // -----------------------------
-    // Add monster to initiative tracker
-    // -----------------------------
-    function addToTracker(monster) {
-      const row = document.createElement("tr");
-      row.innerHTML = `
-        <td>${monster._displayName || monster.name}</td>
-        <td><input type="number" value="0" style="width: 50px;"></td>
-        <td><input type="number" value="${monster.ac || "?"}" style="width:50px;"></td>
-        <td><input type="number" value="${monster.hp || "?"}" style="width:60px;"></td>
-        <td><input type="text" style="width:100%;"></td>
-        <td><button class="remove-btn">Remove</button></td>
-      `;
-      row.querySelector(".remove-btn").addEventListener("click", () => row.remove());
-      trackerBody.appendChild(row);
-    }
+ // -----------------------------
+// Add monster to initiative tracker
+// -----------------------------
+function addToTracker(monster) {
+  const row = document.createElement("tr");
+
+  // Extract numeric HP (take the first number before any parentheses)
+  let hpValue = "?";
+  if (monster.hp) {
+    const match = monster.hp.match(/\d+/);
+    if (match) hpValue = match[0];
+  }
+
+  row.innerHTML = `
+    <td>${monster._displayName || monster.name}</td>
+    <td><input type="number" value="0" style="width: 50px;"></td>
+    <td>${monster.ac || "?"}</td>
+    <td><input type="number" value="${hpValue}" style="width: 60px;"></td>
+    <td><input type="text" style="width: 100%;"></td>
+    <td><button class="remove-btn">Remove</button></td>
+  `;
+
+  row.querySelector(".remove-btn").addEventListener("click", () => {
+    row.remove();
+  });
+
+  trackerBody.appendChild(row);
+}
 
     // -----------------------------
     // Initial render
