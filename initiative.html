@@ -5,71 +5,95 @@
   <title>Initiative Tracker</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
-    .layout {
+    .container {
       display: grid;
-      grid-template-columns: 1fr 1.5fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 1rem;
-      height: 100vh;
     }
-    .panel {
+    .filter-section {
+      margin-bottom: 1rem;
+    }
+    .filter-button {
+      cursor: pointer;
+      padding: 0.25em 0.5em;
       border: 1px solid #ccc;
-      padding: 1rem;
-      overflow-y: auto;
+      border-radius: 4px;
+      margin: 0.2em;
+      display: inline-block;
+    }
+    .filter-button.active {
+      background: #492468;
+      color: white;
+      border-color: #492468;
+    }
+    .monster-row {
+      cursor: pointer;
+      padding: 0.25em 0.5em;
+      border-bottom: 1px solid #eee;
+    }
+    .monster-row:hover {
+      background: #f0f0f0;
     }
     table {
       width: 100%;
       border-collapse: collapse;
     }
     th, td {
-      border-bottom: 1px solid #ddd;
-      padding: 0.5rem;
-      text-align: left;
+      border: 1px solid #ccc;
+      padding: 0.25em;
+      text-align: center;
+    }
+    th {
+      background: #eee;
     }
   </style>
 </head>
 <body>
-  <h1 style="text-align:center">Initiative Tracker</h1>
-  <div class="layout">
-<!-- Left: Monster Table -->
-<div class="panel" id="monster-panel">
-  <h2>Monsters</h2>
-  <input id="search" type="text" placeholder="Search by name..." style="width:100%">
+  <div class="wrapper">
+    <h1>Initiative Tracker</h1>
+    <div class="container">
+      <!-- Left: Monster List & Filters -->
+      <div>
+        <div class="filter-section">
+          <h3>Creature Types</h3>
+          <div id="creature-types"></div>
+        </div>
+        <div class="filter-section">
+          <h3>CR</h3>
+          <div id="cr-filters"></div>
+        </div>
+        <div class="filter-section">
+          <h3>Sources</h3>
+          <div id="source-filters"></div>
+        </div>
+        <div class="filter-section">
+          <input type="text" id="search" placeholder="Search creatures by name...">
+        </div>
+        <div id="monster-list"></div>
+      </div>
 
-  <div>
-    <h4>Type</h4>
-    <div id="filter-type" class="filter-container"></div>
+      <!-- Middle: Initiative Tracker -->
+      <div>
+        <h3>Tracker</h3>
+        <table id="initiative-table">
+          <thead>
+            <tr>
+              <th>Initiative</th>
+              <th>Name</th>
+              <th>AC</th>
+              <th>HP</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
 
-    <h4>CR</h4>
-    <div id="filter-cr" class="filter-container"></div>
-
-    <h4>Source</h4>
-    <div id="filter-source" class="filter-container"></div>
-  </div>
-
-  <table id="monster-table">
-    <thead>
-      <tr><th>Name</th><th>Type</th><th>CR</th><th>Source</th></tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-</div>
-
-
-    <!-- Middle: Initiative Tracker -->
-    <div class="panel" id="tracker-panel">
-      <h2>Tracker</h2>
-      <table id="tracker-table">
-        <thead>
-          <tr><th>Init</th><th>Name</th><th>AC</th><th>HP</th><th>Notes</th></tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- Right: Stat Block -->
-    <div class="panel" id="statblock-panel">
-      <h2>Stat Block</h2>
-      <div id="statblock-content">Select a creature from the tracker.</div>
+      <!-- Right: Stat Block -->
+      <div>
+        <h3>Stat Block</h3>
+        <div id="stat-block"></div>
+      </div>
     </div>
   </div>
   <script src="js/initiative.js"></script>
