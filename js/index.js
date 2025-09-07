@@ -23,35 +23,29 @@ function cleanCR(cr) {
 // -----------------------------
 async function loadMonsters() {
   try {
-    const entries = await fetch("data/index.json")
-      .then(r => { if (!r.ok) throw new Error(`Failed to load index.json: ${r.status}`); return r.json(); });
+    // Fetch the prebuilt index
+    const validMonsters = await fetch("data/monsters.json")
+      .then(r => { 
+        if (!r.ok) throw new Error(`Failed to load monsters.json: ${r.status}`); 
+        return r.json();
+      });
 
-    const monsters = await Promise.all(entries.map(async e => {
-      try {
-        const res = await fetch(`data/${e.file}`);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const m = await res.json();
-        m._file = e.file;
-        m._displayName = e.name;
-        m._cleanCR = cleanCR(m.cr);
-        m._crSortValue = parseCR(m.cr);
-        return m;
-      } catch (err) {
-        console.error(`Failed to load ${e.file}:`, err);
-        return null;
-      }
-    }));
+    // Compute display values
+    validMonsters.forEach(m => {
+      m._cleanCR = cleanCR(m.cr);
+      m._crSortValue = parseCR(m.cr);
+      if (!m.tags) m.tags = [];
+    });
 
-    const validMonsters = monsters.filter(m => m);
-
+    // Sort by CR numeric value, NaN at bottom, then by name
     validMonsters.sort((a, b) => {
       const crA = a._crSortValue, crB = b._crSortValue;
       const aNaN = isNaN(crA), bNaN = isNaN(crB);
-      if (aNaN && bNaN) return a._displayName.localeCompare(b._displayName);
+      if (aNaN && bNaN) return a.name.localeCompare(b.name);
       if (aNaN) return 1;
       if (bNaN) return -1;
       if (crA !== crB) return crA - crB;
-      return a._displayName.localeCompare(b._displayName);
+      return a.name.localeCompare(b.name);
     });
 
     // -----------------------------
@@ -87,7 +81,7 @@ async function loadMonsters() {
 
     typesEl.innerHTML = creatureTypes.map(t =>
       `<span class="filter-button" data-type="${t}">${t}</span>`
-    ).join("");
+    ).join(" • ");
 
     typesEl.querySelectorAll(".filter-button").forEach(btn => {
       btn.addEventListener("click", () => {
@@ -107,7 +101,7 @@ async function loadMonsters() {
 
     crEl.innerHTML = uniqueCRs.map(cr =>
       `<span class="filter-button" data-cr="${cr}">${cr}</span>`
-    ).join("");
+    ).join(" • ");
 
     crEl.querySelectorAll(".filter-button").forEach(btn => {
       btn.addEventListener("click", () => {
@@ -122,12 +116,12 @@ async function loadMonsters() {
     // Source Filters
     // -----------------------------
     const uniqueSources = [...new Set(
-      validMonsters.map(m => m.tags?.[m.tags.length - 1]).filter(Boolean)
+      validMonsters.map(m => m.tags[m.tags.length - 1]).filter(Boolean)
     )].sort();
 
     sourceEl.innerHTML = uniqueSources.map(src =>
       `<span class="filter-button" data-source="${src}">${formatSource(src)}</span>`
-    ).join("");
+    ).join(" • ");
 
     sourceEl.querySelectorAll(".filter-button").forEach(btn => {
       btn.addEventListener("click", () => {
@@ -151,7 +145,7 @@ async function loadMonsters() {
 
       const filtered = validMonsters.filter(m => {
         // Search
-        if (query && !m._displayName.toLowerCase().includes(query)) return false;
+        if (query && !m.name.toLowerCase().includes(query)) return false;
 
         // Type filter (AND logic)
         if (activeTypes.size > 0 && !activeTypes.has(m.type)) return false;
@@ -160,7 +154,7 @@ async function loadMonsters() {
         if (activeCRs.size > 0 && !activeCRs.has(m._cleanCR)) return false;
 
         // Source filter (OR logic)
-        if (activeSources.size > 0 && !activeSources.has(m.tags?.[m.tags.length - 1])) return false;
+        if (activeSources.size > 0 && !activeSources.has(m.tags[m.tags.length - 1])) return false;
 
         return true;
       });
@@ -186,7 +180,7 @@ async function loadMonsters() {
 
         const li = document.createElement("div");
         li.className = "monster-link";
-        li.innerHTML = `<a href="monster.html?file=${encodeURIComponent(m._file)}">${m._displayName}</a>`;
+        li.innerHTML = `<a href="monster.html?file=${encodeURIComponent(m.file)}">${m.name}</a>`;
         listEl.appendChild(li);
       });
     }
