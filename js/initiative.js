@@ -1,5 +1,5 @@
 // -----------------------------
-// CR Helpers
+// CR Parsing Helpers
 // -----------------------------
 function parseCR(cr) {
   if (!cr) return NaN;
@@ -18,18 +18,14 @@ function cleanCR(cr) {
   return cr.replace(/\(.*?\)/, "").trim();
 }
 
-function formatSource(name) {
-  return name.split("-").map(w => w[0].toUpperCase() + w.slice(1)).join(" ");
-}
-
 // -----------------------------
 // Main Loader
 // -----------------------------
 async function loadMonsters() {
   try {
-    const monsters = await fetch("data/monsters.json").then(r => r.json());
+    const monsters = await fetch("data/monsters.json")
+      .then(r => { if (!r.ok) throw new Error("Failed to load monsters.json"); return r.json(); });
 
-    // Compute CR helpers
     monsters.forEach(m => {
       m._cleanCR = cleanCR(m.cr);
       m._crSortValue = parseCR(m.cr);
@@ -49,59 +45,88 @@ async function loadMonsters() {
       return nameA.localeCompare(nameB);
     });
 
-    // DOM Elements
+    // DOM elements
     const listEl = document.getElementById("monster-list");
     const typesEl = document.getElementById("creature-types");
     const crEl = document.getElementById("cr-filters");
     const sourceEl = document.getElementById("source-filters");
     const searchEl = document.getElementById("search");
-    const trackerBody = document.querySelector("#initiative-table tbody");
-    const statBlockEl = document.getElementById("stat-block");
 
-    // Creature Types
+    const activeTypes = new Set();
+    const activeCRs = new Set();
+    const activeSources = new Set();
+
+    // Format sources
+    function formatSource(name) {
+      return name.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
+    }
+
+    // -----------------------------
+    // Creature Types (Checkboxes)
+    // -----------------------------
     const creatureTypes = [
       "aberration","beast","celestial","construct","dragon","elemental",
       "fey","fiend","giant","humanoid","monstrosity","ooze","plant","undead"
     ];
 
-    creatureTypes.forEach(t => {
-      const opt = document.createElement("option");
-      opt.value = t;
-      opt.textContent = t;
-      typesEl.appendChild(opt);
+    typesEl.innerHTML = creatureTypes.map(t =>
+      `<label><input type="checkbox" value="${t}"> ${t}</label>`
+    ).join("");
+
+    typesEl.querySelectorAll("input").forEach(cb => {
+      cb.addEventListener("change", () => {
+        if (cb.checked) activeTypes.add(cb.value);
+        else activeTypes.delete(cb.value);
+        applyFilters();
+      });
     });
 
-    // CR Filters
+    // -----------------------------
+    // CR Filters (Checkboxes)
+    // -----------------------------
     const uniqueCRs = [...new Set(
       monsters.map(m => isNaN(m._crSortValue) ? null : m._cleanCR).filter(Boolean)
     )].sort((a, b) => parseCR(a) - parseCR(b));
 
-    uniqueCRs.forEach(cr => {
-      const opt = document.createElement("option");
-      opt.value = cr;
-      opt.textContent = cr;
-      crEl.appendChild(opt);
+    crEl.innerHTML = uniqueCRs.map(cr =>
+      `<label><input type="checkbox" value="${cr}"> ${cr}</label>`
+    ).join("");
+
+    crEl.querySelectorAll("input").forEach(cb => {
+      cb.addEventListener("change", () => {
+        if (cb.checked) activeCRs.add(cb.value);
+        else activeCRs.delete(cb.value);
+        applyFilters();
+      });
     });
 
-    // Source Filters
+    // -----------------------------
+    // Source Filters (Checkboxes)
+    // -----------------------------
     const uniqueSources = [...new Set(
       monsters.map(m => m.tags[m.tags.length - 1]).filter(Boolean)
     )].sort();
 
-    uniqueSources.forEach(src => {
-      const opt = document.createElement("option");
-      opt.value = src;
-      opt.textContent = formatSource(src);
-      sourceEl.appendChild(opt);
+    sourceEl.innerHTML = uniqueSources.map(src =>
+      `<label><input type="checkbox" value="${src}"> ${formatSource(src)}</label>`
+    ).join("");
+
+    sourceEl.querySelectorAll("input").forEach(cb => {
+      cb.addEventListener("change", () => {
+        if (cb.checked) activeSources.add(cb.value);
+        else activeSources.delete(cb.value);
+        applyFilters();
+      });
     });
 
+    // Search
+    searchEl.addEventListener("input", () => applyFilters());
+
+    // -----------------------------
     // Apply Filters
+    // -----------------------------
     function applyFilters() {
       const query = searchEl.value.toLowerCase();
-
-      const activeTypes = new Set(Array.from(typesEl.selectedOptions).map(o => o.value));
-      const activeCRs = new Set(Array.from(crEl.selectedOptions).map(o => o.value));
-      const activeSources = new Set(Array.from(sourceEl.selectedOptions).map(o => o.value));
 
       const filtered = monsters.filter(m => {
         if (query && !(m._displayName || m.name || "").toLowerCase().includes(query)) return false;
@@ -114,50 +139,51 @@ async function loadMonsters() {
       renderList(filtered);
     }
 
+    // -----------------------------
     // Render Monster List
+    // -----------------------------
     function renderList(data) {
       listEl.innerHTML = "";
       data.forEach(m => {
-        const row = document.createElement("div");
-        row.className = "monster-row";
-        row.textContent = `${m._displayName || m.name} (CR ${m._cleanCR}, ${m.type}, ${formatSource(m.tags[m.tags.length - 1])})`;
-        row.addEventListener("click", () => addToTracker(m));
-        listEl.appendChild(row);
+        const div = document.createElement("div");
+        div.className = "monster-row";
+        div.textContent = `${m._displayName || m.name || m._file} (CR ${m._cleanCR}, ${m.type}, ${m.tags[m.tags.length-1] || "?"})`;
+        div.addEventListener("click", () => addToTracker(m));
+        listEl.appendChild(div);
       });
     }
 
-    // Add to Tracker
+    // -----------------------------
+    // Tracker
+    // -----------------------------
+    const trackerBody = document.querySelector("#initiative-table tbody");
+
     function addToTracker(monster) {
-      const tr = document.createElement("tr");
-      tr.innerHTML = `
+      const row = document.createElement("tr");
+      row.innerHTML = `
+        <td>${monster._displayName || monster.name || monster._file}</td>
         <td contenteditable="true"></td>
-        <td>${monster._displayName || monster.name}</td>
-        <td>${monster.ac || ""}</td>
-        <td contenteditable="true">${monster.hp || ""}</td>
+        <td contenteditable="true"></td>
+        <td contenteditable="true"></td>
         <td contenteditable="true"></td>
       `;
-      tr.addEventListener("click", () => showStatBlock(monster));
-      trackerBody.appendChild(tr);
+      row.addEventListener("click", () => showStatBlock(monster));
+      trackerBody.appendChild(row);
+      showStatBlock(monster);
     }
 
-    // Show Stat Block
-    async function showStatBlock(monster) {
-      try {
-        const data = await fetch(`data/${monster._file}`).then(r => r.json());
-        statBlockEl.innerHTML = `
-          <h2>${data.name}</h2>
-          <pre>${JSON.stringify(data, null, 2)}</pre>
-        `;
-      } catch (err) {
-        statBlockEl.textContent = "Failed to load stat block.";
-      }
+    // -----------------------------
+    // Stat Block Loader
+    // -----------------------------
+    function showStatBlock(monster) {
+      document.getElementById("stat-block").innerHTML = `
+        <h3>${monster._displayName || monster.name || monster._file}</h3>
+        <p><b>Type:</b> ${monster.type || "?"}</p>
+        <p><b>CR:</b> ${monster._cleanCR}</p>
+        <p><b>Source:</b> ${monster.tags[monster.tags.length-1] || "?"}</p>
+        <pre>${JSON.stringify(monster, null, 2)}</pre>
+      `;
     }
-
-    // Event Listeners
-    searchEl.addEventListener("input", applyFilters);
-    typesEl.addEventListener("change", applyFilters);
-    crEl.addEventListener("change", applyFilters);
-    sourceEl.addEventListener("change", applyFilters);
 
     // Initial render
     renderList(monsters);
