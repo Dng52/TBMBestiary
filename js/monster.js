@@ -10,7 +10,7 @@ async function loadMonster() {
       return r.json();
     });
 
-    // Find the monster by _file
+    // Find the monster by file name
     const monster = monsters.find(m => m._file === file);
     if (!monster) {
       console.error(`Monster ${file} not found`);
@@ -18,6 +18,7 @@ async function loadMonster() {
     }
 
     const displayName = monster._displayName || monster.name || file.replace(".json", "");
+
     const container = document.getElementById("monster");
 
     // Helper for ability score formatting
@@ -37,15 +38,22 @@ async function loadMonster() {
       </div>
       <hr class="orange-border">
 
-      <div class="property-line"><h4>Armor Class&nbsp</h4><p>${monster.ac || "—"}</p></div>
-      <div class="property-line"><h4>Hit Points&nbsp</h4><p>${monster.hp || "—"}</p></div>
+      <div class="property-line">
+        <h4>Armor Class&nbsp</h4><p>${monster.ac}</p>
+      </div>
+      <div class="property-line">
+        <h4>Hit Points&nbsp</h4><p>${monster.hp}</p>
+      </div>
       ${monster.speed ? `<div class="property-line"><h4>Speed&nbsp</h4><p>${monster.speed}</p></div>` : ""}
-      
+
       <hr class="orange-border">
 
       <div class="abilities">
         ${Object.entries(monster.abilities || {}).map(([k,v]) => `
-          <div><h4>${k.toUpperCase()}</h4><p>${formatAbility(v)}</p></div>
+          <div>
+            <h4>${k.toUpperCase()}</h4>
+            <p>${formatAbility(v)}</p>
+          </div>
         `).join("")}
       </div>
 
@@ -59,19 +67,31 @@ async function loadMonster() {
       ${monster.conimmunities ? `<div class="property-line"><h4>Condition Immunities&nbsp</h4><p>${monster.conimmunities}</p></div>` : ""}
       ${monster.senses ? `<div class="property-line"><h4>Senses&nbsp</h4><p>${monster.senses}</p></div>` : ""}
       ${monster.languages ? `<div class="property-line"><h4>Languages&nbsp</h4><p>${monster.languages}</p></div>` : ""}
-      <div class="property-line"><h4>Challenge&nbsp</h4><p>${monster.cr || "—"}</p></div>
+      <div class="property-line"><h4>Challenge&nbsp</h4><p>${monster.cr}</p></div>
 
       <hr class="orange-border">
 
-      ${monster.traits?.length ? monster.traits.map(t => `<p><strong><em>${t.name}.</em></strong> ${t.desc}</p>`).join("") : ""}
-      ${monster.actions?.length ? `<h3>Actions</h3>${monster.actions.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}` : ""}
-      ${monster.reactions?.length ? `<h3>Reactions</h3>${monster.reactions.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}` : ""}
-      ${monster.legendary?.length ? `<h3>Legendary Actions</h3>
-        <p>The ${displayName} can take ${monster.legendarynumber || 3} legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The ${displayName} regains spent legendary actions at the start of its turn.</p>
-        ${monster.legendary.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}` : ""}
-    `;
+      ${monster.traits && monster.traits.length ? `
+        ${monster.traits.map(t => `<p><strong><em>${t.name}.</em></strong> ${t.desc}</p>`).join("")}
+      ` : ""}
 
-    // Description, lair actions, and regional effects outside the stat block
+      ${monster.actions && monster.actions.length ? `
+        <h3>Actions</h3>
+        ${monster.actions.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}
+      ` : ""}
+
+      ${monster.reactions && monster.reactions.length ? `
+        <h3>Reactions</h3>
+        ${monster.reactions.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}
+      ` : ""}
+
+      ${monster.legendary && monster.legendary.length ? `
+        <h3>Legendary Actions</h3>
+        <p>The ${displayName} can take ${monster.legendarynumber || 3} legendary actions, choosing from the options below. Only one legendary action option can be used at a time and only at the end of another creature's turn. The ${displayName} regains spent legendary actions at the start of its turn.</p>
+        ${monster.legendary.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}
+      ` : ""}`;
+
+    // Add description, lair actions, and regional effects outside the stat block
     if (monster.description || monster.lairactions?.length || monster.regionaleffects?.length) {
       const outsideContainer = document.createElement("div");
       outsideContainer.style.background = "transparent";
@@ -79,7 +99,9 @@ async function loadMonster() {
 
       let outsideHTML = "";
 
-      if (monster.description) outsideHTML += `<p>${monster.description.replace(/\n/g, "<br>")}</p>`;
+      if (monster.description) {
+        outsideHTML += `<p>${monster.description.replace(/\n/g, "<br>")}</p>`;
+      }
 
       if (monster.lairactions?.length) {
         const lair = monster.lairactions[0];

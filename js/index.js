@@ -23,10 +23,10 @@ function cleanCR(cr) {
 // -----------------------------
 async function loadMonsters() {
   try {
-    // Fetch prebuilt monsters.json
+    // Fetch the prebuilt monsters.json
     const validMonsters = await fetch("data/monsters.json")
       .then(r => { 
-        if (!r.ok) throw new Error(`Failed to load monsters.json: ${r.status}`);
+        if (!r.ok) throw new Error(`Failed to load monsters.json: ${r.status}`); 
         return r.json();
       });
 
@@ -37,15 +37,19 @@ async function loadMonsters() {
       if (!m.tags) m.tags = [];
     });
 
-    // Sort by CR numeric value, NaN at bottom, then by name
+    // Sort by CR numeric value, NaN at bottom, then by _displayName
     validMonsters.sort((a, b) => {
       const crA = a._crSortValue, crB = b._crSortValue;
       const aNaN = isNaN(crA), bNaN = isNaN(crB);
-      if (aNaN && bNaN) return a.name.localeCompare(b.name);
+
+      const nameA = a._displayName || a.name || a.file || "";
+      const nameB = b._displayName || b.name || b.file || "";
+
+      if (aNaN && bNaN) return nameA.localeCompare(nameB);
       if (aNaN) return 1;
       if (bNaN) return -1;
       if (crA !== crB) return crA - crB;
-      return a.name.localeCompare(b.name);
+      return nameA.localeCompare(nameB);
     });
 
     // -----------------------------
@@ -144,10 +148,18 @@ async function loadMonsters() {
       const query = searchEl.value.toLowerCase();
 
       const filtered = validMonsters.filter(m => {
-        if (query && !m.name.toLowerCase().includes(query)) return false;
+        // Search
+        if (query && !(m._displayName || m.name || "").toLowerCase().includes(query)) return false;
+
+        // Type filter (AND logic)
         if (activeTypes.size > 0 && !activeTypes.has(m.type)) return false;
+
+        // CR filter (OR logic)
         if (activeCRs.size > 0 && !activeCRs.has(m._cleanCR)) return false;
+
+        // Source filter (OR logic)
         if (activeSources.size > 0 && !activeSources.has(m.tags[m.tags.length - 1])) return false;
+
         return true;
       });
 
@@ -172,7 +184,7 @@ async function loadMonsters() {
 
         const li = document.createElement("div");
         li.className = "monster-link";
-        li.innerHTML = `<a href="monster.html?file=${encodeURIComponent(m._file)}">${m.name}</a>`;
+        li.innerHTML = `<a href="monster.html?file=${encodeURIComponent(m._file)}">${m._displayName || m.name || m._file}</a>`;
         listEl.appendChild(li);
       });
     }
