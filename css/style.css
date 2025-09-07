@@ -280,3 +280,23 @@ strong em {
   background: #444;
   color: #fff;
 }
+/* Make checkbox groups flow horizontally */
+.filter-group label {
+  display: inline-flex;       /* inline with the next item */
+  align-items: center;        /* vertically align checkbox and text */
+  margin-right: 1rem;         /* space between items */
+  font-family: 'Bookmania', Georgia, serif;
+  font-size: 0.95rem;
+  color: #492468;
+}
+
+.filter-group input[type="checkbox"] {
+  margin-right: 0.25rem;      /* small gap between checkbox and text */
+}
+.filter-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+
