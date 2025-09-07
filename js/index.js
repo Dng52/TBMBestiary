@@ -99,13 +99,13 @@ async function loadMonsters() {
 
     // Render type filters
     typesEl.innerHTML = creatureTypes.map(t => 
-      `<span class="filter-button" data-type="type" data-value="${t}">${t}</span>`
-    ).join(" • ");
+      `<button class="filter-button" data-type="type" data-value="${t}">${t}</button>`
+    ).join(" ");
 
     // Render CR filters
     crEl.innerHTML = uniqueCRs.map(c =>
-      `<span class="filter-button" data-type="cr" data-value="${c}">CR ${c}</span>`
-    ).join(" • ");
+      `<button class="filter-button" data-type="cr" data-value="${c}">CR ${c}</button>`
+    ).join(" ");
 
     // Hook up event listeners
     document.querySelectorAll(".filter-button").forEach(btn => {

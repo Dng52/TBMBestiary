@@ -178,7 +178,10 @@ strong em {
   font-weight: bold;
   font-style: italic;
 }
-/* Creature types header */
+
+/* =========================
+   CREATURE TYPES HEADER
+   ========================= */
 #creature-types {
   font-family: 'Bookmania', Georgia, serif;
   text-align: center;
@@ -186,15 +189,10 @@ strong em {
   font-size: 1.1rem;
   color: #492468;
 }
-#creature-types .type-link {
-  cursor: pointer;
-  transition: color 0.2s;
-}
-#creature-types .type-link:hover {
-  color: #FFBF00;
-}
 
-/* Search bar */
+/* =========================
+   SEARCH BAR
+   ========================= */
 #search {
   display: block;
   margin: 0.5rem auto 1.5rem auto;
@@ -206,7 +204,48 @@ strong em {
   font-family: 'Bookmania', Georgia, serif;
 }
 
-/* Monster list */
+/* =========================
+   FILTER BUTTONS
+   ========================= */
+.filter-bar {
+  margin: 0.5em 0 1em;
+  text-align: center;
+}
+
+.filter-button {
+  display: inline-block;
+  margin: 0 0.2em;
+  padding: 0.3em 0.6em;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #f4f4f4;
+  transition: background 0.2s, color 0.2s;
+  font-family: 'Bookmania', Georgia, serif;
+  font-size: 0.95rem;
+}
+
+.filter-button::after {
+  content: "•";
+  margin-left: 0.4em;
+  color: #492468;
+}
+.filter-button:last-child::after {
+  content: "";
+}
+
+.filter-button:hover {
+  background: #ddd;
+}
+
+.filter-button.active {
+  background: #492468;
+  color: #fff;
+  font-weight: bold;
+}
+
+/* =========================
+   MONSTER LIST
+   ========================= */
 #monster-list {
   text-align: start;
   margin-left: 10%;
@@ -233,28 +272,4 @@ strong em {
 }
 .monster-link a:hover {
   color: #FFBF00;
-}
-/* Filter Buttons */
-.filter-bar {
-  margin: 0.5em 0 1em;
-}
-
-.filter-button {
-  display: inline-block;
-  margin: 0 0.4em;
-  padding: 0.3em 0.6em;
-  border-radius: 4px;
-  cursor: pointer;
-  background: #f4f4f4;
-  transition: background 0.2s, color 0.2s;
-}
-
-.filter-button:hover {
-  background: #ddd;
-}
-
-.filter-button.active {
-  background: #333;
-  color: #fff;
-  font-weight: bold;
 }
