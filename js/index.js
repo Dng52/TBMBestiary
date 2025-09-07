@@ -22,21 +22,34 @@ function cleanCR(cr) {
 
 async function loadMonsters() {
   try {
-    const entries = await fetch("data/index.json").then(r => r.json());
+    const entries = await fetch("data/index.json")
+      .then(r => {
+        if (!r.ok) throw new Error(`Failed to load index.json: ${r.status}`);
+        return r.json();
+      });
 
-    const monsters = await Promise.all(
-      entries.map(e => fetch(`data/${e.file}`).then(r => r.json()))
-    );
+    // Load each monster JSON with individual error handling
+    const monsters = await Promise.all(entries.map(async e => {
+      try {
+        const res = await fetch(`data/${e.file}`);
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        const m = await res.json();
+        m._file = e.file;
+        m._displayName = e.name;
+        m._cleanCR = cleanCR(m.cr);
+        m._crSortValue = parseCR(m.cr);
+        return m;
+      } catch (err) {
+        console.error(`Failed to load ${e.file}:`, err);
+        return null; // skip this monster
+      }
+    }));
 
-    monsters.forEach((m, i) => {
-      m._file = entries[i].file;
-      m._displayName = entries[i].name;
-      m._cleanCR = cleanCR(m.cr);        // for headings
-      m._crSortValue = parseCR(m.cr);    // numeric value for sorting
-    });
+    // Remove any failed loads
+    const validMonsters = monsters.filter(m => m);
 
-    // Sort by CR (numeric) and then name
-    monsters.sort((a, b) => {
+    // Sort by CR numeric value, then name
+    validMonsters.sort((a, b) => {
       if (a._crSortValue !== b._crSortValue) return a._crSortValue - b._crSortValue;
       return a._displayName.localeCompare(b._displayName);
     });
@@ -54,19 +67,19 @@ async function loadMonsters() {
 
     typesEl.querySelectorAll(".type-link").forEach(el => {
       el.addEventListener("click", () => {
-        renderList(monsters.filter(m => m.type === el.textContent));
+        renderList(validMonsters.filter(m => m.type === el.textContent));
       });
     });
 
     searchEl.addEventListener("input", () => {
       const query = searchEl.value.toLowerCase();
-      const filtered = monsters.filter(m =>
+      const filtered = validMonsters.filter(m =>
         m._displayName.toLowerCase().includes(query)
       );
       renderList(filtered);
     });
 
-    renderList(monsters);
+    renderList(validMonsters);
 
     function renderList(data) {
       listEl.innerHTML = "";
@@ -75,7 +88,6 @@ async function loadMonsters() {
       data.forEach(m => {
         const crVal = m._cleanCR || "?";
 
-        // Only add heading when CR changes
         if (crVal !== currentCR) {
           currentCR = crVal;
           const heading = document.createElement("h3");
@@ -89,6 +101,9 @@ async function loadMonsters() {
         listEl.appendChild(li);
       });
     }
+
+  } catch (err) {
+    console.error("Failed to load monsters:", err);
   } finally {
     console.log("Finished attempting to load monsters");
   }
