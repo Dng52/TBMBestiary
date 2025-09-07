@@ -23,21 +23,26 @@ function cleanCR(cr) {
 // -----------------------------
 async function loadMonsters() {
   try {
-    const monsters = await fetch("data/monsters.json")
-      .then(r => { if (!r.ok) throw new Error("Failed to load monsters.json"); return r.json(); });
+    // Fetch monsters.json
+    const validMonsters = await fetch("data/monsters.json")
+      .then(r => { 
+        if (!r.ok) throw new Error(`Failed to load monsters.json: ${r.status}`); 
+        return r.json();
+      });
 
-    monsters.forEach(m => {
+    // Compute display values
+    validMonsters.forEach(m => {
       m._cleanCR = cleanCR(m.cr);
       m._crSortValue = parseCR(m.cr);
       if (!m.tags) m.tags = [];
     });
 
-    monsters.sort((a, b) => {
+    // Sort by CR, NaN at bottom, then by name
+    validMonsters.sort((a, b) => {
       const crA = a._crSortValue, crB = b._crSortValue;
       const aNaN = isNaN(crA), bNaN = isNaN(crB);
       const nameA = a._displayName || a.name || a.file || "";
       const nameB = b._displayName || b.name || b.file || "";
-
       if (aNaN && bNaN) return nameA.localeCompare(nameB);
       if (aNaN) return 1;
       if (bNaN) return -1;
@@ -45,81 +50,80 @@ async function loadMonsters() {
       return nameA.localeCompare(nameB);
     });
 
-    // DOM elements
+    // -----------------------------
+    // DOM Elements
+    // -----------------------------
     const listEl = document.getElementById("monster-list");
     const typesEl = document.getElementById("creature-types");
     const crEl = document.getElementById("cr-filters");
     const sourceEl = document.getElementById("source-filters");
     const searchEl = document.getElementById("search");
 
+    // -----------------------------
+    // State
+    // -----------------------------
     const activeTypes = new Set();
     const activeCRs = new Set();
     const activeSources = new Set();
 
-    // Format sources
+    // -----------------------------
+    // Helper: format source material
+    // -----------------------------
     function formatSource(name) {
       return name.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
     }
 
     // -----------------------------
-    // Creature Types (Checkboxes)
+    // Create Checkbox Filters
+    // -----------------------------
+    function createCheckboxGroup(container, items, set, className) {
+      container.innerHTML = "";
+      items.forEach(item => {
+        const label = document.createElement("label");
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.value = item;
+        checkbox.classList.add("filter-checkbox", className);
+        label.appendChild(checkbox);
+        label.appendChild(document.createTextNode(" " + item));
+        container.appendChild(label);
+
+        checkbox.addEventListener("change", () => {
+          if (checkbox.checked) set.add(item);
+          else set.delete(item);
+          applyFilters();
+        });
+      });
+    }
+
+    // -----------------------------
+    // Type Filters
     // -----------------------------
     const creatureTypes = [
       "aberration","beast","celestial","construct","dragon","elemental",
       "fey","fiend","giant","humanoid","monstrosity","ooze","plant","undead"
     ];
-
-    typesEl.innerHTML = creatureTypes.map(t =>
-      `<label><input type="checkbox" value="${t}"> ${t}</label>`
-    ).join("");
-
-    typesEl.querySelectorAll("input").forEach(cb => {
-      cb.addEventListener("change", () => {
-        if (cb.checked) activeTypes.add(cb.value);
-        else activeTypes.delete(cb.value);
-        applyFilters();
-      });
-    });
+    createCheckboxGroup(typesEl, creatureTypes, activeTypes, "type-filter");
 
     // -----------------------------
-    // CR Filters (Checkboxes)
+    // CR Filters
     // -----------------------------
     const uniqueCRs = [...new Set(
-      monsters.map(m => isNaN(m._crSortValue) ? null : m._cleanCR).filter(Boolean)
+      validMonsters.map(m => isNaN(m._crSortValue) ? null : m._cleanCR).filter(Boolean)
     )].sort((a, b) => parseCR(a) - parseCR(b));
-
-    crEl.innerHTML = uniqueCRs.map(cr =>
-      `<label><input type="checkbox" value="${cr}"> ${cr}</label>`
-    ).join("");
-
-    crEl.querySelectorAll("input").forEach(cb => {
-      cb.addEventListener("change", () => {
-        if (cb.checked) activeCRs.add(cb.value);
-        else activeCRs.delete(cb.value);
-        applyFilters();
-      });
-    });
+    createCheckboxGroup(crEl, uniqueCRs, activeCRs, "cr-filter");
 
     // -----------------------------
-    // Source Filters (Checkboxes)
+    // Source Filters
     // -----------------------------
     const uniqueSources = [...new Set(
-      monsters.map(m => m.tags[m.tags.length - 1]).filter(Boolean)
+      validMonsters.map(m => m.tags[m.tags.length - 1]).filter(Boolean)
     )].sort();
+    createCheckboxGroup(sourceEl, uniqueSources, activeSources, "source-filter");
 
-    sourceEl.innerHTML = uniqueSources.map(src =>
-      `<label><input type="checkbox" value="${src}"> ${formatSource(src)}</label>`
-    ).join("");
-
-    sourceEl.querySelectorAll("input").forEach(cb => {
-      cb.addEventListener("change", () => {
-        if (cb.checked) activeSources.add(cb.value);
-        else activeSources.delete(cb.value);
-        applyFilters();
-      });
-    });
-
+    // -----------------------------
     // Search
+    // -----------------------------
     searchEl.addEventListener("input", () => applyFilters());
 
     // -----------------------------
@@ -128,7 +132,7 @@ async function loadMonsters() {
     function applyFilters() {
       const query = searchEl.value.toLowerCase();
 
-      const filtered = monsters.filter(m => {
+      const filtered = validMonsters.filter(m => {
         if (query && !(m._displayName || m.name || "").toLowerCase().includes(query)) return false;
         if (activeTypes.size > 0 && !activeTypes.has(m.type)) return false;
         if (activeCRs.size > 0 && !activeCRs.has(m._cleanCR)) return false;
@@ -140,53 +144,30 @@ async function loadMonsters() {
     }
 
     // -----------------------------
-    // Render Monster List
+    // Render List
     // -----------------------------
     function renderList(data) {
       listEl.innerHTML = "";
+      let currentCR = null;
+
       data.forEach(m => {
-        const div = document.createElement("div");
-        div.className = "monster-row";
-        div.textContent = `${m._displayName || m.name || m._file} (CR ${m._cleanCR}, ${m.type}, ${m.tags[m.tags.length-1] || "?"})`;
-        div.addEventListener("click", () => addToTracker(m));
-        listEl.appendChild(div);
+        const crVal = isNaN(m._crSortValue) ? "Undefined" : m._cleanCR;
+        if (crVal !== currentCR) {
+          currentCR = crVal;
+          const heading = document.createElement("h3");
+          heading.textContent = crVal === "Undefined" ? "CR Undefined" : `CR ${crVal}`;
+          listEl.appendChild(heading);
+        }
+
+        const li = document.createElement("div");
+        li.className = "monster-link";
+        li.innerHTML = `<a href="monster.html?file=${encodeURIComponent(m._file)}">${m._displayName || m.name || m._file}</a>`;
+        listEl.appendChild(li);
       });
     }
 
-    // -----------------------------
-    // Tracker
-    // -----------------------------
-    const trackerBody = document.querySelector("#initiative-table tbody");
-
-    function addToTracker(monster) {
-      const row = document.createElement("tr");
-      row.innerHTML = `
-        <td>${monster._displayName || monster.name || monster._file}</td>
-        <td contenteditable="true"></td>
-        <td contenteditable="true"></td>
-        <td contenteditable="true"></td>
-        <td contenteditable="true"></td>
-      `;
-      row.addEventListener("click", () => showStatBlock(monster));
-      trackerBody.appendChild(row);
-      showStatBlock(monster);
-    }
-
-    // -----------------------------
-    // Stat Block Loader
-    // -----------------------------
-    function showStatBlock(monster) {
-      document.getElementById("stat-block").innerHTML = `
-        <h3>${monster._displayName || monster.name || monster._file}</h3>
-        <p><b>Type:</b> ${monster.type || "?"}</p>
-        <p><b>CR:</b> ${monster._cleanCR}</p>
-        <p><b>Source:</b> ${monster.tags[monster.tags.length-1] || "?"}</p>
-        <pre>${JSON.stringify(monster, null, 2)}</pre>
-      `;
-    }
-
     // Initial render
-    renderList(monsters);
+    renderList(validMonsters);
 
   } catch (err) {
     console.error("Failed to load monsters:", err);

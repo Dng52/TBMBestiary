@@ -34,8 +34,20 @@
     }
 
     .filter-section label {
-      display: block;
+      display: flex;
+      align-items: center;
+      gap: 6px;
       font-size: 0.9em;
+      margin-bottom: 4px;
+      cursor: pointer;
+    }
+
+    .filter-section input[type="checkbox"] {
+      display: inline-block !important; /* force visibility */
+      width: auto;
+      height: auto;
+      margin: 0;
+      cursor: pointer;
     }
 
     /* Middle Panel */
@@ -65,6 +77,7 @@
 
     .monster-row {
       cursor: pointer;
+      padding: 3px 0;
     }
     .monster-row:hover {
       background: #eee;
