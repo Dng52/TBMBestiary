@@ -1,6 +1,9 @@
 {
     "name": "Template",
-    "tags": "large, ooze",
+    "tags": [
+		"large",
+		"ooze"
+	],
 	"size": "Medium",
     "type": "ooze",
     "alignment": "chaotic good",
