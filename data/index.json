@@ -1880,10 +1880,6 @@
     "file": "cultist.json"
   },
   {
-    "name": "Diabolical Cultist Template",
-    "file": "cultisttemplate.json"
-  },
-  {
     "name": "Cunning Acrobat",
     "file": "cunning-acrobat.json"
   },
@@ -2102,10 +2098,6 @@
   {
     "name": "Demonblood Orc Warrior",
     "file": "demonblood-orc-warrior.json"
-  },
-  {
-    "name": "Demonic Boon Template",
-    "file": "demonic-boon-template.json"
   },
   {
     "name": "Demonic Knight",
@@ -2634,10 +2626,6 @@
   {
     "name": "Elder Conflux Elemental",
     "file": "elder-conflux-elemental.json"
-  },
-  {
-    "name": "Elder Evil Template",
-    "file": "elder-evil-template.json"
   },
   {
     "name": "Elder Gravity Elemental",
