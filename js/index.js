@@ -1,10 +1,23 @@
+// Parse CR for sorting: converts fractions to decimal, ignores XP
 function parseCR(cr) {
   if (!cr) return 0;
+
+  cr = cr.replace(/\(.*?\)/, "").trim(); // Remove XP
+
+  if (cr === "0") return 0;
   if (cr.includes("/")) {
     const [num, den] = cr.split("/").map(Number);
-    return num / den;
+    return den ? num / den : 0;
   }
-  return Number(cr);
+
+  const val = parseFloat(cr);
+  return isNaN(val) ? 0 : val;
+}
+
+// Clean CR string for display (removes XP)
+function cleanCR(cr) {
+  if (!cr) return "?";
+  return cr.replace(/\(.*?\)/, "").trim();
 }
 
 async function loadMonsters() {
@@ -18,12 +31,13 @@ async function loadMonsters() {
     monsters.forEach((m, i) => {
       m._file = entries[i].file;
       m._displayName = entries[i].name;
+      m._cleanCR = cleanCR(m.cr);        // for headings
+      m._crSortValue = parseCR(m.cr);    // numeric value for sorting
     });
 
+    // Sort by CR (numeric) and then name
     monsters.sort((a, b) => {
-      const crA = parseCR(a.cr);
-      const crB = parseCR(b.cr);
-      if (crA !== crB) return crA - crB;
+      if (a._crSortValue !== b._crSortValue) return a._crSortValue - b._crSortValue;
       return a._displayName.localeCompare(b._displayName);
     });
 
@@ -31,7 +45,6 @@ async function loadMonsters() {
     const typesEl = document.getElementById("creature-types");
     const searchEl = document.getElementById("search");
 
-    // Fixed creature types (Bookmania styled nav)
     const creatureTypes = [
       "aberration", "beast", "celestial", "construct", "dragon", "elemental",
       "fey", "fiend", "giant", "humanoid", "monstrosity", "ooze", "plant", "undead"
@@ -39,14 +52,12 @@ async function loadMonsters() {
 
     typesEl.innerHTML = creatureTypes.map(t => `<span class="type-link">${t}</span>`).join(" • ");
 
-    // Filter by type when clicking a type link
     typesEl.querySelectorAll(".type-link").forEach(el => {
       el.addEventListener("click", () => {
         renderList(monsters.filter(m => m.type === el.textContent));
       });
     });
 
-    // Search bar functionality
     searchEl.addEventListener("input", () => {
       const query = searchEl.value.toLowerCase();
       const filtered = monsters.filter(m =>
@@ -55,7 +66,6 @@ async function loadMonsters() {
       renderList(filtered);
     });
 
-    // Initial render
     renderList(monsters);
 
     function renderList(data) {
@@ -63,8 +73,9 @@ async function loadMonsters() {
       let currentCR = null;
 
       data.forEach(m => {
-        const crVal = m.cr || "?";
+        const crVal = m._cleanCR || "?";
 
+        // Only add heading when CR changes
         if (crVal !== currentCR) {
           currentCR = crVal;
           const heading = document.createElement("h3");
@@ -79,7 +90,7 @@ async function loadMonsters() {
       });
     }
   } finally {
-  console.log("Finished attempting to load monsters");
+    console.log("Finished attempting to load monsters");
   }
 }
 
