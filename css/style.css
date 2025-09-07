@@ -224,11 +224,6 @@ strong em {
   font-size: 0.95rem;
 }
 
-.filter-button::after {
-  content: "•";
-  margin-left: 0.4em;
-  color: #492468;
-}
 .filter-button:last-child::after {
   content: "";
 }

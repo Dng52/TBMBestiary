@@ -71,6 +71,13 @@ async function loadMonsters() {
     const activeSources = new Set();
 
     // -----------------------------
+    // Helper: format source material
+    // -----------------------------
+    function formatSource(name) {
+      return name.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
+    }
+
+    // -----------------------------
     // Type Filters
     // -----------------------------
     const creatureTypes = [
@@ -119,7 +126,7 @@ async function loadMonsters() {
     )].sort();
 
     sourceEl.innerHTML = uniqueSources.map(src =>
-      `<span class="filter-button" data-source="${src}">${src}</span>`
+      `<span class="filter-button" data-source="${src}">${formatSource(src)}</span>`
     ).join("");
 
     sourceEl.querySelectorAll(".filter-button").forEach(btn => {
