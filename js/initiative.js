@@ -65,13 +65,11 @@ async function loadMonsters() {
     // Filters
     // -----------------------------
     const creatureTypes = ["aberration","beast","celestial","construct","dragon","elemental","fey","fiend","giant","humanoid","monstrosity","ooze","plant","undead"];
-    typeEl.innerHTML = creatureTypes.map(t => `
-      <label><input type="checkbox" data-type="${t}">${t}</label>
-    `).join("");
+    typeEl.innerHTML = creatureTypes.map(t => `<label><input type="checkbox" data-type="${t}">${t}</label>`).join("");
     typeEl.querySelectorAll("input").forEach(cb => {
       cb.addEventListener("change", () => {
-        if (cb.checked) activeTypes.add(cb.dataset.type);
-        else activeTypes.delete(cb.dataset.type);
+        activeTypes.clear();
+        typeEl.querySelectorAll("input:checked").forEach(c => activeTypes.add(c.dataset.type));
         applyFilters();
       });
     });
@@ -81,8 +79,8 @@ async function loadMonsters() {
     crEl.innerHTML = uniqueCRs.map(cr => `<label><input type="checkbox" data-cr="${cr}">${cr}</label>`).join("");
     crEl.querySelectorAll("input").forEach(cb => {
       cb.addEventListener("change", () => {
-        if (cb.checked) activeCRs.add(cb.dataset.cr);
-        else activeCRs.delete(cb.dataset.cr);
+        activeCRs.clear();
+        crEl.querySelectorAll("input:checked").forEach(c => activeCRs.add(c.dataset.cr));
         applyFilters();
       });
     });
@@ -91,8 +89,8 @@ async function loadMonsters() {
     sourceEl.innerHTML = uniqueSources.map(src => `<label><input type="checkbox" data-source="${src}">${formatSource(src)}</label>`).join("");
     sourceEl.querySelectorAll("input").forEach(cb => {
       cb.addEventListener("change", () => {
-        if (cb.checked) activeSources.add(cb.dataset.source);
-        else activeSources.delete(cb.dataset.source);
+        activeSources.clear();
+        sourceEl.querySelectorAll("input:checked").forEach(c => activeSources.add(c.dataset.source));
         applyFilters();
       });
     });
@@ -144,23 +142,21 @@ async function loadMonsters() {
     // -----------------------------
     function addToTracker(monster) {
       const row = document.createElement("tr");
-
       row.innerHTML = `
         <td>${monster._displayName || monster.name}</td>
         <td><input type="number" value="0" style="width: 50px;"></td>
-        <td>${monster.ac || "?"}</td>
-        <td>${monster.hp || "?"}</td>
-        <td><input type="text" style="width: 100%;"></td>
+        <td><input type="number" value="${monster.ac || "?"}" style="width:50px;"></td>
+        <td><input type="number" value="${monster.hp || "?"}" style="width:60px;"></td>
+        <td><input type="text" style="width:100%;"></td>
         <td><button class="remove-btn">Remove</button></td>
       `;
-
-      row.querySelector(".remove-btn").addEventListener("click", () => {
-        trackerBody.removeChild(row);
-      });
-
+      row.querySelector(".remove-btn").addEventListener("click", () => row.remove());
       trackerBody.appendChild(row);
     }
 
+    // -----------------------------
+    // Initial render
+    // -----------------------------
     renderList(monsters);
 
   } catch (err) {
