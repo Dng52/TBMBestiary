@@ -5,12 +5,17 @@
   <title>Initiative Tracker</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
-    /* Full screen layout for initiative tracker */
-    body, html {
-      height: 100%;
-      margin: 0;
-      padding: 0;
+    /* =========================
+       FULL SCREEN LAYOUT
+       ========================= */
+    body {
       display: flex;
+      min-height: 100vh;
+      margin: 0;
+      background-image: url("https://i.imgur.com/8XflKRc.png");
+      background-attachment: fixed;
+      background-size: cover;
+      color: #2c2c2c;
       font-family: 'Bookmania', Georgia, serif;
     }
 
@@ -25,15 +30,17 @@
     }
 
     #middle-panel {
-      width: 40%;
+      width: 35%;
       border-right: 2px solid #FFBF00;
     }
 
     #right-panel {
-      width: 35%;
+      width: 40%;
     }
 
-    /* Checkboxes inline */
+    /* =========================
+       FILTERS INLINE CHECKBOXES
+       ========================= */
     .filter-group {
       display: flex;
       flex-wrap: wrap;
@@ -41,69 +48,88 @@
     }
 
     .filter-group label {
-      margin-right: 1rem;
-      cursor: pointer;
-      display: flex;
+      display: inline-flex;
       align-items: center;
-      font-size: 0.9rem;
+      margin-right: 1rem;
+      font-family: 'Bookmania', Georgia, serif;
+      font-size: 0.95rem;
+      color: #492468;
+      cursor: pointer;
     }
 
     .filter-group input[type="checkbox"] {
-      margin-right: 0.3rem;
+      margin-right: 0.25rem;
+      cursor: pointer;
     }
 
-    /* Monster list */
-    #monster-list {
+    #search {
+      width: 95%;
+      padding: 0.4rem;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      border: 2px solid #492468;
+      border-radius: 5px;
+    }
+
+    /* =========================
+       MONSTER LIST
+       ========================= */
+    #monster-list h3 {
       margin-top: 1rem;
+      font-size: 1.3rem;
+      font-family: 'AlmendraSC', Georgia, serif;
+      color: #492468;
+      border-bottom: 2px solid #FFBF00;
+      display: inline-block;
+      padding-bottom: 0.2rem;
     }
+
     .monster-link {
-      cursor: pointer;
       margin: 0.2rem 0;
+      cursor: pointer;
     }
+
     .monster-link:hover {
       color: #FFBF00;
     }
 
-    /* Tracker table */
+    /* =========================
+       INITIATIVE TRACKER TABLE
+       ========================= */
     table {
       width: 100%;
       border-collapse: collapse;
+      margin-bottom: 1rem;
     }
-    th, td {
+
+    table th, table td {
       border: 1px solid #888;
-      padding: 0.3rem;
-      text-align: center;
+      padding: 0.4rem 0.6rem;
+      text-align: left;
+      font-size: 0.95rem;
     }
-    input[type="number"], input[type="text"] {
-      width: 80%;
-    }
-    .remove-btn {
-      cursor: pointer;
-      background: #492468;
-      color: white;
-      border: none;
-      border-radius: 4px;
-      padding: 0.2rem 0.5rem;
+
+    table th {
+      background: #EAEDEF;
     }
   </style>
 </head>
 <body>
 
-  <!-- Left Panel: Monster List & Filters -->
-  <div id="left-panel" class="panel">
-    <input id="search" type="text" placeholder="Search by name">
-    
-    <div id="type-filters" class="filter-group"></div>
-    <div id="cr-filters" class="filter-group"></div>
-    <div id="source-filters" class="filter-group"></div>
+  <!-- LEFT PANEL: MONSTERS & FILTERS -->
+  <div class="panel" id="left-panel">
+    <input type="text" id="search" placeholder="Search by name...">
+
+    <div class="filter-group" id="type-filters"></div>
+    <div class="filter-group" id="cr-filters"></div>
+    <div class="filter-group" id="source-filters"></div>
 
     <div id="monster-list"></div>
   </div>
 
-  <!-- Middle Panel: Initiative Tracker -->
-  <div id="middle-panel" class="panel">
-    <h2>Initiative Tracker</h2>
-    <table>
+  <!-- MIDDLE PANEL: INITIATIVE TRACKER -->
+  <div class="panel" id="middle-panel">
+    <table id="initiative-table">
       <thead>
         <tr>
           <th>Name</th>
@@ -111,15 +137,17 @@
           <th>AC</th>
           <th>HP</th>
           <th>Notes</th>
-          <th>Remove</th>
         </tr>
       </thead>
-      <tbody id="tracker-body"></tbody>
+      <tbody>
+        <!-- Rows get added here dynamically -->
+      </tbody>
     </table>
+    <button id="add-selected">Add Selected to Tracker</button>
   </div>
 
-  <!-- Right Panel: Stat Block -->
-  <div id="right-panel" class="panel">
+  <!-- RIGHT PANEL: STAT BLOCK -->
+  <div class="panel" id="right-panel">
     <div id="stat-block"></div>
   </div>
 
