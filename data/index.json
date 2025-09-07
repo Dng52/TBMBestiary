@@ -1,6 +1,10 @@
 [
   {
-    "name": "Template",
+    "name": "Aarakocra",
+    "file": "aarakocra.json"
+  },
+  {
+    "name": "custom_monster_template",
     "file": "custom_monster_template.json"
   },
   {
