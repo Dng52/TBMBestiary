@@ -5,136 +5,150 @@
   <title>Initiative Tracker</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
+    /* =========================
+       FULL SCREEN LAYOUT
+       ========================= */
     body {
-      margin: 0;
-      font-family: sans-serif;
-    }
-
-    .container {
-      display: grid;
-      grid-template-columns: 25% 45% 30%;
-      height: 100vh;
-      gap: 0;
-    }
-
-    /* Left Panel */
-    .left-panel {
-      background: #f9f9f9;
-      border-right: 1px solid #ccc;
-      padding: 10px;
-      overflow-y: auto;
-    }
-
-    .filter-section {
-      margin-bottom: 15px;
-    }
-
-    .filter-section h4 {
-      margin: 10px 0 5px;
-    }
-
-    .filter-section label {
       display: flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.9em;
-      margin-bottom: 4px;
-      cursor: pointer;
-    }
-
-    .filter-section input[type="checkbox"] {
-      display: inline-block !important; /* force visibility */
-      width: auto;
-      height: auto;
+      min-height: 100vh;
       margin: 0;
-      cursor: pointer;
+      background-image: url("https://i.imgur.com/8XflKRc.png");
+      background-attachment: fixed;
+      background-size: cover;
+      color: #2c2c2c;
+      font-family: 'Bookmania', Georgia, serif;
     }
 
-    /* Middle Panel */
-    .tracker-panel {
-      padding: 10px;
+    .panel {
+      padding: 1rem;
       overflow-y: auto;
     }
 
+    #left-panel {
+      width: 25%;
+      border-right: 2px solid #FFBF00;
+    }
+
+    #middle-panel {
+      width: 35%;
+      border-right: 2px solid #FFBF00;
+    }
+
+    #right-panel {
+      width: 40%;
+    }
+
+    /* =========================
+       FILTERS INLINE CHECKBOXES
+       ========================= */
+    .filter-group {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+
+    .filter-group label {
+      display: inline-flex;
+      align-items: center;
+      margin-right: 1rem;
+      font-family: 'Bookmania', Georgia, serif;
+      font-size: 0.95rem;
+      color: #492468;
+      cursor: pointer;
+    }
+
+    .filter-group input[type="checkbox"] {
+      margin-right: 0.25rem;
+      cursor: pointer;
+    }
+
+    #search {
+      width: 95%;
+      padding: 0.4rem;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      border: 2px solid #492468;
+      border-radius: 5px;
+    }
+
+    /* =========================
+       MONSTER LIST
+       ========================= */
+    #monster-list h3 {
+      margin-top: 1rem;
+      font-size: 1.3rem;
+      font-family: 'AlmendraSC', Georgia, serif;
+      color: #492468;
+      border-bottom: 2px solid #FFBF00;
+      display: inline-block;
+      padding-bottom: 0.2rem;
+    }
+
+    .monster-link {
+      margin: 0.2rem 0;
+      cursor: pointer;
+    }
+
+    .monster-link:hover {
+      color: #FFBF00;
+    }
+
+    /* =========================
+       INITIATIVE TRACKER TABLE
+       ========================= */
     table {
-      border-collapse: collapse;
       width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1rem;
     }
 
-    th, td {
-      border: 1px solid #ccc;
-      padding: 6px;
+    table th, table td {
+      border: 1px solid #888;
+      padding: 0.4rem 0.6rem;
       text-align: left;
+      font-size: 0.95rem;
     }
 
-    /* Right Panel */
-    .right-panel {
-      background: #fff;
-      border-left: 1px solid #ccc;
-      padding: 10px;
-      overflow-y: auto;
-    }
-
-    .monster-row {
-      cursor: pointer;
-      padding: 3px 0;
-    }
-    .monster-row:hover {
-      background: #eee;
+    table th {
+      background: #EAEDEF;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <!-- Left Panel -->
-    <div class="left-panel">
-      <h2>Monster List</h2>
 
-      <div class="filter-section">
-        <h4>Search</h4>
-        <input type="text" id="search" placeholder="Search by name..." />
-      </div>
+  <!-- LEFT PANEL: MONSTERS & FILTERS -->
+  <div class="panel" id="left-panel">
+    <input type="text" id="search" placeholder="Search by name...">
 
-      <div class="filter-section">
-        <h4>Creature Types</h4>
-        <div id="creature-types"></div>
-      </div>
+    <div class="filter-group" id="type-filters"></div>
+    <div class="filter-group" id="cr-filters"></div>
+    <div class="filter-group" id="source-filters"></div>
 
-      <div class="filter-section">
-        <h4>Challenge Rating</h4>
-        <div id="cr-filters"></div>
-      </div>
+    <div id="monster-list"></div>
+  </div>
 
-      <div class="filter-section">
-        <h4>Sources</h4>
-        <div id="source-filters"></div>
-      </div>
+  <!-- MIDDLE PANEL: INITIATIVE TRACKER -->
+  <div class="panel" id="middle-panel">
+    <table id="initiative-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Initiative</th>
+          <th>AC</th>
+          <th>HP</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Rows get added here dynamically -->
+      </tbody>
+    </table>
+    <button id="add-selected">Add Selected to Tracker</button>
+  </div>
 
-      <div id="monster-list"></div>
-    </div>
-
-    <!-- Middle Panel -->
-    <div class="tracker-panel">
-      <h2>Initiative Tracker</h2>
-      <table id="initiative-table">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Initiative</th>
-            <th>AC</th>
-            <th>HP</th>
-            <th>Notes</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
-
-    <!-- Right Panel -->
-    <div class="right-panel">
-      <h2>Stat Block</h2>
-      <div id="stat-block">Select a creature to view its stats.</div>
-    </div>
+  <!-- RIGHT PANEL: STAT BLOCK -->
+  <div class="panel" id="right-panel">
+    <div id="stat-block"></div>
   </div>
 
   <script src="js/initiative.js"></script>

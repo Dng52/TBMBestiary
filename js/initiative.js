@@ -23,26 +23,20 @@ function cleanCR(cr) {
 // -----------------------------
 async function loadMonsters() {
   try {
-    // Fetch monsters.json
-    const validMonsters = await fetch("data/monsters.json")
-      .then(r => { 
-        if (!r.ok) throw new Error(`Failed to load monsters.json: ${r.status}`); 
-        return r.json();
-      });
+    const monsters = await fetch("data/monsters.json").then(r => r.json());
 
-    // Compute display values
-    validMonsters.forEach(m => {
+    monsters.forEach(m => {
       m._cleanCR = cleanCR(m.cr);
       m._crSortValue = parseCR(m.cr);
       if (!m.tags) m.tags = [];
     });
 
-    // Sort by CR, NaN at bottom, then by name
-    validMonsters.sort((a, b) => {
+    monsters.sort((a, b) => {
       const crA = a._crSortValue, crB = b._crSortValue;
       const aNaN = isNaN(crA), bNaN = isNaN(crB);
-      const nameA = a._displayName || a.name || a.file || "";
-      const nameB = b._displayName || b.name || b.file || "";
+      const nameA = a._displayName || a.name || a._file || "";
+      const nameB = b._displayName || b.name || b._file || "";
+
       if (aNaN && bNaN) return nameA.localeCompare(nameB);
       if (aNaN) return 1;
       if (bNaN) return -1;
@@ -54,72 +48,54 @@ async function loadMonsters() {
     // DOM Elements
     // -----------------------------
     const listEl = document.getElementById("monster-list");
-    const typesEl = document.getElementById("creature-types");
+    const typeEl = document.getElementById("type-filters");
     const crEl = document.getElementById("cr-filters");
     const sourceEl = document.getElementById("source-filters");
     const searchEl = document.getElementById("search");
 
-    // -----------------------------
-    // State
-    // -----------------------------
     const activeTypes = new Set();
     const activeCRs = new Set();
     const activeSources = new Set();
 
-    // -----------------------------
-    // Helper: format source material
-    // -----------------------------
     function formatSource(name) {
       return name.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
     }
 
     // -----------------------------
-    // Create Checkbox Filters
+    // Filters
     // -----------------------------
-    function createCheckboxGroup(container, items, set, className) {
-      container.innerHTML = "";
-      items.forEach(item => {
-        const label = document.createElement("label");
-        const checkbox = document.createElement("input");
-        checkbox.type = "checkbox";
-        checkbox.value = item;
-        checkbox.classList.add("filter-checkbox", className);
-        label.appendChild(checkbox);
-        label.appendChild(document.createTextNode(" " + item));
-        container.appendChild(label);
-
-        checkbox.addEventListener("change", () => {
-          if (checkbox.checked) set.add(item);
-          else set.delete(item);
-          applyFilters();
-        });
+    const creatureTypes = ["aberration","beast","celestial","construct","dragon","elemental","fey","fiend","giant","humanoid","monstrosity","ooze","plant","undead"];
+    typeEl.innerHTML = creatureTypes.map(t => `
+      <label><input type="checkbox" data-type="${t}">${t}</label>
+    `).join("");
+    typeEl.querySelectorAll("input").forEach(cb => {
+      cb.addEventListener("change", () => {
+        if (cb.checked) activeTypes.add(cb.dataset.type);
+        else activeTypes.delete(cb.dataset.type);
+        applyFilters();
       });
-    }
+    });
 
-    // -----------------------------
-    // Type Filters
-    // -----------------------------
-    const creatureTypes = [
-      "aberration","beast","celestial","construct","dragon","elemental",
-      "fey","fiend","giant","humanoid","monstrosity","ooze","plant","undead"
-    ];
-    createCheckboxGroup(typesEl, creatureTypes, activeTypes, "type-filter");
+    const uniqueCRs = [...new Set(monsters.map(m => isNaN(m._crSortValue) ? null : m._cleanCR).filter(Boolean))]
+      .sort((a,b) => parseCR(a)-parseCR(b));
+    crEl.innerHTML = uniqueCRs.map(cr => `<label><input type="checkbox" data-cr="${cr}">${cr}</label>`).join("");
+    crEl.querySelectorAll("input").forEach(cb => {
+      cb.addEventListener("change", () => {
+        if (cb.checked) activeCRs.add(cb.dataset.cr);
+        else activeCRs.delete(cb.dataset.cr);
+        applyFilters();
+      });
+    });
 
-    // -----------------------------
-    // CR Filters
-    // -----------------------------
-    const uniqueCRs = [...new Set(
-      validMonsters.map(m => isNaN(m._crSortValue) ? null : m._cleanCR).filter(Boolean)
-    )].sort((a, b) => parseCR(a) - parseCR(b));
-    createCheckboxGroup(crEl, uniqueCRs, activeCRs, "cr-filter");
-
-    // -----------------------------
-    // Source Filters
-    // -----------------------------
-    const uniqueSources = [...new Set(
-      validMonsters.map(m => m.tags[m.tags.length - 1]).filter(Boolean)
-    )].sort();
-    createCheckboxGroup(sourceEl, uniqueSources, activeSources, "source-filter");
+    const uniqueSources = [...new Set(monsters.map(m => m.tags[m.tags.length-1]).filter(Boolean))].sort();
+    sourceEl.innerHTML = uniqueSources.map(src => `<label><input type="checkbox" data-source="${src}">${formatSource(src)}</label>`).join("");
+    sourceEl.querySelectorAll("input").forEach(cb => {
+      cb.addEventListener("change", () => {
+        if (cb.checked) activeSources.add(cb.dataset.source);
+        else activeSources.delete(cb.dataset.source);
+        applyFilters();
+      });
+    });
 
     // -----------------------------
     // Search
@@ -127,29 +103,26 @@ async function loadMonsters() {
     searchEl.addEventListener("input", () => applyFilters());
 
     // -----------------------------
-    // Apply Filters
+    // Filter Logic
     // -----------------------------
     function applyFilters() {
       const query = searchEl.value.toLowerCase();
-
-      const filtered = validMonsters.filter(m => {
+      const filtered = monsters.filter(m => {
         if (query && !(m._displayName || m.name || "").toLowerCase().includes(query)) return false;
-        if (activeTypes.size > 0 && !activeTypes.has(m.type)) return false;
-        if (activeCRs.size > 0 && !activeCRs.has(m._cleanCR)) return false;
-        if (activeSources.size > 0 && !activeSources.has(m.tags[m.tags.length - 1])) return false;
+        if (activeTypes.size && !activeTypes.has(m.type)) return false;
+        if (activeCRs.size && !activeCRs.has(m._cleanCR)) return false;
+        if (activeSources.size && !activeSources.has(m.tags[m.tags.length-1])) return false;
         return true;
       });
-
       renderList(filtered);
     }
 
     // -----------------------------
-    // Render List
+    // Render Monster List
     // -----------------------------
     function renderList(data) {
       listEl.innerHTML = "";
       let currentCR = null;
-
       data.forEach(m => {
         const crVal = isNaN(m._crSortValue) ? "Undefined" : m._cleanCR;
         if (crVal !== currentCR) {
@@ -158,16 +131,34 @@ async function loadMonsters() {
           heading.textContent = crVal === "Undefined" ? "CR Undefined" : `CR ${crVal}`;
           listEl.appendChild(heading);
         }
-
         const li = document.createElement("div");
         li.className = "monster-link";
-        li.innerHTML = `<a href="monster.html?file=${encodeURIComponent(m._file)}">${m._displayName || m.name || m._file}</a>`;
+        li.textContent = m._displayName || m.name || m._file;
+        li.dataset.file = m._file;
+        li.dataset.name = m._displayName || m.name;
+        li.dataset.ac = m.ac || "";
+        li.dataset.hp = m.hp || "";
+        li.dataset.cr = m.cr || "";
+        li.addEventListener("click", () => displayStatBlock(m));
         listEl.appendChild(li);
       });
     }
 
-    // Initial render
-    renderList(validMonsters);
+    // -----------------------------
+    // Display Stat Block
+    // -----------------------------
+    function displayStatBlock(monster) {
+      const container = document.getElementById("stat-block");
+      container.innerHTML = `
+        <h2>${monster._displayName || monster.name}</h2>
+        <p><strong>CR:</strong> ${monster.cr || "?"}</p>
+        <p><strong>AC:</strong> ${monster.ac || "?"}</p>
+        <p><strong>HP:</strong> ${monster.hp || "?"}</p>
+        <p><strong>Type:</strong> ${monster.type || "?"}</p>
+      `;
+    }
+
+    renderList(monsters);
 
   } catch (err) {
     console.error("Failed to load monsters:", err);
