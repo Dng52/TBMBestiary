@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Initiative Tracker</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .layout {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr 1fr;
+      gap: 1rem;
+      height: 100vh;
+    }
+    .panel {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      overflow-y: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border-bottom: 1px solid #ddd;
+      padding: 0.5rem;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+  <h1 style="text-align:center">Initiative Tracker</h1>
+  <div class="layout">
+    <!-- Left: Monster Table -->
+    <div class="panel" id="monster-panel">
+      <h2>Monsters</h2>
+      <input id="search" type="text" placeholder="Search by name..." style="width:100%">
+      <div>
+        <label>Type:</label>
+        <select id="filter-type"><option value="">All</option></select>
+        <label>CR:</label>
+        <select id="filter-cr"><option value="">All</option></select>
+        <label>Source:</label>
+        <select id="filter-source"><option value="">All</option></select>
+      </div>
+      <table id="monster-table">
+        <thead>
+          <tr><th>Name</th><th>Type</th><th>CR</th><th>Source</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- Middle: Initiative Tracker -->
+    <div class="panel" id="tracker-panel">
+      <h2>Tracker</h2>
+      <table id="tracker-table">
+        <thead>
+          <tr><th>Init</th><th>Name</th><th>AC</th><th>HP</th><th>Notes</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <!-- Right: Stat Block -->
+    <div class="panel" id="statblock-panel">
+      <h2>Stat Block</h2>
+      <div id="statblock-content">Select a creature from the tracker.</div>
+    </div>
+  </div>
+  <script src="js/initiative.js"></script>
+</body>
+</html>
