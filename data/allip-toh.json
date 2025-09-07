@@ -1,0 +1,43 @@
+{
+  "name": "Allip (ToH)",
+  "tags": [
+    "medium",
+    "undead",
+    "cr2",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "chaotic evil",
+  "cr": "2 (450 XP)",
+  "hp": "33 (6d8 + 6)",
+  "ac": "18 (armored flight suit)",
+  "speed": "fly 30 ft.",
+  "skills": "Perception +3, Stealth +3",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "Common, Deep Speech",
+  "abilities": {
+    "str": 6,
+    "dex": 13,
+    "con": 13,
+    "int": 11,
+    "wis": 11,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Babble",
+      "desc": "The allip incoherently mutters to itself, creating a hypnotic effect. All creatures within 30 ft. that aren\u2019t incapacitated must succeed on a DC 11 Wisdom saving throw. On a failed save, the creature becomes charmed for the duration. While charmed by this spell, the creature is incapacitated and has a speed of 0. The effect ends for an affected creature if it takes any damage or if someone else uses an action to shake the creature out of its stupor."
+    },
+    {
+      "name": "Madness",
+      "desc": "Anyone targeting an allip with a spell or effect that would make direct contact with its tortured mind must succeed on a DC 11 Wisdom saving throw or take 7 (2d6) psychic damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Touch of Insanity",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 8 (2d6 + 1) psychic damage."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "name": "Azer Berserker",
+  "tags": [
+    "medium",
+    "elemental",
+    "cr3",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "lawful neutral",
+  "cr": "3 (700 XP)",
+  "hp": "68 (8d10 + 24)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Perception +3, Athletics +5",
+  "immunities": "fire, poison",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "Ignan",
+  "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 16,
+    "int": 10,
+    "wis": 12,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Heated Body",
+      "desc": "A creature that touches the azer or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage."
+    },
+    {
+      "name": "Heated Weapons",
+      "desc": "When the azer hits with a metal melee weapon, it deals an extra 4 (1d8) fire damage (included in the attack)."
+    },
+    {
+      "name": "Illumination",
+      "desc": "The azer sheds bright light in a 10-foot radius and dim light for an additional 10 feet."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The azer makes two attacks with its maul."
+    },
+    {
+      "name": "Maul",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage plus 4 (1d8) fire damage."
+    },
+    {
+      "name": "Rampage (1/Day)",
+      "desc": "The damage from heated weapons increases to 9 (2d8) this round and the azer immediately makes an attack against each enemy creature within 5 feet, making a separate attack roll for each target."
+    }
+  ]
+}

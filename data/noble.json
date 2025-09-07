@@ -1,0 +1,36 @@
+{
+  "name": "Noble",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/8",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "1/8 (25 XP)",
+  "hp": "9 (2d8)",
+  "ac": "15 (breastplate)",
+  "speed": "30 ft.",
+  "skills": "Deception +5, Insight +4, Persuasion +5",
+  "languages": "any two languages",
+  "abilities": {
+    "str": 11,
+    "dex": 12,
+    "con": 11,
+    "int": 12,
+    "wis": 14,
+    "cha": 16
+  },
+  "actions": [
+    {
+      "name": "Rapier",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
+    },
+    {
+      "name": "Parry",
+      "desc": "The noble adds 2 to its AC against one melee attack that would hit it. To do so, the noble must see the attacker and be wielding a melee weapon."
+    }
+  ]
+}

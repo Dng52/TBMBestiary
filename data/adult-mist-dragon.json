@@ -1,0 +1,83 @@
+{
+  "name": "Adult Mist Dragon",
+  "tags": [
+    "huge",
+    "dragon",
+    "cr15",
+    "tome-of-horrors"
+  ],
+  "size": "Huge",
+  "type": "dragon",
+  "alignment": "neutral",
+  "cr": "15 (13,000 XP)",
+  "hp": "189 (14d12 + 98)",
+  "ac": "18 (natural armor)",
+  "speed": "40 ft., fly 80 ft., swim 40 ft.",
+  "saves": "Dex +7, Con +12, Wis +7, Cha +10",
+  "skills": "Perception +12, Stealth +7, Survival +7",
+  "immunities": "fire",
+  "senses": "blindsight 120 ft., darkvision 120 ft., passive Perception 22",
+  "languages": "Auran, Aquan, Celestial, Common, Draconic, Ignan, Sylvan",
+  "abilities": {
+    "str": 25,
+    "dex": 14,
+    "con": 25,
+    "int": 16,
+    "wis": 14,
+    "cha": 21
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The mist dragon can breathe both water and air."
+    },
+    {
+      "name": "Legendary Resistance (3/day)",
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The dragon uses its Frightful Presence and makes three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +12 to hit, reach 20 ft., one target. Hit: 18 (2d10 + 7) piercing damage plus 10 (3d6) fire damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 17 (3d6 + 7) slashing damage."
+    },
+    {
+      "name": "Tail",
+      "desc": "Melee Weapon Attack: +12 to hit, reach 20 ft., one target. Hit: 16 (2d8 + 7) bludgeoning damage."
+    },
+    {
+      "name": "Frightful Presence",
+      "desc": "Each creature of the dragon\u2019s choice that is within 120 feet of the dragon and aware of it must succeed on a DC 18 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature\u2019s saving throw is successful or the effect ends for it, the creature is immune to the dragon\u2019s Frightful Presence for the next 24 hours."
+    },
+    {
+      "name": "Breath Weapon (Recharge 5\u20136)",
+      "desc": "The mist dragon uses one of the following breath weapons. 1. <i>Obscuring Mist.</i> The dragon exhales a murky opaque mist in a 60-foot cube that spreads around corners. This mist heavily obscures the area and remains for 1 minute, or until dispersed with a moderate or stronger wind (at least 10 miles per hour). 2. <i>Scalding Mist.</i> The dragon exhales a fiery blast of lingering mist in a 60-foot cone that spreads around corners. The mist lightly obscures the area and remains for 1 minute, or until dispersed with a moderate or stronger wind (at least 10 miles per hour). Each creature that enters the area or begins its turn there must make a DC 20 Constitution saving throw, taking 63 (18d6) fire damage on a failed saving throw, or half as much damage on a successful one. Being underwater doesn\u2019t grant resistance to this damage."
+    },
+    {
+      "name": "Mist Form",
+      "desc": "The mist dragon polymorphs into a Huge cloud of mist, or back into its true form. While in mist form, the dragon can\u2019t take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature\u2019s space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can\u2019t pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, it is immune to all nonmagical damage."
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Detect",
+      "desc": "The dragon makes a Wisdom (Perception) check."
+    },
+    {
+      "name": "Tail Attack",
+      "desc": "The dragon makes a tail attack."
+    },
+    {
+      "name": "Wing Attack (Costs 2 Actions)",
+      "desc": "The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed."
+    }
+  ]
+}

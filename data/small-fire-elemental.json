@@ -1,0 +1,52 @@
+{
+  "name": "Small Fire Elemental",
+  "tags": [
+    "small",
+    "elemental",
+    "cr1/2",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Small",
+  "type": "elemental",
+  "alignment": "neutral",
+  "cr": "1/2 (100 XP)",
+  "hp": "19 (3d8 + 6)",
+  "ac": "13 (natural armor)",
+  "speed": "40 ft.",
+  "immunities": "poison, fire",
+  "conimmunities": "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "Ignan",
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 14,
+    "int": 5,
+    "wis": 12,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Fire Form",
+      "desc": "The elemental can move through a space as narrow as 1 inch wide without squeezing. A creature that touches the elemental or hits it with a melee attack while within 5 feet of it takes 1 fire damage."
+    },
+    {
+      "name": "Illumination",
+      "desc": "The elemental sheds bright light in a 10-foot radius and dim light in an additional 10 feet."
+    },
+    {
+      "name": "Water Susceptibility",
+      "desc": "For every 5 feet the elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Touch",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) fire damage. If the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 2 (1d4) fire damage at the start of each of its turns."
+    },
+    {
+      "name": "Blaze",
+      "desc": "Ranged Spell Attack: +3 to hit, range 30 ft., one target. Hit: 5 (1d10) fire damage."
+    }
+  ]
+}

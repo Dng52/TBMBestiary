@@ -1,0 +1,133 @@
+{
+  "name": "Orcus, Demon Prince of the Undead",
+  "tags": [
+    "huge",
+    "fiend",
+    "cr35",
+    "tome-of-horrors"
+  ],
+  "size": "Huge",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "35 (330,000 XP)",
+  "hp": "825 (50d12 + 500)",
+  "ac": "25 (natural armor)",
+  "speed": "40 ft., fly 60 ft.",
+  "saves": "Dex +15, Con +20, Wis +18, Cha +20",
+  "skills": "History +18, Perception +18, Religion +18",
+  "immunities": "lightning, necrotic, poison; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "resistance": "acid, cold, fire",
+  "conimmunities": "charmed, exhaustion, frightened, poisoned",
+  "senses": "truesight 120 ft., passive Perception 28",
+  "languages": "all, telepathy 360 ft.",
+  "abilities": {
+    "str": 30,
+    "dex": 21,
+    "con": 30,
+    "int": 27,
+    "wis": 27,
+    "cha": 30
+  },
+  "traits": [
+    {
+      "name": "Special equipment",
+      "desc": "Orcus wields its iconic rod, the Wand of Orcus."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "Orcus\u2019s spellcasting ability is Charisma (spell save DC 28, +20 to hit with spell attacks). Orcus can innately cast the following spells, requiring no material components: * At will: <i>animate dead, chill touch </i>(17th level)<i>, detect magic</i> * 7/day: <i>create undead</i> * 5/day: <i>eyebite</i> * 3/day each: <i>circle of death, finger of death</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/day)",
+      "desc": "If Orcus fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Lord of the Grave",
+      "desc": "Orcus always casts animate dead or create undead at maximum level and without any restrictions. Creatures created by these spells remain under its control indefinitely."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "Orcus has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "Orcus\u2019s attacks are magical."
+    },
+    {
+      "name": "Aura of Death",
+      "desc": "Any living creature is unable to take short or long rests within 300 feet of the Wand of Orcus. If any creature who is not Orcus touches the Wand of Orcus, it must succeed on a DC 17 Charisma saving throw or drop to 0 hit points and begin dying. On a successful saving throw, the creature takes 6d6 necrotic damage. A creature who succeeds on the saving throw is immune to this effect for 24 hours. Orcus can suppress this effect from any locations."
+    },
+    {
+      "name": "Attunement",
+      "desc": "To attune to the artifact, you must bathe yourself and the Wand of Orcus in the blood of a Solar Angel."
+    },
+    {
+      "name": "Magic Weapon",
+      "desc": "The Wand of Orcus functions as a magic mace that has a +3 bonus to attack and damage rolls made with this weapon. It deals 4d6 bludgeoning damage on a hit. It also functions as a sword of wounding."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "You can use an action to cast the following spells at will: <i>blight, darkness,</i> or <i>speak with dead</i>. The Wand of Orcus has 20 charges, which can be used to cast the following spells: <i>animate dead </i>(3 or more charges)<i>, bestow curse </i>(2 charges)<i>, circle of death </i>(6 charges)<i>, contagion </i>(5 charges)<i>, create undead </i>(6 or more charges)<i>, finger of death </i>(7 charges)<i>, harm </i>(6 charges), or <i>power word kill </i>(9 charges). The Wand of Orcus recovers all charges each midnight."
+    },
+    {
+      "name": "Sentience",
+      "desc": "The Wand of Orcus is a sentient chaotic evil magic item, with an Intelligence of 20, a Wisdom of 18, and a Charisma of 23. It has truesight out to 120 feet and understands Abyssal and Infernal. It can communicate with its wielder telepathically. Its goal is the subjugation and destruction of all realms under the all encompassing gaze of Orcus. It will attempt to sway or control an attuned creature to further the goals of Orcus. The Wand of Orcus is evil, wholly so. The wand\u2019s telepathic messages are quiet and breathy, almost a wet wheeze through diseased lungs. It is not averse to assisting an attuned wielder\u2019s temporary goals, as long as they are not inimical to its long-term goal of turning all planes of existence into fields of undead."
+    },
+    {
+      "name": "Destruction",
+      "desc": "The Wand of Orcus can only be destroyed if Orcus is truly slain and destroyed. If Orcus is permanently slain, the Wand of Orcus becomes brittle and can be easily smashed into dust."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Orcus makes two Wand of Orcus attacks."
+    },
+    {
+      "name": "Wand of Orcus",
+      "desc": "Melee Weapon Attack: +20 to hit, reach 5 ft., one target. Hit: 24 (4d6 + 10) bludgeoning damage and the target must make a DC 17 Charisma saving throw, dropping to 0 hit points on failure, or, on a success, the target takes 21 (6d6) necrotic damage."
+    },
+    {
+      "name": "Tail",
+      "desc": "Melee Weapon Attack: +20 to hit, reach 5 ft., one target. Hit: 24 (4d6 + 10) piercing damage plus 22 (4d10) poison damage."
+    },
+    {
+      "name": "Aura of Death",
+      "desc": "Each non-undead creature that starts its turn within 20 feet of Orcus takes 17 (5d6) necrotic damage."
+    },
+    {
+      "name": "Aura of Enfeeblement (Recharge 5\u20136)",
+      "desc": "Black beams of negative energy surround Orcus in a 20-foot radius centered on it. Each creature in this area must make a DC 24 Constitution saving throw. On a failure, the target deals only half damage with weapon attacks that use Strength for 1 minute. A weakened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target\u2019s saving throw is successful or the effect ends for it, the target is immune to Orcus\u2019s Aura of Enfeeblement for the next 24 hours."
+    },
+    {
+      "name": "Teleport",
+      "desc": "Orcus magically teleports, along with any equipment it is wearing or carrying, up to 120 feet to an unoccupied space it can see."
+    },
+    {
+      "name": "Beckon Army of the Dead",
+      "desc": "While in its lair, Orcus can use the wand to summon an undead army that consists of: * 10 skeletons * 5 zombies * 3 ghouls * 3 specters * 2 wights * 1 mummy These undead magically rise up from the ground or otherwise form in unoccupied spaces within 100 feet of Orcus and obey its commands until they are destroyed or until it dismisses them as an action. Orcus can only use this lair action every 24 hours unless it is in the Palace of Bones on Thanatos, the level of the Abyss it rules. Orcus may use it on each subsequent initiative 20 at will if on that plane."
+    },
+    {
+      "name": "Bone Cage",
+      "desc": "Orcus causes all bones within the lair to form tight cages around two creatures of its choice. The cages can be attacked and destroyed (AC 15; hp 30; vulnerability to bludgeoning damage; resistance to piercing, poison, slashing, and psychic damage). While in a bone-cage, a creature is restrained."
+    },
+    {
+      "name": "Fountain of Blood",
+      "desc": "Orcus chooses a point on the ground that it can see within 100 feet of it. A geyser of caustic blood erupts from the ground at that point and rains down in a 40-foot high, 10-foot cylinder. Each creature in that area must make a DC 24 Dexterity saving throw, taking 24 (7d6) acid damage on a failure, or half as much damage on a success."
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Tail",
+      "desc": "Orcus makes one tail attack."
+    },
+    {
+      "name": "Devouring Darkness (Costs 2 Actions)",
+      "desc": "Orcus chooses a point that it can see within 100 feet of it. A cloud of darkness erupts from that point and lasts for 1 minute. The area is heavily obscured and each creature in the area must make a DC 24 Constitution saving throw, taking 28 (8d6) necrotic damage on a failure, or half as much damage on a success. Creatures slain by the devouring darkness rise as ghouls under the command of Orcus within 1d4 rounds."
+    },
+    {
+      "name": "Charnel Wind (Costs 3 Actions)",
+      "desc": "A putrid, carrion wind erupts from Orcus in a 30-foot radius centered on it and lasts until the end of Orcus\u2019s next turn. All non-undead creatures within this area must succeed on a DC 24 Constitution saving throw against disease or be poisoned until the end of Orcus\u2019s next turn. While poisoned in this way, the creature can take either an action or a bonus action on its turn, not both, and it can\u2019t take reactions."
+    }
+  ]
+}

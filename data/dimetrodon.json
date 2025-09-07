@@ -1,0 +1,37 @@
+{
+  "name": "Dimetrodon",
+  "tags": [
+    "medium",
+    "beast",
+    "cr1/4",
+    "volos-guide"
+  ],
+  "size": "Medium",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/4 (50 XP)",
+  "hp": "19 (3d8+6)",
+  "ac": "12 (natural armor)",
+  "speed": "30 ft., swim 20 ft.",
+  "skills": "Perception +2",
+  "abilities": {
+    "str": 14,
+    "dex": 10,
+    "con": 15,
+    "int": 2,
+    "wis": 10,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Source",
+      "desc": "Volo's Guide to Monsters, p. 139"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6+2) piercing damage."
+    }
+  ]
+}

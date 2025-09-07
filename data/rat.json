@@ -1,0 +1,37 @@
+{
+  "name": "Rat",
+  "tags": [
+    "tiny",
+    "beast",
+    "cr0",
+    "monster-manual"
+  ],
+  "size": "Tiny",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "0 (10 XP)",
+  "hp": "1 (1d4-1)",
+  "ac": "10",
+  "speed": "20 ft.",
+  "senses": "darkvision 30 ft.",
+  "abilities": {
+    "str": 2,
+    "dex": 11,
+    "con": 9,
+    "int": 2,
+    "wis": 10,
+    "cha": 4
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "desc": "The rat has advantage on Wisdom (Perception) checks that rely on smell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage."
+    }
+  ]
+}

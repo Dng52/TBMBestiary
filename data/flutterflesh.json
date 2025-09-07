@@ -1,0 +1,68 @@
+{
+  "name": "Flutterflesh",
+  "tags": [
+    "large",
+    "undead",
+    "cr12",
+    "tome-of-beasts"
+  ],
+  "size": "Large",
+  "type": "undead",
+  "alignment": "chaotic evil",
+  "cr": "12 (8400 XP)",
+  "hp": "187 (22d10 + 66)",
+  "ac": "16 (natural armor)",
+  "speed": "10 ft., Fly 60 ft.",
+  "saves": "Str +4, Dex +8",
+  "skills": "Deception +4, Perception +5, Stealth +8",
+  "immunities": "necrotic, poison",
+  "resistance": "cold, lightning; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "vulnerability": "radiant",
+  "conimmunities": "charmed, paralyzed, exhaustion, poison, stunned, unconscious",
+  "senses": "darkvision 240 ft., passive Perception 15",
+  "languages": "Common, Darakhul",
+  "abilities": {
+    "str": 11,
+    "dex": 18,
+    "con": 17,
+    "int": 12,
+    "wis": 13,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Magic Weapons",
+      "desc": "The flutterflesh's attacks are magical."
+    },
+    {
+      "name": "Turn Resistance",
+      "desc": "The flutterflesh has advantage on saving throws against any effect that turns undead."
+    },
+    {
+      "name": "Creeping Death",
+      "desc": "A creature that starts its turn within 30 feet of the flutterflesh must make a successful DC 15 Constitution saving throw or take 14 (4d6) necrotic damage."
+    },
+    {
+      "name": "Regeneration",
+      "desc": "The flutterflesh regains 10 hit points at the start of its turn. If the flutterflesh takes radiant or fire damage, this trait doesn't function at the start of its next turn. The flutterflesh dies only if it starts its turn with 0 hit points and doesn't regenerate."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The flutterflesh makes two bone spur attacks or two tormenting gaze attacks."
+    },
+    {
+      "name": "Bone Spur",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 17 (2d12 + 4) slashing damage plus 11 (2d10) necrotic damage. If both attacks hit a single creature in the same turn, it is grappled (escape DC 10). As a bonus action, the flutterflesh can choose whether this attack does bludgeoning, piercing, or slashing damage."
+    },
+    {
+      "name": "Tormenting Gaze",
+      "desc": "A target creature within 120 feet and able to see the flutterflesh must make a DC 15 Wisdom saving throw.  The creature takes 18 (4d8) psychic damage and becomes paralyzed for 1d4 rounds on a failure, and half damage and isn't paralyzed with a success . Tormenting gaze can't be used against the same target twice in a single turn."
+    },
+    {
+      "name": "Slash",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage. On a critical hit, the target takes an additional 27 (5d10) slashing damage and must make a DC 12 Constitution saving throw. On a failure, the flutterflesh lops off and absorbs one of the target's limbs (chosen randomly) and heals hit points equal to the additional slashing damage it inflicted."
+    }
+  ]
+}

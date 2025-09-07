@@ -1,0 +1,53 @@
+{
+  "name": "Azer Magma Shaman",
+  "tags": [
+    "medium",
+    "elemental",
+    "cr3",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "lawful neutral",
+  "cr": "3 (700 XP)",
+  "hp": "55 (10d8 + 10)",
+  "ac": "13 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Cha +5, Con +3",
+  "immunities": "fire, poison",
+  "conimmunities": "poisoned",
+  "senses": "passive Perception 10",
+  "languages": "Ignan",
+  "abilities": {
+    "str": 14,
+    "dex": 10,
+    "con": 12,
+    "int": 12,
+    "wis": 10,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The azer\u2019s innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no components: * At will: <i>mending, produce flame, comprehend languages, mold earth</i> * 2/day each: <i>cure wounds (elementals only), shield, aganazzar\u2019s scorcher</i> * 1/day each: <i>fireball, enhance ability, invisibility</i>"
+    },
+    {
+      "name": "Heated Weapons",
+      "desc": "When the azer hits with a metal melee weapon, it deals an extra 3 (1d6) fire damage (included in the attacks)."
+    },
+    {
+      "name": "Illumination",
+      "desc": "The azer sheds bright light in a 10-foot radius and dim light for an additional 10 feet. This feature does not activate while the azer is invisible."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The azer makes two attacks with its warhammer."
+    },
+    {
+      "name": "Warhammer",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage, or 7 (1d10 + 2) bludgeoning damage if used with two hands to make a melee attack, plus 3 (1d6) fire damage."
+    }
+  ]
+}

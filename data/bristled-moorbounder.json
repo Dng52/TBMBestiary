@@ -1,0 +1,50 @@
+{
+  "name": "Bristled Moorbounder",
+  "tags": [
+    "large",
+    "beast",
+    "cr3",
+    "explorers-guide-to-wildemount"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "3 (700 XP)",
+  "hp": "52 (7d10 + 14)",
+  "ac": "15 (natural armor)",
+  "speed": "70 ft.",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "--",
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 14,
+    "int": 2,
+    "wis": 13,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Bladed Hide",
+      "desc": "At the start of each of its turns, the moorbounder deals 5 (2d4) piercing damage to any creature grappling it."
+    },
+    {
+      "name": "Standing Leap",
+      "desc": "The moorbounder\u2019s long jump is up to 40 feet and its high jump is up to 20 feet, with or without a running start."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The moorbounder makes two attacks: one with its blades and one with its claws."
+    },
+    {
+      "name": "Blades",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 14 (4d4 + 4) slashing damage."
+    }
+  ]
+}

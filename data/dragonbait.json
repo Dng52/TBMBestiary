@@ -1,0 +1,50 @@
+{
+  "name": "Dragonbait",
+  "tags": [
+    "Medium",
+    "humanoid",
+    "cr5",
+    "tomb-of-annihilation"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful good",
+  "cr": "5 (1,800 XP)",
+  "hp": "120 (16d8 +48)",
+  "ac": "17 (breastplate, shield)",
+  "speed": "30 ft.",
+  "skills": "Athletics +5, Medicine +6",
+  "senses": "passive Perception 13",
+  "abilities": {
+    "str": 15,
+    "dex": 13,
+    "con": 17,
+    "int": 14,
+    "wis": 16,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Divine Health",
+      "desc": "Dragonbait is immune to disease."
+    },
+    {
+      "name": "Magic Resistan ce Aura",
+      "desc": "While holding his holy avenger, Dragonbait creates an aura in a 10-foot radius around him. While this aura is active , Dragonbait and all creatures friendly to him in the aura have advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Dragonbait makes two melee weapon attacks."
+    },
+    {
+      "name": "Holy Avenger (+3 Longsword)",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (ld8 +5) slashing damage, or 10 (ldlO +5) slashing damage when used with two hands. If the target is a fiend or an undead, it takes an extra 11 (2d10) radiant damage."
+    },
+    {
+      "name": "Sense Alignment",
+      "desc": "Dragonbait chooses one creature he can see within 60 feet of him and determines its alignment, as long as the creature isn't hidden from divination magic by a spell or ot her magical effect."
+    }
+  ]
+}

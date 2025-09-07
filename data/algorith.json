@@ -1,0 +1,59 @@
+{
+  "name": "Algorith",
+  "tags": [
+    "medium",
+    "construct",
+    "cr10",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "construct",
+  "alignment": "lawful neutral",
+  "cr": "10 (5900 XP)",
+  "hp": "136 (16d8 + 64)",
+  "ac": "18 (natural armor)",
+  "speed": "40 ft., fly 40 ft.",
+  "saves": "Dex +6, Con +8, Wis +7, Cha +8",
+  "skills": "Athletics +9, Insight +7, Investigation +5, Perception +7",
+  "immunities": "poison",
+  "resistance": "acid, cold, lightning",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 17",
+  "languages": "Common, Celestial, Draconic, Infernal",
+  "abilities": {
+    "str": 21,
+    "dex": 14,
+    "con": 19,
+    "int": 13,
+    "wis": 16,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Immutable Form",
+      "desc": "The algorith is immune to any spell or effect that would alter its form."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The algorith's innate spellcasting ability is Charisma (spell save DC 16). It can innately cast the following spells, requiring no material components: * At will: <i>aid, blur, detect magic, dimension door</i> * 5/day each: <i>dispel magic</i> * 1/day: <i>commune </i>(5 questions)<i>, wall of force</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The algorith makes two logic razor attacks."
+    },
+    {
+      "name": "Logic Razor",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 31 (4d12 + 5) force damage."
+    },
+    {
+      "name": "Cone of Negation (Recharge 5-6)",
+      "desc": "An algorith can project a cone of null energy. Targets inside the 30 foot cone take 42 (12d6) force damage and suffer the effect of a dispel magic spell. A successful DC 16 Dexterity saving throw reduces the damage to half and negates the dispel magic effect on that target."
+    },
+    {
+      "name": "Reality Bomb (5/Day)",
+      "desc": "The algorith can summon forth a tiny rune of law and throw it as a weapon. Any creature within 30 feet of the square where the reality bomb lands takes 21 (6d6) force damage and is stunned until the start of the algorith's next turn. A target that makes a successful DC 16 Dexterity saving throw takes half damage and isn't stunned."
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "name": "The Phoenix (SaF)",
+  "tags": [
+    "huge",
+    "celestial",
+    "cr21",
+    "strongholds-and-followers"
+  ],
+  "size": "Huge",
+  "type": "celestial",
+  "alignment": "neutral good",
+  "cr": "21 (33,000 XP)",
+  "hp": "243 (18d10 + 144)",
+  "ac": "21 (natural armor)",
+  "speed": "30 ft., fly 3,450 ft. (hover)",
+  "saves": "Int +14, Wis +14, Cha +16",
+  "skills": "Perception +14",
+  "immunities": "necrotic, poison",
+  "resistance": "radiant; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "charmed, exhaustion, frightened, poisoned",
+  "senses": "truesight 120 ft., passive Perception 24",
+  "languages": "all, telepathy 120 ft.",
+  "abilities": {
+    "str": 25,
+    "dex": 22,
+    "con": 26,
+    "int": 25,
+    "wis": 25,
+    "cha": 29
+  },
+  "traits": [
+    {
+      "name": "Born of Fire",
+      "desc": "The phoenix radiates sunlight in a 60-foot radius and dim light in a further 180- foot radius."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The phoenix has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "The Fire Is Alive",
+      "desc": "At the start of each of its turns, the phoenix regains 3d12 hit points."
+    },
+    {
+      "name": "Dazzling Plumage",
+      "desc": "The phoenix\u2019s feathers cycle through every color in the rainbow. Any evil creature that begins its turn within 60 feet of the Defender of All the Earth and does not avert its gaze must succeed on a DC 15 Wisdom saving throw or be charmed until the end of its next turn. Charmed targets are stunned. If a target\u2019s saving throw is successful, it is immune to the phoenix\u2019s Dazzling Plumage for the next 24 hours."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The phoenix makes two talon attacks and one bite attack."
+    },
+    {
+      "name": "Talon",
+      "desc": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 25 (4d8 + 7) slashing damage."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: + 14 to hit, reach 15 ft., one target. Hit: 18 (2d10 + 7) piercing damage plus 9 (2d8) fire damage."
+    },
+    {
+      "name": "Light of All Colors (Recharge 4\u20136)",
+      "desc": "The phoenix exhales a beam of brilliant, prismatic light in a line that is 10 feet wide and 1,000 feet long. Each creature in that line must make a DC 22 Dexterity saving throw, taking 45 (10d8) fire and 35 (10d6) radiant damage on a failed save, or half as much damage on a successful one. In battle, the phoenix is a unit with Attack +17 and Power +15 and can affect every unit in the battle."
+    }
+  ]
+}

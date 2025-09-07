@@ -1,0 +1,54 @@
+{
+  "name": "Authority",
+  "tags": [
+    "medium",
+    "celestial",
+    "cr6",
+    "strongholds-and-followers"
+  ],
+  "size": "Medium",
+  "type": "celestial",
+  "alignment": "any good alignment",
+  "cr": "6 (2,300 XP)",
+  "hp": "97 (13d8 + 39)",
+  "ac": "19 (natural armor)",
+  "speed": "40 ft., fly 40 ft.",
+  "saves": "Dex +5, Con +6",
+  "immunities": "necrotic, poison",
+  "resistance": "radiant; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": " charmed, exhaustion, frightened, poisoned",
+  "senses": "truesight 60 ft., passive Perception 19",
+  "languages": "all, telepathy 60 ft.",
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 17,
+    "int": 14,
+    "wis": 16,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Angelic Weapons",
+      "desc": "The Authority\u2019s weapon attacks are magical. When the Authority hits with any weapon, the weapon deals an extra 9 (2d8) radiant damage (included in the attack)."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The Authority has advantage on saving throws against spells and other magical effects from evil characters and sources."
+    },
+    {
+      "name": "Aura of Protection Against Evil",
+      "desc": "Evil creatures have disadvantage on attack rolls against all allies within 5 feet of the Authority. Allies in this area can\u2019t be charmed, frightened, or possessed by evil creatures. If an ally is already charmed, frightened, or possessed by evil magic, the ally has advantage on any new saving throw against the relevant effect."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The Authority makes three attacks with the Brightsword."
+    },
+    {
+      "name": "Brightsword",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) slashing damage and 9 (2d8) radiant damage. Evil creatures take an extra 9 (2d8) radiant damage."
+    }
+  ]
+}

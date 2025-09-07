@@ -1,0 +1,60 @@
+{
+  "name": "Malphas (Storm Crow)",
+  "tags": [
+    "medium",
+    "fey",
+    "cr6",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "fey",
+  "alignment": "neutral evil",
+  "cr": "6 (2300 XP)",
+  "hp": "120 (16d8 + 48)",
+  "ac": "16 (studded leather)",
+  "speed": "40 ft., fly 30 ft.",
+  "saves": "Dex +7, Con +6, Wis +4, Cha +5",
+  "skills": "Perception +4",
+  "senses": "darkvision 60 ft., passive Perception 14",
+  "languages": "Common, Giant, Ravenfolk, Sylvan",
+  "abilities": {
+    "str": 19,
+    "dex": 19,
+    "con": 16,
+    "int": 14,
+    "wis": 13,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The storm crow's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no material components: At will: magic missile 1/day: haste"
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the malphas has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Night Terror (1/round)",
+      "desc": "As a bonus action immediately after making a successful melee attack, a malphas storm crow can cast magic missile through his or her sword at the same target."
+    },
+    {
+      "name": "Swordtrained",
+      "desc": "Malphas are trained from youth in combat. They are proficient with all martial melee and ranged weapons."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The malphas makes three longsword attacks."
+    },
+    {
+      "name": "Longsword",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage."
+    },
+    {
+      "name": "Shadow Call",
+      "desc": "A malphas can cast magic missile as a reaction when it is hit by a ranged weapon attack."
+    }
+  ]
+}

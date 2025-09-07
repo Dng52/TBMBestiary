@@ -1,0 +1,56 @@
+{
+  "name": "Aetherspawn Spellblade",
+  "tags": [
+    "medium",
+    "elemental",
+    "cr2",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "45 (7d8 + 14)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft., fly 30 ft. (hover)",
+  "resistance": "bludgeoning, piercing, slashing damage from nonmagical weapons; see Elemental Attunement",
+  "conimmunities": "exhaustion, paralyzed, petrified, poisoned, unconscious",
+  "senses": "passive Perception 12",
+  "languages": "Primordial",
+  "abilities": {
+    "str": 10,
+    "dex": 17,
+    "con": 15,
+    "int": 16,
+    "wis": 15,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Elemental Attunement",
+      "desc": "The spellblade is infused with either arcane, ice, fire, or lightning energy. The spellblade's attacks deal extra damage based upon this element (included in the attack), it has resistances to the corresponding element, and can cast a corresponding elemental spell twice per day requiring no material components. The spellblade's spellcasting ability is Intelligence (spell save DC 13, +5 bonus to hit). * Arcane \u2013 bonus force damage and resistance to force damage; can cast <i>magic missile</i> * Ice - bonus cold damage and resistance to cold damage; can cast <i>ice knife</i> * Fire \u2013 bonus fire damage and resistance to fire damage; can cast <i>burning hands</i> * Lightning \u2013 bonus lightning damage and resistance to lightning damage; can cast <i>witch bolt</i>"
+    },
+    {
+      "name": "Overcharging Strikes",
+      "desc": "If the spellblade hits the same target with both of its aether blade attacks in a single turn, the target detonates with elemental energy. That creature takes an additional 7 (2d6) damage of a type corresponding to the guardian's Elemental Attunement."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The spellblade makes two melee attacks."
+    },
+    {
+      "name": "Aether Blades",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage plus 3 (1d6) damage of the type corresponding to the spellblade's Elemental Attunement."
+    },
+    {
+      "name": "Elemental Shards",
+      "desc": "Ranged Weapon Attack: +5 to hit, range 30/90 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 3 (1d6) damage of the type corresponding to the spellblade's Elemental Attunement."
+    },
+    {
+      "name": "Deflecting Blades",
+      "desc": "The spellblade raises its aether blades in an attempt to deflect a single target ranged spell or weapon attack that would hit it. The spellblade adds 2 to its AC against that attack. To do so, the spellblade must be able to see the attack."
+    }
+  ]
+}

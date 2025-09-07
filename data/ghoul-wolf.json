@@ -1,0 +1,53 @@
+{
+  "name": "Ghoul Wolf",
+  "tags": [
+    "large",
+    "undead",
+    "cr2",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "undead",
+  "alignment": "chaotic evil",
+  "cr": "2 (450 XP)",
+  "hp": "52 (8d8 + 8)",
+  "ac": "13 (natural armor)",
+  "speed": "50 ft.",
+  "skills": "Perception +4",
+  "immunities": "poison",
+  "conimmunities": "charmed, exhaustion, poisoned",
+  "senses": "passive Perception 14",
+  "languages": "--",
+  "abilities": {
+    "str": 16,
+    "dex": 13,
+    "con": 13,
+    "int": 7,
+    "wis": 11,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Keen Hearing and Smell",
+      "desc": "The ghoul wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+    },
+    {
+      "name": "Pack Tactics",
+      "desc": "The ghoul wolf has advantage on attack rolls against a creature if at least one of the ghoul wolf\u2019s allies is within 5 feet of the creature and the ally isn\u2019t incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The ghoul wolf makes two attacks: one with its bite and one with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 10 (2d6 + 3) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    }
+  ]
+}

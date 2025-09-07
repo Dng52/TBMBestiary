@@ -1,0 +1,77 @@
+{
+  "name": "Translucent Bulette",
+  "tags": [
+    "huge",
+    "monstrosity",
+    "cr15",
+    "tome-of-horrors"
+  ],
+  "size": "Huge",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "15 (13,000 XP)",
+  "hp": "225 (18d12 + 108)",
+  "ac": "14 (Material Plane) or 18 (Astral Plane)",
+  "speed": "60 ft., fly 80 ft.",
+  "saves": "Dex +7, Con +11, Wis +5",
+  "skills": "Perception +10",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons",
+  "senses": "blindsight 60 ft., truesight 120 ft., passive Perception 14",
+  "languages": "--",
+  "abilities": {
+    "str": 24,
+    "dex": 14,
+    "con": 22,
+    "int": 6,
+    "wis": 10,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Astral Ambusher",
+      "desc": "In the first round of a combat, the bulette has advantage on attack rolls against any creature it has surprised."
+    },
+    {
+      "name": "Astral Jaunt",
+      "desc": "As a bonus action, the bulette can magically shift from the Prime Material Plane to the Astral Plane, or vice versa."
+    },
+    {
+      "name": "Astral Portal",
+      "desc": "On the Prime Material Plane, any melee attack against the translucent bulette that should hit instead misses, and the attacker risks falling through the beast\u2019s form, which acts as a dimensional portal, and into the astral plane. The attacker must succeed on a DC 14 Dexterity saving throw to avoid falling through the bulette and into the Astral Plane."
+    },
+    {
+      "name": "Detect Evil and Good",
+      "desc": "The bulette knows if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of it and where the creature is located. The bulette also knows if there is a place or object within 30 feet of it that has been consecrated or desecrated."
+    },
+    {
+      "name": "Dual Planar Connection",
+      "desc": "Each translucent bulette is tied so thoroughly to the Astral and Prime Material Planes that its entire body acts as an open portal between the two planes. Intentional use of a translucent bulette for purposeful travel between these two planes is possible with a successful grapple or melee attack against the creature."
+    },
+    {
+      "name": "Limited Invulnerability (Prime Material Plane Only)",
+      "desc": "While on the Prime Material Plane, the bulette is immune to all damage."
+    },
+    {
+      "name": "Insubstantial Form",
+      "desc": "The translucent bulette cannot be harmed on the Prime Material Plane because any damaging attacks merely phase through its insubstantial form. Physical attacks are only possible when attacking the creature from the Astral Plane."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The bulette has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Pop goes the Portal",
+      "desc": "If killed, the body of a translucent bulette immediately vanishes with a popping sound, severing its living portal connection between planes."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 33 (4d12 + 7) piercing damage and the target is grappled if the bulette is not already grappling another creature."
+    },
+    {
+      "name": "Portal Swallow",
+      "desc": "The bulette makes a bite attack against a Large or smaller target it is grappling. If the attack hits, the target is swallowed and transported to the Astral Plane, and the grapple ends."
+    }
+  ]
+}

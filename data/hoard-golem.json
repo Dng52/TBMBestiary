@@ -1,0 +1,62 @@
+{
+  "name": "Hoard Golem",
+  "tags": [
+    "huge",
+    "construct",
+    "cr12",
+    "tome-of-beasts"
+  ],
+  "size": "Huge",
+  "type": "construct",
+  "alignment": "unaligned",
+  "cr": "12 (8400 XP)",
+  "hp": "161 (14d12 + 70)",
+  "ac": "18 (natural armor)",
+  "speed": "40 ft.",
+  "saves": "Con +9",
+  "skills": "Athletics +10, Perception +4",
+  "immunities": "poison, psychic; bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine",
+  "conimmunities": "charmed, exhausted, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 120 ft., passive Perception 14",
+  "languages": "understands the language of its creator but can't speak",
+  "abilities": {
+    "str": 22,
+    "dex": 15,
+    "con": 20,
+    "int": 3,
+    "wis": 11,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Strike with Awe",
+      "desc": "Creatures within 120 feet of an immobile hoard golem suffer disadvantage on Wisdom (Perception) checks. A creature's sheer glee on discovering a vast hoard of treasure distracts it from its surroundings."
+    },
+    {
+      "name": "Immutable Form",
+      "desc": "The golem is immune to any spell or effect that would alter its form."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The golem has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The golem's weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The golem makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 39 (6d10 + 6) bludgeoning damage."
+    },
+    {
+      "name": "Thieving Whirlwind (Recharge 5-6)",
+      "desc": "The hoard golem transforms into a 20-foot radius whirlwind of the treasures of which it is composed. In this form, it has immunity to all slashing and piercing damage. As a whirlwind, it can enter other creatures' spaces and stop there. Every creature in a space the whirlwind occupies must make a DC 17 Dexterity saving throw. On a failure, a target takes 40 (6d10 + 7) bludgeoning damage and the whirlwind removes the most valuable visible item on the target, including wielded items, but not armor. If the saving throw is successful, the target takes half the bludgeoning damage and retains all possessions. The golem can remain in whirlwind form for up to 3 rounds, or it can transform back to its normal form on any of its turns as a bonus action."
+    }
+  ]
+}

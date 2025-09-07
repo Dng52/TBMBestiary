@@ -1,0 +1,41 @@
+{
+  "name": "Orthon",
+  "tags": [
+    "large",
+    "fiend",
+    "cr10",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Large",
+  "type": "fiend",
+  "alignment": "lawful evil",
+  "cr": "10 (5900 XP)",
+  "hp": "105  (10d10 + 50)",
+  "ac": "17 (half plate)",
+  "speed": "30 ft., climb 30 ft.",
+  "saves": "Dex +7, Con +9, Wis +6",
+  "skills": "Perception +10, Stealth +11, Survival +10",
+  "immunities": "fire, poison",
+  "resistance": "cold; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered",
+  "conimmunities": "charmed, exhaustion, poisoned",
+  "senses": "darkvision 120 ft., truesight 30 ft., passive Perception 20",
+  "languages": "Common, Infernal, telepathy 120 ft.",
+  "abilities": {
+    "str": 22,
+    "dex": 16,
+    "con": 21,
+    "int": 15,
+    "wis": 15,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Invisibility Field",
+      "desc": "The orthon can use a bonus action to become invisible. Any equipment the orthon wears or carries is also invisible as long as the equipment is on its person. This invisibility ends immediately after the orthon makes an attack roll or is hit by an attack."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The orthon has advantage on saving throws against spells and other magical effects."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Corpse Rook",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr4",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "neutral evil",
+  "cr": "4 (1,100 XP)",
+  "hp": "90 (12d10 + 24)",
+  "ac": "13 (natural armor)",
+  "speed": "10 ft., fly 60 ft.",
+  "skills": "Perception +2, Survival +2",
+  "senses": "darkvision 60 ft., passive Perception 12",
+  "languages": "--",
+  "abilities": {
+    "str": 16,
+    "dex": 17,
+    "con": 14,
+    "int": 5,
+    "wis": 10,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Flyby",
+      "desc": "The corpse rook doesn\u2019t provoke opportunity attacks when it flies out of an enemy\u2019s reach."
+    },
+    {
+      "name": "Three Heads",
+      "desc": "The corpse rook has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, or knocked unconscious."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The corpse rook makes three bite attacks and one claw attack."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) slashing damage."
+    }
+  ]
+}

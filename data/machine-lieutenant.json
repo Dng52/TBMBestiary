@@ -1,0 +1,50 @@
+{
+  "name": "Machine Lieutenant",
+  "tags": [
+    "medium",
+    "construct",
+    "cr4",
+    "strongholds-and-followers"
+  ],
+  "size": "Medium",
+  "type": "construct",
+  "alignment": "neutral",
+  "cr": "4 (1,100 XP)",
+  "hp": "60 (8d8 + 24)",
+  "ac": "20 (plate, shield)",
+  "speed": "40 ft.",
+  "skills": "Perception +4",
+  "immunities": "force, necrotic, poison",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons that aren\u2019t adamantine",
+  "conimmunities": "blinded, charmed, deafened, frightened, paralyzed, petrified, poisoned, stunned",
+  "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 14",
+  "languages": "understands the languages of its creator but can\u2019t speak",
+  "abilities": {
+    "str": 18,
+    "dex": 13,
+    "con": 16,
+    "int": 10,
+    "wis": 10,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "desc": "The machine lieutenant has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Both Guard and Ward",
+      "desc": "While the lieutenant is within 5 feet of the attuned owner of the codex automata, any attack targeting the codex\u2019s owner has a 50% chance to instead target the machine lieutenant."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The lieutenant makes two longsword attacks."
+    },
+    {
+      "name": "Longsword",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage or 9 (1d10 + 4) slashing damage if used with two hands."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Awakened Zurkhwood",
+  "tags": [
+    "huge",
+    "plant",
+    "cr2",
+    "out-of-the-abyss"
+  ],
+  "size": "Huge",
+  "type": "plant",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "59 (7d12+14)",
+  "ac": "13 (natural armor)",
+  "speed": "20 ft.",
+  "resistance": "bludgeoning, piercing",
+  "vulnerability": "fire",
+  "senses": "darkvision 120 ft.",
+  "languages": "one language known by its creator",
+  "abilities": {
+    "str": 19,
+    "dex": 6,
+    "con": 15,
+    "int": 10,
+    "wis": 10,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "False Appearance",
+      "desc": "While the tree remains motionless, it is indistinguishable from a normal zurkhwood mushroom."
+    },
+    {
+      "name": "Mute",
+      "desc": "If the awakened zurkhwood was created by a myconid sovereign, it can't speak."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) bludgeoning damage."
+    }
+  ]
+}

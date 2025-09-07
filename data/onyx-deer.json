@@ -1,0 +1,60 @@
+{
+  "name": "Onyx Deer",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr4",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "4 (1,100 XP)",
+  "hp": "76 (9d10 + 27)",
+  "ac": "14 (natural armor)",
+  "speed": "40 ft.",
+  "skills": "Perception +3",
+  "conimmunities": "petrified",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "understands Sylvan but can't speak",
+  "abilities": {
+    "str": 19,
+    "dex": 15,
+    "con": 17,
+    "int": 5,
+    "wis": 12,
+    "cha": 13
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "desc": "The onyx deer has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Onyx Bite",
+      "desc": "Creatures bitten by an onyx deer must succeed on a Constitution saving throw or slowly begin to turn into onyx (included in the attack)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The onyx deer makes four attacks: one bite, one gore, and two with its hooves."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage and the creature must make a DC 14 Constitution saving throw. On a failed save, the creature magically begins to turn to onyx and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature is petrified in onyx until freed by a greater restoration spell or other magic."
+    },
+    {
+      "name": "Gore",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) piercing damage."
+    },
+    {
+      "name": "Hooves",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage."
+    },
+    {
+      "name": "Bellow (Recharge 5\u20136)",
+      "desc": "The onyx deer unleashes a rumbling bellow. Each creature that is within 60 feet of the onyx deer and able to hear it must succeed on a DC 14 Wisdom saving throw or be frightened for 1 minute. The frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Blade Dancer",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr5",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "5 (1,800 XP)",
+  "hp": "81 (6d10 + 4d8 + 30)",
+  "ac": "17 (half plate)",
+  "speed": "30 ft.",
+  "saves": "Str +4, Con +7",
+  "skills": "Acrobatics +8, History +6, Performance +11, Sleight of Hand +12",
+  "senses": "passive Perception 10",
+  "languages": "Any three languages",
+  "abilities": {
+    "str": 10,
+    "dex": 18,
+    "con": 16,
+    "int": 14,
+    "wis": 10,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Combat Caster",
+      "desc": "The dancer can perform the somatic components of spells even when it has weapons or a shield in one or both hands."
+    },
+    {
+      "name": "Combat Maneuvers (3/Short Rest)",
+      "desc": "Dancers have trained all their life to excel in combat and as a result have mastered special combat maneuvers that they can use in combat. Whenever the dancer makes a melee weapon attack, it can choose to execute one of these maneuvers to add additional effects to the attack. In addition to these other effects, all maneuvers cause the attacks to deal an additional 1d8 damage. Each dancer has two random maneuvers from the list below available for use: * Disarming Attack \u2013 The target must succeed on a DC 16 Strength saving throw or drop its weapon at its feet. * Distracting Strike \u2013 The next attack an ally makes against the target is made with advantage. * Feinting Attack \u2013 The next attack roll you make against a target within 5 feet is made with advantage. * Trip Attack \u2013 If the target is Large or smaller, it must succeed on a DC 16 Strength saving throw or be knocked prone."
+    },
+    {
+      "name": "Inspire (3/Short Rest)",
+      "desc": "Target uninspired creature within 60 feet of the dancer that can hear it gains a d8 inspiration die. Once within the next 10 minutes, that creature can roll that die and add the number rolled to one ability check, attack roll, or saving throw it makes. This die must be rolled before it is decided if the roll succeeds or fails."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The dancer is a 3th-level spellcaster. Its spellcasting ability is charisma (spell save DC 15, +7 to hit with spell attacks). The dancer has the following bard spells prepared: * Cantrips (at will): <i>blade ward, mage hand</i> * 1st level (4 slots): <i>heroism, sleep, unseen servant</i> * 2nd level (2 slots): <i>invisibility, suggestion</i>"
+    },
+    {
+      "name": "Two-Weapon Fighting Style",
+      "desc": "The dancer adds its ability modifier to the damage of its off-hand weapon attacks."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The dancer makes three attacks with its scimitar or three ranged attacks with its dagger."
+    },
+    {
+      "name": "Scimitar",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage."
+    },
+    {
+      "name": "Dagger",
+      "desc": "Ranged Weapon Attack: +8 to hit, range 20/60 ft., one target. Hit: 6 (1d4 + 4) piercing damage."
+    },
+    {
+      "name": "Action Surge (1/Short Rest)",
+      "desc": "The dancer makes five scimitar attacks."
+    }
+  ]
+}

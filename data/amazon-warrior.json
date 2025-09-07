@@ -1,0 +1,60 @@
+{
+  "name": "Amazon Warrior",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr2",
+    "homebrew"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful neutral",
+  "cr": "2 (450 XP)",
+  "hp": "37 (5d8 + 15)",
+  "ac": "18 (breastplate, shield)",
+  "speed": "30 ft.",
+  "saves": "Str +5, Con +5",
+  "skills": "Athletics +5, Perception +3, Survival +3",
+  "senses": "passive Perception 13",
+  "languages": "Draconic",
+  "abilities": {
+    "str": 16,
+    "dex": 14,
+    "con": 16,
+    "int": 9,
+    "wis": 12,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Capitalize (1/Turn)",
+      "desc": "If the Amazon hits a creature that she can see with a melee weapon attack, she can use her bonus action to immediately make another melee weapon attack against the same creature. This extra attack has disadvantage."
+    },
+    {
+      "name": "Fear of Magic",
+      "desc": "If a creature casts a spell or uses another magical effect within 30 feet of the Amazon and the Amazon can see it, the Amazon must succeed on a Wisdom saving throw with a DC equal to the spellcaster's spell save DC. On a failed saving throw, the Amazon is frightened of the spellcaster for 1 minute. The Amazon can repeat her saving throw at the end of each of her turns, ending the frightened effect on a success. If the Amazon succeeds on her initial saving throw or the effect ends for her, this trait does not function for 1 hour."
+    },
+    {
+      "name": "Serpent Whisperer",
+      "desc": "Through sounds and gestures, the Amazon can communicate simple ideas with snakes and other serpents."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The Amazon makes two attacks with her macuahuitl."
+    },
+    {
+      "name": "Macuahuitl",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning or slashing damage (Amazon's choice), or 8 (1d10 + 3) bludgeoning or slashing damage (Amazon's choice) when wielded with two hands."
+    },
+    {
+      "name": "Javelin",
+      "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft., or range 30/120 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+    },
+    {
+      "name": "Shield Bash",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) bludgeoning damage. If the target is a Medium or smaller creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "name": "The Nameless Goose",
+  "tags": [
+    "small",
+    "fiend",
+    "cr7",
+    "homebrew"
+  ],
+  "size": "Small",
+  "type": "fiend",
+  "alignment": "chaotic neutral",
+  "cr": "7 (3,900 XP)",
+  "hp": "78 (12d8 + 24)",
+  "ac": "15 (natural armor)",
+  "speed": "25 ft., fly 60 ft., swim 60 ft.",
+  "saves": "Dex +5 Wis +4, Cha +7",
+  "skills": "Intimidation +7, Sleight of Hand +8, Stealth +8",
+  "immunities": "psychic",
+  "conimmunities": "charmed, frightened, grappled, prone",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "Infernal, Abyssal, Deep Speech, Goose",
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 15,
+    "int": 12,
+    "wis": 12,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The goose\u2019s innate spellcasting ability is Charisma. It can innately cast the following spells (spell save DC 15), requiring no material or somatic components: * At will: <i>arcane lock, shatter, fear, thunderous smite, wrathful smite</i> * 1/day each: <i>divine word, etherealness, power word stun</i>"
+    },
+    {
+      "name": "Evasive",
+      "desc": "When the goose is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, it instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+    },
+    {
+      "name": "Nimble Escape",
+      "desc": "The goose can take the Disengage or Hide action as a bonus action on each of its turns."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The goose uses its Honk, then makes three attacks with its Beak."
+    },
+    {
+      "name": "Beak",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage plus 10 (3d6) psychic damage."
+    },
+    {
+      "name": "Honk",
+      "desc": "All creatures of the goose's choice within 120 ft. that can hear it must make a DC 15 Wisdom saving throw. On a fail, the creature is enraged, having disadvantage on attacks against any target other than the goose until the end of the goose's next turn."
+    }
+  ]
+}

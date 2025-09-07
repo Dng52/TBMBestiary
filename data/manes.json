@@ -1,0 +1,35 @@
+{
+  "name": "Manes",
+  "tags": [
+    "small",
+    "fiend",
+    "cr1/8",
+    "monster-manual"
+  ],
+  "size": "Small",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "1/8 (25 XP)",
+  "hp": "9 (2d6+2)",
+  "ac": "9 (natural armor)",
+  "speed": "20 ft.",
+  "immunities": "poison",
+  "resistance": "cold, fire, lightning",
+  "conimmunities": "charmed, frightened, poisoned",
+  "senses": "darkvision 60 ft.",
+  "languages": "understands Abyssal but can't speak",
+  "abilities": {
+    "str": 10,
+    "dex": 9,
+    "con": 13,
+    "int": 3,
+    "wis": 8,
+    "cha": 4
+  },
+  "actions": [
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 5 (2d4) slashing damage."
+    }
+  ]
+}

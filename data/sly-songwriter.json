@@ -1,0 +1,44 @@
+{
+  "name": "Sly Songwriter",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "1 (200 XP)",
+  "hp": "24 (4d8 + 4)",
+  "ac": "14 (studded leather)",
+  "speed": "30 ft.",
+  "saves": "Dex +4, Cha +5",
+  "skills": "Acrobatics +4, Deception +5, History +3, Performance +7, Sleight of Hand +6",
+  "senses": "passive Perception 11",
+  "languages": "Any two languages",
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 12,
+    "int": 12,
+    "wis": 12,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "desc": "The songwriter is a 3th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). The songwriter has the following bard spells prepared: * Cantrips (at will): <i>dancing lights, message, vicious mockery</i> * 1st level (4 slots): <i>charm person, comprehend languages, tasha's hideous laughter</i> * 2nd level (2 slots): <i>enhance ability, hold person, silence</i>"
+    },
+    {
+      "name": "Cutting Words (3/Short Rest)",
+      "desc": "When a creature that the songwriter can see within 50 feet makes an attack roll, ability check, or a damage roll, the songwriter sings a quick disruptive melody. Roll a d8 and subtract the number from the creature's roll."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Rapier",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+    }
+  ]
+}

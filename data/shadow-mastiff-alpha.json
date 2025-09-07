@@ -1,0 +1,51 @@
+{
+  "name": "Shadow Mastiff Alpha",
+  "tags": [
+    "medium",
+    "monstrosity",
+    "cr2",
+    "volos-guide"
+  ],
+  "size": "Medium",
+  "type": "monstrosity",
+  "alignment": "neutral evil",
+  "cr": "2 (450 XP)",
+  "hp": "42-54",
+  "ac": "12",
+  "speed": "40 ft.",
+  "skills": "Perception +3, Stealth +6",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical attacks while in dim light or darkness",
+  "senses": "darkvision 60 ft.",
+  "abilities": {
+    "str": 16,
+    "dex": 14,
+    "con": 13,
+    "int": 6,
+    "wis": 12,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Ethereal Awareness",
+      "desc": "The shadow mastiff can see ethereal creatures and objects."
+    },
+    {
+      "name": "Keen Hearing and Smell",
+      "desc": "The shadow mastiff has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+    },
+    {
+      "name": "Shadow Blend",
+      "desc": "While in dim light or darkness, the shadow mastiff can use a bonus action to become invisible, along with anything it is wearing or carrying. The invisibility lasts until the shadow mastiff uses a bonus action to end it or until the shadow mastiff attacks, is in bright light, or is incapacitated."
+    },
+    {
+      "name": "Sunlight Weakness",
+      "desc": "While in bright light created by sunlight, the shadow mastiff has disadvantage on attack rolls, ability checks, and saving throws."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6+3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone. ***Terrifying Howl*** The shadow mastiff howls. Any beast or humanoid within 300 feet of the mastiff and able to to hear its howl must succeed on a DC 11 Wisdom saving throw or be frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a target's saving throw is successful or the effect ends for it, the target is immune to any shadow mastiff's Terrifying Howl for the next 24 hours."
+    }
+  ]
+}

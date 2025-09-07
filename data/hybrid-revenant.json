@@ -1,0 +1,57 @@
+{
+  "name": "Hybrid Revenant",
+  "tags": [
+    "large",
+    "undead",
+    "cr12",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "12 (8,400 XP)",
+  "hp": "209 (22d10 + 88)",
+  "ac": "18 (natural armor)",
+  "speed": "40 ft.",
+  "saves": "Con +8, Int +4",
+  "immunities": "necrotic, poison",
+  "conimmunities": "exhaustion, fright, poison, unconscious",
+  "senses": "darkvision 120 ft., passive Perception 6",
+  "languages": "understands Common, but cannot speak",
+  "abilities": {
+    "str": 21,
+    "dex": 10,
+    "con": 19,
+    "int": 10,
+    "wis": 3,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Explosive Despair",
+      "desc": "The suffering of the hybrid revenant is so great that it explodes outward around itself from time to time, at random, as a palpable and deadly force. At the beginning of the hybrid revenant\u2019s initiative, roll 1d6. On a one, the hybrid revenant doubles over in apparent pain, incapacitated for this round. At the same time, necrotic withering hurtles outward from the revenant in a 30-foot radius. Each creature in this area must make a DC 17 Constitution saving throw, taking 71 (13d10) damage on a failed save, or half as much damage on a successful one."
+    },
+    {
+      "name": "Taint on the Land",
+      "desc": "If the hybrid revenant is merely slain, the restless spirits that formed it will not be satisfied. Deprived of a body, they will remain in waiting for another like-minded soul to join them, and the process will begin again (and in the meantime, the location of its corpse will attract other undead to the area). The hybrid revenant may be forcibly laid to rest after its body is slain by casting hallow on any physical remains. However, a hybrid revenant may also be laid to rest through roleplay, for a party and GM so inclined, by learning the revenant\u2019s tale and providing some form of solace, justice, epiphany, or catharsis."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The hybrid revenant attacks once with its bite and twice with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 18 (2d12 + 5) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage."
+    },
+    {
+      "name": "Wail of the Yawning Void (Recharge 4\u20136)",
+      "desc": "When a hybrid revenant howls, those who hear its cry are consumed by the nameless, gaping loss within the revenant\u2019s soul. All creatures within 60 feet of the revenant that can hear it must succeed on a DC 17 Wisdom saving throw or be stunned for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. If the saving throw is successful, or the effect ends on it, the creature is immune to the revenant\u2019s Wail of the Yawning Void for 24 hours."
+    }
+  ]
+}

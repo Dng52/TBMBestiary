@@ -1,0 +1,56 @@
+{
+  "name": "Tavern Gambler",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr3",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "3 (700 XP)",
+  "hp": "55 (10d8 + 10)",
+  "ac": "15 (studded leather)",
+  "speed": "30 ft.",
+  "saves": "Dex +6, Int +3",
+  "skills": "Acrobatics +6, Insight +9, Persuasion +6, Sleight of Hand +9, Stealth +6",
+  "senses": "passive Perception 13",
+  "languages": "Any two languages and Thieves' Cant",
+  "abilities": {
+    "str": 10,
+    "dex": 17,
+    "con": 12,
+    "int": 10,
+    "wis": 14,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Cunning Action",
+      "desc": "As a bonus action, the gambler can take the Dash, Disengage, or Hide action."
+    },
+    {
+      "name": "Lucky Charm",
+      "desc": "When the gambler rolls a natural 1 for an attack roll or skill check, it can reroll and take the second result instead. The gambler also has advantage on skill checks for dice and card games."
+    },
+    {
+      "name": "Sneak Attack (1/Turn)",
+      "desc": "The gambler deals an extra 14 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the gambler that isn't incapacitated and the gambler doesn't have disadvantage on the attack roll."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The gambler makes two attacks with its dagger."
+    },
+    {
+      "name": "Dagger",
+      "desc": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage."
+    },
+    {
+      "name": "Uncanny Dodge (1/Turn)",
+      "desc": "The gambler halves the damage that it takes from an attack that hits it. The gambler must be able to see the attacker."
+    }
+  ]
+}

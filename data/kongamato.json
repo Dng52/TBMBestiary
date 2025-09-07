@@ -1,0 +1,51 @@
+{
+  "name": "Kongamato",
+  "tags": [
+    "large",
+    "beast",
+    "cr5",
+    "tome-of-beasts"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "5 (1800 XP)",
+  "hp": "112 (15d10 + 30)",
+  "ac": "16 (natural armor)",
+  "speed": "10 ft., fly 60 ft.",
+  "skills": "Perception +3",
+  "senses": "passive Perception 13",
+  "languages": "--",
+  "abilities": {
+    "str": 19,
+    "dex": 18,
+    "con": 14,
+    "int": 2,
+    "wis": 10,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Flyby",
+      "desc": "The kongamato doesn't provoke an opportunity attacks when it flies out of an enemy's reach."
+    },
+    {
+      "name": "Breaker of Boats",
+      "desc": "The kongamato deals double damage to objects and structures made of wood or lighter materials."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The kongamato makes one bite attack and two claw attacks."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 18 (4d6 + 4) piercing damage. If the target is a Medium or smaller creature, it is grappled (escape DC 14). Until this grapple ends, the target is restrained and the kongamato can't bite another target. When the kongamato moves, any target it is grappling moves with it."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (3d6 + 4) slashing damage."
+    }
+  ]
+}

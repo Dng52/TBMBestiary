@@ -1,0 +1,64 @@
+{
+  "name": "Greater Aspect of Hatred",
+  "tags": [
+    "large",
+    "construct",
+    "cr6",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Large",
+  "type": "construct",
+  "alignment": "chaotic evil",
+  "cr": "6 (2,300 XP)",
+  "hp": "123 (13d10 + 52)",
+  "ac": "17 (natural armor)",
+  "speed": "40 ft.",
+  "immunities": "poison, psychic",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 120ft., passive Perception 10",
+  "languages": "understands the languages of its creator but can\u2019t speak",
+  "abilities": {
+    "str": 19,
+    "dex": 10,
+    "con": 18,
+    "int": 6,
+    "wis": 10,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Aura of Rage",
+      "desc": "Living creatures within 30 feet of the aspect are filled with a blinding rage. The first weapon attack each turn made by a creature within this aura is made with disadvantage. This effect ends when the aspect is reduced to 0 hit points."
+    },
+    {
+      "name": "Brutal Strikes",
+      "desc": "If the Aspect hits a creature with both of its slam attacks in a single turn, that creatures takes an additional 10 (3d6) bludgeoning damage and is knocked prone."
+    },
+    {
+      "name": "Immutable Form",
+      "desc": "The aspect is immune to any spell or effect that would alter its form."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The aspect has advantage on saving throws against spell and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The aspect's weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The aspect makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Wave of Rage (1/Day)",
+      "desc": "Each hostile creature within 30 feet of the aspect must succeed on a DC 14 Wisdom saving throw or become filled with an insatiable bloodlust for one minute. Any creature that failed the save must take the attack action on each of its turns and cannot use its bonus action. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    }
+  ]
+}

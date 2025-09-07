@@ -1,0 +1,45 @@
+{
+  "name": "Deathlock",
+  "tags": [
+    "medium",
+    "undead",
+    "cr4",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "4 (1100 XP)",
+  "hp": "36  (8d8)",
+  "ac": "12 (15 with mage armor)",
+  "speed": "30 ft.",
+  "saves": "Int +4, Cha +5",
+  "skills": "Arcana +4, History +4",
+  "immunities": "poison",
+  "resistance": "necrotic; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered",
+  "conimmunities": "exhaustion, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "the languages it knew in life",
+  "abilities": {
+    "str": 11,
+    "dex": 15,
+    "con": 10,
+    "int": 14,
+    "wis": 12,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The deathlock's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no material components: * At will: <i>detect magic, disguise self, mage armor</i>"
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The deathlock is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells: * Cantrips (at will): <i>chill touch, eldritch blast, mage hand</i> * 3rd level (2 slots): <i>arms of Hadar, dispel magic, hold person, hunger of Hadar, invisibility, spider climb</i>"
+    },
+    {
+      "name": "Turn Resistance",
+      "desc": "The deathlock has advantage on saving throws against any effect that turns undead."
+    }
+  ]
+}

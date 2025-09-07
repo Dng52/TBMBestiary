@@ -1,0 +1,59 @@
+{
+  "name": "Ratfolk Rogue",
+  "tags": [
+    "small",
+    "humanoid",
+    "cr1",
+    "tome-of-beasts"
+  ],
+  "size": "Small",
+  "type": "humanoid",
+  "alignment": "neutral",
+  "cr": "1 (200 XP)",
+  "hp": "18 (4d6 + 4)",
+  "ac": "15 (studded leather armor)",
+  "speed": "25 ft., swim 10 ft.",
+  "skills": "Acrobatics +5, Perception +2, Stealth +7",
+  "senses": "darkvision 60 ft., passive Perception 12",
+  "languages": "Common, Thieves Cant",
+  "abilities": {
+    "str": 7,
+    "dex": 16,
+    "con": 12,
+    "int": 14,
+    "wis": 10,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Cunning Action",
+      "desc": "A ratfolk rogue can use a bonus action to Dash, Disengage, or Hide."
+    },
+    {
+      "name": "Nimbleness",
+      "desc": "A ratfolk rogue can move through the space of any creature size Medium or larger."
+    },
+    {
+      "name": "Pack Tactics",
+      "desc": "A ratfolk rogue has advantage on its attack roll against a creature if at least one of the ratfolk's allies is within 5 feet of the creature and the ally is capable of attacking."
+    },
+    {
+      "name": "Sneak Attack (1/Turn)",
+      "desc": "A ratfolk rogue deals an extra 3 (1d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of one of its allies that isn't incapacitated and the rogue doesn't have disadvantage on the attack roll."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage."
+    },
+    {
+      "name": "Light Crossbow",
+      "desc": "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 7 (1d8 + 3) piercing damage."
+    },
+    {
+      "name": "Rat Dagger Flurry",
+      "desc": "Ranged Weapon Attack: +5 to hit, range 20/60 ft., three targets. Hit: 7 (1d4 + 3) piercing damage."
+    }
+  ]
+}

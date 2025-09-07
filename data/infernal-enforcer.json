@@ -1,0 +1,56 @@
+{
+  "name": "Infernal Enforcer",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr5",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "5 (1,800 XP)",
+  "hp": "78 (12d8 + 24)",
+  "ac": "15",
+  "speed": "40 ft.",
+  "saves": "Wis +6, Cha +8",
+  "skills": "Acrobatics +7, Arcana +4, Insight +6, Persuasion +8",
+  "senses": "passive Perception 12",
+  "languages": "Any three languages",
+  "abilities": {
+    "str": 12,
+    "dex": 16,
+    "con": 14,
+    "int": 10,
+    "wis": 15,
+    "cha": 19
+  },
+  "traits": [
+    {
+      "name": "Infernal Blade",
+      "desc": "The enforcer has an infernal blade bound to it. This weapon ignores all resistances and deals an extra 3 (1d6) fire damage with each attack (included in the attack). In addition, while the enforcer is wielding this blade, it cannot be disarmed."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The enforcer is a 6th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It regains these expended spellslots when it finishes a short or long rest. The enforcer has the following warlock spells prepared: * Cantrips (at will): <i>blade ward, eldritch blast, mage hand</i> * 1st-3rd level (3 3rd-level slots): <i>armor of Agathys, crown of madness, fear, hellish rebuke, hex, spider climb</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The enforcer makes two attacks with its felblade and one with its felstrike."
+    },
+    {
+      "name": "Felblade",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage plus 3 (1d6) fire damage."
+    },
+    {
+      "name": "Felstrike",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 3 (1d6) fire damage."
+    },
+    {
+      "name": "Infernal Onslaught (3/Short Rest)",
+      "desc": "The enforcer performs a swift series of punches to launch bursts of flame at up to four targets within 60 feet. Each of those creatures must make a DC 16 Dexterity saving throw, saving 17 (5d6) fire damage on a failed save, or half as much damage on a successful save."
+    }
+  ]
+}

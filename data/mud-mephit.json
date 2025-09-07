@@ -1,0 +1,53 @@
+{
+  "name": "Mud Mephit",
+  "tags": [
+    "small",
+    "elemental",
+    "cr1/4",
+    "monster-manual"
+  ],
+  "size": "Small",
+  "type": "elemental",
+  "alignment": "neutral evil",
+  "cr": "1/4 (50 XP)",
+  "hp": "27 (6d6+6)",
+  "ac": "11",
+  "speed": "20 ft., fly 20 ft., swim 20 ft.",
+  "skills": "Stealth +3",
+  "immunities": "poison",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 60 ft.",
+  "languages": "Aquan, Terran",
+  "abilities": {
+    "str": 8,
+    "dex": 12,
+    "con": 12,
+    "int": 9,
+    "wis": 11,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Death Burst",
+      "desc": "When the mephit dies, it explodes in a burst of sticky mud. Each Medium or smaller creature within 5 ft. of it must succeed on a DC 11 Dexterity saving throw or be restrained until the end of the creature's next turn."
+    },
+    {
+      "name": "False Appearance",
+      "desc": "While the mephit remains motionless, it is indistinguishable from an ordinary mound of mud."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Fists",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 4 (1d6 + 1) bludgeoning damage."
+    },
+    {
+      "name": "Mud Breath (Recharge 6)",
+      "desc": "The mephit belches viscid mud onto one creature within 5 ft. of it. If the target is Medium or smaller, it must succeed on a DC 11 Dexterity saving throw or be restrained for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    },
+    {
+      "name": "Variant: Summon Mephits (1/Day)",
+      "desc": "The mephit has a 25 percent chance of summoning 1d4 mephits of its kind. A summoned mephit appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other mephits. It remains for 1 minute, until it or its summoner dies, or until its summoner dismisses it as an action."
+    }
+  ]
+}

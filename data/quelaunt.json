@@ -1,0 +1,72 @@
+{
+  "name": "Quelaunt",
+  "tags": [
+    "large",
+    "aberration",
+    "cr15",
+    "homebrew"
+  ],
+  "size": "Large",
+  "type": "aberration",
+  "alignment": "chaotic evil",
+  "cr": "15 (13000 XP)",
+  "hp": "225 (18d10 + 126)",
+  "ac": "17 (natural armor)",
+  "speed": "40 ft.",
+  "saves": "Cha +11, Dex +9, Wis +9",
+  "skills": "Arcana +5, Perception +9, Stealth +9",
+  "immunities": "cold, necrotic, poison, psychic",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons",
+  "vulnerability": "radiant",
+  "conimmunities": "exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 300 ft., passive Perception 19",
+  "languages": "Deep Speech, telepathy 120 ft.",
+  "abilities": {
+    "str": 20,
+    "dex": 18,
+    "con": 24,
+    "int": 10,
+    "wis": 18,
+    "cha": 23
+  },
+  "traits": [
+    {
+      "name": "Interdimensional Movement",
+      "desc": "A quelaunt can innately cast <i>misty step</i> as a bonus action once per round."
+    },
+    {
+      "name": "Alien Mind",
+      "desc": "The quelaunt\u2019s thoughts are unreadable, and any creature attempting to mentally interact with it must make a DC 17 Intelligence saving throw or take 10 (2d6 + 3) psychic damage."
+    },
+    {
+      "name": "Aura of Fear",
+      "desc": "The quelaunt mentally assaults the mind of all hostile creatures it can see, filling their heads with insane mutterings and preying upon their fears and negative emotions.  If a creature starts its turn within 20 ft. of the quelaunt, it must make a DC 17 Wisdom saving throw or be frightened for 1 minute.  The target may repeat the saving throw at the end of each of its turns, ending the effect on a success.  Creatures who succeed on the saving throw are immune to this effect for 24 hours."
+    },
+    {
+      "name": "Legendary Resistance (2/day)",
+      "desc": "If the quelaunt fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The quelaunt's innate spellcasting ability is Charisma (spell save DC 19, +11 to hit with spell attacks).  It can innately cast the following spells, requiring no components: * At will: <i>misty step</i> * 1/day each: <i>fear, fly, sleep</i> (cast at 5th level)"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The quelaunt makes three claw attacks."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack. +10 to hit, reach 10 ft., one target. Hit: 18 (2d12 + 5) slashing damage plus 13 (3d8) necrotic damage."
+    },
+    {
+      "name": "Maddening Whispers",
+      "desc": "The quelaunt telepathically assaults a target it can see within 60 ft. The target must succeed on a DC 17 Wisdom saving throw or suffer 33 (6d10) psychic damage and be stunned until the end of the target's next turn."
+    },
+    {
+      "name": "Mist Form",
+      "desc": "Upon taking damage from an attack, the quelaunt's body partially dissolves into smoke and mist before reforming again.  The quelaunt gains resistance to all damage from the triggering attack."
+    }
+  ]
+}

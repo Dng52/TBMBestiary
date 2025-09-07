@@ -1,0 +1,54 @@
+{
+  "name": "Cyclops Warlock",
+  "tags": [
+    "huge",
+    "giant",
+    "cr6",
+    "out-of-the-box-5e"
+  ],
+  "size": "Huge",
+  "type": "giant",
+  "alignment": "chaotic neutral",
+  "cr": "6 (2,300 XP)",
+  "hp": "138 (12d12 + 60)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft.",
+  "senses": "Can see normally in darkness, both magical and nonmagical 120 ft., Passive Perception 8",
+  "languages": "Giant",
+  "abilities": {
+    "str": 22,
+    "dex": 11,
+    "con": 20,
+    "int": 8,
+    "wis": 6,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Beast Speech",
+      "desc": "The cyclops warlock can cast <i>speak with animals</i> at will, without expending a spell slot."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The cyclops warlock is a 4th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 10, +2 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells: * Cantrips (at will): <i>mage hand, prestidigitation, true strike</i> * 1st-2nd level (2 slots): <i>darkness, expeditious retreat, find familiar, hex, mirror image</i>"
+    },
+    {
+      "name": "Poor Depth Perception",
+      "desc": "The cyclops has disadvantage on any attack roll against a target more than 30 feet away."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The cyclops makes two greatclub attacks."
+    },
+    {
+      "name": "Greatclub",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage."
+    },
+    {
+      "name": "Rock",
+      "desc": "Ranged Weapon Attack: +9 to hit, range 30/120 ft., one target. Hit: 28 (4d10 + 6) bludgeoning damage."
+    }
+  ]
+}

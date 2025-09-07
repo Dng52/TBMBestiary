@@ -1,0 +1,53 @@
+{
+  "name": "Moloch",
+  "tags": [
+    "large",
+    "fiend",
+    "cr21",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Large",
+  "type": "fiend",
+  "alignment": "lawful evil",
+  "cr": "21 (33,000 XP)",
+  "hp": "253  (22d10 + 132)",
+  "ac": "19 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Dex +11, Con +13, Wis +11, Cha +13",
+  "skills": "Deception +13, Intimidation +13, Perception +11",
+  "immunities": "fire, poison",
+  "resistance": "cold; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered",
+  "conimmunities": "charmed, exhaustion, frightened, poisoned",
+  "senses": "darkvision 120 ft., passive Perception 21",
+  "languages": "all, telepathy 120 ft.",
+  "abilities": {
+    "str": 26,
+    "dex": 19,
+    "con": 22,
+    "int": 21,
+    "wis": 18,
+    "cha": 23
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "Moloch's innate spellcasting ability is Charisma (spell save DC 21). He can innately cast the following spells, requiring no material components: * At will: <i>alter self </i>(can become Medium when changing his appearance)<i>, animate dead, burning hands </i>(as a 7th-level spell)<i>, confusion, detect magic, fly, geas, major image, stinking cloud, suggestion, wall of fire</i> * 1/day each: <i>flame strike, symbol </i>(stunning only)"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "desc": "If Moloch fails a saving throw, he can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "Moloch has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "Moloch's weapon attacks are magical."
+    },
+    {
+      "name": "Regeneration",
+      "desc": "Moloch regains 20 hit points at the start of his turn. If he takes radiant damage, this trait doesn't function at the start of his next turn. Moloch dies only if he starts his turn with 0 hit points and doesn't regenerate."
+    }
+  ]
+}

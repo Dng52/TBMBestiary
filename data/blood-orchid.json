@@ -1,0 +1,53 @@
+{
+  "name": "Blood Orchid",
+  "tags": [
+    "large",
+    "aberration",
+    "cr5",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "aberration",
+  "alignment": "lawful evil",
+  "cr": "5 (1,800 XP)",
+  "hp": "76 (9d10 + 27)",
+  "ac": "14 (natural armor)",
+  "speed": "5 ft., fly 30 ft.",
+  "skills": "Stealth +4",
+  "immunities": "thunder",
+  "resistance": "acid, cold, lightning, fire",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "telepathy 120 ft.",
+  "abilities": {
+    "str": 15,
+    "dex": 12,
+    "con": 16,
+    "int": 11,
+    "wis": 12,
+    "cha": 13
+  },
+  "traits": [
+    {
+      "name": "Hyper-Awareness",
+      "desc": "A blood orchid cannot be surprised."
+    },
+    {
+      "name": "Telepathic Bond",
+      "desc": "Blood orchids have a telepathic link to other blood orchids that are within 120 feet."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The blood orchid uses Blood Drain. It then makes up to three attacks with its tentacles."
+    },
+    {
+      "name": "Tentacles",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 10 (2d8 + 1) bludgeoning damage and the target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour. The target is also grappled (escape DC 11). While grappled this way, the creature is restrained. Until the grapple ends, the blood orchid can\u2019t use this tentacle on another target. The blood orchid has three tentacles that it can attack with."
+    },
+    {
+      "name": "Blood Drain",
+      "desc": "The blood orchid feeds on the creature it is grappling. The creature must succeed on a DC 13 Constitution saving throw or its hit point maximum is reduced by 5 (1d10). This reduction lasts until the creature finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+    }
+  ]
+}

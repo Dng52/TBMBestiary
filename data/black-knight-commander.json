@@ -1,0 +1,60 @@
+{
+  "name": "Black Knight Commander",
+  "tags": [
+    "medium",
+    "Humanoid",
+    "cr5",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "Humanoid",
+  "alignment": "lawful evil",
+  "cr": "5 (1800 XP)",
+  "hp": "78 (12d8 + 24)",
+  "ac": "18 (plate)",
+  "speed": "30 ft.",
+  "saves": "Str +7, Wis +4, Cha +5,",
+  "skills": "Animal Handling + 4, Athletics +7,  Intimidation +5",
+  "senses": "passive Perception 11",
+  "languages": "any two languages",
+  "abilities": {
+    "str": 18,
+    "dex": 10,
+    "con": 14,
+    "int": 12,
+    "wis": 13,
+    "cha": 15
+  },
+  "traits": [
+    {
+      "name": "Charge",
+      "desc": "If the black knight commander is mounted and moves at least 30 feet in a straight line toward a target and then hits it with a melee attack on the same turn, the target takes an extra 10 (3d6) damage."
+    },
+    {
+      "name": "Hateful Aura",
+      "desc": "The black knight commander and allies within 10 feet of the commander add its Charisma modifier to weapon damage rolls (included in damage below)."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The black knight commander's weapon attacks are made with magical (+1) weapons."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The black knight commander makes two melee attacks."
+    },
+    {
+      "name": "Mace",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft, one target. Hit: 8 (1d6 + 5) bludgeoning damage."
+    },
+    {
+      "name": "Lance",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 11 (1d12 + 5) piercing damage."
+    },
+    {
+      "name": "Frightful Charge (Recharges after a Short or Long Rest)",
+      "desc": "The black knight commander lets loose a terrifying cry and makes one melee attack at the end of a charge. Whether the attack hits or misses, all enemies within 15 feet of the target and aware of the black knight commander's presence must succeed on a DC 13 Wisdom saving throw or become frightened for 1 minute. A frightened creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    }
+  ]
+}

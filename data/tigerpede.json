@@ -1,0 +1,63 @@
+{
+  "name": "Tigerpede",
+  "tags": [
+    "large",
+    "beast",
+    "cr2",
+    "homebrew"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "75 (8d10 + 8)",
+  "ac": "12 (natural armor)",
+  "speed": "30 ft., climb 20 ft.",
+  "skills": "Intimidation +0, Perception +3",
+  "senses": "blindsight 10 ft., darkvision 60 ft., passive Perception 13",
+  "languages": "--",
+  "abilities": {
+    "str": 18,
+    "dex": 12,
+    "con": 15,
+    "int": 3,
+    "wis": 12,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Aggressive Charge",
+      "desc": "On its first turn in combat, before moving or taking any actions, the tigerpede can spend its entire movement to move up to twice its speed toward a hostile creature it can see."
+    },
+    {
+      "name": "Keen Sight and Smell",
+      "desc": "The tigerpede has advantage on Wisdom (Perception) checks that rely on sight or smell."
+    },
+    {
+      "name": "Sure-Footed",
+      "desc": "The tigerpede has advantage on Strength and Dexterity saving throws made against effects that would knock it prone."
+    },
+    {
+      "name": "Tackle",
+      "desc": "If the tigerpede tiger moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 5 (2d4) slashing damage. If the target is prone, the tigerpede can make a bite attack against it as a bonus action."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The tigerpede makes two attacks: one with its bite and one with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) slashing damage."
+    },
+    {
+      "name": "Gore",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) slashing damage, and if the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone."
+    }
+  ]
+}

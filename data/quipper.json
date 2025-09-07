@@ -1,0 +1,41 @@
+{
+  "name": "Quipper",
+  "tags": [
+    "tiny",
+    "beast",
+    "cr0",
+    "monster-manual"
+  ],
+  "size": "Tiny",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "0 (10 XP)",
+  "hp": "1 (1d4-1)",
+  "ac": "13",
+  "speed": "swim 40 ft.",
+  "senses": "darkvision 60 ft.",
+  "abilities": {
+    "str": 2,
+    "dex": 16,
+    "con": 9,
+    "int": 1,
+    "wis": 7,
+    "cha": 2
+  },
+  "traits": [
+    {
+      "name": "Blood Frenzy",
+      "desc": "The quipper has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+    },
+    {
+      "name": "Water Breathing",
+      "desc": "The quipper can breathe only underwater."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage."
+    }
+  ]
+}

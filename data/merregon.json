@@ -1,0 +1,39 @@
+{
+  "name": "Merregon",
+  "tags": [
+    "medium",
+    "fiend",
+    "cr4",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "fiend",
+  "alignment": "lawful evil",
+  "cr": "4 (1100 XP)",
+  "hp": "45  (6d8 + 18)",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft.",
+  "immunities": "fire, poison",
+  "resistance": "cold; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered",
+  "conimmunities": "frightened, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "understands Infernal but can't speak, telepathy 120 ft.",
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 17,
+    "int": 6,
+    "wis": 12,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Devil's Sight",
+      "desc": "Magical darkness doesn't impede the merregon's darkvision."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The merregon has advantage on saving throws against spells and other magical effects."
+    }
+  ]
+}

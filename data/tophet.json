@@ -1,0 +1,59 @@
+{
+  "name": "Tophet",
+  "tags": [
+    "huge",
+    "construct",
+    "cr8",
+    "tome-of-beasts"
+  ],
+  "size": "Huge",
+  "type": "construct",
+  "alignment": "neutral evil",
+  "cr": "8 (3900 XP)",
+  "hp": "184 (16d12 + 80)",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Str +10, Con +8, Dex +3",
+  "skills": "Perception +3",
+  "immunities": "fire, cold, poison",
+  "resistance": "necrotic",
+  "conimmunities": "exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 200 ft., passive Perception 13",
+  "languages": "Common",
+  "abilities": {
+    "str": 24,
+    "dex": 10,
+    "con": 20,
+    "int": 6,
+    "wis": 10,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Fiery Heart",
+      "desc": "A tophet's inner fire can be ignited or doused at will. Its heat is such that all creatures have resistance to cold damage while within 30 feet of the tophet."
+    },
+    {
+      "name": "Burning Belly",
+      "desc": "Creatures inside a tophet's burning core take 21 (6d6) fire damage at the start of each of the tophet's turns. Escaping from a tophet's belly takes 10 feet of movement and a successful DC 16 Dexterity (Acrobatics) check."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "A tophet makes two attacks, no more than one of which can be a gout of flame."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack. +10 to hit, reach 5 ft., one target."
+    },
+    {
+      "name": "Hit: 12 (1d10 + 7) bludgeoning damage",
+      "desc": "The target is also knocked inside the tophet's burning belly if the attack scores a critical hit."
+    },
+    {
+      "name": "Gout of Flame",
+      "desc": "The tophet targets a point within 100 feet of itself that it can see. All targets within 10 feet of that point take 22 (4d10) fire damage, or half damage with a successful DC 16 Dexterity saving throw."
+    }
+  ]
+}

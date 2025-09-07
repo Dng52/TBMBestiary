@@ -1,0 +1,60 @@
+{
+  "name": "Storm Raven",
+  "tags": [
+    "tiny",
+    "beast",
+    "cr2",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Tiny",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "31 (7d6 + 7)",
+  "ac": "13",
+  "speed": "10 ft., fly 40 ft.",
+  "skills": "Perception +4",
+  "immunities": "lightning",
+  "senses": "darkvision 60 ft., passive Perception 14",
+  "languages": "--",
+  "abilities": {
+    "str": 7,
+    "dex": 17,
+    "con": 12,
+    "int": 8,
+    "wis": 14,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Flyby",
+      "desc": "The raven doesn't provoke an opportunity attack when it flies out of an enemy's reach."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The raven has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Lightning Charged",
+      "desc": "When the raven hits with a melee attack, it deals an extra 2 (1d4) lightning damage (included in the attack)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The raven makes two attacks: one with its beak and one with its talons. It then summons a lightning orb."
+    },
+    {
+      "name": "Beak",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 2 (1d4) lightning damage."
+    },
+    {
+      "name": "Talons",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit: 6 (1d6 + 3) piercing damage plus 2 (1d4) lightning damage."
+    },
+    {
+      "name": "Summon Lightning Orb",
+      "desc": "The raven creates a 3 inch diameter sphere of electricity in an unoccupied space within 60 feet. This sphere persists for 1 minute or until the raven is killed. A creature that ends its turn in the same space as a lightning orb takes 3 (1d6) lightning damage. On initiative count 20, the orbs spark a 5-foot wide line of lighting between all other orbs within 20 feet. Creatures caught within one of these streaks of lightning must succeed on a DC 12 Dexterity saving throw or take 10 (3d6) lightning damage."
+    }
+  ]
+}

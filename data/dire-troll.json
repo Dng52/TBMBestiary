@@ -1,0 +1,40 @@
+{
+  "name": "Dire Troll",
+  "tags": [
+    "huge",
+    "giant",
+    "cr13",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Huge",
+  "type": "giant",
+  "alignment": "chaotic evil",
+  "cr": "13 (10,000 XP)",
+  "hp": "172  (15d12 + 75)",
+  "ac": "15 (natural armor)",
+  "speed": "40 ft.",
+  "saves": "Wis +5, Cha +2",
+  "skills": "Perception +5",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "frightened, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 15",
+  "languages": "Giant",
+  "abilities": {
+    "str": 22,
+    "dex": 15,
+    "con": 21,
+    "int": 9,
+    "wis": 11,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Keen Senses",
+      "desc": "The troll has advantage on Wisdom (Perception) checks that rely on smell or sight."
+    },
+    {
+      "name": "Regeneration",
+      "desc": "The troll regains 10 hit points at the start of its turn. If the troll takes acid or fire damage, it regains only 5 hit points at the start of its next turn. The troll dies only if it is hit by an attack that deals 10 or more acid or fire damage while the troll has 0 hit points."
+    }
+  ]
+}

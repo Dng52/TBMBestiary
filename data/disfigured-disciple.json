@@ -1,0 +1,42 @@
+{
+  "name": "Disfigured Disciple",
+  "tags": [
+    "medium",
+    "aberration",
+    "cr2",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "aberration",
+  "alignment": "chaotic evil",
+  "cr": "2 (450 XP)",
+  "hp": "39 (6d8 + 12)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft.",
+  "senses": "passive Perception 8",
+  "languages": "Deep Speech",
+  "abilities": {
+    "str": 15,
+    "dex": 10,
+    "con": 14,
+    "int": 13,
+    "wis": 7,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Terrorizing Transmogrification",
+      "desc": "The disciple contains three distinct mutations that affect its combat abilities, its movements, and its defenses. Choose randomly from the lists below or choose them yourself to craft specific monstrosities."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The zealot makes one attack with its longsword and one with its off-hand attack."
+    },
+    {
+      "name": "Longsword",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage."
+    }
+  ]
+}

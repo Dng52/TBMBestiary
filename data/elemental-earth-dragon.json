@@ -1,0 +1,89 @@
+{
+  "name": "Elemental Earth Dragon",
+  "tags": [
+    "huge",
+    "elemental",
+    "cr19",
+    "tome-of-horrors"
+  ],
+  "size": "Huge",
+  "type": "elemental",
+  "alignment": "neutral evil",
+  "cr": "19 (22,000 XP)",
+  "hp": "362 (25d12 + 200)",
+  "ac": "20 (natural armor)",
+  "speed": "40 ft., burrow 40 ft., fly 80 ft.",
+  "saves": "Dex +6, Con +14, Wis +9, Cha +10",
+  "skills": "Arcana +8, Nature +8, Perception +15, Stealth +6",
+  "immunities": "acid, poison",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "exhaustion, paralyzed, petrified, poisoned, unconscious",
+  "senses": "tremorsense 60 ft., blindsight 60 ft., darkvision 120 ft., passive Perception 25",
+  "languages": "Terran, Common",
+  "abilities": {
+    "str": 28,
+    "dex": 10,
+    "con": 26,
+    "int": 14,
+    "wis": 16,
+    "cha": 19
+  },
+  "traits": [
+    {
+      "name": "Earth Glide",
+      "desc": "The dragon can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn\u2019t disturb the material it moves through."
+    },
+    {
+      "name": "False Appearance",
+      "desc": "While the dragon remains motionless, it is indistinguishable from a normal statue of a dragon."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The dragon\u2019s innate spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). It can cast the following spells, requiring no material components. * At will: <i>meld into stone, stone shape</i> * 3/day: <i>wall of stone</i> * 1/day: <i>plane shift</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/day)",
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Siege Monster",
+      "desc": "The dragon deals double damage to objects and structures."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The dragon can make three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 20 (2d10 + 9) piercing damage plus 10 (3d6) fire damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 16 (2d6 + 9) slashing damage."
+    },
+    {
+      "name": "Tail",
+      "desc": "Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 18 (2d8 + 9) bludgeoning damage."
+    },
+    {
+      "name": "Shale and Stone Breath (Recharge 5\u20136)",
+      "desc": "The dragon releases a 60-foot cone of sand and gravel. Creatures within the area must make a DC 22 Constitution saving throw, taking 35 (10d6) fire damage plus 35 (10d6) bludgeoning damage on a failed saving throw, or half as much damage on a successful one. A creature slain by this damage has its body pulverized; it can only be restored to life by <i>true resurrection</i> or <i>wish</i>."
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Detect",
+      "desc": "The dragon makes a Wisdom (Perception) check."
+    },
+    {
+      "name": "Tail Attack",
+      "desc": "The dragon makes a tail attack."
+    },
+    {
+      "name": "Wing Attack (Costs 2 Actions)",
+      "desc": "The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 23 Dexterity saving throw or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed."
+    }
+  ]
+}

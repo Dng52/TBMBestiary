@@ -1,0 +1,52 @@
+{
+  "name": "Elven Warden",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr2",
+    "out-of-the-box-5e"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic good",
+  "cr": "2 (450 XP)",
+  "hp": "65 (10d8 + 20)",
+  "ac": "16 (studded leather)",
+  "speed": "30 ft.",
+  "saves": "Str +4, Dex +6, Wis +2",
+  "skills": "Athletics +4, Deception +4",
+  "senses": "darkvision 60 ft., Passive Perception 10",
+  "languages": "Common, Elvish",
+  "abilities": {
+    "str": 15,
+    "dex": 18,
+    "con": 14,
+    "int": 15,
+    "wis": 11,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Fey Ancestry",
+      "desc": "The elven warden has advantage on saving throws against being charmed, and magic can\u2019t put them to sleep."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The elven warden makes three melee attacks: two with their longsword and one with their dagger. Or the warden makes two ranged attacks with their daggers."
+    },
+    {
+      "name": "Longsword",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d8 +2) slashing damage, or 7 (1d10 +2) slashing damage if used with both hands."
+    },
+    {
+      "name": "Dagger",
+      "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 +3) piercing damage."
+    },
+    {
+      "name": "Parry",
+      "desc": "The elven warden adds 2 to its AC against one melee attack that would hit it. To do so, the elven warden must see the attacker and be wielding a melee weapon."
+    }
+  ]
+}

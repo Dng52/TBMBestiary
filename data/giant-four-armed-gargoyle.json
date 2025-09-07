@@ -1,0 +1,49 @@
+{
+  "name": "Giant Four-Armed Gargoyle",
+  "tags": [
+    "Large",
+    "elemental",
+    "cr10",
+    "tomb-of-annihilation"
+  ],
+  "size": "Large",
+  "type": "elemental",
+  "alignment": "chaotic evil",
+  "cr": "10 (5,900 XP)",
+  "hp": "147 (14d10 +70)",
+  "ac": "17 (natural armor)",
+  "speed": "30 ft., fly 60 ft.",
+  "skills": "Perception +4",
+  "immunities": "poison",
+  "resistance": "bludgeoning, piercing and slashing damage from nonmagical attacks not made with adamantine weapons",
+  "conimmunities": "exhaustion, petrified, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 14",
+  "abilities": {
+    "str": 19,
+    "dex": 11,
+    "con": 20,
+    "int": 6,
+    "wis": 11,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "False appearance",
+      "desc": "While the gargoyle remains motionless, it is indistinguishable from an inanimate statue."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The gargoyle makes five attacks: one with its bite and four with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 11 (2d6 +4) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (2d4 +4) slashing damage."
+    }
+  ]
+}

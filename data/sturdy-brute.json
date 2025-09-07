@@ -1,0 +1,60 @@
+{
+  "name": "Sturdy Brute",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr3",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "3 (700 XP)",
+  "hp": "66 (7d12 + 21)",
+  "ac": "15 (unarmored defense)",
+  "speed": "40 ft.",
+  "saves": "Str +5, Con +5",
+  "skills": "Animal Handling +4, Athletics +7, Survival +4",
+  "senses": "passive Perception 11",
+  "languages": "Any two languages",
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 16,
+    "int": 8,
+    "wis": 12,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Danger Sense",
+      "desc": "The brute has advantage on Dexterity saving throws."
+    },
+    {
+      "name": "Legendary Resistance (1/Day)",
+      "desc": "If the brute fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Rage (4/Day)",
+      "desc": "As a bonus action, the brute can enter a rage for 1 minute. While raging, the brute gains the following benefits: * Advantage on Strength checks and Strength saving throws * Melee weapon attacks deal an additional 2 damage. * The brute gains resistance to bludgeoning, piercing, and slashing damage."
+    },
+    {
+      "name": "Totem of the Bear",
+      "desc": "While raging, the brute has resistance to all damage psychic damage. Additionally, the brute's carrying capacity is doubled and it has advantage on Strength checks made to push, pull, lift, or break objects."
+    },
+    {
+      "name": "Unarmored Defense",
+      "desc": "While not wearing armor, the brute's AC includes its Constitution modifier."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The brute makes two attacks with its greataxe."
+    },
+    {
+      "name": "Greataxe",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (1d12 + 4) slashing damage, or 12 (1d12 + 6) slashing damage if raging."
+    }
+  ]
+}

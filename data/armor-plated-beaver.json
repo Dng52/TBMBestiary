@@ -1,0 +1,43 @@
+{
+  "name": "Armor Plated Beaver",
+  "tags": [
+    "medium",
+    "beast",
+    "cr1",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1 (200 XP)",
+  "hp": "27 (5d8 + 5)",
+  "ac": "17 (natural armor)",
+  "speed": "20 ft., swim 30 ft.",
+  "skills": "Survival +2",
+  "senses": "passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 14,
+    "dex": 11,
+    "con": 13,
+    "int": 5,
+    "wis": 11,
+    "cha": 4
+  },
+  "traits": [
+    {
+      "name": "Hold Breath",
+      "desc": "The armor-plated beaver can hold its breath for up to 20 minutes."
+    },
+    {
+      "name": "Keen Smell",
+      "desc": "The armor-plated beaver has advantage on Wisdom (Perception) checks based on scent."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+    }
+  ]
+}

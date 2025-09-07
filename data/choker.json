@@ -1,0 +1,41 @@
+{
+  "name": "Choker",
+  "tags": [
+    "small",
+    "aberration",
+    "cr1",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Small",
+  "type": "aberration",
+  "alignment": "chaotic evil",
+  "cr": "1 (100 XP)",
+  "hp": "13  (3d6 + 3)",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Stealth +6",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "Deep Speech",
+  "abilities": {
+    "str": 16,
+    "dex": 14,
+    "con": 13,
+    "int": 4,
+    "wis": 12,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Aberrant Quickness (Recharges after a Short or Long Rest)",
+      "desc": "The choker can take an extra action on its turn."
+    },
+    {
+      "name": "Boneless",
+      "desc": "The choker can move through and occupy a space as narrow as 4 inches wide without squeezing."
+    },
+    {
+      "name": "Spider Climb",
+      "desc": "The choker can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    }
+  ]
+}

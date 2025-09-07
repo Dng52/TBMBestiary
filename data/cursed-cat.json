@@ -1,0 +1,43 @@
+{
+  "name": "Cursed Cat",
+  "tags": [
+    "tiny",
+    "beast",
+    "cr1/8",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Tiny",
+  "type": "beast",
+  "alignment": "neutral evil",
+  "cr": "1/8 (25 XP)",
+  "hp": "5 (2d4)",
+  "ac": "12",
+  "speed": "40 ft., climb 30 ft.",
+  "skills": "Perception +3, Stealth +4",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "--",
+  "abilities": {
+    "str": 4,
+    "dex": 15,
+    "con": 10,
+    "int": 6,
+    "wis": 13,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "desc": "The cat has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Aura of Misfortune",
+      "desc": "Whenever a non-evil creature within 15 feet of the cat makes a skill check, they subtract a d4 from the result. Whenever the cat is killed, the creature that killed it must succeed on a DC 9 Charisma saving throw or by affected by the <i>bane</i> spell for the next 10 minutes."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) slashing damage."
+    }
+  ]
+}

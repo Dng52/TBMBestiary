@@ -1,0 +1,54 @@
+{
+  "name": "Sharwyn Hucrele",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/2",
+    "tales-from-the-yawning-portal"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "1/2 (100 XP)",
+  "hp": "13 (2d8+4)",
+  "ac": "16 (Barkskin trait)",
+  "speed": "30 ft.",
+  "skills": "Arcana +5, Insight +4, Persuasion + 1",
+  "languages": "Common, Draconic, Goblin",
+  "abilities": {
+    "str": 11,
+    "dex": 13,
+    "con": 14,
+    "int": 16,
+    "wis": 14,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Source",
+      "desc": "tales from the yawning portal,  page 242"
+    },
+    {
+      "name": "Barkskin",
+      "desc": "Sharwyn's AC can't be lower than 16."
+    },
+    {
+      "name": "Special Equipment",
+      "desc": "Sharwyn has a spell book that contains the spells listed in her Spellcasting trait, plus detect magic and silent image."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "Sharwyn is a 1st-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). She has the following wizard spells prepared: * Cantrips (at will): <i>light, prestidigitation, ray of frost</i> * 1st level (2 slots): <i>color spray, magic missile, shield, sleep</i>"
+    },
+    {
+      "name": "Tree Thrall",
+      "desc": "If the Gulthias Tree dies, Sharwyn dies 24 hours later."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    }
+  ]
+}

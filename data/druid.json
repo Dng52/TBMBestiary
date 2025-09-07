@@ -1,0 +1,38 @@
+{
+  "name": "Druid",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr2",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "2 (450 XP)",
+  "hp": "27 (5d8+5)",
+  "ac": "11 (16 with barkskin)",
+  "speed": "30 ft.",
+  "skills": "Medicine +4, Nature +3, Perception +4",
+  "languages": "Druidic plus any two languages",
+  "abilities": {
+    "str": 10,
+    "dex": 12,
+    "con": 13,
+    "int": 12,
+    "wis": 15,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "desc": "The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared: * Cantrips (at will): <i>druidcraft, produce flame, shillelagh</i> * 1st level (4 slots): <i>entangle, longstrider, speak with animals, thunderwave</i> * 2nd level (3 slots): <i>animal messenger, barkskin</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Quarterstaff",
+      "desc": "Melee Weapon Attack: +2 to hit (+4 to hit with shillelagh), reach 5 ft., one target. Hit: 3 (1d6) bludgeoning damage, or 6 (1d8 + 2) bludgeoning damage with shillelagh or if wielded with two hands."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "name": "Fuath Gremlin",
+  "tags": [
+    "small",
+    "fey",
+    "cr1/2",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "fey",
+  "alignment": "chaotic evil",
+  "cr": "1/2 (100 XP)",
+  "hp": "22 (4d6 + 8)",
+  "ac": "13 (natural armor)",
+  "speed": "20 ft., climb 10 ft., swim 30 ft.",
+  "resistance": "cold",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "Aquan",
+  "abilities": {
+    "str": 7,
+    "dex": 13,
+    "con": 14,
+    "int": 10,
+    "wis": 13,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the gremlin has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Water Breathing",
+      "desc": "The fuath gremlin can only breathe underwater."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The fuath gremlin makes two attacks with its claws."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) slashing damage."
+    },
+    {
+      "name": "Dart",
+      "desc": "Ranged Weapon Attack: +3 to hit, range 20/60 ft., one target. Hit: 3 (1d4 + 1) piercing damage."
+    },
+    {
+      "name": "Congeal Water (1/day)",
+      "desc": "One creature of the fuath gremlin\u2019s choice within 30 feet of it must succeed on a DC 10 Dexterity saving throw or be coated with a thick, viscous coating of clinging watery fluid for 1 minute. While coated with this substance, the target is restrained and must hold its breath to keep from drowning (reference the SRD for Suffocating rules). The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    }
+  ]
+}

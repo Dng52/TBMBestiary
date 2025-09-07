@@ -1,0 +1,61 @@
+{
+  "name": "Apophisis",
+  "tags": [
+    "medium",
+    "undead",
+    "cr6",
+    "out-of-the-box-5e"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "6 (2,300 XP)",
+  "hp": "82 (11d8 + 33)",
+  "ac": "13 (16 with <i>Mage Armor</i>)",
+  "speed": "30 ft.",
+  "saves": "Dex +6, Wis +5",
+  "skills": "Perception +5, Stealth +6",
+  "resistance": "Necrotic; Bludgeoning, Piercing, And Slashing From Nonmagical Attacks",
+  "senses": "Darkvision 60 ft., passive Perception 13",
+  "languages": "Common, Draconic, Elven",
+  "abilities": {
+    "str": 16,
+    "dex": 16,
+    "con": 16,
+    "int": 15,
+    "wis": 14,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "desc": "Apophisis is a 5th-level spellcaster. Her spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). Apophisis has the following sorcerer spells prepared: * Cantrips (at will): <i>ray of frost, chill touch, mage hand, prestidigitation</i> * 1st level (4 slots): <i>charm person, detect magic, mage armor, shield</i> * 2nd level (3 slots): <i>darkness, suggestion</i> * 3rd level (2 slots): <i>counterspell, fly</i>"
+    },
+    {
+      "name": "Regeneration",
+      "desc": "Apophisis regains 10 hit points at the start of her turn if she has at least 1 hit point and isn\u2019t in sunlight or running water. If Apophisis takes radiant damage or damage from holy water, this trait doesn\u2019t function at the start of Apophisis\u2019 next turn."
+    },
+    {
+      "name": "Spider Climb",
+      "desc": "Apophisis can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    },
+    {
+      "name": "Vampire Weaknesses",
+      "desc": "Apophisis has the following flaws: * **Forbiddance.** Apophisis can\u2019t enter a residence without an invitation from one of the occupants. * **Harmed by Running Water.** Apophisis takes 20 acid damage when she ends her turn in running water. * **Stake to the Heart.** Apophisis is destroyed if a piercing weapon made of wood is driven into her heart while she is incapacitated in her resting place. * **Sunlight Hypersensitivity.** Apophisis takes 20 radiant damage when she starts her turn in sunlight. While in sunlight, she has disadvantage on attack rolls and ability checks."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Apophisis makes two attacks, one with her bite and one with her claws."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 8 (2d4 + 3) slashing damage. Instead of dealing damage, Apophisis can grapple the target (escape DC 13)."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one willing creature, or a creature that is grappled by Apophisis, incapacitated, or restrained. Hit: 6 (1d6 + 3) piercing damage plus 7 (2d6) necrotic damage. The target\u2019s hit point maximum is reduced by an amount equal to the necrotic damage taken, and Apophisis regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+    }
+  ]
+}

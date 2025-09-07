@@ -1,0 +1,78 @@
+{
+  "name": "Gibbering Abomination",
+  "tags": [
+    "large",
+    "aberration",
+    "cr16",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "aberration",
+  "alignment": "chaotic evil",
+  "cr": "16 (15,000 XP)",
+  "hp": "200 (16d10 + 112)",
+  "ac": "17 (natural armor)",
+  "speed": "10 ft., climb 10 ft.",
+  "saves": "Con +12, Cha +9",
+  "skills": "Perception +8, Stealth +8",
+  "resistance": "lightning, thunder; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "prone",
+  "senses": "darkvision 60 ft., passive Perception 18",
+  "languages": "Deep Speech",
+  "abilities": {
+    "str": 18,
+    "dex": 16,
+    "con": 24,
+    "int": 10,
+    "wis": 6,
+    "cha": 19
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The gibbering abomination\u2019s spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). It can cast the following spells at will, requiring no material components: * <i>blur, color spray, confusion, dispel magic, fear, ray of frost, ray of enfeeblement, telekinesis</i>."
+    },
+    {
+      "name": "Amorphous",
+      "desc": "The gibbering abomination can move through a space as narrow as 1 inch wide without squeezing."
+    },
+    {
+      "name": "Arcane Frenzy",
+      "desc": "The gibbering abomination can use its innate spellcasting more frequently than other creatures. During a single turn, the gibbering abomination can use its action and bonus action to innately cast a spell. The gibbering abomination cannot cast the same spell twice during its turn."
+    },
+    {
+      "name": "Deathless",
+      "desc": "Unless the gibbering abomination is slain by a disintegrate spell or its remains are completely incinerated, the abomination returns to life with 1 hit point in 1 hour."
+    },
+    {
+      "name": "Hyper-Awareness",
+      "desc": "The gibbering abomination can\u2019t be surprised."
+    },
+    {
+      "name": "Pain Immunity",
+      "desc": "The gibbering abomination is immune to any effect or condition caused as a result of extreme pain or agony. This ability does not protect it against damage the abomination would suffer."
+    },
+    {
+      "name": "Regeneration",
+      "desc": "The abomination regains 20 hit points at the start of its turn if it has at least 1 hit point. If the abomination has taken cold damage, this trait doesn\u2019t function at the start of the abomination\u2019s next turn."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The gibbering abomination makes up to three bite attacks and uses Blood Drain on grappled creatures."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 22 (4d8 + 4) piercing damage, and the target is grappled (escape DC 14), and it is restrained until this grapple ends. While grappling the target, the abomination has advantage on attack rolls against it and can\u2019t use this attack against other targets. The abomination can grapple up to three creatures."
+    },
+    {
+      "name": "Blood Drain",
+      "desc": "Each creature that is not a construct or undead, and that is grappled by the abomination must make a DC 18 Constitution saving throw. On a failed save, the target takes 10 (3d6) necrotic damage, its hit point maximum is reduced by an amount equal to the necrotic damage taken, and the abomination regains hit points equal to that amount. It dies if this effect reduces its hit point maximum to 0. This reduction to the target\u2019s hit point maximum lasts until the target finishes a long rest."
+    },
+    {
+      "name": "Disruptive Cacophony (Recharge 5\u20136)",
+      "desc": "The abomination emits a horrible quasi-arcane chanting that can disrupt spellcasters within 90 feet of it. Any creature attempting to cast a spell that can hear the abomination\u2019s Disruptive Cacophony must succeed on a DC 18 Constitution saving throw or the spell fails. The disruption lasts until the start of the abomination\u2019s next turn."
+    }
+  ]
+}

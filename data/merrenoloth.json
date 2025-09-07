@@ -1,0 +1,49 @@
+{
+  "name": "Merrenoloth",
+  "tags": [
+    "medium",
+    "fiend",
+    "cr3",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "fiend",
+  "alignment": "neutral evil",
+  "cr": "3 (700 XP)",
+  "hp": "40  (9d8)",
+  "ac": "13",
+  "speed": "30 ft., swim 40 ft.",
+  "saves": "Dex +5, Int +5",
+  "skills": "History +5, Nature +5, Perception +4, Survival +4",
+  "immunities": "acid, poison",
+  "resistance": "cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "poisoned",
+  "senses": "blindsight 60 ft., darkvision 60 ft., passive Perception 14",
+  "languages": "Abyssal, Infernal, telepathy 60 ft.",
+  "abilities": {
+    "str": 8,
+    "dex": 17,
+    "con": 10,
+    "int": 17,
+    "wis": 14,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The merrenoloth's innate spellcasting ability is Intelligence (spell save DC 13). It can innately cast the following spells, requiring no material components: * At will: <i>charm person, darkness, detect magic, dispel magic, gust of wind</i> * 3/day: <i>control water</i> * 1/day: <i>control weather</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The merrenoloth has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The merrenoloth's weapon attacks are magical."
+    },
+    {
+      "name": "Teleport",
+      "desc": "As a bonus action, the merrenoloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see."
+    }
+  ]
+}

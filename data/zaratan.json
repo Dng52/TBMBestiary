@@ -1,0 +1,48 @@
+{
+  "name": "Zaratan",
+  "tags": [
+    "gargantuan",
+    "elemental",
+    "cr22",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Gargantuan",
+  "type": "elemental",
+  "alignment": "neutral",
+  "cr": "22 (41,000 XP)",
+  "hp": "307  (15d20 + 150)",
+  "ac": "21 (natural armor)",
+  "speed": "40 ft., swim 40 ft.",
+  "saves": "Wis +12, Cha +11",
+  "immunities": "poison",
+  "resistance": "cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "exhaustion, paralyzed, petrified, poisoned, stunned",
+  "senses": "darkvision 60 ft., tremorsense 60 ft., passive Perception 15",
+  "languages": "-",
+  "abilities": {
+    "str": 30,
+    "dex": 10,
+    "con": 30,
+    "int": 2,
+    "wis": 21,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Earth-Shaking Movement",
+      "desc": "As a bonus action after moving at least 10 feet on the ground, the zaratan can send a shock wave through the ground in a 120-foot-radius circle centered on itself. That area becomes difficult terrain for 1 minute. Each creature on the ground that is concentrating must succeed on a DC 25 Constitution saving throw or the creature's concentration is broken. The shock wave deals 100 thunder damage to all structures in contact with the ground in the area. If a creature is near a structure that collapses, the creature might be buried; a creature within half the distance of the structure's height must make a DC 25 Dexterity saving throw. On a failed save, the creature takes 17 (5d6) bludgeoning damage, is knocked prone, and is trapped in the rubble. A trapped creature is restrained, requiring a successful DC 20 Strength (Athletics) check as an action to escape. Another creature within 5 feet of the buried creature can use its action to clear rubble and grant advantage on the check. If three creatures use their actions in this way, the check is an automatic success. On a successful save, the creature takes half as much damage and doesn't fall prone or become trapped."
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "desc": "If the zaratan fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The zaratan's weapon attacks are magical."
+    },
+    {
+      "name": "Siege Monster",
+      "desc": "The elemental deals double damage to objects and structures (included in Earth-Shaking Movement)."
+    }
+  ]
+}

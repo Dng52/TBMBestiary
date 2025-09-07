@@ -1,0 +1,43 @@
+{
+  "name": "Woggle",
+  "tags": [
+    "medium",
+    "monstrosity",
+    "cr1/8",
+    "homebrew"
+  ],
+  "size": "Medium",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "1/8 (25 XP)",
+  "hp": "18 (4d8)",
+  "ac": "11",
+  "speed": "30 ft.",
+  "skills": "Perception +3",
+  "senses": "passive Perception 14",
+  "languages": "--",
+  "abilities": {
+    "str": 13,
+    "dex": 12,
+    "con": 10,
+    "int": 2,
+    "wis": 9,
+    "cha": 13
+  },
+  "traits": [
+    {
+      "name": "Woggle Woggle",
+      "desc": "The woggle babbles in its bizarre woggle-speak while it can see any creature and isn\u2019t incapacitated. Each creature that starts its turn within 20 feet of the woggle and can hear it must succeed on a DC 11 Intelligence saving throw or be cursed with woggle-speak. The cursed target loses all of its languages and can only speak and write the word \"woggle.\" While cursed, casting a spell that includes a verbal component is impossible. Woggle-speak is gibberish and can\u2019t be understood with a comprehend languages spell or similar magic, nor understood by others with the same curse. Telepathy, mind-reading, and other spells used for non-verbal communication similarly don\u2019t work as the cursed creature can only create images of the word \u201cwoggle\u201d or a physical woggle in its mind. The curse lasts until removed by the remove curse spell or other magic. Creatures immune to being charmed automatically succeed on the saving throw. A creature that succeeds on its saving throw is immune to this effect for 24 hours."
+    },
+    {
+      "name": "Two Heads",
+      "desc": "The woggle has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) slashing damage."
+    }
+  ]
+}

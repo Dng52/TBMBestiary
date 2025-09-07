@@ -1,0 +1,55 @@
+{
+  "name": "Woolly Mammoth",
+  "tags": [
+    "huge",
+    "beast",
+    "cr5",
+    "tome-of-horrors"
+  ],
+  "size": "Huge",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "5 (1,800 XP)",
+  "hp": "73 (7d12 + 28)",
+  "ac": "13 (natural armor)",
+  "speed": "40 ft.",
+  "resistance": "cold",
+  "senses": "passive Perception 11",
+  "languages": "--",
+  "abilities": {
+    "str": 22,
+    "dex": 9,
+    "con": 18,
+    "int": 3,
+    "wis": 13,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "desc": "The mammoth has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Charge",
+      "desc": "If the mammoth moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 17 Strength saving throw or be knocked prone. If the target is prone, the mammoth can make one stomp attack against it as a bonus action."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The mammoth makes two attacks: one with its gore and one with its slam."
+    },
+    {
+      "name": "Gore",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 16 (3d6 + 6) piercing damage."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage."
+    },
+    {
+      "name": "Stomp",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 16 (3d6 + 6) bludgeoning damage."
+    }
+  ]
+}

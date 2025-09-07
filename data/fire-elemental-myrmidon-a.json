@@ -1,0 +1,57 @@
+{
+  "name": "Fire Elemental Myrmidon (A)",
+  "tags": [
+    "medium",
+    "elemental",
+    "cr7",
+    "elemental-evil"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "neutral",
+  "cr": "7 (2,900 XP)",
+  "hp": "117 (18d8+36)",
+  "ac": "18 (plate)",
+  "speed": "40 ft.",
+  "immunities": "fire, poison",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "paralyzed, petrified, poisoned, prone",
+  "senses": "darkvision 60 ft.",
+  "languages": "Ignan, one language of its creator's choice",
+  "abilities": {
+    "str": 13,
+    "dex": 18,
+    "con": 15,
+    "int": 9,
+    "wis": 10,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Illumination",
+      "desc": "The myrmidon sheds bright light in a 20-foot radius and dim light in a 40-foot radius."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The myrmidon's weapon attacks are magical."
+    },
+    {
+      "name": "Water Susceptibility",
+      "desc": "For every 5 feet the myrmidon moves in water, it takes 2 (1d4) cold damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The myrmidon makes three scimitar attacks."
+    },
+    {
+      "name": "Scimitar",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage."
+    },
+    {
+      "name": "Fiery Strikes (Recharge 6)",
+      "desc": "The myrmidon uses Multiattack. Each attack that hits deals an extra 5 (1d10) fire damage."
+    }
+  ]
+}

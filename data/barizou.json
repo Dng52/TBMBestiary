@@ -1,0 +1,66 @@
+{
+  "name": "Barizou (Assassin Demon)",
+  "tags": [
+    "small",
+    "fiend",
+    "cr1",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "1 (200 XP)",
+  "hp": "14 (4d6)",
+  "ac": "12 (natural armor)",
+  "speed": "30 ft., fly 50 ft.",
+  "skills": "Perception +2, Stealth +4",
+  "immunities": "poison",
+  "resistance": "cold, fire, lightning",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 120 ft., passive Perception 12",
+  "languages": "Abyssal",
+  "abilities": {
+    "str": 10,
+    "dex": 15,
+    "con": 10,
+    "int": 6,
+    "wis": 6,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Chameleon",
+      "desc": "As a bonus action, a demon can alter its coloration to blend with its surroundings. This grants the demon advantage on Stealth checks."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The demon has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The demon\u2019s weapon attacks are magical."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The demon\u2019s spellcasting ability is Charisma (spell save DC 10, +2 to hit with spell attacks). It can innately cast the following spells, requiring no material components: * At will: <i>fear, darkness, detect evil and good, see invisibility</i>"
+    },
+    {
+      "name": "Sneak Attack (1/turn)",
+      "desc": "The demon deals an extra 3 (1d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the demon that isn\u2019t incapacitated and the demon doesn\u2019t have disadvantage on the attack roll."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The demon makes three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage."
+    }
+  ]
+}

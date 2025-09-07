@@ -1,0 +1,43 @@
+{
+  "name": "Aldani (Lobsterfolk)",
+  "tags": [
+    "medium",
+    "monstrosity",
+    "cr1",
+    "tomb-of-annihilation"
+  ],
+  "size": "Medium",
+  "type": "monstrosity",
+  "alignment": "lawful neutral",
+  "cr": "1 (200 XP)",
+  "hp": "49 (9d8 +9)",
+  "ac": "14 (natural armor)",
+  "speed": "20 ft., swim 30 ft.",
+  "skills": "Perception +4, Survival +4",
+  "senses": "darkvision 60ft., passive Perception 14",
+  "languages": "Common",
+  "abilities": {
+    "str": 13,
+    "dex": 8,
+    "con": 12,
+    "int": 10,
+    "wis": 14,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The aldani can breathe air and water."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The aldani makes two attacks with its claws."
+    },
+    {
+      "name": "Claw",
+      "desc": "Mele Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8 +1) slashing damage, and the target is grappled (escape DC 11). The aldani has two claws, each of which can grapple only one target."
+    }
+  ]
+}

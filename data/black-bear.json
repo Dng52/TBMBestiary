@@ -1,0 +1,44 @@
+{
+  "name": "Black Bear",
+  "tags": [
+    "medium",
+    "beast",
+    "cr1/2",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/2 (100 XP)",
+  "hp": "19 (3d8+6)",
+  "ac": "11 (natural armor)",
+  "speed": "40 ft., climb 30 ft.",
+  "abilities": {
+    "str": 15,
+    "dex": 10,
+    "con": 14,
+    "int": 2,
+    "wis": 12,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "desc": "The bear has advantage on Wisdom (Perception) checks that rely on smell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The bear makes two attacks: one with its bite and one with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage."
+    }
+  ]
+}

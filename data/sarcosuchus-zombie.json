@@ -1,0 +1,52 @@
+{
+  "name": "Sarcosuchus Zombie",
+  "tags": [
+    "gargantuan",
+    "undead",
+    "cr7",
+    "homebrew"
+  ],
+  "size": "Gargantuan",
+  "type": "undead",
+  "alignment": "unaligned",
+  "cr": "7 (2,900 XP)",
+  "hp": "137 (10d20 + 32)",
+  "ac": "12 (natural armor)",
+  "speed": "30 ft., swim 40 ft.",
+  "immunities": "poison",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 60 ft., passive Perception 9",
+  "languages": "--",
+  "abilities": {
+    "str": 23,
+    "dex": 6,
+    "con": 18,
+    "int": 1,
+    "wis": 8,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Undead Fortitude",
+      "desc": "If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
+    },
+    {
+      "name": "Water Poisoner",
+      "desc": "Water within 20 ft. of the zombie is tainted with toxins . A creature that enters or starts its turn in that water must succeed on a DC 15 Constitution saving throw or it is poisoned until the start of its next turn."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The zombie can make two attacks: one with its bite and one with its tail."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 28 (4d10 + 6) piercing damage. If the target is a creature, it is grappled (Escape DC 16). Until this grapple ends, the target is restrained, and the sarcosuchus zombie can\u2019t grapple an other target."
+    },
+    {
+      "name": "Tail",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 15 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage. If the target is a creature, it must succeed on a DC 17 Strength saving throw or be knocked prone."
+    }
+  ]
+}

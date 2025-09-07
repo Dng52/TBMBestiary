@@ -1,0 +1,53 @@
+{
+  "name": "Titivilus",
+  "tags": [
+    "medium",
+    "fiend",
+    "cr16",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "fiend",
+  "alignment": "lawful evil",
+  "cr": "16 (15,000 XP)",
+  "hp": "127  (17d8 + 51)",
+  "ac": "20 (natural armor)",
+  "speed": "40 ft., fly 60 ft.",
+  "saves": "Dex +11, Con +8, Wis +11, Cha +13",
+  "skills": "Deception +13, Insight +11, Intimidation +13, Persuasion +13",
+  "immunities": "fire, poison",
+  "resistance": "cold; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered",
+  "conimmunities": "charmed, exhaustion, frightened, poisoned",
+  "senses": "darkvision 120 ft., passive Perception 16",
+  "languages": "all, telepathy 120 ft.",
+  "abilities": {
+    "str": 19,
+    "dex": 22,
+    "con": 17,
+    "int": 24,
+    "wis": 22,
+    "cha": 26
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "Titivilus's innate spellcasting ability is Charisma (spell save DC 21). He can innately cast the following spells, requiring no material components: * At will: <i>alter self, animate dead, bestow curse, confusion, major image, modify memory, nondetection, sending, suggestion</i> * 3/day each: <i>greater invisibility </i>(self only)<i>, mislead</i> * 1/day each: <i>feeblemind, symbol </i>(discord or sleep only)"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "desc": "If Titivilus fails a saving throw, he can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "Titivilus has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "Titivilus's weapon attacks are magical."
+    },
+    {
+      "name": "Regeneration",
+      "desc": "Titivilus regains 10 hit points at the start of his turn. If he takes cold or radiant damage, this trait doesn't function at the start of his next turn. Titivilus dies only if he starts his turn with 0 hit points and doesn't regenerate. Ventriloquism. Whenever Titivilus speaks, he can choose a point within 60 feet; his voice emanates from that point."
+    }
+  ]
+}

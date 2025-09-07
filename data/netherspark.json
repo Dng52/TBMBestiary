@@ -1,0 +1,57 @@
+{
+  "name": "Netherspark",
+  "tags": [
+    "medium",
+    "elemental",
+    "cr6",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "neutral evil",
+  "cr": "6 (2,300 XP)",
+  "hp": "90 (12d8 + 36)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft.",
+  "immunities": "necrotic",
+  "resistance": "radiant",
+  "conimmunities": "charmed, exhaustion, frightened",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "Celestial, Common, Draconic, Infernal",
+  "abilities": {
+    "str": 19,
+    "dex": 16,
+    "con": 16,
+    "int": 14,
+    "wis": 16,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "desc": "The netherspark has advantage on saving throws against spells and other magic effects."
+    },
+    {
+      "name": "Necrotic Aura",
+      "desc": "Being composed of necrotic energy, a netherspark radiates an aura of such energy in a 10-foot radius. Any creature that\u2019s not an undead that enters or starts its turn within this area takes 7 (2d6) necrotic damage. Undead in the area instead regain 7 (2d6) hit points, up to their maximum hit points at the beginning of each of their turns."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The netherspark makes three slam attacks."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) necrotic damage."
+    },
+    {
+      "name": "Necrotic Ray",
+      "desc": "Ranged Weapon Attack: +6 to hit, range 40 ft., one target. Hit: 12 (2d8+3) necrotic damage. Undead take no damage but heal a number of hit points equal to what the ray would otherwise deal."
+    },
+    {
+      "name": "Necrotic Burst (Recharge 5\u20136)",
+      "desc": "A netherspark can release a burst of necrotic energy in a 20-foot radius around it. Creatures in the area must make a DC 13 Constitution saving throw, taking 12 (2d8+3) necrotic damage on a failed save, or half as much damage on a successful one. Undead take no damage but heal a number of hit points equal to what the burst would otherwise deal."
+    }
+  ]
+}

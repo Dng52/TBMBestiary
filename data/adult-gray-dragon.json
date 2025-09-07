@@ -1,0 +1,79 @@
+{
+  "name": "Adult Gray Dragon",
+  "tags": [
+    "huge",
+    "dragon",
+    "cr17",
+    "tome-of-horrors"
+  ],
+  "size": "Huge",
+  "type": "dragon",
+  "alignment": "neutral evil",
+  "cr": "17 (18,000 XP)",
+  "hp": "218 (19d12 + 95)",
+  "ac": "20 (natural armor)",
+  "speed": "40 ft., fly 80 ft., swim 40 ft.",
+  "saves": "Dex +8, Con +11, Wis +8, Cha +9",
+  "skills": "Perception +14, Stealth +8",
+  "immunities": "fire",
+  "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 24",
+  "languages": "Abyssal, Aquan, Common, Draconic, Giant",
+  "abilities": {
+    "str": 24,
+    "dex": 15,
+    "con": 21,
+    "int": 15,
+    "wis": 15,
+    "cha": 17
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The dragon can breathe air and water."
+    },
+    {
+      "name": "Legendary Resistance (3/day)",
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The dragon uses its Frightful Presence and makes three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 18 (2d10 + 7) piercing damage plus 5 (1d10) fire damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 14 (2d6 + 7) slashing damage."
+    },
+    {
+      "name": "Tail",
+      "desc": "Melee Weapon Attack: +13 to hit, reach 20 ft., one target. Hit: 16 (2d8 + 7) bludgeoning damage."
+    },
+    {
+      "name": "Frightful Presence",
+      "desc": "Each creature of the dragon\u2019s choice that is within 120 feet of the dragon and aware of it must succeed on a DC 17 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature\u2019s saving throw is successful of the effect ends for it, the creature is immune to the dragon\u2019s Frightful Presence for the next 24 hours."
+    },
+    {
+      "name": "Steam Breath (Recharge 5\u20136)",
+      "desc": "The dragon exhales steam in a 60 cone. Creatures in the area must make a DC 19 Constitution saving throw. On a failed saving throw, the creature takes 63 (18d6) fire damage, or half as much damage on a successful saving throw. Being underwater doesn\u2019t grant resistance to this damage."
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Detect",
+      "desc": "The dragon makes a Wisdom (Perception) check."
+    },
+    {
+      "name": "Tail Attack",
+      "desc": "The dragon makes a tail attack."
+    },
+    {
+      "name": "Wing Attack (Costs 2 Actions)",
+      "desc": "The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 24 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed."
+    }
+  ]
+}

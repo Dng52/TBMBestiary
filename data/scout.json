@@ -1,0 +1,46 @@
+{
+  "name": "Scout",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/2",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "1/2 (100 XP)",
+  "hp": "16 (3d8+3)",
+  "ac": "13 (leather armor)",
+  "speed": "30 ft.",
+  "skills": "Nature +4, Perception +5, Stealth +6, Survival +5",
+  "languages": "any one language (usually Common)",
+  "abilities": {
+    "str": 11,
+    "dex": 14,
+    "con": 12,
+    "int": 11,
+    "wis": 13,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Keen Hearing and Sight",
+      "desc": "The scout has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The scout makes two melee attacks or two ranged attacks."
+    },
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    },
+    {
+      "name": "Longbow",
+      "desc": "Ranged Weapon Attack: +4 to hit, ranged 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+    }
+  ]
+}

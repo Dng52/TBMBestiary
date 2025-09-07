@@ -1,0 +1,38 @@
+{
+  "name": "Dwarf Knight",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr3",
+    "homebrew"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "3 (700 XP)",
+  "hp": "52  (8d8 + 16)",
+  "ac": "18 (plate)",
+  "speed": "30 ft.",
+  "saves": "Con +4, Wis +2",
+  "resistance": "poison",
+  "senses": "darkvision, passive Perception 10",
+  "languages": "any one language (usually Common)",
+  "abilities": {
+    "str": 16,
+    "dex": 11,
+    "con": 14,
+    "int": 11,
+    "wis": 11,
+    "cha": 15
+  },
+  "traits": [
+    {
+      "name": "Brave",
+      "desc": "The knight has advantage on saving throws against being frightened."
+    },
+    {
+      "name": "Dwarven Resilience",
+      "desc": "The dwarf has advantage on saving throws against poison and has resistance to poison damage"
+    }
+  ]
+}

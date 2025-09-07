@@ -1,0 +1,93 @@
+{
+  "name": "Elemental Fire Dragon",
+  "tags": [
+    "huge",
+    "elemental",
+    "cr21",
+    "tome-of-horrors"
+  ],
+  "size": "Huge",
+  "type": "elemental",
+  "alignment": "neutral evil",
+  "cr": "21 (33,000 XP)",
+  "hp": "445 (33d12 + 231)",
+  "ac": "15",
+  "speed": "40 ft., fly 80 ft.",
+  "saves": "Dex +12, Con +14, Wis +8, Cha +12",
+  "skills": "Arcana +10, Nature +10, Perception +15, Stealth +12",
+  "immunities": "fire, poison",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
+  "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 25",
+  "languages": "Ignan, Common",
+  "abilities": {
+    "str": 27,
+    "dex": 20,
+    "con": 25,
+    "int": 16,
+    "wis": 13,
+    "cha": 21
+  },
+  "traits": [
+    {
+      "name": "Fiery Aura",
+      "desc": "At the start of each of the dragon\u2019s turns, each creature within 15 feet of it takes 14 (4d6) fire damage, and flammable objects in the aura that aren\u2019t being worn or carried ignite. A creature that touches the dragon or hits it with a melee attack while within 5 feet of it takes 14 (4d6) fire damage."
+    },
+    {
+      "name": "Illumination",
+      "desc": "The dragon sheds bright light in a 30-foot radius and dim light in an additional 30 feet."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The dragon\u2019s innate spellcasting ability is Charisma (spell save DC 20, +12 to hit withy spell attacks). It can cast the following spells, requiring no material components: * At will: <i>fireball, heat metal</i> * 3/day each: <i>fire storm</i> * 1/day each: <i>incendiary cloud, plane shift</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/day)",
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Water Susceptibility",
+      "desc": "For every 5 feet that the dragon moves in water, or for every gallon of water splashed on it, it takes 1 cold damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The dragon can make three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 14 (4d6) fire damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 15 (2d6 + 8) slashing damage."
+    },
+    {
+      "name": "Tail",
+      "desc": "Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage."
+    },
+    {
+      "name": "Elemental Fire Breath (Recharge 5\u20136)",
+      "desc": "The dragon breathes a 60-foot cone of elemental fire. Creatures in the area must make a DC 22 Dexterity saving throw, taking 77 (22d6) fire damage on a failed saving throw, or half as much damage on a successful one."
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Detect",
+      "desc": "The dragon makes a Wisdom (Perception) check."
+    },
+    {
+      "name": "Tail Attack",
+      "desc": "The dragon makes a tail attack."
+    },
+    {
+      "name": "Wing Attack (Costs 2 Actions)",
+      "desc": "The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 23 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed."
+    },
+    {
+      "name": "Rain of Fire (Costs 3 Actions)",
+      "desc": "The elemental fire dragon beats its wings, casting fire out in a 100-foot sphere around itself. All creatures within the area must make a DC 22 Dexterity saving throw, taking 14 (4d6) fire damage on a failed saving throw, or half as much damage on a successful one. Objects not held or worn are set alight and continue burning until extinguished."
+    }
+  ]
+}

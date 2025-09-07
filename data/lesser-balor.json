@@ -1,0 +1,62 @@
+{
+  "name": "Lesser Balor",
+  "tags": [
+    "large",
+    "fiend",
+    "cr10",
+    "strongholds-and-followers"
+  ],
+  "size": "Large",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "10 (5,900 XP)",
+  "hp": "123 (13d10 + 52)",
+  "ac": "18 (natural armor)",
+  "speed": "40 ft., fly 80 ft.",
+  "saves": "Str +9, Con +8, Wis +6, Cha +8",
+  "immunities": "fire, poison",
+  "resistance": "cold, lightning; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "poisoned",
+  "senses": "truesight 60 ft., passive Perception 13",
+  "languages": "Abyssal, telepathy 60 ft.",
+  "abilities": {
+    "str": 20,
+    "dex": 14,
+    "con": 18,
+    "int": 16,
+    "wis": 15,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Fiery End",
+      "desc": "When the lesser balor dies, it explodes. Each creature within 20 feet of it must make a DC 16 Dexterity saving throw. On a failed save, a creature takes 35 (10d6) fire damage, or half as much damage on a successful one. The explosion destroys the lesser balor\u2019s weapons."
+    },
+    {
+      "name": "Singeing Aura",
+      "desc": "At the start of each of the lesser balor\u2019s turns, each creature within 5 feet of it takes 7 (2d6) fire damage. A creature that touches the lesser balor or hits it with a melee attack while within 5 feet of it takes 7 (2d6) fire damage."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The lesser balor has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The lesser balor\u2019s weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The lesser balor makes one attack with its longsword and one attack with its whip."
+    },
+    {
+      "name": "Longsword",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) slashing damage plus 9 (2d8) lightning damage. If the lesser balor scores a critical hit, it rolls damage dice three times, instead of twice."
+    },
+    {
+      "name": "Whip",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 30 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 7 (2d6) fire damage, and the target must succeed on a DC 16 Strength saving throw or be pulled up to 15 feet toward the lesser balor."
+    }
+  ]
+}

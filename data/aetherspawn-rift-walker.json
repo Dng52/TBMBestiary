@@ -1,0 +1,60 @@
+{
+  "name": "Aetherspawn Rift Walker",
+  "tags": [
+    "medium",
+    "elemental",
+    "cr3",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "unaligned",
+  "cr": "3 (700 XP)",
+  "hp": "65 (10d8 + 20)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft., fly 30 ft. (hover)",
+  "resistance": "bludgeoning, piercing, slashing damage from nonmagical weapons; see Elemental Attunement",
+  "conimmunities": "exhaustion, paralyzed, petrified, poisoned, unconscious",
+  "senses": "passive Perception 12",
+  "languages": "Primordial",
+  "abilities": {
+    "str": 12,
+    "dex": 17,
+    "con": 15,
+    "int": 17,
+    "wis": 15,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Aether Eruption",
+      "desc": "When the rift walker dies, it explodes in a burst of elemental energy. Each creature within 5 feet of it must make a DC 13 Dexterity saving throw, taking 14 (4d6) damage of the type corresponding to the rift walker's Elemental Attunement on a failed save, or half as much damage on a successful one."
+    },
+    {
+      "name": "Elemental Attunement",
+      "desc": "The rift walker is infused with either arcane, ice, fire, or lightning energy. The rift walker's attacks deal extra damage based upon this element (included in the attack) and it has resistances to the corresponding element. In addition, each attack with a specific element causes an additional effect. * Arcane \u2013 bonus force damage and target must succeed on a DC 13 Wisdom saving throw or be silenced until the rift walker's next turn; resistance to force damage * Ice - bonus cold damage and target's speed halved until the rift walker's next turn; resistance to cold damage * Fire \u2013 bonus fire damage and if the target is a creature or a flammable object, it ignites. Until a creature takes an action to douse the fire, the target takes 3 (1d6) fire damage at the start of each of its turns; resistance to fire damage * Lightning \u2013 bonus lightning damage and target can't take reactions until the rift walker's next turn; resistance to lightning damage"
+    },
+    {
+      "name": "Overcharging Strikes",
+      "desc": "If the spellblade hits the same target with both of its aether blade attacks in a single turn, the target detonates with elemental energy. That creature takes an additional 7 (2d6) damage of a type corresponding to the guardian's Elemental Attunement."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The rift walker makes two melee attacks."
+    },
+    {
+      "name": "Aether Strike",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 7 (2d6) damage of the type corresponding to the rift walker's Elemental Attunement."
+    },
+    {
+      "name": "Elemental Shards",
+      "desc": "Ranged Weapon Attack: +5 to hit, range 30/90 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 7 (2d6) damage of the type corresponding to the rift walker's Elemental Attunement."
+    },
+    {
+      "name": "Aether Step (Recharge 4-6)",
+      "desc": "The rift walker teleports up to 60 feet to an unoccupied space it can see. It then makes two aether strike attacks, the first of which is made with advantage."
+    }
+  ]
+}

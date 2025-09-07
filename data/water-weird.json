@@ -1,0 +1,45 @@
+{
+  "name": "Water Weird",
+  "tags": [
+    "large",
+    "elemental",
+    "cr3",
+    "monster-manual"
+  ],
+  "size": "Large",
+  "type": "elemental",
+  "alignment": "neutral",
+  "cr": "3 (700 XP)",
+  "hp": "58 (9d10+9)",
+  "ac": "13",
+  "speed": "0 ft., swim 60 ft.",
+  "immunities": "poison",
+  "resistance": "fire; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "exhaustion, grappled, paralyzed, poisoned, restrained, prone, unconscious",
+  "senses": "blindsight 30 ft.",
+  "languages": "understands Aquan but doesn't speak",
+  "abilities": {
+    "str": 17,
+    "dex": 16,
+    "con": 13,
+    "int": 11,
+    "wis": 10,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Invisible in Water",
+      "desc": "The water weird is invisible while fully immersed in water."
+    },
+    {
+      "name": "Water Bound",
+      "desc": "The water weird dies if it leaves the water to which it is bound or if that water is destroyed."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Constrict",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 10 ft., one creature. Hit: 13 (3d6 + 3) bludgeoning damage. If the target is Medium or smaller, it is grappled (escape DC 13) and pulled 5 ft. toward the water weird. Until this grapple ends, the target is restrained, the water weird tries to drown it, and the water weird can't constrict another target."
+    }
+  ]
+}

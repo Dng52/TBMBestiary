@@ -1,0 +1,40 @@
+{
+  "name": "Basilisk Zombie",
+  "tags": [
+    "medium",
+    "undead",
+    "cr3",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "3 (700 XP)",
+  "hp": "60 (8d8 + 16)",
+  "ac": "12 (natural armor)",
+  "speed": "20 ft.",
+  "immunities": "poison",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 60 ft., passive Perception 9",
+  "languages": "--",
+  "abilities": {
+    "str": 16,
+    "dex": 8,
+    "con": 15,
+    "int": 2,
+    "wis": 8,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Undead Fortitude",
+      "desc": "If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage plus 7 (2d6) necrotic damage."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Dolphin",
+  "tags": [
+    "medium",
+    "beast",
+    "cr1/8",
+    "volos-guide"
+  ],
+  "size": "Medium",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/8 (25 XP)",
+  "hp": "11 (2d8+2)",
+  "ac": "12 (natural armor)",
+  "speed": "0 ft., swim 60 ft.",
+  "skills": "Perception +3",
+  "senses": "blindsight 60 ft.",
+  "abilities": {
+    "str": 14,
+    "dex": 13,
+    "con": 13,
+    "int": 6,
+    "wis": 12,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Charge",
+      "desc": "If the dolphin moves at least 30 feet straight toward a target and then hits it with a slam attack on the same turn, the target takes an extra 3 (1d6) bludgeoning damage."
+    },
+    {
+      "name": "Hold Breath",
+      "desc": "The dolphin can hold its breath for 20 minutes."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) bludgeoning damage."
+    }
+  ]
+}

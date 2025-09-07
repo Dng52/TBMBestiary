@@ -1,0 +1,37 @@
+{
+  "name": "Tribal Warrior",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/8",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "1/8 (25 XP)",
+  "hp": "11 (2d8+2)",
+  "ac": "12 (hide armor)",
+  "speed": "30 ft.",
+  "languages": "any one language",
+  "abilities": {
+    "str": 13,
+    "dex": 11,
+    "con": 12,
+    "int": 8,
+    "wis": 11,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Pack Tactics",
+      "desc": "The warrior has advantage on an attack roll against a creature if at least one of the warrior's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Spear",
+      "desc": "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage, or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack."
+    }
+  ]
+}

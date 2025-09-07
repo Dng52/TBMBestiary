@@ -1,0 +1,39 @@
+{
+  "name": "Apprentice Necromancer",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr3",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful evil",
+  "cr": "3 (700 XP)",
+  "hp": "45 (7d6 + 21)",
+  "ac": "12",
+  "speed": "30 ft.",
+  "saves": "Int +5, Wis +2",
+  "senses": "passive Perception 10",
+  "languages": "Common, Infernal",
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 16,
+    "int": 16,
+    "wis": 10,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "desc": "The necromancer is an 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). The necromancer has the following wizard spells prepared: * Cantrips (at will): <i>chill touch, acid splash, mage hand, prestidigitation</i> * 1st level (4 slots): <i>ray of sickness, witch bolt, tasha\u2019s hideous laughter</i> * 2nd level (3 slots): <i>ray of enfeeblement, crown of madness</i> * 3rd level (2 slots): <i>animate dead, vampiric touch</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Quarterstaff",
+      "desc": "Melee Weapon Attack: +1 to hit, reach 5ft., one target. Hit: 2 (1d6 - 1) bludgeoning damage."
+    }
+  ]
+}

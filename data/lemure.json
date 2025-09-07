@@ -1,0 +1,45 @@
+{
+  "name": "Lemure",
+  "tags": [
+    "medium",
+    "fiend",
+    "cr0",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "fiend",
+  "alignment": "lawful evil",
+  "cr": "0 (10 XP)",
+  "hp": "13 (3d8)",
+  "ac": "7",
+  "speed": "15 ft.",
+  "immunities": "fire, poison",
+  "resistance": "cold",
+  "conimmunities": "charmed, frightened, poisoned",
+  "senses": "darkvision 120 ft.",
+  "languages": "understands infernal but can't speak",
+  "abilities": {
+    "str": 10,
+    "dex": 5,
+    "con": 11,
+    "int": 1,
+    "wis": 11,
+    "cha": 3
+  },
+  "traits": [
+    {
+      "name": "Devil's Sight",
+      "desc": "Magical darkness doesn't impede the lemure's darkvision."
+    },
+    {
+      "name": "Hellish Rejuvenation",
+      "desc": "A lemure that dies in the Nine Hells comes back to life with all its hit points in 1d10 days unless it is killed by a good-aligned creature with a bless spell cast on that creature or its remains are sprinkled with holy water."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Fist",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage"
+    }
+  ]
+}

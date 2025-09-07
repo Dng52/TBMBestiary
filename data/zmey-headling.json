@@ -1,0 +1,60 @@
+{
+  "name": "Zmey Headling",
+  "tags": [
+    "medium",
+    "dragon",
+    "cr5",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "dragon",
+  "alignment": "chaotic evil",
+  "cr": "5 (1800 XP)",
+  "hp": "105 (14d8 + 42), regeneration 5/round",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft., swim 20 ft.",
+  "resistance": "cold, fire",
+  "conimmunities": "paralyzed, unconscious",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "Common, Draconic, Sylvan",
+  "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 1,
+    "int": 8,
+    "wis": 16,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The zmey headling can breathe air and water."
+    },
+    {
+      "name": "Regeneration",
+      "desc": "The zmey headling reaver regains 10 hit points at the start of its turn. This trait doesn't function if the zmey headling took acid or fire damage since the end of its previous turn. It dies if it starts its turn with 0 hit points and doesn't regenerate."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The zmey headline makes one bite attack and one claws attack."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 16 (2d12 + 3) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) slashing damage."
+    },
+    {
+      "name": "Tail",
+      "desc": "Melee Weapon Attack: +11 to hit, reach 20 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage."
+    },
+    {
+      "name": "Fire Breath (Recharge 5-6)",
+      "desc": "The zmey headling exhales fire in a 30-foot cone. Each creature in that area takes 16 (3d10) fire damage, or half damage with a successful DC 16 Dexterity saving throw."
+    }
+  ]
+}

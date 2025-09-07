@@ -1,0 +1,65 @@
+{
+  "name": "Brass Man",
+  "tags": [
+    "large",
+    "construct",
+    "cr9",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "construct",
+  "alignment": "neutral",
+  "cr": "9 (5,000 XP)",
+  "hp": "136 (16d10 + 48)",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft.",
+  "immunities": "fire, poison, psychic; bludgeoning, piercing, and slashing from nonmagical weapons that aren\u2019t adamantine",
+  "vulnerability": "cold",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 21,
+    "dex": 10,
+    "con": 16,
+    "int": 2,
+    "wis": 11,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Fire Absorption",
+      "desc": "Whenever the brass man is subjected to fire damage, it takes no damage and instead regains a number of hit points equal to the fire damage dealt."
+    },
+    {
+      "name": "Immutable Form",
+      "desc": "The brass man is immune to any spell or effect that would alter its form."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The brass man has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The brass man\u2019s weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The brass man makes two greatsword attack and one slam attack."
+    },
+    {
+      "name": "Greatsword",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 18 (4d6 + 5) slashing damage."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 18 (3d8 + 5) bludgeoning damage."
+    },
+    {
+      "name": "Molten Breath (Recharge 6)",
+      "desc": "The brass man exhales molten brass in a 25-foot line. Each creature along that line must make a DC 13 Dexterity saving throw, taking 28 (8d6) fire damage on a failed save, or half as much on a successful one."
+    }
+  ]
+}

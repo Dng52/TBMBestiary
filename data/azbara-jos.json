@@ -1,0 +1,51 @@
+{
+  "name": "Azbara Jos",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr4",
+    "tyranny-of-dragons"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful evil",
+  "cr": "4 (1,100 XP)",
+  "hp": "39 (6d8+12)",
+  "ac": "13 (16 with mage armor)",
+  "speed": "30 ft.",
+  "saves": "Int +5, Wis +3",
+  "skills": "Arcana +5, Deception +2, Insight +3, Stealth +5",
+  "languages": "Common, Draconic, Infernal, Primordial, Thayan",
+  "abilities": {
+    "str": 9,
+    "dex": 16,
+    "con": 14,
+    "int": 16,
+    "wis": 13,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Special Equipment",
+      "desc": "Azbara has two scrolls of mage armor."
+    },
+    {
+      "name": "Potent Cantrips",
+      "desc": "When Azbara casts an evocation Cantrips and misses, or the target succeeds on its saving throw, the target still takes half the cantrip's damage but suffers no other effect."
+    },
+    {
+      "name": "Sculpt Spells",
+      "desc": "When Azbara casts an evocation spell that affects other creatures that he can see, he can choose a number of them equal to 1+the spell's level to succeed on their saving throws against the spell. Those creatures take no damage if they would normally take half damage from the spell."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "Azbara is a 6th-level spellcaster that uses Intelligence as his spellcasting ability (spell save DC 13, +5 to hit with spell attacks). Azbara has the following spells prepared from the wizard spell list: * Cantrips (at will): <i>mage hand, prestidigitation, ray of frost, shocking grasp</i> * 1st level (4 slots): <i>fog cloud, magic missile, shield, thunderwave</i> * 2nd level (3 slots): <i>invisibility, misty step, scorching ray</i> * 3rd level (3 slots): <i>counterspell, dispel magic, fireball</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or ranged 20 ft./60 ft., one target. Hit: 5 (1d4 + 3) piercing damage."
+    }
+  ]
+}

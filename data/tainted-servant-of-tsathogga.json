@@ -1,0 +1,56 @@
+{
+  "name": "Tainted Servant of Tsathogga",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr5",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "5 (1,800 XP)",
+  "hp": "45 (10d10)",
+  "ac": "17 (natural armor)",
+  "speed": "30 ft., swim 30 ft.",
+  "resistance": "bludgeoning, cold",
+  "vulnerability": "radiant",
+  "senses": "darkvision 30 ft., passive Perception 14",
+  "languages": "--",
+  "abilities": {
+    "str": 17,
+    "dex": 12,
+    "con": 11,
+    "int": 9,
+    "wis": 12,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "A tainted servant of Tsathogga can breathe air or water."
+    },
+    {
+      "name": "Slimy",
+      "desc": "Any attempt to grapple a tainted servant of Tsathogga is made with disadvantage. Any contested grapple checks made by a tainted servant of Tsathogga have advantage. All touch attack spells against a tainted servant of Tsathogga are made with disadvantage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Frog\u2019s Claw",
+      "desc": "Melee weapon attack: +6 to hit, range 5 ft., one target. Hit: 7 (1d8+3) slashing damage."
+    },
+    {
+      "name": "Chaotic Croak (Recharge 5-6)",
+      "desc": "A tainted servant of Tsathogga can croak, forcing all enemies within 50 ft. to attempt a DC 14 Wisdom saving throw. Any who fail use their action on their next turn to make an attack against the nearest creature if possible. A creature that fails its saving throw and cannot attack the nearest creature does not use its action on its turn."
+    },
+    {
+      "name": "Tsathogga\u2019s Spit (2/day)",
+      "desc": "tainted servant of Tsathogga can spit a viscous glob at a target. On a successful hit, the target becomes restrained (Escape DC 14)."
+    },
+    {
+      "name": "Tsathogga\u2019s Gift (1/day)",
+      "desc": "A tainted servant of Tsathogga releases a 20 ft. sphere of poisonous gas through its skin. Any other creature that starts its turn within the range must make a successful DC 12 Constitution saving throw or take 7 (2d6) poison damage. This sphere follows the tainted servant and dissipates after 1 minute."
+    }
+  ]
+}

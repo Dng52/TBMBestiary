@@ -1,0 +1,52 @@
+{
+  "name": "Magma Ooze",
+  "tags": [
+    "large",
+    "ooze",
+    "cr6",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "ooze",
+  "alignment": "unaligned",
+  "cr": "6 (2,300 XP)",
+  "hp": "85 (9d10 + 36)",
+  "ac": "7",
+  "speed": "20 ft., climb 20 ft.",
+  "immunities": "acid, cold, fire, lightning, poison, psychic, slashing",
+  "conimmunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
+  "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 8",
+  "languages": "--",
+  "abilities": {
+    "str": 16,
+    "dex": 4,
+    "con": 18,
+    "int": 1,
+    "wis": 6,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Amorphous",
+      "desc": "The magma ooze can move through a space as narrow as 1 inch wide without squeezing."
+    },
+    {
+      "name": "Superheated",
+      "desc": "Creatures that touch the magma ooze take 7 (2d6) fire damage. Any nonmagical weapon used to attack the magma ooze melts and warps. After dealing damage, the weapon takes a permanent and cumulative \u20131 penalty to damage rolls. If its penalty drops to \u20135, the weapon is destroyed. Nonmagical ammunition that hits the ooze is destroyed after dealing damage. The ooze can melt through 2-inch-thick, nonmagical wood or metal in 1 round."
+    },
+    {
+      "name": "Spider Climb",
+      "desc": "The magma ooze can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Pseudopod",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (3d6 + 3) bludgeoning damage plus 28 (8d6) fire damage. In addition, any nonmagical armor worn by the target is partially burned and melted and takes a permanent and cumulative \u20131 penalty to the AC it offers. The armor is destroyed if the penalty reduces its AC to 10."
+    },
+    {
+      "name": "Split",
+      "desc": "When a magma ooze that is Medium or larger is subjected to slashing damage, it splits into two new magma oozes if it has at least 10 hit points. Each new magma ooze has hit points equal to half the original ooze\u2019s, rounded down. New oozes are one size smaller than the original magma ooze."
+    }
+  ]
+}

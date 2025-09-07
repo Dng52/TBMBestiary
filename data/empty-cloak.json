@@ -1,0 +1,60 @@
+{
+  "name": "Empty Cloak",
+  "tags": [
+    "medium",
+    "construct",
+    "cr1/2",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "construct",
+  "alignment": "unaligned",
+  "cr": "1/2 (100 XP)",
+  "hp": "45 (10d8)",
+  "ac": "13 (natural armor)",
+  "speed": "0 ft., fly 40 ft.",
+  "saves": "Dex +4, Con +2",
+  "skills": "Stealth +4",
+  "immunities": "poison",
+  "resistance": "bludgeoning",
+  "vulnerability": "fire",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "understands Elvish and Umbral but can't speak",
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 10,
+    "int": 10,
+    "wis": 10,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Diligent Sentinel",
+      "desc": "Empty cloaks are designed to watch for intruders. They gain advantage on Wisdom (Perception) checks."
+    },
+    {
+      "name": "Shadow Construction",
+      "desc": "Empty cloaks are designed with a delicate shadow construction. They burst into pieces, then dissipate into shadow, on a critical hit."
+    },
+    {
+      "name": "Wrapping Embrace",
+      "desc": "Empty cloaks can share the same space as one Medium or smaller creature. The empty cloak has advantage on attack rolls against any creature in the same space with it."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Razor Cloak",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage."
+    },
+    {
+      "name": "Shadow Slam",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft, one target. Hit: 6 (1d4 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Shadow Snare",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: Large or smaller creatures are restrained. To escape, the restrained creature or an adjacent ally must use an action to make a successful DC 14 Strength check. The shadow snare has 15 hit points and AC 12."
+    }
+  ]
+}

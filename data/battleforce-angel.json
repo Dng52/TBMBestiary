@@ -1,0 +1,54 @@
+{
+  "name": "Battleforce Angel",
+  "tags": [
+    "medium",
+    "celestial",
+    "cr5",
+    "guildmasters-guide-to-ravnica"
+  ],
+  "size": "Medium",
+  "type": "celestial",
+  "alignment": "lawful good",
+  "cr": "5 (1800 XP)",
+  "hp": "66 (12d8 + 12)",
+  "ac": "18 (plate)",
+  "speed": "30 ft., fly 90 ft.",
+  "saves": "Wis +6, Cha +7",
+  "skills": "Medicine +4, Religion +2",
+  "resistance": "fire, radiant",
+  "conimmunities": "charmed, exhaustion, frightened",
+  "senses": "darkvision 120 ft., truesight 120 ft., passive Perception 16",
+  "languages": "all",
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 13,
+    "int": 11,
+    "wis": 17,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Flyby",
+      "desc": "The angel doesn\u2019t provoke an opportunity attack when it flies out of an enemy\u2019s reach."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The angel has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The angel makes two melee attacks. It also uses Battlefield Inspiration."
+    },
+    {
+      "name": "Longsword",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands, plus 18 (4d8) radiant damage. If the target is within 5 feet of any of the angel\u2019s allies, the target takes an extra 2 (1d4) radiant damage."
+    },
+    {
+      "name": "Battlefield Inspiration",
+      "desc": "The angel chooses up to three creatures it can see within 30 feet of it. Until the end of the angel\u2019s next turn, each target can add a d4 to its attack rolls and saving throws."
+    }
+  ]
+}

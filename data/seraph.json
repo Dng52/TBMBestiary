@@ -1,0 +1,54 @@
+{
+  "name": "Seraph",
+  "tags": [
+    "large",
+    "elemental",
+    "cr8",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "elemental",
+  "alignment": "neutral good",
+  "cr": "8 (3,900 XP)",
+  "hp": "119 (14d10 + 42)",
+  "ac": "15 (natural armor)",
+  "speed": "40 ft., fly 30 ft.",
+  "saves": "Int +5, Wis +5",
+  "skills": "Arcana +5, Deception +7, Insight +5, Perception +5",
+  "immunities": "fire",
+  "vulnerability": "cold",
+  "senses": "darkvision 60 ft., passive Perception 15",
+  "languages": "Celestial, Common, Ignan; telepathy 100 ft.",
+  "abilities": {
+    "str": 19,
+    "dex": 16,
+    "con": 17,
+    "int": 15,
+    "wis": 15,
+    "cha": 19
+  },
+  "traits": [
+    {
+      "name": "Heat",
+      "desc": "A seraph\u2019s body generates heat. Creatures who touch the genie take 7 (2d6) fire damage. If the seraph genie uses a metal weapon adds this additional damage to the weapon\u2019s attacks. A seraph genie can suppress this effect for 1 hour as a bonus action."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "A seraph genie\u2019s innate spellcasting ability is charisma (spell save DC 15, +7 to hit with spell attacks). It can cast the following spells without requiring material components. * At will: <i>detect evil and good, detect magic, flame blade, plane shift </i>(self only)<i>, produce flame</i> * 3/day each: <i>fireball, flame strike, invisibility, see invisibility, wall of fire</i> * 1/day each: <i>fire storm, greater invisibility</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "A seraph genie makes three scimitar attacks."
+    },
+    {
+      "name": "Scimitar",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage plus 7 (2d6) fire damage."
+    },
+    {
+      "name": "Fire Burst (Recharge 5\u20136)",
+      "desc": "The seraph genie emits a blast of elemental fire in a 30-foot radius. All creatures in the area must make a DC 15 Dexterity saving throw, taking 28 (8d6) fire damage on a failed saving throw, or half as much on a successful one."
+    }
+  ]
+}

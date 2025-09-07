@@ -1,0 +1,49 @@
+{
+  "name": "Lantern Dragonette",
+  "tags": [
+    "tiny",
+    "dragon",
+    "cr1/2",
+    "tome-of-beasts"
+  ],
+  "size": "Tiny",
+  "type": "dragon",
+  "alignment": "lawful neutral",
+  "cr": "1/2 (100 XP)",
+  "hp": "28 (8d4 + 8)",
+  "ac": "13 (natural armor)",
+  "speed": "15 ft., fly 40 ft. (hover)",
+  "saves": "Dex +3, Wis +3, Cha +3",
+  "skills": "Arcana +5, History +5, Nature +5, Perception +3, Religion +5",
+  "conimmunities": "paralyzed, unconscious",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "Common, Draconic, Elvish, Primordial; telepathy 60 ft.",
+  "abilities": {
+    "str": 7,
+    "dex": 12,
+    "con": 13,
+    "int": 16,
+    "wis": 13,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Lantern Belly (1/Day)",
+      "desc": "If the dragonette has eaten 8 ounces of candle wax in the last 24 hours, it can emit a continual flame for 3d20 minutes. The continual flame can be dispelled, but the dragonette can resume it with a bonus action except in areas of magical darkness, if the time limit hasn't expired."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The lantern dragonette's innate spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no material components: * 1/day each: <i>burning hands, color spray, scorching ray</i>"
+    },
+    {
+      "name": "Vulnerable to Magical Darkness",
+      "desc": "A lantern dragonette in an area of magical darkness loses its lantern belly ability and its ability to fly. It also suffers 1d6 radiant damage for every minute of exposure."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage."
+    }
+  ]
+}

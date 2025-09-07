@@ -1,0 +1,36 @@
+{
+  "name": "Crushing Wave Reaver",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/2",
+    "elemental-evil"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "1/2 (100 XP)",
+  "hp": "22 (4d8+4)",
+  "ac": "14 (shield)",
+  "speed": "30 ft.",
+  "skills": "Athletics +4, Stealth +4",
+  "languages": "Common",
+  "abilities": {
+    "str": 15,
+    "dex": 14,
+    "con": 13,
+    "int": 10,
+    "wis": 11,
+    "cha": 8
+  },
+  "actions": [
+    {
+      "name": "Sharktoothed Longsword",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage, or 7 (1d10 + 2) slashing damage if used with two hands. Against a target is wearing no armor, the reaver deals an extra die of damage with this sword."
+    },
+    {
+      "name": "Javelin",
+      "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    }
+  ]
+}

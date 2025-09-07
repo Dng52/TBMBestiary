@@ -1,0 +1,51 @@
+{
+  "name": "Change",
+  "tags": [
+    "medium",
+    "construct",
+    "cr7",
+    "strongholds-and-followers"
+  ],
+  "size": "Medium",
+  "type": "construct",
+  "alignment": "lawful neutral",
+  "cr": "7 (2,900 XP)",
+  "hp": "120 (16d8 + 48)",
+  "ac": "18 (natural armor)",
+  "speed": "40 ft.",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "truesight 60 ft., passive Perception 14",
+  "languages": "all those of the creature who summoned it",
+  "abilities": {
+    "str": 15,
+    "dex": 17,
+    "con": 16,
+    "int": 13,
+    "wis": 12,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "The Law of Change",
+      "desc": "Enemies with 10 feet cannot benefit from magical healing."
+    },
+    {
+      "name": "Chaos Vulnerability",
+      "desc": "The Inexorables have disadvantage on all saving throws against spells."
+    },
+    {
+      "name": "Inexorable",
+      "desc": "The Inexorables are immune to any effects that would slow them or deny them actions or movement."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Change makes three javelin attacks."
+    },
+    {
+      "name": "Javelin",
+      "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 12 (2d8 + 3) piercing damage."
+    }
+  ]
+}

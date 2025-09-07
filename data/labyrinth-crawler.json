@@ -1,0 +1,46 @@
+{
+  "name": "Labyrinth Crawler",
+  "tags": [
+    "medium",
+    "monstrosity",
+    "cr1",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "monstrosity",
+  "alignment": "chaotic evil",
+  "cr": "1 (200 XP)",
+  "hp": "37 (5d8 + 15)",
+  "ac": "13 (natural armor)",
+  "speed": "40 ft.",
+  "senses": "darkvision 60ft., passive Perception 11",
+  "languages": "--",
+  "abilities": {
+    "str": 18,
+    "dex": 12,
+    "con": 16,
+    "int": 5,
+    "wis": 12,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Labyrinthine Recall",
+      "desc": "The crawler can perfectly recall any path it has traveled."
+    },
+    {
+      "name": "Flawless Tracker",
+      "desc": "The crawler can track down any creature it has smelled in the last 24 hours unless that creature's location is concealed through magical means."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Gore",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage."
+    },
+    {
+      "name": "Befuddling Screech (1/Day)",
+      "desc": "The crawler lets out an ear piercing screech in a 30-foot cone that reverberates in frequencies that cause the minds of most creatures to become scrambled. Each creature in this cone must succeed on a DC 11 Wisdom saving throw or take 5 (1d10) psychic damage and lose its sense of time and direction for 1 hour."
+    }
+  ]
+}

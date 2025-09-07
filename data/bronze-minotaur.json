@@ -1,0 +1,61 @@
+{
+  "name": "Bronze Minotaur",
+  "tags": [
+    "large",
+    "construct",
+    "cr10",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "construct",
+  "alignment": "neutral",
+  "cr": "10 (5,900 XP)",
+  "hp": "110 (13d10 + 39)",
+  "ac": "17 (natural armor)",
+  "speed": "20 ft.",
+  "immunities": "fire, poison, psychic",
+  "resistance": "bludgeoning, piercing, and slashing damage from nonmagical weapons that aren\u2019t adamantine",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "understands the languages of its creator but can\u2019t speak",
+  "abilities": {
+    "str": 18,
+    "dex": 10,
+    "con": 16,
+    "int": 3,
+    "wis": 11,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Fire Absorption",
+      "desc": "Whenever the bronze minotaur is subjected to fire damage, it takes no damage and instead regains a number of hit points equal to the fire damage dealt."
+    },
+    {
+      "name": "Immutable Form",
+      "desc": "The bronze minotaur is immune to any spell or effect that would alter its form."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The bronze minotaur has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapon",
+      "desc": "The bronze minotaur\u2019s weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The bronze minotaur makes two greataxe attacks."
+    },
+    {
+      "name": "Greataxe",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 23 (3d12 + 4) slashing damage."
+    },
+    {
+      "name": "Breathe Fire (Recharge 5\u20136)",
+      "desc": "The bronze minotaur releases a 30-foot cone of flame. Creatures in the area must make a DC 16 Dexterity saving throw, taking 52 (15d6) fire damage on a failed saving throw, or half as much damage on a successful one."
+    }
+  ]
+}

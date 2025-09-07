@@ -1,0 +1,58 @@
+{
+  "name": "Rat King",
+  "tags": [
+    "medium",
+    "monstrosity",
+    "cr5",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "monstrosity",
+  "alignment": "chaotic evil",
+  "cr": "5 (1800 XP)",
+  "hp": "76 (9d8 + 36)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft., burrow 20 ft.",
+  "skills": "Stealth +6",
+  "immunities": "poison",
+  "resistance": "bludgeoning, piercing, slashing",
+  "conimmunities": "charmed, frightened, paralyzed, petrified, prone, restrained, stunned",
+  "senses": "darkvision 60 ft., passive Perception 12",
+  "languages": "Common, Thieves' Cant",
+  "abilities": {
+    "str": 6,
+    "dex": 16,
+    "con": 18,
+    "int": 11,
+    "wis": 15,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "desc": "The rat king has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Plague of Ill Omen",
+      "desc": "The rat king radiates a magical aura of misfortune in a 30-foot radius. A foe of the rat king that starts its turn in the aura must make a successful DC 14 Charisma saving throw or be cursed with bad luck until the start of its next turn. When a cursed character makes an attack roll, ability check, or saving throw, it must subtract 1d4 from the result."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The rat king makes four bite attacks."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage, and a bitten creature must succeed on a DC 15 Constitution saving throw or be infected with a disease. A diseased creature gains one level of exhaustion immediately. When the creature finishes a long rest, it must repeat the saving throw. On a failure, the creature gains another level of exhaustion. On a success, the disease does not progress. The creature recovers from the disease if its saving throw succeeds after two consecutive long rests or if it receives a lesser restoration spell or comparable magic. The creature then recovers from one level of exhaustion after each long rest."
+    },
+    {
+      "name": "Summon Swarm (1/Day)",
+      "desc": "The rat king summons three swarms of rats. The swarms appear immediately within 60 feet of the rat king. They can appear in spaces occupied by other creatures. The swarms act as allies of the rat king. They remain for 1 hour or until the rat king dies."
+    },
+    {
+      "name": "Absorption",
+      "desc": "When the rat king does damage to a rat or rat swarm, it can absorb the rat, or part of the swarm, into its own mass. The rat king regains hit points equal to the damage it did to the rat or swarm."
+    }
+  ]
+}

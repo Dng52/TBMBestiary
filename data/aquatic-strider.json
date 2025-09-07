@@ -1,0 +1,51 @@
+{
+  "name": "Aquatic Strider",
+  "tags": [
+    "medium",
+    "construct",
+    "cr2",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "construct",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "51 (6d10 + 18)",
+  "ac": "13 (natural armor)",
+  "speed": "40 ft., swim 30 ft.",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "passive Perception 10",
+  "languages": "understands Common and Aquan but can\u2019t speak.",
+  "abilities": {
+    "str": 16,
+    "dex": 8,
+    "con": 16,
+    "int": 6,
+    "wis": 10,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Shapeshifter",
+      "desc": "The strider can use its bonus action to transform its body into a tall, swift, four-legged construct held together by streams of water, or into a tough, slow-moving, cannon construct. While in the cannon form, the strider has its AC increased to 16 and its movement speed reduced to 20 ft. The strider falls to pieces when it dies, regardless of its current form."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The strider makes two attacks with its impale ability."
+    },
+    {
+      "name": "Impale (Strider Form Only)",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit: 7 (1d8 + 3) piercing damage."
+    },
+    {
+      "name": "Water Orb (Cannon Form Only)",
+      "desc": "Ranged Weapon Attack: +5 to hit, range 30/90 ft., one target. Hit: 18 (4d8) cold damage and the target\u2019s speed is reduced by 10 feet on their next turn."
+    },
+    {
+      "name": "Aqua Cannon (Cannon Form Only) (Recharge 6)",
+      "desc": "The strider unleashes a torrent of powerful water from its cannon in a 60-foot line. Any creature in this area must make a DC 12 Dexterity saving throw, taking 7 (2d6) bludgeoning damage and 7 (2d6) cold damage and be pushed 15 feet on a failed save, or half as much damage and not pushed on a successful one. Any creatures behind the initial target hit by this ability have advantage on this saving throw."
+    }
+  ]
+}

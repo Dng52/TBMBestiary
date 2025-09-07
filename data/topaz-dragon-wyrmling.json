@@ -1,0 +1,40 @@
+{
+  "name": "Topaz Dragon Wyrmling",
+  "tags": [
+    "medium",
+    "dragon",
+    "cr2",
+    "strongholds-and-followers"
+  ],
+  "size": "Medium",
+  "type": "dragon",
+  "alignment": "neutral good",
+  "cr": "2 (450 XP)",
+  "hp": "27 (6d8)",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft., fly 60 ft. (hover)",
+  "saves": "Dex +3, Int +3, Wis +2, Cha +3",
+  "skills": "Arcana +3, Insight +2, Perception +2, Religion +3",
+  "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 14",
+  "languages": "Common, Draconic, telepathy 60 ft.",
+  "abilities": {
+    "str": 12,
+    "dex": 13,
+    "con": 10,
+    "int": 13,
+    "wis": 11,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Uplift Aura",
+      "desc": "All allies within 30 feet gain +1 on Intelligence checks and saving throws."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (1d10 + 1) piercing damage."
+    }
+  ]
+}

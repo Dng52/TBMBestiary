@@ -1,0 +1,54 @@
+{
+  "name": "Slow Storm",
+  "tags": [
+    "huge",
+    "elemental",
+    "cr15",
+    "tome-of-beasts"
+  ],
+  "size": "Huge",
+  "type": "elemental",
+  "alignment": "chaotic neutral",
+  "cr": "15 (13000 XP)",
+  "hp": "225 (18d12 + 108)",
+  "ac": "19",
+  "speed": "0 ft., fly 60 ft. (hover)",
+  "saves": "Dex +9, Con +11",
+  "immunities": "lightning",
+  "resistance": "acid, cold, fire",
+  "conimmunities": "prone",
+  "senses": "blindsight 30 ft., darkvision 120 ft., passive Perception 13",
+  "languages": "Common, Primordial",
+  "abilities": {
+    "str": 20,
+    "dex": 19,
+    "con": 22,
+    "int": 11,
+    "wis": 16,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Bone Wrack",
+      "desc": "When hit by the slow storm's slam or breath weapon attack, the storm absorbs moisture from the living creatures' joints, causing stiffness and pain. In addition to 1d4 Dexterity drain, any creature caught within the slow storm's breath weapon that fails another DC 18 Constitution save suffers crushing pain in bones and joints. Any round in which the pained creature moves, it takes 1d4 necrotic damage per 5 feet moved. Bone wracking pain lasts until the affected creature regains at least 1 point of lost Dexterity."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The slow storm's innate spellcasting ability is Wisdom (spell save DC 16). It can innately cast the following spells, requiring no material components: At will: lightning bolt 3/day: chain lightning"
+    },
+    {
+      "name": "Storm Form",
+      "desc": "A creature that enters or starts its turn inside the slow storm's whirlwind takes 9 (2d8) force damage. A creature can take this damage just once per round. In addition, ranged missile weapon attacks against the slow storm have disadvantage because of the high-speed wind."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +10 to hit, reach 15 ft., one target. Hit: 31 (4d12 + 5) bludgeoning damage plus 9 (2d8) piercing damage."
+    },
+    {
+      "name": "Static Shock (Recharge 5-6)",
+      "desc": "The slow storm exhales its electrical power in a 30-foot cone. Targets in the area of effect take 54 (12d8) lightning damage, 1d4 Dexterity loss, and suffer bone wrack. A successful DC 18 Constitution saving throw halves the Dexterity loss and prevents the bone wrack."
+    }
+  ]
+}

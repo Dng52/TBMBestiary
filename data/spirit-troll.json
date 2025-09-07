@@ -1,0 +1,40 @@
+{
+  "name": "Spirit Troll",
+  "tags": [
+    "large",
+    "giant",
+    "cr11",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Large",
+  "type": "giant",
+  "alignment": "chaotic evil",
+  "cr": "11 (7200 XP)",
+  "hp": "97  (15d10 + 15)",
+  "ac": "17 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Perception +3",
+  "immunities": "bludgeoning, piercing, and slashing from nonmagical attacks",
+  "resistance": "acid, cold, fire, lightning, thunder",
+  "conimmunities": "exhaustion, grappled, paralyzed, petrified, prone, restrained, unconscious",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "Giant",
+  "abilities": {
+    "str": 1,
+    "dex": 17,
+    "con": 13,
+    "int": 8,
+    "wis": 9,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Incorporeal Movement",
+      "desc": "The troll can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
+    },
+    {
+      "name": "Regeneration",
+      "desc": "The troll regains 10 hit points at the start of each of its turns. If the troll takes psychic or force damage, this trait doesn't function at the start of the troll's next turn. The troll dies only if it starts its turn with 0 hit points and doesn't regenerate."
+    }
+  ]
+}

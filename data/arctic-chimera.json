@@ -1,0 +1,55 @@
+{
+  "name": "Arctic Chimera",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr6",
+    "out-of-the-box-5e"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "chaotic evil",
+  "cr": "6 (2,300 XP)",
+  "hp": "114 (12d10 + 48)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft., fly 60 ft.",
+  "skills": "Perception +8",
+  "senses": "Darkvision 60 ft., passive Perception 18",
+  "languages": "Understands Draconic but can\u2019t speak it",
+  "abilities": {
+    "str": 19,
+    "dex": 11,
+    "con": 19,
+    "int": 3,
+    "wis": 14,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Arctic Camouflage",
+      "desc": "The arctic chimera has advantage on Dexterity (Stealth) checks made to hide in arctic terrain."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The chimera makes three attacks: one with its bite, one with its horns, and one with its claws. When its Cold Breath is available, it can use the breath in place of its bite or horns."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
+    },
+    {
+      "name": "Horns",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (1d12 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
+    },
+    {
+      "name": "Cold Breath (Recharge 5\u20136)",
+      "desc": "The dragon head exhales a freezing blast of icy air in a 15-foot cone. Each creature in that area must make a DC 15 Constitution saving throw, taking 31 (7d8) cold damage on a failed save, or half as much damage on a successful one."
+    }
+  ]
+}

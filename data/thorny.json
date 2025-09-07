@@ -1,0 +1,43 @@
+{
+  "name": "Thorny",
+  "tags": [
+    "medium",
+    "plant",
+    "cr1",
+    "volos-guide"
+  ],
+  "size": "Medium",
+  "type": "plant",
+  "alignment": "neutral",
+  "cr": "1 (200 XP)",
+  "hp": "27 (5d8+5)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Perception +4, Stealth +3",
+  "resistance": "lightning, piercing",
+  "senses": "darkvision 60 ft.",
+  "abilities": {
+    "str": 13,
+    "dex": 12,
+    "con": 13,
+    "int": 2,
+    "wis": 10,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Plant Camouflage",
+      "desc": "The thorny has advantage on Dexterity (Stealth) checks it makes in any terrain with ample obscuring plant life."
+    },
+    {
+      "name": "Regeneration",
+      "desc": "The thorny regains 5 hit points at the start of its turn. If it takes cold, fire, or necrotic damage, this trait doesn't function at the start of the thorny's next turn. The thorny dies only if it starts its turn with 0 hit points and doesn't regenerate."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 8 (2d6+1) piercing damage."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "Tribal Tactician",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr3",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "3 (700 XP)",
+  "hp": "60 (8d8 + 24)",
+  "ac": "14 (hide)",
+  "speed": "30 ft.",
+  "saves": "Str +5, Con +5",
+  "skills": "Athletics +5, Survival +3",
+  "senses": "passive Perception 11",
+  "languages": "any two languages",
+  "abilities": {
+    "str": 16,
+    "dex": 14,
+    "con": 16,
+    "int": 14,
+    "wis": 12,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Combat Maneuvers (3/Short Rest)",
+      "desc": "Tacticians have trained all their life to excel in combat and as a result have mastered special combat maneuvers that they can use in combat. Whenever the tactician makes a melee weapon attack, it can choose to execute one of these maneuvers to add additional effects to the attack. In addition to these other effects, all maneuvers cause the attacks to deal an additional 1d8 damage. Each tactician has two random maneuvers from the list below available for use: * Crippling Strike \u2013 The target's speed is 0 on its next turn. * Dizzying Strike \u2013 Concentration saving throws made as a result of this attack's damage are made at disadvantage. * Precise Strike \u2013 This attack is made with advantage. * Weakening Strike \u2013 The next weapon attack made by the target deals half damage (rounded down)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The tactician makes two attacks with its battleaxe and one with its unarmed strike.."
+    },
+    {
+      "name": "Battleaxe",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands."
+    },
+    {
+      "name": "Unarmed Strike",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage."
+    },
+    {
+      "name": "Handaxe",
+      "desc": "Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 5 (1d6 + 3) slashing damage."
+    }
+  ]
+}

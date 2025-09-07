@@ -1,0 +1,59 @@
+{
+  "name": "Narrak",
+  "tags": [
+    "small",
+    "humanoid",
+    "cr2",
+    "out-of-the-abyss"
+  ],
+  "size": "Small",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "2 (450 XP)",
+  "hp": "40 (9d6+9)",
+  "ac": "12 (15 to mage armor)",
+  "speed": "30 ft.",
+  "skills": "Arcana +4, Stealth +4",
+  "senses": "darkvision 120 ft.",
+  "languages": "Dwarvish, Undercommon",
+  "abilities": {
+    "str": 9,
+    "dex": 14,
+    "con": 13,
+    "int": 14,
+    "wis": 5,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Insanity",
+      "desc": "Droki has advantage on saving throws against being charmed or frightened."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The derro has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "Narrak is a 5th-level spellcaster. His spellcasting ability is Charisma (Save DC 13, +5 to hit with spell attacks) Narrak has two 2nd-level spell slots, which he regains after finishing a short or long rest, and knows the following Warlock spells: * Cantrips (at will): <i>eldritch blast, friends, poison spray</i> * 1st level: <i>armor of Agathys, charm person, hex</i> * 2nd level: <i>hold person, ray of enfeeblement, spider climb</i>"
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the derro has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Armor of Shadows (Recharges after a Short or Long Rest)",
+      "desc": "Narrak casts <i>mage armor</i> on himself"
+    },
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit:5 (1d6 + 2) piercing damage."
+    },
+    {
+      "name": "One with Shadows",
+      "desc": "While he is in a dim light or darkness, Narrak can become invisible. He remains so until he moves or takes an action or reaction."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Frog",
+  "tags": [
+    "tiny",
+    "beast",
+    "cr0",
+    "monster-manual"
+  ],
+  "size": "Tiny",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "0 (10 XP)",
+  "hp": "1 (1d4-1)",
+  "ac": "11",
+  "speed": "20 ft., swim 20 ft.",
+  "skills": "Perception +1, Stealth +3",
+  "senses": "darkvision 30 ft.",
+  "abilities": {
+    "str": 1,
+    "dex": 13,
+    "con": 8,
+    "int": 1,
+    "wis": 8,
+    "cha": 3
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The frog can breathe air and water"
+    },
+    {
+      "name": "Standing Leap",
+      "desc": "The frog's long jump is up to 10 ft. and its high jump is up to 5 ft., with or without a running start."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Clawfish",
+  "tags": [
+    "small",
+    "beast",
+    "cr1/8",
+    "brute",
+    "flee-mortals"
+  ],
+  "size": "Small",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/8 (25 XP)",
+  "hp": "9 (2d6 + 2)",
+  "ac": "11",
+  "speed": "30 ft., climb 30 ft., swim 40 ft.",
+  "skills": "Perception +2",
+  "immunities": "lightning, poison",
+  "senses": "passive Perception 12",
+  "languages": "--",
+  "abilities": {
+    "str": 15,
+    "dex": 13,
+    "con": 12,
+    "int": 4,
+    "wis": 10,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Hold Breath",
+      "desc": "The clawfish can hold their breath for 15 minutes."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage, and if the target is a Small or larger creature, the clawfish can pull themself into the target\u2019s space and attach to the target. While attached, the clawfish moves with the target without provoking opportunity attacks, and the clawfish can\u2019t make Claw attacks. A creature who can reach the clawfish can use an action to make a DC 12 Strength (Athletics) or Dexterity (Acrobatics) check. On a success, the clawfish is detached and shunted into an unoccupied space of the clawfish\u2019s choice within 5 feet of the target. The clawfish also detaches if they become grappled, incapacitated, prone, or restrained, or if they use 5 feet of movement to detach."
+    },
+    {
+      "name": "Electrocute (Recharge 6)",
+      "desc": "Each creature touching the clawfish takes 7 (2d6) lightning damage. If the clawfish is immersed in water, each other creature within 10 feet of the clawfish who is touching the same body of water must succeed on a DC 11 Dexterity saving throw or take the same damage."
+    }
+  ]
+}

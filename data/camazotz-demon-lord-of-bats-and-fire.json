@@ -1,0 +1,102 @@
+{
+  "name": "Camazotz, Demon Lord Of Bats And Fire",
+  "tags": [
+    "large",
+    "fiend",
+    "cr22",
+    "tome-of-beasts"
+  ],
+  "size": "Large",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "22 (41000 XP)",
+  "hp": "537 (43d10 + 301)",
+  "ac": "19 (natural armor)",
+  "speed": "30 ft., climb 30 ft., fly 80 ft.",
+  "saves": "Dex +13, Con +14, Wis +13, Cha +14",
+  "skills": "Acrobatics +13, Athletics +17, Deception +14, Insight +13, Intimidation +14, Perception +13",
+  "immunities": "fire, poison, thunder",
+  "resistance": "acid, lightning; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "vulnerability": "cold",
+  "conimmunities": "charmed, deafened, frightened, paralyzed, petrified, poisoned, stunned",
+  "senses": "blindsight 120 ft., darkvision 40 ft., passive Perception 23",
+  "languages": "Common, Darakhul, Derro, Draconic, Dwarvish, Infernal, Nurian, Primordial, Void Speech; telepathy 300 ft.",
+  "abilities": {
+    "str": 30,
+    "dex": 22,
+    "con": 25,
+    "int": 12,
+    "wis": 22,
+    "cha": 25
+  },
+  "traits": [
+    {
+      "name": "Shapechanger",
+      "desc": "Camazotz can use his action to polymorph into a form that resembles a giant bat covered in smoldering ashes, or back into his true, winged humanoid form. His statistics are the same in each form. Any equipment he is wearing or carrying isn't transformed. Either form turns into a pile of greasy ash if destroyed."
+    },
+    {
+      "name": "Echolocation",
+      "desc": "Camazotz can't use his blindsight while deafened."
+    },
+    {
+      "name": "Keen Hearing",
+      "desc": "Camazotz has advantage on Wisdom (Perception) checks that rely on hearing."
+    },
+    {
+      "name": "Gift of Vampirism",
+      "desc": "Camazotz may choose to raise those slain through Strength loss as vampires. They rise after 1d4 days, permanently dominated by Camazotz until such time as he sees fit to grant them free will. Camazotz may have no more than ten enslaved vampires at any given time."
+    },
+    {
+      "name": "Heat Mantle",
+      "desc": "Camazotz is infused with the heart of volcanoes. A creature who strikes Camazotz with a nonreach weapon or with an unarmed strike takes 7 (2d6) fire damage automatically."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "Camazotz' innate spellcasting ability is Charisma (spell save DC 22, +14 to hit with spell attacks). He can innately cast the following spells, requiring no material components: At will: darkness, detect evil and good, dispel magic, plane shift, shapechange, telekinesis, teleport 3/day each: banishment, haste, symbol 1/day: earthquake"
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "Camazotz has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Summon Bats (1/Day)",
+      "desc": "Camazotz can summon 4d6 giant bats or 2d6 swarms of bats. The bats appear immediately and serve the demon for up to 1 hour."
+    },
+    {
+      "name": "Summon Demons (1/Day)",
+      "desc": "Camazotz can summon 2d4 barlgura of a variety native to his cavernous realm: squat and blubbery creatures with clawed batwings for arms and a fly speed of 40 ft."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Camazotz makes one bite attack and two claw attacks."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +17 to hit, reach 5 ft., one target. Hit: 38 (8d6 + 10) piercing damage plus 7 (2d6) fire damage, and the target must make a successful DC 22 Constitution saving throw or have its Strength score reduced by 1d4. A creature reduced to 0 Strength dies."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +17 to hit, reach 10 ft., one target. Hit: 31 (6d6 + 10) slashing damage plus 7 (2d6) fire damage, and the target must make a successful DC 22 Constitution saving throw or have its Strength score reduced by 1d4. A creature reduced to 0 Strength dies."
+    },
+    {
+      "name": "Fire Breath (Recharge 5-6)",
+      "desc": "Camazotz can breathe a 30-foot cone of unholy fire. Any creature caught in the area takes 55 (10d10) damage, half of which is fire, the other half is necrotic, or half as much damage with a successful DC 22 Dexterity saving throw."
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Camazotz can take 2 legendary actions, choosing from the options below",
+      "desc": "Only one legendary action option can be used at a time and only at the end of another creature's turn. Camazotz regains spent legendary actions at the start of its turn."
+    },
+    {
+      "name": "Detect",
+      "desc": "Camazotz makes a Wisdom (Perception) check."
+    },
+    {
+      "name": "Wing Attack (Costs 2 Actions)",
+      "desc": "Camazotz beats his wings, extinguishing mundane and magical light sources alike. Each creature within 10 feet must succeed on a DC 21 Dexterity saving throw or take 14 (4d6) fire damage. Camazotz can then fly up to half his flying speed."
+    }
+  ]
+}

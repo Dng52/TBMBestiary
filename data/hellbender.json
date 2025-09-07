@@ -1,0 +1,42 @@
+{
+  "name": "Hellbender",
+  "tags": [
+    "large",
+    "aberration",
+    "cr5",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "aberration",
+  "alignment": "chaotic evil",
+  "cr": "5 (1,800 XP)",
+  "hp": "76 (8d10 + 32)",
+  "ac": "18 (natural armor)",
+  "speed": "20 ft.",
+  "immunities": "fire",
+  "resistance": "acid, poison",
+  "senses": "darkvision 60 ft., passive Perception 9",
+  "languages": "Hellbender",
+  "abilities": {
+    "str": 20,
+    "dex": 12,
+    "con": 19,
+    "int": 5,
+    "wis": 9,
+    "cha": 5
+  },
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The hellbender makes two attacks with its claws."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 10 (1d10+5) slashing damage plus 4 (1d8) fire damage."
+    },
+    {
+      "name": "Fiery Pulse (Recharge 5\u20136)",
+      "desc": "The hellbender sends a burst of fire from all small pores in its chitin-like hide. Any creature within 5 feet of the hellbender must make a DC 15 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one."
+    }
+  ]
+}

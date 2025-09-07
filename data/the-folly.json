@@ -1,0 +1,52 @@
+{
+  "name": "The Folly",
+  "tags": [
+    "tiny",
+    "fey",
+    "cr5",
+    "tome-of-horrors"
+  ],
+  "size": "Tiny",
+  "type": "fey",
+  "alignment": "chaotic evil",
+  "cr": "5 (1,800 XP)",
+  "hp": "71 (13d4 + 39)",
+  "ac": "16 (natural armor)",
+  "speed": "15 ft., fly 30 ft.",
+  "saves": "Dex +5, Con +6",
+  "skills": "Arcana +4, Athletics +5, Perception +1, Persuasion +7",
+  "senses": "darkvision 120 ft., passive Perception 11",
+  "languages": "Common, Draconic, Sylvan",
+  "abilities": {
+    "str": 15,
+    "dex": 14,
+    "con": 17,
+    "int": 12,
+    "wis": 7,
+    "cha": 19
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The folly\u2019s spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). It can innately cast the following spells, requiring no material components: * At will: <i>acid splash, chill touch, eldritch blast, mage hand, minor illusion, poison spray, prestidigitation, shocking grasp, vicious mockery</i> * 3/day each: <i>disguise self, flaming sphere, hideous laughter, invisibility, phantasmal killer, silent image, sleep, suggestion</i> * 1/day: <i>dispel magic, fear, fireball, hypnotic pattern</i> * 1/week each: <i>animate objects, arcane gate, polymorph </i>(10x normal casting time and requires at least 3 follies participating in the ritual) * 1/month each: <i>earthquake, gate, reverse gravity </i>(100x normal casting time and requires at least 10 follies participating in the ritual)"
+    },
+    {
+      "name": "Quick Breeding",
+      "desc": "The follies both breed and mature very quickly, but they also don\u2019t much care about self-preservation. Therefore, even though they often do things that get themselves killed, their population never seems to drop."
+    },
+    {
+      "name": "Wild Misperception",
+      "desc": "The follies misunderstand almost anything said to them in the most horrible possible way. For example, if asked, \"Please make those children new shoes,\" they will happily slay the children and use their skins to make new shoes. They don't do this on purpose. They just get absolutely everything horribly, horribly wrong whenever it is at all possible to do so. Even when they do properly understand a request, they will find a horrible way to execute it. For example, if asked, \"Please bring me a glass of water,\" they might steal a poor family\u2019s only nice glass or open a gateway to the elemental plane of water, flooding the town, just to fill the glass. Everything they can do wrong, they will."
+    }
+  ],
+  "actions": [
+    {
+      "name": "+1 Tiny Longsword",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 4 (1d2 + 3) slashing damage."
+    },
+    {
+      "name": "+1 Tiny Shortbow",
+      "desc": "Ranged Weapon Attack: +6 to hit, range 40/160 ft., one target. Hit: 4 (1d2 + 3) piercing damage."
+    }
+  ]
+}

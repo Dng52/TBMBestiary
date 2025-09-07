@@ -1,0 +1,64 @@
+{
+  "name": "Walrutte",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr5",
+    "homebrew"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "5 (1,800 XP)",
+  "hp": "92 (8d10 + 48)",
+  "ac": "15 (natural armor)",
+  "speed": "20 ft., swim 50 ft.",
+  "resistance": "cold",
+  "conimmunities": "prone",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 18,
+    "dex": 10,
+    "con": 22,
+    "int": 2,
+    "wis": 10,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Blubber",
+      "desc": "The walrutte has advantage on any saving throw it makes against an effect that would deal cold damage."
+    },
+    {
+      "name": "Hold Breath",
+      "desc": "The walrutte can hold its breath for 1 hour."
+    },
+    {
+      "name": "Ice Walk",
+      "desc": "The walrutte can move across icy surfaces without needing to make an ability check. Additionally, difficult terrain due to ice or snow doesn't cost it extra movement."
+    },
+    {
+      "name": "Swimming Leap",
+      "desc": "If the walrutte swims at least 10 feet in a straight line before breaching the surface of the water, its long jump is up to 30 feet and its high jump is up to 15 feet. As part of this movement, the walrutte can break through up to 5 feet of solid ice."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The walrutte makes two gore attacks."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 30 (4d12 + 4) piercing damage."
+    },
+    {
+      "name": "Gore",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage."
+    },
+    {
+      "name": "Deadly Breach",
+      "desc": "If the walrutte jumps at least 15 feet as part of its movement, it can then use this action to land upright in a space that contains one or more other creatures. Each of those creatures must succeed on a DC 15 Strength or Dexterity saving throw (target's choice) or be knocked prone and take 14 (3d6 + 4) bludgeoning damage plus 14 (4d6) cold damage. On a successful save, the creature takes only half the damage, isn't knocked prone, and is pushed 5 feet out of the walrutte's space into an unoccupied space of the creature's choice. If no unoccupied space is within range, the creature instead falls prone in the walrutte's space."
+    }
+  ]
+}

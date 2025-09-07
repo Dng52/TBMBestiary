@@ -1,0 +1,53 @@
+{
+  "name": "Splinter Drake",
+  "tags": [
+    "large",
+    "plant",
+    "cr9",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "plant",
+  "alignment": "neutral evil",
+  "cr": "9 (5,000 XP)",
+  "hp": "114 (12d10 + 48)",
+  "ac": "16 (natural armor)",
+  "speed": "40 ft.",
+  "skills": "Perception +5, Stealth +6 (+10 in forest), Survival +5",
+  "resistance": "cold, fire",
+  "conimmunities": "blinded, charmed, deafened, exhaustion",
+  "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 15",
+  "languages": "Common, Sylvan",
+  "abilities": {
+    "str": 17,
+    "dex": 15,
+    "con": 18,
+    "int": 10,
+    "wis": 12,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Land\u2019s Stride",
+      "desc": "Moving through nonmagical difficult terrain costs the splinter drake no extra movement, and it can pass through nonmagical plants without being slowed by them and without taking damage from them."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The splinter drake makes one bite attack and two claw attacks."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 12 (2d8 + 3) piercing damage plus 7 (2d6) poison damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage."
+    },
+    {
+      "name": "Thorn Volley (Recharge 5\u20136)",
+      "desc": "The splinter drake emits a spray of thorns in a 40-foot cone. Creatures within this area must make a DC 16 Dexterity saving throw, taking 21 (6d6) piercing damage and 28 (8d6) poison damage on a failed saving throw, or half as much damage on a successful saving throw."
+    }
+  ]
+}

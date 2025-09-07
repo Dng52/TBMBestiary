@@ -1,0 +1,61 @@
+{
+  "name": "Juiblex",
+  "tags": [
+    "huge",
+    "fiend",
+    "cr23",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Huge",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "23 (50,000 XP)",
+  "hp": "350  (28d12 + 168)",
+  "ac": "18 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Dex +7, Con +13, Wis +12",
+  "skills": "Perception +12",
+  "immunities": "poison; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "resistance": "cold, fire, lightning",
+  "conimmunities": "blinded, charmed, deafened, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained, stunned, unconscious",
+  "senses": "truesight 120 ft., passive Perception 22",
+  "languages": "all, telepathy 120 ft.",
+  "abilities": {
+    "str": 24,
+    "dex": 10,
+    "con": 23,
+    "int": 20,
+    "wis": 20,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Foul",
+      "desc": "Any creature, other than an ooze, that starts its turn within 10 feet of Juiblex must succeed on a DC 21 Constitution saving throw or be poisoned until the start of the creature's next turn."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "Juiblex's spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). Juiblex can innately cast the following spells, requiring no material components: * At will: <i>acid splash </i>(17th level)<i>, detect magic</i> * 3/day each: <i>blight, contagion, gaseous form</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "desc": "If Juiblex fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "Juiblex has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "Juiblex's weapon attacks are magical."
+    },
+    {
+      "name": "Regeneration",
+      "desc": "Juiblex regains 20 hit points at the start of its turn. If it takes fire or radiant damage, this trait doesn't function at the start of its next turn. Juiblex dies only if it starts its turn with 0 hit points and doesn't regenerate."
+    },
+    {
+      "name": "Spider Climb",
+      "desc": "Juiblex can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    }
+  ]
+}

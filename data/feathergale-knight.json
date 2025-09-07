@@ -1,0 +1,46 @@
+{
+  "name": "Feathergale Knight",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "elemental-evil"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful evil",
+  "cr": "1 (200 XP)",
+  "hp": "33 (6d8+6)",
+  "ac": "16 (scale)",
+  "speed": "30 ft.",
+  "skills": "Animal Handling +2, History +2",
+  "languages": "Auran, Common",
+  "abilities": {
+    "str": 14,
+    "dex": 14,
+    "con": 12,
+    "int": 11,
+    "wis": 10,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "desc": "The knight is a 1st-level spellcaster. Its spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). It knows the following sorcerer spell: * Cantrips (at will): <i>gust, light, message, ray of frost</i> * 1st level (2 slots): <i>expeditious retreat, feather fall</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The knight makes two melee attacks."
+    },
+    {
+      "name": "Longsword",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage, or 7 (1d10 + 2) slashing damage if used with two hands."
+    },
+    {
+      "name": "Spear",
+      "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6 + 2) piercing damage, or 6 (1d8 + 2) piercing damage if used with two hands to make a melee attack."
+    }
+  ]
+}

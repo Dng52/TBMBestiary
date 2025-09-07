@@ -1,0 +1,48 @@
+{
+  "name": "Local Champion",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "1 (200 XP)",
+  "hp": "30 (4d10 + 8)",
+  "ac": "16 (chainmail)",
+  "speed": "30 ft.",
+  "saves": "Str +5, Dex +2",
+  "skills": "Athletics +5, Intimidation +4, Performance +4",
+  "senses": "passive Perception 11",
+  "languages": "Any two languages",
+  "abilities": {
+    "str": 16,
+    "dex": 11,
+    "con": 15,
+    "int": 10,
+    "wis": 12,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Great Weapon Fighting",
+      "desc": "When the champion rolls a 1 or 2 on a damage die for an attack with a melee weapon, it can reroll the die and must use the new roll."
+    },
+    {
+      "name": "Improved Critical",
+      "desc": "The champion's weapon attacks score a critical hit on a result of 19 or 20."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Glaive",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 8 (1d10 + 3) slashing damage."
+    },
+    {
+      "name": "Action Surge (1/Short Rest)",
+      "desc": "The champion makes two glaive attacks."
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "name": "Boisterous Musician",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr3",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "3 (700 XP)",
+  "hp": "65 (10d8 + 20)",
+  "ac": "14 (studded leather)",
+  "speed": "30 ft.",
+  "saves": "Dex +5, Cha +6",
+  "skills": "Acrobatics +5, Insight +4, Performance +9, Persuasion +6, Sleight of Hand +8",
+  "senses": "passive Perception 11",
+  "languages": "Any two languages",
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 15,
+    "int": 12,
+    "wis": 12,
+    "cha": 17
+  },
+  "traits": [
+    {
+      "name": "Cutting Words (2/Short Rest)",
+      "desc": "When a creature that the musician can see within 50 feet makes an attack roll, ability check, or a damage roll, the musician sings a quick disruptive melody. Roll a d8 and subtract the number from the creature's roll."
+    },
+    {
+      "name": "Inspire (2/Short Rest)",
+      "desc": "Target uninspired creature within 60 feet of the musician that can hear it gains a d8 inspiration die. Once within the next 10 minutes, that creature can roll that die and add the number rolled to one ability check, attack roll, or saving throw it makes. This die must be rolled before it is decided if the roll succeeds or fails."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The musician is a 6th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). The musician has the following bard and wizard spells prepared: * Cantrips (at will): <i>friends, mage hand, vicious mockery</i> * 1st level (4 slots): <i>charm person, cure wounds, magic missile, unseen servant</i> * 2nd level (3 slots): <i>enthrall, hold person, shatter</i> * 3rd level (3 slots): <i>fireball, hypnotic pattern, tongues</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Rapier",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+    }
+  ]
+}

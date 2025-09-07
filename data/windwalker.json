@@ -1,0 +1,56 @@
+{
+  "name": "Windwalker",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr5",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "5 (1,800 XP)",
+  "hp": "74 (8d8 + 4d6 + 24)",
+  "ac": "13 (leather)",
+  "speed": "30 ft.",
+  "saves": "Int +7, Wis +7",
+  "skills": "Arcana +7, Nature +7, Perception +7, Survival +7",
+  "senses": "passive Perception 17",
+  "languages": "Any three languages",
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 14,
+    "int": 16,
+    "wis": 16,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Arcane Insights",
+      "desc": "The windwalker has advantage on saving throws against spells and magical effects."
+    },
+    {
+      "name": "Natural Recovery (2/Day)",
+      "desc": "When the windwalker finishes a short rest, it can regain up to 4 total expended spell slots."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The windwalker is a 9th-level spellcaster. Its spellcasting ability is wisdom (spell save DC 15, +7 to hit with spell attacks). The windwalker has the following druid spells prepared: * Cantrips (at will): <i>druidcraft, gust, thunderclap</i> * 1st level (4 slots): <i>entangle, faerie fire, fog cloud</i> * 2nd level (3 slots): <i>barkskin, gust of wind, levitate, misty step</i> * 3rd level (3 slots): <i>call lightning, fly, sleet storm, wind wall</i> * 4th level (3 slots): no spells learned for this level * 5th level (1 slot): no spells learned for this level"
+    },
+    {
+      "name": "Wild Shape Giant Eagle (2/Day)",
+      "desc": "As a bonus action, the windwalker transforms into a giant eagle for up to four hours. When the eagle is reduced to 0 hit points, the windwalker reverts to its normal form, with any excess damage carrying over to the windwalker's hit points."
+    },
+    {
+      "name": "Wind Shield",
+      "desc": "The area around the windwalker is enveloped in chaotic winds. The area within 15 feet of the windwalker is considered difficult terrain for enemy creatures. Additionally, ranged attacks against the windwalker are made with disadvantage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Quarterstaff",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d8 - 1) bludgeoning damage, or 4 (1d10 - 1) bludgeoning damage if used with two hands."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Ogre Shaman",
+  "tags": [
+    "large",
+    "giant",
+    "cr2",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Large",
+  "type": "giant",
+  "alignment": "chaotic evil",
+  "cr": "2 (450 XP)",
+  "hp": "59 (7d10 + 21)",
+  "ac": "9",
+  "speed": "40 ft.",
+  "senses": "darkvision 60 ft., passive Perception 9",
+  "languages": "Common, Giant",
+  "abilities": {
+    "str": 16,
+    "dex": 8,
+    "con": 16,
+    "int": 5,
+    "wis": 8,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Thick Hide",
+      "desc": "The ogre has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The ogre\u2019s innate spellcasting ability is Charisma (spell save DC 12). The ogre can innately cast the following spells, requiring no material components: * At will: <i>light, mold earth, create bonfire</i> * 1/day each: <i>earth tremor, enhance ability, fog cloud, color spray</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Club",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage."
+    }
+  ]
+}

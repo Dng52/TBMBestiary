@@ -1,0 +1,38 @@
+{
+  "name": "Duergar Hammerer",
+  "tags": [
+    "medium",
+    "construct",
+    "cr2",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "construct",
+  "alignment": "lawful evil",
+  "cr": "2 (450 XP)",
+  "hp": "33  (6d8 + 6)",
+  "ac": "17 (natural armor)",
+  "speed": "20 ft.",
+  "immunities": "poison",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 7",
+  "languages": "understands Dwarvish but can't speak",
+  "abilities": {
+    "str": 17,
+    "dex": 7,
+    "con": 12,
+    "int": 5,
+    "wis": 5,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Engine of Pain",
+      "desc": "Once per turn, a creature that attacks the hammerer can target the duergar trapped in it. The attacker has disadvantage on the attack roll. On a hit, the attack deals an extra 5 (1d10) damage to the hammerer, and the hammerer can respond by using its Multiattack with its reaction."
+    },
+    {
+      "name": "Siege Monster",
+      "desc": "The hammerer deals double damage to objects and structures."
+    }
+  ]
+}

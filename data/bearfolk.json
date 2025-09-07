@@ -1,0 +1,54 @@
+{
+  "name": "Bearfolk",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr3",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic good",
+  "cr": "3 (700 XP)",
+  "hp": "45 (6d8 + 18)",
+  "ac": "14 (hide armor)",
+  "speed": "40 ft.",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "Common, Giant",
+  "abilities": {
+    "str": 19,
+    "dex": 14,
+    "con": 16,
+    "int": 8,
+    "wis": 12,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "desc": "The bearfolk has advantage on Wisdom (Perception) checks that rely on smell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The bearfolk makes three attacks: one with its battleaxe, one with its warhammer, and one with its bite."
+    },
+    {
+      "name": "Battleaxe",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, or 9 (1d10 + 4) slashing damage if used two-handed."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
+    },
+    {
+      "name": "Warhammer",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage, or 9 (1d10 + 4) bludgeoning damage if used two-handed."
+    },
+    {
+      "name": "Frenzy (1/short rest)",
+      "desc": "The bearfolk triggers a berserk frenzy that lasts for 1 minute. While in frenzy, it gains resistance to bludgeoning, piercing, and slashing damage and has advantage on attack rolls. Attack rolls made against a frenzied bearfolk have advantage."
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Slaad Tadpole",
+  "tags": [
+    "tiny",
+    "aberration",
+    "cr1/8",
+    "monster-manual"
+  ],
+  "size": "Tiny",
+  "type": "aberration",
+  "alignment": "chaotic neutral",
+  "cr": "1/8 (25 XP)",
+  "hp": "10 (4d4)",
+  "ac": "12",
+  "speed": "30 ft.",
+  "skills": "Stealth +4",
+  "resistance": "acid, cold, fire, lightning, thunder",
+  "senses": "darkvision 60 ft.",
+  "languages": "understands Slaad but can't speak",
+  "abilities": {
+    "str": 7,
+    "dex": 15,
+    "con": 10,
+    "int": 3,
+    "wis": 5,
+    "cha": 3
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "desc": "The slaad has advantage on saving throws against spells and other magical effects"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    }
+  ]
+}

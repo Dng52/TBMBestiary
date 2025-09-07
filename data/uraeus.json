@@ -1,0 +1,54 @@
+{
+  "name": "Uraeus",
+  "tags": [
+    "tiny",
+    "celestial",
+    "cr2",
+    "tome-of-beasts"
+  ],
+  "size": "Tiny",
+  "type": "celestial",
+  "alignment": "lawful neutral",
+  "cr": "2 (450 XP)",
+  "hp": "40 (9d4 + 18)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft., fly 60 ft.",
+  "skills": "Perception +4",
+  "immunities": "poison",
+  "resistance": "fire; bludgeoning, piercing, and slashing damage from nonmagical weapons",
+  "conimmunities": "poisoned",
+  "senses": "blindsight 10 ft., passive Perception 14",
+  "languages": "understands Celestial and Common but can't speak",
+  "abilities": {
+    "str": 6,
+    "dex": 15,
+    "con": 14,
+    "int": 10,
+    "wis": 14,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Flyby",
+      "desc": "The uraeus doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 9 (2d8) poison damage, and the target must make a successful DC 12 Constitution saving throw or be poisoned for 1 minute. While poisoned in this way, the target takes 9 (2d8) fire damage at the start of its turn. A poisoned creature repeats the saving throw at the end of its turn, ending the effect on a success."
+    },
+    {
+      "name": "Searing Breath (Recharge 5-6)",
+      "desc": "The uraeus exhales a 15-foot cone of fire. Creatures in the area take 10 (3d6) fire damage, or half damage with a successful DC 12 Dexterity saving throw."
+    },
+    {
+      "name": "Ward Bond",
+      "desc": "The uraeus forms a magical bond with a willing creature within 5 feet. Afterward, no matter how great the distance between them, the uraeus knows the distance and direction to its bonded ward and is aware of the creature's general state of health. The bond lasts until the uraeus or the ward dies, or the uraeus ends the bond as an action."
+    },
+    {
+      "name": "Bonded Savior",
+      "desc": "When the uraeus' bonded ward takes damage, the uraeus can transfer the damage to itself instead. The uraeus' damage resistance and immunity don't apply to transferred damage."
+    }
+  ]
+}

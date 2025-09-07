@@ -1,0 +1,53 @@
+{
+  "name": "Witchlight",
+  "tags": [
+    "tiny",
+    "construct",
+    "cr1/4",
+    "tome-of-beasts"
+  ],
+  "size": "Tiny",
+  "type": "construct",
+  "alignment": "neutral",
+  "cr": "1/4 (50 XP)",
+  "hp": "10 (4d4)",
+  "ac": "14",
+  "speed": "fly 50 ft.",
+  "skills": "Perception +3",
+  "immunities": "poison, radiant",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "understands the language of its creator but can't speak",
+  "abilities": {
+    "str": 1,
+    "dex": 18,
+    "con": 10,
+    "int": 10,
+    "wis": 13,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Dispel Magic Weakness",
+      "desc": "Casting dispel magic on a witchlight paralyzes it for 1d10 rounds."
+    },
+    {
+      "name": "Luminance",
+      "desc": "A witchlight normally glows as brightly as a torch. The creature can dim itself to the luminosity of a candle, but it cannot extinguish its light. Because of its glow, the witchlight has disadvantage on Dexterity (Stealth) checks."
+    },
+    {
+      "name": "Thin As Light",
+      "desc": "While a witchlight is not incorporeal, it can pass through any opening that light can."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Light Ray",
+      "desc": "Ranged Weapon Attack: +6 to hit, range 30 ft., one target. Hit: 6 (1d4 + 4) radiant damage."
+    },
+    {
+      "name": "Flash (Recharge 5-6)",
+      "desc": "The witchlight emits a bright burst of light that blinds all sighted creatures within 30 feet for 1d4 rounds unless they succeed on a DC 10 Constitution saving throw."
+    }
+  ]
+}

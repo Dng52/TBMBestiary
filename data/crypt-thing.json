@@ -1,0 +1,47 @@
+{
+  "name": "Crypt Thing",
+  "tags": [
+    "medium",
+    "undead",
+    "cr7",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "neutral",
+  "cr": "7 (2,900 XP)",
+  "hp": "84 (13d8 + 26)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Deception +6, Perception +5",
+  "senses": "darkvision 60 ft., passive Perception 15",
+  "languages": "Common",
+  "abilities": {
+    "str": 12,
+    "dex": 16,
+    "con": 15,
+    "int": 12,
+    "wis": 14,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Magic Weapons",
+      "desc": "The crypt thing\u2019s weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The crypt thing makes two attacks with its claws."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (3d6 + 3) slashing damage and 10 (3d6) necrotic damage."
+    },
+    {
+      "name": "Teleport Other (1/day)",
+      "desc": "As an action, the crypt thing can teleport all creatures within 50 feet of it to a randomly determined location. A creature affected by the crypt thing\u2019s Teleport Other must make a DC 15 Wisdom saving throw to avoid being teleported. An affected creature is teleported in a random direction and a random distance (1d10 x 100 feet) away from the crypt thing. Roll randomly for each creature that fails its saving throw. If the affected creature would arrive in a place already occupied by an object or another creature, the affected creature takes 14 (4d6) force damage and is not teleported."
+    }
+  ]
+}

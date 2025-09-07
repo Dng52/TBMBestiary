@@ -1,0 +1,64 @@
+{
+  "name": "Warrior Prince/Princess",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr7",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "7 (2,900 XP)",
+  "hp": "104 (16d8 + 32)",
+  "ac": "18 (breastplate, shield)",
+  "speed": "40 ft.",
+  "saves": "Str +7, Dex +7, Con +5",
+  "skills": "Athletics +10, Acrobatics +7, Perception +5, Persuasion +5",
+  "senses": "passive Perception 15",
+  "languages": "any two languages",
+  "abilities": {
+    "str": 18,
+    "dex": 18,
+    "con": 14,
+    "int": 15,
+    "wis": 14,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Enchanted Armaments",
+      "desc": "The princess's weapons and shield are magical."
+    },
+    {
+      "name": "Supernatural Athletics",
+      "desc": "The princess's long jump is 30 feet and her jump height is 15 feet, with or without a running start. If the princess leaps at least 20 feet in a straight line towards a target and hits it with a shield bash attack on the same turn, that target must succeed on a DC 15 Constitution saving throw or become stunned until the start of its next turn."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The princess makes three attacks: two with her longsword and one with her shield bash or three with her javelins."
+    },
+    {
+      "name": "Longsword",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage plus 7 (2d6) poison damage, or 9 (1d10 +4) slashing damage plus 7 (2d6) poison damage if used with two hands."
+    },
+    {
+      "name": "Shield Bash",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) bludgeoning damage and the target must succeed on a DC 15 Strength saving throw or be pushed 10 feet away from the princess and knocked prone."
+    },
+    {
+      "name": "Javelin",
+      "desc": "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 7 (1d6 + 4) piercing damage plus 7 (2d6) poison damage."
+    },
+    {
+      "name": "Shield Toss (Recharge 5-6)",
+      "desc": "The princess launches her shield with expert precision and force towards a target she can see within 30 feet. The shield then leaps to up to three other targets, each of which must be within 30 feet of the first target. A target can be a creature or an object and can only be struck by the shield one time. Each creature targeted by this ability must succeed on a DC 15 Dexterity saving throw or take 22 (4d10) bludgeoning damage. At the end of the toss, the shield returns to the princess and she immediately readies it for combat."
+    },
+    {
+      "name": "Deflect Projectile",
+      "desc": "The princess uses her expertise with a shield to block a projectile attack that would otherwise hit. If the princess is holding her shield, she can gain a +3 bonus to AC against a projectile attack that she can see that targets only her."
+    }
+  ]
+}

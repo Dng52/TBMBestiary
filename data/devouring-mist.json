@@ -1,0 +1,50 @@
+{
+  "name": "Devouring Mist",
+  "tags": [
+    "large",
+    "undead",
+    "cr10",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "10 (5,900 XP)",
+  "hp": "123 (19d10 + 19)",
+  "ac": "15 (natural armor)",
+  "speed": "0 ft., fly 40 ft. (hover)",
+  "skills": "Perception +7, Stealth +8",
+  "immunities": "cold, necrotic, poison",
+  "resistance": "acid, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
+  "senses": "darkvision 60 ft., passive Perception 15",
+  "languages": "--",
+  "abilities": {
+    "str": 7,
+    "dex": 19,
+    "con": 13,
+    "int": 8,
+    "wis": 16,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Mist Form",
+      "desc": "The devouring mist can occupy another creature\u2019s space and vice versa. In addition, if air can pass through a space, the mist can pass through it without squeezing. The mist moves through water as if it were difficult terrain. The mist can\u2019t use objects in any way that requires hands; it can apply simple force only."
+    },
+    {
+      "name": "Blood Sense",
+      "desc": "The devouring mist can sense living creatures that have blood or similar vital fluids in a radius of 60 feet."
+    },
+    {
+      "name": "Sunlight Hypersensitivity",
+      "desc": "The devouring mist takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, the mist has disadvantage on attack rolls and ability checks"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Blood Drain",
+      "desc": "One creature other than a construct or undead that is in the devouring mist\u2019s space must make a DC 16 Constitution saving throw. On a failed save, the target takes 28 (8d6) necrotic damage and its hit point maximum is reduced by an amount equal to the necrotic damage taken. In addition, the mist regains hit points equal to that amount. This reduction to the target\u2019s hit point maximum lasts until the target finishes a long rest. It dies if this effect reduces its hit point maximum to 0. A humanoid slain by this attack rises 24 hours later as a zombie under the mist\u2019s control, unless the humanoid is restored to life or its body is destroyed. The mist can have no more than twelve zombies under its control at one time."
+    }
+  ]
+}

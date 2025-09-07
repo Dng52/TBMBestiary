@@ -1,0 +1,55 @@
+{
+  "name": "Kryptydid",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr2",
+    "homebrew"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "75 (8d10 + 8)",
+  "ac": "14 (natural armor)",
+  "speed": "40 ft.",
+  "skills": "Perception +4",
+  "senses": "passive Perception 14",
+  "languages": "--",
+  "abilities": {
+    "str": 17,
+    "dex": 15,
+    "con": 12,
+    "int": 2,
+    "wis": 14,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Cranial Crest",
+      "desc": "The kryptydid's cranial crest is a psionic extrasensory organ which allows it to sense predators. The kryptydid automatically detects the presence of any living creatures that can see, smell, or otherwise perceive the kryptydid that are within 300 feet of it. The kryptydid is aware of the creature's presence and knows its general direction, but not its exact location. This sense does not detect undead or constructs, or any creature protected from divination magic, such as by a nondetection spell."
+    },
+    {
+      "name": "Standing Leap",
+      "desc": "The kryptydid's long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start."
+    },
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "desc": "The kryptydid's innate spellcasting ability is Wisdom (spell save DC 12). It can innately cast the following spells, requiring no components: * At will: <i>minor illusion, resistance</i> * 1/day each: <i>hypnotic pattern, true seeing</i> (self only)"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The kryptydid makes two attacks: one with its bite and one with its kick. It can't make both attacks against the same target."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage."
+    },
+    {
+      "name": "Kick",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage, and if the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
+    }
+  ]
+}

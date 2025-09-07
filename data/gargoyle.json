@@ -1,0 +1,49 @@
+{
+  "name": "Gargoyle",
+  "tags": [
+    "medium",
+    "elemental",
+    "cr2",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "chaotic evil",
+  "cr": "2 (450 XP)",
+  "hp": "52 (7d8+21)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft., fly 60 ft.",
+  "immunities": "poison",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine",
+  "conimmunities": "exhaustion, petrified, poisoned",
+  "senses": "darkvision 60 ft.",
+  "languages": "Terran",
+  "abilities": {
+    "str": 15,
+    "dex": 11,
+    "con": 16,
+    "int": 6,
+    "wis": 11,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "False Appearance",
+      "desc": "While the gargoyle remains motion less, it is indistinguishable from an inanimate statue."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The gargoyle makes two attacks: one with its bite and one with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage."
+    }
+  ]
+}

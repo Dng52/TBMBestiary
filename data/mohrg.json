@@ -1,0 +1,48 @@
+{
+  "name": "Mohrg",
+  "tags": [
+    "medium",
+    "undead",
+    "cr8",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "chaotic evil",
+  "cr": "8 (3,900 XP)",
+  "hp": "112 (15d8 + 45)",
+  "ac": "12",
+  "speed": "30 ft.",
+  "immunities": "poison",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned, stunned",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 17,
+    "int": 11,
+    "wis": 10,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Create Spawn",
+      "desc": "Any humanoid creature slain by the mohrg rises as a zombie at the beginning of the mohrg\u2019s next turn. If this occurs, the mohrg regains 10 hit points, and the morhg can immediately make one slam attack as a reaction."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The mohrg makes two slam attacks and one attack with its tongue."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage, and the target is grappled and restrained (escape DC15), and the morhg can\u2019t grapple another creature or use its slam attack."
+    },
+    {
+      "name": "Tongue",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: The target must make a DC 16 Constitution saving throw. On a failed save, the target takes 21 (6d6) necrotic damage and is paralyzed for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+    }
+  ]
+}

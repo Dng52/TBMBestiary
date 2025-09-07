@@ -1,0 +1,41 @@
+{
+  "name": "Quetzalcoatlus",
+  "tags": [
+    "huge",
+    "beast",
+    "cr2",
+    "volos-guide"
+  ],
+  "size": "Huge",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "30 (4d12+4)",
+  "ac": "13 (natural armor)",
+  "speed": "10 ft., fly 80 ft.",
+  "skills": "Perception +2",
+  "abilities": {
+    "str": 15,
+    "dex": 13,
+    "con": 13,
+    "int": 2,
+    "wis": 10,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Dive Attack",
+      "desc": "If the quetzalcoatlus is flying and dives at least 30 feet toward a target and then hits with a bite attack, the attack deals an extra 10 (3d6) damage to the target."
+    },
+    {
+      "name": "Flyby",
+      "desc": "The quetzalcoatlus doesn't provoke an opportunity attack when it flies out of an enemy's reach."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 10 ft., one creature. Hit: 12 (3d6+2) piercing damage."
+    }
+  ]
+}

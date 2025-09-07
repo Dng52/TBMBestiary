@@ -1,0 +1,37 @@
+{
+  "name": "Blister Beetle",
+  "tags": [
+    "small",
+    "beast",
+    "cr1",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1 (200 XP)",
+  "hp": "13 (3d6 + 3)",
+  "ac": "12 (natural armor)",
+  "speed": "30 ft.",
+  "immunities": "acid, poison",
+  "senses": "darkvision 60 ft., tremorsense 60 ft., passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 11,
+    "dex": 10,
+    "con": 12,
+    "int": 1,
+    "wis": 10,
+    "cha": 7
+  },
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 3 (1d6) piercing damage plus 3 (1d6) acid damage."
+    },
+    {
+      "name": "Blister Spray (Recharge 5\u20136)",
+      "desc": "The beetle exhales a 15-foot cone of caustic acid, causing painful blisters to form on the skin of any creature caught in the spray. Creatures in the area must make a DC 12 Dexterity saving throw, taking 10 (3d6) acid damage on a failed save, or half as much damage on a successful one."
+    }
+  ]
+}

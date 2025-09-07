@@ -1,0 +1,51 @@
+{
+  "name": "Requiem Beetle",
+  "tags": [
+    "gargantuan",
+    "beast",
+    "cr15",
+    "tome-of-horrors"
+  ],
+  "size": "Gargantuan",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "15 (13,000 XP)",
+  "hp": "495 (30d20 + 180)",
+  "ac": "19 (natural armor)",
+  "speed": "50 ft.",
+  "immunities": "acid",
+  "senses": "darkvision 60 ft., tremorsense 100 ft., passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 27,
+    "dex": 12,
+    "con": 23,
+    "int": 1,
+    "wis": 11,
+    "cha": 2
+  },
+  "traits": [
+    {
+      "name": "Charge",
+      "desc": "If the requiem beetle moves at least 20 feet straight toward a creature and then hits it with a bite attack on the same turn, that target must succeed on a DC 20 Strength saving throw or be knocked prone. If the target is prone, the requiem beetle can make one claw attack against it as a bonus action."
+    },
+    {
+      "name": "Earthshaker",
+      "desc": "When the requiem beetle moves more than 10 feet in a single turn, creatures within 20 feet of it must succeed on a DC 12 Dexterity saving throw or be knocked prone as the ground shakes."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The requiem beetle makes three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 24 (3d10 + 8) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 21 (3d8 + 8) slashing damage."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Abyssal Wretch (B)",
+  "tags": [
+    "medium",
+    "fiend",
+    "cr1/4",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "1/4 (50 XP)",
+  "hp": "18  (4d8)",
+  "ac": "11",
+  "speed": "20 ft.",
+  "immunities": "poison",
+  "resistance": "cold, fire, lightning",
+  "conimmunities": "charmed, frightened, poisoned",
+  "senses": "darkvision 120 ft., passive Perception 9",
+  "languages": "understands Abyssal but can't speak",
+  "abilities": {
+    "str": 9,
+    "dex": 12,
+    "con": 11,
+    "int": 5,
+    "wis": 8,
+    "cha": 5
+  }
+}

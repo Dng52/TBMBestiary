@@ -1,0 +1,49 @@
+{
+  "name": "Water Elemental Myrmidon (A)",
+  "tags": [
+    "medium",
+    "elemental",
+    "cr7",
+    "elemental-evil"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "neutral",
+  "cr": "7 (2,900 XP)",
+  "hp": "127 (17d8+51)",
+  "ac": "18 (plate)",
+  "speed": "40 ft., swim 40 ft.",
+  "immunities": "poison",
+  "resistance": "acid; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "paralyzed, petrified, poisoned, prone",
+  "senses": "darkvision 60 ft.",
+  "languages": "Aquan, one language of its creator's choice",
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 15,
+    "int": 8,
+    "wis": 10,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Magic Weapons",
+      "desc": "The myrmidon's weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The myrmidon makes three trident attacks."
+    },
+    {
+      "name": "Trident",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage."
+    },
+    {
+      "name": "Freezing Strikes (Recharge 6)",
+      "desc": "The myrmidon uses Multiattack. Each attack that hits deals an extra 5 (1d10) cold damage, and the target's speed is reduced by 10 feet until the end of the myrmidon's next turn."
+    }
+  ]
+}

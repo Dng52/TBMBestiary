@@ -1,0 +1,45 @@
+{
+  "name": "Leprechaun",
+  "tags": [
+    "small",
+    "fey",
+    "cr2",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "fey",
+  "alignment": "neutral",
+  "cr": "2 (450 XP)",
+  "hp": "14 (4d6)",
+  "ac": "13",
+  "speed": "40 ft.",
+  "skills": "Deception +5, Perception +6, Persuasion +5, Sleight of Hand +5, Stealth +7",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "charmed",
+  "senses": "passive Perception 16",
+  "languages": "Common, Sylvan",
+  "abilities": {
+    "str": 7,
+    "dex": 16,
+    "con": 11,
+    "int": 16,
+    "wis": 15,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The leprechaun\u2019s innate spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no material components: * At will: <i>dancing lights, hideous laughter, invisibility </i>(self only)<i>, mage hand, magic mouth, major image, minor illusion</i> * 1/day each: <i>hypnotic pattern, major image</i>"
+    },
+    {
+      "name": "Sneak Attack (1/turn)",
+      "desc": "The leprechaun deals an extra 3 (1d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the leprechaun that isn\u2019t incapacitated and the leprechaun doesn\u2019t have disadvantage on the attack roll."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage."
+    }
+  ]
+}

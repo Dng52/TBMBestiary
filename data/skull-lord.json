@@ -1,0 +1,48 @@
+{
+  "name": "Skull Lord",
+  "tags": [
+    "medium",
+    "undead",
+    "cr15",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "lawful evil",
+  "cr": "15 (13,000 XP)",
+  "hp": "105  (14d8 + 42)",
+  "ac": "18 (plate)",
+  "speed": "30 ft.",
+  "skills": "Athletics +7, History +8, Perception +12, Stealth +8",
+  "immunities": "poison",
+  "resistance": "cold, necrotic; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "blinded, charmed, deafened, exhaustion, frightened, poisoned, stunned, unconscious",
+  "senses": "darkvision 60 ft., passive Perception 22",
+  "languages": "all the languages it knew in life",
+  "abilities": {
+    "str": 14,
+    "dex": 16,
+    "con": 17,
+    "int": 16,
+    "wis": 15,
+    "cha": 21
+  },
+  "traits": [
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "desc": "If the skull lord fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Master of the Grave",
+      "desc": "While within 30 feet of the skull lord, any undead ally of the skull lord makes saving throws with advantage, and that ally regains 1d6 hit points whenever it starts its turn there."
+    },
+    {
+      "name": "Evasion",
+      "desc": "If the skull lord is subjected to an effect that allows it to make a Dexterity saving throw to take only half the damage, the skull lord instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The skull lord is a 13th-level spellcaster. Its spellcasting ability is Charisma (spell save DC18, +10 to hit with spell attacks). The skull lord knows the following sorcerer spells: * Cantrips (at will): <i>chill touch, fire bolt, mage hand, poison spray, ray of frost, shocking grasp</i> * 1st level (4 slots): <i>magic missile, expeditious retreat, thunderwave</i> * 2nd level (3 slots): <i>mirror image, scorching ray</i> * 3rd level (3 slots): <i>fear, haste</i> * 4th level (3 slots): <i>dimension door, ice storm</i> * 5th level (2 slots): <i>cloudkill, cone of cold</i> * 6th level (1 slot): <i>eyebite</i> * 7th level (1 slot): <i>finger of death</i>"
+    }
+  ]
+}

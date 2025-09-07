@@ -1,0 +1,41 @@
+{
+  "name": "Allosaurus",
+  "tags": [
+    "large",
+    "beast",
+    "cr2",
+    "monster-manual"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "51 (6d10+18)",
+  "ac": "15 (natural armor)",
+  "speed": "60 ft.",
+  "skills": "Perception +5",
+  "abilities": {
+    "str": 19,
+    "dex": 13,
+    "con": 17,
+    "int": 2,
+    "wis": 12,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Pounce",
+      "desc": "If the allosaurus moves at least 30 ft. straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 13 Strength saving throw or be knocked prone. If the target is prone, the allosaurus can make one bite attack against it as a bonus action."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage."
+    }
+  ]
+}

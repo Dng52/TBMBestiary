@@ -1,0 +1,28 @@
+{
+  "name": "The Lost",
+  "tags": [
+    "medium",
+    "monstrosity",
+    "cr7",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "monstrosity",
+  "alignment": "neutral evil",
+  "cr": "7 (2900 XP)",
+  "hp": "78  (12d8 + 24)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Athletics +6",
+  "resistance": "bludgeoning, piercing, and slashing while in dim light or darkness",
+  "senses": "darkvision 60 ft., passive Perception 8",
+  "languages": "Common",
+  "abilities": {
+    "str": 17,
+    "dex": 12,
+    "con": 15,
+    "int": 6,
+    "wis": 7,
+    "cha": 5
+  }
+}

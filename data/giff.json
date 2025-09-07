@@ -1,0 +1,36 @@
+{
+  "name": "Giff",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr3",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful neutral",
+  "cr": "3 (700 XP)",
+  "hp": "60  (8d8 + 24)",
+  "ac": "16 (breastplate)",
+  "speed": "30 ft.",
+  "senses": "passive Perception 11",
+  "languages": "Common",
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 17,
+    "int": 11,
+    "wis": 12,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Headfirst Charge",
+      "desc": "The giff can try to knock a creature over; if the giff moves at least 20 feet in a straight line that ends within 5 feet of a Large or smaller creature, that creature must succeed on a DC 14 Strength saving throw or take 7 (2d6) bludgeoning damage and be knocked prone."
+    },
+    {
+      "name": "Firearms Knowledge",
+      "desc": "The giff's mastery of its weapons enables it to ignore the loading property of muskets and pistols."
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "Augrek Brighthelm",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr0",
+    "storm-kings-thunder"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful good",
+  "cr": "0 (10 XP)",
+  "hp": "13 (2d8+4)",
+  "ac": "15 (chain shirt, shield)",
+  "speed": "25 ft.",
+  "skills": "Athletics +4, Perception +2",
+  "resistance": "poison",
+  "senses": "darkvision 60 ft.",
+  "languages": "Common, Dwarvish",
+  "abilities": {
+    "str": 14,
+    "dex": 11,
+    "con": 15,
+    "int": 10,
+    "wis": 11,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Dwarven Resilience",
+      "desc": "Augrek has advantage on saving throws against poison."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Warhammer",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8+2) bludgeoning damage, or 7 (1d10+2) bludgeoning damage if used with two hands."
+    },
+    {
+      "name": "Heavy Crossbow",
+      "desc": "Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage. Augrek carries ten crossbow bolts."
+    }
+  ]
+}

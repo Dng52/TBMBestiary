@@ -1,0 +1,54 @@
+{
+  "name": "Mindrot Thrall",
+  "tags": [
+    "medium",
+    "plant",
+    "cr3",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "plant",
+  "alignment": "neutral",
+  "cr": "3 (700 XP)",
+  "hp": "82 (11d8 + 33)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Con +5",
+  "immunities": "acid, poison",
+  "resistance": "bludgeoning and piercing from nonmagical weapons",
+  "conimmunities": "charmed, frightened, poisoned",
+  "senses": "tremorsense 30 ft., passive Perception 12",
+  "languages": "understands Common but cannot speak",
+  "abilities": {
+    "str": 15,
+    "dex": 14,
+    "con": 17,
+    "int": 11,
+    "wis": 14,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Fungal Aura",
+      "desc": "A creature that starts its turn within 5 feet of a mindrot thrall must succeed on a DC 13 Constitution saving throw or become infected with mindrot spores."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The mindrot thrall makes two claw attacks."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage."
+    },
+    {
+      "name": "Acid Breath (Recharge 4-6)",
+      "desc": "The thrall exhales a blast of acidic spores from its rotten lungs in a 15-foot cone. Each creature in that area takes 36 (8d8) acid damage, or half damage with a successful DC 13 Dexterity saving throw. If the saving throw fails, the creature is also infected with mindrot spores."
+    },
+    {
+      "name": "Mindrot Spores",
+      "desc": "Infection occurs when mindrot spores are inhaled or swallowed. Infected creatures must make a DC 13 Constitution saving throw at the end of every long rest; nothing happens if the saving throw succeeds, but if it fails, the creature takes 9 (2d8) acid damage and its hit point maximum is reduced by the same amount. The infection ends when the character makes successful saving throws after two consecutive long rests, or receives the benefits of a <i>lesser restoration</i> spell or comparable magic. A creature slain by this disease becomes a mindrot thrall after 24 hours unless the corpse is destroyed."
+    }
+  ]
+}

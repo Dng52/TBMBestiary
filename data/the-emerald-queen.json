@@ -1,0 +1,68 @@
+{
+  "name": "The Emerald Queen",
+  "tags": [
+    "medium",
+    "fey",
+    "cr7",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "fey",
+  "alignment": "lawful evil",
+  "cr": "7 (2,900 XP)",
+  "hp": "134 (16d10 + 48)",
+  "ac": "15 (emerald bark armor)",
+  "speed": "35 ft.",
+  "saves": "Dex +7, Cha +6",
+  "skills": "Acrobatics +7, Deception +6, Perception +5, Persuasion +6",
+  "resistance": "piercing",
+  "conimmunities": "poisoned, charmed",
+  "senses": "darkvision 60 ft., passive Perception 15",
+  "languages": "Common, Elvish, Sylvan",
+  "abilities": {
+    "str": 14,
+    "dex": 18,
+    "con": 16,
+    "int": 12,
+    "wis": 14,
+    "cha": 17
+  },
+  "traits": [
+    {
+      "name": "Legendary Resistance (1/Day)",
+      "desc": "If the queen fails a saving throw, she can choose to succeed instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The queen makes two attacks: one with her shortsword and one with her thornwhip, or two attacks with her longbow."
+    },
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5ft., one target. Hit: 7 (1d6 + 4) slashing damage plus 7 (2d6) fire damage."
+    },
+    {
+      "name": "Thorn Whip",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 15ft., one target. Hit: 9 (2d4 + 4) slashing damage. The target is grappled (escape DC 14) if the Queen is not already grappling a creature. Until the grapple ends, the target takes 10 (3d6) piercing damage at the start of each of its turns. If the queen uses this attack while a target is already grappled, she may pull the target to her and deal an additional 9 (2d4 +4) piercing damage automatically."
+    },
+    {
+      "name": "Longbow",
+      "desc": "Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage plus 7 (2d6) poison damage."
+    },
+    {
+      "name": "Hail of Thorns (Recharge 5-6)",
+      "desc": "The queen launches a volley of deadly thorns in a 30-foot cone. Each creature in the area must make a DC 14 Dexterity saving throw, taking 35 (10d6) piercing damage on a failed save, or half as much damage on a successful one."
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Strike",
+      "desc": "The queen makes an attack with her shortsword or her longbow."
+    },
+    {
+      "name": "Swift Repositioning",
+      "desc": "The queen can move up to half of her movement speed without provoking attacks of opportunity."
+    }
+  ]
+}

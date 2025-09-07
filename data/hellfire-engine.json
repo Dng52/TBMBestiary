@@ -1,0 +1,40 @@
+{
+  "name": "Hellfire Engine",
+  "tags": [
+    "huge",
+    "construct",
+    "cr16",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Huge",
+  "type": "construct",
+  "alignment": "lawful evil",
+  "cr": "16 (15,000 XP)",
+  "hp": "216  (16d12 + 112)",
+  "ac": "18 (natural armor)",
+  "speed": "40 ft.",
+  "saves": "Dex +8, Wis +5, Cha +0",
+  "immunities": "fire, poison",
+  "resistance": "cold, psychic; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered",
+  "conimmunities": "charmed, deafened, exhaustion, frightened, paralyzed, poisoned, unconscious",
+  "senses": "darkvision 120 ft., passive Perception 10",
+  "languages": "understands Infernal but can't speak",
+  "abilities": {
+    "str": 20,
+    "dex": 16,
+    "con": 24,
+    "int": 2,
+    "wis": 10,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Immutable Form",
+      "desc": "The hellfire engine is immune to any spell or effect that would alter its form."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The hellfire engine has advantage on saving throws against spells and other magical effects."
+    }
+  ]
+}

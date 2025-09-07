@@ -1,0 +1,53 @@
+{
+  "name": "Prehistoric Honey Badger",
+  "tags": [
+    "medium",
+    "beast",
+    "cr2",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "4 (1,100 XP)",
+  "hp": "51 (6d8 + 24)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft., burrow 30 ft.",
+  "skills": "Survival +2",
+  "resistance": "poison; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "frightened",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 20,
+    "dex": 12,
+    "con": 18,
+    "int": 7,
+    "wis": 11,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Keen Hearing and Smell",
+      "desc": "The prehistoric honey badger has advantage on Wisdom (Perception) checks based on hearing or smell."
+    },
+    {
+      "name": "Relentless (Recharges after a Short or Long Rest)",
+      "desc": "If the badger takes 14 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The prehistoric honey badger makes one bite attack and one crunch attack."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) piercing damage, and the target must make a DC 15 Strength saving throw or be grappled (escape DC 15)."
+    },
+    {
+      "name": "Crunch",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one grappled creature. Hit: The target suffers from broken bones and must make a DC 15 Constitution saving throw at the beginning of each of its turns. On a failed saving throw, the target cannot take any actions or reactions during that turn. If the target receives magical healing or takes a long rest, the effect ends."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "Flab Giant",
+  "tags": [
+    "large",
+    "giant",
+    "cr4",
+    "tome-of-beasts"
+  ],
+  "size": "Large",
+  "type": "giant",
+  "alignment": "chaotic evil",
+  "cr": "4 (1100 XP)",
+  "hp": "110 (13d10 + 39)",
+  "ac": "14 (natural armor)",
+  "speed": "20 ft.",
+  "saves": "Con +5",
+  "skills": "Perception +3",
+  "immunities": "poison",
+  "conimmunities": "poisoned",
+  "senses": ", passive Perception 13",
+  "languages": "Dwarvish, Giant",
+  "abilities": {
+    "str": 20,
+    "dex": 6,
+    "con": 16,
+    "int": 9,
+    "wis": 13,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Massive",
+      "desc": "A flab giant can't dash. Attacks that push, trip, or grapple are made with disadvantage against a flab giant."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The giant makes two slam attacks. If both hit, the target is grappled (escape DC 15), and the flab giant uses its squatting pin against the target as a bonus action."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage."
+    },
+    {
+      "name": "Squatting Pin",
+      "desc": "The flab giant squats atop the target, pinning it to the ground, where it is grappled and restrained (escape DC 17). The flab giant is free to attack another target, but the restrained creatures are released if it moves from its current space. As long as the giant does not move from the spot, it can maintain the squatting pin on up to two Medium-sized or smaller creatures. A creature suffers 9 (1d8 + 5) bludgeoning damage every time it starts its turn restrained by a squatting pin."
+    }
+  ]
+}

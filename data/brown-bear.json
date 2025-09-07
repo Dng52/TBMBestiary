@@ -1,0 +1,45 @@
+{
+  "name": "Brown Bear",
+  "tags": [
+    "large",
+    "beast",
+    "cr1",
+    "monster-manual"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1 (200 XP)",
+  "hp": "34 (4d10+12)",
+  "ac": "11 (natural armor)",
+  "speed": "40 ft., climb 30 ft.",
+  "skills": "Perception +3",
+  "abilities": {
+    "str": 19,
+    "dex": 10,
+    "con": 16,
+    "int": 2,
+    "wis": 13,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "desc": "The bear has advantage on Wisdom (Perception) checks that rely on smell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The bear makes two attacks: one with its bite and one with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
+    }
+  ]
+}

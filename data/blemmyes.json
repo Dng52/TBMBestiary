@@ -1,0 +1,51 @@
+{
+  "name": "Blemmyes",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr8",
+    "tome-of-beasts"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "chaotic evil",
+  "cr": "8 (3900 XP)",
+  "hp": "168 (16d10 + 80)",
+  "ac": "15 (natural armor)",
+  "speed": "40 ft.",
+  "skills": "Intimidation +3",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "Giant",
+  "abilities": {
+    "str": 20,
+    "dex": 13,
+    "con": 20,
+    "int": 7,
+    "wis": 12,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Carnivorous Compulsion",
+      "desc": "If it can see an incapacitated creature, the blemmyes must succeed on a DC 11 Wisdom save or be compelled to move toward that creature and attack it."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The blemmyes makes two slam attacks and one bite attack."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 19 (4d6 + 5) piercing damage. If the target is a Medium or smaller incapacitated creature, that creature is swallowed. While swallowed, the creature is blinded and restrained, it has total cover against attacks and other effects from outside the blemmyes, and it takes 14 (4d6) acid damage at the start of each of the blemmyes' turns. If the blemmyes takes 20 damage or more during a single turn from a creature inside it, the blemmyes must succeed on a DC 16 Constitution saving throw at the end of that turn or regurgitate the swallowed creature, which falls prone in a space within 5 feet of the blemmyes. The blemmyes can have only one target swallowed at a time. If the blemmyes dies, a swallowed creature is no longer restrained by it and can escape from the corpse using 5 feet of movement, exiting prone."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 16 Wisdom saving throw or be stunned until the end of its next turn."
+    },
+    {
+      "name": "Rock",
+      "desc": "Ranged Weapon Attack: +8 to hit, range 30/120 ft., one target. Hit: 27 (4d10 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 16 Wisdom saving throw or be frightened until the end of its next turn."
+    }
+  ]
+}

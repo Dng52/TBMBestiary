@@ -1,0 +1,48 @@
+{
+  "name": "Sand Giant",
+  "tags": [
+    "huge",
+    "giant",
+    "cr9",
+    "tome-of-horrors"
+  ],
+  "size": "Huge",
+  "type": "giant",
+  "alignment": "neutral evil",
+  "cr": "9 (5,000 XP)",
+  "hp": "262 (21d12 + 126)",
+  "ac": "16 (natural armor)",
+  "speed": "40 ft.",
+  "saves": "Con +10, Wis +5",
+  "skills": "Perception +5",
+  "senses": "passive Perception 15",
+  "languages": "Giant",
+  "abilities": {
+    "str": 28,
+    "dex": 13,
+    "con": 22,
+    "int": 12,
+    "wis": 12,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The giant\u2019s innate spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). It can innately cast the following spells, requiring no material components: * 2/day: <i>move earth</i> * 1/day: <i>earthquake</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The sand giant makes two attacks with its greatsword."
+    },
+    {
+      "name": "Greataxe",
+      "desc": "Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 26 (5d6 + 9) slashing damage."
+    },
+    {
+      "name": "Fist of Sand (1/day)",
+      "desc": "The giant slams its fist violently into the ground. All creatures within 10 feet of the giant must make a DC 16 Dexterity saving throw or be knocked prone and take 14 (4d6) bludgeoning damage on a failure, or half as much damage without being knocked prone on a success."
+    }
+  ]
+}

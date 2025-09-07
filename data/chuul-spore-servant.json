@@ -1,0 +1,38 @@
+{
+  "name": "Chuul Spore Servant",
+  "tags": [
+    "large",
+    "plant",
+    "cr4",
+    "out-of-the-abyss"
+  ],
+  "size": "Large",
+  "type": "plant",
+  "alignment": "unaligned",
+  "cr": "4 (1,100 XP)",
+  "hp": "93 (11d10+33)",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft., swim 30 ft.",
+  "immunities": "poison",
+  "conimmunities": "blinded, charmed, frightened, paralyzed, poisoned",
+  "senses": "blindsight 30 ft. (blind beyond this radius)",
+  "languages": "-",
+  "abilities": {
+    "str": 19,
+    "dex": 10,
+    "con": 16,
+    "int": 2,
+    "wis": 6,
+    "cha": 1
+  },
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The spore servant makes two pincer attacks."
+    },
+    {
+      "name": "Pincer",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage. The target is grappled (Escape DC 14) if it is a Large or smaller creature and the spore servant doesn't have two other creatures grappled."
+    }
+  ]
+}

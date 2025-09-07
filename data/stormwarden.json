@@ -1,0 +1,48 @@
+{
+  "name": "Stormwarden",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic neutral",
+  "cr": "1 (200 XP)",
+  "hp": "45 (7d8 + 14)",
+  "ac": "12 (hide armor)",
+  "speed": "30 ft.",
+  "skills": "Survival +3",
+  "resistance": "lightning, thunder",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "Common, Draconic, Giant",
+  "abilities": {
+    "str": 14,
+    "dex": 10,
+    "con": 14,
+    "int": 16,
+    "wis": 13,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The stormwarden\u2019s spellcasting ability is Intelligence (spell save DC 13, + 5 to hit with spell attacks). The stormwarden can innately cast the following spells, requiring only verbal components: * At will: <i>thaumaturgy</i> * 1/day: <i>fog cloud</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Longsword",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage, or 7 (1d10 + 2) slashing damage if used with two hands."
+    },
+    {
+      "name": "Longbow",
+      "desc": "Ranged Weapon Attack: +2 to hit, range 150/600 ft., one target. Hit: 4 (1d8) piercing damage."
+    },
+    {
+      "name": "Stormscream (1/day)",
+      "desc": "The stormwarden unleashes a deafening scream filled with the fury of the storm in a 15-foot cone. Each creature in that area must make a DC 12 Constitution saving throw. On a failed save, a creature takes 9 (2d8) thunder damage and is pushed 10 feet away from the stormwarden. On a successful save, the creature takes half as much damage and isn\u2019t pushed."
+    }
+  ]
+}

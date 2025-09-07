@@ -1,0 +1,50 @@
+{
+  "name": "Drow Favored Consort",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr18",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "18 (20,000 XP)",
+  "hp": "225  (30d8 + 90)",
+  "ac": "15 (18 with mage armor)",
+  "speed": "30 ft.",
+  "saves": "Dex +11, Con +9, Cha +10",
+  "skills": "Acrobatics +11, Athletics +8, Perception +8, Stealth +11",
+  "senses": "darkvision 120 ft., passive Perception 18",
+  "languages": "Elvish, Undercommon",
+  "abilities": {
+    "str": 15,
+    "dex": 20,
+    "con": 16,
+    "int": 18,
+    "wis": 15,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Fey Ancestry",
+      "desc": "The drow has advantage on saving throws against being charmed, and magic can't put the drow to sleep."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The drow's innate spellcasting ability is Charisma (spell save DC 18). It can innately cast the following spells, requiring no material components: * At will: <i>dancing lights</i> * 1/day each: <i>darkness, faerie fire, levitate </i>(self only)"
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The drow is a 11th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 18, +10 to hit with spell attacks). It has the following wizard spells prepared: * Cantrips (at will): <i>mage hand, message, poison spray, shocking grasp, ray of frost</i> * 1st level (4 slots): <i>burning hands, mage armor, magic missile, shield</i> * 2nd level (3 slots): <i>gust of wind, invisibility, misty step, shatter</i> * 3rd level (3 slots): <i>counterspell, fireball, haste</i> * 4th level (3 slots): <i>dimension door, Otiluke's resilient sphere</i> * 5th level (2 slots): <i>cone of cold</i> * 6th level (1 slot): <i>chain lightning</i>"
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the drow has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "War Magic",
+      "desc": "When the drow uses its action to cast a spell, it can make one weapon attack as a bonus action."
+    }
+  ]
+}

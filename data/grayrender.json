@@ -1,0 +1,28 @@
+{
+  "name": "Gray Render",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr12",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "chaotic neutral",
+  "cr": "12 (8400 XP)",
+  "hp": "189  (18d10 + 90)",
+  "ac": "19 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Str +8, Con +9",
+  "skills": "Perception +2",
+  "senses": "darkvision 60 ft., passive Perception 12",
+  "languages": "-",
+  "abilities": {
+    "str": 19,
+    "dex": 13,
+    "con": 20,
+    "int": 3,
+    "wis": 6,
+    "cha": 8
+  }
+}

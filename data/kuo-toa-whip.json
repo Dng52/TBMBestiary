@@ -1,0 +1,63 @@
+{
+  "name": "Kuo-Toa Whip",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "1 (200 XP)",
+  "hp": "65 (10d8+20)",
+  "ac": "11 (natural armor)",
+  "speed": "32 ft., swim 30 ft.",
+  "skills": "Perception +6, Religion +4",
+  "senses": "darkvision 120 ft.",
+  "languages": "Undercommon",
+  "abilities": {
+    "str": 14,
+    "dex": 10,
+    "con": 14,
+    "int": 12,
+    "wis": 14,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The kuo-toa can breathe air and water."
+    },
+    {
+      "name": "Otherwordly Perception",
+      "desc": "The kuo-toa can sense the presence of any creature within 30 feet of it that is invisible or on the Ethereal Plane. It can pinpoint such a creature that is moving."
+    },
+    {
+      "name": "Slippery",
+      "desc": "The kuo-toa has advantage on ability checks and saving throws made to escape a grapple."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The kuo-toa is a 2nd-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The kuo-toa has the following cleric spells prepared: * Cantrips (at will): <i>sacred flame, thaumaturgy</i> * 1st level (3 slots): <i>bane, shield of faith</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The kuo-toa makes two attacks: one with its bite and one with its pincer staff."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Pincer Staff",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 5 (1d6 + 2) piercing damage. If the target is a Medium or smaller creature, it is grappled (escape DC 14). Until this grapple ends, the kuo-toa can't use its pincer staff on another target."
+    }
+  ]
+}

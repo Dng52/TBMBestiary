@@ -1,0 +1,49 @@
+{
+  "name": "Putrid Haunt",
+  "tags": [
+    "medium",
+    "undead",
+    "cr2",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "2 (450 XP)",
+  "hp": "44 (8d8 + 8)",
+  "ac": "13 (natural armor)",
+  "speed": "30 ft.",
+  "immunities": "poison",
+  "resistance": "bludgeoning and piercing from nonmagical weapons",
+  "conimmunities": "charmed, exhaustion, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 17,
+    "dex": 8,
+    "con": 13,
+    "int": 6,
+    "wis": 11,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Dead Still",
+      "desc": "Treat a putrid haunt as invisible while it's buried in swamp muck."
+    },
+    {
+      "name": "Swamp Shamble",
+      "desc": "Putrid haunts suffer no movement penalties in marshy terrain."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) bludgeoning damage."
+    },
+    {
+      "name": "Vomit Leeches (Recharge 6)",
+      "desc": "A putrid haunt can vomit forth the contents of its stomach onto a target within 5 feet. Along with the bile and mud from its stomach, this includes 2d6 undead leeches that attach to the target. A creature takes 1 necrotic damage per leech on it at the start of the creature's turn, and the putrid haunt gains the same number of temporary hit points. As an action, a creature can remove or destroy 1d3 leeches from itself or an adjacent ally."
+    }
+  ]
+}

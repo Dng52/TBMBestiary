@@ -1,0 +1,44 @@
+{
+  "name": "Pidlwick II",
+  "tags": [
+    "small",
+    "construct",
+    "cr1/4",
+    "curse-of-strahd"
+  ],
+  "size": "Small",
+  "type": "construct",
+  "alignment": "neutral evil",
+  "cr": "1/4 (50 XP)",
+  "hp": "10 (3d6)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Performance +3",
+  "immunities": "poison",
+  "conimmunities": "paralyzed, petrified, poisoned",
+  "languages": "understands Common but doesn't speak and can't read or write",
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 11,
+    "int": 8,
+    "wis": 13,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Ambusher",
+      "desc": "During the first round of combat, Pidlwick II has advantage on attack rolls against any creature that hasn't had a turn yet."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Club",
+      "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage."
+    },
+    {
+      "name": "Dart",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 4 (1d4+2) piercing damage."
+    }
+  ]
+}

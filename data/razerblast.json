@@ -1,0 +1,47 @@
+{
+  "name": "Razerblast",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr5",
+    "elemental-evil"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "5 (1,800 XP)",
+  "hp": "112 (15d8+45)",
+  "ac": "17 (splint)",
+  "speed": "30 ft.",
+  "skills": "Intimidation +4, Perception +3",
+  "immunities": "fire",
+  "languages": "Common, Ignan",
+  "abilities": {
+    "str": 16,
+    "dex": 11,
+    "con": 16,
+    "int": 9,
+    "wis": 10,
+    "cha": 13
+  },
+  "traits": [
+    {
+      "name": "Searing Armor",
+      "desc": "The razerblast's armor is hot. Any creature grappling the razerblast or grappled by it takes 5 (1d10) fire damage at the end of that creature's turn."
+    },
+    {
+      "name": "Shrapnel Explosion",
+      "desc": "When the razerblast drops to 0 hit points, a flaming orb in its chest explodes, destroying the razerblast's body and scattering its armor as shrapnel. Creatures within 10 feet of the razerblast when it explodes must succeed on a DC 12 Dexterity saving throw, taking 21 (6d6) piercing damage on a failed save, or half as much damage on a successful one."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The razerblast makes three melee attacks."
+    },
+    {
+      "name": "Spear",
+      "desc": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d6 + 3) piercing damage, or 7 (1d8 + 3) piercing damage if used with two hands to make a melee attack, plus 3 (1d6) fire damage."
+    }
+  ]
+}

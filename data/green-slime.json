@@ -1,0 +1,41 @@
+{
+  "name": "Green Slime",
+  "tags": [
+    "medium",
+    "plant",
+    "cr2",
+    "homebrew"
+  ],
+  "size": "Medium",
+  "type": "plant",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "5 (1d6 + 2)",
+  "ac": "5",
+  "speed": "0 ft.",
+  "immunities": "acid",
+  "vulnerability": "cold, fire, radiant",
+  "conimmunities": "charmed, frightened, poisoned, prone, stunned",
+  "senses": "blindsight 30 ft. passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 1,
+    "dex": 1,
+    "con": 15,
+    "int": 1,
+    "wis": 10,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Delicate",
+      "desc": "Sunlight, any effect that cures disease, and any effect that deals cold, fire, or radiant damage instantly destroys a patch of green slime."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Drop",
+      "desc": "Clinging to walls and ceilings, the green slime drops down when it detects movement below it. A creature aware of the slime's presence can avoid it with a successful DC 10 Dexterity saving throw.  Otherwise, the slime can't be avoided as it drops. A creature that comes into contact with the green slime takes 5 (1d10) acid damage.  The creature takes the damage again at the start of each of its turns until the slime is scraped off or destroyed. Against wood or metal, green slime deals 11 (2d10) acid damage each round, and any nonmagical metal or wooden tool or weapon used to scrape off the slime is effectively destroyed."
+    }
+  ]
+}

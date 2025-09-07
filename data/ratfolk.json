@@ -1,0 +1,47 @@
+{
+  "name": "Ratfolk",
+  "tags": [
+    "small",
+    "humanoid",
+    "cr1/4",
+    "tome-of-beasts"
+  ],
+  "size": "Small",
+  "type": "humanoid",
+  "alignment": "neutral",
+  "cr": "1/4 (50 XP)",
+  "hp": "7 (2d6)",
+  "ac": "14 (studded leather armor)",
+  "speed": "25 ft., swim 10 ft.",
+  "skills": "Perception +2",
+  "senses": "darkvision 60 ft., passive Perception 12",
+  "languages": "Common",
+  "abilities": {
+    "str": 7,
+    "dex": 15,
+    "con": 11,
+    "int": 14,
+    "wis": 10,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Nimbleness",
+      "desc": "The ratfolk can move through the space of any creature size Medium or larger."
+    },
+    {
+      "name": "Pack Tactics",
+      "desc": "The ratfolk has advantage on its attack roll against a creature if at least one of the ratfolk's allies is within 5 feet of the creature and the ally is capable of attacking."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Light crossbow",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+    }
+  ]
+}

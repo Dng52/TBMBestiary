@@ -1,0 +1,45 @@
+{
+  "name": "Corlapis",
+  "tags": [
+    "medium",
+    "elemental",
+    "cr2",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "lawful neutral",
+  "cr": "2 (450 XP)",
+  "hp": "45 (6d8 + 18)",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Con +5",
+  "immunities": "poison",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Terran",
+  "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 17,
+    "int": 13,
+    "wis": 10,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Hardened Exterior",
+      "desc": "Bludgeoning, piercing, and slashing damage the corlapis takes from nonmagical weapons is reduced by 3 to a minimum of 1."
+    },
+    {
+      "name": "Stone Camouflage",
+      "desc": "The corlapis has advantage on Dexterity (Stealth) checks to hide in rocky terrain. Sturdy. The corlapis has advantage on saving throws against effects that would cause it to move or be knocked prone."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Maul",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage."
+    }
+  ]
+}

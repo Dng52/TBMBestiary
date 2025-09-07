@@ -1,0 +1,53 @@
+{
+  "name": "Ice Troll",
+  "tags": [
+    "large",
+    "giant",
+    "cr4",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "giant",
+  "alignment": "chaotic evil",
+  "cr": "4 (1,100 XP)",
+  "hp": "68 (8d10 + 24)",
+  "ac": "12 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Perception +2",
+  "immunities": "cold",
+  "vulnerability": "fire, slashing",
+  "senses": "darkvision 60 ft., passive Perception 12",
+  "languages": "Giant",
+  "abilities": {
+    "str": 19,
+    "dex": 12,
+    "con": 16,
+    "int": 9,
+    "wis": 10,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Slashing Susceptibility",
+      "desc": "If an attack made with a slashing weapon scores a critical hit on the ice troll, the troll must succeed on a DC 13 Constitution saving throw or lose a limb. Roll a d6. On a roll of 1\u20133, the troll loses an arm, and on a roll of 4\u20136 the troll loses a leg. It is GM\u2019s choice as to whether it was the right or left arm or leg."
+    },
+    {
+      "name": "Regeneration",
+      "desc": "The ice troll regains 10 hit points at the start of its turn. If the troll is not making physical contact with ice or near-freezing water, this trait doesn\u2019t function at the start of the troll\u2019s next turn. The cave dies only if starts its turn with 0 hit points and doesn\u2019t regenerate."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The cave troll makes three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage plus 7 (2d6) cold damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage."
+    }
+  ]
+}

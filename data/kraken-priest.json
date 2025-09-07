@@ -1,0 +1,47 @@
+{
+  "name": "Kraken Priest",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr5",
+    "volos-guide"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any evil alignment",
+  "cr": "5 (1,800 XP)",
+  "hp": "75 (10d8+30)",
+  "ac": "10",
+  "speed": "30 ft., swim 30 ft.",
+  "skills": "Perception +5",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical attacks",
+  "languages": "any two languages",
+  "abilities": {
+    "str": 12,
+    "dex": 10,
+    "con": 16,
+    "int": 10,
+    "wis": 15,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The priest can breathe air and water."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The priest's spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no material components: * At will: <i>command, create or destroy water</i> * 3/day each: <i>control water, darkness, water breathing, water walk</i> * 1/day each: <i>call lightning, Evard's black tentacles</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Thunderous Touch",
+      "desc": "Melee Spell Attack: +5 to hit, reach 5 ft., one creature. Hit: 27 (5d10) thunder damage."
+    },
+    {
+      "name": "Voice of the Kraken (Recharges after a Short or Long Rest)",
+      "desc": "A kraken speaks through the priest with a thunderous voice audible within 300 feet. Creatures of the priest's choice that can hear the kraken's words (which are spoken in Abyssal, Infernal, or Primordial) must succeed on a DC 14 Charisma saving throw or be frightened for 1 minute. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    }
+  ]
+}

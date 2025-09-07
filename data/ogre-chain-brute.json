@@ -1,0 +1,26 @@
+{
+  "name": "Ogre Chain Brute",
+  "tags": [
+    "large",
+    "giant",
+    "cr3",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Large",
+  "type": "giant",
+  "alignment": "chaotic evil",
+  "cr": "3 (700 XP)",
+  "hp": "59  (7d10 + 21)",
+  "ac": "11 (hide armor)",
+  "speed": "40 ft.",
+  "senses": "darkvision 60 ft., passive Perception 8",
+  "languages": "Common, Giant",
+  "abilities": {
+    "str": 19,
+    "dex": 8,
+    "con": 16,
+    "int": 5,
+    "wis": 7,
+    "cha": 7
+  }
+}

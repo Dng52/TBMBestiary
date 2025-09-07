@@ -1,0 +1,61 @@
+{
+  "name": "Green Abishai",
+  "tags": [
+    "medium",
+    "fiend",
+    "cr15",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "fiend",
+  "alignment": "lawful evil",
+  "cr": "15 (13,000 XP)",
+  "hp": "187  (25d8 + 75)",
+  "ac": "18 (natural armor)",
+  "speed": "30 ft., fly 40 ft.",
+  "saves": "Int +8, Cha +9",
+  "skills": "Deception +9, Insight +6, Perception +6, Persuasion +9",
+  "immunities": "fire, poison",
+  "resistance": "cold; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 120 ft., passive Perception 16",
+  "languages": "Draconic, Infernal, telepathy 120 ft.",
+  "abilities": {
+    "str": 12,
+    "dex": 17,
+    "con": 16,
+    "int": 17,
+    "wis": 12,
+    "cha": 19
+  },
+  "traits": [
+    {
+      "name": "Devil's Sight",
+      "desc": "Magical darkness doesn't impede the abishai's darkvision."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The abishai's innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components: * At will: <i>alter self, major image</i> * 3/day each: <i>charm person, detect thoughts, fear</i> * 1/day each: <i>confusion, dominate person, mass suggestion</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The abishai has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The abishai's weapon attacks are magical. Actions"
+    },
+    {
+      "name": "Multiattack",
+      "desc": "The abishai makes two attacks, one with its claws and one with its longsword, or it casts one spell from its Innate Spellcasting trait and makes one claw attack."
+    },
+    {
+      "name": "Longsword",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 (1d8 + 1) slashing damage, or 6 (1d10 + 1) slashing damage if used with two hands."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage. If the target is a creature, it must succeed on a DC 16 Constitution saving throw or take 11 (2d10) poison damage and become poisoned for 1 minute. The poisoned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    }
+  ]
+}

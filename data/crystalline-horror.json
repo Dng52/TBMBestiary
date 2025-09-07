@@ -1,0 +1,56 @@
+{
+  "name": "Crystalline Horror",
+  "tags": [
+    "medium",
+    "aberration",
+    "cr3",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "aberration",
+  "alignment": "neutral evil",
+  "cr": "3 (700 XP)",
+  "hp": "60 (8d8 + 24)",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Perception +3, Stealth +4",
+  "resistance": "cold",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "--",
+  "abilities": {
+    "str": 19,
+    "dex": 14,
+    "con": 16,
+    "int": 10,
+    "wis": 12,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Crystal Claws",
+      "desc": "The crystalline horror\u2019s attacks are magical."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The crystalline horror has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The crystalline horror can make two attacks with its claws."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
+    },
+    {
+      "name": "Shard Spray (Recharge 6)",
+      "desc": "The crystalline horror launches a spray of razor-sharp shards of glass from its body in a 30-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 17 (5d6) piercing damage on a failed save, or half as much damage on a successful one."
+    },
+    {
+      "name": "Bend Light",
+      "desc": "The crystalline horror can refract natural light into a bright light that makes it harder to be hit by melee attacks. The crystalline horror adds 3 to its AC against one melee attack that would hit it. To do so, the crystalline horror must see the attack. This ability cannot be used in natural or magical darkness."
+    }
+  ]
+}

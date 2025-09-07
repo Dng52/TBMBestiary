@@ -1,0 +1,55 @@
+{
+  "name": "Lizardfolk Voice of the Depths",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr2",
+    "out-of-the-box-5e"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "2 (450 XP)",
+  "hp": "27 (5d8 + 5)",
+  "ac": "13 (natural armor)",
+  "speed": "30 ft., swim 40 ft.",
+  "skills": "Perception +4, Stealth +4, Survival +6",
+  "senses": "Passive Perception 14",
+  "languages": "Abyssal, Draconic, Primordial",
+  "abilities": {
+    "str": 15,
+    "dex": 10,
+    "con": 13,
+    "int": 10,
+    "wis": 15,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Hold Breath",
+      "desc": "The lizardfolk can hold its breath for 15 minutes."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The lizardfolk makes two attacks: one with its bite and one with its claws."
+    },
+    {
+      "name": "Blackjaw Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 +2) piercing damage and 2 (1d4) fire damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage."
+    },
+    {
+      "name": "Drowned One\u2019s Curse (1/Day)",
+      "desc": "The lizardfolk targets one creature it can see within 30 ft. and calls upon the Drowned One to reach out from its watery domain. The target must make a DC 13 Constitution saving throw or begin suffocating as their lungs fill with water. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature drops to 0 hit points and is dying, and it can\u2019t regain hit points or be stabilized until it can breathe again. The curse has no effect on undead, constructs, or creatures that can breathe underwater.with its bite and one with its claws or trident or two melee attacks with its trident."
+    },
+    {
+      "name": "Song of the Depths",
+      "desc": "When two or more lizardfolk voices of the depths are within 30 feet of one another they can work together and sing a hymn to the Drowned One, calling on its power to cast <i>entangle</i>. The DC is 12 + the number of lizardfolk voices of the depths casting the spell, and concentration is shared by all lizardfolk who contribute to the casting."
+    }
+  ]
+}

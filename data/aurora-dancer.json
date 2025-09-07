@@ -1,0 +1,57 @@
+{
+  "name": "Aurora Dancer",
+  "tags": [
+    "medium",
+    "undead",
+    "cr5",
+    "homebrew"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "chaotic evil",
+  "cr": "5 (1,800 XP)",
+  "hp": "45 (6d8 + 18)",
+  "ac": "19 (mithral half plate, shield)",
+  "speed": "35 ft.",
+  "skills": "Perception +6, Stealth +6",
+  "immunities": "cold, necrotic, poison",
+  "resistance": "acid, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered",
+  "senses": "darkvision 60 ft., passive Perception 16",
+  "languages": "the languages it knew in life",
+  "abilities": {
+    "str": 14,
+    "dex": 18,
+    "con": 17,
+    "int": 5,
+    "wis": 10,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Blizzard Stalker",
+      "desc": "The dancer's vision and hearing are unimpeded by inclement weather such as wind, snow, and fog, and it has advantage on all Dexterity (Stealth) checks it makes in such conditions."
+    },
+    {
+      "name": "Reactive",
+      "desc": "The dancer can take an take one reaction on every turn in a combat."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The dancer makes three attacks with its scimitar."
+    },
+    {
+      "name": "Frozen Scimitar",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage plus 4 (1d8) cold damage."
+    },
+    {
+      "name": "Cutting Wind",
+      "desc": "The dancer swings its blade in a wide horizontal arc, slicing out at each creature in a 15-foot square within 5 feet of the dancer. Each creature in the area must succeed on a DC 15 Dexterity saving throw or take 7 (2d6) slashing damage plus 10 (3d6) cold damage."
+    },
+    {
+      "name": "Blade Dance",
+      "desc": "When a creature the dancer can see moves while within 10 feet of it, the dancer can move up to 15 feet in a straight line to an unoccupied space it can see. Opportunity attacks triggered by this movement due to the dancer leaving another creature's reach are made with disadvantage."
+    }
+  ]
+}

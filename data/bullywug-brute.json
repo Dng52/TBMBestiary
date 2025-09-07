@@ -1,0 +1,59 @@
+{
+  "name": "Bullywug Brute",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "1 (200 XP)",
+  "hp": "30 (4d8 + 12)",
+  "ac": "12 (hide armor)",
+  "speed": "20 ft., swim 40 ft.",
+  "skills": "Athletics +5",
+  "senses": "passive Perception 10",
+  "languages": "Bullywug",
+  "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 16,
+    "int": 7,
+    "wis": 10,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The bullywug can breathe air and water."
+    },
+    {
+      "name": "Speak with Frogs and Toads",
+      "desc": "The bullywug can communicate simple concepts to frogs and toads when it speaks in Bullywug."
+    },
+    {
+      "name": "Swamp Camouflage",
+      "desc": "The bullywug has advantage on Dexterity (Stealth) checks made to hide in swampy terrain."
+    },
+    {
+      "name": "Standing Leap",
+      "desc": "The bullywug's long jump is up to 20 feet and its high jump is up to 10 feet, with or without a running start."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The bullywug makes three attacks: one with its tongue and two with its punch."
+    },
+    {
+      "name": "Tongue",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 15ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage and the target is grappled (escape DC 13) if it is a medium or smaller creature and the bullywug doesn\u2019t have a creature grappled. The target must then succeed on a DC 13 Strength saving throw or be pulled to a space within 5 feet of the bullywug."
+    },
+    {
+      "name": "Punch",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit: 4 bludgeoning damage."
+    }
+  ]
+}

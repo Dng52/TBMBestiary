@@ -1,0 +1,55 @@
+{
+  "name": "Cave Troll",
+  "tags": [
+    "medium",
+    "giant",
+    "cr4",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "giant",
+  "alignment": "chaotic evil",
+  "cr": "4 (1,100 XP)",
+  "hp": "76 (9d8 + 36)",
+  "ac": "15 (natural armor)",
+  "speed": "60 ft., climb 20 ft.",
+  "skills": "Perception +1",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "Giant",
+  "abilities": {
+    "str": 14,
+    "dex": 19,
+    "con": 18,
+    "int": 8,
+    "wis": 9,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Haste",
+      "desc": "When in need, a cave troll is capable of startling bursts of speed. It has advantage on Dexterity saving throws and gains an additional action on each of its turns. That action can be used only to take the Attack (one claw), Dash, Disengage, Hide, or Use an Object action."
+    },
+    {
+      "name": "Regeneration",
+      "desc": "The cave troll regains 6 hit points at the start of its turn. If the cave troll takes acid or fire damage, this trait doesn\u2019t function at the start of the cave troll\u2019s next turn. The cave troll dies only if starts its turn with 0 hit points and doesn\u2019t regenerate."
+    },
+    {
+      "name": "Spider Climb",
+      "desc": "The cave troll can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The cave troll makes three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 +4) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4+4) slashing damage."
+    }
+  ]
+}

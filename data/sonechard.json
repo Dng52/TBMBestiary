@@ -1,0 +1,157 @@
+{
+  "name": "Sonechard, General of Orcus",
+  "tags": [
+    "large",
+    "fiend",
+    "cr20",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "20 (25,000 XP)",
+  "hp": "336 (32d10 + 160)",
+  "ac": "19 (natural armor)",
+  "speed": "40 ft., fly 80 ft.",
+  "saves": "Str +12, Dex +10, Con +11, Wis +9",
+  "skills": "Arcana +10, Athletics +12, Nature +10, Perception +15, Religion +10",
+  "immunities": "lightning, poison; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "resistance": "acid, cold, fire",
+  "conimmunities": "charmed, exhaustion, frightened, poisoned",
+  "senses": "truesight 120 ft., passive Perception 25",
+  "languages": "Abyssal, Celestial, Common, Draconic, Giant, Goblin, Ignan, Infernal, Terran; telepathy 120 ft.",
+  "abilities": {
+    "str": 22,
+    "dex": 18,
+    "con": 21,
+    "int": 19,
+    "wis": 16,
+    "cha": 20
+  },
+  "traits": [
+    {
+      "name": "Special Equipment",
+      "desc": "Sonechard carries the war pick Fool\u2019s Errand."
+    },
+    {
+      "name": "Aggressive",
+      "desc": "As a bonus action, Sonechard can move up to its speed toward a hostile creature that it can see."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "Sonechard\u2019s innate spellcasting ability is Charisma (spell save DC 19, +11 to hit with spell attacks). It can cast the following spells, requiring no material components. * At will: <i>animate dead, chill touch </i>(17th level)<i>, inflict wounds </i>(5th level) * 3/day each: <i>circle of death, create undead, fireball, finger of death, harm</i> * 1/day: <i>create undead </i>(9th level)"
+    },
+    {
+      "name": "Legendary Resistance (3/day)",
+      "desc": "If Sonechard fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "Sonechard has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "Sonechard\u2019s weapon attacks are magical."
+    },
+    {
+      "name": "Stench",
+      "desc": "Any creature that starts its turn within 10 feet of Sonechard must succeed on a DC 19 Constitution saving throw or be poisoned until the start of its next turn. On a successful saving throw, the creature is immune to Sonechard\u2019s Stench for 24 hours."
+    },
+    {
+      "name": "Unholy Aura",
+      "desc": "An unholy aura surrounds Sonechard out to a radius of 40 feet. A creature who enters or begins its turn in the area must make a DC 19 Wisdom saving throw. On a failed saving throw, the target is frightened for 1 minute. While frightened, it is paralyzed. A frightened target can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+    },
+    {
+      "name": "Undead Master",
+      "desc": "When Sonechard casts animate dead or create undead, it creates twice the amount of undead with each casting."
+    },
+    {
+      "name": "Undead Walking",
+      "desc": "Slain creatures sometimes rise as skeletons or zombies, abhorred mockeries of their former states."
+    },
+    {
+      "name": "Nightmares",
+      "desc": "Unpleasant dreams wrack those who rest within 6 miles of Sonechard\u2019s lair. If Sonechard dies, the effects fade immediately, but animated undead remain until destroyed. # Fool's Errand <i>Weapon (war pick), artifact (requires attunement)</i> Fool\u2019s Errand is a macabre spectacle, wrought of a dark, unknown wood as hard as steel. The spike of the war pick is similarly unfinished and unpolished and glows dimly with dark energies. Blood and ichor constantly drip from the pick and seems to freeze and thaw continuously no matter what attempts are made to clean the weapon."
+    },
+    {
+      "name": "Attunement",
+      "desc": "To attune to Fools\u2019 Errand, you must slay a celestial being of lawful good alignment."
+    },
+    {
+      "name": "Magic Weapon",
+      "desc": "You have a +3 bonus to attack and damage rolls made with Fool\u2019s Errand. It also functions as a sword of wounding."
+    },
+    {
+      "name": "Unholy Smite",
+      "desc": "When you hit with Fools\u2019 Errand, you deal an additional 3d6 necrotic damage on a hit, and a creature who takes this damage is poisoned for 1 minute. While poisoned, the creature has disadvantage on saving throws against your spells and other effects, and you have advantage on attack rolls with Fool\u2019s Errand."
+    },
+    {
+      "name": "The Smell of Blood",
+      "desc": "While holding Fool\u2019s Errand, you have advantage on Wisdom (Perception) checks to notice hidden creatures."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "Fool\u2019s Errand has 20 charges. You can use an action to cast one of the following spells using those charges: <i>bestow curse </i>(3 charges)<i>, blight </i>(4 charges)<i>, circle of death </i>(6 charges), or <i>finger of death </i>(7 charges). If you expend the last charge, you take 4d6 necrotic damage and regain a number of charges equal to the damage dealt, up to a maximum of 20. This damage cannot drop you below 1 hit point. Fool\u2019s Errand recovers all lost charges each day at midnight."
+    },
+    {
+      "name": "Destruction",
+      "desc": "Fool\u2019s Errand can only be destroyed by the ancient celestial Sonechard first killed to attune to the weapon. This creature must bath it in a holy water font specially crafted and blessed for the purpose."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Sonechard makes two attacks with Fool\u2019s Errand, one claw attack, and one head butt, or two claw attacks and one head butt."
+    },
+    {
+      "name": "Fool\u2019s Errand",
+      "desc": "Melee Weapon Attack: +15 to hit, reach 5 ft., one target. Hit: 18 (2d8 + 9) piercing damage plus 10 (3d6) necrotic damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) slashing damage."
+    },
+    {
+      "name": "Head Butt",
+      "desc": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) bludgeoning damage, and the target must succeed on a DC 20 Constitution saving throw or be stunned until the end of its next turn."
+    },
+    {
+      "name": "Control Undead",
+      "desc": "Sonechard chooses one undead creature not already under its control that it can see within 120 feet of it. That creature, or the creature that controls it, must make a DC 19 Wisdom saving throw. On a failed saving throw, the undead falls under Sonechard\u2019s control and obeys its every command."
+    },
+    {
+      "name": "Command Undead",
+      "desc": "Sonechard gives telepathic commands to any undead it controls unless they are on another plane of existence. It can command them to take specific actions, such as \u201cattack those creatures\u201d or general instructions \u201cguard this passageway.\u201d"
+    },
+    {
+      "name": "Heal Undead",
+      "desc": "Sonechard sends necrotic energy coursing through his lair. Up to six undead under his command regain 19 (4d6 + 5) hit points each. Sonechard does not need to see these undead in order to grant them this boon."
+    },
+    {
+      "name": "Raise Dead",
+      "desc": "Sonechard chooses one slain creature and causes the creature\u2019s soul to rise as a specter under its control."
+    },
+    {
+      "name": "Fearsome Show",
+      "desc": "Sonechard causes the many corpses within its lair to animate briefly and babble the horrific tales of their deaths. Creatures within its lair that are not constructs or undead must make a DC 20 Wisdom saving throw. On a failed saving throw, those creatures are frightened for 1 minute. While frightened, those creatures must attempt to flee the lair, Dashing where possible. If a creature is trapped or cannot move, they can take the Dodge action instead. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. If the saving throw is successful, or if the effect ends on it, that creature is immune to this effect for 24 hours."
+    },
+    {
+      "name": "Undead Awareness",
+      "desc": "Whenever an undead is created or enters within 1 mile of Sonechard\u2019s lair, Sonechard is aware of the creature\u2019s presence and location."
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Head butt",
+      "desc": "Sonechard uses its head butt attack."
+    },
+    {
+      "name": "Command Undead",
+      "desc": "Sonechard can command one undead Sonechard controls to use its reaction to move its speed, or make a melee or ranged attack."
+    },
+    {
+      "name": "Animate Dead (Costs 2 Actions)",
+      "desc": "Sonechard animates one corpse within 120 feet of it as a zombie."
+    }
+  ]
+}

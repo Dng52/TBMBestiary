@@ -1,0 +1,61 @@
+{
+  "name": "Gearkeeper Construct",
+  "tags": [
+    "large",
+    "construct",
+    "cr10",
+    "explorers-guide-to-wildemount"
+  ],
+  "size": "Large",
+  "type": "construct",
+  "alignment": "unaligned",
+  "cr": "10 (5,900 XP)",
+  "hp": "161 (17d10 + 68)",
+  "ac": "18 (natural armor)",
+  "speed": "60 ft.",
+  "immunities": "fire, poison, psychic",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "blindsight 120 ft., passive Perception 10",
+  "languages": "understands the languages of its creator but can\u2019t speak",
+  "abilities": {
+    "str": 20,
+    "dex": 16,
+    "con": 18,
+    "int": 3,
+    "wis": 11,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Immutable Form",
+      "desc": "The gearkeeper is immune to any spell or effect that would alter its form."
+    },
+    {
+      "name": "Rapid Shifting",
+      "desc": "Opportunity attacks made against the gearkeeper have disadvantage."
+    },
+    {
+      "name": "Whirling Blades",
+      "desc": "Any creature that starts its turn within 5 feet of the gearkeeper takes 4 (1d8) slashing damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The gearkeeper makes two Arm Blade attacks, or one Arm Blade attack and one Spear Launcher attack."
+    },
+    {
+      "name": "Arm Blade",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 18 (3d8 + 5) slashing damage."
+    },
+    {
+      "name": "Spear Launcher",
+      "desc": "Ranged Weapon Attack: +9 to hit, range 90 ft., one target. Hit: 12 (2d6 + 5) piercing damage, and the target is knocked prone."
+    },
+    {
+      "name": "Shrapnel Blast (Recharge 6)",
+      "desc": "The gearkeeper jettisons a spray of jagged metal in a 30-foot cone. Each creature in the area must make a DC 15 Dexterity saving throw, taking 21 (6d6) piercing damage on a failed save, or half as much damage on a successful one."
+    }
+  ]
+}

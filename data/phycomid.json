@@ -1,0 +1,39 @@
+{
+  "name": "Phycomid",
+  "tags": [
+    "small",
+    "plant",
+    "cr1/2",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "plant",
+  "alignment": "unaligned",
+  "cr": "1/2 (100 XP)",
+  "hp": "27 (6d6 + 6)",
+  "ac": "12 (natural armor)",
+  "speed": "10 ft.",
+  "skills": "Stealth +4",
+  "immunities": "fire, psychic",
+  "conimmunities": "frightened, prone, stunned, unconscious",
+  "senses": "tremorsense 30 ft., passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 8,
+    "dex": 10,
+    "con": 13,
+    "int": 2,
+    "wis": 11,
+    "cha": 1
+  },
+  "actions": [
+    {
+      "name": "Fluid Globule",
+      "desc": "Ranged Weapon Attack: +2 to hit, range 20 ft., one target. Hit: 7 (2d6) acid damage."
+    },
+    {
+      "name": "Debilitating Spores (3/day)",
+      "desc": "The phycomid ejects spores in a 10-foot radius. All creatures within this area must succeed a DC 13 Constitution saving throw, or take 10 (3d6) necrotic damage and have its hit point maximum reduced by an amount equal to the damage taken. The reduction lasts until the target finishes a long rest."
+    }
+  ]
+}

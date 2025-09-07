@@ -1,0 +1,52 @@
+{
+  "name": "Swarm of Grigs",
+  "tags": [
+    "medium",
+    "swarm",
+    "cr6",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "swarm",
+  "alignment": "neutral good",
+  "cr": "6 (2,300 XP)",
+  "hp": "110 (20d8 + 20)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft., fly 40 ft.",
+  "saves": "Dex +5, Cha +6",
+  "skills": "Acrobatics +5, Perception +4, Performance +6, Stealth +8",
+  "senses": "passive Perception 14",
+  "languages": "Common, Sylvan",
+  "abilities": {
+    "str": 5,
+    "dex": 14,
+    "con": 12,
+    "int": 10,
+    "wis": 13,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The swarm of grig\u2019s innate spellcasting ability is Charisma (spell save DC14, +6 to hit with spell attacks). It can cast the following spells innately, without requiring material components. * At will: <i>druidcraft</i> * 3/day each: <i>disguise self, entangle, invisibility</i>"
+    },
+    {
+      "name": "Surprise Attack",
+      "desc": "If the swarm of grigs surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 28 (8d6) damage from the attack."
+    },
+    {
+      "name": "Swarm",
+      "desc": "The swarm can occupy another creature\u2019s space and vice versa, and the swarm can move through any opening large enough for a grig. The swarm can\u2019t regain hit points or gain temporary hit points."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (3d6 + 2) piercing damage, or 5 (1d6 + 2) piercing damage if the swarm has half its points or fewer."
+    },
+    {
+      "name": "Fiddle (Recharge 5\u20136)",
+      "desc": "The swarm of grigs begins playing a lively tune with its fiddles. Creatures within 30 feet that can hear the fiddle must make a DC 13 Wisdom saving throw or be charmed for 1 minute. While charmed by the swarm, the target uses its action to dance in place, capering comically. The creature can repeat the saving throw at the end of each of its turns, ending the effect on a success. If the saving throw is successful, or the effect ends for it, the creature is immune to that grig\u2019s Fiddle ability for 24 hours."
+    }
+  ]
+}

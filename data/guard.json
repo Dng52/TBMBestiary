@@ -1,0 +1,32 @@
+{
+  "name": "Guard",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/8",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "1/8 (25 XP)",
+  "hp": "11 (2d8+2)",
+  "ac": "16 (chain shirt, shield)",
+  "speed": "30 ft.",
+  "skills": "Perception +2",
+  "languages": "any one language (usually Common)",
+  "abilities": {
+    "str": 13,
+    "dex": 12,
+    "con": 12,
+    "int": 10,
+    "wis": 11,
+    "cha": 10
+  },
+  "actions": [
+    {
+      "name": "Spear",
+      "desc": "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 + 1) piercing damage or 5 (1d8 + 1) piercing damage if used with two hands to make a melee attack."
+    }
+  ]
+}

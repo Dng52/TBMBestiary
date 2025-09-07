@@ -1,0 +1,54 @@
+{
+  "name": "Storm Magistrate",
+  "tags": [
+    "large",
+    "elemental",
+    "cr9",
+    "strongholds-and-followers"
+  ],
+  "size": "Large",
+  "type": "elemental",
+  "alignment": "neutral",
+  "cr": "9 (5,000 XP)",
+  "hp": "157 (15d10 + 75)",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Int +6, Wis +9, Cha +7",
+  "immunities": "fire, lightning",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "exhaustion, paralyzed, petrified, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 19",
+  "languages": "Auran, Common, Ignan",
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 21,
+    "int": 14,
+    "wis": 20,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The Magistrate is a 13th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). It can innately cast the following spells, requiring no components: * At will: <i>enhance ability</i>"
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The Magistrate has the following cleric spells prepared: * Cantrips (at will): <i>light, guidance, sacred flame, spare the dying</i> * 1st level (4 slots): <i>bane, bless, healing word, shield of faith</i> * 2nd level (3 slots): <i>aid, lesser restoration, magic weapon, prayer of healing, hold person</i> * 3rd level (3 slots): <i>beacon of hope, magic circle, dispel magic, revivify, spirit guardians, mass healing word</i> * 4th level (3 slots): <i>banishment, freedom of movement, guardian of faith, stoneskin</i> * 5th level (1 slot): <i>flame strike, mass cure wounds, hold monster</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The Magistrate makes two attacks with its morningstar."
+    },
+    {
+      "name": "Morningstar",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 12 (2d8 + 3) piercing damage."
+    },
+    {
+      "name": "Storm Strike (Recharge 6)",
+      "desc": "Lightning arcs from the Magistrate toward up to three targets it can see within 120 feet. Three bolts then leap from those targets to as many as three other targets, each of which must be within 10 feet of the first target. A creature can be targeted by only one bolt. A target must make a DC 17 Dexterity saving throw. A creature takes 14 (4d6) lightning damage and 14 (4d6) radiant damage on a failed save, or half as much damage on a successful one."
+    }
+  ]
+}

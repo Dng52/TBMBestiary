@@ -1,0 +1,49 @@
+{
+  "name": "Zuggtmoy",
+  "tags": [
+    "large",
+    "fiend",
+    "cr23",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Large",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "23 (50,000 XP)",
+  "hp": "304  (32d10 + 128)",
+  "ac": "18 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Dex +9, Con +11, Wis +11",
+  "skills": "Perception +11",
+  "immunities": "poison; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "resistance": "cold, fire, lightning",
+  "conimmunities": "charmed, exhaustion, frightened, poisoned",
+  "senses": "truesight 120 ft., passive Perception 21",
+  "languages": "all, telepathy 120 ft.",
+  "abilities": {
+    "str": 22,
+    "dex": 15,
+    "con": 18,
+    "int": 20,
+    "wis": 19,
+    "cha": 24
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "Zuggtmoy's spellcasting ability is Charisma (spell save DC 22). She can innately cast the following spells, requiring no material components: * At will: <i>detect magic, locate animals or plants, ray of sickness</i> * 3/day each: <i>dispel magic, ensnaring strike, entangle, plant growth</i> * 1/day each: <i>etherealness, teleport</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "desc": "If Zuggtmoy fails a saving throw, she can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "Zuggtmoy has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "Zuggtmoy's weapon attacks are magical."
+    }
+  ]
+}

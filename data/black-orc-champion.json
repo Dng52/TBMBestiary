@@ -1,0 +1,64 @@
+{
+  "name": "Black Orc Champion",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr7",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "7 (2,900 XP)",
+  "hp": "97 (15d8 + 30)",
+  "ac": "18 (plate)",
+  "speed": "30 ft.",
+  "saves": "Wis +4, Cha +7",
+  "skills": "Intimidation +7, Perception +4, Religion +2",
+  "senses": "darkvision 60 ft., passive Perception 14",
+  "languages": "Abyssal, Common, Orc",
+  "abilities": {
+    "str": 20,
+    "dex": 14,
+    "con": 14,
+    "int": 9,
+    "wis": 12,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Blessing of Orcus",
+      "desc": "Black orcs have advantage on saving throws against the spells and effects of undead creatures."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The black orc champion is a 7th level spellcaster. Its spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). It has the following paladin spells prepared: * 1st level (4 slots): <i>command, detect evil and good, false life, protection from evil and good, shield of faith</i> * 2nd level (3 slots): <i>magic weapon, silence, protection from poison</i>"
+    },
+    {
+      "name": "Unholy Strike",
+      "desc": "Once on each of the black orc champion\u2019s turns when it hits a creature with a melee weapon attack, the champion can cause the attack to deal an extra 13 (3d8) necrotic damage to the target."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The black orc champion makes two melee attacks."
+    },
+    {
+      "name": "Greatsword",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage."
+    },
+    {
+      "name": "Light Crossbow",
+      "desc": "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+    },
+    {
+      "name": "Dreadful Glare (Recharges on a Short or Long Rest)",
+      "desc": "Each enemy within 30 feet of the champion must succeed on a DC 15 Wisdom saving throw or drop whatever it is holding and become frightened for 1 minute. A frightened creature can repeat the saving throw on the end of each of its turns, ending the effect on a success."
+    },
+    {
+      "name": "Parry",
+      "desc": "The black orc champion adds 3 to its AC against one melee attack that would hit it. To do so, the champion must see the attacker and be wielding a melee weapon."
+    }
+  ]
+}

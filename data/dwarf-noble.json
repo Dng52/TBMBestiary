@@ -1,0 +1,34 @@
+{
+  "name": "Dwarf Noble",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/8",
+    "homebrew"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "1/8 (25 XP)",
+  "hp": "9  (2d8)",
+  "ac": "15 (breastplate)",
+  "speed": "30 ft.",
+  "skills": "Deception +5, Insight +4, Persuasion +5",
+  "resistance": "poison",
+  "senses": "darkvision, passive Perception 12",
+  "languages": "any two languages",
+  "abilities": {
+    "str": 11,
+    "dex": 12,
+    "con": 11,
+    "int": 12,
+    "wis": 14,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Dwarven Resilience",
+      "desc": "The dwarf has advantage on saving throws against poison and has resistance to poison damage"
+    }
+  ]
+}

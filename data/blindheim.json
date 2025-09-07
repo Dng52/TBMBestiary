@@ -1,0 +1,38 @@
+{
+  "name": "Blindheim",
+  "tags": [
+    "small",
+    "aberration",
+    "cr1/2",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "aberration",
+  "alignment": "chaotic evil",
+  "cr": "1/2 (100 XP)",
+  "hp": "17 (5d6)",
+  "ac": "13 (natural armor)",
+  "speed": "30 ft.",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "Primordial",
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 11,
+    "int": 2,
+    "wis": 12,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Eye Beams",
+      "desc": "When a blindheim\u2019s eyes are open, it emits a 30- foot cone of light. It can see normally in this light and functions normally in areas of magical darkness. A creature looking at a blindheim when its eye beams are \u201con\u201d must succeed on a DC 12 Constitution saving throw or be blinded for 1 hour. A blinded creature can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+    }
+  ]
+}

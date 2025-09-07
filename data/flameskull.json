@@ -1,0 +1,58 @@
+{
+  "name": "Flameskull",
+  "tags": [
+    "tiny",
+    "undead",
+    "cr4",
+    "monster-manual"
+  ],
+  "size": "Tiny",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "4 (1,100 XP)",
+  "hp": "40 (9d4+18)",
+  "ac": "13",
+  "speed": "0 ft., fly 40 ft. It can hover.",
+  "skills": "Arcana +5, Perception +2",
+  "immunities": "cold, fire, poison",
+  "resistance": "lightning, necrotic, piercing",
+  "conimmunities": "charmed, frightened, paralyzed, poisoned, prone",
+  "senses": "darkvision 60 ft.",
+  "languages": "Common",
+  "abilities": {
+    "str": 1,
+    "dex": 17,
+    "con": 14,
+    "int": 16,
+    "wis": 10,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Illumination",
+      "desc": "The flameskull sheds either dim light in a 15- foot radius, or bright light in a 15-foot radius and dim light for an additional 15 ft.. It can switch between the options as an action."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The flameskull has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Rejuvenation",
+      "desc": "If the flameskull is destroyed, it regains all its hit points in 1 hour unless holy water is sprinkled on its remains or a dispel magic or remove curse spell is cast on them."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The flameskull is a 5th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). It requires no somatic or material components to cast its spells. The flameskull has the following wizard spells prepared: * Cantrips (at will): <i>mage hand</i> * 1st level (3 slots): <i>magic missile, shield</i> * 2nd level (2 slots): <i>blur, flaming sphere</i> * 3rd level (1 slot): <i>fireball</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The flameskull uses Fire Ray twice."
+    },
+    {
+      "name": "Fire Ray",
+      "desc": "Ranged Spell Attack: +5 to hit, range 30 ft., one target. Hit: 10 (3d6) fire damage."
+    }
+  ]
+}

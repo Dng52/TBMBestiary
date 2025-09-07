@@ -1,0 +1,56 @@
+{
+  "name": "Morphing Knave",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr5",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "5 (1,800 XP)",
+  "hp": "66 (12d8 + 12)",
+  "ac": "15 (leather)",
+  "speed": "30 ft., climb 30 ft.",
+  "saves": "Dex +8, Int +6",
+  "skills": "Acrobatics +8, Animal Handling +11, Investigation +6, Perception +7, Stealth +12",
+  "senses": "passive Perception 17",
+  "languages": "Any three languages",
+  "abilities": {
+    "str": 8,
+    "dex": 18,
+    "con": 12,
+    "int": 14,
+    "wis": 16,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Feline Grace",
+      "desc": "The knave has a climb speed equal to its movement speed and does not take fall damage from heights less than 30 feet. In addition, the knave's footsteps are completely silent."
+    },
+    {
+      "name": "Sneak Attack (1/Turn)",
+      "desc": "The knave deals an extra 14 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the knave that isn't incapacitated and the knave doesn't have disadvantage on the attack roll."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The knave is a 3th-level spellcaster. Its spellcasting ability is wisdom (spell save DC 15, +7 to hit with spell attacks). The knave has the following druid spells prepared: * Cantrips (at will): <i>mending, thorn whip</i> * 1st level (4 slots): <i>fog cloud, jump, longstrider</i> * 2nd level (2 slots): <i>darkvision, enhance ability, locate object</i>"
+    },
+    {
+      "name": "Wild Shape - Cat (2/Short Rest)",
+      "desc": "As a bonus action, the knave transforms into a cat for up to two hours. When the cat is reduced to 0 hit points, the knave reverts to its normal form, with any excess damage carrying over to the knave's hit points."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The knave makes two attacks with its claws."
+    },
+    {
+      "name": "Steel Claws",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) slashing damage."
+    }
+  ]
+}

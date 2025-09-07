@@ -1,0 +1,35 @@
+{
+  "name": "Sword Wraith Warrior",
+  "tags": [
+    "medium",
+    "undead",
+    "cr3",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "lawful evil",
+  "cr": "3 (700 XP)",
+  "hp": "45  (6d8 + 18)",
+  "ac": "16 (chain shirt, shield)",
+  "speed": "30 ft.",
+  "immunities": "poison",
+  "resistance": "necrotic; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "exhaustion, frightened, poisoned, unconscious",
+  "senses": "darkvision 60 ft., passive Perception 9",
+  "languages": "the languages it knew in life",
+  "abilities": {
+    "str": 18,
+    "dex": 12,
+    "con": 17,
+    "int": 6,
+    "wis": 9,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Martial Fury",
+      "desc": "As a bonus action, the sword wraith can make one weapon attack. If it does so, attack rolls against it have advantage until the start of its next turn."
+    }
+  ]
+}

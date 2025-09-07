@@ -1,0 +1,55 @@
+{
+  "name": "Fruin",
+  "tags": [
+    "small",
+    "elemental",
+    "cr1/2",
+    "homebrew"
+  ],
+  "size": "Small",
+  "type": "elemental",
+  "alignment": "neutral evil",
+  "cr": "1/2 (100 XP)",
+  "hp": "22 (4d6 + 8)",
+  "ac": "10",
+  "speed": "25 ft.",
+  "saves": "Con +4",
+  "skills": "Stealth +5",
+  "immunities": "cold, poison; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "resistance": "piercing from magical attacks",
+  "conimmunities": "Poisoned",
+  "senses": "darkvision 60 ft., passive Perception 8",
+  "languages": "understands Aquan and Auran but can't speak",
+  "abilities": {
+    "str": 14,
+    "dex": 12,
+    "con": 14,
+    "int": 2,
+    "wis": 6,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Snow Body",
+      "desc": "The fruin's body is comprised of snow, and it can reform any severed parts of its body at the start of each of its turns (no action required). If the fruin spends more than 8 consecutive hours in temperatures above 40 degrees Fahrenheit, it melts, killing it."
+    },
+    {
+      "name": "Snow Camouflage",
+      "desc": "The fruin has advantage on Dexterity (Stealth) checks made to hide in snowy terrain."
+    },
+    {
+      "name": "Snow Gathering",
+      "desc": "The fruin inherently collects loose snow with its body as it moves. The fruin regains 1 hit point for every 5 feet it moves through loosely-packed and undisturbed snow that is 2 feet deep or deeper. At the GM's discretion, continued usage of this ability in one area may disturb the snow there, preventing this ability from being used there again."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 bludgeoning damage plus 3 (1d6) cold damage."
+    },
+    {
+      "name": "Glom",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: The fruin attaches to the target. When the target moves, the fruin moves with it. Each fruin attached to a creature reduces its speed by a cumulative 10 feet. If the number of fruins attached to a creature exceeds it Strength modifier (minimum 2 fruins), the creature is buried under a mound of snow. A buried creature is restrained and can't breathe. A buried creature is freed when it or another creature uses an action to make a successful DC 13 Strength (Athletics) check to excavate it, ending the effect and causing all attached fruins to appear in the nearest unoccupied spaces."
+    }
+  ]
+}

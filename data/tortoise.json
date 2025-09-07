@@ -1,0 +1,42 @@
+{
+  "name": "Tortoise",
+  "tags": [
+    "medium",
+    "beast",
+    "cr1/2",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/2 (100 XP)",
+  "hp": "25 (3d10 + 9)",
+  "ac": "16 (hide armor)",
+  "speed": "15 ft., swim 40 ft.",
+  "senses": "passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 14,
+    "dex": 4,
+    "con": 16,
+    "int": 8,
+    "wis": 10,
+    "cha": 3
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The tortoise can breathe air and water."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5ft., one target. Hit: 7 (2d4 + 2) piercing damage."
+    },
+    {
+      "name": "Withdraw",
+      "desc": "The tortoise adds 2 to its AC against an attack that would hit it by quickly withdrawing into its shell."
+    }
+  ]
+}

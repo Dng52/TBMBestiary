@@ -1,0 +1,44 @@
+{
+  "name": "Myconid Alchemist III",
+  "tags": [
+    "medium",
+    "plant",
+    "cr5",
+    "homebrew"
+  ],
+  "size": "Medium",
+  "type": "plant",
+  "alignment": "neutral evil",
+  "cr": "5 (1,800 XP)",
+  "hp": "39 (6d8 + 12)",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Stealth +6",
+  "conimmunities": "charmed, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 120 ft., passive Perception 13",
+  "languages": "Undercommon",
+  "abilities": {
+    "str": 12,
+    "dex": 16,
+    "con": 14,
+    "int": 12,
+    "wis": 10,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Stalk-still",
+      "desc": "A myconid that remains perfectly still has advantage on Dexterity (Stealth) checks made to hide."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Stone Knuckles",
+      "desc": "Melee weapon attack: +6 to hit. Hit: 6 (1d6 + 3) slashing damage."
+    },
+    {
+      "name": "Spore Bomb",
+      "desc": "Ranged weapon attack: +4 to hit, range 30/60 ft. Hit: 10 (4d4) poison damage and the target must succeed on a DC 14 Constitution saving throw or fall asleep for 1 minute. A sleeping creature is awakened if it takes damage or if another creature uses an action to awaken it."
+    }
+  ]
+}

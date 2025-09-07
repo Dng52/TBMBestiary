@@ -1,0 +1,52 @@
+{
+  "name": "Aerisi Kalinoth",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr7",
+    "elemental-evil"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "7 (2,900 XP)",
+  "hp": "66 (12d8+12)",
+  "ac": "13 (16 with mage armor)",
+  "speed": "30 ft.",
+  "skills": "Arcana +6, History +6, Perception +3",
+  "resistance": "lightning",
+  "senses": "darkvision 60 ft.",
+  "languages": "Auran, Common, Elvish",
+  "abilities": {
+    "str": 8,
+    "dex": 16,
+    "con": 12,
+    "int": 17,
+    "wis": 10,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Fey Ancestry",
+      "desc": "Aerisi has advantage on saving throws against being charmed, and magic can't put her to sleep."
+    },
+    {
+      "name": "Howling Defeat",
+      "desc": "When Aerisi drops to 0 hit points, her body disappears in a howling whirlwind that disperses quickly and harmlessly. Anything she is wearing or carrying is left behind."
+    },
+    {
+      "name": "Legendary Resistance (2/Day)",
+      "desc": "If Aerisi fails a saving throw, she can choose to succeed instead."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "Aerisi is a 12th-level spellcaster. Her spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). Aerisi has the following wizard spells prepared: * Cantrips (at will): <i>gust, mage hand, message, prestidigitation, ray of frost, shocking grasp</i> * 1st level (4 slots): <i>charm person, feather fall, mage armor, thunderwave</i> * 2nd level (3 slots): <i>dust devil, gust of wind, invisibility</i> * 3rd level (3 slots): <i>fly, gaseous form, lightning bolt</i> * 4th level (3 slots): <i>ice storm, storm sphere</i> * 5th level (2 slots): <i>cloudkill, seeming</i> (cast each day) * 6th level (1 slot): <i>chain lightning</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Windvane",
+      "desc": "Melee or Ranged Weapon Attack: +9 to hit, reach 5 ft. or range 20 ft./60 ft., one target. Hit: 9 (1d6 + 6) piercing damage, or 10 (1d8 + 6) piercing damage if used with two hands to make a melee attack, plus 3 (1d6) lightning damage."
+    }
+  ]
+}

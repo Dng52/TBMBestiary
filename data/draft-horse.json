@@ -1,0 +1,30 @@
+{
+  "name": "Draft Horse",
+  "tags": [
+    "large",
+    "beast",
+    "cr1/4",
+    "monster-manual"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/4 (50 XP)",
+  "hp": "19 (3d10+3)",
+  "ac": "10",
+  "speed": "40 ft.",
+  "abilities": {
+    "str": 18,
+    "dex": 10,
+    "con": 12,
+    "int": 2,
+    "wis": 11,
+    "cha": 7
+  },
+  "actions": [
+    {
+      "name": "Hooves",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d4 + 4) bludgeoning damage."
+    }
+  ]
+}

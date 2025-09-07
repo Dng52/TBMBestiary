@@ -1,0 +1,50 @@
+{
+  "name": "Duodrone",
+  "tags": [
+    "medium",
+    "construct",
+    "cr1/4",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "construct",
+  "alignment": "construct",
+  "cr": "1/4 (50 XP)",
+  "hp": "11 (2d8+2)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft.",
+  "senses": "truesight 120 ft.",
+  "languages": "Modron",
+  "abilities": {
+    "str": 11,
+    "dex": 13,
+    "con": 12,
+    "int": 6,
+    "wis": 10,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Axiomatic Mind",
+      "desc": "The duodrone can't be compelled to act in a manner contrary to its nature or its instructions."
+    },
+    {
+      "name": "Disintegration",
+      "desc": "If the duodrone dies, its body disintegrates into dust, leaving behind its weapons and anything else it was carrying."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The duodrone makes two fist attacks or two javelin attacks."
+    },
+    {
+      "name": "Fist",
+      "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage."
+    },
+    {
+      "name": "Javelin",
+      "desc": "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 4 (1d6 + 1) piercing damage."
+    }
+  ]
+}

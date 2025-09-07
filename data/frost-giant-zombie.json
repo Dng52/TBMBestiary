@@ -1,0 +1,57 @@
+{
+  "name": "Frost Giant Zombie",
+  "tags": [
+    "huge",
+    "undead",
+    "cr9",
+    "explorers-guide-to-wildemount"
+  ],
+  "size": "Huge",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "9 (5,000 XP)",
+  "hp": "138 (12d12 + 60)",
+  "ac": "15 (patchwork armor)",
+  "speed": "40 ft.",
+  "saves": "Wis +2",
+  "immunities": "cold, poison",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 60 ft., passive Perception 8",
+  "languages": "understands Giant but can't speak",
+  "abilities": {
+    "str": 23,
+    "dex": 6,
+    "con": 21,
+    "int": 3,
+    "wis": 6,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Numbing Aura",
+      "desc": "Any creature that starts its turn within 10 feet of the zombie must make a DC 17 Constitution saving throw. Unless the save succeeds, the creature can\u2019t make more than one attack, or take a bonus action on that turn."
+    },
+    {
+      "name": "Undead Fortitude",
+      "desc": "If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is fire, radiant, or from a critical hit. On a success, the zombie drops to 1 hit point instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The zombie makes two weapon attacks."
+    },
+    {
+      "name": "Greataxe",
+      "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 25 (3d12 + 6) slashing damage."
+    },
+    {
+      "name": "Hurl Rock",
+      "desc": "Ranged Weapon Attack: +10 to hit, range 60/240 ft., one target. Hit: 28 (4d10 + 6) bludgeoning damage."
+    },
+    {
+      "name": "Freezing Stare",
+      "desc": "The zombie targets one creature it can see within 60 feet of it. The target must succeed on a DC 17 Constitution saving throw or take 35 (10d6) cold damage and be paralyzed until the end of its next turn."
+    }
+  ]
+}

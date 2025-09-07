@@ -1,0 +1,46 @@
+{
+  "name": "Roc",
+  "tags": [
+    "gargantuan",
+    "monstrosity",
+    "cr11",
+    "monster-manual"
+  ],
+  "size": "Gargantuan",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "11 (7,200 XP)",
+  "hp": "248 (16d20+80)",
+  "ac": "15 (natural armor)",
+  "speed": "20 ft., fly 120 ft.",
+  "saves": "Dex +4, Con +9, Wis +4, Cha +3",
+  "skills": "Perception +4",
+  "abilities": {
+    "str": 28,
+    "dex": 10,
+    "con": 20,
+    "int": 3,
+    "wis": 10,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Keen Sight",
+      "desc": "The roc has advantage on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The roc makes two attacks: one with its beak and one with its talons."
+    },
+    {
+      "name": "Beak",
+      "desc": "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 27 (4d8 + 9) piercing damage."
+    },
+    {
+      "name": "Talons",
+      "desc": "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 23 (4d6 + 9) slashing damage, and the target is grappled (escape DC 19). Until this grapple ends, the target is restrained, and the roc can't use its talons on another target."
+    }
+  ]
+}

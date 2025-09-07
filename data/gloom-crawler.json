@@ -1,0 +1,47 @@
+{
+  "name": "Gloom Crawler",
+  "tags": [
+    "huge",
+    "monstrosity",
+    "cr10",
+    "tome-of-horrors"
+  ],
+  "size": "Huge",
+  "type": "monstrosity",
+  "alignment": "neutral",
+  "cr": "10 (5,900 XP)",
+  "hp": "136 (13d12 + 52)",
+  "ac": "17",
+  "speed": "20 ft., climb 20 ft.",
+  "skills": "Perception +9, Stealth +11",
+  "senses": "darkvision 60 ft., passive Perception 19",
+  "languages": "--",
+  "abilities": {
+    "str": 20,
+    "dex": 24,
+    "con": 18,
+    "int": 4,
+    "wis": 12,
+    "cha": 2
+  },
+  "traits": [
+    {
+      "name": "Hyper-Awareness",
+      "desc": "The gloom crawler has advantage on Wisdom (Perception) checks and on saving throws against being blinded."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The gloom crawler makes three tentacles attacks and one bite attack."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 16 (2d8 + 7) piercing damage."
+    },
+    {
+      "name": "Tentacles",
+      "desc": "Melee Weapon Attack: +11 to hit, reach 15 ft., one target. Hit: 23 (3d10 + 7) bludgeoning damage, and the target is grappled (escape DC 19). At the beginning of the gloom crawler\u2019s turns, it can choose to pull a grappled creature 15 feet to its mouth or constrict its tentacles to deal 10 (1d10 + 5) bludgeoning damage to the grappled target. The gloom crawler can grapple up to three different targets."
+    }
+  ]
+}

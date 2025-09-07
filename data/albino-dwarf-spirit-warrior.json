@@ -1,0 +1,44 @@
+{
+  "name": "Albino Dwarf Spirit Warrior",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "tomb-of-annihilation"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "1 (200 XP)",
+  "hp": "30 (4d8 +12)",
+  "ac": "13 (hide armor)",
+  "speed": "25 ft.",
+  "skills": "Perception +4, Stealth +3, Survival +4",
+  "resistance": "poison",
+  "senses": "darkvision 60ft., passive Perception 14",
+  "languages": "Common, Dwarvish",
+  "abilities": {
+    "str": 13,
+    "dex": 13,
+    "con": 17,
+    "int": 12,
+    "wis": 14,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Dwarven Resilience",
+      "desc": "The dwarf has advantage on saving throws against poison."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The dwarf's innate spell casting ability is Wisdom. It can inn ately cast the following spells, requiring no material components: * 1/day each: <i>hunter's mark, jump, pass without trace, speak with animals, speak with plants</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Handaxe",
+      "desc": "Melee or Ranged Weapon Attack: +3 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d6 +1) slashing damage."
+    }
+  ]
+}

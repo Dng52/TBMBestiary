@@ -1,0 +1,44 @@
+{
+  "name": "Zoblin Boss",
+  "tags": [
+    "small",
+    "undead",
+    "cr1",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Small",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "1 (200 XP)",
+  "hp": "33 (6d6 + 12)",
+  "ac": "12 (chain shirt)",
+  "speed": "30 ft.",
+  "immunities": "poison",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 60 ft., passive Perception 9",
+  "languages": "understands the languages it knew in life but can\u2019t speak",
+  "abilities": {
+    "str": 14,
+    "dex": 8,
+    "con": 14,
+    "int": 5,
+    "wis": 8,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Undead Fortitude",
+      "desc": "If damage reduces the zoblin to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zoblin drops to 1 hit point instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Scimitar",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 2 (1d4) necrotic damage."
+    },
+    {
+      "name": "Lingering Instincts",
+      "desc": "Whenever an enemy within 5ft. misses the zoblin with an attack, it can use its reaction to make a scimitar attack against that creature with disadvantage."
+    }
+  ]
+}

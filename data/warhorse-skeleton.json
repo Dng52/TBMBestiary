@@ -1,0 +1,34 @@
+{
+  "name": "Warhorse Skeleton",
+  "tags": [
+    "large",
+    "undead",
+    "cr1/2",
+    "monster-manual"
+  ],
+  "size": "Large",
+  "type": "undead",
+  "alignment": "lawful evil",
+  "cr": "1/2 (100 XP)",
+  "hp": "22 (3d10+6)",
+  "ac": "13 (barding scraps)",
+  "speed": "60 ft.",
+  "immunities": "poison",
+  "vulnerability": "bludgeoning",
+  "conimmunities": "exhaustion, poisoned",
+  "senses": "darkvision 60 ft.",
+  "abilities": {
+    "str": 18,
+    "dex": 12,
+    "con": 15,
+    "int": 2,
+    "wis": 8,
+    "cha": 5
+  },
+  "actions": [
+    {
+      "name": "Hooves",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage."
+    }
+  ]
+}

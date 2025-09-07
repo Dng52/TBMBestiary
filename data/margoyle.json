@@ -1,0 +1,54 @@
+{
+  "name": "Margoyle",
+  "tags": [
+    "medium",
+    "monstrosity",
+    "cr4",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "monstrosity",
+  "alignment": "chaotic evil",
+  "cr": "4 (1,800 XP)",
+  "hp": "68 (8d8 + 32)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft., fly 60 ft.",
+  "skills": "Stealth +4",
+  "immunities": "poison",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons not made of adamantine",
+  "conimmunities": "exhaustion, petrified, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Terran",
+  "abilities": {
+    "str": 17,
+    "dex": 15,
+    "con": 19,
+    "int": 6,
+    "wis": 10,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "False Appearance",
+      "desc": "While the gargoyle remains motionless, it is indistinguishable from a weathered, inanimate statue that is covered in fungus, lichen, and moss."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The margoyle makes three attacks: one with its bite and two with its claws; it can gore once with its horns instead of using its bite."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft.; one target. Hit: 7 (1d8 + 3) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage."
+    },
+    {
+      "name": "Gore",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage."
+    }
+  ]
+}

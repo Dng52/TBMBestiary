@@ -1,0 +1,53 @@
+{
+  "name": "Aeorian Reverser",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr8",
+    "explorers-guide-to-wildemount"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "neutral evil",
+  "cr": "8 (3,900 XP)",
+  "hp": "133 (14d10 + 56)",
+  "ac": "15 (natural armor)",
+  "speed": "40 ft., climb 40 ft.",
+  "saves": "Wis +5, Cha +2",
+  "skills": "Perception +5, Stealth +6, Survival +5",
+  "immunities": "radiant, necrotic",
+  "senses": "darkvision 120 ft., passive Perception 15",
+  "languages": "understands Draconic but can\u2019t speak",
+  "abilities": {
+    "str": 21,
+    "dex": 16,
+    "con": 18,
+    "int": 6,
+    "wis": 14,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "desc": "The reverser has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The reverser makes three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +8 to hit, range 5 ft., one creature. Hit: 11 (1d12 + 5) piercing damage plus 6 (1d12) force damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) slashing damage plus 7 (2d6) force damage."
+    },
+    {
+      "name": "Reversal",
+      "desc": "When a creature the reverser can see within 30 feet of it regains hit points, the reverser reduces the number of hit points regained to 0, and the reverser deals 13 (3d8) force damage to the creature."
+    }
+  ]
+}

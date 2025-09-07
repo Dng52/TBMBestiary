@@ -1,0 +1,50 @@
+{
+  "name": "Kobold Dragon Shaman",
+  "tags": [
+    "small",
+    "humanoid",
+    "cr1",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Small",
+  "type": "humanoid",
+  "alignment": "lawful evil",
+  "cr": "1 (200 XP)",
+  "hp": "17 (5d6)",
+  "ac": "11",
+  "speed": "30 ft.",
+  "senses": "darkvision 60 ft., passive Perception 8",
+  "languages": "Common, Draconic",
+  "abilities": {
+    "str": 8,
+    "dex": 12,
+    "con": 10,
+    "int": 8,
+    "wis": 7,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Pack Tactics",
+      "desc": "The kobold has advantage on an attack roll against a creature if at least one of the kobold\u2019s allies is within 5 feet of the creature and the ally isn\u2019t incapacitated."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The kobold\u2019s innate spellcasting ability is Charisma (spell save DC 11, +3 to hit with spell attacks). It can innately cast a number of spells, requiring no material components. The type of dragon the kobold worships determines the spells it has available, as shown below. * ***Black,*** 1/day each: <i>acid splash, fog cloud</i> * ***Blue,*** 1/day each: <i>shocking grasp, witch bolt</i> * ***Green,*** 1/day each: <i>poison spray, ray of sickness</i> * ***Red,*** 1/day each: <i>firebolt, burning hands</i> * ***White,*** 1/day each: <i>ray of frost, ice knife</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5ft., one target. Hit: 3 (1d4 + 1) slashing damage."
+    },
+    {
+      "name": "Sling",
+      "desc": "Ranged Weapon Attack: +3 to hit, range 30/120 ft., one target. Hit: 3 (1d4 + 1) bludgeoning damage."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "Deadly Hunter",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr5",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "unaligned",
+  "cr": "5 (1,800 XP)",
+  "hp": "91 (14d8 + 28)",
+  "ac": "16 (studded leather)",
+  "speed": "30 ft.",
+  "saves": "Dex +7, Wis +6",
+  "skills": "Animal Handling +6, Perception +6, Stealth +7, Survival +6",
+  "senses": "passive Perception 16",
+  "languages": "any four languages",
+  "abilities": {
+    "str": 14,
+    "dex": 18,
+    "con": 16,
+    "int": 11,
+    "wis": 17,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Vital Strikes",
+      "desc": "When the hunter hits a creature with a weapon attack, the creature takes an extra 4 (1d8) damage if it is below its hit point maximum."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The hunter makes two attacks with its shortsword or two with its longbow."
+    },
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5ft., one target. Hit: 7 (1d6 + 4) piercing damage."
+    },
+    {
+      "name": "Longbow",
+      "desc": "Ranged Weapon Attack: +9 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage."
+    },
+    {
+      "name": "Rain of Arrows (Recharge 5-6)",
+      "desc": "The hunter fires a magical arrow at a point within 150 feet. When the arrow reaches its destination, it explodes into hundreds of individual arrows that rain down and coat the battlefield in a 30 foot cone directly beneath the initial arrow\u2019s location. Each creature in this area must make a DC 14 Dexterity saving throw, taking 27 (6d8) piercing damage on a failed save, or half as much damage on a successful one."
+    },
+    {
+      "name": "Hunt Them Down (1/Day)",
+      "desc": "All creatures within 300 feet of the hunter come under the effects of the <i>hunter\u2019s mark</i> spell for the next 24 hours. After the hunter uses this ability, it makes a longbow attack against each enemy it can see within 150 feet, making a separate attack roll for each attack."
+    },
+    {
+      "name": "One With Nature",
+      "desc": "While outdoors, the hunter can take the Hide action as a bonus action on each of its turns."
+    },
+    {
+      "name": "Strike From The Shadows",
+      "desc": "When the hunter starts its turn with no one aware of its presence, if the hunter takes the Attack action this turn it may make one additional attack with its longbow or shortsword as a bonus action."
+    }
+  ]
+}

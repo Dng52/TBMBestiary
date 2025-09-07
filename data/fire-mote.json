@@ -1,0 +1,50 @@
+{
+  "name": "Fire Mote",
+  "tags": [
+    "small",
+    "elemental",
+    "cr5",
+    "strongholds-and-followers"
+  ],
+  "size": "Small",
+  "type": "elemental",
+  "alignment": "neutral",
+  "cr": "5 (1,800 XP)",
+  "hp": "49 (11d6 + 11)",
+  "ac": "13 (natural armor)",
+  "speed": "40 ft.",
+  "saves": "Dex +6",
+  "immunities": "fire",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "exhaustion, paralyzed, petrified, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "Common, Sylvan",
+  "abilities": {
+    "str": 17,
+    "dex": 16,
+    "con": 12,
+    "int": 13,
+    "wis": 11,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Fire Form",
+      "desc": "The mote can enter a hostile creature\u2019s space and stop there."
+    },
+    {
+      "name": "Annoying",
+      "desc": "An enemy in the same space as a mote must make a DC 14 Dexterity (Acrobatics) save when it moves. On a failed save, the mote moves with it. While in the same space as a mote, enemies have disadvantage on Constitution checks to maintain concentration."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The mote makes three touch attacks."
+    },
+    {
+      "name": "Touch",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) fire damage."
+    }
+  ]
+}

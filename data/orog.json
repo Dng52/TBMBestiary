@@ -1,0 +1,47 @@
+{
+  "name": "Orog",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr2",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "2 (450 XP)",
+  "hp": "42 (5d8+20)",
+  "ac": "18 (plate)",
+  "speed": "30 ft.",
+  "skills": "Intimidation +5, Survival +2",
+  "senses": "darkvision 60 ft.",
+  "languages": "Common, Orc",
+  "abilities": {
+    "str": 18,
+    "dex": 12,
+    "con": 18,
+    "int": 12,
+    "wis": 11,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Aggressive",
+      "desc": "As a bonus action, the orog can move up to its speed toward a hostile creature that it can see."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The orog makes two greataxe attacks."
+    },
+    {
+      "name": "Greataxe",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d12 + 4) slashing damage."
+    },
+    {
+      "name": "Javelin",
+      "desc": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 7 (1d6 + 4) piercing damage."
+    }
+  ]
+}

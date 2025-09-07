@@ -1,0 +1,37 @@
+{
+  "name": "Hawk",
+  "tags": [
+    "tiny",
+    "beast",
+    "cr0",
+    "monster-manual"
+  ],
+  "size": "Tiny",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "0 (10 XP)",
+  "hp": "1 (1d4-1)",
+  "ac": "13",
+  "speed": "10 ft., fly 60 ft.",
+  "skills": "Perception +4",
+  "abilities": {
+    "str": 5,
+    "dex": 16,
+    "con": 8,
+    "int": 2,
+    "wis": 14,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Keen Sight",
+      "desc": "The hawk has advantage on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Talons",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 slashing damage."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Large Spider",
+  "tags": [
+    "small",
+    "beast",
+    "cr1/4",
+    "out-of-the-box-5e"
+  ],
+  "size": "Small",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/4 (50 XP)",
+  "hp": "4 (1d6 + 1)",
+  "ac": "13",
+  "speed": "30 ft., climb 30 ft.",
+  "skills": "Stealth +4",
+  "senses": "Blindsight 10 ft., darkvision 30 ft., Passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 5,
+    "dex": 14,
+    "con": 12,
+    "int": 1,
+    "wis": 10,
+    "cha": 3
+  },
+  "traits": [
+    {
+      "name": "Spider Climb",
+      "desc": "The large spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    },
+    {
+      "name": "Web Sense",
+      "desc": "While in contact with a web, the spider knows the exact location of any creature in contact with the same web."
+    },
+    {
+      "name": "Web Walker",
+      "desc": "The spider ignores movement restrictions caused by webbing."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 4 (1d4+2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or take 7 (2d6) poison damage. If the target is reduced to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned this way."
+    }
+  ]
+}

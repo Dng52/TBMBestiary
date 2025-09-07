@@ -1,0 +1,55 @@
+{
+  "name": "Rasa Alley Stalker",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any evil alignment",
+  "cr": "1 (200 XP)",
+  "hp": "27 (5d8 + 5)",
+  "ac": "14 (leather)",
+  "speed": "30 ft.",
+  "skills": "Deception +5, Stealth +7",
+  "senses": "passive Perception 9",
+  "languages": "Common",
+  "abilities": {
+    "str": 12,
+    "dex": 16,
+    "con": 13,
+    "int": 14,
+    "wis": 8,
+    "cha": 13
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The rasa's innate spellcasting ability is Intelligence (spell save DC 12). It can innately cast the following spells, requiring no components: * At will: <i>mage hand, message</i> * 1/day each: <i>disguise self, silent image</i>"
+    },
+    {
+      "name": "Mask of Shadows",
+      "desc": "The alley stalker has a mask enchanted to make them a threat in shadowed areas and when striking the first blow on an enemy. The alley stalker has advantage on stealth checks and its attacks against surprised enemies are always considered a critical hit."
+    },
+    {
+      "name": "Inscrutable Intentions",
+      "desc": "The rasa is immune to any magical effects to determine if it is lying."
+    },
+    {
+      "name": "Sight of the Rasa",
+      "desc": "The rasa share a special sight that is invisible to all non-rasa creatures. As an action, a rasa can touch a creature and place a secret mark on that creature's chest. This mark lets other rasa know whether or not this creature should be regarded as a friend or a foe."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The rasa makes two melee attacks."
+    },
+    {
+      "name": "Poisoned Dagger",
+      "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 2 (1d4) poison damage."
+    }
+  ]
+}

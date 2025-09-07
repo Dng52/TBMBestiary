@@ -1,0 +1,62 @@
+{
+  "name": "Coral Drake",
+  "tags": [
+    "medium",
+    "dragon",
+    "cr7",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "dragon",
+  "alignment": "neutral evil",
+  "cr": "7 (2900 XP)",
+  "hp": "127 (15d8 + 60)",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft., swim 60 ft.",
+  "saves": "Dex +6",
+  "skills": "Acrobatics +6, Perception +4, Stealth +6",
+  "resistance": "cold",
+  "conimmunities": "paralyzed, poisoned, prone, unconscious",
+  "senses": "darkvision 120 ft., passive Perception 17",
+  "languages": "Draconic",
+  "abilities": {
+    "str": 19,
+    "dex": 1,
+    "con": 18,
+    "int": 10,
+    "wis": 13,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Camouflage",
+      "desc": "A coral drake's coloration and shape lend to its stealth, granting the creature advantage on all Stealth checks while it's underwater."
+    },
+    {
+      "name": "Water Breathing",
+      "desc": "The coral drake can breathe only underwater."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The coral drake makes one bite attack, one claw attack, and one stinger attack."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 22 (4d8 +4) slashing damage."
+    },
+    {
+      "name": "Stinger",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 15 (2d10 + 4) piercing damage, and the target must succeed on a DC 15 Constitution saving throw or take 7 (2d6) poison damage at the start of each of its turns for 4 rounds. The creature can repeat the saving throw at the end of its turns, ending the effect on itself on a success."
+    },
+    {
+      "name": "Breath Weapon (Recharge 5-6)",
+      "desc": "Coral drakes nurture their offspring in specialized throat sacs. They can pressurize these sacs to spew forth a 15-foot cone of spawn. Each target in this area takes 21 (6d6) piercing damage from thousands of tiny bites and is blinded for 1d4 rounds; a successful DC 15 Dexterity saving throw reduces the damage by half and negates the blindness."
+    }
+  ]
+}

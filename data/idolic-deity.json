@@ -1,0 +1,64 @@
+{
+  "name": "Idolic Deity",
+  "tags": [
+    "small",
+    "construct",
+    "cr8",
+    "tome-of-beasts"
+  ],
+  "size": "Small",
+  "type": "construct",
+  "alignment": "neutral evil",
+  "cr": "8 (3900 XP)",
+  "hp": "90 (12d6 + 48)",
+  "ac": "17 (natural armor)",
+  "speed": "0 ft., fly 30 ft.",
+  "saves": "Wis +3",
+  "skills": "Deception +8, Stealth +8",
+  "immunities": "poison",
+  "resistance": "cold; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "vulnerability": "fire",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "telepathy 60 ft.",
+  "abilities": {
+    "str": 14,
+    "dex": 20,
+    "con": 18,
+    "int": 10,
+    "wis": 11,
+    "cha": 20
+  },
+  "traits": [
+    {
+      "name": "Stealth in darkness",
+      "desc": "The idolic diety gains an additional +3 to Stealth (+11 in total) in dim light or darkness."
+    },
+    {
+      "name": "Apostasy Aura",
+      "desc": "The idolic deity's presence causes devout followers to doubt their faith. A cleric or paladin that can see the idolic deity and wishes to cast a spell or use a class feature must make a DC 16 Wisdom saving throw. On a failed save, the spell or class feature is spent as if it was used, but it has no effect."
+    },
+    {
+      "name": "Incorporeal Movement",
+      "desc": "The idolic deity can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
+    },
+    {
+      "name": "Shadow Stealth",
+      "desc": "While in dim light or darkness, the idolic deity can take the Hide action as a bonus action."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The idolic deity uses Seduce the Righteous and makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) bludgeoning damage plus 18 (4d8) psychic damage."
+    },
+    {
+      "name": "Seduce the Righteous",
+      "desc": "The idolic deity targets one creature it can see within 30 feet. The target has disadvantage on attack rolls, saving throws, or ability checks (the idolic deity chooses which) until the end of its next turn. A protection from evil and good spell cast on the target prevents this effect, as does a magic circle."
+    }
+  ]
+}

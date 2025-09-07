@@ -1,0 +1,55 @@
+{
+  "name": "Veteran Outlaw",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr3",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any non-lawful alignment",
+  "cr": "3 (700 XP)",
+  "hp": "78 (12d8 + 24)",
+  "ac": "15 (studded leather)",
+  "speed": "30 ft.",
+  "skills": "Deception +5, Insight +6, Sleight of Hand +7",
+  "senses": "passive Perception 12",
+  "languages": "Any one language (usually Common)",
+  "abilities": {
+    "str": 16,
+    "dex": 16,
+    "con": 14,
+    "int": 10,
+    "wis": 14,
+    "cha": 13
+  },
+  "traits": [
+    {
+      "name": "Experienced Insight",
+      "desc": "The outlaw has advantage on initiative rolls."
+    },
+    {
+      "name": "Throwing Specialty",
+      "desc": "A thrown weapon deals one extra die of its damage when the outlaw hits with it (included in the attack)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The outlaw makes two melee attacks or three ranged attacks with its daggers. No more than one of these attacks can be a poisoned dagger."
+    },
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+    },
+    {
+      "name": "Dagger",
+      "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage or 8 (2d4 + 3) piercing damage if thrown."
+    },
+    {
+      "name": "Poisoned Dagger (3/Day)",
+      "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage or 8 (2d4 + 3) piercing damage if thrown, and the target must succeed on a DC 13 Constitution saving throw or take 7 (2d6) poison damage"
+    }
+  ]
+}

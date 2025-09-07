@@ -1,0 +1,45 @@
+{
+  "name": "Tlincalli",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr5",
+    "volos-guide"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "neutral evil",
+  "cr": "5 (1,800 XP)",
+  "hp": "85 (10d10+30)",
+  "ac": "15 (natural armor)",
+  "speed": "40 ft.",
+  "skills": "Perception +4, Stealth +4, Survival +4",
+  "senses": "darkvision 60 ft.",
+  "languages": "Tlincalli",
+  "abilities": {
+    "str": 16,
+    "dex": 13,
+    "con": 16,
+    "int": 8,
+    "wis": 12,
+    "cha": 8
+  },
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The tlincalli makes two attacks: one with its longsword or spiked chain, and one with its sting."
+    },
+    {
+      "name": "Longsword",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8+3) slashing damage, or 8 (1d10+3) slashing damage if used with two hands."
+    },
+    {
+      "name": "Spiked Chain",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 6 (1d6+3) piercing damage, and the target is grappled (escape DC 11) if it is a Large or smaller creature. Until this grapple ends, the target is restrained, and the tlincalli can't use the spiked chain against another target."
+    },
+    {
+      "name": "Sting",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 6 (1d6+3) piercing damage plus 14 (4d6) poison damage, and the target must succeed on a DC 14 Constitution saving throw or be poisoned for 1 minute. If it fails the saving throw by 5 or more, the target is also paralyzed while poisoned. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    }
+  ]
+}

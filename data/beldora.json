@@ -1,0 +1,41 @@
+{
+  "name": "Beldora",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr0",
+    "storm-kings-thunder"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic good",
+  "cr": "0 (10 XP)",
+  "hp": "18 (4d8)",
+  "ac": "12",
+  "speed": "30 ft.",
+  "skills": "Deception +5, Insight +3, Investigation +5, Perception +5, Persuasion +5",
+  "senses": "qpassive Perception 13",
+  "languages": "Common, Draconic, Dwarvish, Halfling",
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 10,
+    "int": 16,
+    "wis": 12,
+    "cha": 16
+  },
+  "actions": [
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) slashing damage, ."
+    },
+    {
+      "name": "Hand Crossbow",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6+2) piercing damage. Beldora carries ten crossbow bolts."
+    },
+    {
+      "name": "Duck and Cover",
+      "desc": "Beldora adds 2 to her AC against on melee attack that would hit her. To do so, Duvessa must see the attacker and can't be grappled or restrained."
+    }
+  ]
+}

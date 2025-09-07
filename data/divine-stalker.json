@@ -1,0 +1,60 @@
+{
+  "name": "Divine Stalker",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr5",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "5 (1,800 XP)",
+  "hp": "81 (6d10 + 4d8 + 30)",
+  "ac": "16 (breastplate)",
+  "speed": "30 ft.",
+  "saves": "Str +6, Dex +8",
+  "skills": "Acrobatics +8, Medicine +7, Religion +4, Survival +7",
+  "senses": "passive Perception 13",
+  "languages": "Any two languages",
+  "abilities": {
+    "str": 14,
+    "dex": 18,
+    "con": 16,
+    "int": 10,
+    "wis": 16,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Combat Caster",
+      "desc": "The stalker can perform the somatic components of spells even when it has weapons or a shield in one or both hands."
+    },
+    {
+      "name": "Divine Arrows",
+      "desc": "The stalker magically infuses each of its arrows with divine energy. Its longbow attacks deal an additional 4 (1d8) radiant damage (included in the attack)."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The stalker is a 9th-level spellcaster. Its spellcasting ability is wisdom (spell save DC 15, +7 to hit with spell attacks). The stalker has the following ranger and cleric spells prepared: * Cantrips (at will): <i>mending, resistance</i> * 1st level (4 slots): <i>charm person, disguise self, fog cloud, hunter's mark</i> * 2nd level (3 slots): <i>find traps, spike growth, spiritual weapon</i> * 3rd level (3 slots): <i>conjure barrage, lightning arrow</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The stalker makes three attacks with its shortsword or two attacks with its longbow."
+    },
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage."
+    },
+    {
+      "name": "Longbow",
+      "desc": "Ranged Weapon Attack: +10 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage plus 4 (1d8) radiant damage."
+    },
+    {
+      "name": "Warding Arrow (1/Day)",
+      "desc": "The stalker fires an arrow at a location it can see within range of its longbow. When this arrow strikes its mark, it unleashes a pulse of protective energies. Each creature of the stalker's choice within 10 feet of the arrow gain 15 temporary hit points."
+    }
+  ]
+}

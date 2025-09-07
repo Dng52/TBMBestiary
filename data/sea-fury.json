@@ -1,0 +1,61 @@
+{
+  "name": "Sea Fury",
+  "tags": [
+    "medium",
+    "fey",
+    "cr12",
+    "explorers-guide-to-wildemount"
+  ],
+  "size": "Medium",
+  "type": "fey",
+  "alignment": "chaotic evil",
+  "cr": "12 (8,400 XP)",
+  "hp": "105 (14d8 + 42)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft., swim 50 ft.",
+  "skills": "Deception +8, Insight +5, Perception +5, Stealth +6",
+  "immunities": "cold, fire, poison; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered",
+  "conimmunities": "paralyzed, poisoned",
+  "senses": "darkvision 120 ft., passive Perception 15",
+  "languages": "Aquan, Common, Giant",
+  "abilities": {
+    "str": 19,
+    "dex": 15,
+    "con": 16,
+    "int": 12,
+    "wis": 12,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The sea fury can breathe air and water."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The sea fury\u2019s innate spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no material components: * At will: <i>witch bolt</i> * 1/day each: <i>bestow curse, fear, thunderwave</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "desc": "If the sea fury fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The sea fury has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The sea fury makes two attacks with its claws."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage."
+    },
+    {
+      "name": "Death Glare",
+      "desc": "The sea fury targets one frightened creature it can see within 30 feet of it. The target must succeed on a DC 16 Wisdom saving throw or drop to 0 hit points."
+    }
+  ]
+}

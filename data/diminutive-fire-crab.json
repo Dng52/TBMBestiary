@@ -1,0 +1,45 @@
+{
+  "name": "Diminutive Fire Crab",
+  "tags": [
+    "small",
+    "elemental",
+    "cr2",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "elemental",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "22 (4d6 + 8)",
+  "ac": "13 (natural armor)",
+  "speed": "20 ft., swim 20 ft.",
+  "immunities": "fire",
+  "vulnerability": "cold",
+  "conimmunities": "charmed",
+  "senses": "darkvision 60 ft., tremorsense 60 ft., passive Perception 10",
+  "languages": "understands Ignan but can't speak",
+  "abilities": {
+    "str": 14,
+    "dex": 14,
+    "con": 14,
+    "int": 2,
+    "wis": 10,
+    "cha": 2
+  },
+  "traits": [
+    {
+      "name": "Heated Body",
+      "desc": "A creature that touches the fire crab or hits it with a melee attack while within 5 feet of it takes 3 (1d6) fire damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The diminutive fire crab makes two claw attacks."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage plus 3 (1d6) fire damage."
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "Meazel",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "1 (200 XP)",
+  "hp": "35  (10d8 - 10)",
+  "ac": "13",
+  "speed": "30 ft.",
+  "skills": "Perception +3, Stealth +5",
+  "senses": "darkvision 120 ft., passive Perception 13",
+  "languages": "Common",
+  "abilities": {
+    "str": 8,
+    "dex": 17,
+    "con": 9,
+    "int": 14,
+    "wis": 13,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Shadow Stealth",
+      "desc": "While in dim light or darkness, the meazel can take the Hide action as a bonus action."
+    }
+  ]
+}

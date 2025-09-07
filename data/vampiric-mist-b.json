@@ -1,0 +1,48 @@
+{
+  "name": "Vampiric Mist (B)",
+  "tags": [
+    "medium",
+    "undead",
+    "cr3",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "chaotic evil",
+  "cr": "3 (700 XP)",
+  "hp": "30  (4d8 + 12)",
+  "ac": "13",
+  "speed": "0 ft., fly 30 ft. (hover)",
+  "saves": "Wis +3",
+  "immunities": "poison",
+  "resistance": "acid, cold, lightning, necrotic, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "-",
+  "abilities": {
+    "str": 6,
+    "dex": 16,
+    "con": 16,
+    "int": 6,
+    "wis": 12,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Life Sense",
+      "desc": "The mist can sense the location of any creature within 60 feet of it, unless that creature's type is construct or undead."
+    },
+    {
+      "name": "Forbiddance",
+      "desc": "The mist can't enter a residence without an invitation from one of the occupants."
+    },
+    {
+      "name": "Misty Form",
+      "desc": "The mist can occupy another creature's space and vice versa. In addition, if air can pass through a space, the mist can pass through it without squeezing. Each foot of movement in water costs it 2 extra feet, rather than 1 extra foot. The mist can't manipulate objects in any way that requires fingers or manual dexterity."
+    },
+    {
+      "name": "Sunlight Hypersensitivity",
+      "desc": "The mist takes 10 radiant damage whenever it starts its turn in sunlight. While in sunlight, the mist has disadvantage on attack rolls and ability checks."
+    }
+  ]
+}

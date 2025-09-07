@@ -1,0 +1,33 @@
+{
+  "name": "The Hungry",
+  "tags": [
+    "medium",
+    "monstrosity",
+    "cr11",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "monstrosity",
+  "alignment": "neutral evil",
+  "cr": "11 (7200 XP)",
+  "hp": "225  (30d8 + 90)",
+  "ac": "17 (natural armor)",
+  "speed": "30 ft.",
+  "resistance": "bludgeoning, piercing, and slashing while in dim light or darkness",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Common",
+  "abilities": {
+    "str": 19,
+    "dex": 10,
+    "con": 17,
+    "int": 6,
+    "wis": 11,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Life Hunger",
+      "desc": "If a creature the Hungry can see regains hit points, the Hungry gains two benefits until the end of its next turn: it has advantage on attack rolls, and its bite deals an extra 22 (4d10) necrotic damage on a hit."
+    }
+  ]
+}

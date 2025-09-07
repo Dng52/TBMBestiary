@@ -1,0 +1,57 @@
+{
+  "name": "Lesser Lightning Elemental",
+  "tags": [
+    "medium",
+    "elemental",
+    "cr3",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "neutral",
+  "cr": "3 (700 XP)",
+  "hp": "45 (6d8 + 18)",
+  "ac": "14",
+  "speed": "0 ft., fly 50 ft.",
+  "immunities": "lightning, poison",
+  "resistance": "acid, fire; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Auran",
+  "abilities": {
+    "str": 14,
+    "dex": 18,
+    "con": 16,
+    "int": 4,
+    "wis": 11,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Lightning",
+      "desc": "A creature that touches the lightning elemental or hits it with a melee attack while within 5 feet of it takes 7 (2d6) lightning damage."
+    },
+    {
+      "name": "Water Susceptibility",
+      "desc": "For every 5 feet that the lightning elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The lightning elemental makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) lightning damage."
+    },
+    {
+      "name": "Lightning Bolt",
+      "desc": "Ranged Spell Attack: +6 to hit, range 20/60 ft., one target. Hit: 22 (4d8 + 4) lightning damage."
+    },
+    {
+      "name": "Globe Lightning (1/Long Rest)",
+      "desc": "The lightning elemental discharges 3 globes of electricity that hover in its space for 1 minute. Whenever a creature enters or starts its turn within 5 feet of the elemental, one of the globes discharges. The target must make a DC 14 Dexterity saving throw, taking 7 (1d6 + 4) lightning damage on a failed saving throw, or half as much damage on a successful one. As each globe discharges, it disappears."
+    }
+  ]
+}

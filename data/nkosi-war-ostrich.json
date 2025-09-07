@@ -1,0 +1,46 @@
+{
+  "name": "Nkosi War Ostrich",
+  "tags": [
+    "large",
+    "beast",
+    "cr1/2",
+    "tome-of-beasts"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/2 (100 XP)",
+  "hp": "42 (5d10 + 15)",
+  "ac": "11",
+  "speed": "60 ft.",
+  "senses": ", passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 15,
+    "dex": 12,
+    "con": 16,
+    "int": 2,
+    "wis": 10,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Standing Leap",
+      "desc": "The ostrich can jump horizontally up to 20 feet and vertically up to 10 feet, with or without a running start."
+    },
+    {
+      "name": "Battle Leaper",
+      "desc": "If a riderless ostrich jumps at least 10 feet and lands within 5 feet of a creature, it has advantage on attacks against that creature this turn."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The ostrich makes two kicking claw attacks."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage."
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "name": "Ala",
+  "tags": [
+    "medium",
+    "fey",
+    "cr8",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "fey",
+  "alignment": "chaotic evil",
+  "cr": "8 (3900 XP)",
+  "hp": "127 (15d8 + 60)",
+  "ac": "17 (natural armor)",
+  "speed": "30 ft., fly 40 ft.",
+  "skills": "Athletics +8, Perception +9, Stealth +6",
+  "immunities": "lightning, poison, thunder",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 60 ft., passive Perception 19",
+  "languages": "Common, Draconic",
+  "abilities": {
+    "str": 20,
+    "dex": 16,
+    "con": 18,
+    "int": 10,
+    "wis": 16,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Flyby",
+      "desc": "The ala doesn't provoke an opportunity attack when it flies out of an enemy's reach."
+    },
+    {
+      "name": "Poison Flesh",
+      "desc": "The ala's poison infuses its flesh. A creature that makes a successful bite attack against an ala must make a DC 16 Constitution saving throw; if it fails, the creature takes 10 (3d6) poison damage."
+    },
+    {
+      "name": "Storm's Strength",
+      "desc": "If an electrical storm is raging around an ala and its target, the saving throw against Lightning's Kiss is made with disadvantage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The ala makes two claw attacks or one claw and one bite attack."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 10 (1d10 + 5) piercing damage, and the target must succeed on a DC 16 saving throw or take 10 (3d6) poison damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) slashing damage."
+    },
+    {
+      "name": "Lightning's Kiss (Recharge 5-6)",
+      "desc": "One target within 50 feet must make a DC 16 Dexterity saving throw. It takes 28 (8d6) lightning damage on a failed save, or half as much damage on a successful one."
+    }
+  ]
+}

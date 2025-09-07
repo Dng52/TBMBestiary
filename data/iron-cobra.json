@@ -1,0 +1,35 @@
+{
+  "name": "Iron Cobra",
+  "tags": [
+    "medium",
+    "construct",
+    "cr4",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "construct",
+  "alignment": "unaligned",
+  "cr": "4 (1100 XP)",
+  "hp": "45  (7d8 + 14)",
+  "ac": "13",
+  "speed": "30 ft.",
+  "skills": "Stealth +7",
+  "immunities": "poison; bludgeoning, piercing, and slashing from nonmagical attacks that aren't adamantine",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "understands one language of its creator but can't speak",
+  "abilities": {
+    "str": 12,
+    "dex": 16,
+    "con": 14,
+    "int": 3,
+    "wis": 10,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "desc": "The iron cobra has advantage on saving throws against spells and other magical effects."
+    }
+  ]
+}

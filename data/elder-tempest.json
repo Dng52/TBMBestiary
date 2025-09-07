@@ -1,0 +1,52 @@
+{
+  "name": "Elder Tempest",
+  "tags": [
+    "gargantuan",
+    "elemental",
+    "cr23",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Gargantuan",
+  "type": "elemental",
+  "alignment": "neutral",
+  "cr": "23 (50,000 XP)",
+  "hp": "264  (16d20 + 96)",
+  "ac": "19",
+  "speed": "0 ft., fly 120 ft. (hover)",
+  "saves": "Wis +12, Cha +11",
+  "immunities": "lightning, poison, thunder",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, stunned",
+  "senses": "darkvision 60 ft., passive Perception 15",
+  "languages": "-",
+  "abilities": {
+    "str": 23,
+    "dex": 28,
+    "con": 23,
+    "int": 2,
+    "wis": 21,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Air Form",
+      "desc": "The tempest can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+    },
+    {
+      "name": "Flyby",
+      "desc": "The tempest doesn't provoke opportunity attacks when it flies out of an enemy's reach."
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "desc": "If the tempest fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Living Storm",
+      "desc": "The tempest is always at the center of a storm 1d6 + 4 miles in diameter. Heavy precipitation in the form of either rain or snow falls there, causing the area to be lightly obscured. Heavy rain also extinguishes open flames and imposes disadvantage on Wisdom (Perception) checks that rely on hearing. In addition, strong winds swirl in the area covered by the storm. The winds impose disadvantage on ranged attack rolls. The winds extinguish open flames and disperse fog."
+    },
+    {
+      "name": "Siege Monster",
+      "desc": "The tempest deals double damage to objects and structures."
+    }
+  ]
+}

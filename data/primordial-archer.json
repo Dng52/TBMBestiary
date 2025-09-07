@@ -1,0 +1,52 @@
+{
+  "name": "Primordial Archer",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr4",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "4 (1,100 XP)",
+  "hp": "77 (14d8 + 14)",
+  "ac": "15 (leather)",
+  "speed": "30 ft.",
+  "saves": "Dex +6, Str +2",
+  "skills": "Nature +3, Perception +5, Stealth +8, Survival +5",
+  "senses": "passive Perception 15",
+  "languages": "any two languages",
+  "abilities": {
+    "str": 10,
+    "dex": 19,
+    "con": 12,
+    "int": 12,
+    "wis": 16,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Elemental Arrows",
+      "desc": "Whenever the archer draws an arrow from its quiver, the archer can imbue it with elemental magics, imbuing the arrow with special properties depending on the element chosen: * Fire \u2013 The arrow deals an additional 7 (2d6) fire damage. * Ice \u2013 Any creature hit by this arrow takes an additional 3 (1d6) cold damage and has its movement speed reduced by 10 feet on its next turn. * Poison \u2013 Any creature hit by this arrow must succeed on a DC 13 Constitution saving throw or become poisoned until the end of its next turn. * Lightning \u2013 Any creature hit by this arrow takes an additional 3 (1d6) lightning damage and can\u2019t use reactions until its next turn."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The archer uses its overcharged shot if able, then makes two attacks with its longbow."
+    },
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage."
+    },
+    {
+      "name": "Longbow",
+      "desc": "Ranged Weapon Attack: +6 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage."
+    },
+    {
+      "name": "Overcharged Shot (Recharge 5-6)",
+      "desc": "The next arrow the archer fires this turn gains the effects of two elemental arrows instead of one."
+    }
+  ]
+}

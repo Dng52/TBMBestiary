@@ -1,0 +1,48 @@
+{
+  "name": "Headstrong Smasher",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "1 (200 XP)",
+  "hp": "26 (3d12 + 9)",
+  "ac": "13 (unarmored defense)",
+  "speed": "30 ft.",
+  "saves": "Str +5, Con +5",
+  "skills": "Athletics +5, Survival +3",
+  "senses": "passive Perception 11",
+  "languages": "Any two languages",
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 16,
+    "int": 8,
+    "wis": 12,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Danger Sense",
+      "desc": "The smasher has advantage on Dexterity saving throws."
+    },
+    {
+      "name": "Rage (2/Day)",
+      "desc": "As a bonus action, the smasher can enter a rage for 1 minute. While raging, the smasher gains the following benefits: * Advantage on Strength checks and Strength saving throws * Melee weapon attacks deal an addition 2 damage. * The smasher gains resistance to bludgeoning, piercing, and slashing damage."
+    },
+    {
+      "name": "Unarmored Defense",
+      "desc": "While not wearing armor, the smasher's AC includes its Constitution modifier."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Maul",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage, or 12 (2d6 + 5) bludgeoning damage if raging."
+    }
+  ]
+}

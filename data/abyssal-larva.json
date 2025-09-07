@@ -1,0 +1,45 @@
+{
+  "name": "Abyssal Larva",
+  "tags": [
+    "medium",
+    "fiend",
+    "cr1/2",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "1/2 (100 XP)",
+  "hp": "39 (6d8 + 12)",
+  "ac": "12 (natural armor)",
+  "speed": "20 ft.",
+  "skills": "Perception +2, Stealth +2",
+  "immunities": "psychic",
+  "resistance": "acid, cold, fire",
+  "conimmunities": "charmed, frightened",
+  "languages": "Abyssal",
+  "abilities": {
+    "str": 10,
+    "dex": 13,
+    "con": 14,
+    "int": 3,
+    "wis": 10,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Tortured Mind",
+      "desc": "The mind of an Abyssal larva cannot be read. If a creature attempts to read an Abyssal larva\u2019s mind, it takes 7 (2d6) psychic damage and must succeed on a DC 12 Wisdom saving throw. On a failed saving throw, the creature is poisoned for 1 minute. While poisoned, the creature cannot take reactions and uses their action to Dash in a random direction, even if that leads them into dangerous areas."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) piercing damage plus 5 (2d4) acid damage."
+    },
+    {
+      "name": "Maggot Spray",
+      "desc": "Ranged Spell Attack: +3 to hit, range 10 ft., one target. Hit: 1 poison damage and the target must succeed a DC 12 Dexterity saving throw or be poisoned for 1 minute. A poisoned creature can make a DC 12 Constitution saving throw at the end of each of its turns, ending the poisoned effect on a success."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "Oinoloth",
+  "tags": [
+    "medium",
+    "fiend",
+    "cr12",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "fiend",
+  "alignment": "neutral evil",
+  "cr": "12 (8400 XP)",
+  "hp": "126  (12d10 + 60)",
+  "ac": "17 (natural armor)",
+  "speed": "40 ft.",
+  "saves": "Con +8, Wis +7",
+  "skills": "Deception +8, Intimidation +8, Perception +7",
+  "immunities": "acid, poison",
+  "resistance": "cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "poisoned",
+  "senses": "blindsight 60 ft., darkvision 60 ft., passive Perception 17",
+  "languages": "Abyssal, Infernal, telepathy 60 ft.",
+  "abilities": {
+    "str": 19,
+    "dex": 17,
+    "con": 18,
+    "int": 17,
+    "wis": 16,
+    "cha": 19
+  },
+  "traits": [
+    {
+      "name": "Bringer of Plagues (Recharge 5-6)",
+      "desc": "As a bonus action, the oinoloth blights the area within 30 feet of it. The blight lasts for 24 hours. While blighted, all normal plants in the area wither and die, and the number of hit points restored by a spell to a creature in that area is halved. Furthermore, when a creature moves into the blighted area or starts its turn there, that creature must make a DC 16 Constitution saving throw. On a successful save, the creature is immune to the oinoloth's Bringer of Plagues for the next 24 hours. On a failed save, the creature takes 14 (4d6) necrotic damage and is poisoned. The poisoned creature can't regain hit points. After every 24 hours that elapse, the poisoned creature can repeat the saving throw. On a failed save, the creature's hit point maximum is reduced by 5 (1d10). This reduction lasts until the poison ends, and the target dies if its hit point maximum is reduced to 0. The poison ends after the creature successfully saves against it three times."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The oinoloth's innate spellcasting ability is Charisma (spell save DC 16). It can innately cast the following spells, requiring no material components: * At will: <i>darkness, detect magic, dispel magic, invisibility </i>(self only) * 1/day each: <i>feeblemind, globe of invulnerability, wall of fire, wall of ice</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The oinoloth has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The oinoloth's weapon attacks are magical."
+    }
+  ]
+}

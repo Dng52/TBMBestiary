@@ -1,0 +1,40 @@
+{
+  "name": "Adult Kruthik",
+  "tags": [
+    "medium",
+    "monstrosity",
+    "cr2",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "39  (6d8 + 12)",
+  "ac": "18 (natural armor)",
+  "speed": "40 ft., burrow 20 ft., climb 40 ft.",
+  "senses": "darkvision 60 ft., tremorsense 60 ft., passive Perception 11",
+  "languages": "Kruthik",
+  "abilities": {
+    "str": 15,
+    "dex": 16,
+    "con": 15,
+    "int": 7,
+    "wis": 12,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "desc": "The kruthik has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Pack Tactics",
+      "desc": "The kruthik has advantage on an attack roll against a creature if at least one of the kruthik's allies is within 5 feet of the creature and the ally isn't incapacitated."
+    },
+    {
+      "name": "Tunneler",
+      "desc": "The kruthik can burrow through solid rock at half its burrowing speed and leaves a 5-foot-diameter tunnel in its wake."
+    }
+  ]
+}

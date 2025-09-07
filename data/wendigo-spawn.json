@@ -1,0 +1,49 @@
+{
+  "name": "Wendigo Spawn",
+  "tags": [
+    "medium",
+    "fiend",
+    "cr4",
+    "homebrew"
+  ],
+  "size": "Medium",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "4 (1,100 XP)",
+  "hp": "58 (6d8 + 31)",
+  "ac": "16 (chain mail)",
+  "speed": "30 ft.",
+  "saves": "Dex +5",
+  "resistance": "cold",
+  "vulnerability": "fire",
+  "senses": "darkvision 60 ft., passive Perception 14",
+  "languages": "Infernal",
+  "abilities": {
+    "str": 16,
+    "dex": 16,
+    "con": 16,
+    "int": 6,
+    "wis": 15,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Divided Mind",
+      "desc": "The Wendigo Spawn still has some memories from its host body, granting it advantage on all Wisdom saving throws."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The Wendigo Spawn  makes one warhammer and one bite attack against the same target."
+    },
+    {
+      "name": "Warhammer",
+      "desc": "+5 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 3) bludgeoning damage."
+    },
+    {
+      "name": "Bite",
+      "desc": "+5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "Giant Rhinoceros Beetle",
+  "tags": [
+    "large",
+    "beast",
+    "cr7",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "7 (2,900 XP)",
+  "hp": "114 (12d10 + 48)",
+  "ac": "15 (natural armor)",
+  "speed": "20 ft.",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 23,
+    "dex": 10,
+    "con": 18,
+    "int": 1,
+    "wis": 10,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Charge",
+      "desc": "If the giant rhinoceros beetle moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 16 Strength saving throw or be knocked prone. If the target is prone, the giant rhinoceros beetle can make one slam attack against it as a bonus action."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The giant rhinoceros beetle makes three attacks: one bite, one gore, and one slam."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) piercing damage."
+    },
+    {
+      "name": "Gore",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) piercing damage."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 13 (2d6 + 6) bludgeoning damage."
+    }
+  ]
+}

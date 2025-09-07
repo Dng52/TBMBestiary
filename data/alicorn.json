@@ -1,0 +1,84 @@
+{
+  "name": "Alicorn",
+  "tags": [
+    "large",
+    "celestial",
+    "cr5",
+    "strongholds-and-followers"
+  ],
+  "size": "Large",
+  "type": "celestial",
+  "alignment": "lawful good",
+  "cr": "5 (1,800 XP)",
+  "hp": "76 (9d10 + 27)",
+  "ac": "13",
+  "speed": "60 ft., fly 90 ft.",
+  "saves": "Dex +6, Wis +6, Cha +6",
+  "skills": "Perception +6",
+  "immunities": "poison",
+  "conimmunities": "charmed, paralyzed, poisoned",
+  "senses": "truesight 60 ft., passive Perception 16",
+  "languages": "Celestial, Elvish, Sylvan, telepathy 60 ft.",
+  "abilities": {
+    "str": 19,
+    "dex": 16,
+    "con": 16,
+    "int": 11,
+    "wis": 17,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Charge",
+      "desc": "If the alicorn moves at least 20 feet straight toward a target and then hits it with a horn attack on the same turn, the target takes an extra 9 (2d8), Unit piercing damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The alicorn\u2019s innate spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring no components: * At will: <i>detect evil and good, druidcraft, pass without trace</i> * 1/day each: <i>calm emotions, dispel evil and good, entangle</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The alicorn has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The alicorn\u2019s weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The alicorn makes one attack with its hooves and one attack with its horn."
+    },
+    {
+      "name": "Hooves",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Horn",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage."
+    },
+    {
+      "name": "Healing Touch (3/Day)",
+      "desc": "The alicorn touches another creature with its horn. The target magically restores 11 (2d8 + 2) hit points. In addition, the touch removes all diseases and neutralizes all poisons afflicting the target."
+    },
+    {
+      "name": "Teleport (1/Day)",
+      "desc": "The alicorn magically teleports itself and up to three willing creatures it can see within 5 feet of it, along with any equipment they are wearing or carrying, to a location the alicorn is familiar with, up to 1 mile away."
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Hooves",
+      "desc": "The alicorn makes one attack with its hooves."
+    },
+    {
+      "name": "Prismatic Barrier (Costs 2 Actions)",
+      "desc": "The alicorn creates a prismatic, magical field around itself or another creature it can see within 60 feet of it. The target gains a +2 bonus to AC until the end of the alicorn\u2019s next turn."
+    },
+    {
+      "name": "Heal Self (Costs 3 Actions)",
+      "desc": "The alicorn magically restores 11 (2d8 + 2) hit points."
+    }
+  ]
+}

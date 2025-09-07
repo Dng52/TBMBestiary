@@ -1,0 +1,44 @@
+{
+  "name": "Rakklethorn Toad",
+  "tags": [
+    "small",
+    "monstrosity",
+    "cr1/2",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "monstrosity",
+  "alignment": "neutral",
+  "cr": "1/2 (100 XP)",
+  "hp": "13 (3d6 + 3)",
+  "ac": "13 (natural armor)",
+  "speed": "20 ft.",
+  "immunities": "poison",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 10,
+    "dex": 15,
+    "con": 12,
+    "int": 2,
+    "wis": 10,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "desc": "The rakklethorn toad has advantage on Wisdom (Perception) checks that rely on smell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Thorn Volley",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 50 ft., one target. Hit: 5 (1d6 + 2) slashing damage, and the target must succeed on a DC 11 Constitution saving throw or become poisoned for 1 hour."
+    }
+  ]
+}

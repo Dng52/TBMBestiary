@@ -1,0 +1,48 @@
+{
+  "name": "Wastrilith",
+  "tags": [
+    "large",
+    "fiend",
+    "cr13",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Large",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "13 (10,000 XP)",
+  "hp": "157  (15d10 + 75)",
+  "ac": "18 (natural armor)",
+  "speed": "30 ft., swim 80 ft.",
+  "saves": "Str +9, Con +10",
+  "immunities": "poison",
+  "resistance": "cold, fire, lightning; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 120 ft., passive Perception 11",
+  "languages": "Abyssal, telepathy 120 ft.",
+  "abilities": {
+    "str": 19,
+    "dex": 18,
+    "con": 21,
+    "int": 19,
+    "wis": 12,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The wastrilith can breathe air and water."
+    },
+    {
+      "name": "Corrupt Water",
+      "desc": "At the start of each of the wastrilith's turns, exposed water within 30 feet of it is befouled. Underwater, this effect lightly obscures the area until a current clears it away. Water in containers remains corrupted until it evaporates. A creature that consumes this foul water or swims in it must make a DC 18 Constitution saving throw. On a successful save, the creature is immune to the foul water for 24 hours. On a failed save, the creature takes 14 (4d6) poison damage and is poisoned for 1 minute. At the end of this time, the poisoned creature must repeat the saving throw. On a failure, the creature takes 18 (4d8) poison damage and is poisoned until it finishes a long rest. If another demon drinks the foul water as an action, it gains 11 (2d10) temporary hit points."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The wastrilith has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Undertow",
+      "desc": "As a bonus action when the wastrilith is underwater, it can cause all water within 60 feet of it to be difficult terrain for other creatures until the start of its next turn."
+    }
+  ]
+}

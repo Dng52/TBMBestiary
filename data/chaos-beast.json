@@ -1,0 +1,49 @@
+{
+  "name": "Chaos Beast",
+  "tags": [
+    "medium",
+    "aberration",
+    "cr6",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "aberration",
+  "alignment": "chaotic neutral",
+  "cr": "6 (2,300 XP)",
+  "hp": "120 (16d8 + 48)",
+  "ac": "16 (Natural Armor)",
+  "speed": "30 ft.",
+  "skills": "Perception +7",
+  "resistance": "acid, necrotic, slashing",
+  "conimmunities": "blinded, charmed, deafened, exhaustion, frightened, prone",
+  "senses": "darkvision 60 ft., passive Perception 17",
+  "languages": "--",
+  "abilities": {
+    "str": 17,
+    "dex": 15,
+    "con": 16,
+    "int": 10,
+    "wis": 12,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Amorphous",
+      "desc": "The chaos beast can move through a space as narrow as 1 inch wide without squeezing."
+    },
+    {
+      "name": "Destabilize",
+      "desc": "A creature that touches the chaos beast or hits it with a melee attack while within 5 feet of it must make a DC 15 Constitution saving throw or be poisoned for 1 minute. A creature poisoned in this way takes 21 (6d6) necrotic damage at the start of each of its turns. It can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If the creature\u2019s saving throw is successful or the effect ends for it, the creature is immune to the chaos beast\u2019s Destabilize for the next 24 hours."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The chaos beast makes two claw attacks."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage plus 10 (3d6) necrotic damage. The creature must make a DC 15 Constitution saving throw or be affected by the chaos beast\u2019s Destabilize effect."
+    }
+  ]
+}

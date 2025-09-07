@@ -1,0 +1,51 @@
+{
+  "name": "Black Skeleton",
+  "tags": [
+    "medium",
+    "undead",
+    "cr4",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "chaotic evil",
+  "cr": "4 (1,100 XP)",
+  "hp": "71 (13d8 + 13)",
+  "ac": "17 (chain shirt)",
+  "speed": "40 ft.",
+  "skills": "Perception +4, Stealth +6",
+  "immunities": "necrotic, poison",
+  "resistance": "cold",
+  "vulnerability": "bludgeoning, radiant",
+  "conimmunities": "exhaustion, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 14",
+  "languages": "the languages it knew in life but can\u2019t speak",
+  "abilities": {
+    "str": 11,
+    "dex": 19,
+    "con": 13,
+    "int": 13,
+    "wis": 10,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Shortsword Masters",
+      "desc": "Black skeletons gain defensive bonuses (+2 to AC) and bonuses to attack (+2 to hit) when wielding two shortswords (included in the statistics)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The black skeleton makes two claw attacks or two shortsword attacks."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage, and the target\u2019s Strength score is reduced by 1d4. The target dies if this reduces its strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest."
+    },
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage, and the target\u2019s Strength score is reduced by 1d4. The target dies if this reduces its strength to 0. Otherwise, the reduction lasts until the target finishes a short or long rest"
+    }
+  ]
+}

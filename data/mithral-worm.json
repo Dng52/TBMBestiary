@@ -1,0 +1,46 @@
+{
+  "name": "Mithral Worm",
+  "tags": [
+    "huge",
+    "monstrosity",
+    "cr4",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Huge",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "4 (1,100 XP)",
+  "hp": "80 (7d12 + 35)",
+  "ac": "17 (natural armor)",
+  "speed": "40 ft., burrow 40 ft.",
+  "senses": "darkvision 60ft., tremorsense 60 ft., passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 20,
+    "dex": 10,
+    "con": 20,
+    "int": 3,
+    "wis": 10,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Nimble",
+      "desc": "The mithral worm has advantage on Dexterity saving throws."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The mithral worm makes two attacks: one with its bite and one with its tail."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) piercing damage. If the target is a Medium or smaller creature, it must succeed on a DC 13 Dexterity saving throw or be swallowed by the worm. A swallowed creature is blinded and restrained, it has total cover against attacks and other effects outside the worm, and it takes 10 (3d6) bludgeoning damage at the start of each of the worm\u2019s turns. If the worm takes at least 10 damage in a single turn from a creature inside it, the worm must succeed on a DC 17 Constitution saving throw at the end of that turn or regurgitate all swallowed creatures, which fall prone in a space within 10 feet of the worm. If the worm dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 20 feet of movement, exiting prone."
+    },
+    {
+      "name": "Tail",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away from the worm and knocked prone."
+    }
+  ]
+}

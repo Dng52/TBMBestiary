@@ -1,0 +1,49 @@
+{
+  "name": "Ogre Warchief",
+  "tags": [
+    "large",
+    "giant",
+    "cr4",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Large",
+  "type": "giant",
+  "alignment": "chaotic evil",
+  "cr": "4 (1,100 XP)",
+  "hp": "76 (8d12 + 24)",
+  "ac": "16 (chainmail)",
+  "speed": "40 ft.",
+  "skills": "Athletics +7, Intimidation +3",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Common, Giant",
+  "abilities": {
+    "str": 20,
+    "dex": 8,
+    "con": 17,
+    "int": 9,
+    "wis": 10,
+    "cha": 8
+  },
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The ogre makes two attacks with its greatmaul or with its javelin."
+    },
+    {
+      "name": "Greatmaul",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage."
+    },
+    {
+      "name": "Javelin",
+      "desc": "Melee or Ranged Weapon Attack: +7 to hit, reach 5 ft. or range 30/120 ft., one target., one target. Hit: 12 (2d6 + 5) piercing damage."
+    },
+    {
+      "name": "Punt",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5ft., one target. Hit: 23 (4d8 + 5) bludgeoning damage and the target must make a DC 15 Strength saving throw, being thrown 20 ft. and knocked prone on a failed save or pushed 10 ft. and not knocked prone on a success."
+    },
+    {
+      "name": "War Drums (Recharge 5-6)",
+      "desc": "The warchief play the drums of war. All other ogres within 120 ft. that can hear the drums may use their reaction to make a melee attack against an enemy in range."
+    }
+  ]
+}

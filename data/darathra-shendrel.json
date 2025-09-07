@@ -1,0 +1,47 @@
+{
+  "name": "Darathra Shendrel",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr0",
+    "storm-kings-thunder"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful good",
+  "cr": "0 (10 XP)",
+  "hp": "52 (8d8+16)",
+  "ac": "14 (breastplate)",
+  "speed": "30 ft.",
+  "skills": "History +2, Intimidation +4, Investigation +2, Perception +2, Presuasion +4",
+  "senses": " passive Perception 12",
+  "languages": "Common",
+  "abilities": {
+    "str": 16,
+    "dex": 11,
+    "con": 14,
+    "int": 11,
+    "wis": 11,
+    "cha": 15
+  },
+  "traits": [
+    {
+      "name": "Brave",
+      "desc": "Darathra has advantage on saving throws against being frightened"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Darthra makes two melee attacks."
+    },
+    {
+      "name": "Greatsword",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6+3) slashing damage"
+    },
+    {
+      "name": "Heavy Crossbow",
+      "desc": "Ranged Weapon Attack: +2 to hit, range 100/400 ft., one target. Hit: 5 (1d10) piercing damage. Darathra carries twenty crossbow bolts."
+    }
+  ]
+}

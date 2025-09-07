@@ -1,0 +1,30 @@
+{
+  "name": "Pony",
+  "tags": [
+    "medium",
+    "beast",
+    "cr1/8",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/8 (25 XP)",
+  "hp": "11 (2d8+2)",
+  "ac": "10",
+  "speed": "40 ft.",
+  "abilities": {
+    "str": 15,
+    "dex": 10,
+    "con": 13,
+    "int": 2,
+    "wis": 11,
+    "cha": 7
+  },
+  "actions": [
+    {
+      "name": "Hooves",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) bludgeoning damage."
+    }
+  ]
+}

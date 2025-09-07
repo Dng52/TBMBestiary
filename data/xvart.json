@@ -1,0 +1,51 @@
+{
+  "name": "Xvart",
+  "tags": [
+    "small",
+    "humanoid",
+    "cr1/8",
+    "volos-guide"
+  ],
+  "size": "Small",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "1/8 (25 XP)",
+  "hp": "7 (2d6)",
+  "ac": "13 (leather armor)",
+  "speed": "30 ft.",
+  "skills": "Stealth +4",
+  "senses": "darkvision 30 ft.",
+  "languages": "Abyssal",
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 10,
+    "int": 8,
+    "wis": 7,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Low Cunning",
+      "desc": "The xvart can take the Disengage action as a bonus action on each of its turns."
+    },
+    {
+      "name": "Overbearing Pack",
+      "desc": "The xvart has advantage on Strength (Athletics) checks to shove a creature if at least one of the xvart's allies is within 5 feet of the target and the ally isn't incapacitated."
+    },
+    {
+      "name": "Raxivort's Tongue",
+      "desc": "The xvart can communicate with ordinary bats and rats, as well as giant bats and giant rats."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6+2) piercing damage."
+    },
+    {
+      "name": "Sling",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4+2) bludgeoning damage."
+    }
+  ]
+}

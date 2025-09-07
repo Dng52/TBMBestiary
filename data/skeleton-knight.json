@@ -1,0 +1,35 @@
+{
+  "name": "Skeleton Knight",
+  "tags": [
+    "medium",
+    "undead",
+    "cr2",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "lawful evil",
+  "cr": "2 (450 XP)",
+  "hp": "37 (5d8 + 15)",
+  "ac": "15 (armor scraps)",
+  "speed": "30 ft.",
+  "immunities": "poison",
+  "vulnerability": "bludgeoning",
+  "conimmunities": "exhaustion, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 9",
+  "languages": "understand its master\u2019s language in life but cannot speak",
+  "abilities": {
+    "str": 13,
+    "dex": 15,
+    "con": 17,
+    "int": 7,
+    "wis": 8,
+    "cha": 6
+  },
+  "actions": [
+    {
+      "name": "Melee Weapon",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: varies, damage is determined by weapon. Battleaxe or longsword: 5 (1d8 + 1) slashing damage, or 6 (1d10 + 1) slashing damage if used with two hands. Greatsword: 9 (2d6 + 1) slashing damage."
+    }
+  ]
+}

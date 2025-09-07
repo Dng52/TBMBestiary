@@ -1,0 +1,53 @@
+{
+  "name": "Swarm of Poisonous Frogs",
+  "tags": [
+    "medium",
+    "swarm",
+    "cr1",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "swarm",
+  "alignment": "unaligned",
+  "cr": "1 (200 XP)",
+  "hp": "76 (17d8 - 8)",
+  "ac": "13",
+  "speed": "20 ft., swim 20 ft.",
+  "skills": "Perception +1, Stealth +3",
+  "immunities": "poison",
+  "conimmunities": "poisoned",
+  "senses": "passive Perception 11",
+  "languages": "--",
+  "abilities": {
+    "str": 1,
+    "dex": 13,
+    "con": 8,
+    "int": 1,
+    "wis": 8,
+    "cha": 3
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The swarm can breathe air and water."
+    },
+    {
+      "name": "Keen Smell",
+      "desc": "The swarm has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Standing Leap",
+      "desc": "The swarm\u2019s long jump is up to 10 feet and its high jump is up to 5 feet, with or without a running start."
+    },
+    {
+      "name": "Swarm",
+      "desc": "The swarm can occupy another creature\u2019s space and vice versa, and the swarm can move through any opening large enough for a poisonous frog. The swarm can\u2019t regain hit points or gain temporary hit points."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 0 ft., one target. Hit: 11 (3d6 + 1) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 hour."
+    }
+  ]
+}

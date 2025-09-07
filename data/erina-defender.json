@@ -1,0 +1,60 @@
+{
+  "name": "Erina Defender",
+  "tags": [
+    "small",
+    "humanoid",
+    "cr1",
+    "tome-of-beasts"
+  ],
+  "size": "Small",
+  "type": "humanoid",
+  "alignment": "neutral",
+  "cr": "1 (200 XP)",
+  "hp": "44 (8d6 + 16)",
+  "ac": "15 (chain shirt)",
+  "speed": "20 ft., burrow 20 ft.",
+  "skills": "Athletics +4, Perception +3",
+  "resistance": "poison",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "Common, Erina",
+  "abilities": {
+    "str": 11,
+    "dex": 14,
+    "con": 14,
+    "int": 13,
+    "wis": 12,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "desc": "The erina has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Hardy",
+      "desc": "The erina has advantage on saving throws against poison."
+    },
+    {
+      "name": "Spines",
+      "desc": "An enemy who hits the erina with a melee attack while within 5 feet of it takes 5 (2d4) piercing damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The erina defender makes two attacks."
+    },
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2)"
+    },
+    {
+      "name": "Shortbow",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    },
+    {
+      "name": "Protect",
+      "desc": "The erina imposes disadvantage on an attack roll made against an ally within 5 feet of the erina defender."
+    }
+  ]
+}

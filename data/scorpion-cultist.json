@@ -1,0 +1,48 @@
+{
+  "name": "Scorpion Cultist",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/2",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral",
+  "cr": "1/2 (100 XP)",
+  "hp": "19 (3d8 + 6)",
+  "ac": "13 (leather armor)",
+  "speed": "30 ft.",
+  "skills": "Animal Handling +2, Deception +2, Perception +3, Stealth +4",
+  "resistance": "poison",
+  "senses": "passive Perception 15",
+  "languages": "Common",
+  "abilities": {
+    "str": 11,
+    "dex": 14,
+    "con": 15,
+    "int": 10,
+    "wis": 13,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Keen Senses",
+      "desc": "The scorpion cultist has advantage on Wisdom (Perception) checks."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The scorpion cultist makes two melee attacks or two ranged attacks."
+    },
+    {
+      "name": "Scimitar",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft, one target. Hit: 5 (1d6 + 2) slashing damage plus 3 (1d6) poison damage."
+    },
+    {
+      "name": "Sling",
+      "desc": "Melee Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Rasa",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/2",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any",
+  "cr": "1/2 (100 XP)",
+  "hp": "16 (3d8 + 3)",
+  "ac": "13 (leather)",
+  "speed": "30 ft.",
+  "skills": "Deception +5, Stealth +6",
+  "senses": "passive Perception 9",
+  "languages": "Common",
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 12,
+    "int": 11,
+    "wis": 8,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The rasa's innate spellcasting ability is Intelligence (spell save DC 11). It can innately cast the following spells, requiring no components: * At will: <i>message</i> * 1/day each: <i>disguise self</i>"
+    },
+    {
+      "name": "Inscrutable Intentions",
+      "desc": "The rasa is immune to any magical effects to determine if it is lying."
+    },
+    {
+      "name": "Sight of the Rasa",
+      "desc": "The rasa share a special sight that is invisible to all non-rasa creatures. As an action, a rasa can touch a creature and place a secret mark on that creature's chest. This mark lets other rasa know whether or not this creature should be regarded as a friend or a foe."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The rasa makes two melee attacks."
+    },
+    {
+      "name": "Dagger",
+      "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    }
+  ]
+}

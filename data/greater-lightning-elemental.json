@@ -1,0 +1,57 @@
+{
+  "name": "Greater Lightning Elemental",
+  "tags": [
+    "medium",
+    "elemental",
+    "cr9",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "neutral",
+  "cr": "9 (5,000 XP)",
+  "hp": "90 (12d8 + 36)",
+  "ac": "17",
+  "speed": "0 ft., fly 50 ft.",
+  "immunities": "lightning, poison",
+  "resistance": "acid, fire; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Auran",
+  "abilities": {
+    "str": 14,
+    "dex": 25,
+    "con": 16,
+    "int": 4,
+    "wis": 11,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Lightning",
+      "desc": "A creature that touches the lightning elemental or hits it with a melee attack while within 5 feet of it takes 7 (2d6) lightning damage."
+    },
+    {
+      "name": "Water Susceptibility",
+      "desc": "For every 5 feet that the lightning elemental moves in water, or for every gallon of water splashed on it, it takes 1 cold damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The lightning elemental makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 20 (3d8 + 7) lightning damage."
+    },
+    {
+      "name": "Lightning Bolt",
+      "desc": "Ranged Spell Attack: +11 to hit, range 20/60 ft., one target. Hit: 47 (9d8 + 7) lightning damage."
+    },
+    {
+      "name": "Globe Lightning (Recharge 5-6)",
+      "desc": "The lightning elemental discharges 3 globes of electricity that hover in its space for 1 minute. Whenever a creature enters or starts its turn within 5 feet of the elemental, one of the globes discharges. The target must make a DC 19 Dexterity saving throw, taking 16 (2d8 + 7) lightning damage on a failed saving throw, or half as much damage on a successful one. As each globe discharges, it disappears."
+    }
+  ]
+}

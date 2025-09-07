@@ -1,0 +1,56 @@
+{
+  "name": "Bedlam",
+  "tags": [
+    "large",
+    "aberration",
+    "cr8",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "aberration",
+  "alignment": "chaotic neutral",
+  "cr": "8 (3,900 XP)",
+  "hp": "112 (15d10 + 30)",
+  "ac": "17 (natural armor)",
+  "speed": "fly 50 ft.",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "petrification",
+  "senses": "darkvision 60 ft., passive Perception 12",
+  "languages": "Common, choice of two others",
+  "abilities": {
+    "str": 17,
+    "dex": 20,
+    "con": 15,
+    "int": 15,
+    "wis": 15,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Chaotic Resonance",
+      "desc": "The bedlam emanates an aura of pure chaos. The aura deals 7 (2d6) psychic damage to any creature that ends its turn within 30 feet of the bedlam. Creatures attempting to cast a spell or use a magic item in this area have a 50% chance of the spell fizzling or the item not functioning. Creatures that are chaotic in nature ignore the effect of the bedlam\u2019s chaotic resonance."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The bedlam has advantage on saving throws against spells and other magic effects."
+    },
+    {
+      "name": "Sense Law",
+      "desc": "The bedlam can sense the presence and location of any creature within 120 feet of it that is lawfully aligned, regardless of interposing barriers, unless the creature is protected by a spell such as nondetection."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The bedlam makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage."
+    },
+    {
+      "name": "Chaos Burst (Recharge 5\u20136)",
+      "desc": "The bedlam releases a burst of crackling gray energy in a 20-foot radius. Creatures in this area must make a DC 14 Wisdom saving throw, taking 22 (5d8) psychic damage on a failed save, and half as much damage on a successful one. Creatures that are chaotic in nature ignore the bedlam\u2019s chaos burst."
+    }
+  ]
+}

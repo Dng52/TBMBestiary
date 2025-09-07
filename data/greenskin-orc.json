@@ -1,0 +1,43 @@
+{
+  "name": "Greenskin Orc",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/4",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "1/4 (50 XP)",
+  "hp": "11 (2d8 + 2)",
+  "ac": "13 (leather)",
+  "speed": "35 ft.",
+  "skills": "Intimidation +0, Perception +2, Stealth +4 (+6 in forests), Survival +2",
+  "senses": "darkvision 60 ft., passive Perception 12",
+  "languages": "Common, Orc",
+  "abilities": {
+    "str": 15,
+    "dex": 15,
+    "con": 12,
+    "int": 7,
+    "wis": 10,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Arboreal Hunter",
+      "desc": "The greenskin orc has advantage on Dexterity (Stealth) checks when in temperate or warm forests."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Longsword",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage or 7 (1d10 + 2) slashing damage when used with two hands."
+    },
+    {
+      "name": "Longbow",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "name": "Festering Tick",
+  "tags": [
+    "tiny",
+    "beast",
+    "cr1/4",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Tiny",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/4 (50 XP)",
+  "hp": "13 (2d8 + 4)",
+  "ac": "10",
+  "speed": "25 ft.",
+  "senses": "darkvision 60 ft., passive Perception 9",
+  "languages": "--",
+  "abilities": {
+    "str": 12,
+    "dex": 11,
+    "con": 14,
+    "int": 1,
+    "wis": 9,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Explosive Death",
+      "desc": "When the tick dies, it explodes in a shower of blood. Each creature within 5 feet of it must succeed on a DC 10 Dexterity saving throw or take 5 (2d4) necrotic damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5ft., one target. Hit: 3 (1d4 + 1) piercing damage and the tick attaches to the target. While attached, the tick doesn\u2019t attack. Instead, at the start of each of the tick\u2019s turns, the creature it is attached to takes 3 (1d6) necrotic damage and the tick gains the same amount of temporary hit points. While the tick is attached, a creature may use its action to make a DC 10 Athletics check, prying the tick loose on a success."
+    }
+  ]
+}

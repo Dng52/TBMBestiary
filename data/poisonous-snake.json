@@ -1,0 +1,31 @@
+{
+  "name": "Poisonous Snake",
+  "tags": [
+    "tiny",
+    "beast",
+    "cr1/8",
+    "monster-manual"
+  ],
+  "size": "Tiny",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/8 (25 XP)",
+  "hp": "2 (1d4)",
+  "ac": "13",
+  "speed": "30 ft., swim 30 ft.",
+  "senses": "blindsight 10 ft.",
+  "abilities": {
+    "str": 2,
+    "dex": 16,
+    "con": 11,
+    "int": 1,
+    "wis": 10,
+    "cha": 3
+  },
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 1 piercing damage, and the target must make a DC 10 Constitution saving throw, taking 5 (2d4) poison damage on a failed save, or half as much damage on a successful one."
+    }
+  ]
+}

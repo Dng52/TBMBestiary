@@ -1,0 +1,39 @@
+{
+  "name": "Emerald Dragon Wyrmling",
+  "tags": [
+    "medium",
+    "dragon",
+    "cr3",
+    "strongholds-and-followers"
+  ],
+  "size": "Medium",
+  "type": "dragon",
+  "alignment": "chaotic neutral",
+  "cr": "3 (700 XP)",
+  "hp": "31 (7d8)",
+  "ac": "17 (natural armor)",
+  "speed": "30 ft., fly 60 ft. (hover), swim 30 ft.",
+  "saves": "Dex +4, Int +4, Wis +3, Cha +3",
+  "skills": "Insight +3, Perception +3",
+  "vulnerability": "psychic",
+  "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 15",
+  "languages": "Common, Draconic",
+  "abilities": {
+    "str": 13,
+    "dex": 14,
+    "con": 11,
+    "int": 14,
+    "wis": 12,
+    "cha": 12
+  },
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (2d10 + 3) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage."
+    }
+  ]
+}

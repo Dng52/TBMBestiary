@@ -1,0 +1,40 @@
+{
+  "name": "Wyrmling Wind Dragon",
+  "tags": [
+    "medium",
+    "dragon",
+    "cr1",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "dragon",
+  "alignment": "chaotic neutral",
+  "cr": "1 (200 XP)",
+  "hp": "45 (7d8 + 14)",
+  "ac": "14",
+  "speed": "40 ft., fly 80 ft.",
+  "saves": "Dex +6, Con +4, Wis +2, Cha +4",
+  "skills": "Perception +4, Stealth +6",
+  "immunities": "lightning",
+  "conimmunities": "charmed, exhausted, paralyzed",
+  "senses": "blindsight 10 ft., darkvision 60 ft., passive Perception 14",
+  "languages": "Draconic, Primordial",
+  "abilities": {
+    "str": 16,
+    "dex": 19,
+    "con": 14,
+    "int": 12,
+    "wis": 11,
+    "cha": 14
+  },
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) piercing damage."
+    },
+    {
+      "name": "Breath of Gales (Recharge 5-6)",
+      "desc": "The dragon exhales a blast of wind in a 15-foot cone. Each creature in that cone must make a successful DC 12 Strength saving throw or be pushed 15 feet away from the dragon and knocked prone. Unprotected flames in the cone are extinguished, and sheltered flames (such as those in lanterns) have a 50 percent chance of being extinguished."
+    }
+  ]
+}

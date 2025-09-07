@@ -1,0 +1,42 @@
+{
+  "name": "Merrow Shallowpriest",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr4",
+    "explorers-guide-to-wildemount"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "chaotic evil",
+  "cr": "4 (1,100 XP)",
+  "hp": "75 (10d10 + 20)",
+  "ac": "15 (natural armor)",
+  "speed": "10 ft., swim 40 ft.",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "Abyssal, Aquan",
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 15,
+    "int": 11,
+    "wis": 16,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The merrow can breathe air and water."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The merrow is a 6th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). The merrow has the following druid spells prepared: * Cantrips (at will): <i>druidcraft, minor illusion, shocking grasp</i> * 1st level (4 slots): <i>cure wounds, fog cloud, thunderwave</i> * 2nd level (3 slots): <i>hold person, mirror image, misty step</i> * 3rd level (3 slots): <i>dispel magic, lightning bolt, sleet storm</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Harpoon",
+      "desc": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 11 (2d6 + 4) piercing damage. If the target is a Medium or smaller creature, the merrow can pull it 10 feet closer."
+    }
+  ]
+}

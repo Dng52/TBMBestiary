@@ -1,0 +1,53 @@
+{
+  "name": "Geryon",
+  "tags": [
+    "huge",
+    "fiend",
+    "cr22",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Huge",
+  "type": "fiend",
+  "alignment": "lawful evil",
+  "cr": "22 (41,000 XP)",
+  "hp": "300  (24d12 + 144)",
+  "ac": "19 (natural armor)",
+  "speed": "30 ft., fly 50 ft.",
+  "saves": "Dex +10, Con +13, Wis +10, Cha +13",
+  "skills": "Deception +13, Intimidation +13, Perception +10",
+  "immunities": "cold, fire, poison",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered",
+  "conimmunities": "charmed, exhaustion, frightened, poisoned",
+  "senses": "truesight 120 ft., passive Perception 20",
+  "languages": "all, telepathy 120 ft.",
+  "abilities": {
+    "str": 29,
+    "dex": 17,
+    "con": 22,
+    "int": 19,
+    "wis": 16,
+    "cha": 23
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "Geryon's innate spellcasting ability is Charisma (spell save DC 21). He can innately cast the following spells, requiring no material components: * At will: <i>alter self </i>(can become Medium when changing his appearance)<i>, detect magic, geas, ice storm, invisibility </i>(self only)<i>, locate object, suggestion, wall of ice</i> * 1/day each: <i>divine word, symbol </i>(pain only)"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "desc": "If Geryon fails a saving throw, he can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "Geryon has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "Geryon's weapon attacks are magical."
+    },
+    {
+      "name": "Regeneration",
+      "desc": "Geryon regains 20 hit points at the start of his turn. If he takes radiant damage, this trait doesn't function at the start of his next turn. Geryon dies only if he starts his turn with 0 hit points and doesn't regenerate."
+    }
+  ]
+}

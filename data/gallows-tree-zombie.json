@@ -1,0 +1,53 @@
+{
+  "name": "Gallows Tree Zombie",
+  "tags": [
+    "medium",
+    "plant",
+    "cr3",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "plant",
+  "alignment": "unaligned",
+  "cr": "3 (700 XP)",
+  "hp": "52 (7d8 + 21)",
+  "ac": "11 (natural armor)",
+  "speed": "20 ft.",
+  "immunities": "poison",
+  "resistance": "fire",
+  "conimmunities": "poisoned, frightened, prone, stunned, unconscious",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Common, but cannot speak, telepathy 100 ft. with gallows tree",
+  "abilities": {
+    "str": 19,
+    "dex": 10,
+    "con": 16,
+    "int": 4,
+    "wis": 10,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Regeneration",
+      "desc": "The gallows tree zombie regenerates 5 hit points at the start of its turn if it has at least 1 hit point."
+    },
+    {
+      "name": "Tether-Vine",
+      "desc": "A gallows tree zombie is connected to the gallows tree that created it by a long, sinewy vine. This vine can be lengthened to allow the zombie to move up to 100 feet away from the tree. The vine is AC 12 and has 10 hit points. Harming the vine deals no damage to the gallows tree zombie or the gallows tree, but if severed, does prevent the zombie from regenerating any health at the start of its turn."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The gallows tree zombie makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Spore Cloud (Recharge 6)",
+      "desc": "A gallows tree zombie can breathe a cloud of poisonous, greenish spores at the space directly in front of it in a 5-foot cube. A creature caught in the cloud must succeed on a DC 13 Constitution saving throw or be poisoned for 1 minute. Until this poison ends, the target is slowed (as the slow spell). The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    }
+  ]
+}

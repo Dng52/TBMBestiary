@@ -1,0 +1,62 @@
+{
+  "name": "Sir Pelliton",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr5",
+    "strongholds-and-followers"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "5 (1,800 XP)",
+  "hp": "76 (9d10 + 27)",
+  "ac": "20 (plate, shield)",
+  "speed": "30 ft.",
+  "saves": "Dex +3, Int +5",
+  "skills": "Animal Handling +6, Arcana +5, Intimidation +8",
+  "resistance": "cold, fire, lightning, psychic",
+  "conimmunities": "blinded, deafened",
+  "senses": "passive Perception 12",
+  "languages": "Common",
+  "abilities": {
+    "str": 18,
+    "dex": 8,
+    "con": 17,
+    "int": 13,
+    "wis": 15,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Mounted Combatant",
+      "desc": "While mounted, Sir Pelliton has advantage on melee attack rolls against unmounted creatures that are smaller than his mount."
+    },
+    {
+      "name": "The Star Knight",
+      "desc": "Sir Pelliton has resistance to cold, fire, lightning, and psychic damage as a sign of his pact, and cannot be blinded or deafened. His hellish rebuke does 20 damage (no roll) to enemies who fail their save."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "Sir Pelliton has gained the power to cast dark magic. All spells he casts with this feature are cast as if using a 5th-level spell slot, and he casts cantrips as if he were an 11th-level warlock. His spellcasting ability is Charisma (DC 16, +8 to hit with spell attacks). * At will: <i>acid splash, eldritch blast (3 beams), minor illusion, hellish rebuke</i> * 5/day: <i>branding smite, black tentacles, counterspell, dimension door, hold person</i> * 1/day each: <i>cone of cold, eyebite, mass suggestion</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Sir Pelliton makes three melee attacks or makes two melee attacks and casts eldritch blast."
+    },
+    {
+      "name": "Frost Brand Longsword",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) slashing damage plus 3 (1d6) cold damage."
+    },
+    {
+      "name": "Lance",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 10 (1d12 + 4) piercing damage."
+    },
+    {
+      "name": "Villain Ability: Warlord",
+      "desc": "As a reaction, when a minion dies, Sir Pelliton can issue a command to his other minions. Those who can hear him gain a reaction they can use to immediately take another movement."
+    }
+  ]
+}

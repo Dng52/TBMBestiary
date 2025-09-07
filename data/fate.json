@@ -1,0 +1,55 @@
+{
+  "name": "Fate",
+  "tags": [
+    "medium",
+    "construct",
+    "cr8",
+    "strongholds-and-followers"
+  ],
+  "size": "Medium",
+  "type": "construct",
+  "alignment": "lawful neutral",
+  "cr": "8 (3,900 XP)",
+  "hp": "136 (16d8 + 64)",
+  "ac": "19 (natural armor)",
+  "speed": "40 ft., fly 30 ft. (hover)",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "truesight 60 ft., passive Perception 15",
+  "languages": "all those of the creature who summoned it",
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 18,
+    "int": 15,
+    "wis": 14,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "The Law of Fate",
+      "desc": "Fate does not make attack rolls, always using a 12 as its result (before applying bonuses) and cannot be affected by advantage or disadvantage. Fate does not roll damage, instead always taking the average result, though damage dice are listed so the average can be calculated."
+    },
+    {
+      "name": "Chaos Vulnerability",
+      "desc": "The Inexorables have disadvantage on all saving throws against spells."
+    },
+    {
+      "name": "Inexorable",
+      "desc": "The Inexorables are immune to any effects that would slow them or deny them actions or movement."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Fate makes three slam attacks."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) bludgeoning damage."
+    },
+    {
+      "name": "The Destiny Light (Recharge 5\u20136)",
+      "desc": "Fate fires a beam of Destiny Light at a target it can see within 60 feet. The target must make a DC 13 Constitution saving throw. On a failed save, it takes 36 (8d8) necrotic damage, and it only deals average damage and uses 10 for its attack rolls (before bonuses) for the next 10 minutes. On a successful save, it takes half as much damage, and its attack and damage rolls are not affected."
+    }
+  ]
+}

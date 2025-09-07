@@ -1,0 +1,50 @@
+{
+  "name": "Howling Hatred Priest",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr2",
+    "elemental-evil"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "2 (450 XP)",
+  "hp": "45 (10d8)",
+  "ac": "15 (studded leather)",
+  "speed": "30 ft.",
+  "skills": "Acrobatics +5, Intimidation +4, Religion +4",
+  "languages": "Auran, Common",
+  "abilities": {
+    "str": 12,
+    "dex": 16,
+    "con": 10,
+    "int": 14,
+    "wis": 10,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Hold Breath",
+      "desc": "The priest can hold its breath for 30 minutes."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The priest is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). It knows the following sorcerer spells: * Cantrips (at will): <i>blade ward, gust, light, prestidigitation, shocking grasp</i> * 1st level (4 slots): <i>featherfall, shield, witch bolt</i> * 2nd level (3 slots): <i>dust devil, gust of wind</i> * 3rd level (2 slots): <i>gaseous form</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The priest makes two melee attacks or two ranged attacks."
+    },
+    {
+      "name": "Scimitar",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage."
+    },
+    {
+      "name": "Dagger",
+      "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage."
+    }
+  ]
+}

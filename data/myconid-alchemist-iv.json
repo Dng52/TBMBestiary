@@ -1,0 +1,44 @@
+{
+  "name": "Myconid Alchemist IV",
+  "tags": [
+    "medium",
+    "plant",
+    "cr7",
+    "homebrew"
+  ],
+  "size": "Medium",
+  "type": "plant",
+  "alignment": "neutral evil",
+  "cr": "7 (2,900 XP)",
+  "hp": "65 (10d8 + 20)",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Stealth +6",
+  "conimmunities": "charmed, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 120 ft., passive Perception 13",
+  "languages": "Undercommon",
+  "abilities": {
+    "str": 12,
+    "dex": 16,
+    "con": 14,
+    "int": 12,
+    "wis": 10,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Stalk-still",
+      "desc": "A myconid that remains perfectly still has advantage on Dexterity (Stealth) checks made to hide."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Stone Knuckles",
+      "desc": "Melee weapon attack: +6 to hit. Hit: 10 (2d6 + 3) slashing damage."
+    },
+    {
+      "name": "Spore Bomb",
+      "desc": "Ranged weapon attack: +4 to hit, range 30/60 ft. Hit: 15 (6d4) poison damage and the target must succeed on a DC 15 Constitution saving throw or be dominated for 1 minute. A dominated creature obeys all commands telepathically delivered by the myconid\u2019s spores. Each time the target takes damage it is allowed another saving throw."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Lesser Thaumaturmite",
+  "tags": [
+    "small",
+    "monstrosity",
+    "cr1",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "1 (200 XP)",
+  "hp": "10 (3d6)",
+  "ac": "12",
+  "speed": "30 ft., climb 30 ft.",
+  "conimmunities": "prone",
+  "senses": "darkvision 30 ft., passive Perception 7",
+  "languages": "--",
+  "abilities": {
+    "str": 10,
+    "dex": 15,
+    "con": 10,
+    "int": 3,
+    "wis": 5,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Magic Scent",
+      "desc": "The thaumaturmite can pinpoint, by scent, the location of any magical cloth within 30 feet of it."
+    },
+    {
+      "name": "Consume Magic",
+      "desc": "Any magical cloth that the thaumaturmite hits starts to corrode. Each time the thaumaturmite bites into a magical cloth which is worn or carried, the bearer of the item must make a successful DC 12 Dexterity saving throw or the item starts corroding. After two failed saving throws the item loses its magical qualities."
+    },
+    {
+      "name": "Spider Climb",
+      "desc": "The thaumaturmite can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The thaumaturmite has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee weapon attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) piercing damage."
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "name": "Lightning Mephit",
+  "tags": [
+    "small",
+    "elemental",
+    "cr1",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "elemental",
+  "alignment": "neutral evil",
+  "cr": "1 (200 XP)",
+  "hp": "21 (6d6)",
+  "ac": "13",
+  "speed": "30 ft., fly 30 ft.",
+  "skills": "Perception +4, Stealth +5",
+  "immunities": "lightning, poison",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 60 ft., passive Perception 14",
+  "languages": "Auran",
+  "abilities": {
+    "str": 10,
+    "dex": 17,
+    "con": 10,
+    "int": 6,
+    "wis": 11,
+    "cha": 15
+  },
+  "traits": [
+    {
+      "name": "Death Burst",
+      "desc": "When the mephit dies, it explodes in a flare of lightning in a 15-foot radius. Creatures in the area must make a DC 12 Dexterity saving throw, taking 9 (2d8) lightning damage on a successful saving throw, or half as much damage on a failed one."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The mephit\u2019s spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). It can innately cast <i>shocking grasp</i> at will requiring no material components."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 2 (1d4) lightning damage."
+    },
+    {
+      "name": "Lightning Breath (Recharge 6)",
+      "desc": "The mephit exhales lightning in a 15- foot line that is 1-foot wide. All creatures within that area must make a DC 12 Dexterity saving throw, taking 9 (2d8) lightning damage on a failed save, or half as much damage on a successful one."
+    }
+  ]
+}

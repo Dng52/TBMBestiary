@@ -1,0 +1,35 @@
+{
+  "name": "Brontosaurus",
+  "tags": [
+    "gargantuan",
+    "beast",
+    "cr5",
+    "volos-guide"
+  ],
+  "size": "Gargantuan",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "5 (1,800 XP)",
+  "hp": "121 (9d20+27)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Con +6",
+  "abilities": {
+    "str": 21,
+    "dex": 9,
+    "con": 17,
+    "int": 2,
+    "wis": 10,
+    "cha": 7
+  },
+  "actions": [
+    {
+      "name": "Stomp",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 20 ft., one target. Hit: 27 (5d8+5) bludgeoning damage, and the target must succed on a DC 14 Strength saving throw or be knocked prone."
+    },
+    {
+      "name": "Tail",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 20 ft., one target. Hit: 32 (6d8+5) bludgeoning damage."
+    }
+  ]
+}

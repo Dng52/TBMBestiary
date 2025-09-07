@@ -1,0 +1,49 @@
+{
+  "name": "Oil Shark",
+  "tags": [
+    "huge",
+    "monstrosity",
+    "cr6",
+    "tome-of-horrors"
+  ],
+  "size": "Huge",
+  "type": "monstrosity",
+  "alignment": "neutral",
+  "cr": "6 (2,300 XP)",
+  "hp": "114 (12d12 + 36)",
+  "ac": "15 (natural armor)",
+  "speed": "swim 60 ft.",
+  "skills": "Perception +4",
+  "immunities": "fire",
+  "vulnerability": "cold",
+  "senses": "blindsight 60 ft., passive Perception 14",
+  "languages": "--",
+  "abilities": {
+    "str": 22,
+    "dex": 15,
+    "con": 17,
+    "int": 1,
+    "wis": 12,
+    "cha": 2
+  },
+  "traits": [
+    {
+      "name": "Blood Frenzy",
+      "desc": "The shark has advantage on melee attack rolls against any creature that doesn\u2019t have all its hit points."
+    },
+    {
+      "name": "Keen Smell",
+      "desc": "The oil shark has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Liquid Fire",
+      "desc": "The oil shark is only known to inhabit the Sea of Fire in the Plane of Molten Skies and the Plane of Fire, and therefore can breathe in liquid fire and underwater."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 28 (4d10 + 6) piercing damage plus 14 (4d6) fire damage."
+    }
+  ]
+}

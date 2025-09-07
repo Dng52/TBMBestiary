@@ -1,0 +1,54 @@
+{
+  "name": "Morphoi",
+  "tags": [
+    "medium",
+    "plant",
+    "cr1/2",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "plant",
+  "alignment": "chaotic evil",
+  "cr": "1/2 (100 XP)",
+  "hp": "33 (6d8 + 6)",
+  "ac": "13 (may be higher with armor)",
+  "speed": "30 ft., swim 30 ft.",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Common",
+  "abilities": {
+    "str": 11,
+    "dex": 16,
+    "con": 13,
+    "int": 14,
+    "wis": 10,
+    "cha": 15
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The morphoi can breathe air and water."
+    },
+    {
+      "name": "Immunity to Temporal Effects",
+      "desc": "The morphoi is immune to all time-related spells and effects."
+    },
+    {
+      "name": "Shapeshifter",
+      "desc": "The morphoi can use its action to polymorph into a Medium creature or back into its true form. Its statistics are the same in each form. Any equipment the morphoi is carrying or wearing isn't transformed. The morphoi reverts to its true form when it dies."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage."
+    },
+    {
+      "name": "Trident",
+      "desc": "Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft., or +5 to hit, range 20/60 ft., one target. Hit: 4 (1d8) piercing damage if used with both hands to make a melee attack, or 6 (1d6 + 3) if thrown."
+    },
+    {
+      "name": "Shortbow",
+      "desc": "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+    }
+  ]
+}

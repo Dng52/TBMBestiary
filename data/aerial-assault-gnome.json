@@ -1,0 +1,63 @@
+{
+  "name": "Aerial Assault Gnome",
+  "tags": [
+    "small",
+    "humanoid",
+    "cr8",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "humanoid",
+  "alignment": "chaotic neutral",
+  "cr": "8 (3,900 XP)",
+  "hp": "44 (8d6 + 16)",
+  "ac": "18 (armored flight suit)",
+  "speed": "20 ft., fly 60 ft.",
+  "skills": "History +6, Perception +6, Investigation +6, Acrobatics +8",
+  "senses": "darkvision 60 ft., tremorsense 120 ft., passive Perception 12",
+  "languages": "Common, Gnome",
+  "abilities": {
+    "str": 8,
+    "dex": 16,
+    "con": 14,
+    "int": 16,
+    "wis": 10,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Agile Flight",
+      "desc": "The gnome may use his mechawings to hover in place and may make hairpin turns, granting him an AC bonus of +2 while flying."
+    },
+    {
+      "name": "Gnome Cunning",
+      "desc": "The aerial assault gnome has advantage on all spells and magical effects that require an Intelligence, Wisdom, or Charisma saving throw."
+    },
+    {
+      "name": "Armored Flight Suit",
+      "desc": "The aerial assault gnome wears a futuristic suit of lightweight, yet extremely strong, mechanized armor that provides comfort and protection."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The aerial assault gnome can make two attacks: one with his cog thrower and one with Last Resort."
+    },
+    {
+      "name": "Cog Thrower",
+      "desc": "Ranged Weapon Attack: +8 to hit, range 80/320 ft., one target. Hit: 10 (3d6) slashing damage. A stream of razor-sharp cogs is propelled from the gnome\u2019s hollow metallic club."
+    },
+    {
+      "name": "Last Resort",
+      "desc": "Melee Weapon Attack: +4 to hit, range 5 ft., one target. Hit: 3 (1d6) bludgeoning damage. The gnome whips his enemy with the still hot metal barrels of his cog thrower."
+    },
+    {
+      "name": "Strafing Run (3/day)",
+      "desc": "Ranged Weapon Attack: +8 to hit, range 120/400 ft., one target. Hit: a point the gnome can see. A blast of fire emanates from the target point. Any creatures in a 20-foot radius of the target must succeed on a DC 16 Dexterity saving throw, taking 28 (8d6) fire damage on a failed save, or half as much damage on a successful one."
+    },
+    {
+      "name": "Point Defense",
+      "desc": "Any creature moving within 20 feet of the aerial assault gnome is blasted by his point defense cannons for 7 (3d4) piercing damage."
+    }
+  ]
+}

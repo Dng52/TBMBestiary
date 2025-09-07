@@ -1,0 +1,57 @@
+{
+  "name": "Iron Cobra",
+  "tags": [
+    "small",
+    "construct",
+    "cr1",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "construct",
+  "alignment": "neutral",
+  "cr": "1 (200 XP)",
+  "hp": "27 (6d6 + 6)",
+  "ac": "13 (natural armor)",
+  "speed": "40 ft.",
+  "skills": "Perception +3, Stealth +4",
+  "immunities": "poison, psychic; bludgeoning, piercing, and slashing from nonmagical weapons that aren\u2019t adamantine",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "understands the languages of its creator but can\u2019t speak",
+  "abilities": {
+    "str": 12,
+    "dex": 15,
+    "con": 13,
+    "int": 5,
+    "wis": 12,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Find Target",
+      "desc": "The iron cobra knows the location of a specific target creature as long as that creature is within 1 mile of it. If the creature is moving, it knows the direction if that creature\u2019s movement. If the target is beyond this distance, the iron cobra can\u2019t locate the target creature."
+    },
+    {
+      "name": "Immutable Form",
+      "desc": "The iron cobra is immune to any spell or effect that would alter its form."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The iron cobra has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapon",
+      "desc": "The iron cobra\u2019s weapon attacks are magical."
+    },
+    {
+      "name": "Poison",
+      "desc": "The iron cobra contains enough venom for three attacks. After that, it does not deal the poison damage listed in its bite attack."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) poison damage on a failed saving throw, or half as much damage on a successful one."
+    }
+  ]
+}

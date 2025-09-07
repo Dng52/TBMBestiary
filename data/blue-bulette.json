@@ -1,0 +1,57 @@
+{
+  "name": "Blue Bulette",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr12",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "12 (8,400 XP)",
+  "hp": "150 (12d10 + 84)",
+  "ac": "17 (natural armor)",
+  "speed": "40 ft.",
+  "saves": "Dex +5, Con +11, Wis +4",
+  "skills": "Perception +4",
+  "immunities": "lightning",
+  "senses": "darkvision 60 ft., passive Perception 14",
+  "languages": "--",
+  "abilities": {
+    "str": 22,
+    "dex": 12,
+    "con": 24,
+    "int": 3,
+    "wis": 10,
+    "cha": 4
+  },
+  "traits": [
+    {
+      "name": "Electromagnetic Field",
+      "desc": "The electrified nature of the blue bulette is such that compasses will spin wildly within half of a mile of the bulette, and any technology-based items will cease to function within 150 feet of it."
+    },
+    {
+      "name": "Motherlode",
+      "desc": "If killed, the body of a blue bulette explodes in a loud roar of thunder (deafening all within 150 feet for 1 minute). Afterward, all that remains of the beast is a 100-pound pile of meteoric iron, which if broken, will also contain its single white horn and 1\u20136 small lodestones."
+    },
+    {
+      "name": "Planar Connection",
+      "desc": "Because their arcane natures tie blue bulettes to the Demi-plane of Lightning, they also simultaneously exist there as nearly invisible silhouettes intermittently illuminated by flashes of electric light."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 33 (5d10 + 6) piercing damage plus 26 (4d12) lightning damage. If the target is a creature, it must succeed on a DC 15 Constitution saving throw or be knocked unconscious for 1 minute."
+    },
+    {
+      "name": "Electric Stomp",
+      "desc": "The bulette slams its forefeet into the ground, imparting a ground-conductive electric charge in an 80-foot radius. All creatures, excluding constructs and undead, must succeed on a DC 17 Constitution saving throw, or take 26 (4d12) lightning damage and be stunned for 1 minute. A stunned creature can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+    },
+    {
+      "name": "Bolt and Run",
+      "desc": "The blue bulette transforms into a sphere of ball lightning and magically teleports up to 120 feet to an unoccupied space it can see."
+    }
+  ]
+}

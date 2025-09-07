@@ -1,0 +1,41 @@
+{
+  "name": "Sirac of Suzail",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr0",
+    "storm-kings-thunder"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful good",
+  "cr": "0 (10 XP)",
+  "hp": "22 (5d8)",
+  "ac": "14 (leather)",
+  "speed": "30 ft.",
+  "skills": "Athletics +4, Insight +3, Survival +3",
+  "senses": "passive Perception 11",
+  "languages": "Common, Orc",
+  "abilities": {
+    "str": 14,
+    "dex": 17,
+    "con": 11,
+    "int": 12,
+    "wis": 13,
+    "cha": 16
+  },
+  "actions": [
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6+3) piercing  damage."
+    },
+    {
+      "name": "Dart",
+      "desc": "Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 5 (1d4+3) piercing damage. Sirac carries six darts."
+    },
+    {
+      "name": "Parry",
+      "desc": "Sirac adds 2 to his AC against on melee attack that would hit him. To do so, Sirac must see the attacker and be wielding a melee weapon."
+    }
+  ]
+}

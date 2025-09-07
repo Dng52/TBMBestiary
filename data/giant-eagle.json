@@ -1,0 +1,46 @@
+{
+  "name": "Giant Eagle",
+  "tags": [
+    "large",
+    "beast",
+    "cr1",
+    "monster-manual"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "neutral good",
+  "cr": "1 (200 XP)",
+  "hp": "26 (4d10+4)",
+  "ac": "13",
+  "speed": "10 ft., fly 80 ft.",
+  "skills": "Perception +4",
+  "languages": "Giant Eagle, understands Common and Auran but can't speak",
+  "abilities": {
+    "str": 16,
+    "dex": 17,
+    "con": 13,
+    "int": 8,
+    "wis": 14,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Keen Sight",
+      "desc": "The eagle has advantage on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The eagle makes two attacks: one with its beak and one with its talons."
+    },
+    {
+      "name": "Beak",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+    },
+    {
+      "name": "Talons",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage."
+    }
+  ]
+}

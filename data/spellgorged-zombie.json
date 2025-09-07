@@ -1,0 +1,45 @@
+{
+  "name": "Spellgorged Zombie",
+  "tags": [
+    "medium",
+    "undead",
+    "cr1",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "1 (200 XP)",
+  "hp": "75 (10d8 + 30)",
+  "ac": "10",
+  "speed": "20 ft.",
+  "saves": "Wis +0",
+  "immunities": "poison",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 60 ft., passive Perception 8",
+  "languages": "understands the languages it knew in life but can\u2019t speak",
+  "abilities": {
+    "str": 13,
+    "dex": 10,
+    "con": 16,
+    "int": 3,
+    "wis": 6,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Undead Fortitude",
+      "desc": "If damage reduces the zombie to 0 hit points, it makes a Constitution saving throw with a DC of 5+ the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
+    },
+    {
+      "name": "Spell Storing",
+      "desc": "The zombie can store any spells cast into its mouth as if it were a ring of spell storing. The zombie can store up to 5 levels worth of spells at a time. The spells stored in the zombie uses the slot level, spell save DC, spell attack bonus, and the spellcasting ability of the original caster. Once the spell is released by the zombie it is no longer stored in it, freeing up space for additional spells."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage."
+    }
+  ]
+}

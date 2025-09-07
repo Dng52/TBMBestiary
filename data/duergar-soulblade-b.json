@@ -1,0 +1,45 @@
+{
+  "name": "Duergar Soulblade (B)",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful evil",
+  "cr": "1 (200 XP)",
+  "hp": "18  (4d8)",
+  "ac": "14 (leather armor)",
+  "speed": "25 ft.",
+  "resistance": "poison",
+  "senses": "darkvision 120 ft., passive Perception 10",
+  "languages": "Dwarvish, Undercommon",
+  "abilities": {
+    "str": 11,
+    "dex": 16,
+    "con": 10,
+    "int": 11,
+    "wis": 10,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Duergar Resilience",
+      "desc": "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+    },
+    {
+      "name": "Create Soulblade",
+      "desc": "As a bonus action, the duergar can create a shortsword-sized, visible blade of psionic energy. The weapon appears in the duergar's hand and vanishes if it leaves the duergar's grip, or if the duergar dies or is incapacitated."
+    },
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "desc": "The duergar's innate spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It can innately cast the following spells, requiring no components: * At will: <i>blade ward, true strike</i> * 3/day each: <i>jump, hunter's mark</i>"
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ]
+}

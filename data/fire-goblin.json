@@ -1,0 +1,59 @@
+{
+  "name": "Fire Goblin",
+  "tags": [
+    "small",
+    "humanoid",
+    "cr7",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "7 (2,900 XP)",
+  "hp": "45 (10d6 + 10)",
+  "ac": "15 (natural armor)",
+  "speed": "20 ft.",
+  "saves": "Dex +7, Con +4",
+  "skills": "Deception +4, Perception +3, Stealth +7",
+  "immunities": "fire",
+  "resistance": "lightning; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "vulnerability": "cold",
+  "senses": "darkvision 120 ft., passive Perception 13",
+  "languages": "Common, Goblin, Sylvan",
+  "abilities": {
+    "str": 14,
+    "dex": 18,
+    "con": 13,
+    "int": 16,
+    "wis": 10,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Flaming Arrows",
+      "desc": "Fire goblins are adept at manufacturing flaming arrows, and coupled with their produce flame cantrip, a fire goblin with prepared arrows (wrapped and treated to be easily flammable) may set up to 2 arrows on fire as a seamless part of each turn\u2019s attack, without requiring a separate action. Preparing an arrow for such a use still takes the normal amount of time but can be done in advance and saved for a later battle."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The fire goblin\u2019s spellcasting ability is Intelligence (spell save DC 14, +6 to hit with spell attacks). The fire goblin can innately cast the following spells, requiring no material components: * At will: <i>fire bolt, produce flame</i> * 3/day each: <i>burning hands, flame blade, flaming sphere, heat metal</i> * 1/day: <i>fireball, wall of fire</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The fire goblin can make two attacks with its flaming arrows using its shortbow."
+    },
+    {
+      "name": "Battleaxe",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage, or 7 (1d10 + 2) slashing damage if used with two hands."
+    },
+    {
+      "name": "Shortbow",
+      "desc": "Ranged Weapon Attack: +7 to hit, range 80/320 ft., one target. Hit: 7 (1d6 + 4) piercing damage plus 7 (2d6) fire damage."
+    },
+    {
+      "name": "Fire Breath (Recharge 5\u20136)",
+      "desc": "The goblin exhales fire in a 20-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 45 (10d8) fire damage on a failed save, or half as much damage on a successful one."
+    }
+  ]
+}

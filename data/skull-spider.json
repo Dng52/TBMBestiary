@@ -1,0 +1,39 @@
+{
+  "name": "Skull Spider",
+  "tags": [
+    "tiny",
+    "beast",
+    "cr1/2",
+    "tome-of-horrors"
+  ],
+  "size": "Tiny",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/2 (100 XP)",
+  "hp": "2 (1d4)",
+  "ac": "17 (natural armor)",
+  "speed": "20 ft., climb 10 ft.",
+  "skills": "Perception +4, Stealth +7",
+  "senses": "darkvision 60 ft., passive Perception 14",
+  "languages": "--",
+  "abilities": {
+    "str": 6,
+    "dex": 20,
+    "con": 10,
+    "int": 2,
+    "wis": 10,
+    "cha": 2
+  },
+  "traits": [
+    {
+      "name": "Pack Tactics",
+      "desc": "The spider has advantage on an attack roll against a creature if at least one of the spider\u2019s allies is within 5 feet of the creature and the ally isn\u2019t incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Sting",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 7 (1d4 + 5) piercing damage, and the target must succeed on a DC 10 Constitution saving throw or become poisoned for 1 hour."
+    }
+  ]
+}

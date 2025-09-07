@@ -1,0 +1,59 @@
+{
+  "name": "Subek",
+  "tags": [
+    "large",
+    "humanoid",
+    "cr5",
+    "tome-of-beasts"
+  ],
+  "size": "Large",
+  "type": "humanoid",
+  "alignment": "lawful neutral",
+  "cr": "5 (1800 XP)",
+  "hp": "76 (8d10 + 32)",
+  "ac": "17 (natural armor)",
+  "speed": "30 ft., swim 20 ft.",
+  "skills": "History +5, Investigation +5",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "Common",
+  "abilities": {
+    "str": 19,
+    "dex": 10,
+    "con": 18,
+    "int": 14,
+    "wis": 13,
+    "cha": 13
+  },
+  "traits": [
+    {
+      "name": "Hold Breath",
+      "desc": "The subek can hold its breath for 15 minutes."
+    },
+    {
+      "name": "Flood Fever",
+      "desc": "During flood season, the subek is overcome with bloodthirsty malice. Its alignment shifts to chaotic evil, it gains the Blood Frenzy trait, and it loses the capacity to speak Common and its bonuses to History and Investigation."
+    },
+    {
+      "name": "Blood Frenzy",
+      "desc": "The subek has advantage on melee attack rolls against any creature that doesn't have all its hit points."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The subek makes one bite attack and one claws attack. If both attacks hit the same target, the subek can make a thrash attack as a bonus action against that target."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 11 (2d6 + 4) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 22 (4d8 + 4) slashing damage."
+    },
+    {
+      "name": "Thrash",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d10) slashing damage."
+    }
+  ]
+}

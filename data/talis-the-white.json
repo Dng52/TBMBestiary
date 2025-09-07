@@ -1,0 +1,52 @@
+{
+  "name": "Talis the White",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr5",
+    "tyranny-of-dragons"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful evil",
+  "cr": "5 (1,800 XP)",
+  "hp": "58 (9d8+18)",
+  "ac": "18 (scale mail +1, shield)",
+  "speed": "30 ft.",
+  "saves": "Wis +6, Cha +6",
+  "skills": "Deception +6, Insight +6, Perception +6, Persuasion +6",
+  "senses": "darkvision 60 ft.",
+  "languages": "Common, Draconic, Elvish, Infernal",
+  "abilities": {
+    "str": 14,
+    "dex": 12,
+    "con": 14,
+    "int": 10,
+    "wis": 16,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Special Equipment",
+      "desc": "Talis has +1 scale mail and a wand of winter."
+    },
+    {
+      "name": "Fey Ancestry",
+      "desc": "Talis has advantage on saving throws against being charmed, and magic can't put her to sleep."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "Talis is a 9th-level spellcaster that uses Wisdom as her spellcasting ability (spell save DC 14, +6 to hit with spell attacks). Talis has the following spells prepared from the cleric spell list: * Cantrips (at will): <i>guidance, resistance, thaumaturgy</i> * 1st level (4 slots): <i>command, cure wounds, healing word, inflict wounds</i> * 2nd level (3 slots): <i>blindness/deafness, lesser restoration, spiritual weapon </i>(spear) * 3rd level (3 slots): <i>dispel magic, mass healing word, sending</i> * 4th level (3 slots): <i>death ward, freedom of movement</i> * 5th level (1 slot): <i>insect plague</i>"
+    },
+    {
+      "name": "Winter Strike (3/Day)",
+      "desc": "Once per turn, when Talis hits with a melee attack, she can expend a use of this trait to deal an extra 9 (2d8) cold damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Spear",
+      "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or ranged 20 ft./60 ft., one target. Hit: 6 (1d6 + 2) piercing damage."
+    }
+  ]
+}

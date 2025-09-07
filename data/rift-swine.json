@@ -1,0 +1,49 @@
+{
+  "name": "Rift Swine",
+  "tags": [
+    "large",
+    "aberration",
+    "cr5",
+    "tome-of-beasts"
+  ],
+  "size": "Large",
+  "type": "aberration",
+  "alignment": "chaotic neutral",
+  "cr": "5 (1800 XP)",
+  "hp": "110 (13d10 + 39)",
+  "ac": "15 (natural armor)",
+  "speed": "40 ft.",
+  "resistance": "force, poison",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "--",
+  "abilities": {
+    "str": 18,
+    "dex": 10,
+    "con": 17,
+    "int": 4,
+    "wis": 12,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "360-Degree Vision",
+      "desc": "The rift swine's extra eyes give it advantage on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Chaos mutations",
+      "desc": "50### Actions"
+    },
+    {
+      "name": "Multiattack",
+      "desc": "The rift swine makes one tusks attack and two tentacle attacks."
+    },
+    {
+      "name": "Tusks",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage."
+    },
+    {
+      "name": "Tentacle",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage. If the target is a creature, it is grappled (escape DC 14). Until this grapple ends, the target is restrained, and the rift swine can't use this tentacle against another target."
+    }
+  ]
+}

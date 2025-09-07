@@ -1,0 +1,60 @@
+{
+  "name": "Arcane Entity",
+  "tags": [
+    "large",
+    "elemental",
+    "cr7",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Large",
+  "type": "elemental",
+  "alignment": "chaotic neutral",
+  "cr": "7 (2,900 XP)",
+  "hp": "135 (18d10 + 36)",
+  "ac": "15 (natural armor)",
+  "speed": "0 ft., fly 40 ft. (hover)",
+  "saves": "Int +7, Wis +4",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "Primordial",
+  "abilities": {
+    "str": 7,
+    "dex": 16,
+    "con": 14,
+    "int": 18,
+    "wis": 12,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "desc": "The entity has advantage on saving throws against spell and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The entity\u2019s weapons are magical."
+    },
+    {
+      "name": "Arcane Aura",
+      "desc": "The entity sheds bright light in a 15-foot radius and dim light for an additional 15 feet. Any magical items that are within this area become mundane. This effect wears off when the entity dies or when the item is taken out of the aura. Enemies that end their turn in the bright light take 5 (1d10) force damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The entity makes two attacks with its claws or two attacks with its whip."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5ft., one target. Hit: 12 (2d8 + 3) slashing damage plus 9 (2d8) force damage."
+    },
+    {
+      "name": "Arcane Whip",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 15ft., one target. Hit: 7 (2d4 + 3) slashing damage plus 13 (3d8) force damage."
+    },
+    {
+      "name": "Arcane Barrage (Recharge 5-6)",
+      "desc": "The entity unleashes 10 (4d4) missiles of arcane power at randomly selected enemies within 120 feet. The missiles automatically hit and deal 6 (1d4 + 4) damage each."
+    }
+  ]
+}

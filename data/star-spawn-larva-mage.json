@@ -1,0 +1,41 @@
+{
+  "name": "Star Spawn Larva Mage",
+  "tags": [
+    "medium",
+    "aberration",
+    "cr16",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "aberration",
+  "alignment": "chaotic evil",
+  "cr": "16 (15,000 XP)",
+  "hp": "168  (16d8 + 96)",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Dex +6, Wis +6, Cha +8",
+  "skills": "Perception +6",
+  "immunities": "psychic",
+  "resistance": "cold; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "charmed, frightened, paralyzed, petrified, poisoned, restrained",
+  "senses": "darkvision 60 ft., passive Perception 16",
+  "languages": "Deep Speech",
+  "abilities": {
+    "str": 17,
+    "dex": 12,
+    "con": 23,
+    "int": 18,
+    "wis": 12,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The larva mage's innate spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no material components: * At will: <i>eldritch blast </i>(3 beams, +3 bonus to each damage roll)<i>, minor illusion</i> * 3/day: <i>dominate monster</i> * 1/day: <i>circle of death</i>"
+    },
+    {
+      "name": "Return to Worms",
+      "desc": "When the larva mage is reduced to 0 hit points, it breaks apart into a swarm of insects in the same space. Unless the swarm is destroyed, the larva mage reforms from it 24 hours later."
+    }
+  ]
+}

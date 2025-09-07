@@ -1,0 +1,34 @@
+{
+  "name": "Rot Troll",
+  "tags": [
+    "large",
+    "giant",
+    "cr9",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Large",
+  "type": "giant",
+  "alignment": "chaotic evil",
+  "cr": "9 (5,000 XP)",
+  "hp": "138  (12d10 + 72)",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Perception +3",
+  "immunities": "necrotic",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "Giant",
+  "abilities": {
+    "str": 18,
+    "dex": 13,
+    "con": 22,
+    "int": 5,
+    "wis": 8,
+    "cha": 4
+  },
+  "traits": [
+    {
+      "name": "Rancid Degeneration",
+      "desc": "At the end of each of the troll's turns, each creature within 5 feet of it takes 11 (2d10) necrotic damage, unless the troll has taken acid or fire damage since the end of its last turn."
+    }
+  ]
+}

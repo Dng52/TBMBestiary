@@ -1,0 +1,51 @@
+{
+  "name": "Firenewt Warlock of Imix",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "volos-guide"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "1 (200 XP)",
+  "hp": "33 (6d8+6)",
+  "ac": "10 (13 with mage armor)",
+  "speed": "30 ft.",
+  "immunities": "fire",
+  "senses": "darkvision 120 ft. (penetrates magical darkness)",
+  "languages": "Draconic, Ignan",
+  "abilities": {
+    "str": 13,
+    "dex": 11,
+    "con": 12,
+    "int": 9,
+    "wis": 11,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The firenewt can breathe air and water."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The firenewt's innate spellcasting ability is Charisma. It can innately cast mage armor (self only) at will, requiring no material components."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The firenewt is a 3rd-level spellcaster. Its spellcasting ability is Charisma (spell save DC 12, +4 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells: * Cantrips (at will): <i>fire bolt, guidance, light, mage hand, prestidigitation</i> * 1st-2nd level (2 2nd-level slots): <i>burning hands, flaming sphere, hellish rebuke, scorching ray</i>"
+    },
+    {
+      "name": "Imix's Blessing",
+      "desc": "When the firenewt reduces an enemy to 0 hit points, the firenewt gains 5 temporary hit points."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Morningstar",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 5 (1d8+1) piercing damage."
+    }
+  ]
+}

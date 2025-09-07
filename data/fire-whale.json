@@ -1,0 +1,60 @@
+{
+  "name": "Fire Whale",
+  "tags": [
+    "huge",
+    "elemental",
+    "cr11",
+    "tome-of-horrors"
+  ],
+  "size": "Huge",
+  "type": "elemental",
+  "alignment": "unaligned",
+  "cr": "11 (7,200 XP)",
+  "hp": "175 (14d12 + 84)",
+  "ac": "14 (natural armor)",
+  "speed": "swim 40 ft.",
+  "skills": "Perception +5",
+  "immunities": "fire",
+  "senses": "blindsight 120 ft., passive Perception 15",
+  "languages": "--",
+  "abilities": {
+    "str": 30,
+    "dex": 13,
+    "con": 22,
+    "int": 2,
+    "wis": 12,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Echolocation",
+      "desc": "The whale can\u2019t use its blindsight while deafened."
+    },
+    {
+      "name": "Hold Breath",
+      "desc": "The whale can hold its breath for 30 minutes."
+    },
+    {
+      "name": "Keen Hearing",
+      "desc": "The whale has advantage on Wisdom (Perception) checks that rely on hearing."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The fire whale makes two attacks: one with its bite and one with its tail slap."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +14 to hit, reach 5 ft., one target. Hit: 34 (7d6 + 10) piercing damage."
+    },
+    {
+      "name": "Tail Slap",
+      "desc": "Melee Weapon Attack: +14 to hit, reach 15 ft., one target. Hit: 23 (2d12 + 10) bludgeoning damage."
+    },
+    {
+      "name": "Scalding Blast (Recharge 5\u20136)",
+      "desc": "A fire whale can release a blast of superheated air in a 60-foot cone from its blowhole that scalds or burns those contacting it. Each creature in that area must make a DC 16 Dexterity saving throw, taking 49 (14d6) fire damage on a failed save, or half as much on a successful one."
+    }
+  ]
+}

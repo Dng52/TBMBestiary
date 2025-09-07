@@ -1,0 +1,67 @@
+{
+  "name": "Greruor (Frog Demon)",
+  "tags": [
+    "large",
+    "fiend",
+    "cr11",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "11 (7,200 XP)",
+  "hp": "136 (13d10 + 65)",
+  "ac": "17 (natural armor)",
+  "speed": "40 ft.",
+  "saves": "Dex +7, Con +9, Cha +7",
+  "skills": "Intimidation +7, Perception +6",
+  "immunities": "poison",
+  "resistance": "cold, fire, lightning",
+  "conimmunities": "poisoned",
+  "senses": "truesight 120 ft., passive Perception 16",
+  "languages": "Abyssal, Common, telepathy 120 ft.",
+  "abilities": {
+    "str": 23,
+    "dex": 17,
+    "con": 21,
+    "int": 14,
+    "wis": 14,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The demon\u2019s spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). The demon can innately cast the following spells, requiring no material components: * At will: <i>darkness, detect evil and good, shatter</i> * 3/day each: <i>confusion, hold person</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The demon has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The demon\u2019s weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The demon makes three attacks: one with its bite and two with its ranseur. It can attack with its tongue instead of making a bite attack."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) piercing damage."
+    },
+    {
+      "name": "Ranseur",
+      "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 20 (4d6 + 6) piercing damage."
+    },
+    {
+      "name": "Tongue",
+      "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 15 (2d8 + 6) slashing damage, and the target is grappled (escape DC 16). Until this grapple ends, the target is restrained, and the demon cannot attack with its tongue."
+    },
+    {
+      "name": "Combustible Spittle (Recharge 5\u20136)",
+      "desc": "The demon spits a line of acid in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 17 Dexterity saving throw, taking 27 (6d8) acid damage on a failed save, or half as much on a successful one. At the start of the demon\u2019s next turn, the acid ignites and any targets hit by it burst into flames, taking 10 (3d6) fire damage per round until extinguished."
+    }
+  ]
+}

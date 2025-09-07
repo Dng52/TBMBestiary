@@ -1,0 +1,35 @@
+{
+  "name": "Water Elemental Myrmidon (B)",
+  "tags": [
+    "medium",
+    "elemental",
+    "cr7",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "neutral",
+  "cr": "7 (2900 XP)",
+  "hp": "127  (17d8 + 51)",
+  "ac": "18 (plate)",
+  "speed": "40 ft., swim 40 ft.",
+  "immunities": "poison",
+  "resistance": "acid; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "paralyzed, petrified, poisoned, prone",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Aquan, one language of its creator's choice",
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 15,
+    "int": 8,
+    "wis": 10,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Magic Weapons",
+      "desc": "The myrmidon's weapon attacks are magical."
+    }
+  ]
+}

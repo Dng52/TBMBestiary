@@ -1,0 +1,42 @@
+{
+  "name": "Reef Shark",
+  "tags": [
+    "medium",
+    "beast",
+    "cr1/2",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/2 (100 XP)",
+  "hp": "22 (4d8+4)",
+  "ac": "12 (natural armor)",
+  "speed": "swim 40 ft.",
+  "skills": "Perception +2",
+  "senses": "blindsight 30 ft.",
+  "abilities": {
+    "str": 14,
+    "dex": 13,
+    "con": 13,
+    "int": 1,
+    "wis": 10,
+    "cha": 4
+  },
+  "traits": [
+    {
+      "name": "Pack Tactics",
+      "desc": "The shark has advantage on an attack roll against a creature if at least one of the shark's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+    },
+    {
+      "name": "Water Breathing",
+      "desc": "The shark can breathe only underwater."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+    }
+  ]
+}

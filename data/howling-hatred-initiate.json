@@ -1,0 +1,42 @@
+{
+  "name": "Howling Hatred Initiate",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/8",
+    "elemental-evil"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "1/8 (25 XP)",
+  "hp": "9 (2d8)",
+  "ac": "13 (leather)",
+  "speed": "30 ft.",
+  "skills": "Deception +2, Religion +2, Stealth +4",
+  "languages": "Common",
+  "abilities": {
+    "str": 10,
+    "dex": 15,
+    "con": 10,
+    "int": 10,
+    "wis": 9,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Guiding Wind (Recharges after a Short or Long Rest)",
+      "desc": "As a bonus action, the initiate gains advantage on the next ranged attack roll it makes before the end of its next turn."
+    },
+    {
+      "name": "Hold Breath",
+      "desc": "The initiate can hold its breath for 30 minutes."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    }
+  ]
+}

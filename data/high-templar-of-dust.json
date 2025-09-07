@@ -1,0 +1,58 @@
+{
+  "name": "High Templar of Dust",
+  "tags": [
+    "large",
+    "elemental",
+    "cr10",
+    "strongholds-and-followers"
+  ],
+  "size": "Large",
+  "type": "elemental",
+  "alignment": "neutral",
+  "cr": "10 (5,900 XP)",
+  "hp": "189 (18d10 + 90)",
+  "ac": "17 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Str +9, Con +9, Wis +7, Cha +5",
+  "immunities": "fire, lightning, cold, poison",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained, unconscious",
+  "senses": "darkvision 60 ft., passive Perception 17",
+  "languages": "Aquan, Auran, Common, Ignan, Terran",
+  "abilities": {
+    "str": 20,
+    "dex": 22,
+    "con": 20,
+    "int": 17,
+    "wis": 16,
+    "cha": 13
+  },
+  "traits": [
+    {
+      "name": "Sandstorm",
+      "desc": "At the start of each of the Templar\u2019s turns, each creature within 5 feet of it takes 5 (1d10) piercing damage."
+    },
+    {
+      "name": "Scour (Recharge 5\u20136)",
+      "desc": "The Templar moves up to its speed without provoking opportunity attacks. It can move through creatures, and each creature it passes through must make a DC 15 Constitution saving throw or take 10 (3d6) force damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The Templar makes four attacks with its halberd, Lightning, or Fire. Lightning and Fire can only be used twice each."
+    },
+    {
+      "name": "Halberd",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 10 (1d10 + 5) slashing damage."
+    },
+    {
+      "name": "Lightning",
+      "desc": "Ranged Spell Attack: +7 to hit, range 60 ft., one target. Hit: 10 (3d6) lightning damage."
+    },
+    {
+      "name": "Fire",
+      "desc": "The Templar hurls a ball of fire that explodes at a point it can see within 60 feet. Each creature within a sphere of 10-foot radius centered on that point must make a DC 15 Dexterity saving throw. The sphere spreads around corners. On a failed save, a creature takes 10 (3d6) fire damage, or half as much damage on a successful one."
+    }
+  ]
+}

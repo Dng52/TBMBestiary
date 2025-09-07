@@ -1,0 +1,35 @@
+{
+  "name": "Constrictor Snake",
+  "tags": [
+    "large",
+    "beast",
+    "cr1/4",
+    "monster-manual"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/4 (50 XP)",
+  "hp": "13 (2d10+2)",
+  "ac": "12",
+  "speed": "30 ft., swim 30 ft.",
+  "senses": "blindsight 10 ft.",
+  "abilities": {
+    "str": 15,
+    "dex": 14,
+    "con": 12,
+    "int": 1,
+    "wis": 10,
+    "cha": 3
+  },
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 + 2) piercing damage."
+    },
+    {
+      "name": "Constrict",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 6 (1d8 + 2) bludgeoning damage, and the target is grappled (escape DC 14). Until this grapple ends, the creature is restrained, and the snake can't constrict another target."
+    }
+  ]
+}

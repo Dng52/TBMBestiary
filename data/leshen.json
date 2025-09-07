@@ -1,0 +1,64 @@
+{
+  "name": "Leshen",
+  "tags": [
+    "large",
+    "plant",
+    "cr10",
+    "homebrew"
+  ],
+  "size": "Large",
+  "type": "plant",
+  "alignment": "neutral",
+  "cr": "10 (5,900 XP)",
+  "hp": "172 (15d10 + 90)",
+  "ac": "19 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Str +12, Con +10, Cha +6",
+  "skills": "Animal Handling +6, Perception +7, Survival +7",
+  "immunities": "poison",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical attacks from non-silvered weapons",
+  "vulnerability": "fire",
+  "conimmunities": "charmed, frightened, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 17",
+  "languages": "Understands Druidic and Sylvan but can't speak",
+  "abilities": {
+    "str": 26,
+    "dex": 9,
+    "con": 22,
+    "int": 15,
+    "wis": 18,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "desc": "The leshen has advantage on all saving throws against magical effects and spells."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The leshen's innate spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). The leshen can innately cast the following spells, requiring no material components: * At will: <i>entangle</i> * 3/day: <i>misty step</i> * 1/day: <i>conjure animals </i>(wolves and/or dire wolves)"
+    },
+    {
+      "name": "Rough Bark",
+      "desc": "At the start of each of its turns, the leshen deals 5 (1d10) piercing damage to any creature grappling it."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The leshen makes two claw attacks."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 28 (4d10 + 6) slashing damage."
+    },
+    {
+      "name": "Blink",
+      "desc": "The leshen can teleport 20 ft. away to an open area it can see in a swirl of crows.  Creatures within 5 ft. of the leshen at the start and end of the teleport must make a DC 17 Dexterity saving throw, taking 21 (4d8+3) piercing damage on a failed save or half as much on a success."
+    },
+    {
+      "name": "Command Roots",
+      "desc": "The leshen targets up to two creatures within 60 ft. from it. The targets must make a DC 17 Dexterity save or take 26 (4d8+8) bludgeoning damage and become grappled (Escape DC 17). The target is restrained as long as the grapple remains. If the target ends their turn in the roots, they take an additional 26 (4d8+8) bludgeoning damage."
+    }
+  ]
+}

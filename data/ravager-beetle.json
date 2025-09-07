@@ -1,0 +1,32 @@
+{
+  "name": "Ravager Beetle",
+  "tags": [
+    "medium",
+    "beast",
+    "cr1",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1 (200 XP)",
+  "hp": "26 (4d8 + 8)",
+  "ac": "13 (natural armor)",
+  "speed": "30 ft., fly 20 ft.",
+  "senses": "darkvision 60 ft., tremorsense 60 ft., passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 16,
+    "dex": 11,
+    "con": 14,
+    "int": 1,
+    "wis": 10,
+    "cha": 6
+  },
+  "actions": [
+    {
+      "name": "Gnaw",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 6 (1d6 + 3) piercing damage plus 7 (2d6) poison damage. If the target is a Medium or smaller creature, it is grappled (escape DC 13) and restrained. Until this grapple ends, the beetle cannot bite another target. A grappled target takes 7 (2d6) poison damage at the start of each of its turns."
+    }
+  ]
+}

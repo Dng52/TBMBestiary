@@ -1,0 +1,53 @@
+{
+  "name": "Young Flame Dragon",
+  "tags": [
+    "large",
+    "dragon",
+    "cr9",
+    "tome-of-beasts"
+  ],
+  "size": "Large",
+  "type": "dragon",
+  "alignment": "chaotic evil",
+  "cr": "9 (5000 XP)",
+  "hp": "161 (17d10 + 68)",
+  "ac": "18 (natural armor)",
+  "speed": "40 ft., climb 40 ft., fly 80 ft.",
+  "saves": "Dex +6, Con +8, Wis +5, Cha +8",
+  "skills": "Deception +8, Insight +5, Perception +9, Persuasion +8, Stealth +6",
+  "immunities": "fire",
+  "senses": ", passive Perception 19",
+  "languages": "Common, Draconic, Ignan, Giant, Infernal, Orc",
+  "abilities": {
+    "str": 15,
+    "dex": 14,
+    "con": 19,
+    "int": 15,
+    "wis": 13,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Fire Incarnate",
+      "desc": "All fire damage dealt by the dragon ignores fire resistance but not fire immunity."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The dragon makes one bite attack and two claw attacks."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 13 (2d10 + 2) piercing damage plus 3 (1d6) fire damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage."
+    },
+    {
+      "name": "Fire Breath (Recharge 5-6)",
+      "desc": "The dragon exhales fire in a 30-foot cone. Each creature in that area takes 56 (16d6) fire damage, or half damage with a successful DC 16 Dexterity saving throw."
+    }
+  ]
+}

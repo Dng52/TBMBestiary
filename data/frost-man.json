@@ -1,0 +1,43 @@
+{
+  "name": "Frost Man",
+  "tags": [
+    "medium",
+    "elemental",
+    "cr1/2",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "lawful evil",
+  "cr": "1/2 (100 XP)",
+  "hp": "27 (5d8 + 5)",
+  "ac": "13 (studded leather)",
+  "speed": "30 ft.",
+  "skills": "Survival +2",
+  "immunities": "cold",
+  "vulnerability": "fire",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Common",
+  "abilities": {
+    "str": 10,
+    "dex": 12,
+    "con": 12,
+    "int": 10,
+    "wis": 11,
+    "cha": 11
+  },
+  "actions": [
+    {
+      "name": "Morningstar",
+      "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 4 (1d8) piercing damage."
+    },
+    {
+      "name": "Longbow",
+      "desc": "Ranged Weapon Attack: +3 to hit, range 150/600 ft., one target. Hit: 5 (1d8 + 1) piercing damage."
+    },
+    {
+      "name": "Ice Blast (3/day)",
+      "desc": "As a bonus action, the frost man can use its action to remove his eye patch, blasting everything in a 30-foot cone with a freezing mist. All creatures in the area of the cone must make a DC 13 Dexterity saving throw, taking 14 (4d6) cold damage on a failed save, or half as much on a successful save."
+    }
+  ]
+}

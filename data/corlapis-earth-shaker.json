@@ -1,0 +1,54 @@
+{
+  "name": "Corlapis Earth Shaker",
+  "tags": [
+    "medium",
+    "elemental",
+    "cr3",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "lawful neutral",
+  "cr": "3 (700 XP)",
+  "hp": "60 (8d8 + 24)",
+  "ac": "18 (natural armor, shield)",
+  "speed": "30 ft.",
+  "saves": "Con +5",
+  "skills": "Stealth +2",
+  "immunities": "poison",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Terran",
+  "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 17,
+    "int": 16,
+    "wis": 10,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Hardened Exterior",
+      "desc": "Bludgeoning, piercing, and slashing damage the corlapis takes from nonmagical weapons is reduced by 3 to a minimum of 1."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The corlapis's innate spellcasting ability is Intelligence (spell save DC 13). It can innately cast the following spells, requiring no material components: * At will: <i>light, earth tremor, mold earth</i> * 1/day each: <i>erupting earth, heat metal, meld into stone</i>"
+    },
+    {
+      "name": "Stone Camouflage",
+      "desc": "The corlapis has advantage on Dexterity (Stealth) checks to hide in rocky terrain."
+    },
+    {
+      "name": "Sturdy",
+      "desc": "The corlapis has advantage on saving throws against effects that would cause it to move or be knocked prone."
+    }
+  ],
+  "actions": [
+    {
+      "name": "War Pick",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage."
+    }
+  ]
+}

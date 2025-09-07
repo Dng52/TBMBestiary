@@ -1,0 +1,46 @@
+{
+  "name": "Armed Skeleton",
+  "tags": [
+    "medium",
+    "undead",
+    "cr1",
+    "homebrew"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "lawful evil",
+  "cr": "1 (200 XP)",
+  "hp": "26 (4d8 + 8)",
+  "ac": "13 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Athletics +3",
+  "immunities": "poison",
+  "vulnerability": "bludgeoning",
+  "conimmunities": "exhaustion, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 9",
+  "languages": "understands all languages it knew in life but can't speak",
+  "abilities": {
+    "str": 12,
+    "dex": 14,
+    "con": 15,
+    "int": 6,
+    "wis": 8,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Armed Advantage",
+      "desc": "The skeleton has advantage on Strength (Athletics) checks made to grapple."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The skeleton makes four claw attacks."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5ft., one target.  Hit: 3 (1d4 + 1) slashing damage."
+    }
+  ]
+}

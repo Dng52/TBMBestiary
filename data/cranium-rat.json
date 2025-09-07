@@ -1,0 +1,42 @@
+{
+  "name": "Cranium Rat",
+  "tags": [
+    "tiny",
+    "beast",
+    "cr0",
+    "volos-guide"
+  ],
+  "size": "Tiny",
+  "type": "beast",
+  "alignment": "lawful evil",
+  "cr": "0 (10 XP)",
+  "hp": "2 (1d4)",
+  "ac": "12",
+  "speed": "30 ft.",
+  "senses": "darkvision 30 ft.",
+  "languages": "telepathy 30 ft.",
+  "abilities": {
+    "str": 2,
+    "dex": 14,
+    "con": 10,
+    "int": 4,
+    "wis": 11,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Illumination",
+      "desc": "As a bonus action, the cranium rat can shed dim light from its brain in a 5-foot radius or extinguish the light."
+    },
+    {
+      "name": "Telepathic Shroud",
+      "desc": "The cranium rat is immune to any effect that would sense its emotions or read its thoughts, as well as to all divination spells."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage."
+    }
+  ]
+}

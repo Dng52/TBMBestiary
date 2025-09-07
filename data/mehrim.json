@@ -1,0 +1,58 @@
+{
+  "name": "Mehrim (Goat Demon)",
+  "tags": [
+    "medium",
+    "fiend",
+    "cr3",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "3 (700 XP)",
+  "hp": "31 (7d8)",
+  "ac": "15 (natural armor)",
+  "speed": "40 ft.",
+  "skills": "Perception +5",
+  "immunities": "poison",
+  "resistance": "cold, fire, lightning",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 60 ft., passive Perception 15",
+  "languages": "Abyssal",
+  "abilities": {
+    "str": 20,
+    "dex": 14,
+    "con": 10,
+    "int": 12,
+    "wis": 13,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "desc": "The demon has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The demon has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The demon\u2019s weapon attacks are magical."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The demon\u2019s spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It can innately cast each of the following spells, requiring no material components: * At will: <i>darkness, protection from evil and good, see invisibility</i> * 1/day each: <i>dispel evil and good, dispel magic</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) piercing damage. If the target is a creature, it must succeed on a DC 10 Constitution saving throw against disease or become poisoned until the disease is cured. Every 24 hours that elapse, the target must repeat the saving throw, reducing its hit point maximum by 5 (1d10) on a failure. The disease is cured on a success. The target dies if the disease reduces its hit point maximum to 0. This reduction to the target\u2019s hit point maximum lasts until the disease is cured."
+    },
+    {
+      "name": "Hooves",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) slashing damage."
+    }
+  ]
+}

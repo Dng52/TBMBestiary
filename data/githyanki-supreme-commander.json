@@ -1,0 +1,34 @@
+{
+  "name": "Githyanki Supreme Commander",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr14",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful evil",
+  "cr": "14 (11500 XP)",
+  "hp": "187  (22d8 + 88)",
+  "ac": "18 (plate)",
+  "speed": "30 ft.",
+  "saves": "Con +9, Int +8, Wis +8",
+  "skills": "Insight +8, Intimidation +9, Perception +8",
+  "senses": "passive Perception 18",
+  "languages": "Gith",
+  "abilities": {
+    "str": 19,
+    "dex": 17,
+    "con": 18,
+    "int": 16,
+    "wis": 16,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "desc": "The githyanki's innate spellcasting ability is Intelligence (spell save DC 16, +8 to hit with spell attacks). It can innately cast the following spells, requiring no components: * At will: <i>mage hand </i>(the hand is invisible) * 3/day each: <i>jump, levitate </i>(self only)<i>, misty step, nondetection </i>(self only) * 1/day each: <i>Bigby's hand, mass suggestion, plane shift, telekinesis</i>"
+    }
+  ]
+}

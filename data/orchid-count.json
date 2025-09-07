@@ -1,0 +1,72 @@
+{
+  "name": "Orchid Count",
+  "tags": [
+    "medium",
+    "fey",
+    "cr6",
+    "strongholds-and-followers"
+  ],
+  "size": "Medium",
+  "type": "fey",
+  "alignment": "chaotic neutral",
+  "cr": "6 (2,300 XP)",
+  "hp": "97 (13d8 + 39)",
+  "ac": "16 (studded leather)",
+  "speed": "30 ft.",
+  "saves": "Dex +7, Con +6",
+  "skills": "Acrobatics +7, Athletics +4, Intimidation +5, Perception +6, Survival +3",
+  "senses": "passive Perception 16",
+  "languages": "Common, Elven, Sylvan",
+  "abilities": {
+    "str": 13,
+    "dex": 18,
+    "con": 16,
+    "int": 14,
+    "wis": 11,
+    "cha": 15
+  },
+  "traits": [
+    {
+      "name": "Fey Step",
+      "desc": "The Count is unaffected by difficult terrain."
+    },
+    {
+      "name": "Fey Ancestry",
+      "desc": "Magic cannot put the Count to sleep."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The Count has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Command Fey",
+      "desc": "As a member of the Court of Arcadia, the Count can cast <i>dominate monster</i> (DC 13) at will on any fey creature or elf."
+    },
+    {
+      "name": "Now You See Me\u2026",
+      "desc": "If the Count teleports next to an enemy, he immediately makes two rapier attacks with advantage against that enemy."
+    },
+    {
+      "name": "Tactical Advantage",
+      "desc": "If the Count has advantage on an attack roll, he deals an extra 7 (2d6) damage."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The Count\u2019s innate spellcasting ability is Charisma (spell save DC 13). He can innately cast the following spells, requiring no material components: * At will: <i>misty step, hunter\u2019s mark</i> * 3/day: <i>blur, mirror image</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Rapier",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage."
+    },
+    {
+      "name": "Longbow",
+      "desc": "Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
+    },
+    {
+      "name": "Now You Don\u2019t\u2026 (Recharge 4\u20136)",
+      "desc": "As a reaction, if an enemy the Count can see makes a successful melee or ranged attack roll against him, he casts misty step."
+    }
+  ]
+}

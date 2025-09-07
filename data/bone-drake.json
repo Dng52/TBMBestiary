@@ -1,0 +1,47 @@
+{
+  "name": "Bone Drake",
+  "tags": [
+    "large",
+    "undead",
+    "cr2",
+    "homebrew"
+  ],
+  "size": "Large",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "2 (450 XP)",
+  "hp": "52 (7d8+21)",
+  "ac": "12 (natural armor)",
+  "speed": "30 ft., burrow 30 ft., climb 30 ft.",
+  "skills": "Perception +2",
+  "senses": "darkvision 60 ft., passive Perception 12",
+  "languages": "understands Draconic but can't speak",
+  "abilities": {
+    "str": 17,
+    "dex": 11,
+    "con": 17,
+    "int": 4,
+    "wis": 10,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Pack Tactics",
+      "desc": "The bone drake has advantage on an attack roll against a creature if at least one of the drake's allies is within 5 feet of the creature and the ally isn't incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The bone drake makes two attacks: one with its bite and one with its tail."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee weapon attack: +5 to hit, reach 5 ft., one target.  Hit: 7 (1d8+3) piercing damage."
+    },
+    {
+      "name": "Tail",
+      "desc": "Melee weapon attack: +5 to hit, reach 10 ft., one target.  Hit: 6 (1d6+3) bludgeoning damage, and the target must succeed on a DC 12 Constitution saving throw or become poisoned for 1 minute.  The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.  A creature poisoned in this way has their speed halved and cannot take reactions."
+    }
+  ]
+}

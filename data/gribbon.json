@@ -1,0 +1,47 @@
+{
+  "name": "Gribbon",
+  "tags": [
+    "small",
+    "monstrosity",
+    "cr1/2",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "monstrosity",
+  "alignment": "neutral evil",
+  "cr": "1/2 (100 XP)",
+  "hp": "13 (3d6 + 3)",
+  "ac": "12",
+  "speed": "30 ft., fly 30 ft.",
+  "skills": "Stealth +4",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Common",
+  "abilities": {
+    "str": 12,
+    "dex": 15,
+    "con": 13,
+    "int": 10,
+    "wis": 10,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Pack Tactics",
+      "desc": "The gribbon has advantage on an attack roll against a creature if at least one of the gribbon\u2019s allies is within 5 feet of the creature and the ally isn\u2019t incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage."
+    },
+    {
+      "name": "Dagger",
+      "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Dart",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 26/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    }
+  ]
+}

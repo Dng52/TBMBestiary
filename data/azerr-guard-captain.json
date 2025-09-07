@@ -1,0 +1,65 @@
+{
+  "name": "Azer Guard Captain",
+  "tags": [
+    "medium",
+    "elemental",
+    "cr4",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "lawful neutral",
+  "cr": "4 (1,100 XP)",
+  "hp": "85 (10d10 + 30)",
+  "ac": "17 (natural armor, shield)",
+  "speed": "30 ft.",
+  "skills": "Athletics +6, Arcana +3, Intimidation +2",
+  "immunities": "fire, poison",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 90 ft., passive Perception 11",
+  "languages": "Ignan, Common",
+  "abilities": {
+    "str": 18,
+    "dex": 10,
+    "con": 16,
+    "int": 12,
+    "wis": 12,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Heated Body",
+      "desc": "A creature that touches the azer or hits it with a melee attack while within 5 feet of it takes 5 (1d10) fire damage."
+    },
+    {
+      "name": "Superheated Equipment",
+      "desc": "When the azer captain hits with a metal melee weapon, it deals an extra 7 (2d6) fire damage (included in the attack)."
+    },
+    {
+      "name": "Illumination",
+      "desc": "The azer captain sheds bright light in a 15-foot radius and dim light for an additional 15 feet."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The azer captain makes two attacks: one with its warhammer and one shield bash."
+    },
+    {
+      "name": "Warhammer",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage plus 7 (2d6) fire damage."
+    },
+    {
+      "name": "Shield Bash",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage and the target must succeed on a DC 14 Constitution saving throw or be stunned until the end of its next turn."
+    },
+    {
+      "name": "Ignition (1/Day)",
+      "desc": "The azer captain lets out a powerful rallying cry that increases the internal flames within all allies within 120 feet that can see it or hear it. For the next minute, these azer have the damage of their Heated Body increased by one dice category to a maximum of 1d12 and gain 10 temporary hit points."
+    },
+    {
+      "name": "Flame Barrier",
+      "desc": "The azer captain adds 3 to its AC against a ranged spell attack that would hit it by raising his shield and creating a protective barrier of flame. If the attack is still successful, the attacker takes 5 (1d10) fire damage as a spiral of flame tracks the spell back to its origin. To use this ability, the azer captain must see the attack and be wielding a shield."
+    }
+  ]
+}

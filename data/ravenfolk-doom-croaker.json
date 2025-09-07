@@ -1,0 +1,52 @@
+{
+  "name": "Ravenfolk Doom Croaker",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr5",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral",
+  "cr": "5 (1800 XP)",
+  "hp": "88 (16d8 + 16)",
+  "ac": "14 (studded leather armor)",
+  "speed": "30 ft.",
+  "saves": "Str +3, Dex+5, Wis +7",
+  "skills": "Intimidate +5, Perception +10",
+  "senses": "darkvision 120 ft., passive Perception 20",
+  "languages": "Common, Feather Speech, Huginn",
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 12,
+    "int": 12,
+    "wis": 18,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Mimicry",
+      "desc": "Ravenfolk doom croakers can mimic the voices of others with uncanny accuracy. They have advantage on Charisma (Deception) checks involving audible mimicry."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The doom croaker has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The doom croaker's innate spellcasting ability is Wisdom (spell save DC 15). It can innately cast the following spells, requiring no material components: At will: comprehend languages 3/day each: counterspell, fear, phantom steed 1/day each: blight, call lightning, clairvoyance, insect plague 1/week: legend lore"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Ghost Wings",
+      "desc": "The ravenfolk doom croaker furiously \"beats\" a set of phantasmal wings. Every creature within 5 feet of the ravenfolk must make a successful DC 13 Dexterity saving throw or be blinded until the start of the ravenfolk's next turn."
+    },
+    {
+      "name": "Radiant Runestaff",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d8) bludgeoning damage plus 4 (1d8) radiant damage."
+    }
+  ]
+}

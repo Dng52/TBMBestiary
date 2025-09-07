@@ -1,0 +1,50 @@
+{
+  "name": "Mavka",
+  "tags": [
+    "medium",
+    "undead",
+    "cr12",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "chaotic evil",
+  "cr": "12 (8400 XP)",
+  "hp": "170 (20d8 + 80)",
+  "ac": "17 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Str +9, Dex +6, Con +8, Cha +8",
+  "skills": "Athletics +9, Nature +5, Perception +5",
+  "immunities": "cold, lightning",
+  "resistance": "acid, fire, necrotic; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "senses": "darkvision 90 ft., passive Perception 15",
+  "languages": "Common, Infernal, Sylvan",
+  "abilities": {
+    "str": 20,
+    "dex": 15,
+    "con": 18,
+    "int": 13,
+    "wis": 13,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The mavka's innate spellcasting ability is Charisma (spell save DC 16, +8 to hit with spell attacks). She can innately cast the following spells, requiring no material components: Constant: protection from evil and good At will: create or destroy water, dancing lights, ray of frost, resistance, witch bolt 3/day each: darkness, hold person, inflict wounds, invisibility, silence 1/day each: animate dead, bestow curse, blindness/deafness, contagion, dispel magic, vampiric touch"
+    },
+    {
+      "name": "Nightmare Mount",
+      "desc": "A mavka is bonded to a nightmare when it is created. Mavkas are encountered with their mounts 95***Sunlight Hypersensitivity.*** The mavka takes 20 radiant damage when she starts her turn in sunlight. While in sunlight, she has disadvantage on attack rolls and ability checks."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The mavka makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 23 (4d8 + 5) bludgeoning damage plus 11 (2d10) necrotic damage."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "name": "Adult Sapphire Dragon",
+  "tags": [
+    "huge",
+    "dragon",
+    "cr17",
+    "strongholds-and-followers"
+  ],
+  "size": "Huge",
+  "type": "dragon",
+  "alignment": "neutral",
+  "cr": "17 (18,000 XP)",
+  "hp": "161 (19d12 + 38)",
+  "ac": "21 (natural armor)",
+  "speed": "40 ft., fly 80 ft. (hover)",
+  "saves": "Dex +12, Int +12, Wis +9, Cha +12",
+  "skills": "Arcana +12, Insight +9, Perception +9, Religion +12",
+  "immunities": "fire, lightning",
+  "resistance": "bludgeoning, slashing, and piercing from nonmagical attacks",
+  "vulnerability": "psychic",
+  "conimmunities": "stunned",
+  "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 25",
+  "languages": "Common, Draconic, telepathy 120 ft.",
+  "abilities": {
+    "str": 21,
+    "dex": 23,
+    "con": 14,
+    "int": 22,
+    "wis": 17,
+    "cha": 22
+  },
+  "traits": [
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Awe Aura",
+      "desc": "All creatures within 30 feet must make a DC 20 Charisma saving throw in order to attack this dragon. On a failed save, the attacking creature\u2019s turn ends immediately. On a success, that creature is immune to the Awe Aura of all gemstone dragons for 1 week."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The dragon makes three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage."
+    },
+    {
+      "name": "Tail",
+      "desc": "Melee Weapon Attack: +11 to hit; reach 15 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage."
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Detect",
+      "desc": "The dragon makes a Wisdom (Perception) Check."
+    },
+    {
+      "name": "Psionics",
+      "desc": "The dragon uses a psionic ability."
+    },
+    {
+      "name": "Psionic Shift (Costs 2 Actions)",
+      "desc": "The dragon releases a wave of telekinetic energy from its mind. Every creature within 15 feet must make a DC 24 Intelligence saving throw or take 13 (2d6 + 6) force damage and be knocked prone. The dragon then can move up to half its movement speed."
+    }
+  ]
+}

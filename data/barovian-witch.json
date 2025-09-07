@@ -1,0 +1,43 @@
+{
+  "name": "Barovian Witch",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/2",
+    "curse-of-strahd"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "1/2 (100 XP)",
+  "hp": "16 (3d8+3)",
+  "ac": "10",
+  "speed": "30 ft.",
+  "skills": "Arcana +4, Perception +2",
+  "senses": "darkvision 60 ft.",
+  "languages": "Common",
+  "abilities": {
+    "str": 7,
+    "dex": 11,
+    "con": 13,
+    "int": 14,
+    "wis": 11,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "desc": "The witch is a 3rd-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks). The witch has the following wizard spells prepared: * Cantrips (at will): <i>mage hand, prestidigitation, ray of frost</i> * 1st level (4 slots): <i>ray of sickness, sleep, Tasha's hideous laughter</i> * 2nd level (2 slots): <i>alter self, invisibility</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Claws (Requires Alter Self)",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6+1) slashing damage. This attack is magical."
+    },
+    {
+      "name": "Dagger",
+      "desc": "Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 2 (1d4) piercing damage."
+    }
+  ]
+}

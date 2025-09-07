@@ -1,0 +1,47 @@
+{
+  "name": "Albino Cave Spider",
+  "tags": [
+    "tiny",
+    "beast",
+    "cr1/2",
+    "tome-of-horrors"
+  ],
+  "size": "Tiny",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/2 (100 XP)",
+  "hp": "2 (1d4)",
+  "ac": "15 (natural armor)",
+  "speed": "20 ft., climb 10 ft.",
+  "skills": "Perception +4, Stealth +4",
+  "senses": "darkvision 60 ft., tremorsense 60 ft., passive Perception 14",
+  "languages": "--",
+  "abilities": {
+    "str": 4,
+    "dex": 14,
+    "con": 10,
+    "int": 2,
+    "wis": 10,
+    "cha": 3
+  },
+  "traits": [
+    {
+      "name": "Spider Climb",
+      "desc": "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    },
+    {
+      "name": "Web Sense",
+      "desc": "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+    },
+    {
+      "name": "Web Walker",
+      "desc": "The spider ignores movement restrictions caused by webbing."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage, and the target must attempt a DC 13 Constitution saving throw taking 2 (1d4) poison damage on a failure. If the target misses its saving throw by 5 or more, it is poisoned for 1 hour."
+    }
+  ]
+}

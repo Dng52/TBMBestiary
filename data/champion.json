@@ -1,0 +1,51 @@
+{
+  "name": "Champion",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr9",
+    "volos-guide"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "9 (5,000 XP)",
+  "hp": "143 (22d8+44)",
+  "ac": "18 (plate)",
+  "speed": "30 ft.",
+  "saves": "Str +9, Con +6",
+  "skills": "Athletics +9, Intimidation +5, Perception +6",
+  "languages": "any one language (usually Common)",
+  "abilities": {
+    "str": 20,
+    "dex": 15,
+    "con": 14,
+    "int": 10,
+    "wis": 14,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Indomitable (2/Day)",
+      "desc": "The champion rerolls a failed saving throw."
+    },
+    {
+      "name": "Second Wind (Recharges after a Short or Long Rest)",
+      "desc": "As a bonus action, the champion can regain 20 hit points."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The champion makes three attacks with its greatsword or its light crossbow."
+    },
+    {
+      "name": "Greatsword",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6+5) slashing damage, plus 7 (2d6) slashing damage if the champion has more than half of its total hit points remaining."
+    },
+    {
+      "name": "Light Crossbow",
+      "desc": "Ranged Weapon Attack: +6 to hit, range 80/320 ft., one target. Hit: 6 (1d8+2) piercing damage, plus 7 (2d6) piercing damage if the champion has more than half of its total hit points remaining."
+    }
+  ]
+}

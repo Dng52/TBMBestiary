@@ -1,0 +1,61 @@
+{
+  "name": "Sea Lion",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr5",
+    "tales-from-the-yawning-portal"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "5 (1,800 XP)",
+  "hp": "90 (12d10+24)",
+  "ac": "15 (natural armor)",
+  "speed": "10 ft., swim 40 ft.",
+  "skills": "Perception +4, Stealth +5",
+  "abilities": {
+    "str": 17,
+    "dex": 15,
+    "con": 15,
+    "int": 3,
+    "wis": 12,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Source",
+      "desc": "tales from the yawning portal,  page 242"
+    },
+    {
+      "name": "Amphibious",
+      "desc": "The sea lion can breathe air and water."
+    },
+    {
+      "name": "Keen Smell",
+      "desc": "The sea lion has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Pack Tactics",
+      "desc": "The sea lion has advantage on an attack roll against a creature if at least one of the sea lion's allies is within 5 feet of the creature and the ally isn't incapacitated."
+    },
+    {
+      "name": "Swimming Leap",
+      "desc": "With a 10-foot swimming start, the sea lion can long jump out of or across the water up to 25 feet."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The sea lion makes three attacks: one bite attack and two claw attacks."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) piercing damage"
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "name": "Disgraced Sentinel",
+  "tags": [
+    "medium",
+    "celestial",
+    "cr8",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "celestial",
+  "alignment": "chaotic evil",
+  "cr": "8 (3,900 XP)",
+  "hp": "111 (13d8 + 52)",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft., fly 90 ft.",
+  "saves": "Dex +7, Wis +7, Cha +6",
+  "skills": "Insight +6, Perception +7",
+  "resistance": "necrotic; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "charmed, exhausted, frightened",
+  "senses": "darkvision 120ft., passive Perception 17",
+  "languages": "all, telepathy 120 ft.",
+  "abilities": {
+    "str": 16,
+    "dex": 19,
+    "con": 18,
+    "int": 17,
+    "wis": 18,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Corrupted Angelic Weapons",
+      "desc": "The sentinel's weapons are magical. When the sentinel hits with any weapon, the weapon deals an extra 3d8 necrotic damage (included in the attack)."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The sentinel has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The sentinel makes two longbow attacks."
+    },
+    {
+      "name": "Longbow",
+      "desc": "Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 8 (1d8 + 4) piercing damage plus 13 (3d8) necrotic damage."
+    },
+    {
+      "name": "Retreating Shot (Recharge 4-6)",
+      "desc": "The sentinel leaps back 50 feet without provoking attacks of opportunity, then makes two shots against a single target with its longbow. The first of these attacks is made with advantage."
+    },
+    {
+      "name": "Decaying Touch (3/Day)",
+      "desc": "Melee Spell Attack: +7 to hit, reach 5 ft., one target. Hit: 30 (6d8 + 3) necrotic damage."
+    },
+    {
+      "name": "Crash of Arrows (1/Day)",
+      "desc": "The sentinel creates a 30 foot diameter runic circle centered on a location it can see within 120 feet. Whenever a creature enters this area for the first time on a turn or ends its turn in this area, conjured arrows rain down upon them. That creature must make a DC 15 Dexterity saving throw, taking 32 (7d8) piercing damage on a failed save or half as much damage on a successful one."
+    }
+  ]
+}

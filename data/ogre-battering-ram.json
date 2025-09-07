@@ -1,0 +1,32 @@
+{
+  "name": "Ogre Battering Ram",
+  "tags": [
+    "large",
+    "giant",
+    "cr4",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Large",
+  "type": "giant",
+  "alignment": "chaotic evil",
+  "cr": "4 (1100 XP)",
+  "hp": "59  (7d10 + 21)",
+  "ac": "14 (ring mail)",
+  "speed": "40 ft.",
+  "senses": "darkvision 60 ft., passive Perception 8",
+  "languages": "Common, Giant",
+  "abilities": {
+    "str": 19,
+    "dex": 8,
+    "con": 16,
+    "int": 5,
+    "wis": 7,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Siege Monster",
+      "desc": "The ogre deals double damage to objects and structures."
+    }
+  ]
+}

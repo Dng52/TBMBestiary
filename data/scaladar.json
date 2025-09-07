@@ -1,0 +1,53 @@
+{
+  "name": "Scaladar",
+  "tags": [
+    "huge",
+    "construct",
+    "cr8",
+    "dungeon-of-the-mad-mage"
+  ],
+  "size": "Huge",
+  "type": "construct",
+  "alignment": "unaligned",
+  "cr": "8 (8,900 XP)",
+  "hp": "94 (7d12 + 49)",
+  "ac": "19 (natural armor)",
+  "speed": "30 ft., clmb 20 ft.",
+  "immunities": "force, lightning, poison",
+  "resistance": "fire; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "charmed, paralyzed, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "\u2014",
+  "abilities": {
+    "str": 19,
+    "dex": 10,
+    "con": 25,
+    "int": 1,
+    "wis": 12,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Lightning Absorption",
+      "desc": "Whenever the scaladar is subjected to lightning damage, it takes no damage, and its sting deals an extra 11 (2d10) lightning damage until the end of its next turn."
+    },
+    {
+      "name": "Scaladar Link",
+      "desc": "The scaladar knows the location of other scaladar within 100 feet of it, and it can sense when any of them take damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The scaladar makes three attacks: two with its claws and one with its sting."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 10 (1d12 + 4) bludgeoning damage, and the target is grappled (escape DC 15). The scaladar has two claws, each of which can grapple one target."
+    },
+    {
+      "name": "Sting",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 9 (1d10 + 4) piercing damage plus 11 (2d10) lightning damage."
+    }
+  ]
+}

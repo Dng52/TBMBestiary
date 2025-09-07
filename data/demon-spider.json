@@ -1,0 +1,67 @@
+{
+  "name": "Demon Spider",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr8",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "chaotic evil",
+  "cr": "8 (3,900 XP)",
+  "hp": "102 (12d10 + 36)",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft., climb 30 ft.",
+  "skills": "Stealth +6",
+  "immunities": "poison",
+  "resistance": "cold, lightning",
+  "vulnerability": "fire",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 120 ft., passive Perception 11",
+  "languages": "--",
+  "abilities": {
+    "str": 10,
+    "dex": 17,
+    "con": 16,
+    "int": 5,
+    "wis": 12,
+    "cha": 3
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "desc": "The spider has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The spider\u2019s weapon attacks are magical."
+    },
+    {
+      "name": "Spider Climb",
+      "desc": "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    },
+    {
+      "name": "Web Sense",
+      "desc": "While in contact with a web, the spider knows the exact location of any other creature in contact with the same web."
+    },
+    {
+      "name": "Web Walker",
+      "desc": "The spider ignores movement restrictions caused by webbing."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The spider can make one bite attack and two puncture attacks with its legs."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage, and the target must make a DC 12 Constitution saving throw, taking 18 (4d8) poison damage on a failed save, or half as much damage on a success. If the poison damage reduces the target to 0 hit points, the target is stable but poisoned for 1 hour, even after regaining hit points, and is paralyzed while poisoned in this way."
+    },
+    {
+      "name": "Puncture",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (2d10 + 3) piercing damage."
+    }
+  ]
+}

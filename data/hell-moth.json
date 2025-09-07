@@ -1,0 +1,51 @@
+{
+  "name": "Hell Moth",
+  "tags": [
+    "large",
+    "aberration",
+    "cr5",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "aberration",
+  "alignment": "neutral evil",
+  "cr": "5 (1,800 XP)",
+  "hp": "52 (7d10 + 14)",
+  "ac": "15 (natural armor)",
+  "speed": "10 ft., fly 60 ft.",
+  "resistance": "fire",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "--",
+  "abilities": {
+    "str": 18,
+    "dex": 17,
+    "con": 15,
+    "int": 6,
+    "wis": 12,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Damage Transfer",
+      "desc": "While the hell moth is grappling a creature, the hell moth takes only half the damage dealt to it, and the creature grappled by the hell moth takes the other half."
+    },
+    {
+      "name": "Keen Scent",
+      "desc": "The hell moth has advantage on Wisdom (Perception) checks based on scent."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage."
+    },
+    {
+      "name": "Engulf",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one Medium or smaller creature. Hit: The creature is grappled (escape DC 15). Until this grapple ends, the target is restrained and blinded, and the hell moth can\u2019t engulf another target."
+    },
+    {
+      "name": "Immolation (1/Short or Long Rest)",
+      "desc": "The hell moth detonates, dealing 33 (6d10) fire damage to itself and any grappled creature."
+    }
+  ]
+}

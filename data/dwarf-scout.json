@@ -1,0 +1,38 @@
+{
+  "name": "Dwarf Scout",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/2",
+    "homebrew"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "1/2 (100 XP)",
+  "hp": "16  (3d8 + 3)",
+  "ac": "13 (leather armor)",
+  "speed": "30 ft.",
+  "skills": "Nature +4, Perception +5, Stealth +6, Survival +5",
+  "resistance": "poison",
+  "senses": "darkvision, passive Perception 15",
+  "languages": "any one language (usually Common)",
+  "abilities": {
+    "str": 11,
+    "dex": 14,
+    "con": 12,
+    "int": 11,
+    "wis": 13,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Dwarven Resilience",
+      "desc": "The dwarf has advantage on saving throws against poison and has resistance to poison damage"
+    },
+    {
+      "name": "Keen Hearing and Sight",
+      "desc": "The scout has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+    }
+  ]
+}

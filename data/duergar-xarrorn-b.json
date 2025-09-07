@@ -1,0 +1,37 @@
+{
+  "name": "Duergar Xarrorn (B)",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr2",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful evil",
+  "cr": "2 (450 XP)",
+  "hp": "26  (4d8 + 8)",
+  "ac": "18 (plate mail)",
+  "speed": "25 ft.",
+  "resistance": "poison",
+  "senses": "darkvision 120 ft., passive Perception 10",
+  "languages": "Dwarvish, Undercommon",
+  "abilities": {
+    "str": 16,
+    "dex": 11,
+    "con": 14,
+    "int": 11,
+    "wis": 10,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Duergar Resilience",
+      "desc": "The duergar has advantage on saving throws against poison, spells, and illusions, as well as to resist being charmed or paralyzed."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the duergar has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ]
+}

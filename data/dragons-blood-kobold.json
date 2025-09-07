@@ -1,0 +1,51 @@
+{
+  "name": "Dragon's Blood Kobold",
+  "tags": [
+    "small",
+    "humanoid",
+    "cr1/2",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Small",
+  "type": "humanoid",
+  "alignment": "lawful evil",
+  "cr": "1/2 (100 XP)",
+  "hp": "18 (4d6 + 4)",
+  "ac": "13",
+  "speed": "30 ft.",
+  "resistance": "see <i>Dragon\u2019s Blood</i> below",
+  "senses": "darkvision 60 ft., passive Perception 8",
+  "languages": "Common, Draconic",
+  "abilities": {
+    "str": 8,
+    "dex": 16,
+    "con": 12,
+    "int": 8,
+    "wis": 7,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the kobold has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Pack Tactics",
+      "desc": "The kobold has advantage on an attack roll against a creature if at least one of the kobold\u2019s allies is within 5 feet of the creature and the ally isn\u2019t incapacitated."
+    },
+    {
+      "name": "Dragon\u2019s Blood",
+      "desc": "This kobold is a servant of a chromatic dragon and has taken on some of its characteristics. It gains resistance to one type of damage and deals additional damage on each attack depending on the dragon\u2019s color as shown below. * ***Black:*** Acid * ***Blue:*** Lightning * ***Green:*** Poison * ***Red:*** Fire * ***White:*** Cold"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit: 5 (1d4 + 3) slashing damage plus 2 (1d4) elemental damage (See <i>Dragon's Blood</i> above)."
+    },
+    {
+      "name": "Sling",
+      "desc": "Ranged Weapon Attack: +5 to hit, range 30/120 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage."
+    }
+  ]
+}

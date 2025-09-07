@@ -1,0 +1,47 @@
+{
+  "name": "Tribal Hunter",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "1 (200 XP)",
+  "hp": "32 (5d8 + 10)",
+  "ac": "14 (studded leather)",
+  "speed": "30 ft.",
+  "skills": "Acrobatics +4, Athletics +4",
+  "senses": "passive Perception 11",
+  "languages": "any two languages",
+  "abilities": {
+    "str": 14,
+    "dex": 15,
+    "con": 15,
+    "int": 10,
+    "wis": 12,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Natural Resilience",
+      "desc": "A life away from the pleasures of society has made the hunter tougher than an ordinary individual. It has advantage on Constitution and Strength saving throws."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The hunter makes two shortsword attacks."
+    },
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 2 (1d4) poison damage."
+    },
+    {
+      "name": "Javelin",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 5 (2d4) poison damage."
+    }
+  ]
+}

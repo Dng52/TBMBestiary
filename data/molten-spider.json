@@ -1,0 +1,49 @@
+{
+  "name": "Molten Spider",
+  "tags": [
+    "medium",
+    "beast",
+    "cr2",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "45 (7d8 + 14)",
+  "ac": "12",
+  "speed": "30 ft., climb 30 ft.",
+  "skills": "Perception +5",
+  "immunities": "fire",
+  "vulnerability": "cold",
+  "senses": "darkvision 60 ft., passive Perception 15",
+  "languages": "--",
+  "abilities": {
+    "str": 16,
+    "dex": 14,
+    "con": 14,
+    "int": 6,
+    "wis": 12,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Spider Climb",
+      "desc": "The spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    },
+    {
+      "name": "Web Walker",
+      "desc": "The spider ignores movement restrictions caused by webbing."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit: 7 (1d8 + 3) piercing damage, and the target must make a DC 11 Constitution saving throw, taking 10 (3d6) fire damage on a failed save, or half as much damage on a successful one."
+    },
+    {
+      "name": "Molten Web (Recharge 6)",
+      "desc": "The spider produces a mass of molten, sticky webbing at a point within 20 feet. The web fills a 10-foot cube from that point for the next minute. The web is difficult terrain and lightly obscures the area. Each creature that starts its turn in the webs or that enters them during its turn takes 5 (2d4) fire damage and must make a DC 11 Dexterity saving throw. On a failed saving throw the creature is restrained as long as it remains in the webs or until it breaks free. A creature restrained by the webs can use its action to make a DC 11 Strength check, freeing itself on a success. The webs are vulnerable to water. Any 5-foot cube of webs exposed to water dissolve in 1 round."
+    }
+  ]
+}

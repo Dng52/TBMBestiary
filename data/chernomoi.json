@@ -1,0 +1,44 @@
+{
+  "name": "Chernomoi",
+  "tags": [
+    "tiny",
+    "fey",
+    "cr1",
+    "tome-of-beasts"
+  ],
+  "size": "Tiny",
+  "type": "fey",
+  "alignment": "neutral",
+  "cr": "1 (200 XP)",
+  "hp": "32 (5d4 + 20)",
+  "ac": "13",
+  "speed": "20 ft., fly 20 ft.",
+  "skills": "Acrobatics +6, Perception +2, Stealth +6",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical attacks not made with silver weapons",
+  "senses": "darkvision 60 ft., passive Perception 12",
+  "languages": "Common, Draconic, Sylvan",
+  "abilities": {
+    "str": 9,
+    "dex": 18,
+    "con": 18,
+    "int": 12,
+    "wis": 11,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The chernomoi's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no material components: * At will: <i>detect magic, invisibility, mage hand, mending, message, prestidigitation</i> * 1/day each: <i>detect poison and disease, dimension door</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Scimitar",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) slashing damage."
+    },
+    {
+      "name": "Shriek (Recharge 5-6)",
+      "desc": "The chernomoi emits a loud shriek. All creatures within 60 feet who can hear take 10 (3d6) thunder damage, or half damage with a successful DC 13 Constitution saving throw."
+    }
+  ]
+}

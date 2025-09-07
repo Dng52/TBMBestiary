@@ -1,0 +1,55 @@
+{
+  "name": "Acridor",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "out-of-the-box-5e"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic neutral",
+  "cr": "1 (200 XP)",
+  "hp": "39 (6d8 + 12)",
+  "ac": "14",
+  "speed": "40 ft.",
+  "skills": "Athletics +3, Perception +3, Survival +3",
+  "senses": "Darkvision 60 ft., passive Perception 13",
+  "languages": "Pheromones (between acridor only), Undercommon",
+  "abilities": {
+    "str": 14,
+    "dex": 12,
+    "con": 14,
+    "int": 8,
+    "wis": 12,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Natural Jumpers",
+      "desc": "The acridor\u2019s long jump is up to 30 feet and its high jump is up to 15 feet, with or without a running start."
+    },
+    {
+      "name": "Limited Flight (Recharge 4-6)",
+      "desc": "Acridor are not skilled fliers, and can only fly over short distances. As a move action, an acridor can fly 60 ft."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The acridor makes two attacks, one with its bite and one with its claw or kpinga, or two kpinga attacks."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 +2) piercing and 3 (1d6) acid damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 +2) slashing damage."
+    },
+    {
+      "name": "Kpinga",
+      "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6 +2) piercing damage."
+    }
+  ]
+}

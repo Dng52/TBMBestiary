@@ -1,0 +1,47 @@
+{
+  "name": "Zi Liang",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr0",
+    "storm-kings-thunder"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic good",
+  "cr": "0 (10 XP)",
+  "hp": "22 (5d8)",
+  "ac": "15",
+  "speed": "30 ft.",
+  "skills": "Acrobatics +4, Athletics +3, Perception +5, Stealth +4",
+  "senses": "passive Perception 15",
+  "languages": "Common, Elvish, Goblin",
+  "abilities": {
+    "str": 12,
+    "dex": 15,
+    "con": 11,
+    "int": 14,
+    "wis": 16,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Unarmored Defense",
+      "desc": "While Zi is wearing no armor and wielding no shield, her AC includes her Wisdom modifier."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Zi makes two melee attacks."
+    },
+    {
+      "name": "Quarterstaff",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6+1) bludgeoning damage, or 5 (1d8+1) bludgeoning damage if used with both hands."
+    },
+    {
+      "name": "Sling",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 4 (1d4+2) bludgeoning damage. Zi carries twenty sling stones."
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "name": "Wood Goblin",
+  "tags": [
+    "small",
+    "humanoid",
+    "cr1",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "humanoid",
+  "alignment": "neutral good",
+  "cr": "1 (200 XP)",
+  "hp": "18 (4d6 + 4)",
+  "ac": "13 (natural armor)",
+  "speed": "20 ft.",
+  "saves": "Dex +4, Int +5",
+  "skills": "Athletics +3, Acrobatics +4, Medicine +5, Perception +5, Sleight of Hand +4, Stealth +4, Survival +5",
+  "immunities": "poison",
+  "resistance": "cold; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "vulnerability": "fire",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 120 ft., passive Perception 15",
+  "languages": "Common, Goblin, Sylvan",
+  "abilities": {
+    "str": 13,
+    "dex": 15,
+    "con": 13,
+    "int": 16,
+    "wis": 16,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The wood goblin\u2019s spellcasting ability is Wisdom (spell save DC 13, +5 to hit with spell attacks). The goblin can innately cast the following spells, requiring no material components: * At will: <i>detect poison or disease, poison spray, shillelagh, spare the dying</i> * 3/day each: <i>barkskin, cure wounds, entangle, lesser restoration, protection from poison</i> * 1/day: <i>spider climb</i>"
+    },
+    {
+      "name": "Herbal Medicine",
+      "desc": "Due to their innate and magical affinity for plants and herbs, a wood goblin always has advantage on Wisdom (Medicine) skill checks. In addition, the wood goblin\u2019s innate cure wounds spells can be imitated herbally without limitation as long as the wood goblin has access to wild plants. However, the herbal versions require 15 minutes to prepare and must be fresh, and thus are not usable in combat."
+    },
+    {
+      "name": "Sneak Attack (1/turn)",
+      "desc": "The wood goblin deals an extra 7 (2d6) damage when it has advantage and hits a target with a weapon on the attack roll, or when the target is within 5 feet of an ally of the wood goblin that isn\u2019t incapacitated and the wood goblin doesn\u2019t have disadvantage on the attack roll."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Rapier",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+    },
+    {
+      "name": "Shortbow",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    },
+    {
+      "name": "Poison Cloud (1/day)",
+      "desc": "A 10-foot radius of thick venomous gas extends out from the wood goblin. The gas spreads around corners, and its area is lightly obscured. It lasts for 1 minute or until a strong wind disperses it. Any creature that starts its turn in that area must succeed on a DC 11 Constitution saving throw or be poisoned until the start of its next turn and it takes 7 (2d6) poison damage. While poisoned in this way, the target can take either an action or a bonus action on its turn, not both, and can\u2019t take reactions."
+    }
+  ]
+}

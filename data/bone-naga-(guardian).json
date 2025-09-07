@@ -1,0 +1,40 @@
+{
+  "name": "Bone Naga (Guardian)",
+  "tags": [
+    "large",
+    "undead",
+    "cr4",
+    "monster-manual"
+  ],
+  "size": "Large",
+  "type": "undead",
+  "alignment": "lawful evil",
+  "cr": "4 (1,100 XP)",
+  "hp": "58 (9d10+9)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft.",
+  "immunities": "poison",
+  "conimmunities": "charmed, exhaustion, paralyzed, poisoned",
+  "senses": "darkvision 60 ft.",
+  "languages": "Common plus one other language",
+  "abilities": {
+    "str": 15,
+    "dex": 16,
+    "con": 12,
+    "int": 15,
+    "wis": 15,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "desc": "The naga is a 5th-level spellcaster (spell save DC 12, +4 to hit with spell attacks) that needs only verbal components to cast its spells. Its spellcasting ability is Wisdom, and it has the following cleric spells prepared: * Cantrips (at will): <i>mending, sacred flame, thaumaturgy</i> * 1st level (4 slots): <i>command, shield of faith</i> * 2nd level (3 slots): <i>calm emotions, hold person</i> * 3rd level (2 slots): <i>bestow curse</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 10 ft., one creature. Hit: 10 (2d6 + 3) piercing damage plus 10 (3d6) poison damage."
+    }
+  ]
+}

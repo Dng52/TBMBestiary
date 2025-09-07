@@ -1,0 +1,60 @@
+{
+  "name": "Hellcat",
+  "tags": [
+    "tiny",
+    "aberration",
+    "cr2",
+    "tome-of-horrors"
+  ],
+  "size": "Tiny",
+  "type": "aberration",
+  "alignment": "neutral evil",
+  "cr": "2 (450 XP)",
+  "hp": "44 (8d4 + 24)",
+  "ac": "13 (natural armor)",
+  "speed": "40 ft., climb 30 ft.",
+  "saves": "Int +2, Wis +4",
+  "skills": "Perception +4, Stealth +4",
+  "senses": "darkvision 60 ft., passive Perception 14",
+  "languages": "understands Common but can\u2019t speak; telepathy 60 ft.",
+  "abilities": {
+    "str": 3,
+    "dex": 15,
+    "con": 16,
+    "int": 11,
+    "wis": 15,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Death Sense",
+      "desc": "The hellcat can sense the exact location of any humanoid within 120 feet with less than half its hit points."
+    },
+    {
+      "name": "False Appearance",
+      "desc": "Unless it is using its Death Gaze ability, the hellcat is indistinguishable from a normal housecat."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The hellcat has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The hellcat makes one bite attack and one claw attack."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 9 (2d6 + 2) slashing damage."
+    },
+    {
+      "name": "Death Gaze (Recharge 5\u20136)",
+      "desc": "One target within 30 feet of the hellcat that it can see must make a DC 14 Constitution saving throw. On a failed saving throw, the target takes 27 (6d8) necrotic damage. If the creature drops to 0 hit points from this damage, it dies, and can only be restored to life by means of a true resurrection or wish spell."
+    }
+  ]
+}

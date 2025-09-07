@@ -1,0 +1,59 @@
+{
+  "name": "Demonblood Orc Warrior",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr4",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "4 (1,100 XP)",
+  "hp": "76 (8d10 + 32)",
+  "ac": "18 (chainmail, shield)",
+  "speed": "30 ft.",
+  "skills": "Intimidation +2, Athletics +5",
+  "senses": "darkvision 60 ft., truesight 30 ft., passive Perception 11",
+  "languages": "Common, Orc",
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 19,
+    "int": 9,
+    "wis": 12,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Aggressive",
+      "desc": "As a bonus action, the orc can move up to its speed toward a hostile creature that it can see."
+    },
+    {
+      "name": "Demon\u2019s Sight",
+      "desc": "The orc has enhanced sight from its demonic blood. It has truesight out to 30 ft."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The orc makes two attacks with its longsword or its spear."
+    },
+    {
+      "name": "Longsword",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) if used with two hands."
+    },
+    {
+      "name": "Spear",
+      "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d6 + 3) piercing damage, or 7 (1d8 + 3) piercing damage if used with two hands to make a melee attack."
+    },
+    {
+      "name": "Precision Attacks (Recharge 5-6)",
+      "desc": "As a bonus action, the orc taps into its demonic sight and finds its opponent\u2019s weak spots. Each weapon attack the orc makes against an enemy within 30 feet this turn is made with advantage."
+    },
+    {
+      "name": "Demonic Endurance",
+      "desc": "The orc reduces the damage dealt by a single source to 10."
+    }
+  ]
+}

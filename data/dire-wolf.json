@@ -1,0 +1,41 @@
+{
+  "name": "Dire Wolf",
+  "tags": [
+    "large",
+    "beast",
+    "cr1",
+    "monster-manual"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1 (200 XP)",
+  "hp": "37 (5d10+10)",
+  "ac": "14 (natural armor)",
+  "speed": "50 ft.",
+  "skills": "Perception +3, Stealth +4",
+  "abilities": {
+    "str": 17,
+    "dex": 15,
+    "con": 15,
+    "int": 3,
+    "wis": 12,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Keen Hearing and Smell",
+      "desc": "The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+    },
+    {
+      "name": "Pack Tactics",
+      "desc": "The wolf has advantage on an attack roll against a creature if at least one of the wolf's allies is within 5 ft. of the creature and the ally isn't incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
+    }
+  ]
+}

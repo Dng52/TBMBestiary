@@ -1,0 +1,55 @@
+{
+  "name": "Killer Frog",
+  "tags": [
+    "small",
+    "beast",
+    "cr1/4",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/4 (50 XP)",
+  "hp": "11 (2d6 + 4)",
+  "ac": "12 (natural armor)",
+  "speed": "30 ft., swim 30 ft.",
+  "skills": "Perception +3",
+  "senses": "passive Perception 13",
+  "languages": "--",
+  "abilities": {
+    "str": 12,
+    "dex": 13,
+    "con": 14,
+    "int": 2,
+    "wis": 9,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The killer frog can breathe air and water."
+    },
+    {
+      "name": "Keen Smell",
+      "desc": "The killer frog has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Standing Leap",
+      "desc": "The frog\u2019s long jump is up to 30 feet and its high jump is up to 20 feet, with or without a running start."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The killer frog makes two attacks: one with its bite and one with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) slashing damage."
+    }
+  ]
+}

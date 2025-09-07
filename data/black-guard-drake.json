@@ -1,0 +1,48 @@
+{
+  "name": "Black Guard Drake",
+  "tags": [
+    "medium",
+    "dragon",
+    "cr2",
+    "volos-guide"
+  ],
+  "size": "Medium",
+  "type": "dragon",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "52 (7d8+21)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft., swim 30 ft.",
+  "skills": "Perception +2",
+  "resistance": "acid",
+  "senses": "darkvision 60 ft.",
+  "languages": "understands Draconic but can't speak it",
+  "abilities": {
+    "str": 16,
+    "dex": 11,
+    "con": 16,
+    "int": 4,
+    "wis": 10,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The guard drake can breathe air and water."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The drake attacks twice, once with its bite and once with its tail."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8+3) piercing damage."
+    },
+    {
+      "name": "Tail",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6+3) bludgeoning damage."
+    }
+  ]
+}

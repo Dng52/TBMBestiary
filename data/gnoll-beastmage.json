@@ -1,0 +1,67 @@
+{
+  "name": "Gnoll Beastmage",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr3",
+    "homebrew"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "3 (700 XP)",
+  "hp": "38 (7d8 + 7)",
+  "ac": "15 (hide armor, shield)",
+  "speed": "30 ft.",
+  "skills": "Animal Handling +4, Perception +4",
+  "senses": "darkvision 60 ft., passive Perception 14",
+  "languages": "Gnoll",
+  "abilities": {
+    "str": 14,
+    "dex": 13,
+    "con": 12,
+    "int": 8,
+    "wis": 15,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Bestial Affinity",
+      "desc": "The gnoll can comprehend and verbally communicate with beasts, and it has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Pack Tactics",
+      "desc": "While the gnoll is in a beast form, it has advantage on an attack roll against a creature if at least one of the gnoll's allies is within 5 feet of the creature and the ally isn't incapacitated."
+    },
+    {
+      "name": "Rampage",
+      "desc": "When the gnoll reduces a creature to O hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack."
+    },
+    {
+      "name": "Shapechanger",
+      "desc": "The gnoll can use its action to polymorph into a giant hyena, a hyena, a jackal, a rat, or a vulture, or back into its true form. Its statistics, other than its size and speed, are the same in each form. Any equipment it is wearing or carrying is transformed along with it. It reverts to its true form if it dies."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The gnoll is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared. * Cantrips (at-will): <i>druidcraft, guidance, resistance</i> * lst level (4 slots): <i>animal friendship, cure wounds</i> * 2nd level (3 slots): <i>animal messenger, locate animals or plants, pass without trace</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite (Beak in Vulture Form)",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (l d6 + 2) piercing damage."
+    },
+    {
+      "name": "Spear (Gnoll Form Only)",
+      "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (l d6 + 2) piercing damage, or 6 (l d8 + 2) piercing damage if used with two hands to make a melee attack."
+    },
+    {
+      "name": "Longbow (Gnoll Form Only)",
+      "desc": "Ranged Weapon Attack: + 3 to hit, range l 50/600 ft., one target. Hit: 5 (l d8 + l) piercing damage."
+    },
+    {
+      "name": "Wild Cackle (1/Day)",
+      "desc": "The gnoll laughs madly and swirls with primal magic, inspiring each allied gnoll and beast within 30 feet ofit that can hear it. Affected creatures have their speed increased by l 0 feet and have advantage on attack rolls made using natural weapons. The gnoll can then make one bite attack as a bonus action."
+    }
+  ]
+}

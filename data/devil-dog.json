@@ -1,0 +1,59 @@
+{
+  "name": "Devil Dog",
+  "tags": [
+    "large",
+    "fiend",
+    "cr5",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "fiend",
+  "alignment": "lawful evil",
+  "cr": "5 (1,800 XP)",
+  "hp": "67 (9d10 + 18)",
+  "ac": "15 (natural armor)",
+  "speed": "50 ft., climb 30 ft.",
+  "saves": "Con +5, Wis +6, Cha +5",
+  "skills": "Insight +9, Perception +9, Stealth +6, Survival +9",
+  "immunities": "fire, poison",
+  "resistance": "cold; bludgeoning, piercing, and slashing from nonmagical weapons that aren\u2019t silvered",
+  "conimmunities": "charmed, exhaustion, frightened, poisoned",
+  "senses": "darkvision 120 ft., passive Perception 19",
+  "languages": "Infernal, telepathy 120 ft.",
+  "abilities": {
+    "str": 18,
+    "dex": 17,
+    "con": 15,
+    "int": 11,
+    "wis": 17,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Devil\u2019s Sight",
+      "desc": "Magical darkness doesn\u2019t impede the devil\u2019s darkvision."
+    },
+    {
+      "name": "Keen Smell",
+      "desc": "The devil dog has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The devil has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Scent of Prey",
+      "desc": "The devil dog knows the exact location of any soul whose true name it knows, as long as that soul resides in a vessel or body within 1 mile. If the soul is beyond that distance, it knows the direction the soul lies in. If the soul is on a different plane of existence, it knows the plane that the soul resides on."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
+    }
+  ]
+}

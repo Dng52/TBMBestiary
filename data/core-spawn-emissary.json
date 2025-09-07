@@ -1,0 +1,54 @@
+{
+  "name": "Core Spawn Emissary",
+  "tags": [
+    "medium",
+    "aberration",
+    "cr6",
+    "explorers-guide-to-wildemount"
+  ],
+  "size": "Medium",
+  "type": "aberration",
+  "alignment": "chaotic evil",
+  "cr": "6 (2,300 XP)",
+  "hp": "102 (12d8 + 48)",
+  "ac": "15 (natural armor)",
+  "speed": "40 ft., fly 60 ft. (hover)",
+  "saves": "Dex +5, Wis +4, Cha +2",
+  "skills": "Perception +4",
+  "immunities": "psychic",
+  "conimmunities": "blinded",
+  "senses": "blindsight 30 ft., tremorsense 60 ft., passive Perception 14",
+  "languages": " understands Deep Speech but can't speak, telepathy 120 ft.",
+  "abilities": {
+    "str": 17,
+    "dex": 15,
+    "con": 18,
+    "int": 8,
+    "wis": 13,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "desc": "The emissary has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The emissary makes three talons attacks."
+    },
+    {
+      "name": "Talons",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 14 (2d10 + 3) slashing damage."
+    },
+    {
+      "name": "Alluring Thrum (Recharges 5\u20146)",
+      "desc": "The emissary emits a dreadful yet alluring hum. Each creature within 20 feet of the emissary that can hear it and that isn\u2019t an aberration must succeed on a DC 14 Constitution saving throw or be charmed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    },
+    {
+      "name": "Crystal Spores (Recharge 6)",
+      "desc": "A 15-foot-radius cloud of toxic crystalline spores extends out from the emissary. The spores spread around corners. Each creature in the area must succeed on a DC 14 Constitution saving throw or become poisoned. While poisoned in this way, a creature takes 11 (2d10) poison damage at the start of each of its turns. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    }
+  ]
+}

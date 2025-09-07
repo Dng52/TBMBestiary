@@ -1,0 +1,79 @@
+{
+  "name": "Lunar Devil",
+  "tags": [
+    "large",
+    "fiend",
+    "cr8",
+    "tome-of-beasts"
+  ],
+  "size": "Large",
+  "type": "fiend",
+  "alignment": "lawful evil",
+  "cr": "8 (3900 XP)",
+  "hp": "94 (9d10 + 45)",
+  "ac": "16 (natural armor)",
+  "speed": "40 ft., fly 60 ft. (hover), lightwalking 80 ft.",
+  "saves": "Str +8, Dex +8, Con +8, Wis +5",
+  "skills": "Perception +5",
+  "immunities": "fire, poison",
+  "resistance": "cold; bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't silvered",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 120 ft., passive Perception 15",
+  "languages": "Celestial, Draconic, Elvish, Infernal, Sylvan, telepathy 120 ft.",
+  "abilities": {
+    "str": 21,
+    "dex": 21,
+    "con": 20,
+    "int": 16,
+    "wis": 15,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Devil's Sight",
+      "desc": "Magical darkness doesn't impede the devil's darkvision."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The devil's innate spellcasting ability is Charisma (spell save DC 15). It can innately cast the following spells, requiring no material components: At will: fly, major image, planar binding 3/day: greater invisibility 1/day: wall of ice"
+    },
+    {
+      "name": "Light Incorporeality",
+      "desc": "The devil is semi-incorporeal when standing in moonlight, and is immune to all nonmagical attacks in such conditions. Even when hit by spells or magic weapons, it takes only half damage from a corporeal source, with the exception of force damage. Holy water can affect the devil as it does incorporeal undead."
+    },
+    {
+      "name": "Lightwalking",
+      "desc": "Once per round, the lunar devil magically teleports, along with any equipment it is wearing or carrying, from one beam of moonlight to another within 80 feet. This relocation uses half of its speed."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The devil has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Variant: Devil Summoning",
+      "desc": "Summon Devil (1/Day): The devil can attempt a magical summoning. The devil has a 40 percent chance of summoning either 2 chain devils or 1 lunar devil."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The devil makes three attacks: one with its bite, one with its claws, and one with its tail. Alternatively, it can use Hurl Moonlight twice."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 11 (1d12 + 5) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 12 (2d6 + 5) slashing damage."
+    },
+    {
+      "name": "Tail",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 9 (1d8 + 5) bludgeoning damage."
+    },
+    {
+      "name": "Hurl Moonlight",
+      "desc": "Ranged Spell Attack: +7 to hit, range 150 ft., one target. Hit: 19 (3d12) cold damage and the target must succeed on a DC 15 Constitution saving throw or become blinded for 4 rounds."
+    }
+  ]
+}

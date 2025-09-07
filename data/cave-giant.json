@@ -1,0 +1,51 @@
+{
+  "name": "Cave Giant",
+  "tags": [
+    "huge",
+    "giant",
+    "cr6",
+    "tome-of-horrors"
+  ],
+  "size": "Huge",
+  "type": "giant",
+  "alignment": "chaotic evil",
+  "cr": "6 (2,300 XP)",
+  "hp": "137 (11d12 + 66)",
+  "ac": "14 (natural armor)",
+  "speed": "40 ft.",
+  "skills": "Perception +3",
+  "senses": "darkvision 120 ft., passive Perception 13",
+  "languages": "Giant",
+  "abilities": {
+    "str": 23,
+    "dex": 10,
+    "con": 22,
+    "int": 6,
+    "wis": 10,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Camouflage",
+      "desc": "The giant has advantage on Dexterity (Stealth) checks to hide in cavernous and rocky underground terrain."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The cave giant makes two greataxe attacks."
+    },
+    {
+      "name": "Greataxe",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 19 (2d12 + 6) slashing damage."
+    },
+    {
+      "name": "Rock",
+      "desc": "Ranged Weapon Attack: +9 to hit, range 60/240 ft., one target. Hit: 28 (4d10 + 6) bludgeoning damage. If the target is a creature, it must succeed on a DC 16 Strength saving throw or be knocked prone."
+    },
+    {
+      "name": "Rock Catching",
+      "desc": "If a rock or similar object is hurled at the giant, the giant can, with a successful DC 10 Dexterity saving throw, catch the missile and take no bludgeoning damage from it."
+    }
+  ]
+}

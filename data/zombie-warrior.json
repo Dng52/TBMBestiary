@@ -1,0 +1,44 @@
+{
+  "name": "Zombie Warrior",
+  "tags": [
+    "medium",
+    "undead",
+    "cr2",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "2 (450 XP)",
+  "hp": "51 (6d10 + 18)",
+  "ac": "16 (chainmail)",
+  "speed": "30 ft.",
+  "immunities": "poison",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "understands the languages it knew in life but can\u2019t speak",
+  "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 16,
+    "int": 6,
+    "wis": 10,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Undead Fortitude",
+      "desc": "If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Greatsword",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit: 10 (2d6 + 3) slashing damage."
+    },
+    {
+      "name": "Spew Bile (recharge 5-6)",
+      "desc": "The zombie spews bile in 15- foot line. Each creature in that line must make a DC 12 Constitution saving throw, taking 17 (5d6) necrotic damage on a failed save, or half as much damage on a successful one."
+    }
+  ]
+}

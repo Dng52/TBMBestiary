@@ -1,0 +1,55 @@
+{
+  "name": "Lich Hound",
+  "tags": [
+    "medium",
+    "undead",
+    "cr4",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "4 (1100 XP)",
+  "hp": "119 (14d8 + 56)",
+  "ac": "14",
+  "speed": "30 ft., fly 50 ft.",
+  "saves": "Dex +4, Con +4, Cha +3",
+  "skills": "Acrobatics +6, Perception +4",
+  "immunities": "poison",
+  "resistance": "piercing and bludgeoning from nonmagical weapons",
+  "conimmunities": "exhaustion, poisoned",
+  "senses": "blindsight 100 ft., passive Perception 14",
+  "languages": "understands Darakhul",
+  "abilities": {
+    "str": 10,
+    "dex": 18,
+    "con": 18,
+    "int": 6,
+    "wis": 10,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Keen Hearing and Smell",
+      "desc": "The lich hound has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d12 + 4) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone."
+    },
+    {
+      "name": "Ethereal Jaunt",
+      "desc": "As a bonus action, the lich hound can magically shift from the Material Plane to the Ethereal Plane, or vice versa."
+    },
+    {
+      "name": "Gut Rip",
+      "desc": "As a bonus action, the lich hound tears into any adjacent prone creature, inflicting 19 (3d12) slashing damage. The target must succeed on a DC 14 Constitution saving throw or be incapacitated for 1d4 rounds. An incapacitated creature repeats the saving throw at the end of each of its turns; a successful save ends the condition early."
+    },
+    {
+      "name": "Howl",
+      "desc": "The eerie howl of lich hounds as they close in on their prey plays havoc on the morale of living creatures that hear it. Howling requires and action, and creatures that hear the howl of a lich hound within 100 feet must succeed on a DC 14 Wisdom saving throw or become frightened for 5 rounds. Creatures that successfully save against this effect cannot be affected by a lich hound's howl for 24 hours."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "name": "Mordnaissant",
+  "tags": [
+    "tiny",
+    "undead",
+    "cr6",
+    "tome-of-horrors"
+  ],
+  "size": "Tiny",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "6 (2,300 XP)",
+  "hp": "67 (15d4 + 30)",
+  "ac": "15",
+  "speed": "5 ft., fly 50 ft.",
+  "skills": "Perception +5",
+  "immunities": "poison",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, poisoned, unconscious",
+  "senses": "blindsight 60 ft., darkvision 60 ft., passive Perception 15",
+  "languages": "--",
+  "abilities": {
+    "str": 3,
+    "dex": 14,
+    "con": 15,
+    "int": 7,
+    "wis": 14,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Death Curse",
+      "desc": "If a mordnaissant dies, it releases a death curse on all creatures within 30 feet of it. Those creatures must make a DC 15 Wisdom saving throw. On a failed saving throw, the creature cannot regain hit points from spending hit dice and it has disadvantage on all saving throws for 24 hours. A remove curse or greater magic is necessary to end this curse early."
+    },
+    {
+      "name": "Shield of Agony",
+      "desc": "The mordnaissant\u2019s Armor Class includes its Charisma modifier."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Lash of Fury",
+      "desc": "Ranged Spell Attack: +5 to hit, range 30 ft., one target. Hit: 24 (5d8 + 2) necrotic damage and the target must make a DC 14 Constitution saving throw or lose 1d4 points of Intelligence. The target becomes incapacitated if this reduces its Intelligence to 0. The reduction lasts until the target finishes a long rest."
+    },
+    {
+      "name": "Pain Wail",
+      "desc": "The mordnaissant releases a wail. Creatures within 20 feet that can hear the mordnaissant must make a DC 14 Wisdom saving throw. On a failed saving throw, the target is stunned until the end of its next turn."
+    }
+  ]
+}

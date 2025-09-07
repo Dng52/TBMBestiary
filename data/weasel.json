@@ -1,0 +1,37 @@
+{
+  "name": "Weasel",
+  "tags": [
+    "tiny",
+    "beast",
+    "cr0",
+    "monster-manual"
+  ],
+  "size": "Tiny",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "0 (10 XP)",
+  "hp": "1 (1d4-1)",
+  "ac": "13",
+  "speed": "30 ft.",
+  "skills": "Perception +3, Stealth +5",
+  "abilities": {
+    "str": 3,
+    "dex": 16,
+    "con": 8,
+    "int": 2,
+    "wis": 12,
+    "cha": 3
+  },
+  "traits": [
+    {
+      "name": "Keen Hearing and Smell",
+      "desc": "The weasel has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 1 piercing damage."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Carrion Beetle",
+  "tags": [
+    "large",
+    "beast",
+    "cr4",
+    "tome-of-beasts"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "neutral",
+  "cr": "4 (1100 XP)",
+  "hp": "127 (15d10 + 45)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft., burrow 20 ft., climb 10 ft.",
+  "conimmunities": "paralysis",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "--",
+  "abilities": {
+    "str": 19,
+    "dex": 12,
+    "con": 17,
+    "int": 1,
+    "wis": 13,
+    "cha": 10
+  },
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The beetle makes one bite attack and two claw attacks."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft, one target. Hit: 10 (1d12 + 4) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 7 (1d6 + 4) slashing damage."
+    },
+    {
+      "name": "Acid Spit (Recharge 5-6)",
+      "desc": "The carrion beetle spits a line of acid that is 30 ft. long and 5 ft. wide. Each creature in that line takes 32 (5d12) acid damage, or half damage with a successful DC 13 Dexterity saving throw."
+    }
+  ]
+}

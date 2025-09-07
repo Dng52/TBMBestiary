@@ -1,0 +1,47 @@
+{
+  "name": "Githzerai Monk",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr2",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful neutral",
+  "cr": "2 (450 XP)",
+  "hp": "38 (7d8+7)",
+  "ac": "14",
+  "speed": "30 ft.",
+  "saves": "Str +3, Dex +4, Int +3, Wis +4",
+  "skills": "Insight +4, Perception +4",
+  "languages": "Gith",
+  "abilities": {
+    "str": 12,
+    "dex": 15,
+    "con": 12,
+    "int": 13,
+    "wis": 14,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "desc": "The githzerai's innate spellcasting ability is Wisdom. It can innately cast the following spells, requiring no components: * At will: <i>mage hand </i>(the hand is invisible) * 3/day each: <i>feather fall, jump, see invisibility, shield</i>"
+    },
+    {
+      "name": "Psychic Defense",
+      "desc": "While the githzerai is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The githzerai makes two unarmed strikes."
+    },
+    {
+      "name": "Unarmed Strike",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage plus 9 (2d8) psychic damage. This is a magic weapon attack."
+    }
+  ]
+}

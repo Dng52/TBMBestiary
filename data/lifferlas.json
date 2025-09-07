@@ -1,0 +1,44 @@
+{
+  "name": "Lifferlas",
+  "tags": [
+    "huge",
+    "plant",
+    "cr0",
+    "storm-kings-thunder"
+  ],
+  "size": "Huge",
+  "type": "plant",
+  "alignment": "unaligned",
+  "cr": "0 (10 XP)",
+  "hp": "59 (7d12+14)",
+  "ac": "13 (natural armor)",
+  "speed": "20 ft.",
+  "resistance": "blugdeoning, piercing",
+  "vulnerability": "fire",
+  "senses": " passive Perception 10",
+  "languages": "Common",
+  "abilities": {
+    "str": 19,
+    "dex": 6,
+    "con": 15,
+    "int": 10,
+    "wis": 10,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "False Appearance",
+      "desc": "While Lifferlas remains motionless, it is indistinguishable from a normal tree."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Lifferlas makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6+4) bludgeoning damage."
+    }
+  ]
+}

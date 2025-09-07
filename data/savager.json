@@ -1,0 +1,54 @@
+{
+  "name": "Savager",
+  "tags": [
+    "large",
+    "beast",
+    "cr8",
+    "tome-of-beasts"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "neutral evil",
+  "cr": "8 (3900 XP)",
+  "hp": "115 (1d10 + 60)",
+  "ac": "17 (natural armor)",
+  "speed": "40 ft., climb 20 ft.",
+  "saves": "Dex +5, Con +9",
+  "skills": "Perception +3",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "charmed, frightened",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "--",
+  "abilities": {
+    "str": 22,
+    "dex": 14,
+    "con": 22,
+    "int": 2,
+    "wis": 10,
+    "cha": 13
+  },
+  "traits": [
+    {
+      "name": "Mighty Swing",
+      "desc": "When a savager attacks without moving during its turn, it makes its claw attack with advantage."
+    },
+    {
+      "name": "Quills",
+      "desc": "A creature takes 4 (1d8) piercing damage at the start of its turn while it is grappling a savager."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The savager makes one bite attack and one claw attack."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 19 (2d12 + 6) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 38 (5d12 + 6) slashing damage."
+    }
+  ]
+}

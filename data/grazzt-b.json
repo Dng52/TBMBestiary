@@ -1,0 +1,53 @@
+{
+  "name": "Graz'zt (B)",
+  "tags": [
+    "large",
+    "fiend",
+    "cr24",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Large",
+  "type": "fiend",
+  "alignment": "shapechanger)",
+  "cr": "24 (62,000 XP)",
+  "hp": "346  (33d10 + 165)",
+  "ac": "20 (natural armor)",
+  "speed": "40 ft.",
+  "saves": "Dex +9, Con +12, Wis +12",
+  "skills": "Deception +15, Insight +12, Perception +12, Persuasion +15",
+  "immunities": "poison; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "resistance": "cold, fire, lightning",
+  "conimmunities": "charmed, exhaustion, frightened, poisoned",
+  "senses": "truesight 120 ft., passive Perception 22",
+  "languages": "all, telepathy 120 ft.",
+  "abilities": {
+    "str": 22,
+    "dex": 15,
+    "con": 21,
+    "int": 23,
+    "wis": 21,
+    "cha": 26
+  },
+  "traits": [
+    {
+      "name": "Shapechanger",
+      "desc": "Graz'zt can use his action to polymorph into a form that resembles a Medium humanoid, or back into his true form. Aside from his size, his statistics are the same in each form. Any equipment he is wearing or carrying isn't transformed."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "Graz'zt's spellcasting ability is Charisma (spell save DC 23). He can innately cast the following spells, requiring no material components: * At will: <i>charm person, crown of madness, detect magic, dispel magic, dissonant whispers</i> * 3/day each: <i>counterspell, darkness, dominate person, sanctuary, telekinesis, teleport</i> * 1/day each: <i>dominate monster, greater invisibility</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "desc": "If Graz'zt fails a saving throw, he can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "Graz'zt has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "Graz'zt's weapon attacks are magical."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Grotesque Leech",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr2",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "neutral evil",
+  "cr": "2 (450 XP)",
+  "hp": "32 (5d10 + 5)",
+  "ac": "13 (natural armor)",
+  "speed": "20 ft., swim 20 ft.",
+  "skills": "Athletics +5",
+  "senses": "passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 13,
+    "int": 3,
+    "wis": 10,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Repulsive Slime",
+      "desc": "A creature that ends its turn within 5 feet of the leech must make a DC 13 Constitution saving throw. On a failed save, that creature spends its action on its next turn retching and reeling from the putrid aroma produced by the leech. Creatures that don't need to breathe or are immune to poison automatically succeed on this saving throw."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage, and if the target is a creature it is grappled (escape DC 13). Until the grapple ends, the target is restrained and the leech can't bite another target."
+    },
+    {
+      "name": "Drain",
+      "desc": "The leech drains the blood of a creature it is currently grappling, dealing 10 (3d6) necrotic damage to that creature and restoring that many hit points to the leech."
+    },
+    {
+      "name": "Blood Bile",
+      "desc": "Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 7 (2d6) acid damage and the target must succeed on a DC 13 Constitution saving throw or become poisoned until the end of its next turn."
+    }
+  ]
+}

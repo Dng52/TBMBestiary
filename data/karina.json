@@ -1,0 +1,64 @@
+{
+  "name": "Karina",
+  "tags": [
+    "medium",
+    "fey",
+    "cr4",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "fey",
+  "alignment": "chaotic evil",
+  "cr": "4 (1,100 XP)",
+  "hp": "88 (16d8 + 16)",
+  "ac": "17",
+  "speed": "30 ft., fly 60 ft. (in owl form)",
+  "saves": "Con +3, Wis +7",
+  "skills": "Animal Handling +7, Insight +9, Perception +9, Persuasion +9, Stealth +8, Survival +9",
+  "senses": "darkvision 60 ft., passive Perception 19",
+  "languages": "Common, Elvish, Sylvan",
+  "abilities": {
+    "str": 10,
+    "dex": 18,
+    "con": 13,
+    "int": 14,
+    "wis": 20,
+    "cha": 20
+  },
+  "traits": [
+    {
+      "name": "Flyby",
+      "desc": "When in owl form, the karina does not provoke opportunity attacks when it flies out of an enemy\u2019s reach."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The karina\u2019s spellcasting ability is Wisdom (spell save DC 15, +7 to hit with spell attacks). The karina can innately cast the following spells, requiring no material components: * At will: <i>chill touch, dancing lights</i> * 3/day each: <i>faerie fire, fog cloud</i> * 1/day: <i>moonbeam</i>"
+    },
+    {
+      "name": "Keen Hearing and Sight",
+      "desc": "Karina have advantage on Wisdom (Perception) checks based on sight or hearing."
+    },
+    {
+      "name": "Owl Form",
+      "desc": "As a bonus action when under moonlight, a Karina can transform either into or from owl form. In owl form, the karina gains fly 60 ft. and natural attacks (see below)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "A karina makes two dagger attacks or one bite and one talon attack."
+    },
+    {
+      "name": "Bite (Owl Form Only)",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 17 (3d8 + 4) piercing damage."
+    },
+    {
+      "name": "Dagger (Human Form Only)",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) piercing or slashing damage."
+    },
+    {
+      "name": "Talons (Owl Form Only)",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) slashing damage."
+    }
+  ]
+}

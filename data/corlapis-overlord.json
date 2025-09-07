@@ -1,0 +1,84 @@
+{
+  "name": "Corlapis Overlord",
+  "tags": [
+    "medium",
+    "elemental",
+    "cr7",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "lawful neutral",
+  "cr": "7 (2,700 XP)",
+  "hp": "136 (16d8 + 64)",
+  "ac": "17 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Str +7, Con +7, Cha +4",
+  "skills": "Stealth +4",
+  "immunities": "poison",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 90ft., tremorsense 30 ft., passive Perception 10",
+  "languages": "Terran",
+  "abilities": {
+    "str": 19,
+    "dex": 12,
+    "con": 19,
+    "int": 18,
+    "wis": 10,
+    "cha": 13
+  },
+  "traits": [
+    {
+      "name": "Hardened Exterior",
+      "desc": "Bludgeoning, piercing, and slashing damage the overlord takes from nonmagical weapons is reduced by 3 to a minimum of 1."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The overlord's innate spellcasting ability is Intelligence (spell save DC 13). It can innately cast the following spells, requiring no material components: * At will: <i>light, shape stone</i> * 3/day each: <i>transmute rock, wall of stone</i> * 1/day each: <i>bones of the earth</i>"
+    },
+    {
+      "name": "Stone Camouflage",
+      "desc": "The overlord has advantage on Dexterity (Stealth) checks to hide in rocky terrain."
+    },
+    {
+      "name": "Sturdy",
+      "desc": "The overlord has advantage on saving throws against effects that would cause it to move or be knocked prone."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The overlord makes two attacks with its stone gauntlet or with its stone spike."
+    },
+    {
+      "name": "Stone Gauntlet",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Stone Spike",
+      "desc": "Ranged Weapon Attack: +7 to hit, range 30/90 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
+    },
+    {
+      "name": "Rupturing Wave (Recharge 5-6)",
+      "desc": "The overlord slams its gauntleted first to the ground and causes a 10-foot wide, 60-foot long line of jagged stone erupts from the ground. Each creature in the line must make a DC 14 Dexterity saving throw, taking 22 (4d8) bludgeoning damage and 22 (4d8) piercing damage on a failed save, or half as much damage on a successful one. The area in this line is considered difficult terrain until the rubble is cleared."
+    },
+    {
+      "name": "From the Rubble (1/Day)",
+      "desc": "The overlord uses spare stone and rubble in the area to restore health to its allies. Up to four other corlapis the overlord can see regain 22 (4d8 + 4) hit points."
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Punch",
+      "desc": "The overlord makes a stone gauntlet attack."
+    },
+    {
+      "name": "Stone Cover",
+      "desc": "The overlord summons a 5-foot wide, 5- foot tall, 3-inch thick wall of stone in an unoccupied space within 10 feet. This wall has AC 15 and 30 hit points and persists until it is destroyed."
+    },
+    {
+      "name": "Giant Boulder (3 actions)",
+      "desc": "The overlord summons a 15- foot diameter boulder 30 feet in the air at a point it can see within 120 feet. The boulder immediately falls to the ground and any creature in the area of impact must succeed on a DC 14 Dexterity saving throw or take 36 (8d8) bludgeoning damage and become restrained, pinned beneath the boulder. The restrained creature can use an action to make a DC 14 Strength or Dexterity saving throw (creature's choice). On a success, the creature is no longer restrained. A creature that passed the initial saving throw moves to a location adjacent to the boulder and takes no damage."
+    }
+  ]
+}

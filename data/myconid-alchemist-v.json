@@ -1,0 +1,44 @@
+{
+  "name": "Myconid Alchemist V",
+  "tags": [
+    "medium",
+    "plant",
+    "cr10",
+    "homebrew"
+  ],
+  "size": "Medium",
+  "type": "plant",
+  "alignment": "neutral evil",
+  "cr": "10 (5,900 XP)",
+  "hp": "104 (16d8 + 32)",
+  "ac": "17 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Stealth +7",
+  "conimmunities": "charmed, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 120 ft., passive Perception 14",
+  "languages": "Undercommon",
+  "abilities": {
+    "str": 12,
+    "dex": 16,
+    "con": 14,
+    "int": 12,
+    "wis": 10,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Stalk-still",
+      "desc": "A myconid that remains perfectly still has advantage on Dexterity (Stealth) checks made to hide."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Stone Knuckles",
+      "desc": "Melee weapon attack: +7 to hit. Hit: 10 (2d6 + 3) slashing damage."
+    },
+    {
+      "name": "Spore Bomb",
+      "desc": "Ranged weapon attack: +8 to hit, range 30/60 ft. Hit: 15 (6d4) poison damage and the target must succeed on a DC 15 Constitution saving throw or drop to 0 hit points."
+    }
+  ]
+}

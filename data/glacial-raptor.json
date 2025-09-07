@@ -1,0 +1,53 @@
+{
+  "name": "Glacial Raptor",
+  "tags": [
+    "medium",
+    "undead",
+    "cr2",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "2 (450 XP)",
+  "hp": "51 (7d10 + 14)",
+  "ac": "13",
+  "speed": "40 ft.",
+  "skills": "Acrobatics +5, Perception +2",
+  "resistance": "cold, piercing, slashing",
+  "vulnerability": "bludgeoning",
+  "senses": "passive Perception 12",
+  "languages": "--",
+  "abilities": {
+    "str": 14,
+    "dex": 16,
+    "con": 14,
+    "int": 4,
+    "wis": 10,
+    "cha": 2
+  },
+  "traits": [
+    {
+      "name": "Frozen Ferocity",
+      "desc": "When the raptor hits with a melee attack, it deals an extra 2 (1d4) cold damage (included in the attack)."
+    },
+    {
+      "name": "Pack Tactics",
+      "desc": "The raptor has advantage on an attack roll against a creature if at least one of the raptor\u2019s allies is within 5 feet of the creature and the ally isn\u2019t incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit: 7 (1d8 + 3) piercing damage plus 2 (1d4) cold damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit: 6 (1d6 + 3) slashing damage plus 2 (1d4) cold damage."
+    },
+    {
+      "name": "Frozen Gaze (Recharge 6)",
+      "desc": "The raptor locks eyes with a creature and attempts to freeze it from the inside out. The target must make a DC 12 Constitution saving throw, taking 14 (4d6) cold damage and gaining one level of exhaustion on a failed save, or half as much damage and not exhausted on a successful one."
+    }
+  ]
+}

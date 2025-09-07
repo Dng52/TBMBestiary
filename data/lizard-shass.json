@@ -1,0 +1,57 @@
+{
+  "name": "Lizard Shass",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr4",
+    "out-of-the-box-5e"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "4 (1,100 XP)",
+  "hp": "78 (12d8 + 24)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft., swim 30 ft.",
+  "saves": "Con +4, Wis +2",
+  "skills": "Perception +4, Stealth +5, Survival +4",
+  "conimmunities": "Frightened",
+  "senses": "Darkvision 60 ft., Passive Perception 14",
+  "languages": "Abyssal, Draconic",
+  "abilities": {
+    "str": 17,
+    "dex": 12,
+    "con": 15,
+    "int": 11,
+    "wis": 11,
+    "cha": 15
+  },
+  "traits": [
+    {
+      "name": "Hold Breath",
+      "desc": "The lizardfolk can hold its breath for 15 minutes."
+    },
+    {
+      "name": "Inspire Lizardfolk",
+      "desc": "As a bonus action, the lizardfolk targets an ally it can see within 30 feet that can see and hear the lizardfolk. The target gains 2d6 temporary hit points."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The lizardfolk makes two attacks: one with its bite and one with its claws or trident or two melee attacks with its trident."
+    },
+    {
+      "name": "Blackjaw Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage and 2 (1d4) fire damage"
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) slashing damage."
+    },
+    {
+      "name": "Trident",
+      "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 6 (1d6 + 3) piercing damage, or 7 (1d8 + 3) piercing damage if used with two hands to make a melee attack."
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "name": "Bael",
+  "tags": [
+    "large",
+    "fiend",
+    "cr19",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Large",
+  "type": "fiend",
+  "alignment": "lawful evil",
+  "cr": "19 (22,000 XP)",
+  "hp": "189  (18d10 + 90)",
+  "ac": "18 (plate)",
+  "speed": "30 ft.",
+  "saves": "Dex +9, Con +11, Int +11, Cha +13",
+  "skills": "Intimidation +13, Perception +13, Persuasion +13",
+  "immunities": "fire, poison",
+  "resistance": "cold; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered",
+  "conimmunities": "charmed, exhaustion, frightened, poisoned",
+  "senses": "truesight 120 ft., passive Perception 23",
+  "languages": "all, telepathy 120 ft.",
+  "abilities": {
+    "str": 24,
+    "dex": 17,
+    "con": 20,
+    "int": 21,
+    "wis": 24,
+    "cha": 24
+  },
+  "traits": [
+    {
+      "name": "Dreadful",
+      "desc": "Bael can use a bonus action to appear dreadful until the start of his next turn. Each creature, other than a devil, that starts its turn within 10 feet of Bael must succeed on a DC 22 Wisdom saving throw or be frightened until the start of the creature's next turn."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "Bael's innate spellcasting ability is Charisma (spell save DC 21, +13 to hit with spell attacks). He can innately cast the following spells, requiring no material components: * At will: <i>alter self </i>(can become Medium when changing his appearance)<i>, animate dead, charm person, detect magic, inflict wounds </i>(as an 8th-level spell)<i>, invisibility </i>(self only)<i>, major image</i> * 3/day each: <i>counterspell, dispel magic, fly, suggestion, wall of fire</i> * 1/day each: <i>dominate monster, symbol </i>(stunning only)"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "desc": "If Bael fails a saving throw, he can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "Bael has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "Bael's weapon attacks are magical."
+    },
+    {
+      "name": "Regeneration",
+      "desc": "Bael regains 20 hit points at the start of his turn. If he takes cold or radiant damage, this trait doesn't function at the start of his next turn. Bael dies only if he starts his turn with 0 hit points and doesn't regenerate."
+    }
+  ]
+}

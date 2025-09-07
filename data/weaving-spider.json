@@ -1,0 +1,56 @@
+{
+  "name": "Weaving Spider",
+  "tags": [
+    "tiny",
+    "construct",
+    "cr1",
+    "tome-of-beasts"
+  ],
+  "size": "Tiny",
+  "type": "construct",
+  "alignment": "unaligned",
+  "cr": "1 (200 XP)",
+  "hp": "25 (10d4)",
+  "ac": "15 (natural armor)",
+  "speed": "40 ft., climb 40 ft.",
+  "immunities": "poison",
+  "conimmunities": "blinded, charmed, deafened, exhaustion, frightened, paralyzed, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 14",
+  "languages": "understands Common",
+  "abilities": {
+    "str": 10,
+    "dex": 16,
+    "con": 10,
+    "int": 9,
+    "wis": 8,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Immutable Form",
+      "desc": "The weaving spider is immune to any spell or effect that would alter its form."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The weaving spider has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The weaving spider makes two trimming blade attacks or two needle shuttle attacks."
+    },
+    {
+      "name": "Trimming Blade",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage and possible unmaking."
+    },
+    {
+      "name": "Poisoned Needle Shuttle",
+      "desc": "Ranged Weapon Attack: +5 to hit, range 30 ft., one target. Hit: 7 (1d8 + 3) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or become paralyzed. The target repeats the saving throw at the end of each of its turns, ending the effect on itself with a success."
+    },
+    {
+      "name": "Unmaking",
+      "desc": "The weaving spider's speed and its slim, sharp blade can slice cloth, leather, and paper into scraps very quickly. Whenever a weaving spider's trimming blade attack roll exceeds the target's armor class by 5 or more, the target must succeed on a DC 13 Dexterity saving throw or one of their possessions becomes unusable or damaged until repaired (DM's choice)"
+    }
+  ]
+}

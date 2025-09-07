@@ -1,0 +1,53 @@
+{
+  "name": "Hsagrath",
+  "tags": [
+    "small",
+    "construct",
+    "cr5",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "construct",
+  "alignment": "chaotic evil",
+  "cr": "5 (1,800 XP)",
+  "hp": "45 (10d8)",
+  "ac": "17 (natural armor)",
+  "speed": "0 ft., fly 50 ft. (hover)",
+  "saves": "Dex +4",
+  "immunities": "poison, psychic",
+  "conimmunities": "Blinded, Charmed, Deafened, Frightened, Paralyzed, Poisoned",
+  "senses": "blindsight 60 ft., Passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 17,
+    "dex": 12,
+    "con": 11,
+    "int": 9,
+    "wis": 5,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Antimagic Susceptibility",
+      "desc": "The hsagrath is incapacitated while in the area of an antimagic field. If targeted by dispel magic, the hsagrath must succeed on a Constitution saving throw against the caster\u2019s spell save DC or fall unconscious for 1 minute."
+    },
+    {
+      "name": "False Appearance",
+      "desc": "While the hsagrath remains motionless and isn\u2019t flying, it is indistinguishable from a normal chain."
+    },
+    {
+      "name": "Fiendish Humor",
+      "desc": "When a target reaches 0 hit points, a hsgarath will release and seek a new target."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Whip",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 30 ft., all targets within range. Hit: 7 (1d8+3) bludgeoning damage."
+    },
+    {
+      "name": "Constrict",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 30 ft., one target. Hit: 12 (2d8+3) bludgeoning damage and the target is grappled (Escape DC 16). A grappled opponent takes 12 (2d8+3) bludgeoning damage at the beginning of its turn. The hsagrath can\u2019t make any other attacks while it has a creature grappled."
+    }
+  ]
+}

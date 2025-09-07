@@ -1,0 +1,65 @@
+{
+  "name": "Death Knight",
+  "tags": [
+    "medium",
+    "undead",
+    "cr17",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "chaotic evil",
+  "cr": "17 (18,000 XP)",
+  "hp": "180 (19d8+95)",
+  "ac": "20 (plate, shield)",
+  "speed": "30 ft.",
+  "saves": "Dex +6, Wis +9, Cha +10",
+  "immunities": "necrotic, poison",
+  "conimmunities": "exhaustion, frightened, poisoned",
+  "senses": "darkvision 120 ft.",
+  "languages": "Abyssal, Common",
+  "abilities": {
+    "str": 20,
+    "dex": 11,
+    "con": 20,
+    "int": 12,
+    "wis": 16,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Undead Nature",
+      "desc": "A death knight doesn't require air, food, drink, or sleep."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The death knight has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Marshal Undead",
+      "desc": "Unless the death knight is incapacitated, it and undead creatures of its choice within 60 feet of it have advantage on saving throws against features that turn undead."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The death knight is a 19th-level spell caster. Its spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). It has the following paladin spells prepared: * 1st level (4 slots): <i>command, compelled duel, searing smite</i> * 2nd level (3 slots): <i>hold person, magic weapon</i> * 3rd level (3 slots): <i>dispel magic, elemental weapon</i> * 4th level (3 slots): <i>banishment, staggering smite</i> * 5th level (2 slots): <i>destructive wave </i>(necrotic)"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The death knight makes three longsword attacks."
+    },
+    {
+      "name": "Longsword",
+      "desc": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 9 (1d8 + 5) slashing damage, or 10 (1d10 + 5) slashing damage if used with two hands, plus 18 (4d8) necrotic damage."
+    },
+    {
+      "name": "Hellfire Orb (1/day)",
+      "desc": "The death knight hurls a magical ball of fire that explodes at a point it can see within 120 feet of it. Each creature in a 20-foot-radius sphere centered on that point must make a DC 18 Dexterity saving throw. The sphere spreads around corners. A creature takes 35 (10d6) fire damage and 35 (10d6) necrotic damage on a failed save, or half as much damage on a successful one."
+    },
+    {
+      "name": "Parry",
+      "desc": "The death knight adds 6 to its AC against one melee attack that would hit it. To do so, the death knight must see the attacker and be wielding a melee weapon."
+    }
+  ]
+}

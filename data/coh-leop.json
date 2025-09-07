@@ -1,0 +1,55 @@
+{
+  "name": "Coh-Leop",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/2",
+    "out-of-the-box-5e"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic neutral",
+  "cr": "1/2 (100 XP)",
+  "hp": "26 (4d8 + 8)",
+  "ac": "14 (natural armor)",
+  "speed": "25 ft., burrow 20 ft., climb 25 ft.",
+  "skills": "Perception +4",
+  "senses": "Darkvision 60 ft., Passive Perception 14",
+  "languages": "Pheromones (between coh-leop only), Undercommon",
+  "abilities": {
+    "str": 14,
+    "dex": 9,
+    "con": 14,
+    "int": 10,
+    "wis": 10,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Multifaceted Perspective",
+      "desc": "Because of their large and multifaceted eyes, coh-leop are hard to surprise. The coh-leop has advantage on Wisdom (Perception) checks that rely on sight and on all initiative rolls."
+    },
+    {
+      "name": "Spider Climb",
+      "desc": "The coh-leop can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The coh-leop makes two claw attacks."
+    },
+    {
+      "name": "Macuahuitl",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11 (2d6 +2) slashing damage. When weapon damage is rolled for a savage weapon, any damage result of 1 is treated as though it was a 2."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target, Hit: 5 (2d4) slashing damage."
+    },
+    {
+      "name": "Stink",
+      "desc": "When the coh-leop is the target of an opportunity attack it can use its reaction to spray a cloud of noxious gas from its abdomen. Each creature within 5 ft. must make a DC 12 Constitution saving throw. On a failed save the attack is lost and the creature cannot make opportunity attacks against the coh-leop until the start of its next turn."
+    }
+  ]
+}

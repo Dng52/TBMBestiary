@@ -1,0 +1,50 @@
+{
+  "name": "Sky Raider Bat",
+  "tags": [
+    "medium",
+    "beast",
+    "cr1/4",
+    "out-of-the-box-5e"
+  ],
+  "size": "Medium",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/4 (50 XP)",
+  "hp": "18 (4d8)",
+  "ac": "13",
+  "speed": "10 ft., fly 60 ft.",
+  "senses": "Blindsight 60 ft., Passive Perception 11",
+  "languages": "--",
+  "abilities": {
+    "str": 15,
+    "dex": 16,
+    "con": 11,
+    "int": 2,
+    "wis": 12,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Echolocation",
+      "desc": "The bat can\u2019t use its blindsight while deafened."
+    },
+    {
+      "name": "Flyby",
+      "desc": "The bat doesn\u2019t provoke opportunity attacks when it flies out of an enemies reach."
+    },
+    {
+      "name": "Keen Hearing",
+      "desc": "The bat has advantage on Wisdom (Perception) checks that rely on hearing."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6 +2) piercing damage."
+    },
+    {
+      "name": "Goblin Boomer (2/Day)",
+      "desc": "As a bonus action, the sky raider bat drops a ceramic pot of alchemist\u2019s fire on a random target. The target must succeed on a DC 14 Dexterity saving throw or take 2 (1d4) fire damage, and 2 (1d4) fire damage at the start of each of its turns. A creature can end this damage by using its action to make a DC 10 Dexterity check to extinguish the flames."
+    }
+  ]
+}

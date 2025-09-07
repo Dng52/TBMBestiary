@@ -1,0 +1,48 @@
+{
+  "name": "Shadow Hunter",
+  "tags": [
+    "huge",
+    "monstrosity",
+    "cr9",
+    "tome-of-horrors"
+  ],
+  "size": "Huge",
+  "type": "monstrosity",
+  "alignment": "neutral",
+  "cr": "9 (5,000 XP)",
+  "hp": "105 (10d12 + 40)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft., climb 50 ft., swim 30 ft.",
+  "skills": "Perception +6, Stealth +6",
+  "conimmunities": "prone",
+  "senses": "darkvision 60 ft., tremorsense 60 ft., passive Perception 16",
+  "languages": "--",
+  "abilities": {
+    "str": 23,
+    "dex": 15,
+    "con": 19,
+    "int": 5,
+    "wis": 14,
+    "cha": 3
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "desc": "The shadow hunter has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Shadow Stealth",
+      "desc": "While in dim light or darkness, the shadow hunter can take the Hide action as a bonus action."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +10 to hit, reach 10 ft., one target. Hit: 15 (2d8 + 6) piercing damage and 27 (6d8) poison damage. The target must succeed on a DC 15 Constitution saving throw or be poisoned for 1 hour."
+    },
+    {
+      "name": "Constrict",
+      "desc": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 17 (2d10 + 6) bludgeoning damage and the target is grappled (escape DC 16). Until this grapple ends, the creature is restrained, and the shadow hunter can\u2019t constrict another target."
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Giant Ape",
+  "tags": [
+    "huge",
+    "beast",
+    "cr7",
+    "monster-manual"
+  ],
+  "size": "Huge",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "7 (2,900 XP)",
+  "hp": "157 (15d12+60)",
+  "ac": "12",
+  "speed": "40 ft., climb 40 ft.",
+  "skills": "Athletics +9, Perception +4",
+  "abilities": {
+    "str": 23,
+    "dex": 14,
+    "con": 18,
+    "int": 7,
+    "wis": 12,
+    "cha": 7
+  },
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The ape makes two fist attacks."
+    },
+    {
+      "name": "Fist",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 22 (3d10 + 6) bludgeoning damage."
+    },
+    {
+      "name": "Rock",
+      "desc": "Ranged Weapon Attack: +9 to hit, range 50/100 ft., one target. Hit: 30 (7d6 + 6) bludgeoning damage."
+    }
+  ]
+}

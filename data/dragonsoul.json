@@ -1,0 +1,60 @@
+{
+  "name": "Dragonsoul",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr7",
+    "tyranny-of-dragons"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "7 (2,900 XP)",
+  "hp": "110 (17d8+34)",
+  "ac": "16 (studded leather)",
+  "speed": "30 ft.",
+  "saves": "Wis +4",
+  "skills": "Deception +6, Stealth +7",
+  "resistance": "one of the following: acid, cold, fire, lightning or poison",
+  "languages": "Common, Draconic, Infernal",
+  "abilities": {
+    "str": 11,
+    "dex": 18,
+    "con": 14,
+    "int": 13,
+    "wis": 12,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Dragon Fanatic",
+      "desc": "The dragonsoul has advantage on saving throws against being charmed or frightened. While the dragonsoul can see a dragon or higher-ranking Cult of the Dragon cultist friendly to it, the dragonsoul ignores the effects of being charmed or frightened."
+    },
+    {
+      "name": "Fanatic Advantage",
+      "desc": "Once per turn, if the dragonsoul makes a weapon attack with advantage on the attack roll and hits, the target takes an extra 10 (3d6) damage."
+    },
+    {
+      "name": "Limited Flight",
+      "desc": "The dragonsoul can use a bonus action to gain a flying speed of 30 feet until the end of its turn."
+    },
+    {
+      "name": "Pack Tactics",
+      "desc": "The dragonsoul has advantage on an attack roll against a creature if at least one of the dragonclaw's allies is within 5 feet of the creature and the ally isn't incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The Dragonsoul attacks twice with its shortsword."
+    },
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage plus 10 (3d6) damage of the type to which the dragonsoul has resistance."
+    },
+    {
+      "name": "Orb of Dragon's Breath (3/Day)",
+      "desc": "Ranged Spell Attack: +7 to hit, range 90 ft., one target. Hit: 27 (6d8) damage of the type to which the dragonsoul has damage resistance."
+    }
+  ]
+}

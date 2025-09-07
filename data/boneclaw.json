@@ -1,0 +1,40 @@
+{
+  "name": "Boneclaw",
+  "tags": [
+    "large",
+    "undead",
+    "cr12",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Large",
+  "type": "undead",
+  "alignment": "chaotic evil",
+  "cr": "12 (8400 XP)",
+  "hp": "127  (17d10 + 34)",
+  "ac": "16 (natural armor)",
+  "speed": "40 ft.",
+  "saves": "Dex +7, Con +6, Wis +6",
+  "skills": "Perception +6, Stealth +7",
+  "resistance": "cold, necrotic; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 16",
+  "languages": "Common plus the main language of its master",
+  "abilities": {
+    "str": 19,
+    "dex": 16,
+    "con": 15,
+    "int": 13,
+    "wis": 15,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Rejuvenation",
+      "desc": "While its master lives, a destroyed boneclaw gains a new body in 1d10 hours, with all its hit points. The new body appears within 1 mile of the boneclaw's master."
+    },
+    {
+      "name": "Shadow Stealth",
+      "desc": "While in dim light or darkness, the boneclaw can take the Hide action as a bonus action."
+    }
+  ]
+}

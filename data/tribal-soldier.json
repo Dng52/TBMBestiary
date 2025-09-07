@@ -1,0 +1,51 @@
+{
+  "name": "Tribal Soldier",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "1 (200 XP)",
+  "hp": "32 (5d8 + 10)",
+  "ac": "14 (studded leather)",
+  "speed": "30 ft.",
+  "skills": "Acrobatics +4, Athletics +4",
+  "senses": "passive Perception 11",
+  "languages": "any two languages",
+  "abilities": {
+    "str": 14,
+    "dex": 15,
+    "con": 15,
+    "int": 10,
+    "wis": 12,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Natural Resilience",
+      "desc": "A life away from the pleasures of society has made the soldier tougher than an ordinary individual. It has advantage on Constitution and Strength saving throws."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The soldier makes two glaive attacks."
+    },
+    {
+      "name": "Glaive",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 7 (1d10 + 2) slashing damage."
+    },
+    {
+      "name": "Javelin",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    },
+    {
+      "name": "Readied Strike",
+      "desc": "Whenever a creature enters the reach of the soldier's glaive, the soldier can immediately make a glaive attack against that creature at disadvantage."
+    }
+  ]
+}

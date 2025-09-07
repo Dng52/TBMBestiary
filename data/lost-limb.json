@@ -1,0 +1,57 @@
+{
+  "name": "Lost Limb",
+  "tags": [
+    "small",
+    "monstrosity",
+    "cr2",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "monstrosity",
+  "alignment": "neutral",
+  "cr": "2 (450 XP)",
+  "hp": "16 (3d6 + 6)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft., climb 30 ft.",
+  "skills": "Perception +1",
+  "immunities": "poison",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "--",
+  "abilities": {
+    "str": 16,
+    "dex": 16,
+    "con": 14,
+    "int": 4,
+    "wis": 4,
+    "cha": 4
+  },
+  "traits": [
+    {
+      "name": "Adhesive",
+      "desc": "The lost limb adheres to the limb of its victim. A Huge or smaller creature adhered to the limb is also grappled (escape DC 13). Ability checks made to escape the grapple have disadvantage."
+    },
+    {
+      "name": "Compact",
+      "desc": "The lost limb may stay in the same space as another creature or character."
+    },
+    {
+      "name": "Fuse",
+      "desc": "Once the limb has consumed the limb it is replacing, the creature that it is attached to slowly begins to heal, regaining 5 hit points at the start of each of its turns. After 1 minute, the creature finally can control the limb and gains a +2 bonus to Strength as the limb becomes a permanent part of its body."
+    },
+    {
+      "name": "Grappler",
+      "desc": "The lost limb has advantage on attack rolls against any creature grappled by it."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d8 +1) bludgeoning damage and the target is grappled (escape DC 13) and restrained."
+    },
+    {
+      "name": "Consume",
+      "desc": "A creature grappled by the lost limb must make a DC 15 Constitution saving throw. On a failed save, the target takes 10 (2d6 + 3) necrotic damage as the lost limb starts to consume the limb of the target. The target takes an additional 10 (2d6) + 3) necrotic damage at the start of each of its turns but can repeat the saving throw at the end of each of its turns, ending the effect on a success. If the limb consumes more than onequarter of the target\u2019s hit points, the target\u2019s limb is permanently replaced by the lost limb as it attaches to the joint (shoulder or hip) of the target."
+    }
+  ]
+}

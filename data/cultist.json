@@ -1,0 +1,38 @@
+{
+  "name": "Cultist",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/8",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any non-good alignment",
+  "cr": "1/8 (25 XP)",
+  "hp": "9 (2d8)",
+  "ac": "12 (leather armor)",
+  "speed": "30 ft.",
+  "skills": "Deception +2, Religion +2",
+  "languages": "any one language (usually Common)",
+  "abilities": {
+    "str": 11,
+    "dex": 12,
+    "con": 10,
+    "int": 10,
+    "wis": 11,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Dark Devotion",
+      "desc": "The cultist has advantage on saving throws against being charmed or frightened."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Scimitar",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 4 (1d6 + 1) slashing damage."
+    }
+  ]
+}

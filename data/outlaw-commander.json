@@ -1,0 +1,51 @@
+{
+  "name": "Outlaw Commander",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr4",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any non-lawful alignment",
+  "cr": "4 (1,100 XP)",
+  "hp": "98 (14d8 + 42)",
+  "ac": "17 (splint mail)",
+  "speed": "30 ft.",
+  "skills": "Athletics +6, Intimidation +6, Performance +4, Persuasion +6",
+  "senses": "passive Perception 10",
+  "languages": "Common and any one other language",
+  "abilities": {
+    "str": 19,
+    "dex": 12,
+    "con": 16,
+    "int": 14,
+    "wis": 10,
+    "cha": 15
+  },
+  "traits": [
+    {
+      "name": "Commander's Presence",
+      "desc": "Whenever one of the commander's allies is within 60 feet must make a saving throw, that creature gains a +1 bonus to the saving throw if the commander isn't incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The commander makes two melee attacks or two ranged attacks."
+    },
+    {
+      "name": "Greataxe",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (1d12 + 4) slashing damage."
+    },
+    {
+      "name": "Handaxe",
+      "desc": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 7 (1d6 + 4) slashing damage."
+    },
+    {
+      "name": "Expose Weakness (Recharge 4-6)",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 17 (2d12 + 4) slashing damage and the target has its AC reduced by 2 until the beginning of the commander's next turn."
+    }
+  ]
+}

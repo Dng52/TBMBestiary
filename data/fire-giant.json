@@ -1,0 +1,52 @@
+{
+  "name": "Fire Giant",
+  "tags": [
+    "huge",
+    "giant",
+    "cr9",
+    "monster-manual"
+  ],
+  "size": "Huge",
+  "type": "giant",
+  "alignment": "lawful evil",
+  "cr": "9 (5,000 XP)",
+  "hp": "162 (13d12+78)",
+  "ac": "18 (plate)",
+  "speed": "30 ft.",
+  "saves": "Dex +3, Con +10, Cha +5",
+  "skills": "Athletics +11, Perception +6",
+  "immunities": "fire",
+  "languages": "Giant",
+  "abilities": {
+    "str": 25,
+    "dex": 9,
+    "con": 23,
+    "int": 10,
+    "wis": 14,
+    "cha": 13
+  },
+  "traits": [
+    {
+      "name": "Siege Monster",
+      "desc": "The giant deals double damage to objects and structures."
+    },
+    {
+      "name": "Tackle",
+      "desc": "When the giant enters any enemy's space for the first time on a turn, the enemy must succeed on a DC 19 Strength saving throw or be knocked prone."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The giant makes two greatsword attacks."
+    },
+    {
+      "name": "Greatsword",
+      "desc": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 28 (6d6 + 7) slashing damage."
+    },
+    {
+      "name": "Rock",
+      "desc": "Ranged Weapon Attack: +11 to hit, range 60/240 ft., one target. Hit: 29 (4d10 + 7) bludgeoning damage."
+    }
+  ]
+}

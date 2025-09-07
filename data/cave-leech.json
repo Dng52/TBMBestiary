@@ -1,0 +1,41 @@
+{
+  "name": "Cave Leech",
+  "tags": [
+    "medium",
+    "monstrosity",
+    "cr8",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "monstrosity",
+  "alignment": "neutral",
+  "cr": "8 (3,900 XP)",
+  "hp": "112 (15d8 + 45)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft., swim 30 ft.",
+  "skills": "Perception +4, Stealth +3",
+  "senses": "darkvision 60 ft., tremorsense 60 ft. passive Perception 14",
+  "languages": "--",
+  "abilities": {
+    "str": 15,
+    "dex": 11,
+    "con": 17,
+    "int": 3,
+    "wis": 12,
+    "cha": 6
+  },
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The leech makes up to four tentacle attacks and can use blood drain on a grappled creature."
+    },
+    {
+      "name": "Tentacles",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 11 (2d8 + 2) bludgeoning damage. The target is grappled (escape DC 12) if the leech isn\u2019t already grappling a creature, and the target is restrained until the grapple ends. While grappling a creature, the leech can\u2019t use that tentacle. The leech has four tentacles"
+    },
+    {
+      "name": "Blood Drain",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft. one creature. Hit: 9 (2d6+2) piercing damage, and the leech attaches to the target. While attached, the leech doesn\u2019t attack. Instead, at the start of the leech\u2019s turns, the target loses 9 (2d6 + 2) hit points due to blood loss. The leech can detach itself by spending 5 feet of its movement. It does so after it drains 25 hit points of blood from the target or the target dies. A creature, including the target, can use its action to make a DC 12 Strength check to rip the leech off and make it detach."
+    }
+  ]
+}

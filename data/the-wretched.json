@@ -1,0 +1,33 @@
+{
+  "name": "The Wretched",
+  "tags": [
+    "small",
+    "monstrosity",
+    "cr1/4",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Small",
+  "type": "monstrosity",
+  "alignment": "neutral evil",
+  "cr": "1/4 (50 XP)",
+  "hp": "10  (4d6 - 4)",
+  "ac": "15 (natural armor)",
+  "speed": "40 ft.",
+  "resistance": "bludgeoning, piercing, and slashing while in dim light or darkness",
+  "senses": "darkvision 60 ft., passive Perception 8",
+  "languages": "-",
+  "abilities": {
+    "str": 7,
+    "dex": 12,
+    "con": 9,
+    "int": 5,
+    "wis": 6,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Wretched Pack Tactics",
+      "desc": "The Wretched has advantage on an attack roll against a creature if at least one of the Wretched's allies is within 5 feet of the creature and the ally isn't incapacitated. The Wretched otherwise has disadvantage on attack rolls."
+    }
+  ]
+}

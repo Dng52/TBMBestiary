@@ -1,0 +1,40 @@
+{
+  "name": "Skulk",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/2",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic neutral",
+  "cr": "1/2 (100 XP)",
+  "hp": "18  (4d8)",
+  "ac": "14",
+  "speed": "30 ft.",
+  "saves": "Con +2",
+  "skills": "Stealth +8",
+  "immunities": "radiant",
+  "conimmunities": "blinded",
+  "senses": "darkvision 120 ft., passive Perception 8",
+  "languages": "understands Common but can't speak",
+  "abilities": {
+    "str": 6,
+    "dex": 19,
+    "con": 10,
+    "int": 10,
+    "wis": 7,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Fallible Invisibility",
+      "desc": "The skulk is invisible. This invisibility can be circumvented by three things: * The skulk appears as a drab, smooth-skinned humanoid if its reflection can be seen in a mirror or on another surface. * The skulk appears as a dim, translucent form in the light of a candle made of fat rendered from a corpse whose identity is unknown. * Humanoid children, aged 10 and under, can see through this invisibility."
+    },
+    {
+      "name": "Trackless",
+      "desc": "The skulk leaves no tracks to indicate where it has been or where it's headed."
+    }
+  ]
+}

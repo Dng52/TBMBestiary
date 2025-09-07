@@ -1,0 +1,38 @@
+{
+  "name": "Almiraj",
+  "tags": [
+    "small",
+    "beast",
+    "cr0",
+    "tomb-of-annihilation"
+  ],
+  "size": "Small",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "0 (10 XP)",
+  "hp": "3 (1d6)",
+  "ac": "13",
+  "speed": "50 ft.",
+  "skills": "Perception +4, Stealth +5",
+  "senses": "darkvision 30ft., passive Perception 14",
+  "abilities": {
+    "str": 2,
+    "dex": 16,
+    "con": 10,
+    "int": 2,
+    "wis": 14,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Keen Senses",
+      "desc": "The almiraj has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Horn",
+      "desc": "Mele Weapon Attack: +5 to hit, reach 5ft., one target. Hit: 5 (1d4 +3) piercing damage."
+    }
+  ]
+}

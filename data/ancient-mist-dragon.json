@@ -1,0 +1,103 @@
+{
+  "name": "Ancient Mist Dragon",
+  "tags": [
+    "gargantuan",
+    "dragon",
+    "cr20",
+    "tome-of-horrors"
+  ],
+  "size": "Gargantuan",
+  "type": "dragon",
+  "alignment": "neutral",
+  "cr": "20 (25,000 XP)",
+  "hp": "333 (18d20 + 144)",
+  "ac": "19 (natural armor)",
+  "speed": "40 ft., fly 80 ft., swim 40 ft.",
+  "saves": "Dex +8, Con +14, Wis +8, Cha +8",
+  "skills": "Perception +14, Stealth +8, Survival +8",
+  "immunities": "fire",
+  "senses": "blindsight 120 ft., darkvision 120 ft., passive Perception 24",
+  "languages": "Auran, Aquan, Celestial, Common, Draconic, Elvish, Gnome, Ignan, Sylvan",
+  "abilities": {
+    "str": 26,
+    "dex": 14,
+    "con": 26,
+    "int": 12,
+    "wis": 15,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The mist dragon can breathe both water and air."
+    },
+    {
+      "name": "Legendary Resistance (3/day)",
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Tropical Atmosphere",
+      "desc": "The dragon\u2019s presence causes extreme moisture and humidity, creating a tropical atmosphere within 6 miles of the dragon\u2019s lair."
+    },
+    {
+      "name": "Difficult Plants",
+      "desc": "Plant life of all kinds flourishes, and sentient plant life flocks to the area, and makes trekking to the dragon\u2019s lair difficult. If the dragon dies, these effects fade over 1d10 days."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The dragon uses its Frightful Presence and makes three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +14 to hit, reach 20 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 14 (4d6) fire damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +14 to hit, reach 10 ft., one target. Hit: 22 (4d6 + 8) slashing damage."
+    },
+    {
+      "name": "Tail",
+      "desc": "Melee Weapon Attack: +14 to hit, reach 20 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage."
+    },
+    {
+      "name": "Frightful Presence",
+      "desc": "Each creature of the dragon\u2019s choice that is within 120 feet of the dragon and aware of it must succeed on a DC 16 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature\u2019s saving throw is successful or the effect ends for it, the creature is immune to the dragon\u2019s Frightful Presence for the next 24 hours."
+    },
+    {
+      "name": "Breath Weapon (Recharge 5\u20136)",
+      "desc": "The mist dragon uses one of the following breath weapons. 1. <i>Obscuring Mist.</i> The dragon exhales a murky opaque mist in a 90-foot cube that spreads around corners. This mist heavily obscures the area and remains for 1 minute, or until dispersed with a moderate or stronger wind (at least 10 miles per hour). 2. <i>Scalding Mist.</i> The dragon exhales a fiery blast of lingering mist in a 90-foot cone that spreads around corners. The mist lightly obscures the area and remains for 1 minute, or until dispersed with a moderate or stronger wind (at least 10 miles per hour). Each creature that enters the area or begins its turn there must make a DC 22 Constitution saving throw, taking 77 (22d6) fire damage on a failed saving throw, or half as much damage on a successful one. Being underwater doesn\u2019t grant resistance to this damage."
+    },
+    {
+      "name": "Mist Form",
+      "desc": "The mist dragon polymorphs into a Gargantuan cloud of mist, or back into its true form. While in mist form, the dragon can\u2019t take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature\u2019s space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can\u2019t pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, it is immune to all nonmagical damage."
+    },
+    {
+      "name": "Steam Cloud",
+      "desc": "Scalding steam condenses into an area in a 20-foot sphere centered on a point within 120 feet of the mist dragon. Creatures who enter the area or begin their turn within it must make a DC 16 Constitution saving throw, taking 16 (4d6 + 2) fire damage on a failed saving throw, or half as much damage on a success. The mist cloud heavily obscures the area and remains until the next initiative count 20."
+    },
+    {
+      "name": "Rain",
+      "desc": "The dragon causes rain to fall as if it had cast the create or destroy water spell as a 9th level spell (creating rainfall within a 70-foot cube) on an area within 120 feet of it that it can see."
+    },
+    {
+      "name": "Wind Barrier",
+      "desc": "The dragon causes strong winds to form barriers, as if it had cast the wind wall spell at a point it can see within 120 feet of it. The effects last until the dragon uses this lair action again, or until the dragon dies."
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Detect",
+      "desc": "The dragon makes a Wisdom (Perception) check."
+    },
+    {
+      "name": "Tail Attack",
+      "desc": "The dragon makes a tail attack."
+    },
+    {
+      "name": "Wing Attack (Costs 2 Actions)",
+      "desc": "The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 22 Dexterity saving throw or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed."
+    }
+  ]
+}

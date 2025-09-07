@@ -1,0 +1,35 @@
+{
+  "name": "Frost Salamander",
+  "tags": [
+    "huge",
+    "elemental",
+    "cr9",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Huge",
+  "type": "elemental",
+  "alignment": "unaligned",
+  "cr": "9 (5,000 XP)",
+  "hp": "168  (16d12 + 64)",
+  "ac": "17 (natural armor)",
+  "speed": "60 ft., burrow 40 ft., climb 40 ft.",
+  "saves": "Con +8, Wis +4",
+  "skills": "Perception +4",
+  "immunities": "cold",
+  "senses": "darkvision 60 ft., tremorsense 60 ft., passive Perception 14",
+  "languages": "Primordial",
+  "abilities": {
+    "str": 20,
+    "dex": 12,
+    "con": 18,
+    "int": 7,
+    "wis": 11,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Burning Fury",
+      "desc": "When the salamander takes fire damage, its Freezing Breath automatically recharges."
+    }
+  ]
+}

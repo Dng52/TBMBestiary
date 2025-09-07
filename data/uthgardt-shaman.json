@@ -1,0 +1,42 @@
+{
+  "name": "Uthgardt Shaman",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr2",
+    "storm-kings-thunder"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "2 (450 XP)",
+  "hp": "38 (7d8+7)",
+  "ac": "13",
+  "speed": "30 ft.",
+  "skills": "Medicine +4, Nature +4, Perception +4, Survival +6",
+  "languages": "Bothii, Common",
+  "abilities": {
+    "str": 14,
+    "dex": 12,
+    "con": 13,
+    "int": 10,
+    "wis": 15,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The shaman can innately cast the following spells. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). * At Will: <i>dancing lights, message, mage hand, thaumaturgy</i> * 1/day: <i>augury, bestow curse, cordon of arrows, detect magic, hex, prayer of healing, speak with dead, spirit guardians</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Spear",
+      "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6+2) piercing damage, or 6 (1d8 + 2) piercing damage if wielded with two hands."
+    },
+    {
+      "name": "Shortbow",
+      "desc": "Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 4 (1d6 + 1) piercing damage."
+    }
+  ]
+}

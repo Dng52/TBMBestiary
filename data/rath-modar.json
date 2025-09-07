@@ -1,0 +1,47 @@
+{
+  "name": "Rath Modar",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr6",
+    "tyranny-of-dragons"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful evil",
+  "cr": "6 (2,300 XP)",
+  "hp": "71 (11d8+22)",
+  "ac": "13 (16 with mage armor)",
+  "speed": "30 ft.",
+  "saves": "Int +7, Wis +5",
+  "skills": "Arcana +7, Deception +3, Insight +5, Stealth +6",
+  "languages": "Common, Draconic, Infernal, Primordial, Thayan",
+  "abilities": {
+    "str": 11,
+    "dex": 16,
+    "con": 14,
+    "int": 18,
+    "wis": 14,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Special Equipment",
+      "desc": "Rath has a staff of fire, and scrolls of dimension door, feather fall, and fireball."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "Rath is an 11th-level spellcaster who uses Intelligence as his spellcasting ability (spell save DC 15, +7 to hit with spell attacks). Rath has the following spells prepared from the wizard spell list: * Cantrips (at will): <i>fire bolt, minor illusion, prestidigitation, shocking grasp</i> * 1st level (4 slots): <i>chromatic orb, color spray, mage armor, magic missile</i> * 2nd level (3 slots): <i>detect thoughts, mirror image, phantasmal force</i> * 3rd level (3 slots): <i>counterspell, fireball, major image</i> * 4th level (3 slots): <i>confusion, greater invisibility</i> * 5th level (2 slots): <i>mislead, seeming</i> * 6th level (1 slot): <i>globe of invulnerability</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Quarterstaff",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d8) bludgeoning damage."
+    },
+    {
+      "name": "Illusory Self (Recharges on a Short or Long Rest)",
+      "desc": "When a creature Rath can see makes an attack roll against him, he can interpose an illusory duplicate between the attacker and him. The attack automatically misses Rath, then the illusion dissipates."
+    }
+  ]
+}

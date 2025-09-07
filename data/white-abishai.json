@@ -1,0 +1,48 @@
+{
+  "name": "White Abishai",
+  "tags": [
+    "medium",
+    "fiend",
+    "cr6",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "fiend",
+  "alignment": "lawful evil",
+  "cr": "6 (2300 XP)",
+  "hp": "68  (8d8 + 32)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft., fly 40 ft.",
+  "saves": "Str +6, Con +7",
+  "immunities": "cold, fire, poison",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 120 ft., passive Perception 11",
+  "languages": "Draconic, Infernal, telepathy 120 ft.",
+  "abilities": {
+    "str": 16,
+    "dex": 11,
+    "con": 18,
+    "int": 11,
+    "wis": 12,
+    "cha": 13
+  },
+  "traits": [
+    {
+      "name": "Devil's Sight",
+      "desc": "Magical darkness doesn't impede the abishai's darkvision."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The abishai has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The abishai's weapon attacks are magical."
+    },
+    {
+      "name": "Reckless",
+      "desc": "At the start of its turn, the abishai can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
+    }
+  ]
+}

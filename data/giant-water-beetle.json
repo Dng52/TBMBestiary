@@ -1,0 +1,42 @@
+{
+  "name": "Giant Water Beetle",
+  "tags": [
+    "medium",
+    "beast",
+    "cr1/2",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/2 (100 XP)",
+  "hp": "37 (5d8 + 15)",
+  "ac": "13 (natural armor)",
+  "speed": "20 ft., swim 60 ft.",
+  "senses": "blindsight 60 ft., passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 15,
+    "dex": 13,
+    "con": 16,
+    "int": 2,
+    "wis": 10,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Water Breathing",
+      "desc": "Giant water beetles can only breathe water but can hold their breath for up to 8 hours out of water."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+    },
+    {
+      "name": "Ink Cloud (Recharge 6)",
+      "desc": "A 10-foot radius cloud of ink extends all around the water beetle if it is underwater. The area is heavily obscured for 1 minute although a significant current can disperse the ink."
+    }
+  ]
+}

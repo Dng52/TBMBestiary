@@ -1,0 +1,60 @@
+{
+  "name": "River Troll",
+  "tags": [
+    "large",
+    "humanoid",
+    "cr4",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "4 (1,100 XP)",
+  "hp": "57 (6d10 + 24)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft., swim 40 ft.",
+  "skills": "Athletics +5, Perception +3",
+  "immunities": "poison",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "Giant",
+  "abilities": {
+    "str": 17,
+    "dex": 14,
+    "con": 19,
+    "int": 6,
+    "wis": 9,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The river troll can breathe both air and water."
+    },
+    {
+      "name": "Keen Smell",
+      "desc": "The river troll has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Poison Skin",
+      "desc": "The river troll\u2019s skin contains a powerful poison. Any time the troll touches another creature, the creature takes 7 (2d6) poison damage (included in attacks)."
+    },
+    {
+      "name": "Regeneration",
+      "desc": "The river troll regains 10 hit points at the start of its turn as long as it is at least partially submerged in water; strong rainfall also allows the troll\u2019s regeneration to function. If the troll takes acid or lightning damage, this trait doesn\u2019t function at the start of the troll\u2019s next turn. The troll only dies if it starts its turn with 0 hit points and doesn\u2019t regenerate."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The river troll makes three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage plus 7 (2d6) poison damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage plus 7 (2d6) poison damage."
+    }
+  ]
+}

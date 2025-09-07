@@ -1,0 +1,45 @@
+{
+  "name": "Minotaur Skeleton",
+  "tags": [
+    "large",
+    "undead",
+    "cr2",
+    "monster-manual"
+  ],
+  "size": "Large",
+  "type": "undead",
+  "alignment": "lawful evil",
+  "cr": "2 (450 XP)",
+  "hp": "67 (9d10+18)",
+  "ac": "12 (natural armor)",
+  "speed": "40 ft.",
+  "immunities": "poison",
+  "vulnerability": "bludgeoning",
+  "conimmunities": "exhaustion, poisoned",
+  "senses": "darkvision 60 ft.",
+  "languages": "understands Abyssal but can't speak",
+  "abilities": {
+    "str": 18,
+    "dex": 11,
+    "con": 15,
+    "int": 6,
+    "wis": 8,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Charge",
+      "desc": "If the skeleton moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be pushed up to 10 feet away and knocked prone."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Greataxe",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 17 (2d12 + 4) slashing damage."
+    },
+    {
+      "name": "Gore",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage."
+    }
+  ]
+}

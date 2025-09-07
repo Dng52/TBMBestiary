@@ -1,0 +1,27 @@
+{
+  "name": "Othovir",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr0",
+    "storm-kings-thunder"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful neutral",
+  "cr": "0 (10 XP)",
+  "hp": "16 (3d8 + 3)",
+  "ac": "10 (13 with mage armor)",
+  "speed": "30 ft.",
+  "skills": "Deception +5, Insight +4, Persuasion +5",
+  "senses": "passive Perception 12",
+  "languages": "Common, Elvish",
+  "abilities": {
+    "str": 11,
+    "dex": 10,
+    "con": 13,
+    "int": 12,
+    "wis": 14,
+    "cha": 16
+  }
+}

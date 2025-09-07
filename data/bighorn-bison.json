@@ -1,0 +1,50 @@
+{
+  "name": "Bighorn Bison",
+  "tags": [
+    "large",
+    "beast",
+    "cr4",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "neutral",
+  "cr": "4 (1,100 XP)",
+  "hp": "57 (6d10 + 24)",
+  "ac": "14 (natural armor)",
+  "speed": "40 ft.",
+  "senses": "passive Perception 11",
+  "languages": "--",
+  "abilities": {
+    "str": 22,
+    "dex": 12,
+    "con": 19,
+    "int": 2,
+    "wis": 12,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Trample",
+      "desc": "If the bison moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 16 Strength saving throw or be knocked prone. If the target is prone, the bison can make one stomp attack against it as a bonus action."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The bighorn bison can make one gore attack and one kick attack."
+    },
+    {
+      "name": "Gore",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) piercing damage."
+    },
+    {
+      "name": "Stomp",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 22 (3d10 + 6) bludgeoning damage."
+    },
+    {
+      "name": "Kick",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target directly behind it. Hit: 15 (2d8 + 6) bludgeoning damage."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "name": "Angulotl Slink",
+  "tags": [
+    "small",
+    "humanoid",
+    "cr2",
+    "ambusher",
+    "flee-mortals"
+  ],
+  "size": "Small",
+  "type": "humanoid",
+  "alignment": "any",
+  "cr": "2 (450 XP)",
+  "hp": "45 (10d6 + 10)",
+  "ac": "13",
+  "speed": "20 ft., climb 20 ft., swim 30 ft.",
+  "saves": "Dex +5",
+  "skills": "Perception +4, Stealth +7, Survival +4",
+  "immunities": "poison",
+  "senses": "darkvision 60 ft., passive Perception 14",
+  "languages": "Angulotl",
+  "abilities": {
+    "str": 7,
+    "dex": 17,
+    "con": 12,
+    "int": 10,
+    "wis": 14,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The slink can breathe air and water."
+    },
+    {
+      "name": "Spider Climb",
+      "desc": "The slink can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    },
+    {
+      "name": "Toxiferous",
+      "desc": "When a creature hits the slink with a melee attack while within 5 feet of them or touches the slink, that creature takes 2 (1d4) poison damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The slink makes one Poison Dagger attack and one Tongue Nab attack."
+    },
+    {
+      "name": "Poison Dagger",
+      "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage plus 10 (3d6) poison damage, and the target can\u2019t take reactions until the start of their next turn."
+    },
+    {
+      "name": "Tongue Nab",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 10 ft., one Medium or smaller creature. Hit: The slink grabs one Small or Tiny object the slink can see that the target is holding or carrying. The slink can catch the object if they have a free hand, otherwise it lands at the slink\u2019s feet."
+    },
+    {
+      "name": "Hop and Hide",
+      "desc": "The slink jumps a number of feet up to their walking speed, then takes the Hide action."
+    }
+  ]
+}

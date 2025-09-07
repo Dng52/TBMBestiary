@@ -1,0 +1,38 @@
+{
+  "name": "Crushing Wave Priest",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr2",
+    "elemental-evil"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "2 (450 XP)",
+  "hp": "52 (8d8+16)",
+  "ac": "13 (chain shirt)",
+  "speed": "30 ft.",
+  "skills": "Deception +5, Religion +2, Stealth +2",
+  "languages": "Aquan, Common",
+  "abilities": {
+    "str": 15,
+    "dex": 11,
+    "con": 14,
+    "int": 10,
+    "wis": 11,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "desc": "The priest is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It knows the following sorcerer spells: * Cantrips (at will): <i>chill touch, mage hand, minor illusion, prestidigitation, ray of frost</i> * 1st level (4 slots): <i>expeditious retreat, ice knife, magic missile, shield</i> * 2nd level (3 slots): <i>blur, hold person</i> * 3rd level (2 slots): <i>sleet storm</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Quarterstaff",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage."
+    }
+  ]
+}

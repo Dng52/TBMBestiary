@@ -1,0 +1,45 @@
+{
+  "name": "Goliath Warrior",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr3",
+    "homebrew"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful neutral",
+  "cr": "3 (700 XP)",
+  "hp": "105 (14d8 + 42)",
+  "ac": "13 (hide armor)",
+  "speed": "30 ft.",
+  "skills": "Athletics +5, Survival +2",
+  "senses": "passive Perception 10",
+  "languages": "Common, Giant",
+  "abilities": {
+    "str": 16,
+    "dex": 13,
+    "con": 17,
+    "int": 10,
+    "wis": 11,
+    "cha": 10
+  },
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The goliath makes two attacks with either its battleaxe or javelin."
+    },
+    {
+      "name": "Battleaxe",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 8 (1d10 + 3) slashing damage if used with two hands."
+    },
+    {
+      "name": "Javelin",
+      "desc": "Melee or Ranged Weap on Attack: +5 to hit, reach 5 ft. or range 30/120 feet, one target. Hit: 6 (1d6 + 3) piercing damage."
+    },
+    {
+      "name": "Stone\u2019s Endurance",
+      "desc": "If the goliath takes damage and remains above 0 hit points, it can make a Constitution saving throw with a DC of 5 + the damage taken. On a success, it gains 5 temporary hit points."
+    }
+  ]
+}

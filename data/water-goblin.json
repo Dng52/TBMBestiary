@@ -1,0 +1,55 @@
+{
+  "name": "Water Goblin",
+  "tags": [
+    "small",
+    "humanoid",
+    "cr1/2",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "humanoid",
+  "alignment": "neutral",
+  "cr": "1/2 (100 XP)",
+  "hp": "13 (3d6 + 3)",
+  "ac": "13 (natural armor), 16 with mage armor",
+  "speed": "20 ft., swim 20 ft.",
+  "saves": "Dex +4, Cha +5",
+  "skills": "Acrobatics +4, Athletics +3",
+  "immunities": "cold",
+  "resistance": "acid; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "vulnerability": "lightning",
+  "senses": "darkvision 120 ft., passive Perception 11",
+  "languages": "Common, Goblin, Sylvan",
+  "abilities": {
+    "str": 13,
+    "dex": 14,
+    "con": 13,
+    "int": 10,
+    "wis": 12,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "Water goblins can breathe air and water."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The water goblin\u2019s spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). The water goblin can innately cast the following spells, requiring no material components: * At will: <i>mending, minor illusion, prestidigitation, ray of frost</i> * 3/day each: <i>create or destroy water, fog cloud, grease, mage armor, purify food and drink, water breathing</i> * 1/day: <i>water walk</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Scimitar",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage."
+    },
+    {
+      "name": "Shortbow",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    },
+    {
+      "name": "Uncanny Dodge",
+      "desc": "When an attacker the water goblin can see hits it with an attack, it can use its reaction to halve the attack\u2019s damage against it."
+    }
+  ]
+}

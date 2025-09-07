@@ -1,0 +1,42 @@
+{
+  "name": "Dark Witness",
+  "tags": [
+    "medium",
+    "aberration",
+    "cr4",
+    "out-of-the-box-5e"
+  ],
+  "size": "Medium",
+  "type": "aberration",
+  "alignment": "chaotic evil",
+  "cr": "4 (1,100 XP)",
+  "hp": "45 (6d8 + 18)",
+  "ac": "15 (natural armor)",
+  "speed": "0 ft., fly 30 ft. (hover)",
+  "skills": "Perception +4",
+  "conimmunities": "Prone",
+  "senses": "Darkvision 120 ft., Passive Perception 14",
+  "languages": "understands Common, Deep Speech, and Undercommon, but cannot speak",
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 16,
+    "int": 7,
+    "wis": 14,
+    "cha": 10
+  },
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., Hit: 5 (1d8) piercing damage."
+    },
+    {
+      "name": "Aberrant Gaze",
+      "desc": "The dark witness targets up to two creatures it can see within 120 ft. Eyes from two of its faces use one of the following effects on the target. The dark witness can use each effect only once per turn. * **Paralyzing Gaze.** The target creature must succeed on a DC 14 Constitution saving throw or be paralyzed for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success. * **Fear Gaze.** The target creature must succeed on a DC 14 Wisdom saving throw or be frightened of the dark witness for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on a success. * **Shocking Gaze.** The target creature must succeed on a DC 14 Dexterity saving throw or take 28 (8d6) lightning damage on a failed save, or half as much on a successful one. * **Forceful Gaze.** The target creature must succeed on a DC 14 Strength saving throw or be moved up to 30 ft. in any direction. The target is restrained by the gaze\u2019s telekinetic grip until the start of the dark witness\u2019s next turn or until the dark witness is incapacitated."
+    },
+    {
+      "name": "Phase (3/day)",
+      "desc": "If a dark witness fails a saving throw or check that would restrain, paralyze, or grapple it, it can use its reaction to briefly phase into an aberrant plane and repeat the saving throw."
+    }
+  ]
+}

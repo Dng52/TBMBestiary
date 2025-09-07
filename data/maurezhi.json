@@ -1,0 +1,40 @@
+{
+  "name": "Maurezhi",
+  "tags": [
+    "medium",
+    "fiend",
+    "cr7",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "7 (2900 XP)",
+  "hp": "88  (16d8 + 16)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Deception +5",
+  "immunities": "poison",
+  "resistance": "cold, fire, lightning, necrotic; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "charmed, exhaustion, poisoned",
+  "senses": "darkvision 120 ft., passive Perception 11",
+  "languages": "Abyssal, Elvish, telepathy 120 ft.",
+  "abilities": {
+    "str": 14,
+    "dex": 17,
+    "con": 12,
+    "int": 11,
+    "wis": 12,
+    "cha": 15
+  },
+  "traits": [
+    {
+      "name": "Assume Form",
+      "desc": "The maurezhi can assume the appearance of any Medium humanoid it has eaten. It remains in this form for 1d6 days, during which time the form gradually decays until, when the effect ends, the form sloughs from the demon's body."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The maurezhi has advantage on saving throws against spells and other magical effects."
+    }
+  ]
+}

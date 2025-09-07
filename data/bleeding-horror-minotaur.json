@@ -1,0 +1,67 @@
+{
+  "name": "Bleeding Horror Minotaur",
+  "tags": [
+    "large",
+    "undead",
+    "cr6",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "undead",
+  "alignment": "chaotic evil",
+  "cr": "6 (2,300 XP)",
+  "hp": "75 (10d10 + 20)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Dex +3, Con +5, Wis +3",
+  "skills": "Perception +6, Survival +6",
+  "immunities": "poison",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "exhaustion, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 16",
+  "languages": "Giant",
+  "abilities": {
+    "str": 19,
+    "dex": 10,
+    "con": 15,
+    "int": 7,
+    "wis": 10,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Charge",
+      "desc": "If the minotaur moves at least 10 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 9 (2d8) piercing damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be pushed up to 10 feet away and knocked prone."
+    },
+    {
+      "name": "Horrific Appearance",
+      "desc": "All creatures who directly look at the minotaur must make a DC 14 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature\u2019s saving throw is successful or the effect ends for it, the creature is immune to the minotaur\u2019s horrific appearance for the next 24 hours."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The minotaur has advantage on saving throws against spells and other magic effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The minotaur\u2019s attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The bleeding horror minotaur uses its gore attack, and makes one attack with its claw and one with its greataxe, or two with its claws."
+    },
+    {
+      "name": "Gore",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) piercing damage."
+    },
+    {
+      "name": "Greataxe",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) slashing damage."
+    }
+  ]
+}

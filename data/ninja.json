@@ -1,0 +1,57 @@
+{
+  "name": "Ninja",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful neutral",
+  "cr": "1 (200 XP)",
+  "hp": "22 (4d8 + 4)",
+  "ac": "14 (leather armor)",
+  "speed": "30 ft., climb 20 ft.",
+  "skills": "Stealth +7, Sleight of Hand +5, Perception +3",
+  "resistance": "poison",
+  "conimmunities": "poisoned",
+  "senses": "blindsight 10 ft., passive Perception 13",
+  "languages": "Common",
+  "abilities": {
+    "str": 10,
+    "dex": 16,
+    "con": 12,
+    "int": 10,
+    "wis": 12,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Sneak Attack",
+      "desc": "Once per turn, whenever the ninja attacks, it can deal an extra 7 (2d6) damage to one creature hit with an attack if it had advantage on the attack roll or if it has an ally within 5 feet of its target that isn\u2019t incapacitated."
+    },
+    {
+      "name": "Rigorous Training",
+      "desc": "The ninja can hold its breath for up to five minutes and cannot be poisoned."
+    },
+    {
+      "name": "Grappling Hook",
+      "desc": "The ninja is skilled in the use of a grappling hook, allowing it to scale structures with ease. The ninja gains a 20 ft. climb speed."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit: 5 (1d4 + 3) piercing damage."
+    },
+    {
+      "name": "Throwing Star",
+      "desc": "Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage."
+    },
+    {
+      "name": "Smoke Bomb",
+      "desc": "The ninja throws a smoke bomb at its feet. This creates a cloud of smoke in a 10-foot radius area that renders all creatures within it blind and heavily obscures the area to creatures outside of it. This cloud persists until the beginning of the ninja\u2019s next turn."
+    }
+  ]
+}

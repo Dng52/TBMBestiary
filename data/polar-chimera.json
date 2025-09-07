@@ -1,0 +1,57 @@
+{
+  "name": "Polar Chimera",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr6",
+    "homebrew"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "chaotic evil",
+  "cr": "6 (2,300 XP)",
+  "hp": "137 (11d12 + 66)",
+  "ac": "12 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Con +8",
+  "skills": "Perception +9",
+  "immunities": "cold",
+  "senses": "darkvision 60 ft., passive Perception 19",
+  "languages": "understands Draconic but can't speak",
+  "abilities": {
+    "str": 18,
+    "dex": 10,
+    "con": 20,
+    "int": 3,
+    "wis": 16,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Ice Walk",
+      "desc": "The chimera can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn't cost it extra movement."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The chimera makes three attacks: one with its bite, one with its horns, and one with its claws. When its cold breath is available, it can use the breath in place of its bite or horns."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
+    },
+    {
+      "name": "Horns",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 10 (1d12 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
+    },
+    {
+      "name": "Cold Breath (Recharge 5\u20136)",
+      "desc": "The dragon head exhales freezing air in a 15-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 30 (7d6) cold damage on a failed save, or half as much damage on a successful one."
+    }
+  ]
+}

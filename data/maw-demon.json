@@ -1,0 +1,41 @@
+{
+  "name": "Maw Demon",
+  "tags": [
+    "medium",
+    "fiend",
+    "cr1",
+    "volos-guide"
+  ],
+  "size": "Medium",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "1 (200 XP)",
+  "hp": "33 (6d8+6)",
+  "ac": "13 (natural armor)",
+  "speed": "30 ft.",
+  "immunities": "poison",
+  "resistance": "cold, fire, lightning",
+  "conimmunities": "charmed, frightened, poisoned",
+  "senses": "darkvision 60 ft.",
+  "languages": "understands Abyssal but can't speak",
+  "abilities": {
+    "str": 14,
+    "dex": 8,
+    "con": 13,
+    "int": 5,
+    "wis": 8,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Rampage",
+      "desc": "When it reduces a creature to 0 hit points with a melee attack on its turn, the maw demon can take a bonus action to move up to half its speed and make a bite attack."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 11 (2d8+2) piercing damage."
+    }
+  ]
+}

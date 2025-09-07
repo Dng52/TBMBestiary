@@ -1,0 +1,48 @@
+{
+  "name": "White Tusk Bloodrager",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr4",
+    "strongholds-and-followers"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "4 (1,100 XP)",
+  "hp": "60 (8d8 + 24)",
+  "ac": "16 (breastplate)",
+  "speed": "30 ft.",
+  "saves": "Dex +4",
+  "skills": "Athletics +5, Perception +3",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "Orc",
+  "abilities": {
+    "str": 18,
+    "dex": 15,
+    "con": 16,
+    "int": 11,
+    "wis": 12,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Aggressive",
+      "desc": "As a bonus action, the orc can move up to its speed toward a hostile creature it can see."
+    },
+    {
+      "name": "Minion: Savage Horde",
+      "desc": "After moving at least 20 feet in a straight line toward a creature, the next attack the orc makes against that creature scores a critical hit on a roll of 18\u201320."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The White Tusk Bloodrager makes three falchion attacks."
+    },
+    {
+      "name": "Falchion",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage."
+    }
+  ]
+}

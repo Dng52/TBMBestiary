@@ -1,0 +1,60 @@
+{
+  "name": "Fan Dancer",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr5",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral",
+  "cr": "5 (1,800 XP)",
+  "hp": "91 (14d8 + 28)",
+  "ac": "15 (leather)",
+  "speed": "30 ft.",
+  "saves": "Dex +7, Cha +6",
+  "skills": "Acrobatics +7, Perception +7, Performance +6, Persuasion +9, Sleight of Hand +7, Stealth +10",
+  "senses": "passive Perception 13",
+  "languages": "any three languages",
+  "abilities": {
+    "str": 15,
+    "dex": 19,
+    "con": 14,
+    "int": 13,
+    "wis": 12,
+    "cha": 17
+  },
+  "traits": [
+    {
+      "name": "Swift Repositioning",
+      "desc": "The fan dancer can disengage as a bonus action."
+    },
+    {
+      "name": "Dancing Leap",
+      "desc": "The fan dancer uses wind from its fans to aid it in jumping. Its long jump is up to 20 feet and its high jump is up to 15 feet, with or without a running start."
+    },
+    {
+      "name": "Sneak Attack (1/turn)",
+      "desc": "Whenever the dancer hits with an attack, it can deal an extra 17 (5d6) damage to one creature if it had advantage on the attack roll or if it has an ally within 5 feet of its target that isn\u2019t incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The dancer makes two attacks with its bladed fans or with its wind strike."
+    },
+    {
+      "name": "Bladed Fan",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5ft., one target. Hit: 8 (1d8 + 4) slashing damage."
+    },
+    {
+      "name": "Wind Strike",
+      "desc": "Ranged Weapon Attack +7 to hit, range 20/60 ft., one target. Hit: 9 (2d4 + 4) slashing damage."
+    },
+    {
+      "name": "Dance of a Ninety-Nine Slashes (Recharge 5-6)",
+      "desc": "The dancer performs an elaborate display with its fans, throwing violent winds at all creatures within a 15- foot radius sphere centered on the dancer. Creatures in this area must make a DC 14 Dexterity saving throw, taking 25 (10d4) slashing damage on a failed save, or half as much damage on a successful one. Creatures who failed this saving throw are also pushed to the edge of the dance\u2019s radius."
+    }
+  ]
+}

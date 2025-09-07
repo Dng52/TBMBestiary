@@ -1,0 +1,63 @@
+{
+  "name": "Pharblex Spattergoo",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr3",
+    "tyranny-of-dragons"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "3 (700 XP)",
+  "hp": "59 (7d8+28)",
+  "ac": "15 (studded leather armor, shield)",
+  "speed": "20 ft., swim 40 ft.",
+  "saves": "Str +4, Con +6",
+  "skills": "Perception +5, Religion +2, Stealth +3",
+  "languages": "Common, Bullywug",
+  "abilities": {
+    "str": 15,
+    "dex": 12,
+    "con": 18,
+    "int": 11,
+    "wis": 16,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "Pharblex can breathe air and water."
+    },
+    {
+      "name": "Poison Strike (3/Day)",
+      "desc": "Once per turn, when Pharblex hits with a melee attack, he can expend a use of this trait to deal an extra 9 (2d8) poison damage."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "Pharblex is a 6th-level spellcaster that uses Wisdom as his spellcasting ability (spell save DC 13, +5 to hit with spell attacks). Pharblex has the following spells prepared from the druid spell list: * Cantrips (at will): <i>druidcraft, guidance, poison spray</i> * 1st level (4 slots): <i>cure wounds, entangle, healing word, thunderwave</i> * 2nd level (3 slots): <i>barkskin, beast sense, spike growth</i> * 3rd level (3 slots): <i>plant growth, water walk</i>"
+    },
+    {
+      "name": "Standing Leap",
+      "desc": "As part of his movement and without a running start, Pharblex can long jump up to 20 feet and high jump up to 10 feet."
+    },
+    {
+      "name": "Swamp Camouflage",
+      "desc": "Pharblex has advantage on Dexterity (Stealth) checks made to hide in swampy terrain."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Pharblex attacks twice. Once with his bite and once with his spear."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Spear",
+      "desc": "Melee or Ranged Weapon Attack: +5 to hit. reach 5 ft. or ranged 20 ft./60 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    }
+  ]
+}

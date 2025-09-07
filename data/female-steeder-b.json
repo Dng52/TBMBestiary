@@ -1,0 +1,37 @@
+{
+  "name": "Female Steeder (B)",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr1",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "1 (200 XP)",
+  "hp": "30  (4d10 + 8)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft., climb 30 ft.",
+  "skills": "Stealth +7, Perception +4",
+  "senses": "darkvision 120 ft., passive Perception 14",
+  "languages": "-",
+  "abilities": {
+    "str": 15,
+    "dex": 16,
+    "con": 14,
+    "int": 2,
+    "wis": 10,
+    "cha": 3
+  },
+  "traits": [
+    {
+      "name": "Spider Climb",
+      "desc": "The steeder can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    },
+    {
+      "name": "Extraordinary Leap",
+      "desc": "The distance of the steeder's long jumps is tripled; every foot of its walking speed that it spends on the jump allows it to move 3 feet."
+    }
+  ]
+}

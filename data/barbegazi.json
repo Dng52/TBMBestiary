@@ -1,0 +1,49 @@
+{
+  "name": "Barbegazi (Ice Gnome)",
+  "tags": [
+    "small",
+    "humanoid",
+    "cr1/2",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "1/2 (100 XP)",
+  "hp": "13 (3d6 + 3)",
+  "ac": "12 (natural armor)",
+  "speed": "20 ft., burrow 20 ft.",
+  "skills": "Stealth +3",
+  "immunities": "cold",
+  "vulnerability": "fire",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Common, Gnome",
+  "abilities": {
+    "str": 10,
+    "dex": 13,
+    "con": 13,
+    "int": 11,
+    "wis": 11,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Snow Walk",
+      "desc": "The barbegazi can move across and climb icy or snowy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn\u2019t cost extra movement."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The barbegazi\u2019s innate spellcasting ability is Wisdom (spell save DC 10, +2 to hit with spell attacks). The barbegazi can innately cast the following spells, requiring no material components: * 3/day: <i>ray of frost</i> * 1/day: <i>hold person</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage plus 3 (1d6) cold damage."
+    },
+    {
+      "name": "Dagger",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (1d4 + 1) piercing damage plus 3 (1d6) cold damage."
+    }
+  ]
+}

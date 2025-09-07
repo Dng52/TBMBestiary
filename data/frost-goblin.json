@@ -1,0 +1,47 @@
+{
+  "name": "Frost Goblin",
+  "tags": [
+    "small",
+    "humanoid",
+    "cr1",
+    "homebrew"
+  ],
+  "size": "Small",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "1 (200 XP)",
+  "hp": "13 (3d6 + 3)",
+  "ac": "16 (hide armor, shield)",
+  "speed": "35 ft.",
+  "skills": "Stealth +6",
+  "senses": "darkvision 60 ft., passive Perception 16",
+  "languages": "Common, Goblin",
+  "abilities": {
+    "str": 14,
+    "dex": 18,
+    "con": 17,
+    "int": 5,
+    "wis": 10,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Nimble Escape",
+      "desc": "The goblin can take the Disengage or Hide action as a bonus action on each of its turns."
+    },
+    {
+      "name": "Snow Tunneler",
+      "desc": "The goblin can burrow through loose snow at half its walking speed and leaves a 3-footdiameter tunnel in its wake."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Flint Dagger",
+      "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Ice Shard Spear",
+      "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6 + 2) piercing damage plus 3 (1d6) cold damage."
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "Quaggoth",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr2",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic neutral",
+  "cr": "2 (450 XP)",
+  "hp": "45 (6d8+18)",
+  "ac": "13 (natural armor)",
+  "speed": "30 ft., climb 30 ft.",
+  "skills": "Athletics +5",
+  "immunities": "poison",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 120 ft.",
+  "languages": "Undercommon",
+  "abilities": {
+    "str": 17,
+    "dex": 12,
+    "con": 16,
+    "int": 6,
+    "wis": 12,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Wounded Fury",
+      "desc": "While it has 10 hit points or fewer, the quaggoth has advantage on attack rolls. In addition, it deals an extra 7 (2d6) damage to any target it hits with a melee attack."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The quaggoth makes two claw attacks."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage."
+    }
+  ]
+}

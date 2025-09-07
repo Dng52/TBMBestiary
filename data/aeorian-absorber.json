@@ -1,0 +1,61 @@
+{
+  "name": "Aeorian Absorber",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr10",
+    "explorers-guide-to-wildemount"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "neutral evil",
+  "cr": "10 (5,900 XP)",
+  "hp": "171 (18d10 + 72)",
+  "ac": "15 (natural armor)",
+  "speed": "40 ft.",
+  "saves": "Wis +6, Cha +3",
+  "skills": "Perception +6, Stealth +8, Survival +6",
+  "immunities": "radiant, necrotic",
+  "senses": "darkvision 120 ft., passive Perception 16",
+  "languages": "understands Draconic but can\u2019t speak",
+  "abilities": {
+    "str": 21,
+    "dex": 18,
+    "con": 18,
+    "int": 6,
+    "wis": 14,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "desc": "The absorber has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Pounce",
+      "desc": "If the absorber moves at least 20 feet straight toward a creature and then hits its claws attack on the same turn, that target must succeed on a DC 17 Strength saving throw or be knocked prone. If the target is prone, the absorber can make one bite attack against it as a bonus action."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The absorber makes three attacks: one with its bite or Mind Bolt and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one creature. Hit: 10 (1d10 + 5) piercing damage plus 5 (1d10) force damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) slashing damage plus 3 (1d6) force damage."
+    },
+    {
+      "name": "Mind Bolt",
+      "desc": "Ranged Spell Attack: +8 to hit, range 120 ft., one creature. Hit: 22 (4d10) psychic damage."
+    },
+    {
+      "name": "Tail Ray",
+      "desc": "When the absorber takes damage from a spell, the absorber takes only half the triggering damage. If the spellcaster is within 60 feet of the absorber, the absorber can force the caster to make a DC 16 Dexterity saving throw. Unless the save succeeds, the caster takes the other half of the damage."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "name": "Corrupted Guardian",
+  "tags": [
+    "medium",
+    "celestial",
+    "cr9",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "celestial",
+  "alignment": "chaotic evil",
+  "cr": "9 (5,000 XP)",
+  "hp": "119 (14d8 + 56)",
+  "ac": "19 (natural armor, shield)",
+  "speed": "30 ft., fly 90 ft.",
+  "saves": "Wis +9, Cha +7",
+  "skills": "Athletics +8, Perception +9",
+  "resistance": "necrotic; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "charmed, exhausted, frightened",
+  "senses": "darkvision 120ft., passive Perception 19",
+  "languages": "all, telepathy 120 ft.",
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 18,
+    "int": 16,
+    "wis": 20,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Disabling Strikes",
+      "desc": "The guardian's weapons are magical. When the guardian hits with any weapon, the weapon deals an extra 2d8 necrotic damage and the target must succeed on a DC 15 Constitution saving throw or the next weapon or spell attack it makes is made at disadvantage (included in the attack)."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The guardian has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The guardian makes three melee attacks: two with its flail and one with its shield crush."
+    },
+    {
+      "name": "Flail",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage plus 9 (2d8) necrotic damage and the target must succeed on a DC 15 Constitution saving throw or the next weapon or spell attack it makes is made at disadvantage."
+    },
+    {
+      "name": "Shield Crush",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) bludgeoning damage and the target must succeed on a DC 15 Strength saving throw or be pushed up to 15 feet and knocked prone."
+    },
+    {
+      "name": "Rapid Assault (Recharge 5-6)",
+      "desc": "The guardian makes four flail attacks against a single target with disadvantage."
+    },
+    {
+      "name": "Shield Wall (2/Day)",
+      "desc": "The guardian raises its shield and projects an ethereal barrier of energy against a ranged spell or weapon attack that it can see. That attack deals no damage. This ability does not work on spells of 5th level or higher."
+    }
+  ]
+}

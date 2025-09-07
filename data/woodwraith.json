@@ -1,0 +1,52 @@
+{
+  "name": "Woodwraith",
+  "tags": [
+    "medium",
+    "undead",
+    "cr4",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "chaotic evil",
+  "cr": "4 (1,100 XP)",
+  "hp": "85 (10d8 + 40)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft.",
+  "resistance": "bludgeoning, piercing",
+  "vulnerability": "fire",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 14,
+    "dex": 10,
+    "con": 18,
+    "int": 6,
+    "wis": 10,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Locus of Spirits",
+      "desc": "Whenever a non-evil humanoid dies within 60 feet of the wraith, their body rises as an Overgrowth Ghoul under the wraith\u2019s control 1d4 rounds later."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The wraith uses its Convert Flesh ability. It then makes two vine slash attacks.."
+    },
+    {
+      "name": "Vine Slash",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 10 ft., one target. Hit: 8 (1d8 + 2) slashing damage."
+    },
+    {
+      "name": "Convert Flesh",
+      "desc": "Target creature within 60 feet makes a DC 13 Constitution saving throw against being magically petrified. On a failed save, the creature begins to turn to wood and their movement speed is reduced to 0 ft. It must repeat the saving throw at the end of its next turn. On a success, the effect ends. On a failure, the creature turns to wood and is considered petrified for 24 hours."
+    },
+    {
+      "name": "Rain of Splinters (Recharge 5-6)",
+      "desc": "The wraith unleashes an explosion of sharp splinters in a 15 foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 27 (6d8) piercing damage on a failed save, or half as much on a successful one."
+    }
+  ]
+}

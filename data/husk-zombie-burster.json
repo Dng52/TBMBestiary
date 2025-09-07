@@ -1,0 +1,53 @@
+{
+  "name": "Husk Zombie Burster",
+  "tags": [
+    "medium",
+    "undead",
+    "cr1",
+    "explorers-guide-to-wildemount"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "1 (200 XP)",
+  "hp": "37 (5d8 + 15)",
+  "ac": "10",
+  "speed": "35 ft.",
+  "saves": "Con +5, Wis +0",
+  "immunities": "poison",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 60 ft., passive Perception 8",
+  "languages": "understands the languages it knew in life but can\u2019t speak",
+  "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 16,
+    "int": 3,
+    "wis": 6,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Curse of the Husk",
+      "desc": "A humanoid slain by a melee attack from the zombie revives as a husk zombie on its next turn."
+    },
+    {
+      "name": "Undead Fortitude",
+      "desc": "If damage reduces the zombie to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the zombie drops to 1 hit point instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The zombie makes two claw attacks. For each of these attacks that reduces a creature to 0 hit points, the zombie can make an additional claw attack."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) slashing damage."
+    },
+    {
+      "name": "Burst",
+      "desc": "The zombie explodes and is destroyed. Each creature within 5 feet of it must make a DC 12 Constitution saving throw, taking 14 (4d6) poison damage on a failed save, or half as much damage on a successful one. A humanoid creature killed by this damage rises as a husk zombie after 1 minute."
+    }
+  ]
+}

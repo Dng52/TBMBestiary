@@ -1,0 +1,38 @@
+{
+  "name": "Stench Beetle",
+  "tags": [
+    "small",
+    "beast",
+    "cr1/4",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/4 (50 XP)",
+  "hp": "18 (4d6 + 4)",
+  "ac": "13 (natural armor)",
+  "speed": "30 ft., fly 30 ft.",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 11,
+    "dex": 12,
+    "con": 12,
+    "int": 1,
+    "wis": 10,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Death Throes",
+      "desc": "When a stench beetle dies, it explodes in a rush of effluvium of nauseating fluids and gases in a 10-foot radius. Creatures within that radius must make a DC 13 Constitution saving throw or be poisoned for 1 minute. While poisoned, the creature can only take one action or bonus action on its turn as it spends the rest of its turn retching. A poisoned creature can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) piercing damage."
+    }
+  ]
+}

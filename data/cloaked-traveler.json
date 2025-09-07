@@ -1,0 +1,60 @@
+{
+  "name": "Cloaked Traveler",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr3",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "3 (700 XP)",
+  "hp": "55 (10d8 + 10)",
+  "ac": "16 (unarmored defense)",
+  "speed": "50 ft.",
+  "saves": "Str +4, Dex +6",
+  "skills": "Acrobatics +6, Insight +6, Stealth +6, Survival +6",
+  "senses": "passive Perception 13",
+  "languages": "Any two languages",
+  "abilities": {
+    "str": 13,
+    "dex": 16,
+    "con": 12,
+    "int": 14,
+    "wis": 16,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Flurry of Blows (2/Short Rest)",
+      "desc": "If the traveler has attacked this turn, it can make an additional unarmed strike as a bonus action."
+    },
+    {
+      "name": "Shadow Arts (2/Short Rest)",
+      "desc": "The traveler duplicates the effects of certain spells. As an action, it can cast <i>darkness, darkvision, pass without trace, </i>or <i>silence</i> without providing material components."
+    },
+    {
+      "name": "Shadow Step",
+      "desc": "When the traveler is in dim light or darkness, as a bonus action it can teleport up to 60 feet to an unoccupied space it can see that is also in dim light and darkness. The traveler then has advantage on the fight melee attack it makes before the end of the turn."
+    },
+    {
+      "name": "Unarmored Defense",
+      "desc": "While not wearing armor, the traveler's AC includes its Wisdom modifier."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The traveler makes three attacks, two with its quarterstaff and one with its unarmed strike."
+    },
+    {
+      "name": "Quarterstaff",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage."
+    },
+    {
+      "name": "Unarmed Strike",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage."
+    }
+  ]
+}

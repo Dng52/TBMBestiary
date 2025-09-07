@@ -1,0 +1,47 @@
+{
+  "name": "Duergar Despot",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr12",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful evil",
+  "cr": "12 (8400 XP)",
+  "hp": "119  (14d8 + 56)",
+  "ac": "21 (natural armor)",
+  "speed": "25 ft.",
+  "saves": "Con +8, Wis +6",
+  "immunities": "poison",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, poisoned",
+  "senses": "darkvision 120 ft., passive Perception 12",
+  "languages": "Dwarvish, Undercommon",
+  "abilities": {
+    "str": 20,
+    "dex": 5,
+    "con": 19,
+    "int": 15,
+    "wis": 14,
+    "cha": 13
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting (Psionics)",
+      "desc": "The duergar despot's innate spellcasting ability is Intelligence (spell save DC 12). It can cast the following spells, requiring no components: * At will: <i>mage hand, minor illusion</i> * 1/day each: <i>counterspell, misty step, stinking cloud</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The duergar has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Psychic Engine",
+      "desc": "When the duergar despot suffers a critical hit or is reduced to 0 hit points, psychic energy erupts from its frame to deal 14 (4d6) psychic damage to each creature within 5 feet of it."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the duergar despot has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ]
+}

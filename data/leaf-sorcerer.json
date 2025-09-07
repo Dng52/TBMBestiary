@@ -1,0 +1,42 @@
+{
+  "name": "Leaf Sorcerer",
+  "tags": [
+    "tiny",
+    "fey",
+    "cr1/4",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Tiny",
+  "type": "fey",
+  "alignment": "chaotic good",
+  "cr": "1/4 (50 XP)",
+  "hp": "10 (4d6 - 4)",
+  "ac": "15",
+  "speed": "10 ft., fly 30 ft.",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Sylvan",
+  "abilities": {
+    "str": 4,
+    "dex": 20,
+    "con": 8,
+    "int": 10,
+    "wis": 10,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Leaf Camouflage",
+      "desc": "While unmoving, the sorcerer is indistinguishable from an ordinary cluster of leaves."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The sorcerer\u2019s innate spellcasting ability is Charisma (spell save DC 11). It can innately cast the following spells, requiring no components: * 1/day each: <i>animal friendship, color spray, fog cloud</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Razor Leaf",
+      "desc": "Ranged Spell Attack: +3 to hit, range 20/60 ft., one target. Hit: 4 (1d6 + 1) slashing damage."
+    }
+  ]
+}

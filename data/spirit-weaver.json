@@ -1,0 +1,56 @@
+{
+  "name": "Spirit Weaver",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr5",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "5 (1,800 XP)",
+  "hp": "65 (10d8 + 20)",
+  "ac": "16 (spiritual armor)",
+  "speed": "30 ft.",
+  "saves": "Int +4, Wis +7",
+  "skills": "Arcana +4, Insight +7, Nature +7",
+  "senses": "passive Perception 14",
+  "languages": "any three languages",
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 14,
+    "int": 12,
+    "wis": 18,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Spiritual Armor",
+      "desc": "While the spirit weaver is not wearing armor, its AC includes its Wisdom modifier."
+    },
+    {
+      "name": "Phase Walking",
+      "desc": "The spirit weaver has such a strong connection to the Ethereal Plane that it can shift between it and the Material Plane at will for short bursts. Whenever the spirit weaver moves, it can choose to step into the Ethereal Plane. While on the Ethereal Plane, it can only affect and be affected by creatures also on that plane. Creatures not on the Ethereal Plane cannot perceive the spirit weaver and cannot interact with it unless a special ability or magic has given them the ability to do so."
+    },
+    {
+      "name": "Stable Mind",
+      "desc": "The spirit weaver has advantage on all Intelligence, Wisdom, and Charisma saving throws against magic."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Spirit Drain",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 21 (6d6) force damage and the spirit weaver gains temporary hit points equal to the damage dealt."
+    },
+    {
+      "name": "Withering Burst",
+      "desc": "Target creature within 90 feet must succeed on a DC 15 Constitution saving throw or take 22 (5d8) force damage. If the creature fails this saving throw by 5 or more, on its next turn it can either move or take an action, but not both, as its body is drained of strength."
+    },
+    {
+      "name": "Spirit Lash (1/Day)",
+      "desc": "The spirit weaver calls on its ancestral spirits and unleashes them upon all nearby enemies. Each hostile creature within 30 feet of the spirit weaver must make a DC 15 Wisdom saving throw, taking 28 (8d6) force damage and become grappled by invisible spirits on a failed save or half as much damage and not grappled on a successful one. Creatures that failed this save by 5 or more are restrained instead of grappled. At the end of each turn, a grappled or restrained creature can repeat this saving throw, ending the effect on a success."
+    }
+  ]
+}

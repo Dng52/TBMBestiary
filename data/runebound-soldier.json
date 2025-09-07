@@ -1,0 +1,43 @@
+{
+  "name": "Runebound Soldier",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "1 (200 XP)",
+  "hp": "22 (4d8 + 4)",
+  "ac": "16 (chainmail)",
+  "speed": "30 ft.",
+  "conimmunities": "charmed",
+  "senses": "passive Perception 9",
+  "languages": "Common",
+  "abilities": {
+    "str": 15,
+    "dex": 12,
+    "con": 12,
+    "int": 8,
+    "wis": 8,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Runebound",
+      "desc": "The soldier's body is coated in magical runes granted by a runespeaker that provide it with additional strength. The soldier gains one of the following runic bonuses: * Rune of Fortitude \u2013 The soldier's AC is increased to 18. In addition, as long as the soldier has at least 1 hit point, it regenerates 3 hit points at the start of its turns. * Rune of Perception \u2013 The soldier has advantage on Wisdom (Perception) checks and can see invisible creatures. * Rune of Strength \u2013 The soldier's longsword attacks deal an additional 2 slashing damage and it has advantage on Strength-based checks and saving throws."
+    },
+    {
+      "name": "Runic Weapon",
+      "desc": "The soldier's longsword is imbued with powerful arcane runes, causing attacks with that weapon to deal an additional 4 (1d8) force damage (included in the attack)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Runic Longsword",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage, or 7 (1d10 + 2) slashing damage if used with two hands, plus 4 (1d8) force damage."
+    }
+  ]
+}

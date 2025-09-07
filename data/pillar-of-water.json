@@ -1,0 +1,46 @@
+{
+  "name": "Pillar of Water",
+  "tags": [
+    "large",
+    "elemental",
+    "cr7",
+    "strongholds-and-followers"
+  ],
+  "size": "Large",
+  "type": "elemental",
+  "alignment": "neutral",
+  "cr": "7 (2,900 XP)",
+  "hp": "149 (13d10 + 78)",
+  "ac": "13 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Str +7, Con +9",
+  "immunities": "poison",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "exhaustion, paralyzed, petrified, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 15",
+  "languages": "Aquan",
+  "abilities": {
+    "str": 18,
+    "dex": 5,
+    "con": 22,
+    "int": 11,
+    "wis": 15,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Constant Flood",
+      "desc": "Enemies beginning their turn within 15 feet of the Pillar must make a DC 15 Strength check or be pushed 10 feet away from the Pillar. The ground within 15 feet of the Pillar is difficult terrain for all enemies attempting to move toward the Pillar."
+    },
+    {
+      "name": "Geyser",
+      "desc": "When summoned, the Pillar of Water appears in a 10-by-10-foot space. All creatures in that area must make Dexterity saving throws. On a failure, a creature is suspended in the column of water. On a success, a creature is pushed to an empty space adjacent to the Pillar. Up to four Medium creatures, or one Large creature, can be contained in the Pillar. Creatures suspended in the Pillar can\u2019t breathe unless they can breathe water, are restrained, and take 21 (6d6) bludgeoning damage at the start of each of the Pillar\u2019s turns. As an action, a restrained creature can make a DC 15 Strength (Athletics) check. On a success, it escapes from the column of water."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Reform",
+      "desc": "As a bonus action, the Pillar disappears, depositing any suspended creatures on the ground, prone. On its summoner\u2019s next turn, it appears again anywhere within 60 feet of the summoner."
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "name": "Thursir Giant",
+  "tags": [
+    "large",
+    "giant",
+    "cr3",
+    "tome-of-beasts"
+  ],
+  "size": "Large",
+  "type": "giant",
+  "alignment": "neutral evil (50 percent) lawful evil (50 percent)",
+  "cr": "3 (700 XP)",
+  "hp": "114 (12d10 + 48)",
+  "ac": "13 (chain shirt)",
+  "speed": "40 ft.",
+  "saves": "Con +6",
+  "skills": "Athletics +6, Perception +4",
+  "senses": "darkvision 60 ft., passive Perception 14",
+  "languages": "Common, Dwarven, Giant",
+  "abilities": {
+    "str": 19,
+    "dex": 10,
+    "con": 18,
+    "int": 13,
+    "wis": 15,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Cast Iron Stomach",
+      "desc": "The giant can consume half of its weight in food without ill effect, and it has advantage against anything that would give it the poisoned condition. Poisonous and spoiled foodstuffs are common in a thursir lair."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The giant makes two warhammer attacks."
+    },
+    {
+      "name": "Warhammer",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Rock",
+      "desc": "Ranged Weapon Attack: +6 to hit, range 40/160 ft., one target. Hit: 15 (2d10 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Runic Blood (3/day)",
+      "desc": "Thursir giants can inscribe the thurs rune on a weapon. A creature hit by the weapon takes an additional 1d8 lightning damage, and the target can't take reactions until the start of its next turn. The thurs rune lasts for one hour, or for three hits, whichever comes first."
+    }
+  ]
+}

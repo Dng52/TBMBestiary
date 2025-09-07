@@ -1,0 +1,57 @@
+{
+  "name": "Zariel",
+  "tags": [
+    "large",
+    "fiend",
+    "cr26",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Large",
+  "type": "fiend",
+  "alignment": "lawful evil",
+  "cr": "26 (90,000 XP)",
+  "hp": "580  (40d10 + 360)",
+  "ac": "21 (natural armor)",
+  "speed": "50 ft., fly 150 ft.",
+  "saves": "Int +16, Wis +16, Cha +18",
+  "skills": "Intimidation +18, Perception +16",
+  "immunities": "necrotic, poison",
+  "resistance": "cold, fire, radiant; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered",
+  "conimmunities": "charmed, exhaustion, frightened, poisoned",
+  "senses": "darkvision 120 ft., passive Perception 26",
+  "languages": "all, telepathy 120 ft.",
+  "abilities": {
+    "str": 27,
+    "dex": 24,
+    "con": 28,
+    "int": 26,
+    "wis": 27,
+    "cha": 30
+  },
+  "traits": [
+    {
+      "name": "Devil's Sight",
+      "desc": "Magical darkness doesn't impede Zariel's darkvision."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "Zariel's weapon attacks are magical. When she hits with any weapon, the weapon deals an extra 36 (8d8) fire damage (included in the weapon attacks below)."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "Zariel's innate spellcasting ability is Charisma (spell save DC 26). She can innately cast the following spells, requiring no material components: * At will: <i>alter self </i>(can become Medium when changing her appearance)<i>, detect evil and good, fireball, invisibility </i>(self only)<i>, wall of fire</i> * 3/day each: <i>blade barrier, dispel evil and good, finger of death</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "desc": "If Zariel fails a saving throw, she can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "Zariel has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Regeneration",
+      "desc": "Zariel regains 20 hit points at the start of her turn. If she takes radiant damage, this trait doesn't function at the start of her next turn. Zariel dies only if she starts her turn with 0 hit points and doesn't regenerate."
+    }
+  ]
+}

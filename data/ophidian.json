@@ -1,0 +1,44 @@
+{
+  "name": "Ophidian",
+  "tags": [
+    "medium",
+    "monstrosity",
+    "cr3",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "monstrosity",
+  "alignment": "neutral evil",
+  "cr": "3 (700 XP)",
+  "hp": "32 (5d8 + 10)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Perception +3, Stealth +5",
+  "immunities": "poison",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "Common, Ophidian",
+  "abilities": {
+    "str": 14,
+    "dex": 17,
+    "con": 15,
+    "int": 12,
+    "wis": 13,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "desc": "The ophidian has advantage on Wisdom (Perception) checks that rely on smell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Snake Hands",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage, and the target must succeed on a DC 12 Constitution saving throw or be poisoned for 1 hour."
+    },
+    {
+      "name": "Blinding Spray. (Recharge 5\u20136)",
+      "desc": "The ophidian spews forth a 20-foot cone of viscous liquid. All creatures in this area must succeed on a DC 12 Dexterity saving or be blinded for 1 minute. The blinded target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    }
+  ]
+}

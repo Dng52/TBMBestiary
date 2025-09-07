@@ -1,0 +1,51 @@
+{
+  "name": "Gnoll Flesh Gnawer",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "volos-guide"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "1 (200 XP)",
+  "hp": "22 (4d8+4)",
+  "ac": "14 (studded leather armor)",
+  "speed": "30 ft.",
+  "saves": "Dex +4",
+  "senses": "darkvision 60 ft.",
+  "languages": "Gnoll",
+  "abilities": {
+    "str": 12,
+    "dex": 14,
+    "con": 12,
+    "int": 8,
+    "wis": 10,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Rampage",
+      "desc": "When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The gnoll makes three attacks: one with its bite and two with its shortsword."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) piercing damage."
+    },
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft, one target. Hit: 5 (1d6+2) piercing damage."
+    },
+    {
+      "name": "Sudden Rush",
+      "desc": "Until the end of the turn, the gnoll's speed increases by 60 feet and it doesn't provoke opportunity attacks."
+    }
+  ]
+}

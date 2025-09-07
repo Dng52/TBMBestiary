@@ -1,0 +1,52 @@
+{
+  "name": "Faldric the Archer",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr3",
+    "strongholds-and-followers"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "3 (700 XP)",
+  "hp": "44 (8d8 + 8)",
+  "ac": "15 (studded leather)",
+  "speed": "30 ft.",
+  "saves": "Dex +4 Wis +2",
+  "skills": "Acrobatics +5, Perception +3",
+  "senses": "passive Perception 13",
+  "languages": "Common",
+  "abilities": {
+    "str": 11,
+    "dex": 16,
+    "con": 13,
+    "int": 11,
+    "wis": 14,
+    "cha": 13
+  },
+  "traits": [
+    {
+      "name": "Acute Sight",
+      "desc": "Faldric has advantage on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Faldric makes two attacks with either his longbow or his shortsword."
+    },
+    {
+      "name": "Longbow",
+      "desc": "Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage."
+    },
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+    },
+    {
+      "name": "Pelliton\u2019s Archer",
+      "desc": "When a creature Faldric can see enters a space adjacent to Sir Pelliton, Faldric may use his reaction to make a longbow attack against that creature. If this attack is successful, the target is also knocked prone."
+    }
+  ]
+}

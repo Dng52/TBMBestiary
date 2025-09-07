@@ -1,0 +1,39 @@
+{
+  "name": "Awakened Tree",
+  "tags": [
+    "huge",
+    "plant",
+    "cr2",
+    "monster-manual"
+  ],
+  "size": "Huge",
+  "type": "plant",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "59 (7d12+14)",
+  "ac": "13 (natural armor)",
+  "speed": "20 ft.",
+  "resistance": "bludgeoning, piercing",
+  "vulnerability": "fire",
+  "languages": "one language known by its creator",
+  "abilities": {
+    "str": 19,
+    "dex": 6,
+    "con": 15,
+    "int": 10,
+    "wis": 10,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "False Appearance",
+      "desc": "While the tree remains motionless, it is indistinguishable from a normal tree."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) bludgeoning damage."
+    }
+  ]
+}

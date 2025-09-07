@@ -1,0 +1,52 @@
+{
+  "name": "Angulotl Tadpole",
+  "tags": [
+    "small",
+    "humanoid",
+    "cr1/4",
+    "minion",
+    "flee-mortals"
+  ],
+  "size": "Small",
+  "type": "humanoid",
+  "alignment": "any",
+  "cr": "1/4 (10 XP)",
+  "hp": "6",
+  "ac": "11",
+  "speed": "30 ft., climb 30 ft., swim 30 ft.",
+  "immunities": "poison",
+  "senses": "darkvision 60 ft., passive Perception 9",
+  "languages": "--",
+  "abilities": {
+    "str": 5,
+    "dex": 12,
+    "con": 9,
+    "int": 8,
+    "wis": 8,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Acid Burst",
+      "desc": "When the tadpole is reduced to 0 hit points, their body pops, spraying acid around them. Each creature within 5 feet of the tadpole takes 1 acid damage."
+    },
+    {
+      "name": "Amphibious",
+      "desc": "The tadpole can breathe air and water."
+    },
+    {
+      "name": "Minion",
+      "desc": "If the tadpole takes damage from an attack or as the result of a failed saving throw, their hit points are reduced to 0. If the tadpole takes damage from another effect, they die if the damage equals or exceeds their hit point maximum; otherwise they take no damage."
+    },
+    {
+      "name": "Noxious Skin",
+      "desc": "When a creature starts their turn within 5 feet of three or more tadpoles, that creature must succeed on a Constitution saving throw or be poisoned until the start of their next turn. The DC for this saving throw equals 10 plus the number of tadpoles within 5 feet of the creature."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite (Group Attack)",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 1 piercing damage."
+    }
+  ]
+}

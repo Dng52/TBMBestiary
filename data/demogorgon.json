@@ -1,0 +1,53 @@
+{
+  "name": "Demogorgon",
+  "tags": [
+    "huge",
+    "fiend",
+    "cr26",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Huge",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "26 (90,000 XP)",
+  "hp": "406  (28d12 +224)",
+  "ac": "22 (natural armor)",
+  "speed": "50 ft., swim 50 ft.",
+  "saves": "Dex +10, Con +16, Wis +11, Cha +15",
+  "skills": "Insight +11, Perception +19",
+  "immunities": "poison; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "resistance": "cold, fire, lightning",
+  "conimmunities": "charmed, exhaustion, frightened, poisoned",
+  "senses": "truesight 120 ft., passive Perception 29",
+  "languages": "all, telepathy 120 ft.",
+  "abilities": {
+    "str": 29,
+    "dex": 14,
+    "con": 26,
+    "int": 20,
+    "wis": 17,
+    "cha": 25
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "Demogorgon's spellcasting ability is Charisma (spell save DC 23). Demogorgon can innately cast the following spells, requiring no material components: * At will: <i>detect magic, major image</i> * 3/day each: <i>dispel magic, fear, telekinesis</i> * 1/day each: <i>feeblemind, project image</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "desc": "If Demogorgon fails a saving throw, he can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "Demogorgon has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "Demogorgon's weapon attacks are magical."
+    },
+    {
+      "name": "Two Heads",
+      "desc": "Demogorgon has advantage on saving throws against being blinded, deafened, stunned, or knocked unconscious."
+    }
+  ]
+}

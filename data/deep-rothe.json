@@ -1,0 +1,41 @@
+{
+  "name": "Deep Rothe",
+  "tags": [
+    "medium",
+    "beast",
+    "cr1/4",
+    "volos-guide"
+  ],
+  "size": "Medium",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/4 (50 XP)",
+  "hp": "13 (2d8+4)",
+  "ac": "10",
+  "speed": "30 ft.",
+  "senses": "darkvision 60 ft.",
+  "abilities": {
+    "str": 18,
+    "dex": 10,
+    "con": 14,
+    "int": 2,
+    "wis": 10,
+    "cha": 4
+  },
+  "traits": [
+    {
+      "name": "Charge",
+      "desc": "If the rothe moves at least 20 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 7 (2d6) piercing damage."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The deep rothe's spellcasting ability is Charisma. It can innately cast dancing lights at will, requiring no components."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Gore",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6+4) piercing damage."
+    }
+  ]
+}

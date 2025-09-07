@@ -1,0 +1,30 @@
+{
+  "name": "Camel",
+  "tags": [
+    "large",
+    "beast",
+    "cr1/8",
+    "monster-manual"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/8 (25 XP)",
+  "hp": "15 (2d10+4)",
+  "ac": "9",
+  "speed": "50 ft.",
+  "abilities": {
+    "str": 16,
+    "dex": 8,
+    "con": 14,
+    "int": 2,
+    "wis": 8,
+    "cha": 5
+  },
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 2 (1d4) bludgeoning damage."
+    }
+  ]
+}

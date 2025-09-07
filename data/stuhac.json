@@ -1,0 +1,63 @@
+{
+  "name": "Stuhac",
+  "tags": [
+    "medium",
+    "fiend",
+    "cr13",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "fiend",
+  "alignment": "neutral evil",
+  "cr": "13 (10000 XP)",
+  "hp": "190 (20d8 + 100)",
+  "ac": "18 (natural armor)",
+  "speed": "40 ft., climb 40 ft.",
+  "saves": "Str +11, Dex +9, Con +10, Cha +7",
+  "skills": "Deception +12",
+  "immunities": "cold, poison",
+  "resistance": "acid, fire; bludgeoning and piercing from nonmagical weapons",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "Common, Infernal; telepathy 100 ft.",
+  "abilities": {
+    "str": 22,
+    "dex": 18,
+    "con": 20,
+    "int": 12,
+    "wis": 16,
+    "cha": 15
+  },
+  "traits": [
+    {
+      "name": "Mountain Stride",
+      "desc": "Mountain slopes and stone outcroppings pose no obstacle to a stuhac's movement. In mountainous areas, it scrambles through difficult terrain without hindrance."
+    },
+    {
+      "name": "Powerful Leap",
+      "desc": "The stuhac can jump three times the normal distance: 66 feet horizontally or 27 feet vertically with a running start, or half those distances from a stationary start."
+    },
+    {
+      "name": "Shapechanger",
+      "desc": "The stuhac can use its action to polymorph into one of two forms: that of an elderly humanoid male, and its natural form. It cannot alter either form's appearance or capabilities using this ability, and damage sustained in one form transfers to the other form."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The stuhac makes two claw attacks and one bite attack, or two claw attacks and one hobble."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 20 (4d6 + 6) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 29 (5d8 + 6) slashing damage."
+    },
+    {
+      "name": "Hobble",
+      "desc": "A stuhac can cripple a creature by telekinetically tearing its tendons and ligaments. A stuhac can target one creature within 100 feet. The target must make a successful DC 16 Constitution saving throw or take 13 (3d8) force damage and its speed is reduced by 20 feet. Magical movement (flight, teleportation, etc.) is unaffected. This damage can only be cured through magical healing, not by spending hit dice or resting."
+    }
+  ]
+}

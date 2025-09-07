@@ -1,0 +1,48 @@
+{
+  "name": "Runebound Dire Wolf",
+  "tags": [
+    "large",
+    "beast",
+    "cr3",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "chaotic evil",
+  "cr": "3 (700 XP)",
+  "hp": "60 (8d10 + 16)",
+  "ac": "14 (natural armor)",
+  "speed": "50 ft.",
+  "skills": "Perception +5, Stealth +4",
+  "conimmunities": "charmed",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "--",
+  "abilities": {
+    "str": 20,
+    "dex": 15,
+    "con": 15,
+    "int": 6,
+    "wis": 12,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Keen Hearing and Smell",
+      "desc": "The wolf has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+    },
+    {
+      "name": "Pack Tactics",
+      "desc": "The wolf has advantage on an attack roll against a creature if at least one of the wolf\u2019s allies is within 5 feet of the creature and the ally isn\u2019t incapacitated."
+    },
+    {
+      "name": "Runebound",
+      "desc": "The wolf's body is coated in magical runes granted by a runespeaker that provide it with additional strength. The wolf gains one of the following runic bonuses: * Rune of Fortitude \u2013 The wolf's AC is increased to 16. In addition, as long as the wolf has at least 1 hit point, it regenerates 5 hit points at the start of its turn. * Rune of Strength \u2013 The wolf's bite attack deal an additional 3 piercing damage and it has advantage on strength checks. * Rune of Swiftness \u2013 The wolf has advantage on Dexterity saving throws and its speed is increased by 20 feet."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) piercing damage. If the target is a creature, it must succeed on a DC 15 Strength saving throw or be knocked prone."
+    }
+  ]
+}

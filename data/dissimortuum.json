@@ -1,0 +1,50 @@
+{
+  "name": "Dissimortuum",
+  "tags": [
+    "medium",
+    "undead",
+    "cr7",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "chaotic evil",
+  "cr": "7 (2900 XP)",
+  "hp": "112 (15d8 + 45)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft., climb 30 ft.",
+  "saves": "Con +6",
+  "immunities": "necrotic, poison",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "charmed, exhaustion, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Common",
+  "abilities": {
+    "str": 14,
+    "dex": 10,
+    "con": 16,
+    "int": 8,
+    "wis": 11,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Spider Climb",
+      "desc": "The dissimortuum can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The dissimortuum makes three claw attacks."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 15 (3d8 + 2) slashing damage."
+    },
+    {
+      "name": "Terrifying Mask",
+      "desc": "Each non-undead creature within 60 feet of the dissimortuum that can see it must make a successful DC 15 Wisdom saving throw or be frightened for 1d8 rounds. If a target's saving throw is successful or the effect ends for it, the target becomes immune to all dissimortuum's terrifying masks for the next 24 hours."
+    }
+  ]
+}

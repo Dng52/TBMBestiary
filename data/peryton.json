@@ -1,0 +1,55 @@
+{
+  "name": "Peryton",
+  "tags": [
+    "medium",
+    "monstrosity",
+    "cr2",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "monstrosity",
+  "alignment": "chaotic evil",
+  "cr": "2 (450 XP)",
+  "hp": "33 (6d8+6)",
+  "ac": "13 (natural armor)",
+  "speed": "20 ft., fly 60 ft.",
+  "skills": "Perception +5",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons",
+  "languages": "understands Common and Elvish but can't speak",
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 13,
+    "int": 9,
+    "wis": 12,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Dive Attack",
+      "desc": "If the peryton is flying and dives at least 30 ft. straight toward a target and then hits it with a melee weapon attack, the attack deals an extra 9 (2d8) damage to the target."
+    },
+    {
+      "name": "Flyby",
+      "desc": "The peryton doesn't provoke an opportunity attack when it flies out of an enemy's reach."
+    },
+    {
+      "name": "Keen Sight and Smell",
+      "desc": "The peryton has advantage on Wisdom (Perception) checks that rely on sight or smell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The peryton makes one gore attack and one talon attack."
+    },
+    {
+      "name": "Gore",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) piercing damage."
+    },
+    {
+      "name": "Talons",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) piercing damage."
+    }
+  ]
+}

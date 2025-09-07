@@ -1,0 +1,46 @@
+{
+  "name": "Giant Crayfish",
+  "tags": [
+    "large",
+    "beast",
+    "cr2",
+    "tales-from-the-yawning-portal"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "45 (7d10+7)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft., swim 30 ft.",
+  "skills": "Stealth +3",
+  "senses": "blindsight 30 ft.",
+  "abilities": {
+    "str": 15,
+    "dex": 13,
+    "con": 13,
+    "int": 1,
+    "wis": 9,
+    "cha": 3
+  },
+  "traits": [
+    {
+      "name": "Source",
+      "desc": "tales from the yawning portal,  page 235"
+    },
+    {
+      "name": "Amphibious",
+      "desc": "The giant crayfish can breathe air and water."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The giant crayfish makes two claw attacks."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) bludgeoning damage, and the target is grappled (escape DC 12). The crayfish has two claws, each of which can grapple only one target."
+    }
+  ]
+}

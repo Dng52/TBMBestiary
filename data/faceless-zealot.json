@@ -1,0 +1,40 @@
+{
+  "name": "Faceless Zealot",
+  "tags": [
+    "medium",
+    "aberration",
+    "cr1/2",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "aberration",
+  "alignment": "chaotic evil",
+  "cr": "1/2 (100 XP)",
+  "hp": "16 (3d8 + 3)",
+  "ac": "12",
+  "speed": "30 ft.",
+  "senses": "blindsight 30 ft., passive Perception 8",
+  "languages": "telepathy 120 ft.",
+  "abilities": {
+    "str": 12,
+    "dex": 14,
+    "con": 13,
+    "int": 16,
+    "wis": 6,
+    "cha": 7
+  },
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The zealot makes a dagger attack and then attempts to grapple a target."
+    },
+    {
+      "name": "Dagger",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Mental Assault (1/Day)",
+      "desc": "The zealot attempts to overwhelm the mind of a creature that it has grappled. That creature must succeed on a DC 13 Intelligence saving throw or take 5 (1d10) psychic damage and come under the effects of one of the following madness effects for one hour: * Blinding Agony \u2013 The creature closes their eyes and is convinced they have been sealed shut permanently. The creature is blind until the effect fades. * Silence Eternal \u2013 The creature closes their mouth and is convinced it has been sealed shut permanently. The creature cannot speak until the effect fades. * Maddening Gibberish - All words the creature hears become twisted and garbled, shifting pitches and order in unpredictable ways. The creature cannot hear the voices of others until the effect fades."
+    }
+  ]
+}

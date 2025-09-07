@@ -1,0 +1,43 @@
+{
+  "name": "Sparking Alchemist",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr2",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "2 (450 XP)",
+  "hp": "39 (6d8 + 12)",
+  "ac": "12",
+  "speed": "30 ft.",
+  "immunities": "lightning",
+  "senses": "passive Perception 11",
+  "languages": "--",
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 14,
+    "int": 16,
+    "wis": 12,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "desc": "The alchemist is a 3rd-level spellcaster. His spellcasting ability is Intelligence (spell save DC 13, +5 to hit with spell attacks). He has the following Wizard spells prepared: * Cantrips (at will): <i>mage hand, shocking grasp</i> * 1st level (4 slots): <i>chromatic orb, magic missile, witch bolt</i> * 2nd level (3 slots): <i>mirror image, shatter</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The alchemist makes two attacks with its sparking strike."
+    },
+    {
+      "name": "Sparking Strike",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5ft., one target. Hit: 2 (1d4) bludgeoning damage plus 3 (1d6) lightning damage."
+    }
+  ]
+}

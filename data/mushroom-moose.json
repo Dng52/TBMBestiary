@@ -1,0 +1,48 @@
+{
+  "name": "Mushroom Moose",
+  "tags": [
+    "large",
+    "beast",
+    "cr2",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "37 (5d10 + 10)",
+  "ac": "15 (natural armor)",
+  "speed": "40 ft.",
+  "resistance": "poison",
+  "conimmunities": "poisoned",
+  "senses": "passive Perception 12",
+  "languages": "--",
+  "abilities": {
+    "str": 18,
+    "dex": 12,
+    "con": 14,
+    "int": 7,
+    "wis": 15,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Floral Camouflage",
+      "desc": "While the moose remains motionless and is lying down, it is indistinguishable from a large log covered in mushrooms."
+    },
+    {
+      "name": "Poisonous Exterior",
+      "desc": "The mushrooms that coat the moose's body are poisonous and deadly to most other creatures. A creature that touches the moose or hits it with a melee attack while within 5 feet of it takes 5 (1d10) poison damage."
+    },
+    {
+      "name": "Rapid Regrowth",
+      "desc": "The mushroom moose has unnatural regenerative capabilities. At the beginning of each of the moose's turns, as long as it is in direct sunlight and it has at least 1 hit point, it regains 4 (1d8) hit points."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Ram",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage plus 7 (2d6) poison damage."
+    }
+  ]
+}

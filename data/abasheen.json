@@ -1,0 +1,61 @@
+{
+  "name": "Abasheen",
+  "tags": [
+    "large",
+    "elemental",
+    "cr6",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "elemental",
+  "alignment": "neutral",
+  "cr": "6 (2,300 XP)",
+  "hp": "102 (12d10 + 36)",
+  "ac": "16 (natural armor)",
+  "speed": "20 ft., fly 50 ft.",
+  "saves": "Dex +5, Wis +7, Cha +6",
+  "skills": "Perception +10",
+  "immunities": "lightning, thunder",
+  "senses": "darkvision 60 ft., passive Perception 20",
+  "languages": "Auran, Common, Infernal",
+  "abilities": {
+    "str": 16,
+    "dex": 14,
+    "con": 16,
+    "int": 20,
+    "wis": 18,
+    "cha": 17
+  },
+  "traits": [
+    {
+      "name": "Air Mastery",
+      "desc": "Airborne creatures attack at disadvantage against abasheen."
+    },
+    {
+      "name": "Elemental Demise",
+      "desc": "If the abasheen dies, its body disintegrates into a warm breeze, leaving behind only the equipment the abasheen was wearing or carrying."
+    },
+    {
+      "name": "Grant Wish",
+      "desc": "The genie can grant one creature\u2019s wish that is within 60 feet of it."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The abasheen\u2019s innate spellcasting ability is Intelligence (spell save DC 15, +7 to hit with spell attacks). It can innately cast the following spells, requiring no material components: * At will: <i>command, charm person, plane shift </i>(willing targets to elemental planes, Astral Plane, or Material Plane only) * 1/day: <i>geas</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The abasheen makes two attacks with its falchion."
+    },
+    {
+      "name": "Falchion",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 12 (2d8 + 3) slashing damage."
+    },
+    {
+      "name": "Thunderclap (Recharge 5\u20136)",
+      "desc": "The abasheen claps its hands together loudly, and a wave of thundering force emanates out from it in a 30-foot radius. Each creature in this area must make a DC 15 Constitution saving throw or be pushed back 10 feet and take 18 (4d8) thunder damage on a failed save, or half as much damage with no pushback on a successful one."
+    }
+  ]
+}

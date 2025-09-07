@@ -1,0 +1,43 @@
+{
+  "name": "Oculider",
+  "tags": [
+    "tiny",
+    "monstrosity",
+    "cr0",
+    "out-of-the-box-5e"
+  ],
+  "size": "Tiny",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "0 (10 XP)",
+  "hp": "3 (2d4 - 1)",
+  "ac": "13",
+  "speed": "20 ft., climb 10 ft.",
+  "skills": "Perception +3, Stealth +5",
+  "senses": "Passive Perception 13",
+  "languages": "--",
+  "abilities": {
+    "str": 3,
+    "dex": 16,
+    "con": 8,
+    "int": 2,
+    "wis": 12,
+    "cha": 3
+  },
+  "traits": [
+    {
+      "name": "Mimicry",
+      "desc": "The oculider can mimic any sounds it has heard, including voices. A creature that hears the sounds can tell they are imitations with a successful DC 11 Wisdom (Insight) check."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +0 to hit, reach 5 ft., one target. Hit: 1 piercing damage."
+    },
+    {
+      "name": "Eye Beam",
+      "desc": "Ranged Weapon Attack: +5 to hit, reach 30 ft., one target. Hit: 2 (1d4) damage. Roll 1d6 to determine damage type for each attack. * 1-2   Fire * 3-4   Lightning * 5-6   Acid"
+    }
+  ]
+}

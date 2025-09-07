@@ -1,0 +1,49 @@
+{
+  "name": "Ferrous Worm",
+  "tags": [
+    "medium",
+    "monstrosity",
+    "cr3",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "3 (700 XP)",
+  "hp": "27 (5d8 + 2)",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft., burrow 30 ft.",
+  "saves": "Con +3",
+  "skills": "Perception +3, Stealth +7",
+  "conimmunities": "prone",
+  "senses": "darkvision 60 ft., tremorsense 60 ft., passive Perception 14",
+  "languages": "--",
+  "abilities": {
+    "str": 13,
+    "dex": 17,
+    "con": 12,
+    "int": 12,
+    "wis": 13,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Earth Glide",
+      "desc": "The ferrous worm can burrow through nonmagical, unworked earth and stone. While doing so, the ferrous worm doesn\u2019t disturb the material it moves through."
+    },
+    {
+      "name": "Camouflage",
+      "desc": "The ferrous worm has advantage on Dexterity (Stealth) checks made to hide in rocky terrain and treasure piles."
+    },
+    {
+      "name": "Treasure Sense",
+      "desc": "The ferrous worm can pinpoint, by scent, the location of precious metals and stones, such as coins and gems, within 60 feet of it."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 10 (2d6 + 3) piercing damage, and the target must succeed on a DC 13 Constitution saving throw or be poisoned and take an additional 10 (3d6) poison damage each day until cured. The poison can only be cured by magical means such as <i>lesser restoration</i>."
+    }
+  ]
+}

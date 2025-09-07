@@ -1,0 +1,33 @@
+{
+  "name": "Star Spawn Grue",
+  "tags": [
+    "small",
+    "aberration",
+    "cr1/4",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Small",
+  "type": "aberration",
+  "alignment": "neutral evil",
+  "cr": "1/4 (50 XP)",
+  "hp": "17  (5d6)",
+  "ac": "11",
+  "speed": "30 ft.",
+  "immunities": "psychic",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Deep Speech",
+  "abilities": {
+    "str": 6,
+    "dex": 13,
+    "con": 10,
+    "int": 9,
+    "wis": 11,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Aura of Madness",
+      "desc": "Creatures within 20 feet of the grue that aren't aberrations have disadvantage on saving throws, as well as on attack rolls against creatures other than a star spawn grue."
+    }
+  ]
+}

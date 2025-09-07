@@ -1,0 +1,63 @@
+{
+  "name": "Arcanaloth",
+  "tags": [
+    "medium",
+    "fiend",
+    "cr12",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "fiend",
+  "alignment": "neutral evil",
+  "cr": "12 (8,400 XP)",
+  "hp": "104 (16d8+32)",
+  "ac": "17 (natural armor)",
+  "speed": "30 ft., fly 30 ft.",
+  "saves": "Dex +5, Int +9, Wis +7, Cha +7",
+  "skills": "Arcana +13, Deception +9, Insight +9, Perception +7",
+  "immunities": "acid, poison",
+  "resistance": "cold, fire, lightning, bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "charmed, poisoned",
+  "senses": "truesight 120 ft.",
+  "languages": "all, telepathy 120 ft.",
+  "abilities": {
+    "str": 17,
+    "dex": 12,
+    "con": 14,
+    "int": 20,
+    "wis": 16,
+    "cha": 17
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The arcanaloth's innate spellcasting ability is Charisma (spell save DC 15). The arcanaloth can innately cast the following spells, requiring no material components: * At will: <i>alter self, darkness, heat metal, invisibility </i>(self only)</i> <i>, magic missile</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The arcanaloth has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The arcanaloth's weapon attacks are magical."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The arcanaloth is a 16th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). The arcanaloth has the following wizard spells prepared: * Cantrips (at will): <i>fire bolt, mage hand, minor illusion, prestidigitation</i> * 1st level (4 slots): <i>detect magic, identify, shield, Tenser's floating disk</i> * 2nd level (3 slots): <i>detect thoughts, mirror image, phantasmal force, suggestion</i> * 3rd level (3 slots): <i>counterspell, fear, fireball</i> * 4th level (3 slots): <i>banishment, dimension door</i> * 5th level (2 slots): <i>contact other plane, hold monster</i> * 6th level (1 slot): <i>chain lightning</i> * 7th level (1 slot): <i>finger of death</i> * 8th level (1 slot): <i>mind blank</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage. The target must make a DC 14 Constitution saving throw, taking 10 (3d6) poison damage on a failed save, or half as much damage on a successful one."
+    },
+    {
+      "name": "Teleport",
+      "desc": "The arcanaloth magically teleports, along with any equipment it is wearing or carrying, up to 60 feet to an unoccupied space it can see."
+    },
+    {
+      "name": "Variant: Summon Yugoloth (1/Day)",
+      "desc": "The yugoloth attempts a magical summoning. An arcanaloth has a 40 percent chance of summoning one arcanaloth. A summoned yugoloth appears in an unoccupied space within 60 feet of its summoner, does as it pleases, and can't summon other yugoloths. The summoned yugoloth remains for 1 minute, until it or its summoner dies, or until its summoner takes a bonus action to dismiss it."
+    }
+  ]
+}

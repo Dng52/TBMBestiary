@@ -1,0 +1,53 @@
+{
+  "name": "Raggoth",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr8",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "neutral evil",
+  "cr": "8 (3,900 XP)",
+  "hp": "136 (13d10 + 65)",
+  "ac": "17 (natural armor)",
+  "speed": "40 ft.",
+  "saves": "Dex +6, Con +8",
+  "skills": "Perception +4, Stealth +6",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons",
+  "senses": "darkvision 60 ft., passive Perception 14",
+  "languages": "--",
+  "abilities": {
+    "str": 22,
+    "dex": 16,
+    "con": 20,
+    "int": 6,
+    "wis": 12,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "desc": "The raggoth has advantage on Wisdom (Perception) checks that rely on smell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The raggoth makes three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 20 (4d6 + 6) slashing damage, and the target is grappled (escape DC 17) and restrained."
+    },
+    {
+      "name": "Tormenting Howl (Recharge 5\u20136)",
+      "desc": "The raggoth unleashes a piercing howl. All creatures within 60 feet of the raggoth that can hear it must succeed on a DC 15 Wisdom saving throw or be frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature\u2019s saving throw is successful or the effect ends for it, the creature is immune to the raggoth\u2019s Tormenting Howl for 24 hours."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "name": "Reigon",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr3",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "chaotic evil",
+  "cr": "3 (700 XP)",
+  "hp": "59 (7d10 + 21)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft., climb 30 ft.",
+  "skills": "Perception +3, Stealth +4",
+  "senses": "darkvision 120 ft., passive Perception 13",
+  "languages": "Reigon",
+  "abilities": {
+    "str": 19,
+    "dex": 15,
+    "con": 16,
+    "int": 17,
+    "wis": 12,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Chameleon",
+      "desc": "Whenever the reigon takes the hide action, it has advantage on Dexterity (Stealth) checks as it uses psionic illusions to assist its attempt. Creatures with truesight automatically notice the reigon while it attempts to hide."
+    },
+    {
+      "name": "Keen Smell",
+      "desc": "The reigon has advantage on Wisdom (Perception) checks that rely on smell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The reigon makes one bite attack, and two greatclub attacks or two claw attacks."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
+    },
+    {
+      "name": "Greatclub",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Mindthrust (1/day)",
+      "desc": "One creature the reigon can see within 60 feet of it must make a DC 13 Intelligence saving throw. On a failed saving throw, the target takes 25 (4d10 + 3) psychic damage, or half as much damage on a successful saving throw."
+    },
+    {
+      "name": "Concussion Blast (1/day)",
+      "desc": "The reigon releases a blast of psionic force in a 15-foot cone. Creatures in the area must make a DC 13 Constitution saving throw. On a failed saving throw, the target takes 21 (4d8 + 3) force damage and is stunned until the end of their next turn. On a successful saving throw, the target takes half damage and is not stunned."
+    }
+  ]
+}

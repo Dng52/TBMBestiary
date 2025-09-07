@@ -1,0 +1,56 @@
+{
+  "name": "Cunning Acrobat",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "1 (200 XP)",
+  "hp": "22 (4d8 + 4)",
+  "ac": "15 (studded leather)",
+  "speed": "30 ft., climb 30 ft.",
+  "saves": "Dex +5, Int +4",
+  "skills": "Acrobatics +7, Deception +3, Perception +3, Sleight of Hand +7, Stealth +5",
+  "senses": "passive Perception 13",
+  "languages": "Any two languages and Thieves' Cant",
+  "abilities": {
+    "str": 10,
+    "dex": 16,
+    "con": 12,
+    "int": 15,
+    "wis": 12,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Cunning Action",
+      "desc": "As a bonus action, the acrobat can take the Dash, Disengage, or Hide action."
+    },
+    {
+      "name": "Naturally Acrobatic",
+      "desc": "The acrobat has a climb speed of 30 ft. In addition, whenever it makes a running jump, the distance it can jump is increased by 3 feet."
+    },
+    {
+      "name": "Sneak Attack (1/Turn)",
+      "desc": "The acrobat deals an extra 7 (2d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the acrobat that isn't incapacitated and the acrobat doesn't have disadvantage on the attack roll."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The acrobat makes two melee attacks: one with its shortsword and one with its dagger."
+    },
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+    },
+    {
+      "name": "Dagger",
+      "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 2 (1d4) piercing damage."
+    }
+  ]
+}

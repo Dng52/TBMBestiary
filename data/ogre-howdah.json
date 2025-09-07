@@ -1,0 +1,32 @@
+{
+  "name": "Ogre Howdah",
+  "tags": [
+    "large",
+    "giant",
+    "cr2",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Large",
+  "type": "giant",
+  "alignment": "chaotic evil",
+  "cr": "2 (450 XP)",
+  "hp": "59  (7d10 + 21)",
+  "ac": "13 (breastplate)",
+  "speed": "40 ft.",
+  "senses": "darkvision 60 ft., passive Perception 8",
+  "languages": "Common, Giant",
+  "abilities": {
+    "str": 19,
+    "dex": 8,
+    "con": 16,
+    "int": 5,
+    "wis": 7,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Howdah",
+      "desc": "The ogre carries a compact fort on its back. Up to four Small creatures can ride in the fort without squeezing. To make a melee attack against a target within 5 feet of the ogre, they must use spears or weapons with reach. Creatures in the fort have three-quarters cover against attacks and effects from outside it. If the ogre dies, creatures in the fort are placed in unoccupied spaces within 5 feet of the ogre."
+    }
+  ]
+}

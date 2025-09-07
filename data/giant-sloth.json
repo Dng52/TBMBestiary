@@ -1,0 +1,47 @@
+{
+  "name": "Giant Sloth",
+  "tags": [
+    "huge",
+    "beast",
+    "cr5",
+    "tome-of-horrors"
+  ],
+  "size": "Huge",
+  "type": "beast",
+  "alignment": "neutral",
+  "cr": "5 (1,800 XP)",
+  "hp": "76 (8d12 + 24)",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft., climb 30 ft., swim 30 ft.",
+  "skills": "Athletics +9",
+  "senses": "passive Perception 11",
+  "languages": "--",
+  "abilities": {
+    "str": 22,
+    "dex": 10,
+    "con": 17,
+    "int": 2,
+    "wis": 12,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Keen Scent",
+      "desc": "The giant sloth has advantage on Wisdom (Perception) checks based on scent."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The giant sloth makes one bite attack and two claw attacks."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 15 (2d8 + 6) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) slashing damage, and the target must make a DC 17 Strength saving throw or be knocked prone."
+    }
+  ]
+}

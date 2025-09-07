@@ -1,0 +1,37 @@
+{
+  "name": "Tortle Druid",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr2",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful neutral",
+  "cr": "2 (450 XP)",
+  "hp": "33  (6d8 + 6)",
+  "ac": "17 (natural)",
+  "speed": "30 ft.",
+  "skills": "Animal Handling +4, Nature +2, Survival +4",
+  "senses": "passive Perception 12",
+  "languages": "Aquan, Common",
+  "abilities": {
+    "str": 14,
+    "dex": 10,
+    "con": 12,
+    "int": 11,
+    "wis": 15,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Hold Breath",
+      "desc": "The tortle can hold its breath for 1 hour."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The tortle is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared: * Cantrips (at will): <i>druidcraft, guidance, produce flame</i> * 1st level (4 slots): <i>animal friendship, cure wounds, speak with animals, thunderwave</i> * 2nd level (3 slots): <i>darkvision, hold person</i>"
+    }
+  ]
+}

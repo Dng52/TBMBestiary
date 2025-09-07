@@ -1,0 +1,69 @@
+{
+  "name": "Amalgamation",
+  "tags": [
+    "gargantuan",
+    "construct",
+    "cr14",
+    "tome-of-horrors"
+  ],
+  "size": "Gargantuan",
+  "type": "construct",
+  "alignment": "neutral",
+  "cr": "14 (11,500 XP)",
+  "hp": "435 (30d20 + 120)",
+  "ac": "16",
+  "speed": "10 ft., fly 50 ft.",
+  "skills": "Perception +3, Stealth +3",
+  "immunities": "fire, poison, psychic; bludgeoning, piercing, and slashing from nonmagical weapons that aren\u2019t adamantine",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 12",
+  "languages": "understands the languages of its creator but can\u2019t speak",
+  "abilities": {
+    "str": 23,
+    "dex": 10,
+    "con": 18,
+    "int": 2,
+    "wis": 15,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Immutable Form",
+      "desc": "The amalgamation is immune to any spell or effect that would alter its form."
+    },
+    {
+      "name": "Item Use",
+      "desc": "The amalgamation can use any of the items contained within its bulk. Items with limited uses, such as potions, scrolls, or wands, are expended normally."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The amalgamation has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The amalgamation\u2019s weapon attacks are magical."
+    },
+    {
+      "name": "Swarm Attack",
+      "desc": "The amalgamation can occupy another creature\u2019s space and vice versa, damaging the creature with the flying weapons and objects composing its bulk. Any creature that starts their turn in the same space as the amalgamation must succeed on a DC 18 Dexterity saving throw or take 21 (6d6) slashing damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The amalgamation makes four melee attacks."
+    },
+    {
+      "name": "Sword",
+      "desc": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 17 (2d10 + 6) slashing damage."
+    },
+    {
+      "name": "Mace",
+      "desc": "Melee Weapon Attack: +11 to hit, reach 10 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage."
+    }
+  ]
+}

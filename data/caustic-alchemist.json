@@ -1,0 +1,47 @@
+{
+  "name": "Caustic Alchemist",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr2",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "2 (450 XP)",
+  "hp": "52 (8d8 + 16)",
+  "ac": "13",
+  "speed": "30 ft.",
+  "immunities": "acid",
+  "senses": "passive Perception 10",
+  "languages": "Common, any other language",
+  "abilities": {
+    "str": 11,
+    "dex": 16,
+    "con": 14,
+    "int": 14,
+    "wis": 10,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Acidic Flesh",
+      "desc": "Ranged projectiles that hit the alchemist are dissolved and cannot be recovered."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The alchemist makes two attacks with its claws or one with its caustic burst."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5ft., one target. Hit: 6 (1d6 + 3) slashing damage plus 3 (1d6) acid damage."
+    },
+    {
+      "name": "Caustic Bile",
+      "desc": "Ranged Weapon Attack: +5 to hit, range 15/30 ft., one target. Hit: The target must make a DC 13 Dexterity saving throw, taking 17 (5d6) acid damage on a failed save, or half as much damage on a successful one."
+    }
+  ]
+}

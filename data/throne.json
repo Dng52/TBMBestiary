@@ -1,0 +1,50 @@
+{
+  "name": "Throne",
+  "tags": [
+    "large",
+    "celestial",
+    "cr9",
+    "strongholds-and-followers"
+  ],
+  "size": "Large",
+  "type": "celestial",
+  "alignment": "any good alignment",
+  "cr": "9 (5,000 XP)",
+  "hp": "127 (15d10 + 45)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Str +7, Con +7",
+  "immunities": "necrotic, poison",
+  "resistance": "radiant; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": " charmed, exhaustion, frightened, poisoned",
+  "senses": "truesight 60 ft., passive Perception 22",
+  "languages": "all, telepathy 60 ft.",
+  "abilities": {
+    "str": 16,
+    "dex": 16,
+    "con": 16,
+    "int": 14,
+    "wis": 18,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "desc": "The Throne has advantage on saving throws against spells and other magical effects from evil characters and sources."
+    },
+    {
+      "name": "Aura of Protection Against Evil",
+      "desc": "Evil creatures have disadvantage on attack rolls against all allies within 5 feet of the Throne. Allies in this area can\u2019t be charmed, frightened, or possessed by evil creatures. If an ally is already charmed, frightened, or possessed by evil magic, the ally has advantage on any new saving throw against the relevant effect."
+    }
+  ],
+  "actions": [
+    {
+      "name": "The Burning Wheel",
+      "desc": "Ranged Spell Attack: +8 to hit, range 120 ft., one target. Hit: 10 (3d6) fire damage plus 9 (2d8) radiant damage. If the target is Medium or smaller, it must succeed on a DC 16 Dexterity saving throw or be teleported into the Throne\u2019s burning rings. The target is grappled (escape DC 17). Until the grapple ends, the target is restrained, and the Throne uses Radiant Burn as its first action on each of its subsequent turns. Only one creature can be imprisoned at a time."
+    },
+    {
+      "name": "Radiant Burn",
+      "desc": "The wheel spins around the creature grappled by it, dealing 13 (3d8) fire damage plus 9 (2d8) radiant damage."
+    }
+  ]
+}

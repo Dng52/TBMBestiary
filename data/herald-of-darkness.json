@@ -1,0 +1,63 @@
+{
+  "name": "Herald Of Darkness",
+  "tags": [
+    "large",
+    "fiend",
+    "cr7",
+    "tome-of-beasts"
+  ],
+  "size": "Large",
+  "type": "fiend",
+  "alignment": "neutral evil",
+  "cr": "7 (2900 XP)",
+  "hp": "105 (10d10 + 50)",
+  "ac": "15 (chain shirt)",
+  "speed": "30 ft., swim 30 ft, fly 50 ft.",
+  "saves": "Str +8, Con +8, Cha +8",
+  "skills": "Athletics +8, Deception +8, Perception +5",
+  "immunities": "cold, lightning, necrotic, poison",
+  "resistance": "bludgeoning, thunder",
+  "conimmunities": "exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 200 ft., passive Perception 15",
+  "languages": "Common, Elvish, Goblin, Infernal, Sylvan",
+  "abilities": {
+    "str": 20,
+    "dex": 14,
+    "con": 20,
+    "int": 12,
+    "wis": 15,
+    "cha": 20
+  },
+  "traits": [
+    {
+      "name": "Corrupting Touch",
+      "desc": "A herald of darkness can destroy any wooden, leather, copper, iron, or paper object by touching it as a bonus action. A mundane item is destroyed automatically; a magical item survives if its owner makes a successful DC 16 Dexterity saving throw."
+    },
+    {
+      "name": "Gift of Darkness",
+      "desc": "A herald of darkness can transform any fey, human, or goblin into one of the shadow fey, if the target willingly accepts this transformation."
+    },
+    {
+      "name": "Shadow Form",
+      "desc": "A herald of darkness can become incorporeal as a shadow as a bonus action. In this form, it has a fly speed of 10 feet; it can enter and occupy spaces occupied by other creatures; it gains resistance to all nonmagical damage; it has advantage on physical saving throws; it can pass through any gap or opening; it can't attack, interact with physical objects, or speak. It can return to its corporeal form also as a bonus action."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The herald of darkness uses Majesty of the Abyss, if it is available, and makes one melee attack."
+    },
+    {
+      "name": "Embrace Darkness",
+      "desc": "Melee Weapon Attack. +8 to hit, reach 5 ft., all creatures in reach. Hit: 6 (1d12) necrotic damage and targets are paralyzed until the start of the herald's next turn. Making a DC 17 Constitution saving throw negates the paralysis."
+    },
+    {
+      "name": "Majesty of the Abyss (Recharge 4-6)",
+      "desc": "The herald of darkness emits a sinister burst of infernal power. All creatures within 30 feet and in direct line of sight of the herald take 19 (3d12) necrotic damage and must make a DC 17 Constitution saving throw. Those who fail the saving throw are blinded for 2 rounds; those who succeed are frightened for 2 rounds."
+    },
+    {
+      "name": "Shadow Sword",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 18 (2d12 + 5) slashing damage."
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Ogre",
+  "tags": [
+    "large",
+    "giant",
+    "cr2",
+    "monster-manual"
+  ],
+  "size": "Large",
+  "type": "giant",
+  "alignment": "chaotic evil",
+  "cr": "2 (450 XP)",
+  "hp": "59 (7d10+21)",
+  "ac": "11 (hide armor)",
+  "speed": "40 ft.",
+  "senses": "darkvision 60 ft.",
+  "languages": "Common, Giant",
+  "abilities": {
+    "str": 19,
+    "dex": 8,
+    "con": 16,
+    "int": 5,
+    "wis": 7,
+    "cha": 7
+  },
+  "actions": [
+    {
+      "name": "Greatclub",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage."
+    },
+    {
+      "name": "Javelin",
+      "desc": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 11 (2d6 + 4) piercing damage."
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "Purple Moss",
+  "tags": [
+    "medium",
+    "plant",
+    "cr2",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "plant",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "5 (1d6 + 2)",
+  "ac": "5",
+  "speed": "0 ft.",
+  "vulnerability": "fire",
+  "conimmunities": "charmed, frightened, poisoned, prone, stunned",
+  "senses": "passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 1,
+    "dex": 1,
+    "con": 15,
+    "int": 1,
+    "wis": 10,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Fire Vulnerability",
+      "desc": "Any amount of fire damage instantly destroys a patch of purple moss."
+    },
+    {
+      "name": "Sweet Smell",
+      "desc": "Purple moss emits a sweet smell detectable to a range of 10 feet."
+    },
+    {
+      "name": "Sleep Spores",
+      "desc": "Creatures with fewer than 22 hit points coming within 10 feet of the purple moss for the first time, or starting their turn there must succeed on a DC 13 Constitution saving throw or fall asleep like that caused by the <i>sleep</i> spell. Victims that fall asleep are quickly covered by the moss. It takes 1 full round to cover a creature of Tiny size and one additional round for each size larger than Tiny. A creature covered by purple moss begins to suffocate and this does not cause them to wake up from the sleep effect. Slain victims are digested in 1d2 hours by acidic secretions from the moss. Purple moss can be destroyed by fire."
+    }
+  ]
+}

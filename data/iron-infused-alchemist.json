@@ -1,0 +1,37 @@
+{
+  "name": "Iron-Infused Alchemist",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "1 (200 XP)",
+  "hp": "27 (5d6 + 10)",
+  "ac": "15 (natural armor)",
+  "speed": "25 ft.",
+  "resistance": "piercing, bludgeoning, and slashing damage from nonmagical weapons",
+  "senses": "passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 14,
+    "dex": 10,
+    "con": 14,
+    "int": 12,
+    "wis": 10,
+    "cha": 8
+  },
+  "actions": [
+    {
+      "name": "Pummeling Strike",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5ft., one target. Hit: 6 (1d8 + 2) bludgeoning damage and the target must succeed on a DC 11 Strength saving throw or be knocked prone."
+    },
+    {
+      "name": "Iron Shard",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 20/60 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+    }
+  ]
+}

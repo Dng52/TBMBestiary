@@ -1,0 +1,58 @@
+{
+  "name": "Fungus Gargoyle",
+  "tags": [
+    "medium",
+    "plant",
+    "cr5",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "plant",
+  "alignment": "neutral evil",
+  "cr": "5 (1,800 XP)",
+  "hp": "67 (9d8 + 27)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft., fly 60 ft.",
+  "skills": "Perception +6, Stealth +5",
+  "immunities": "poison",
+  "resistance": "fire; bludgeoning, piercing, and slashing from nonmagical weapons not made of adamantine",
+  "conimmunities": "exhaustion, petrified, poisoned",
+  "senses": "passive Perception 16",
+  "languages": "--",
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 17,
+    "int": 6,
+    "wis": 11,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "False Appearance",
+      "desc": "While the gargoyle remains motionless, it is indistinguishable from a weathered, inanimate statue that is covered in fungus, lichen, and moss."
+    },
+    {
+      "name": "Stench",
+      "desc": "Any creature that starts its turn within 10 feet of the gargoyle must succeed on a DC 13 Constitution saving throw or be poisoned until the start of its next turn. On a successful saving throw, the creature is immune to the gargoyle\u2019s stench for 24 hours."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The gargoyle makes three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
+    },
+    {
+      "name": "Deadly Spores (Recharge 5\u20136)",
+      "desc": "The fungus gargoyle exhales deadly spores in a 15-foot cone. Each creature in the area must make a DC 15 Constitution saving throw, taking 18 (4d8) poison damage on a failed save, or half as much damage on a successful one."
+    }
+  ]
+}

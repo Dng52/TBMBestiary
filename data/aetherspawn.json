@@ -1,0 +1,44 @@
+{
+  "name": "Aetherspawn",
+  "tags": [
+    "medium",
+    "elemental",
+    "cr1",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "unaligned",
+  "cr": "1 (200 XP)",
+  "hp": "26 (4d8 + 8)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft., fly 30 ft. (hover)",
+  "resistance": "bludgeoning, piercing, slashing damage from nonmagical weapons; see Elemental Attunement",
+  "conimmunities": "exhaustion, paralyzed, petrified, poisoned, unconscious",
+  "senses": "passive Perception 12",
+  "languages": "Primordial",
+  "abilities": {
+    "str": 10,
+    "dex": 15,
+    "con": 15,
+    "int": 14,
+    "wis": 15,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Elemental Attunement",
+      "desc": "The guardian is infused with either arcane, ice, fire, or lightning energy. The guardian's attacks deal extra damage based upon this element (included in the attack), it has resistances to the corresponding element, and can cast a corresponding elemental spell once per day requiring no material components. The guardian's spellcasting ability is Intelligence (spell save DC 12, +4 bonus to hit). * Arcane \u2013 bonus force damage and resistance to force damage; can cast <i>magic missile</i> * Ice - bonus cold damage and resistance to cold damage; can cast <i>ice knife</i> * Fire \u2013 bonus fire damage and resistance to fire damage; can cast <i>burning hands</i> * Lightning \u2013 bonus lightning damage and resistance to lightning damage; can cast <i>witch bolt</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Aether Blades",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage plus 3 (1d6) damage of the type corresponding to the guardian's Elemental Attunement."
+    },
+    {
+      "name": "Elemental Shards",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 30/90 ft., one target. Hit: 4 (1d4 + 2) piercing damage plus 3 (1d6) damage of the type corresponding to the guardian's Elemental Attunement."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Sacred Stone Monk",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/2",
+    "elemental-evil"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful evil",
+  "cr": "1/2 (100 XP)",
+  "hp": "22 (4d8+4)",
+  "ac": "14",
+  "speed": "40 ft.",
+  "skills": "Acrobatics +4, Athletics +3, Perception +4",
+  "senses": "tremorsense 10 ft.",
+  "languages": "Common",
+  "abilities": {
+    "str": 13,
+    "dex": 15,
+    "con": 12,
+    "int": 10,
+    "wis": 14,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Unarmored Defense",
+      "desc": "While the monk is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+    },
+    {
+      "name": "Unarmored Movement",
+      "desc": "While the monk is wearing no armor and wielding no shield, its walking speed increases by 10 feet (included in its speed)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The monk makes two melee attacks."
+    },
+    {
+      "name": "Unarmed Strike",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage."
+    },
+    {
+      "name": "Parry",
+      "desc": "The monk adds 2 to its AC against one melee or ranged weapon attack that would hit it. To do so, the monk must see the attacker."
+    }
+  ]
+}

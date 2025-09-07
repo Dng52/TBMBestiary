@@ -1,0 +1,58 @@
+{
+  "name": "Guardian Demon",
+  "tags": [
+    "large",
+    "fiend",
+    "cr7",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "7 (2,900 XP)",
+  "hp": "85 (10d10 + 30)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Perception +5",
+  "immunities": "poison",
+  "resistance": "cold, fire, lightning",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 120 ft., passive Perception 15",
+  "languages": "Abyssal, telepathy 120 ft.",
+  "abilities": {
+    "str": 18,
+    "dex": 12,
+    "con": 26,
+    "int": 12,
+    "wis": 14,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "desc": "The demon has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The demon\u2019s weapon attacks are magical."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The demon makes three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 14 (3d6 + 4) slashing damage."
+    },
+    {
+      "name": "Flame Breath (Recharge 5\u20136)",
+      "desc": "The demon exhales fire in a 30-foot cone. Each creature in that area must make a DC 15 Dexterity saving throw, taking 28 (8d6) fire damage on a failed save, or half as much damage on a successful one."
+    }
+  ]
+}

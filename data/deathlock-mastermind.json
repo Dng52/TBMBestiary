@@ -1,0 +1,45 @@
+{
+  "name": "Deathlock Mastermind",
+  "tags": [
+    "medium",
+    "undead",
+    "cr8",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "8 (3900 XP)",
+  "hp": "110  (20d8 + 20)",
+  "ac": "13 (16 with mage armor)",
+  "speed": "30 ft.",
+  "saves": "Int +5, Cha +6",
+  "skills": "Arcana +5, History +5, Perception +4",
+  "immunities": "poison",
+  "resistance": "necrotic; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered",
+  "conimmunities": "exhaustion, poisoned",
+  "senses": "darkvision 120 ft. (including magical darkness), passive Perception 14",
+  "languages": "the languages it knew in life",
+  "abilities": {
+    "str": 11,
+    "dex": 16,
+    "con": 12,
+    "int": 15,
+    "wis": 12,
+    "cha": 17
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The deathlock's innate spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells, requiring no material components: * At will: <i>detect magic, disguise self, mage armor</i>"
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The deathlock is a 10th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells: * Cantrips (at will): <i>chill touch, mage hand, minor illusion, poison spray</i> * 5th level (2 slots): <i>arms of Hadar, blight, counterspell, crown of madness, darkness, dimension door, dispel magic, fly, hold monster, invisibility</i>"
+    },
+    {
+      "name": "Turn Resistance",
+      "desc": "The deathlock has advantage on saving throws against any effect that turns undead."
+    }
+  ]
+}

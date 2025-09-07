@@ -1,0 +1,46 @@
+{
+  "name": "Eala",
+  "tags": [
+    "small",
+    "monstrosity",
+    "cr2",
+    "tome-of-beasts"
+  ],
+  "size": "Small",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "40 (9d6 + 9)",
+  "ac": "15 (natural)",
+  "speed": "10 ft., fly, 60 ft.",
+  "saves": "Dex +5",
+  "immunities": "fire",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "--",
+  "abilities": {
+    "str": 10,
+    "dex": 16,
+    "con": 12,
+    "int": 2,
+    "wis": 12,
+    "cha": 16
+  },
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The eala makes two attacks with its wing blades."
+    },
+    {
+      "name": "Wing Blades",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage."
+    },
+    {
+      "name": "Fire Breath (recharge 5-6)",
+      "desc": "The eala breathes fire in a 20-foot cone. Every creature in the area must make a DC 11 Dexterity saving throw, taking 10 (3d6) fire damage on a failed save or half as much on a successful one. The eala's fire breath ignites flammable objects and melts soft metals in the area that aren't being worn or carried."
+    },
+    {
+      "name": "Swan Song",
+      "desc": "When the eala is reduced to 0 hit points, it can use its last breath sing a plaintive and beautiful melody. Creatures within 20 feet that can hear the eala must succeed on a DC 13 Charisma saving throw or be incapacitated for 1 round. A creature incapacitated in this way has its speed reduced to 0."
+    }
+  ]
+}

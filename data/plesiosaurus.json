@@ -1,0 +1,37 @@
+{
+  "name": "Plesiosaurus",
+  "tags": [
+    "large",
+    "beast",
+    "cr2",
+    "monster-manual"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "68 (8d10+24)",
+  "ac": "13 (natural armor)",
+  "speed": "20 ft., swim 40 ft.",
+  "skills": "Perception +3, Stealth +4",
+  "abilities": {
+    "str": 18,
+    "dex": 15,
+    "con": 16,
+    "int": 2,
+    "wis": 12,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Hold Breath",
+      "desc": "The plesiosaurus can hold its breath for 1 hour."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) piercing damage."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "name": "Quackthulhu",
+  "tags": [
+    "gargantuan",
+    "aberration",
+    "cr21",
+    "homebrew"
+  ],
+  "size": "Gargantuan",
+  "type": "aberration",
+  "alignment": "chaotic evil",
+  "cr": "21 (33,000 XP)",
+  "hp": "429 (26d20 + 156)",
+  "ac": "18 (natural armor)",
+  "speed": "50 ft., swim 100 ft.",
+  "saves": "Str +12, Con +11, Wis +7",
+  "skills": "Intimidation +9, Perception +5",
+  "immunities": "necrotic, poison",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical attacks",
+  "senses": "blindsight 120 ft., darkvision 120 ft., passive Perception 15",
+  "languages": "--",
+  "abilities": {
+    "str": 24,
+    "dex": 14,
+    "con": 22,
+    "int": 5,
+    "wis": 15,
+    "cha": 20
+  },
+  "traits": [
+    {
+      "name": "Legendary Resistance (3/day)",
+      "desc": "If Quackthulhu fails a saving throw, it can choose to succeed instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Quackthulhu makes 4 attacks, one of which can be an Infect attack."
+    },
+    {
+      "name": "Tentacle",
+      "desc": "Melee Weapon Attack, +11 to hit, reach 15 ft., one target. Hit: 20 (3d8 + 7) bludgeoning damage, and the target must succeed on a DC 15 Strength saving throw or become grappled.  Quackthulhu has four tentacles."
+    },
+    {
+      "name": "Infect",
+      "desc": "Melee Weapon Attack, +11 to hit, reach 5 ft., one target who is grappled.  Hit: 17 (3d6 + 7) piercing damage, and the target must succeed on a DC 15 Constitution saving throw or become poisoned for one hour.  While poisoned in this way, the target is considered infected."
+    },
+    {
+      "name": "Soul-wrenching Quack (Recharge 6)",
+      "desc": "All creatures within 60 ft. of Quackthulhu must succeed on a DC 16 Wisdom saving throw or become paralyzed until the end of Quackthulhu's next turn."
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Tentacle",
+      "desc": "Quackthulhu makes a tentacle attack."
+    },
+    {
+      "name": "Ground Slam",
+      "desc": "All creatures within 5 ft. of Quackthulhu must succeed on a DC 14 Strength saving throw or be pushed 10 ft. away."
+    },
+    {
+      "name": "Command Infected",
+      "desc": "A creature within 60 ft. of Quackthulhu who is currently infected moves up to half its speed and makes a single weapon attack against a creature of Quackthulhu's choice."
+    }
+  ]
+}

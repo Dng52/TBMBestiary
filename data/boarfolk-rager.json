@@ -1,0 +1,61 @@
+{
+  "name": "Boarfolk Rager",
+  "tags": [
+    "large",
+    "humanoid",
+    "cr9",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "humanoid",
+  "alignment": "lawful neutral",
+  "cr": "9 (5,000 XP)",
+  "hp": "123 (13d10 + 52)",
+  "ac": "16",
+  "speed": "40 ft.",
+  "saves": "Str +9, Dex +6, Con +8",
+  "skills": "Athletics +9, Intimidation +3",
+  "resistance": "bludgeoning, piercing, and slashing damage",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Boarfolk, Common",
+  "abilities": {
+    "str": 20,
+    "dex": 15,
+    "con": 18,
+    "int": 9,
+    "wis": 11,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Brute",
+      "desc": "A melee weapon deals one extra die of its damage when the rager hits with it (included in the attack)."
+    },
+    {
+      "name": "Created Race",
+      "desc": "The boarfolk rager has advantage on saving throws against spells and effects that would alter its form."
+    },
+    {
+      "name": "Keen Scent",
+      "desc": "A boarfolk rager has advantage on Wisdom (Perception) checks based on scent."
+    },
+    {
+      "name": "Reckless",
+      "desc": "At the start of its turn, the rager can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The boarfolk rager makes three melee attacks."
+    },
+    {
+      "name": "Tusks",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) piercing damage."
+    },
+    {
+      "name": "Greatclub",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage."
+    }
+  ]
+}

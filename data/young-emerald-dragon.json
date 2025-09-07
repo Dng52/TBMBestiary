@@ -1,0 +1,49 @@
+{
+  "name": "Young Emerald Dragon",
+  "tags": [
+    "large",
+    "dragon",
+    "cr8",
+    "strongholds-and-followers"
+  ],
+  "size": "Large",
+  "type": "dragon",
+  "alignment": "chaotic neutral",
+  "cr": "8 (3,900 XP)",
+  "hp": "91 (14d10 + 14)",
+  "ac": "17 (natural armor)",
+  "speed": "40 ft., fly 80 ft. (hover), swim 40 ft.",
+  "saves": "Dex +6, Int +6, Wis +5, Cha +6",
+  "skills": "Insight +5, Perception +5",
+  "vulnerability": "psychic",
+  "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 18",
+  "languages": "Common, Draconic, telepathy 120 ft.",
+  "abilities": {
+    "str": 16,
+    "dex": 16,
+    "con": 12,
+    "int": 16,
+    "wis": 14,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Interference Aura",
+      "desc": "Enemies within 30 feet must make a DC 14 Intelligence saving throw every round to maintain spells that require concentration."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The dragon makes three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (2d10 + 3) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage."
+    }
+  ]
+}

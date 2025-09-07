@@ -1,0 +1,67 @@
+{
+  "name": "Goristro",
+  "tags": [
+    "huge",
+    "fiend",
+    "cr17",
+    "monster-manual"
+  ],
+  "size": "Huge",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "17 (18,000 XP)",
+  "hp": "310 (23d12+161)",
+  "ac": "19 (natural armor)",
+  "speed": "40 ft.",
+  "saves": "Str +13, Dex +6, Con +13, Wis +7",
+  "skills": "Perception +7",
+  "immunities": "poison",
+  "resistance": "cold, fire, lightning, bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 120 ft.",
+  "languages": "Abyssal",
+  "abilities": {
+    "str": 25,
+    "dex": 11,
+    "con": 25,
+    "int": 6,
+    "wis": 13,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Charge",
+      "desc": "If the goristro moves at least 15 feet straight toward a target and then hits it with a gore attack on the same turn, the target takes an extra 38 (7d10) piercing damage. If the target is a creature, it must succeed on a DC 21 Strength saving throw or be pushed up to 20 feet away and knocked prone."
+    },
+    {
+      "name": "Labyrinthine Recall",
+      "desc": "The goristro can perfectly recall any path it has traveled."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The goristro has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Siege Monster",
+      "desc": "The goristro deals double damage to objects and structures."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The goristro makes three attacks: two with its fists and one with its hoof."
+    },
+    {
+      "name": "Fist",
+      "desc": "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 20 (3d8 + 7) bludgeoning damage."
+    },
+    {
+      "name": "Hoof",
+      "desc": "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 23 (3d10 + 7) bludgeoning damage. If the target is a creature, it must succeed on a DC 21 Strength saving throw or be knocked prone."
+    },
+    {
+      "name": "Gore",
+      "desc": "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 45 (7d10 + 7) piercing damage."
+    }
+  ]
+}

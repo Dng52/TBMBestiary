@@ -1,0 +1,43 @@
+{
+  "name": "Ramag",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/4",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral",
+  "cr": "1/4 (50 XP)",
+  "hp": "27 (6d8)",
+  "ac": "13 (leather armor)",
+  "speed": "30 ft.",
+  "skills": "Arcana +5, Investigation +5",
+  "senses": ", passive Perception 11",
+  "languages": "Common",
+  "abilities": {
+    "str": 9,
+    "dex": 14,
+    "con": 10,
+    "int": 16,
+    "wis": 12,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "desc": "The ramag has advantage on saving throws against spells or other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Scimitar",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage."
+    },
+    {
+      "name": "Shortbow",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    }
+  ]
+}

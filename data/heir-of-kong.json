@@ -1,0 +1,51 @@
+{
+  "name": "Heir of Kong",
+  "tags": [
+    "large",
+    "beast",
+    "cr3",
+    "homebrew"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "neutral",
+  "cr": "3 (700 XP)",
+  "hp": "47 (5d10 + 20)",
+  "ac": "12",
+  "speed": "40 ft., climb 40 ft.",
+  "skills": "Athletics +7, Perception +4",
+  "senses": "passive Perception 14",
+  "languages": "understands Draconic but can't speak",
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 18,
+    "int": 9,
+    "wis": 14,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Cunning of Kong",
+      "desc": "The heir has advantage on saving throws against illusions and enchantments."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The heir makes two fist attacks."
+    },
+    {
+      "name": "Fist",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage."
+    },
+    {
+      "name": "Rock",
+      "desc": "Ranged Weapon Attack: +7 to hit, range 30/60 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage."
+    },
+    {
+      "name": "Psychic Blast (Recharge 6)",
+      "desc": "The heir emits a violent wave of psychic energy in a 30-foot cone. Each creature in the area must succeed on a DC 12 Intelligence saving throw or take 7 (2d6) psychic damage and become stunned until the end of the heir's next turn."
+    }
+  ]
+}

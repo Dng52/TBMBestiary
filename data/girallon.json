@@ -1,0 +1,50 @@
+{
+  "name": "Girallon",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr4",
+    "volos-guide"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "4 (1,100 XP)",
+  "hp": "59 (7d10+21)",
+  "ac": "13",
+  "speed": "40 ft., climb 40 ft.",
+  "skills": "Perception +3, Stealth +5",
+  "senses": "darkvision 60 ft.",
+  "abilities": {
+    "str": 18,
+    "dex": 16,
+    "con": 16,
+    "int": 5,
+    "wis": 12,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Source",
+      "desc": "Volo's Guide to Monsters, p. 152"
+    },
+    {
+      "name": "Aggressive",
+      "desc": "As a bonus action, the girallon can move up to its speed toward a hostile creature that it can see."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The girallon makes five attacks: one with its bite and four with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft, one creature. Hit: 7 (1d6+4) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +6 to hit. reach 10 ft., one target. Hit: 7 (1d6+4) slashing damage."
+    }
+  ]
+}

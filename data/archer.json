@@ -1,0 +1,46 @@
+{
+  "name": "Archer",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr3",
+    "volos-guide"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "3 (700 XP)",
+  "hp": "75 (10d8+30)",
+  "ac": "16 (studded leather armor)",
+  "speed": "30 ft.",
+  "skills": "Acrobatics +6, Perception +5",
+  "languages": "any one language (usually Common)",
+  "abilities": {
+    "str": 11,
+    "dex": 18,
+    "con": 16,
+    "int": 11,
+    "wis": 13,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Archer's Eye",
+      "desc": "As a bonus action, the archer can add 1d10 to its next attack or damage roll with a longbow or shortbow."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The archer makes two attacks with its longbow."
+    },
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft. one target. Hit: 7 (1d6+4) piercing damage."
+    },
+    {
+      "name": "Longbow",
+      "desc": "Ranged Weapon Attack: +6 to hit, range 150/600 ft, one target. Hit: 8 (1d8+4) piercing damage."
+    }
+  ]
+}

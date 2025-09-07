@@ -1,0 +1,37 @@
+{
+  "name": "Derro",
+  "tags": [
+    "small",
+    "humanoid",
+    "cr1/4",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Small",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "1/4 (50 XP)",
+  "hp": "13  (3d6 + 3)",
+  "ac": "13 (leather armor)",
+  "speed": "30 ft.",
+  "skills": "Stealth +4",
+  "senses": "darkvision 120 ft., passive Perception 7",
+  "languages": "Dwarvish, Undercommon",
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 12,
+    "int": 11,
+    "wis": 5,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "desc": "The derro has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the derro has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ]
+}

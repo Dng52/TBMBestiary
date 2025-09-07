@@ -1,0 +1,39 @@
+{
+  "name": "Elder Spell Parrot",
+  "tags": [
+    "tiny",
+    "monstrosity",
+    "cr6",
+    "tome-of-horrors"
+  ],
+  "size": "Tiny",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "6 (2,300 XP)",
+  "hp": "7 (5d4 - 5)",
+  "ac": "12",
+  "speed": "10 ft., fly 50 ft.",
+  "skills": "Perception +3",
+  "senses": "passive Perception 13",
+  "languages": "--",
+  "abilities": {
+    "str": 2,
+    "dex": 14,
+    "con": 8,
+    "int": 2,
+    "wis": 12,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Spell Mimicry",
+      "desc": "Whenever the spell parrot hears a cantrip or a 1st through 8th level spell that has a verbal component being cast, it can attempt to mimic the casting of that spell on its next turn. The spell parrot ignores any somatic or material component that the spell requires. When the spell parrot attempts to mimic the spell, roll a d6. If the spell is a cantrip or a 1st through 3rd level spell, the casting succeeds if the result is a 3\u20136. If the spell is 4th through 6th level, the casting succeeds on the result of a 5 or 6. If the spell is 7th or 8th level, the casting succeeds only on a 6. Once the spell parrot mimics a spell, it forgets it. The spell parrot uses the original caster\u2019s spell save DC and spell attack bonus, and the spell must have a valid target for the spell parrot to use as the target of the mimicked spell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 1 piercing damage."
+    }
+  ]
+}

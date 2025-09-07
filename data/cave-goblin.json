@@ -1,0 +1,51 @@
+{
+  "name": "Cave Goblin",
+  "tags": [
+    "small",
+    "humanoid",
+    "cr1/2",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "1/2 (100 XP)",
+  "hp": "14 (4d6)",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Perception +2",
+  "senses": "darkvision 120 ft., passive Perception 12",
+  "languages": "Common, Goblin",
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 11,
+    "int": 10,
+    "wis": 11,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Moss Covered",
+      "desc": "The goblin has advantage when on Dexterity (Stealth) checks made to hide in rocky or cavernous terrain."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the goblin has disadvantage on attack rolls as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Sharpened Stalagmite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+    },
+    {
+      "name": "Javelin",
+      "desc": "Melee Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    },
+    {
+      "name": "Nimble Escape",
+      "desc": "The goblin can take the Disengage or Hide action as a bonus action on each of its turns."
+    }
+  ]
+}

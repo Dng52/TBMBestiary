@@ -1,0 +1,56 @@
+{
+  "name": "Aridni",
+  "tags": [
+    "small",
+    "fey",
+    "cr5",
+    "tome-of-beasts"
+  ],
+  "size": "Small",
+  "type": "fey",
+  "alignment": "neutral evil",
+  "cr": "5 (1800 XP)",
+  "hp": "82 (15d6 + 30)",
+  "ac": "15",
+  "speed": "20 ft., fly 60 ft.",
+  "saves": "Dex +8",
+  "skills": "Acrobatics +11, Perception +3, Stealth +11",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "Common, Gnoll, Sylvan, Void Speech",
+  "abilities": {
+    "str": 9,
+    "dex": 21,
+    "con": 14,
+    "int": 12,
+    "wis": 11,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Flyby",
+      "desc": "The aridni doesn't provoke an opportunity attack when it flies out of an enemy's reach."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The aridni has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The aridni's innate spellcasting ability is Charisma (spell save DC 14). It can innately cast the following spells: * At will: <i>dancing lights, detect magic, invisibility</i> * 3/day: <i>charm person, faerie fire, mage armor</i> * 1/day: <i>spike growth</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Short Sword",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 8 (1d6 + 5) piercing damage."
+    },
+    {
+      "name": "Pixie Bow",
+      "desc": "Ranged Weapon Attack: +8 to hit, range 40/160 ft., one target. Hit: 7 (1d4 + 5) piercing damage."
+    },
+    {
+      "name": "Slaver Arrows",
+      "desc": "An aridni can add a magical effect in addition to the normal damage done by its arrows. If so, the aridni chooses from the following effects: * **Confusion.** The target must succeed on a DC 14 Wisdom saving throw or become confused (as the spell) for 2d4-1 rounds. * **Fear.** The target must succeed on a DC 14 Wisdom saving throw or become frightened for 2d4 rounds. * **Hideous Laughter.** The target must succeed on a DC 14 Wisdom saving throw or become incapacitated for 2d4 rounds. While incapacitated, the target is prone and laughing uncontrollably. * **Sleep.** The target must succeed on a DC 14 Wisdom saving throw or fall asleep for 2d4 minutes. The creature wakes up if it takes damage or if another creature takes an action to shake it awake."
+    }
+  ]
+}

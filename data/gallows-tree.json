@@ -1,0 +1,50 @@
+{
+  "name": "Gallows Tree",
+  "tags": [
+    "huge",
+    "plant",
+    "cr14",
+    "tome-of-horrors"
+  ],
+  "size": "Huge",
+  "type": "plant",
+  "alignment": "unaligned",
+  "cr": "14 (11,500 XP)",
+  "hp": "287 (23d12 + 138)",
+  "ac": "16 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Con +11",
+  "skills": "Perception +7, Stealth +5",
+  "resistance": "fire",
+  "conimmunities": "frightened, prone, stunned, unconscious",
+  "senses": "tremorsense 60 ft., passive Perception 17",
+  "languages": "Common, but cannot speak, telepathy 100 ft. with gallows tree zombies",
+  "abilities": {
+    "str": 25,
+    "dex": 10,
+    "con": 22,
+    "int": 10,
+    "wis": 14,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Create Gallows Tree Zombie",
+      "desc": "When a creature dies within 15 feet of a gallows tree, The Gallow\u2019s Tree uses a sharpened tendril to slice open the creature\u2019s abdomen, thereby spilling the corpse\u2019s innards on the ground. The organs and fluids are then absorbed by the tree\u2019s roots. Corpses of a size other than Medium or Large are simply left to rot. Medium or Large corpses are filled with a greenish pollen fired from one of the tree\u2019s branches. The abdominal wound heals over the next 1d4 days, at which time the slain creature rises as a gallows tree zombie connected by a tether-vine to the gallows tree that created it. Gallows tree zombies possess none of their former abilities."
+    },
+    {
+      "name": "Gallows Tree Zombies",
+      "desc": "Each gallows tree has several gallows tree zombies connected to it. A Huge gallows tree may have no more than seven gallows tree zombies connected to it at one time. See the gallows tree zombie entry for details on that monster."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The gallows tree makes three slam attacks."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +12 to hit, reach 15 ft., one target. Hit: 28 (6d6 + 7) bludgeoning damage and the target is grappled (escape DC 22) and restrained."
+    }
+  ]
+}

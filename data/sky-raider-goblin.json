@@ -1,0 +1,51 @@
+{
+  "name": "Sky Raider Goblin",
+  "tags": [
+    "small",
+    "humanoid",
+    "cr1/4",
+    "out-of-the-box-5e"
+  ],
+  "size": "Small",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "1/4 (50 XP)",
+  "hp": "7 (2d6)",
+  "ac": "14 (leather armor)",
+  "speed": "30 ft.",
+  "skills": "Animal Handling +3",
+  "senses": "Darkvision 60 ft., Passive Perception 9",
+  "languages": "Common, Goblin",
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 10,
+    "int": 10,
+    "wis": 8,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Nimble Escape",
+      "desc": "The goblin can take the Disengage or Hide action as a bonus action on each of its turns."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 +2) piercing damage."
+    },
+    {
+      "name": "Light Crossbow",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 6 (1d8 +2) piercing damage."
+    },
+    {
+      "name": "Grenado (3/Day)",
+      "desc": "As an action the goblin can throw a grenado to a point it can see within 30 feet. When a grenado is thrown, roll initiative for it. The grenado explodes on its next turn. When a grenado explodes, all creatures within 10 feet must succeed on a DC 12 Dexterity saving throw, taking 3 (1d6) piercing and 3 (1d6) fire damage on a failed save, or half as much on a successful one. The grenado also ignites flammable materials in the area."
+    },
+    {
+      "name": "Parachute",
+      "desc": "The goblin can deploy the parachute as a reaction while falling, or as an action otherwise. The parachute requires at least a 10 foot cube of unoccupied space in which to deploy, and it doesn\u2019t open fast enough to slow a fall of less than 60 ft. If it has sufficient time and space to deploy properly, the parachute allows its wearer to land without taking falling damage. Once it has been used, the parachute takes 10 minutes to repack."
+    }
+  ]
+}

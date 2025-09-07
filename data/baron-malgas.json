@@ -1,0 +1,58 @@
+{
+  "name": "Baron Malgas",
+  "tags": [
+    "medium",
+    "aberration",
+    "cr5",
+    "strongholds-and-followers"
+  ],
+  "size": "Medium",
+  "type": "aberration",
+  "alignment": "chaotic neutral",
+  "cr": "5 (1,800 XP)",
+  "hp": "71 (11d8 + 22)",
+  "ac": "20 (plate, shield)",
+  "speed": "30 ft.",
+  "saves": "Str +6, Con +5",
+  "skills": "Athletics +6, Deception +3, Perception +5",
+  "resistance": "psychic",
+  "conimmunities": "charmed, petrified",
+  "senses": "darkvision 60 ft., passive Perception 15",
+  "languages": "Deep Speech, Primordial",
+  "abilities": {
+    "str": 16,
+    "dex": 13,
+    "con": 14,
+    "int": 10,
+    "wis": 14,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Everchanging Changers",
+      "desc": "The Court of All Flesh are beings of pure chaos. Because their minds are pure disorder, they cannot be driven mad or charmed and any attempts to magically compel their behavior fails."
+    },
+    {
+      "name": "Formless Shape",
+      "desc": "Baron Malgas is immune to any spell or effect that would alter his form."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Baron Malgas makes three attacks with his flail. He can use Melt Flesh in place of one flail attack."
+    },
+    {
+      "name": "Flail",
+      "desc": "Melee Weapon Attack: +6 to hit, range 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage."
+    },
+    {
+      "name": "Javelin",
+      "desc": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 12 (2d8 + 3) piercing damage."
+    },
+    {
+      "name": "Melt Flesh",
+      "desc": "Baron Malgas chooses a target he can see within 30 feet. The target must succeed on a DC 13 Wisdom saving throw or watch as their dominant hand melts into a runny, fleshy lump. It drops whatever weapon it was carrying, cannot hold a weapon in that hand, and cannot cast spells that require somatic components. At the end of each of its turns, the target repeats this saving throw, ending the effect on itself on a success. Casting <i>mending</i> on the affected hand also ends the effect. If the target succeeds on a saving throw, the creature becomes immune to Baron Malgas\u2019s Melt Flesh for the next 24 hours."
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "name": "Adult Sea Dragon",
+  "tags": [
+    "huge",
+    "dragon",
+    "cr16",
+    "tome-of-beasts"
+  ],
+  "size": "Huge",
+  "type": "dragon",
+  "alignment": "neutral evil",
+  "cr": "16 (15000 XP)",
+  "hp": "225 (18d12 + 108)",
+  "ac": "19 (natural armor)",
+  "speed": "40 ft., fly 80 ft., swim 60 ft.",
+  "saves": "Dex +5, Con +11, Wis +7, Cha +9",
+  "skills": "Perception +12, Stealth +5",
+  "immunities": "cold",
+  "senses": ", passive Perception 22",
+  "languages": "Common, Draconic",
+  "abilities": {
+    "str": 25,
+    "dex": 10,
+    "con": 23,
+    "int": 17,
+    "wis": 15,
+    "cha": 19
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The dragon can breathe air and water."
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Siege Monster",
+      "desc": "The dragon deals double damage to objects and structures."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The dragon can use its Frightful Presence. It then makes three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +12 to hit, reach 10 ft., one target. Hit: 18 (2d10 + 7) piercing damage plus 5 (1d10) cold damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 14 (2d6 + 7) slashing damage."
+    },
+    {
+      "name": "Tail",
+      "desc": "Melee Weapon Attack: +12 to hit, reach 15 ft., one target. Hit: 16 (2d8 + 7) bludgeoning damage."
+    },
+    {
+      "name": "Frightful Presence",
+      "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 17 Wisdom saving throw or become frightened for 1 minute. A creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to the dragon's Frightful Presence for the next 24 hours."
+    },
+    {
+      "name": "Tidal Breath (Recharge 5-6)",
+      "desc": "The dragon exhales a crushing wave of frigid seawater in a 60-foot cone. Each creature in that area must make a DC 19 Dexterity saving throw. On a failure, the target takes 33 (6d10) bludgeoning damage and 33 (6d10) cold damage, and is pushed 30 feet away from the dragon and knocked prone. On a successful save the creature takes half as much damage and isn't pushed or knocked prone."
+    }
+  ],
+  "legendary": [
+    {
+      "name": "The dragon can take 3 legendary actions, choosing from the options below",
+      "desc": "Only one legendary action option can be used at a time and only at the end of another creature's turn. The dragon regains spent legendary actions at the start of its turn."
+    },
+    {
+      "name": "Detect",
+      "desc": "The dragon makes a Wisdom (Perception) check."
+    },
+    {
+      "name": "Tail Attack",
+      "desc": "The dragon makes a tail attack."
+    },
+    {
+      "name": "Wing Attack (Costs 2 Actions)",
+      "desc": "The dragon beats its wings. Each creature within 15 feet of the dragon must succeed on a DC 20 Dexterity saving throw or take 14 (2d6 + 7) bludgeoning damage and be knocked prone. The dragon can then move up to half its flying speed, or half its swim speed if in the water."
+    }
+  ]
+}

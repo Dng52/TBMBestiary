@@ -1,0 +1,59 @@
+{
+  "name": "Mask Wight",
+  "tags": [
+    "medium",
+    "undead",
+    "cr13",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "13 (10000 XP)",
+  "hp": "207 (18d8 + 126)",
+  "ac": "19 (natural armor)",
+  "speed": "40 ft.",
+  "saves": "Str +11, Dex +9, Con +12, Int +7, Wis +8, Cha +9",
+  "immunities": "necrotic, poison",
+  "resistance": "acid, fire, lightning, cold; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "vulnerability": "radiant",
+  "conimmunities": "charmed, frightened, paralyzed, petrified, poisoned, stunned, unconscious",
+  "senses": "darkvision 60 ft., truesight 30 ft., passive Perception 13",
+  "languages": "Common, Giant, Infernal",
+  "abilities": {
+    "str": 22,
+    "dex": 18,
+    "con": 24,
+    "int": 15,
+    "wis": 16,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The wight's innate spellcasting ability is Charisma (spell save DC 17). It can innately cast the following spells, requiring no material components: At will: alter self 1/day each: counterspell, dispel magic, enlarge/reduce, spider climb, tongues 1/week: gate"
+    },
+    {
+      "name": "Single-minded Purpose",
+      "desc": "The wight has advantage on attack rolls against followers of the fiend it is tasked to destroy and those in its target's employ (whether or not they are aware of their employer), as well as the fiend itself."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The mask wight makes one Khopesh of Oblivion attack and one Enervating Spiked Gauntlet attack."
+    },
+    {
+      "name": "Khopesh of Oblivion",
+      "desc": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) slashing damage, and the target must succeed on a DC 17 Wisdom saving throw or some cherished material thing disappears from the universe, and only the target retains any memory of it. This item can be as large as a building, but it can't be a living entity and it can't be on the target's person or within the target's sight."
+    },
+    {
+      "name": "Enervating Spiked Gauntlet",
+      "desc": "Melee Weapon Attack: +11 to hit, reach 5 ft., one target. Hit: 19 (2d12 + 6) bludgeoning damage plus 11 (2d10) necrotic damage, and the target must succeed on a DC 17 Wisdom saving throw or gain 1 level of exhaustion. The target recovers from all exhaustion caused by the enervating spiked gauntlet at the end of its next long rest."
+    },
+    {
+      "name": "Wail of the Forgotten (Recharge 6)",
+      "desc": "The mask wight emits an ear-piercing wail. All creatures within 30 feet of the wight take 65 (10d12) thunder damage and are permanently deafened; a successful DC 17 Charisma saving throw reduces damage to half and limits the deafness to 1d4 hours. Targets slain by this attack are erased from the memories of every creature in the planes, all written or pictorial references to the target fade away, and its body is obliterated.the only exception is those who personally witnessed the death. Restoring such a slain creature requires a wish or divine intervention; no mortal remembers the creature's life or death."
+    }
+  ]
+}

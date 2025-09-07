@@ -1,0 +1,64 @@
+{
+  "name": "Wendigo",
+  "tags": [
+    "medium",
+    "fiend",
+    "cr7",
+    "homebrew"
+  ],
+  "size": "Medium",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "7 (2,900 XP), 9 when bloodied (5,000 XP)",
+  "hp": "130 (20d8 + 40)",
+  "ac": "16 (natural armor)",
+  "speed": "35 ft.",
+  "saves": "Str +7 (+9 when bloodied), Dex +5, Con +7",
+  "skills": "Stealth +5, Perception +5",
+  "immunities": "cold, poison",
+  "resistance": "necrotic; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "senses": "darkvision 60 ft., passive Perception 15",
+  "languages": "Infernal",
+  "abilities": {
+    "str": 18,
+    "dex": 15,
+    "con": 18,
+    "int": 10,
+    "wis": 14,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Natural Hunter",
+      "desc": "The Wendigo has advantage on Stealth checks made while it is hunting."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The Wendigo makes one claw and one bite attack."
+    },
+    {
+      "name": "Claw",
+      "desc": "+7 to hit (+9 when bloodied), reach 5 ft., one target. Hit: 10 (1d12 + 4) slashing damage; 13 (1d12 + 6) slashing damage when bloodied."
+    },
+    {
+      "name": "Bite",
+      "desc": "+7 to hit (+9 when bloodied), reach 5 ft., one target. Hit: 13 (2d8 + 4) piercing damage; 15 (2d8 + 6) piercing damage when bloodied. If a target is bitten, it must make a DC 15 Constitution saving throw.  It takes 10 (3d6) necrotic damage on a failure, or half as much on a success."
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Move (costs one point)",
+      "desc": "The Wendigo moves up to its speed."
+    },
+    {
+      "name": "Bite (costs two points)",
+      "desc": "The Wendigo makes a bite attack."
+    },
+    {
+      "name": "Shriek (costs three points)",
+      "desc": "The Wendigo screams.  Each creature that can hear it within a 30 ft. radius must make a DC 15 Wisdom saving throw.  On a failure, the creature becomes stunned for one minute.  The creature can remake the save at the end of each of its turns, ending the effect on a success.  If a creature succeeds on the save, it is immune to the Wendigo's shriek for the next hour."
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "name": "Seraph (SaF)",
+  "tags": [
+    "large",
+    "celestial",
+    "cr10",
+    "strongholds-and-followers"
+  ],
+  "size": "Large",
+  "type": "celestial",
+  "alignment": "any good alignment",
+  "cr": "10 (5,900 XP)",
+  "hp": "189 (18d10 + 90)",
+  "ac": "17 (natural armor)",
+  "speed": "30 ft.",
+  "saves": "Str +8, Con +9, Wis +9, Cha +9",
+  "immunities": "necrotic, poison",
+  "resistance": "radiant; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": " charmed, exhaustion, frightened, poisoned",
+  "senses": "truesight 60 ft., passive Perception 23",
+  "languages": "all, telepathy 60 ft.",
+  "abilities": {
+    "str": 18,
+    "dex": 18,
+    "con": 20,
+    "int": 18,
+    "wis": 20,
+    "cha": 20
+  },
+  "traits": [
+    {
+      "name": "Angelic Weapons",
+      "desc": "The Seraph\u2019s weapon attacks are magical. When the Seraph hits with any weapon, the weapon deals an extra 9 (2d8) radiant damage (included in the attack)."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The Seraph has advantage on saving throws against spells and other magical effects from evil characters and sources."
+    },
+    {
+      "name": "Aura of Protection Against Evil",
+      "desc": "Evil creatures have disadvantage on attack rolls against all allies within 5 feet of the Seraph. Allies in this area can\u2019t be charmed, frightened, or possessed by evil creatures. If an ally is already charmed, frightened, or possessed by evil magic, the ally has advantage on any new saving throw against the relevant effect."
+    },
+    {
+      "name": "Vigilant",
+      "desc": "The Seraph cannot be flanked or surprised."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The Seraph makes four attacks with any combination of Good, Law, Alpha, and Omega, but no more than two with the same weapon."
+    },
+    {
+      "name": "Good",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage plus 9 (2d8) radiant damage. If the target is evil and has 25 hit points or fewer after taking this damage, it must succeed on a DC 17 Wisdom saving throw or be destroyed. On a successful save, the creature becomes frightened of the Seraph until the end of the Seraph\u2019s next turn."
+    },
+    {
+      "name": "Law",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage plus 9 (2d8) radiant damage. If the target is chaotic and has 25 hit points or fewer after taking this damage, it must succeed on a DC 17 Wisdom saving throw or be destroyed. On a successful save, the creature becomes frightened of the Seraph until the end of the Seraph\u2019s turn."
+    },
+    {
+      "name": "Alpha",
+      "desc": "Ranged Weapon Attack: +8 to hit, range 150/600 ft., one target. Hit: 13 (2d8 + 4) piercing damage plus 9 (2d8) radiant damage. On a hit, all allies adjacent to the target restore 1d8 + 5 hit points."
+    },
+    {
+      "name": "Omega",
+      "desc": "Ranged Weapon Attack: +8 to hit, range 150/600 ft., one target. Hit: 13 (2d8 + 4) piercing damage plus 9 (2d8) radiant damage. If the target is chaotic or evil, it suffers the effects of a bane spell until the end of its next turn."
+    }
+  ]
+}

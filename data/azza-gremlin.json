@@ -1,0 +1,43 @@
+{
+  "name": "Azza Gremlin",
+  "tags": [
+    "small",
+    "fey",
+    "cr1/4",
+    "tome-of-beasts"
+  ],
+  "size": "Small",
+  "type": "fey",
+  "alignment": "neutral",
+  "cr": "1/4 (50 XP)",
+  "hp": "7 (2d6)",
+  "ac": "14",
+  "speed": "10 ft., fly 40 ft. (hover)",
+  "immunities": "lightning, thunder",
+  "senses": "darkvision 120 ft., passive Perception 11",
+  "languages": "Common, Primordial",
+  "abilities": {
+    "str": 5,
+    "dex": 18,
+    "con": 10,
+    "int": 12,
+    "wis": 13,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Contagious Lightning",
+      "desc": "A creature that touches the azza gremlin or hits it with a melee attack using a metal weapon receives a discharge of lightning. The creature must succeed on a DC 10 Constitution saving throw or attract lightning for 1 minute. For the duration, attacks that cause lightning damage have advantage against this creature, the creature has disadvantage on saving throws against lightning damage and lightning effects, and if the creature takes lightning damage, it is paralyzed until the end of its next turn. An affected creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Lightning Jolt",
+      "desc": "Melee or Ranged Spell Attack: +6 to hit, reach 5 ft. or range 30 ft., one creature. Hit: 3 (1d6) lightning damage, and the target is affected by Contagious Lightning."
+    },
+    {
+      "name": "Ride the Bolt",
+      "desc": "The azza gremlin can travel instantly along any bolt of lightning. When it is within 5 feet of a lightning effect, the azza can teleport to any unoccupied space inside or within 5 feet of that lightning effect."
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "name": "Grisha",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr2",
+    "out-of-the-abyss"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "2 (450 XP)",
+  "hp": "33 (6d8+6)",
+  "ac": "18 (chain mail, shield)",
+  "speed": "30 ft.",
+  "saves": "Wis +4, Cha +5",
+  "skills": "Persuasion +5, Religion +2",
+  "languages": "Common, Undercommon",
+  "abilities": {
+    "str": 14,
+    "dex": 12,
+    "con": 12,
+    "int": 11,
+    "wis": 14,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "desc": "Grisha is a 6th-level-spellcaster. His spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). He has the following cleric spells prepared: * Cantrips (at will): <i>guidance, light, sacred flame, thaumaturgy</i> * 1st level (4 slots): <i>cure wounds, divine favor, inflict wounds, protection from good, shield of faith</i> * 2nd level (3 slots): <i>continual flame, hold person, magic weapon, spiritual weapon</i> * 3rd level (3 slots): <i>bestow curse, dispel magic, spirit guardian</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Grisha makes two attacks with his +1 flail."
+    },
+    {
+      "name": "+1 Flail",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit:7 (1d8 + 3) bludgeoning damage"
+    }
+  ]
+}

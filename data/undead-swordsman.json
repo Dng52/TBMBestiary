@@ -1,0 +1,35 @@
+{
+  "name": "Undead Swordsman",
+  "tags": [
+    "medium",
+    "undead",
+    "cr2",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "2 (450 XP)",
+  "hp": "27 (5d8 + 5)",
+  "ac": "16 (chainmail)",
+  "speed": "30 ft.",
+  "skills": "Perception +4",
+  "immunities": "cold, necrotic, poison",
+  "conimmunities": "exhaustion, paralysis, poison",
+  "senses": "darkvision 60 ft., passive Perception 14",
+  "languages": "understands the languages it knew in its life but can\u2019t speak",
+  "abilities": {
+    "str": 17,
+    "dex": 13,
+    "con": 13,
+    "int": 9,
+    "wis": 10,
+    "cha": 12
+  },
+  "actions": [
+    {
+      "name": "Greatsword",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage."
+    }
+  ]
+}

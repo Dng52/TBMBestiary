@@ -1,0 +1,55 @@
+{
+  "name": "Gnoll Huntmaster",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr2",
+    "out-of-the-box-5e"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "2 (450 XP)",
+  "hp": "49 (9d8 + 9)",
+  "ac": "15 (rusted breastplate)",
+  "speed": "30 ft.",
+  "skills": "Animal Handling +3, Survival +3",
+  "senses": "Passive Perception 11",
+  "languages": "Gnoll",
+  "abilities": {
+    "str": 14,
+    "dex": 16,
+    "con": 13,
+    "int": 8,
+    "wis": 12,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Rampage",
+      "desc": "When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack."
+    },
+    {
+      "name": "Thrill of the Hunt",
+      "desc": "When the gnoll hits a creature with a weapon attack, the creature takes an extra 1d8 damage if it\u2019s below its hit point maximum. The gnoll can deal this extra damage only once per turn."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The gnoll makes two melee attacks with its spear or two ranged attacks with its longbow."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Spear",
+      "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6 + 2) piercing damage, or 6 (1d8 + 2) piercing damage when used with two hands to make a melee attack."
+    },
+    {
+      "name": "Longbow",
+      "desc": "Ranged Weapon Attack: +5 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage, and the target\u2019s speed is reduced by 10 feet until the end of its next turn."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "name": "Biclops",
+  "tags": [
+    "huge",
+    "giant",
+    "cr14",
+    "tome-of-horrors"
+  ],
+  "size": "Huge",
+  "type": "giant",
+  "alignment": "neutral",
+  "cr": "14 (11,500 XP)",
+  "hp": "283 (21d12 + 147)",
+  "ac": "16 (chainmail)",
+  "speed": "30 ft.",
+  "saves": "Dex +5, Con +12, Wis +7",
+  "skills": "Athletics +15, Perception +7",
+  "senses": "passive Perception 17",
+  "languages": "Giant",
+  "abilities": {
+    "str": 26,
+    "dex": 10,
+    "con": 25,
+    "int": 10,
+    "wis": 14,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Improved Critical",
+      "desc": "Longsword and spear attacks score a critical hit on a roll of 19 or 20."
+    },
+    {
+      "name": "Two-Weapon Master",
+      "desc": "When attacking with two weapons, a biclops may reroll any 1 on a damage dice, keeping the second result."
+    },
+    {
+      "name": "Two Heads",
+      "desc": "The biclops has advantage on Wisdom (Perception) checks and on saving throws against being blinded, charmed, deafened, frightened, stunned, and knocked unconscious."
+    },
+    {
+      "name": "Wakeful",
+      "desc": "When one head of the biclops is asleep, the other head is awake."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The biclops makes three attacks with its two longswords. It can choose to hurl two spears or throw two rocks instead."
+    },
+    {
+      "name": "Longsword",
+      "desc": "Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 26 (4d8 + 8) slashing damage."
+    },
+    {
+      "name": "Spear",
+      "desc": "Melee Weapon Attack: +13 to hit, reach 15 ft. or range 20/60 ft., one target. Hit: 22 (4d6 + 8) piercing damage."
+    },
+    {
+      "name": "Rock",
+      "desc": "Ranged Weapon Attack: +13 to hit, range 30/120 ft., one target. Hit: 30 (4d10 + 8) bludgeoning damage."
+    }
+  ]
+}

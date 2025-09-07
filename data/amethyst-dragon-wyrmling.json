@@ -1,0 +1,40 @@
+{
+  "name": "Amethyst Dragon Wyrmling",
+  "tags": [
+    "medium",
+    "dragon",
+    "cr3",
+    "strongholds-and-followers"
+  ],
+  "size": "Medium",
+  "type": "dragon",
+  "alignment": "neutral evil",
+  "cr": "3 (700 XP)",
+  "hp": "36 (8d8)",
+  "ac": "17 (natural armor)",
+  "speed": "30 ft., fly 60 ft. (hover)",
+  "saves": "Dex +4, Int +4, Wis +3, Cha +3",
+  "skills": "Insight +3, Perception +3",
+  "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 15",
+  "languages": "Common, Draconic",
+  "abilities": {
+    "str": 14,
+    "dex": 14,
+    "con": 11,
+    "int": 14,
+    "wis": 13,
+    "cha": 13
+  },
+  "traits": [
+    {
+      "name": "Feedback Aura",
+      "desc": "Each time the dragon takes damage, all creatures within 30 feet must succeed on a DC 12 Intelligence saving throw or else take 3 (1d6) psychic damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage."
+    }
+  ]
+}

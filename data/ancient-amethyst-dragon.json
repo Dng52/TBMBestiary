@@ -1,0 +1,72 @@
+{
+  "name": "Ancient Amethyst Dragon",
+  "tags": [
+    "gargantuan",
+    "dragon",
+    "cr22",
+    "strongholds-and-followers"
+  ],
+  "size": "Gargantuan",
+  "type": "dragon",
+  "alignment": "neutral evil",
+  "cr": "22 (41,000 XP)",
+  "hp": "276 (24d20 + 24)",
+  "ac": "22 (natural armor)",
+  "speed": "40 ft., fly 80 ft. (hover)",
+  "saves": "Dex +14, Int +15, Wis +10, Cha +13",
+  "skills": "Arcana +15, Insight +10, Perception +10, Religion +15",
+  "immunities": "fire, lightning",
+  "resistance": "bludgeoning, slashing, and piercing from nonmagical attacks",
+  "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 27",
+  "languages": "Common, Draconic, telepathy 120 ft.",
+  "abilities": {
+    "str": 22,
+    "dex": 25,
+    "con": 12,
+    "int": 26,
+    "wis": 16,
+    "cha": 23
+  },
+  "traits": [
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "desc": "If the dragon fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Feedback Aura",
+      "desc": "Each time the dragon takes damage, all creatures within 30 feet must succeed on a DC 23 Intelligence saving throw or else take 14 (4d6) psychic damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The dragon makes three attacks: one with its bite and two with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +13 to hit, reach 15 ft., one target. Hit: 17 (2d10 + 6) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +13 to hit, reach 10 ft., one target. Hit: 13 (2d6 + 6) slashing damage."
+    },
+    {
+      "name": "Tail",
+      "desc": "Melee Weapon Attack: +13 to hit; reach 20 ft., one target. Hit: 15 (2d8 + 6) bludgeoning damage."
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Detect",
+      "desc": "The dragon makes a Wisdom (Perception) Check."
+    },
+    {
+      "name": "Psionics",
+      "desc": "The dragon uses a psionic ability."
+    },
+    {
+      "name": "Psionic Shift (Costs 2 Actions)",
+      "desc": "The dragon releases a wave of telekinetic energy from its mind. Every creature within 15 feet must make a DC 24 Intelligence saving throw or take 15 (2d6 + 8) force damage and be knocked prone. The dragon then can move up to half its movement speed."
+    }
+  ]
+}

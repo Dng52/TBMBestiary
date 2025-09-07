@@ -1,0 +1,47 @@
+{
+  "name": "Minotaur Shaman",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr3",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "chaotic evil",
+  "cr": "3 (700 XP)",
+  "hp": "60 (8d10 + 16)",
+  "ac": "13 (natural armor)",
+  "speed": "40 ft.",
+  "skills": "Perception +8",
+  "senses": "darkvision 60ft., passive Perception 18",
+  "languages": "Abyssal",
+  "abilities": {
+    "str": 16,
+    "dex": 11,
+    "con": 15,
+    "int": 8,
+    "wis": 18,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Labyrinthine Recall",
+      "desc": "The minotaur can perfectly recall any path it has traveled."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The shaman is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). The shaman has the following cleric spells prepared: * 1st level (4 slots): <i>bane, faerie fire</i> * 2nd level (3 slots): <i>barkskin, enhance ability, silence</i> * 3rd Level (2 slots): <i>bestow curse, spirit guardians</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Greatclub",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage."
+    },
+    {
+      "name": "Gore",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 3) piercing damage."
+    }
+  ]
+}

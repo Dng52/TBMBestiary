@@ -1,0 +1,51 @@
+{
+  "name": "Orc Claw of Luthic",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr2",
+    "volos-guide"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "2 (450 XP)",
+  "hp": "45 (6d8+18)",
+  "ac": "14 (hide armor)",
+  "speed": "30 ft.",
+  "skills": "Intimidation +2, Medicine +4, Survival +4",
+  "senses": "darkvision 60 ft.",
+  "languages": "Common, Orc",
+  "abilities": {
+    "str": 14,
+    "dex": 15,
+    "con": 16,
+    "int": 10,
+    "wis": 15,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Source",
+      "desc": "Volo's Guide to Monsters, p. 183"
+    },
+    {
+      "name": "Aggressive",
+      "desc": "As a bonus action, the orc can move up to its speed toward a hostile creature that it can see."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The orc is a 5th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). The orc has the following cleric spells prepared: * Cantrips (at will): <i>guidance, mending, resistance, thaumaturgy</i> * 1st level (4 slots): <i>bane, cure wounds, guiding bolt</i> * 2nd level (3 slots): <i>augury, warding bond</i> * 3rd level (2 slots): <i>bestow curse, create food and water</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The orc makes two claw attacks, or four claw attacks if it has fewer than half of its hit points remaining."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8+2) slashing damage."
+    }
+  ]
+}

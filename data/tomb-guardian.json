@@ -1,0 +1,66 @@
+{
+  "name": "Tomb Guardian",
+  "tags": [
+    "large",
+    "construct",
+    "cr6",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Large",
+  "type": "construct",
+  "alignment": "unaligned",
+  "cr": "6 (2,300 XP)",
+  "hp": "114 (12d10 + 48)",
+  "ac": "13 (natural armor)",
+  "speed": "30 ft.",
+  "immunities": "poison, psychic",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 60ft., passive Perception 8",
+  "languages": "understands the languages of its creator but can\u2019t speak",
+  "abilities": {
+    "str": 20,
+    "dex": 8,
+    "con": 19,
+    "int": 4,
+    "wis": 6,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Immutable Form",
+      "desc": "The guardian is immune to any spell or effect that would alter its form."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The guardian has advantage on saving throws against spell and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The guardian's weapon attacks are magical."
+    },
+    {
+      "name": "Bound Regeneration",
+      "desc": "The guardian is bound to an item or set of items within the tomb it guards. At the beginning of the guardian's turn, it regains 10 hit points as long as that item is not destroyed. This regeneration continues even after the guardian is reduced to 0 hit points and it can only be permanently killed when this item (or these items) have been removed."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage."
+    },
+    {
+      "name": "Debris Toss",
+      "desc": "Ranged Weapon Attack: +8 to hit, range 30/90 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage."
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Pummel",
+      "desc": "The guardian makes a slam attack."
+    },
+    {
+      "name": "Spark of Power",
+      "desc": "A spark of energy lashes out from the item to which the guardian is bound. Target creature within 10 feet of that item must make a DC 15 Dexterity saving throw, taking 14 (4d6) lightning damage on a failed save, or half as much damage on a successful one."
+    }
+  ]
+}

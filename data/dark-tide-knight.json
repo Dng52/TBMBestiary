@@ -1,0 +1,54 @@
+{
+  "name": "Dark Tide Knight",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr3",
+    "elemental-evil"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful evil",
+  "cr": "3 (700 XP)",
+  "hp": "58 (9d8+18)",
+  "ac": "13",
+  "speed": "30 ft.",
+  "skills": "Athletics +7, Stealth +7",
+  "languages": "Common",
+  "abilities": {
+    "str": 17,
+    "dex": 16,
+    "con": 14,
+    "int": 10,
+    "wis": 11,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Bonded Mount",
+      "desc": "The knight is magically bound to a beast with an innate swimming speed trained to serve as its mount. While mounted on this beast, the knight gains the beast's senses and ability to breathe underwater. The bonded mount obeys the knight's commands. If its mount dies, the knight can train a new beast to serve as its bonded mount, a process requiring a month."
+    },
+    {
+      "name": "Sneak Attack",
+      "desc": "The knight deals an extra 7 (2d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the knight that isn't incapacitated and the knight doesn't have disadvantage on the attack roll."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The knight makes two shortsword attacks."
+    },
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+    },
+    {
+      "name": "Lance",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 9 (1d12 + 3) piercing damage."
+    },
+    {
+      "name": "Uncanny Dodge",
+      "desc": "When an attacker the knight can see hits it with an attack, the knight can halve the damage against it."
+    }
+  ]
+}

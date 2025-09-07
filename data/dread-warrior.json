@@ -1,0 +1,58 @@
+{
+  "name": "Dread Warrior",
+  "tags": [
+    "medium",
+    "undead",
+    "crl",
+    "tales-from-the-yawning-portal"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "l",
+  "hp": "37 (5d8+15)",
+  "ac": "18 (chain mail, shield)",
+  "speed": "30 ft.",
+  "saves": "Wis +3",
+  "skills": "Athletics +4, Perception +3",
+  "immunities": "poison",
+  "conimmunities": "exhaustion, poisoned",
+  "senses": "darkvision 60 ft.",
+  "languages": "Common",
+  "abilities": {
+    "str": 15,
+    "dex": 11,
+    "con": 16,
+    "int": 10,
+    "wis": 12,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Source",
+      "desc": "tales from the yawning portal,  page 233"
+    },
+    {
+      "name": "Undead Nature",
+      "desc": "A dread warrior doesn't require air, food, drink, or sleep."
+    },
+    {
+      "name": "Undead Fortitude",
+      "desc": "If damage reduces the dread warrior to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken , unless the damage is radiant or from a critical hit. On a success, the dread warrior drops to 1 hit point instead."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The dread warrior makes two melee attacks."
+    },
+    {
+      "name": "Battleaxe",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage, or 7 (1d10 + 2) slashing damage if wielded with two hands."
+    },
+    {
+      "name": "Javelin",
+      "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    }
+  ]
+}

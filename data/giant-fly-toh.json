@@ -1,0 +1,39 @@
+{
+  "name": "Giant Diseased Fly",
+  "tags": [
+    "medium",
+    "beast",
+    "cr1/2",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/2 (100 XP)",
+  "hp": "22 (3d8 + 9)",
+  "ac": "13",
+  "speed": "30 ft., fly 60 ft.",
+  "skills": "Perception +2",
+  "senses": "darkvision 60 ft., passive Perception 12",
+  "languages": "--",
+  "abilities": {
+    "str": 12,
+    "dex": 17,
+    "con": 16,
+    "int": 2,
+    "wis": 7,
+    "cha": 2
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "desc": "The giant fly has advantage on Wisdom (Perception) checks that rely on smell."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 10 (2d6 + 3) piercing damage. If the target is a creature it must succeed on a DC 13 Constitution saving throw or be diseased until the condition is cured. While the creature is diseased it is poisoned.. Every 24 hours that elapse, the target must repeat the saving throw, reducing its hit point maximum by 5 (1d10) on a failure. The disease is cured on a success. The target dies if the disease reduces its hit point maximum to 0. This reduction to the target\u2019s hit point maximum lasts until the disease is cured."
+    }
+  ]
+}

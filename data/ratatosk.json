@@ -1,0 +1,53 @@
+{
+  "name": "Ratatosk",
+  "tags": [
+    "tiny",
+    "celestial",
+    "cr4",
+    "tome-of-beasts"
+  ],
+  "size": "Tiny",
+  "type": "celestial",
+  "alignment": "chaotic neutral",
+  "cr": "4 (1100 XP)",
+  "hp": "42 (12d4 + 12)",
+  "ac": "14",
+  "speed": "20 ft., climb 20 ft.",
+  "saves": "Wis +4, Cha +6",
+  "skills": "Deception +6, Persuasion +6, Stealth +6",
+  "resistance": "bludgeoning, piercing, and slashing damage from nonmagical weapons",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Celestial, Common; telepathy 100 ft.",
+  "abilities": {
+    "str": 4,
+    "dex": 18,
+    "con": 12,
+    "int": 17,
+    "wis": 10,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The ratatosk's spellcasting attribute is Charisma (save DC 14). It can innately cast the following spells without requiring material or somatic components: At will: animal messenger, message, vicious mockery 1/day each: commune, mirror image 3/day each: sending, suggestion"
+    },
+    {
+      "name": "Skitter",
+      "desc": "The ratatosk can take the Dash, Disengage, or Hide action as a bonus action on each of its turns."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Gore",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 1 piercing damage plus 14 (4d6) psychic damage and the target must make a successful DC 14 Wisdom saving throw or be charmed for 1 round. While charmed in this way, the creature regards one randomly determined ally as a foe."
+    },
+    {
+      "name": "Divisive Chatter (recharge 5-6)",
+      "desc": "Up to six creatures within 30 feet that can hear the ratatosk must make DC 14 Charisma saving throws. On a failure, the creature is affected as if by a confusion spell for 1 minute. An affected creature repeats the saving throw at the end of each of its turns, ending the effect on itself on a success."
+    },
+    {
+      "name": "Desperate Lies",
+      "desc": "A creature that can hear the ratatosk must make a DC 14 Wisdom saving throw when it attacks the ratatosk. If the saving throw fails, the creature still attacks, but it must choose a different target creature. An ally must be chosen if no other enemies are within the attack's reach or range. If no other target is in the attack's range or reach, the attack is still made (and ammunition or a spell slot is expended, if appropriate) but it automatically misses and has no effect."
+    }
+  ]
+}

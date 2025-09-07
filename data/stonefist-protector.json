@@ -1,0 +1,56 @@
+{
+  "name": "Stonefist Protector",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "1 (200 XP)",
+  "hp": "22 (4d8 + 4)",
+  "ac": "15 (unarmored defense)",
+  "speed": "40 ft.",
+  "saves": "Str +3, Dex +5",
+  "skills": "Acrobatics +5, Insight +4, Religion +4",
+  "senses": "passive Perception 12",
+  "languages": "Any two languages",
+  "abilities": {
+    "str": 13,
+    "dex": 16,
+    "con": 12,
+    "int": 14,
+    "wis": 14,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Flurry of Blows (2/Short Rest)",
+      "desc": "If the protector has attacked this turn, it can make an additional unarmed strike as a bonus action. On a hit, the target must succeed on a DC 13 Dexterity saving throw or be knocked prone."
+    },
+    {
+      "name": "Patient Defense (2/Short Rest)",
+      "desc": "The protector can take the Dodge action as a bonus action."
+    },
+    {
+      "name": "Unarmored Defense",
+      "desc": "While not wearing armor, the protector's AC includes its Wisdom modifier."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The protector makes two attacks, one with its quarterstaff and one with its unarmed strike."
+    },
+    {
+      "name": "Quarterstaff",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) bludgeoning damage."
+    },
+    {
+      "name": "Unarmed Strike",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage."
+    }
+  ]
+}

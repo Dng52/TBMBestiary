@@ -1,0 +1,56 @@
+{
+  "name": "Child Of The Briar",
+  "tags": [
+    "tiny",
+    "plant",
+    "cr1",
+    "tome-of-beasts"
+  ],
+  "size": "Tiny",
+  "type": "plant",
+  "alignment": "neutral evil",
+  "cr": "1 (200 XP)",
+  "hp": "50 (20d4)",
+  "ac": "13",
+  "speed": "20 ft., climb 10 ft.",
+  "skills": "Perception +4, Stealth +7",
+  "vulnerability": "fire",
+  "senses": "darkvision 60 ft., passive Perception 14",
+  "languages": "Briarclick, Common, Sylvan",
+  "abilities": {
+    "str": 6,
+    "dex": 17,
+    "con": 11,
+    "int": 13,
+    "wis": 10,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Fey Blood",
+      "desc": "Children of the briar count as both plant and fey for any effect related to type."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "A child of the briar makes two claw attacks. If both attacks hit the same target, the target is grappled (escape DC 13) and the child of the briar uses its Thorny Grapple on it."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+    },
+    {
+      "name": "Spitdart Tongue (Recharge 4-6)",
+      "desc": "Ranged Weapon Attack: +5 to hit, range 20/60 ft., one target. Hit: 6 (1d6 + 3) piercing damage. Every child of the briar can shoot thorns from its mouth."
+    },
+    {
+      "name": "Entangle",
+      "desc": "Two children of the briar working together can cast a version of the entangle spell with no components, at will. Both creatures must be within 10 feet of each other, and both must use their action to cast the spell. The entangled area must include at least one of the casters but doesn't need to be centered on either caster. Creatures in the area must make a DC 13 Strength saving throw or be restrained. All children of the briar are immune to the spell's effects."
+    },
+    {
+      "name": "Thorny Grapple",
+      "desc": "A child of the briar's long thorny limbs help it grapple creatures up to Medium size. A grappled creature takes 2 (1d4) piercing damage at the end of the child's turn for as long as it remains grappled."
+    }
+  ]
+}

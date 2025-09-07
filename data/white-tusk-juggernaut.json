@@ -1,0 +1,56 @@
+{
+  "name": "White Tusk Juggernaut",
+  "tags": [
+    "large",
+    "humanoid",
+    "cr4",
+    "strongholds-and-followers"
+  ],
+  "size": "Large",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "4 (1,100 XP)",
+  "hp": "95 (10d10 + 40)",
+  "ac": "20 (plate, shield)",
+  "speed": "25 ft.",
+  "saves": "Str +6, Wis +3 ",
+  "skills": "Athletics +7, Intimidation +3",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "Orc",
+  "abilities": {
+    "str": 19,
+    "dex": 8,
+    "con": 19,
+    "int": 7,
+    "wis": 12,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Aggressive",
+      "desc": "As a bonus action, the orc can move up to its speed toward a hostile creature it can see."
+    },
+    {
+      "name": "Minion: Savage Horde",
+      "desc": "After moving at least 20 feet in a straight line toward a creature, the next attack the orc makes against that creature scores a critical hit on a roll of 18\u201320."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The White Tusk juggernaut makes one tusk attack and one longsword attack."
+    },
+    {
+      "name": "Tusk",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 11 (2d6 + 4) piercing damage. If the target is a creature, it must succeed on a DC 14 Strength saving throw or be knocked prone."
+    },
+    {
+      "name": "Longsword",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 13 (2d8 + 4) slashing damage."
+    },
+    {
+      "name": "Horde Protector",
+      "desc": "When a creature within 5 feet of the orc is attacked by a creature the orc can see and the orc is wielding a shield, the orc can impose disadvantage on that attack roll."
+    }
+  ]
+}

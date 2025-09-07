@@ -1,0 +1,41 @@
+{
+  "name": "Giant Lizard",
+  "tags": [
+    "large",
+    "beast",
+    "cr1/4",
+    "monster-manual"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/4 (50 XP)",
+  "hp": "19 (3d10+3)",
+  "ac": "12 (natural armor)",
+  "speed": "30 ft., climb 30 ft.",
+  "senses": "darkvision 30 ft.",
+  "abilities": {
+    "str": 15,
+    "dex": 12,
+    "con": 13,
+    "int": 2,
+    "wis": 10,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Variant: Hold Breath",
+      "desc": "The lizard can hold its breath for 15 minutes. (A lizard that has this trait also has a swimming speed of 30 feet.)"
+    },
+    {
+      "name": "Variant: Spider Climb",
+      "desc": "The lizard can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "name": "Ki-rin",
+  "tags": [
+    "huge",
+    "celestial",
+    "cr12",
+    "volos-guide"
+  ],
+  "size": "Huge",
+  "type": "celestial",
+  "alignment": "lawful good",
+  "cr": "12 (8,400 XP)",
+  "hp": "152 (16d12+48)",
+  "ac": "20 (natural armor)",
+  "speed": "60 ft., fly 120 ft. (hover)",
+  "skills": "Insight +9, Perception +9, Religion +8",
+  "immunities": "poison",
+  "conimmunities": "poisoned",
+  "senses": "blindsight 30 ft., darkvision 120 ft.",
+  "languages": "all, telepathy 120 ft.",
+  "abilities": {
+    "str": 21,
+    "dex": 16,
+    "con": 16,
+    "int": 19,
+    "wis": 20,
+    "cha": 20
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The ki-rin's innate spellcasting ability is Charisma (spell save DC 17). The ki-rin can innately cast the following spells, requiring no material components: * At will: <i>gaseous form, major image </i>(6th-level version)<i>, wind walk</i> * 1/day: <i>create food and water</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "desc": "If the ki-rin fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The ki-rin has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The ki-rin's weapon attacks are magical."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The ki-rin is a 18th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 17, +9 to hit with spell attacks). It has the following cleric spells prepared: * Cantrips (at will): <i>light, mending, sacred flame, spare the dying, thaumaturgy</i> * 1st level (4 slots): <i>command, cure wounds, detect evil and good, protection from evil and good, sanctuary</i> * 2nd level (3 slots): <i>calm emotions, lesser restoration, silence</i> * 3rd level (3 slots): <i>dispel magic, remove curse, sending</i> * 4th level (3 slots): <i>banishment, freedom of movement, guardian of faith</i> * 5th level (3 slots): <i>greater restoration, mass cure wounds, scrying</i> * 6th level (1 slot): <i>heroes' feast, true seeing</i> * 7th level (1 slot): <i>etherealness, plane shift</i> * 8th level (1 slot): <i>control weather</i> * 9th level (1 slot): <i>true resurrection</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The ki-rin makes three attacks: two with its hooves and one with its horn."
+    },
+    {
+      "name": "Hoof",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 15 ft, one target. Hit: 10 (2d4+5) bludgeoning damage."
+    },
+    {
+      "name": "Horn",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 14 (2d8+5) piercing damage."
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Detect",
+      "desc": "The ki-rin makes a Wisdom (Perception) check or a Wisdom (Insight) check."
+    },
+    {
+      "name": "Smite",
+      "desc": "The ki-rin makes a hoof attack or casts sacred flame."
+    },
+    {
+      "name": "Move",
+      "desc": "The ki-rin moves up to its half its speed without provoking opportunity attacks."
+    }
+  ]
+}

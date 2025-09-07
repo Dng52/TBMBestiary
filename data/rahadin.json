@@ -1,0 +1,60 @@
+{
+  "name": "Rahadin",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr10",
+    "curse-of-strahd"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful evil",
+  "cr": "10 (5,900 XP)",
+  "hp": "135 (18d8+54)",
+  "ac": "18 (studded leather)",
+  "speed": "35 ft.",
+  "saves": "Con +7, Wis +7",
+  "skills": "Deception +8, Insight +7, Intimidation +12, Perception +11, Stealth +14",
+  "senses": "darkvision 60 ft.",
+  "languages": "Common, Elvish",
+  "abilities": {
+    "str": 14,
+    "dex": 22,
+    "con": 17,
+    "int": 15,
+    "wis": 16,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Deathly Choir",
+      "desc": "Any creature within 10 feet of Rahadin that isn't protected by a mind blank spell hears in its mind the screams of the thousands of people Rahadin has killed. As a bonus action, Rahadin can force all creatures that can hear the screams to make a DC 16 Wisdom saving throw. Each creature takes 16 (3d10) psychic damage on a failed save, or half as much damage on a successful one."
+    },
+    {
+      "name": "Fey Ancestry",
+      "desc": "Rahadin has advantage on saving throws against being charmed, and magic can't put him to sleep."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "Rahadin's innate spellcasting ability is Intelligence (spell save DC 17, +9 to hit with spell attacks). He can innately cast the following spells, requiring no components: * 3/day: <i>misty step, phantom steed</i> * 1/day: <i>magic weapon, nondetection</i>"
+    },
+    {
+      "name": "Mask of the Wild",
+      "desc": "Rahadin can attempt to hide even when he is only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Rahadin attacks three times with his scimitar, or twice with his poisoned darts."
+    },
+    {
+      "name": "Scimitar",
+      "desc": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 9 (1d6+6) slashing damage."
+    },
+    {
+      "name": "Poisoned Dart",
+      "desc": "Ranged Weapon Attack: +10 to hit, range 20/60 ft., one target. Hit: 8 (1d4+6) piercing damage plus 5 (2d4) poison damage."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "name": "Star Spawn Of Cthulhu",
+  "tags": [
+    "large",
+    "fiend",
+    "cr15",
+    "tome-of-beasts"
+  ],
+  "size": "Large",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "15 (13000 XP)",
+  "hp": "187 (15d10 + 105)",
+  "ac": "17 (natural armor)",
+  "speed": "30 ft., swim 30 ft., fly 50 ft.",
+  "saves": "Str +12, Con +12, Int +15, Wis +9",
+  "skills": "Arcana +15, Perception +14",
+  "immunities": "cold, fire, lightning, poison, psychic",
+  "resistance": "bludgeoning, piercing, slashing",
+  "conimmunities": "exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 300 ft., passive Perception 24",
+  "languages": "Common, Infernal, Void Speech",
+  "abilities": {
+    "str": 25,
+    "dex": 15,
+    "con": 24,
+    "int": 30,
+    "wis": 18,
+    "cha": 23
+  },
+  "traits": [
+    {
+      "name": "Interdimensional Movement",
+      "desc": "A star spawn of Cthulhu can use misty step as a bonus action once per round."
+    },
+    {
+      "name": "Psychic Tower",
+      "desc": "When an attack that causes psychic damage is directed against the spawn, the attack rebounds against the attacker. Resolve the attack as if the attacker were the original target and using the star spawn's ability modifiers and proficiency bonus rather than the original attacker's."
+    },
+    {
+      "name": "Void Traveler",
+      "desc": "The star spawn of Cthulhu requires no air, warmth, ambient pressure, food, or water, enabling it to travel safely through interstellar space and similar voids."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The star spawn can use disintegrating gaze if it's available, and also make one claws attack and one dimensional stomp attack."
+    },
+    {
+      "name": "Crushing Claws",
+      "desc": "Melee Weapon Attack. +12 to hit, reach 10 ft., one target. Hit: 20 (2d12 + 7) bludgeoning damage plus 13 (3d8) necrotic damage."
+    },
+    {
+      "name": "Disintegrating Gaze (Recharge 5-6)",
+      "desc": "Ranged Spell Attack: +15 to hit, range 60 ft., one target in line of sight. Hit: 32 (5d12) necrotic damage, and the target must make a successful DC 20 Constitution saving throw or dissipate into vapor as if affected by a gaseous form spell. An affected creature repeats the saving throw at the end of each of its turns; on a success, the effect ends on that creature, but on a failure, the creature takes another 32 (5d12) necrotic damage and remains gaseous. A creature reduced to 0 hit points by this necrotic damage is permanently disintegrated and can be restored only by a wish or comparable magic that doesn't require some portion of a corpse to work."
+    },
+    {
+      "name": "Dimensional Stomp",
+      "desc": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 18 (2d20 + 7) bludgeoning damage, and the target must make a successful DC 15 Dexterity saving throw or be teleported to a new location as if affected by the dimension door spell. The destination is chosen by the star spawn, but it cannot be in the same space as another object or creature."
+    }
+  ]
+}

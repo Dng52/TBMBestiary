@@ -1,0 +1,47 @@
+{
+  "name": "Orc Berserker",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1",
+    "homebrew"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "1 (200 XP)",
+  "hp": "30 (4d8 + 12)",
+  "ac": "14",
+  "speed": "30 ft.",
+  "skills": "Athletics +5, Intimidation +2",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Common, Orc",
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 17,
+    "int": 7,
+    "wis": 11,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Aggressive",
+      "desc": "As a bonus action, the orc can move up to its speed toward a hostile creature that it can see."
+    },
+    {
+      "name": "Reckless",
+      "desc": "At the start of its turn, the orc can gain advantage on all melee weapon attack rolls during that turn, but attack rolls against it have advantage until the start of its next turn."
+    },
+    {
+      "name": "Unarmored Defense",
+      "desc": "While the orc is wearing no armor, its AC includes its Constitution modifier."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Greataxe",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 3) slashing damage."
+    }
+  ]
+}

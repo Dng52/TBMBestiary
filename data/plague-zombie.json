@@ -1,0 +1,53 @@
+{
+  "name": "Plague Zombie",
+  "tags": [
+    "medium",
+    "undead",
+    "cr1/2",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "1/2 (100 XP)",
+  "hp": "22 (3d8 + 9)",
+  "ac": "8",
+  "speed": "20 ft.",
+  "saves": "Wis +0",
+  "immunities": "poison",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 60 ft., passive Perception 8",
+  "languages": "understands all languages it spoke in life but can't speak",
+  "abilities": {
+    "str": 13,
+    "dex": 6,
+    "con": 16,
+    "int": 3,
+    "wis": 6,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Death Burst",
+      "desc": "If the plague zombie is dropped to 0 hit points, it explodes in a burst of decaying flesh. Any creature within 15 feet of the plague zombie must make a saving throw against its Zombie Rot."
+    },
+    {
+      "name": "Zombie Rot",
+      "desc": "A creature who takes a bite or claw attack, or who is within 15 feet of the plague zombie when it drops to 0 hit points, must make a DC 13 Constitution saving throw. On a failed save, the creature contracts zombie rot. While it has zombie rot, the creature cannot regain hit points except via magical means, and it has vulnerability to slashing damage as its flesh rots. At the end of each long rest after being infected, the creature\u2019s maximum hit points are reduced by 3 (1d6) and it can repeat the saving throw, ending zombie rot on a success. Any reduction to the creature\u2019s hit point maximum is permanent until the zombie rot has been cured. The reduction ends after the creature\u2019s next long rest after being cured. If this reduction drops the creature to 0 hit points, the creature dies and rises as a plague zombie in 1d4 hours."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The plague zombie makes one bite attack and one slam attack."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 4 (1d6 + 1) piercing damage, and the creature must make a DC 13 Constitution saving throw or contract zombie rot."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one creature. Hit: 4 (1d6 + 1) bludgeoning damage, and the creature must make a DC 13 Constitution saving throw or contract zombie rot."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "name": "Blood Orc Elder Warrior",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr6",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "6 (2,300 XP)",
+  "hp": "75 (10d8 + 30)",
+  "ac": "14 (chain shirt)",
+  "speed": "40 ft.",
+  "saves": "Str +8, Con +6",
+  "skills": "Intimidation +1, Perception +1, Survival +1",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "Common, Orc",
+  "abilities": {
+    "str": 21,
+    "dex": 13,
+    "con": 16,
+    "int": 8,
+    "wis": 6,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Bloodfrenzy",
+      "desc": "When the blood orc begins its turn with half or fewer of its hit points, it can make a bite attack as a bonus action when it takes the Attack action, and it has advantage on Intelligence, Wisdom, and Charisma saving throws against spells and other effects, and the elder warrior has resistance to bludgeoning, piercing, and slashing damage."
+    },
+    {
+      "name": "Brute",
+      "desc": "A melee weapon deals one extra die of its damage when the elder warrior hits with it (included in the attack)."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The elder warrior makes two melee attacks."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 10 (2d4 + 5) piercing damage."
+    },
+    {
+      "name": "Greataxe",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 18 (2d12 + 5) slashing damage."
+    },
+    {
+      "name": "Terrorize (1/day)",
+      "desc": "The elder warrior roars and displays its trophies, which are visible to all creatures within 30 feet that can see it. Creatures of the elder warrior\u2019s choice within that area must make a DC 16 Wisdom saving throw or be frightened of the warrior for 1 minute. While frightened, they are paralyzed. A frightened creature can repeat the saving throw at the end of each of its turns, ending the effect on a success."
+    }
+  ]
+}

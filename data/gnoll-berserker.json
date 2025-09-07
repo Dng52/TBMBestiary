@@ -1,0 +1,51 @@
+{
+  "name": "Gnoll Berserker",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr3",
+    "homebrew"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "3 (700 XP)",
+  "hp": "65 (10d8 + 20)",
+  "ac": "15 (bone and hide)",
+  "speed": "40 ft.",
+  "saves": "Str +5, Con +4",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Gnoll",
+  "abilities": {
+    "str": 17,
+    "dex": 14,
+    "con": 15,
+    "int": 8,
+    "wis": 11,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Rage (Recharges after a Short or Long Rest)",
+      "desc": "As a bonus action, the gnoll can enter a rage at the start of its turn. The rage lasts for 1 minute or until the gnoll is incapacitated. While raging, the gnoll gains the following benefits: * The gnoll has advantage on Strength checks and Strength saving throws. * When it makes a melee weapon attack, the gnoll gains a +2 bonus to the damage roll. * The gnoll has resistance to bludgeoning, piercing, and slashing damage. * The gnoll gains an additional action on each of its turns. That action can be used only to make one weapon attack or move up to its speed towards a hostile target it can see."
+    },
+    {
+      "name": "Rampage",
+      "desc": "When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The gnoll makes three attacks: one with its bite and two with its boneclaws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage, or 7 (1d4 + 5) piercing damage while raging."
+    },
+    {
+      "name": "Boneclaws",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d8 + 3) slashing damage, or 9 (1d8 + 5) slashing damage while raging."
+    }
+  ]
+}

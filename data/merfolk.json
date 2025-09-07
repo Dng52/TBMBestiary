@@ -1,0 +1,38 @@
+{
+  "name": "Merfolk",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/8",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral",
+  "cr": "1/8 (25 XP)",
+  "hp": "11 (2d8+2)",
+  "ac": "11",
+  "speed": "10 ft., swim 40 ft.",
+  "skills": "Perception +2",
+  "languages": "Aquan, Common",
+  "abilities": {
+    "str": 10,
+    "dex": 13,
+    "con": 12,
+    "int": 11,
+    "wis": 11,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The merfolk can breathe air and water."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Spear",
+      "desc": "Melee or Ranged Weapon Attack: +2 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 3 (1d6) piercing damage, or 4 (1d8) piercing damage if used with two hands to make a melee attack."
+    }
+  ]
+}

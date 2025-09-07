@@ -1,0 +1,48 @@
+{
+  "name": "Chupacabra",
+  "tags": [
+    "medium",
+    "monstrosity",
+    "cr3",
+    "homebrew"
+  ],
+  "size": "Medium",
+  "type": "monstrosity",
+  "alignment": "neutral evil",
+  "cr": "3 (700 XP)",
+  "hp": "45 (6d8 + 18)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Perception +3, Stealth +4",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical attacks",
+  "senses": "darkvision 120 ft., passive Perception 13",
+  "languages": "--",
+  "abilities": {
+    "str": 15,
+    "dex": 14,
+    "con": 16,
+    "int": 6,
+    "wis": 13,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the chupacabra has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) piercing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked prone."
+    },
+    {
+      "name": "Drain Blood",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature that is prone, incapacitated, or restrained. Hit: 5 (1d6 + 2) necrotic damage. Additionally, the target\u2019s hit point maximum is reduced by an amount equal to the damage taken, and the chupacabra regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0."
+    },
+    {
+      "name": "Pin",
+      "desc": "If a creature within 5 feet of the chupacabra stands up, the chupacabra can use its reaction to make a bite attack."
+    }
+  ]
+}

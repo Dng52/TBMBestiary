@@ -1,0 +1,58 @@
+{
+  "name": "Mustard Jelly",
+  "tags": [
+    "large",
+    "ooze",
+    "cr6",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "ooze",
+  "alignment": "unaligned",
+  "cr": "6 (2,300 XP)",
+  "hp": "136 (13d10 + 65)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Perception +6, Stealth +6",
+  "immunities": "force, lightning, poison",
+  "resistance": "cold",
+  "conimmunities": "blinded, charmed, deafened, exhaustion, frightened, poisoned",
+  "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 16",
+  "languages": "--",
+  "abilities": {
+    "str": 15,
+    "dex": 10,
+    "con": 21,
+    "int": 10,
+    "wis": 10,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Amorphous",
+      "desc": "The jelly can move through a space as narrow as 1 inch wide without squeezing."
+    },
+    {
+      "name": "Energy Absorption",
+      "desc": "A mustard jelly is immune to force and lightning damage. If the jelly would have taken force or lightning damage, it is instead healed for the same amount it would have taken in damage."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The jelly\u2019s attacks are magical."
+    },
+    {
+      "name": "Spider Climb",
+      "desc": "The jelly can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    },
+    {
+      "name": "Poison Aura",
+      "desc": "At the start of each of the jelly\u2019s turns, each creature within 10 feet of it takes 10 (3d6) poison damage. A creature that touches the jelly or hits it with a melee attack while within 5 feet of it takes 10 (3d6) poison damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Pseudopod",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (3d6 + 2) bludgeoning damage and 10 (3d6) acid damage."
+    }
+  ]
+}

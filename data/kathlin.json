@@ -1,0 +1,54 @@
+{
+  "name": "Kathlin",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr2",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "neutral good",
+  "cr": "2 (450 XP)",
+  "hp": "34 (4d10 + 12)",
+  "ac": "12",
+  "speed": "60 ft.",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "--",
+  "abilities": {
+    "str": 18,
+    "dex": 15,
+    "con": 17,
+    "int": 5,
+    "wis": 13,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Brave",
+      "desc": "A kathlin has advantage on saving throws against being frightened."
+    },
+    {
+      "name": "Great Endurance",
+      "desc": "A kathlin can run at a gallop for up to 4 hours before succumbing to exhaustion."
+    },
+    {
+      "name": "Trampling Charge",
+      "desc": "If the kathlin moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 15 Strength saving throw or be knocked prone. If the target is prone, the kathlin can make another attack with its hooves against it as a bonus action."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The kathlin makes one hooves attack and one bite attack."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) piercing damage."
+    },
+    {
+      "name": "Hooves",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage."
+    }
+  ]
+}

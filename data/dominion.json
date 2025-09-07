@@ -1,0 +1,54 @@
+{
+  "name": "Dominion",
+  "tags": [
+    "large",
+    "celestial",
+    "cr8",
+    "strongholds-and-followers"
+  ],
+  "size": "Large",
+  "type": "celestial",
+  "alignment": "any good alignment",
+  "cr": "8 (3,900 XP)",
+  "hp": "133 (14d10 + 56)",
+  "ac": "15 (natural armor)",
+  "speed": "40 ft., fly 40 ft.",
+  "saves": "Dex +7, Cha +6",
+  "immunities": "necrotic, poison",
+  "resistance": "radiant; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": " charmed, exhaustion, frightened, poisoned",
+  "senses": "truesight 60 ft., passive Perception 20",
+  "languages": "all, telepathy 60 ft.",
+  "abilities": {
+    "str": 16,
+    "dex": 19,
+    "con": 18,
+    "int": 17,
+    "wis": 18,
+    "cha": 17
+  },
+  "traits": [
+    {
+      "name": "Angelic Weapons",
+      "desc": "The Dominion\u2019s Ray of Salvation is magical. When the Dominion hits with it, the ray deals an extra 9 (2d8) radiant damage (included in the attack)."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The Dominion has advantage on saving throws against spells and other magical effects from evil characters and sources."
+    },
+    {
+      "name": "Aura of Protection Against Evil",
+      "desc": "Evil creatures have disadvantage on attack rolls against all allies within 5 feet of the Dominion. Allies in this area can\u2019t be charmed, frightened, or possessed by evil creatures. If an ally is already charmed, frightened, or possessed by evil magic, the ally has advantage on any new saving throw against the relevant effect."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The Dominion makes two attacks with the Ray of Salvation."
+    },
+    {
+      "name": "Ray of Salvation",
+      "desc": "Ranged Spell Attack: +7 to hit, range 60 ft., one target. Hit: 10 (3d6) fire damage and 9 (2d8) radiant damage. If the ray does damage, any allies adjacent to the target gain 10 temporary hit points."
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "Ghelryn Foehammer",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr0",
+    "storm-kings-thunder"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful good",
+  "cr": "0 (10 XP)",
+  "hp": "30 (4d8 + 12)",
+  "ac": "14 (breastplate, shield)",
+  "speed": "30 ft.",
+  "skills": "Athletics +6, Intimidation +2, Perception +2",
+  "senses": "passive Perception 12",
+  "languages": "Common, Dwarfish",
+  "abilities": {
+    "str": 18,
+    "dex": 7,
+    "con": 17,
+    "int": 10,
+    "wis": 11,
+    "cha": 11
+  }
+}

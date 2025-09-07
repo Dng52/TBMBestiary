@@ -1,0 +1,53 @@
+{
+  "name": "Void Dragon Wyrmling",
+  "tags": [
+    "medium",
+    "dragon",
+    "cr2",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "dragon",
+  "alignment": "chaotic neutral",
+  "cr": "2 (450 XP)",
+  "hp": "45 (6d8 + 18)",
+  "ac": "17 (natural armor)",
+  "speed": "30 ft., fly 60 ft. (hover)",
+  "saves": "Dex +4, Con +5, Wis +1, Cha +5",
+  "skills": "Perception +3, Stealth +2",
+  "immunities": "cold",
+  "senses": ", passive Perception 13",
+  "languages": "Common, Draconic, Void Speech",
+  "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 17,
+    "int": 12,
+    "wis": 9,
+    "cha": 17
+  },
+  "traits": [
+    {
+      "name": "Chill of the Void",
+      "desc": "Cold damage dealt by the void dragon ignores resistance to cold damage, but not cold immunity."
+    },
+    {
+      "name": "Void Dweller",
+      "desc": "As an ancient void dragon."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage plus 3 (1d6) cold damage."
+    },
+    {
+      "name": "Breath Weapons (Recharge 5-6)",
+      "desc": "The dragon uses one of the following breath weapons: * ***Gravitic Breath.*** The dragon exhales a 15-foot cube of powerful localized gravity, originating from the dragon. Falling damage in the area increases to 1d10 per 10 feet fallen. When a creature starts its turn within the area or enters it for the first time in a turn, including when the dragon creates the field, must make a DC 13 Dexterity saving throw. On a failure the creature is restrained. On a success the creature's speed is halved as long as it remains in the field. A restrained creature repeats the saving throw at the end of its turn. The field persists until the dragon's breath recharges, and it can't use gravitic breath twice consecutively. * ***Stellar Flare Breath.*** The dragon exhales star fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 10 (3d6) fire damage and 10 (3d6) radiant damage on a failed save, or half as much damage on a successful one."
+    },
+    {
+      "name": "Void Twist",
+      "desc": "When the dragon is hit by a ranged attack it can create a small rift in space to increase its AC by 2 against that attack. If the attack misses because of this increase the dragon can choose a creature within 30 feet to become the new target for that attack. Use the original attack roll to determine if the attack hits the new target."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "name": "Clawfish Companion",
+  "tags": [
+    "small",
+    "beast",
+    "companion",
+    "cr0",
+    "flee-mortals"
+  ],
+  "size": "Small",
+  "type": "beast",
+  "alignment": "unaligned",
+  "hp": "7 + seven times caregiver\u2019s level (number of d8 Hit Dice equal to their caregiver\u2019s level)",
+  "ac": "13 plus PB (natural armor)",
+  "speed": "30 ft., climb 30 ft., swim 40 ft.",
+  "saves": "Str +3 plus PB, Dex +1 plus PB",
+  "skills": "Perception +0 plus PB, Stealth +1 plus PB",
+  "senses": "passive Perception 10 plus PB",
+  "languages": "--",
+  "abilities": {
+    "str": 16,
+    "dex": 13,
+    "con": 12,
+    "int": 4,
+    "wis": 10,
+    "cha": 5
+  },
+  "traits": [
+    {
+      "name": "Hold Breath",
+      "desc": "The clawfish can hold their breath for 15 minutes."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Signature Attack (Bite)",
+      "desc": "Melee Weapon Attack: +3 plus PB to hit, reach 5 ft., one target. Hit: 1d6 plus PB piercing damage."
+    },
+    {
+      "name": "1st Level: Overwhelming Attack (2 Ferocity)",
+      "desc": "The clawfish makes a signature attack. On a hit, the attack deals an extra PB lightning damage, and the target can\u2019t take reactions until the start of the clawfish\u2019s next turn."
+    },
+    {
+      "name": "3rd Level: Coiling Claws (5 Ferocity)",
+      "desc": "The clawfish makes a signature attack against a Medium or smaller creature. On a hit, the target is grappled (escape DC 10 plus PB). Until this grapple ends, the target is restrained and the clawfish can\u2019t make a signature attack against another target."
+    },
+    {
+      "name": "5th Level: Lightning Bomb (8 Ferocity)",
+      "desc": "Each creature within 10 feet of the clawfish must make a DC 10 plus PB Dexterity saving throw, taking PBd8 lightning damage on a failed save, or half as much damage on a successful one."
+    },
+    {
+      "name": "Lightning Retaliation (Recharges after a Short or Long Rest)",
+      "desc": "When the clawfish or their caregiver is attacked by a creature the clawfish can see within 5 feet of them, the clawfish shocks the attacker. The attacker must make a DC 10 plus PB Dexterity saving throw, taking PBd6 lightning damage on a failed save, or half as much damage on a successful one."
+    }
+  ]
+}

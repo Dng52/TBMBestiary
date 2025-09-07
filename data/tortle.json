@@ -1,0 +1,33 @@
+{
+  "name": "Tortle",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/4",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful good",
+  "cr": "1/4 (50 XP)",
+  "hp": "22  (4d8 + 4)",
+  "ac": "17 (natural)",
+  "speed": "30 ft.",
+  "skills": "Athletics +4, Survival +3",
+  "senses": "passive Perception 11",
+  "languages": "Aquan, Common",
+  "abilities": {
+    "str": 15,
+    "dex": 10,
+    "con": 12,
+    "int": 11,
+    "wis": 13,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Hold Breath",
+      "desc": "The tortle can hold its breath for 1 hour."
+    }
+  ]
+}

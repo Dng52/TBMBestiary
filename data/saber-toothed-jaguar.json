@@ -1,0 +1,51 @@
+{
+  "name": "Saber-Toothed Jaguar",
+  "tags": [
+    "large",
+    "beast",
+    "cr4",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "4 (1,100 XP)",
+  "hp": "76 (9d10 + 27)",
+  "ac": "13",
+  "speed": "40 ft., climb 30 ft.",
+  "skills": "Perception +3, Stealth +7",
+  "senses": "passive Perception 13",
+  "languages": "--",
+  "abilities": {
+    "str": 20,
+    "dex": 16,
+    "con": 16,
+    "int": 3,
+    "wis": 12,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "desc": "The jaguar has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Pounce",
+      "desc": "If the jaguar moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 15 Strength saving throw or be knocked prone. If the target is prone, the jaguar can make one bite attack against it as a bonus action."
+    },
+    {
+      "name": "Surprise Attack",
+      "desc": "If the sabertooth jaguar surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 10 (3d6) damage from the attack."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 27 (4d10 + 5) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage."
+    }
+  ]
+}

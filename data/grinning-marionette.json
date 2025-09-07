@@ -1,0 +1,45 @@
+{
+  "name": "Grinning Marionette",
+  "tags": [
+    "tiny",
+    "construct",
+    "cr1/4",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Tiny",
+  "type": "construct",
+  "alignment": "chaotic evil",
+  "cr": "1/4 (50 XP)",
+  "hp": "10 (4d6 - 4)",
+  "ac": "12",
+  "speed": "30 ft.",
+  "skills": "Stealth +4",
+  "immunities": "poison",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 9",
+  "languages": "Infernal, telepathy 120 ft.",
+  "abilities": {
+    "str": 7,
+    "dex": 14,
+    "con": 8,
+    "int": 8,
+    "wis": 8,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Bound Servitude",
+      "desc": "All marionettes serve a Grim Puppeteer. This master can use its action to see through the marionette\u2019s eyes and the marionette can communicate with its master from anywhere. The marionette is forced to execute the orders of its master to the best of its abilities. The marionette becomes a mundane doll if its master is killed."
+    },
+    {
+      "name": "False Appearance",
+      "desc": "While the marionette remains motionless, it is indistinguishable from an ordinary doll."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Draining Touch",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage and the target must succeed on a DC 11 Constitution saving throw or take an additional 2 (1d4) necrotic damage."
+    }
+  ]
+}

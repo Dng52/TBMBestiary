@@ -1,0 +1,45 @@
+{
+  "name": "Edimmu",
+  "tags": [
+    "medium",
+    "undead",
+    "cr4",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "chaotic evil",
+  "cr": "4 (1100 XP)",
+  "hp": "75 (10d8 + 30)",
+  "ac": "15",
+  "speed": "0 ft., fly 60 ft. (hover)",
+  "immunities": "necrotic, poison",
+  "resistance": "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "charmed, exhaustion, grappled, frightened, paralyzed, petrified, poisoned, prone, restrained, unconscious",
+  "senses": "blindsight 60 ft., passive Perception 11",
+  "languages": "Common but can't speak",
+  "abilities": {
+    "str": 1,
+    "dex": 19,
+    "con": 16,
+    "int": 12,
+    "wis": 13,
+    "cha": 13
+  },
+  "traits": [
+    {
+      "name": "Rejuvenation",
+      "desc": "If destroyed, an edimmu rises again in 2d4 days. Permanently destroying one requires properly burying its mortal remains in consecrated or hallowed ground. Edimmus rarely venture more than a mile from the place of their death."
+    },
+    {
+      "name": "Incorporeal Movement",
+      "desc": "The edimmu can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Water Siphon",
+      "desc": "Melee Spell Attack: +7 to hit, reach 5 ft., one creature. Hit: 21 (6d6) necrotic damage. The target must succeed on a DC 14 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken and it is stunned for 1 minute and gains one level of exhaustion. A stunned creature repeats the saving throw at the end of each of its turns, ending the stun on itself on a success. The hit point reduction lasts until the creature finishes a long rest and drinks abundant water or until it is affected by greater restoration or comparable magic. The target dies if this effect reduces its hit point maximum to 0."
+    }
+  ]
+}

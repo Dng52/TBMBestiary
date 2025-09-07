@@ -1,0 +1,86 @@
+{
+  "name": "Ravager Spawn (Crawler Form)",
+  "tags": [
+    "huge",
+    "monstrosity",
+    "cr23",
+    "tome-of-horrors"
+  ],
+  "size": "Huge",
+  "type": "monstrosity",
+  "alignment": "neutral",
+  "cr": "23 (50,000 XP)",
+  "hp": "558 (36d12 + 324)",
+  "ac": "25 (natural armor)",
+  "speed": "40 ft., burrow 10 ft.",
+  "saves": "Dex +12, Con +16",
+  "skills": "Perception +14",
+  "resistance": "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "charmed, frightened, paralyzed, petrified, poisoned",
+  "senses": "darkvision 120 ft., tremorsense 60 ft., passive Perception 24",
+  "languages": "--",
+  "abilities": {
+    "str": 27,
+    "dex": 20,
+    "con": 29,
+    "int": 5,
+    "wis": 24,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Charge",
+      "desc": "If the Ravager moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, the target must succeed on a DC 25 Strength saving throw or be knocked prone. If the target is prone, the Ravager can make one claw attack against it as a bonus action."
+    },
+    {
+      "name": "Form-Shifting",
+      "desc": "The Ravager can physically alter its physiology to take on one of the three listed forms: the crawler, the brawler, or the flier. Doing so takes one minute, and during this period it cannot take any other actions, though it is not considered incapacitated."
+    },
+    {
+      "name": "Improved Critical",
+      "desc": "The Ravager\u2019s bite and claws score a critical hit on a roll of 19 or 20."
+    },
+    {
+      "name": "Legendary Resistance (3/day)",
+      "desc": "If the Ravager fails a saving throw, it can choose to succeed instead."
+    },
+    {
+      "name": "Magic Disruption",
+      "desc": "Every time the Ravager comes into contact with magical effects, there is a chance that it disrupts it. This effect functions as per the dispel magic spell cast using a 5th level spell slot with a +5 spell casting ability modifier."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The Ravager\u2019s melee attacks are magical."
+    },
+    {
+      "name": "Rampage",
+      "desc": "When the Ravager reduces a creature to 0 hit points with a melee attack on its turn, the Ravager can take a bonus action to move up to half its speed and make a bite attack."
+    },
+    {
+      "name": "Regeneration",
+      "desc": "The Ravager regains 10 hit points at the start of its turn. If the Ravager takes damage from an artifact or from a legendary action, this trait doesn\u2019t function at the start of the Ravager\u2019s next turn. The Ravager only dies if it starts its turn at 0 hit points and doesn\u2019t regenerate."
+    },
+    {
+      "name": "Tunneler",
+      "desc": "The Ravager can burrow through solid rock at half of its burrowing speed, leaving a 10 foot-wide, 16-foot-high tunnel in its wake."
+    },
+    {
+      "name": "Vampiric Healing",
+      "desc": "Whenever the Ravager hits with a melee attack, it regains hit points equal to half the damage it inflicts on its opponent, up to its hit point maximum."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The Ravager makes one bite and four claw attacks."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 29 (6d6 + 8) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 36 (8d6 + 8) slashing damage."
+    }
+  ]
+}

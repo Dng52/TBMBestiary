@@ -1,0 +1,49 @@
+{
+  "name": "Guardian Naga",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr10",
+    "monster-manual"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "lawful good",
+  "cr": "10 (5,900 XP)",
+  "hp": "127 (15d10+45)",
+  "ac": "18 (natural armor)",
+  "speed": "40 ft.",
+  "saves": "Dex +8, Con +7, Int +7, Wis +8, Cha +8",
+  "immunities": "poison",
+  "conimmunities": "charmed, poisoned",
+  "senses": "darkvision 60 ft.",
+  "languages": "Celestial, Common",
+  "abilities": {
+    "str": 19,
+    "dex": 18,
+    "con": 16,
+    "int": 16,
+    "wis": 19,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Rejuvenation",
+      "desc": "If it dies, the naga returns to life in 1d6 days and regains all its hit points. Only a wish spell can prevent this trait from functioning."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The naga is an 11th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 16, +8 to hit with spell attacks), and it needs only verbal components to cast its spells. It has the following cleric spells prepared: * Cantrips (at will): <i>mending, sacred flame, thaumaturgy</i> * 1st level (4 slots): <i>command, cure wounds, shield of faith</i> * 2nd level (3 slots): <i>calm emotions, hold person</i> * 3rd level (3 slots): <i>bestow curse, clairvoyance</i> * 4th level (3 slots): <i>banishment, freedom of movement</i> * 5th level (2 slots): <i>flame strike, geas</i> * 6th level (1 slot): <i>true seeing</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one creature. Hit: 8 (1d8 + 4) piercing damage, and the target must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one."
+    },
+    {
+      "name": "Spit Poison",
+      "desc": "Ranged Weapon Attack: +8 to hit, range 15/30 ft., one creature. Hit: The target must make a DC 15 Constitution saving throw, taking 45 (10d8) poison damage on a failed save, or half as much damage on a successful one."
+    }
+  ]
+}

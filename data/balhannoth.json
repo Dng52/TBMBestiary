@@ -1,0 +1,35 @@
+{
+  "name": "Balhannoth",
+  "tags": [
+    "large",
+    "aberration",
+    "cr11",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Large",
+  "type": "aberration",
+  "alignment": "chaotic evil",
+  "cr": "11 (7200 XP)",
+  "hp": "114  (12d10 + 48)",
+  "ac": "17 (natural armor)",
+  "speed": "25 ft., climb 25 ft.",
+  "saves": "Con +8",
+  "skills": "Perception +6",
+  "conimmunities": "blinded",
+  "senses": "blindsight 500 ft. (blind beyond this radius), passive Perception 16",
+  "languages": "understands Deep Speech, telepathy 1 mile",
+  "abilities": {
+    "str": 17,
+    "dex": 8,
+    "con": 18,
+    "int": 6,
+    "wis": 15,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Legendary Resistance (2/Day)",
+      "desc": "If the balhannoth fails a saving throw, it can choose to succeed instead."
+    }
+  ]
+}

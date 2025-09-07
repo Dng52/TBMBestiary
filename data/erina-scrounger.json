@@ -1,0 +1,51 @@
+{
+  "name": "Erina Scrounger",
+  "tags": [
+    "small",
+    "humanoid",
+    "cr1/4",
+    "tome-of-beasts"
+  ],
+  "size": "Small",
+  "type": "humanoid",
+  "alignment": "neutral",
+  "cr": "1/4 (50 XP)",
+  "hp": "22 (4d6 + 8)",
+  "ac": "12 (leather armor)",
+  "speed": "20 ft., burrow 20 ft.",
+  "resistance": "poison",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Common, Erina",
+  "abilities": {
+    "str": 9,
+    "dex": 12,
+    "con": 14,
+    "int": 13,
+    "wis": 10,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "desc": "The erina has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Hardy",
+      "desc": "The erina has advantage on saving throws against poison."
+    },
+    {
+      "name": "Spines",
+      "desc": "An enemy who hits the erina with a melee attack while within 5 feet of it takes 2 (1d4) piercing damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage."
+    },
+    {
+      "name": "Sling",
+      "desc": "Ranged Weapon Attack: +3 to hit, range 30/120 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage."
+    }
+  ]
+}

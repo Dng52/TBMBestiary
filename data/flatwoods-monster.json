@@ -1,0 +1,58 @@
+{
+  "name": "Flatwoods Monster",
+  "tags": [
+    "large",
+    "aberration",
+    "cr7",
+    "homebrew"
+  ],
+  "size": "Large",
+  "type": "aberration",
+  "alignment": "lawful evil",
+  "cr": "7 (2,900 XP)",
+  "hp": "170 (20d10 + 60)",
+  "ac": "17 (natural armor)",
+  "speed": "30 ft., fly 40 ft. (hover)",
+  "saves": "Con +6, Int +7",
+  "skills": "Investigation +7, Perception +3, Stealth +8",
+  "resistance": "psychic; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "charmed, frightened",
+  "senses": "blindsight 60 ft., darkvision 120 ft., passive Perception 13",
+  "languages": "Deep Speech",
+  "abilities": {
+    "str": 10,
+    "dex": 20,
+    "con": 16,
+    "int": 18,
+    "wis": 11,
+    "cha": 17
+  },
+  "traits": [
+    {
+      "name": "Keen Sight",
+      "desc": "The Flatwoods Monster has advantage on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Alien Mind",
+      "desc": "The Flatwoods Monster's thoughts are unreadable, and any creature attempting to mentally interact with it must make a DC 15 Intelligence saving throw or take 10 (2d6 + 3) psychic damage."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The Flatwoods Monster makes two claw and one eye ray attack, or two eye ray attacks."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee weapon attack, +8 to hit, reach 5 ft., one target. Hit: 18 (2d10 + 7) piercing damage, plus 7 (2d6) poison damage."
+    },
+    {
+      "name": "Eye Ray",
+      "desc": "Ranged weapon attack, +8 to hit, reach 30 ft., one target. Hit: 25 (5d8 + 3) radiant damage."
+    },
+    {
+      "name": "Shriek (Recharge 5-6)",
+      "desc": "All other creatures within 30 feet of the Flatwoods Monster that can hear it must make a DC 15 Wisdom saving throw, becoming frightened on a failure.  At the end of each of its turns, a creature frightened in this way can repeat this saving throw, ending the effect on a success."
+    }
+  ]
+}

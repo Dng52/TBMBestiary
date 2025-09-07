@@ -1,0 +1,57 @@
+{
+  "name": "Phoenix Hatchling",
+  "tags": [
+    "small",
+    "elemental",
+    "cr1",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Small",
+  "type": "elemental",
+  "alignment": "lawful good",
+  "cr": "1 (200 XP)",
+  "hp": "27 (5d6 + 10)",
+  "ac": "13",
+  "speed": "10 ft., fly 60 ft.",
+  "saves": "Dex +4, Int +4, Cha +4",
+  "skills": "Perception +4",
+  "immunities": "fire",
+  "senses": "passive Perception 14",
+  "languages": "Understands Common and Ignan but can't speak",
+  "abilities": {
+    "str": 12,
+    "dex": 15,
+    "con": 14,
+    "int": 15,
+    "wis": 14,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Blazing Feathers",
+      "desc": "The feathers that cover the phoenix's body are constantly ablaze. These flames shed bright light in a 10-foot radius and dim light for an additional 10 feet. Additionally, a creature that touches the phoenix or hits it with a melee attack while within 5 feet of it takes 2 (1d4) fire damage."
+    },
+    {
+      "name": "Flyby",
+      "desc": "The phoenix doesn't provoke attacks of opportunity when it flies out of an enemy's reach."
+    },
+    {
+      "name": "Keen Sight",
+      "desc": "The phoenix has advantage on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The phoenix makes two attacks: one with its beak and one with its talons."
+    },
+    {
+      "name": "Beak",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage plus 2 (1d4) fire damage."
+    },
+    {
+      "name": "Talons",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (2d4 + 2) slashing damage plus 2 (1d4) fire damage."
+    }
+  ]
+}

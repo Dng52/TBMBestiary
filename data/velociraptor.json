@@ -1,0 +1,45 @@
+{
+  "name": "Velociraptor",
+  "tags": [
+    "tiny",
+    "beast",
+    "cr1/4",
+    "volos-guide"
+  ],
+  "size": "Tiny",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/4 (50 XP)",
+  "hp": "10 (3d4+3)",
+  "ac": "13 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Perception +3",
+  "abilities": {
+    "str": 6,
+    "dex": 14,
+    "con": 13,
+    "int": 4,
+    "wis": 12,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Pack Tactics",
+      "desc": "The velociraptor has advantage on an attack roll against a creature if at least one of the velociraptor's allies is within 5 feet of the creature and the ally isn't incapacitated."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The velociraptor makes two attacks: one with its bite and one with its claws."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 5 (1d6+2) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4+2) slashing damage."
+    }
+  ]
+}

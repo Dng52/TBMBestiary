@@ -1,0 +1,59 @@
+{
+  "name": "Mahoru",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr3",
+    "tome-of-beasts"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "3 (700 XP)",
+  "hp": "91 (14d8 + 28)",
+  "ac": "15 (natural armor)",
+  "speed": "10 ft., swim 60 ft.",
+  "skills": "Perception +3, Stealth +6",
+  "senses": "darkvision 60 ft., passive Perception 13",
+  "languages": "--",
+  "abilities": {
+    "str": 18,
+    "dex": 19,
+    "con": 14,
+    "int": 3,
+    "wis": 12,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The mahoru can breathe air and water."
+    },
+    {
+      "name": "Keen Sight and Smell",
+      "desc": "The mahoru has advantage on Wisdom (Perception) checks that rely on sight or smell."
+    },
+    {
+      "name": "Pack Tactics",
+      "desc": "The mahoru has advantage on attack rolls against a creature if at least one of the mahoru's allies is within 5 feet of the creature and the ally isn't incapacitated."
+    },
+    {
+      "name": "Blood Frenzy",
+      "desc": "The mahoru has advantage on melee attack rolls against any creature that isn't at maximum hit points."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 20 (3d10 + 4) slashing damage."
+    },
+    {
+      "name": "Roar",
+      "desc": "When a mahoru roars all creatures with hearing within 30 feet of it must succeed on a DC 14 Wisdom saving throw or become frightened until the end of the mahoru's next turn. If the target fails the saving throw by 5 or more, it's also paralyzed for the same duration. A target that succeeds on the saving throw is immune to the Roar of all mahoru for the next 24 hours."
+    },
+    {
+      "name": "Vorpal Bite",
+      "desc": "A mahoru's saw-like jaws are excel at dismembering prey. When the mahoru scores a critical hit, the target must succeed on a DC 14 Strength saving throw or lose an appendage. Roll a d12 and consult the following table for the result: * 1-2: right hand * 3-4: left hand * 5-6: right food * 7-8: left foot * 9: right forearm * 10: left forearm * 11: right lower leg * 12: left lower leg"
+    }
+  ]
+}

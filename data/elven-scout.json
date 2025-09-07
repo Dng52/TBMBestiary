@@ -1,0 +1,51 @@
+{
+  "name": "Elven Scout",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr1/2",
+    "out-of-the-box-5e"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic good",
+  "cr": "1/2 (100 XP)",
+  "hp": "16 (3d8 + 3)",
+  "ac": "14 (leather armor)",
+  "speed": "30 ft.",
+  "skills": "Nature +4, Perception +6, Stealth +7, Survival +6",
+  "senses": "darkvision 60 ft., Passive Perception 16",
+  "languages": "Common, Elvish",
+  "abilities": {
+    "str": 11,
+    "dex": 16,
+    "con": 12,
+    "int": 11,
+    "wis": 14,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Fey Ancestry",
+      "desc": "The elven scout has advantage on saving throws against being charmed, and magic can\u2019t put them to sleep."
+    },
+    {
+      "name": "Keen Hearing and Sight",
+      "desc": "The elven scout has advantage on Wisdom (Perception) checks that rely on hearing or sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The elven scout makes two melee attacks or two ranged attacks."
+    },
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 +2) piercing damage."
+    },
+    {
+      "name": "Longbow",
+      "desc": "Ranged Weapon Attack: +4 to hit, ranged 150/600 ft., one target. Hit: 6 (1d8 +2) piercing damage."
+    }
+  ]
+}

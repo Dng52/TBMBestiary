@@ -1,0 +1,52 @@
+{
+  "name": "Hellhound Alpha",
+  "tags": [
+    "medium",
+    "fiend",
+    "cr4",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "fiend",
+  "alignment": "lawful evil",
+  "cr": "4 (1,100 XP)",
+  "hp": "75 (10d10 + 20)",
+  "ac": "15 (natural armor)",
+  "speed": "50 ft.",
+  "skills": "Perception +6",
+  "immunities": "fire",
+  "senses": "darkvision 60 ft., passive Perception 16",
+  "languages": "Understands Infernal and Ignan, but cannot speak",
+  "abilities": {
+    "str": 18,
+    "dex": 12,
+    "con": 14,
+    "int": 8,
+    "wis": 14,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Keen Hearing and Smell",
+      "desc": "The hound has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+    },
+    {
+      "name": "Pack Tactics",
+      "desc": "The hound has advantage on an attack roll against a creature if at least one of the hound\u2019s allies is within 5 feet of the creature and the ally isn\u2019t incapacitated."
+    },
+    {
+      "name": "Flame Charge",
+      "desc": "If the hound moves at least 10 feet straight toward a target and then hits it with a bite attack on the same turn, the target takes an extra 13 (3d8) fire damage and must succeed on a DC 13 Strength saving throw or be knocked prone."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5ft., one target. Hit: 9 (1d10 + 4) piercing damage plus 13 (3d8) fire damage."
+    },
+    {
+      "name": "Horrifying Howl (1/Day)",
+      "desc": "Each creature of the hound\u2019s choice that is within 60 feet and is not deafened must succeed on a DC 12 Wisdom saving throw or become frightened for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the fear on a success."
+    }
+  ]
+}

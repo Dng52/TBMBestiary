@@ -1,0 +1,57 @@
+{
+  "name": "Alehouse Drake",
+  "tags": [
+    "tiny",
+    "dragon",
+    "cr1/2",
+    "tome-of-beasts"
+  ],
+  "size": "Tiny",
+  "type": "dragon",
+  "alignment": "chaotic neutral",
+  "cr": "1/2 (100 XP)",
+  "hp": "65 (10d4 + 40)",
+  "ac": "13",
+  "speed": "40 ft., fly 80 ft.",
+  "saves": "Dex +5",
+  "skills": "Deception +5, Insight +3, Persuasion +5",
+  "conimmunities": "paralyzed, unconscious",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "Common, Draconic",
+  "abilities": {
+    "str": 7,
+    "dex": 16,
+    "con": 19,
+    "int": 11,
+    "wis": 12,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The drake's innate casting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It can innately cast the following spells, requiring no material components: * At will: <i>friends, vicious mockery</i> * 5/day each: <i>calm emotions, dissonant whispers, ray of sickness, hideous laughter</i> * 3/day each: <i>confusion, invisibility</i>"
+    },
+    {
+      "name": "Forgetful Spellcasting",
+      "desc": "When a creature fails an Intelligence, Wisdom, or Charisma saving throw against a spell cast by an alehouse drake, the creature immediately forgets the source of the spellcasting."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (2d4 + 3) slashing damage."
+    },
+    {
+      "name": "Breath Weapon (Recharge 5-6)",
+      "desc": "An alehouse drake can burp a cloud of intoxicating gas in a 15-foot cone. A creature caught in the cloud becomes poisoned for 1 minute and must make a successful DC 14 Constitution saving throw or become stunned for 1d6 rounds."
+    },
+    {
+      "name": "Discombobulating Touch",
+      "desc": "An alehouse drake can make a touch attack that grants its target +3 to Dexterity-based skill checks and melee attacks but also induces confusion as per the spell. This effect lasts for 1d4 rounds. A successful DC 13 Charisma saving throw negates this effect."
+    }
+  ]
+}

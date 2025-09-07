@@ -1,0 +1,68 @@
+{
+  "name": "Roving Ruffian",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr5",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "5 (1,800 XP)",
+  "hp": "92 (7d12 + 3d10 + 30)",
+  "ac": "18 (unarmored defense, shield)",
+  "speed": "30 ft.",
+  "saves": "Str +8, Con +7",
+  "skills": "Acrobatics +7, Animal Handling +6, Athletics +8, Perception +6",
+  "senses": "passive Perception 16",
+  "languages": "Any two languages",
+  "abilities": {
+    "str": 18,
+    "dex": 17,
+    "con": 16,
+    "int": 10,
+    "wis": 14,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Danger Sense",
+      "desc": "The ruffian has advantage on Dexterity saving throws."
+    },
+    {
+      "name": "Dueling Fighting Style",
+      "desc": "The ruffian gains a +2 bonus to damage rolls while wielding a melee weapon in one hand and no other weapons (included in the attack)."
+    },
+    {
+      "name": "Horde Breaker (1/Turn)",
+      "desc": "When the ruffian makes a weapon attack, it can make another attack roll with the same weapon against a different creature within 5 feet of the original target and within range of its weapon."
+    },
+    {
+      "name": "Rage (4/Day)",
+      "desc": "As a bonus action, the ruffian can enter a rage for 1 minute. While raging, the ruffian gains the following benefits: * Advantage on Strength checks and Strength saving throws * Melee weapon attacks deal an addition 2 damage. * The ruffian gains resistance to bludgeoning, piercing, and slashing damage."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The ruffian is a 3th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). The ruffian has the following ranger spells prepared: * 1st level (2 slots): <i>cure wounds, jump, speak with animals</i>"
+    },
+    {
+      "name": "Unarmored Defense",
+      "desc": "While not wearing armor, the ruffian's AC includes its Constitution modifier."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The ruffian makes three battleaxe attacks or two longbow attacks."
+    },
+    {
+      "name": "Battleaxe",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 10 (1d8 + 6) slashing damage, or 12 (1d8 + 8) slashing damage is used while raging."
+    },
+    {
+      "name": "Longbow",
+      "desc": "Ranged Weapon Attack: +7 to hit, range 150/600 ft., one target. Hit: 7 (1d8 + 3) piercing damage."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "Griffon",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr2",
+    "monster-manual"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "59 (7d10+21)",
+  "ac": "12",
+  "speed": "30 ft., fly 80 ft.",
+  "skills": "Perception +5",
+  "senses": "darkvision 60 ft.",
+  "abilities": {
+    "str": 18,
+    "dex": 15,
+    "con": 16,
+    "int": 2,
+    "wis": 13,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Keen Sight",
+      "desc": "The griffon has advantage on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The griffon makes two attacks: one with its beak and one with its claws."
+    },
+    {
+      "name": "Beak",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 8 (1d8 + 4) piercing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) slashing damage."
+    }
+  ]
+}

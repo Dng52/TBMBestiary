@@ -1,0 +1,47 @@
+{
+  "name": "Venomous Mummy",
+  "tags": [
+    "medium",
+    "undead",
+    "cr3",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "lawful evil",
+  "cr": "3 (700 XP)",
+  "hp": "58 (9d8 + 18)",
+  "ac": "11 (natural armor)",
+  "speed": "20 ft.",
+  "saves": "Wis +2",
+  "immunities": "necrotic, poison",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons",
+  "vulnerability": "fire",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, poisoned",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "the languages it knew in life",
+  "abilities": {
+    "str": 16,
+    "dex": 8,
+    "con": 15,
+    "int": 7,
+    "wis": 10,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Selket's Venom",
+      "desc": "The venomous mummy's body and wrappings are magically imbued with substances that are highly toxic. Any creature that comes in physical contact with the venomous mummy (e.g., touching the mummy barehanded, grappling, using a bite attack) must succeed on a DC 12 Constitution saving throw or be poisoned with Selket's venom. The poisoned target takes 3 (1d6) poison damage every 10 minutes. Selket's venom is a curse, so it lasts until ended by the <i>remove curse</i> spell or comparable magic."
+    },
+    {
+      "name": "Toxic Smoke",
+      "desc": "The venomous mummy's poison-imbued wrappings and flesh create toxic fumes when burned. If a venomous mummy takes fire damage, it is surrounded by a cloud of toxic smoke in a 10-foot radius. This cloud persists for one full round. A creature that starts its turn inside the cloud or enters it for the first time on its turn must make a DC 12 Constitution saving throw, taking 14 (4d6) poison damage on a failure, or half damage on a success."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Venomous Fist",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage plus 10 (3d6) necrotic damage. If the target is a creature, it must succeed on a DC 12 Constitution saving throw or be affected by the Selket's venom curse (see above)."
+    }
+  ]
+}

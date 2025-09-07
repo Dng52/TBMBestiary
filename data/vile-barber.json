@@ -1,0 +1,69 @@
+{
+  "name": "Vile Barber",
+  "tags": [
+    "small",
+    "fey",
+    "cr2",
+    "tome-of-beasts"
+  ],
+  "size": "Small",
+  "type": "fey",
+  "alignment": "chaotic evil",
+  "cr": "2 (450 XP)",
+  "hp": "28 (8d6)",
+  "ac": "15 (leather armor)",
+  "speed": "30 ft.",
+  "skills": "Athletics +3, Stealth +6",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered or made of cold iron",
+  "conimmunities": "frightened",
+  "senses": "60 ft., passive Perception 9",
+  "languages": "Common, Goblin, Sylvan, Umbral",
+  "abilities": {
+    "str": 12,
+    "dex": 18,
+    "con": 10,
+    "int": 10,
+    "wis": 8,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Invasive",
+      "desc": "The vile barber can enter, move through, or even remain in a hostile creature's space regardless of the creature's size, without penalty."
+    },
+    {
+      "name": "Close-in Slasher",
+      "desc": "The vile barber has advantage on attack rolls against any creature in the same space with it."
+    },
+    {
+      "name": "Inhumanly Quick",
+      "desc": "The vile barber can take two bonus actions on its turn, instead of one. Each bonus action must be different; it can't use the same bonus action twice in a single turn."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The vile barber makes two attacks with its straight razor."
+    },
+    {
+      "name": "Straight Razor",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) slashing damage."
+    },
+    {
+      "name": "Unclean Cut",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature that is grappled by the vile barber, incapacitated, or restrained. Hit: 6 (1d4 + 4) slashing damage plus 7 (2d6) necrotic damage. The creature and all its allies who see this attack must make successful DC 15 Wisdom saving throws or become frightened for 1d4 rounds."
+    },
+    {
+      "name": "Nimble Escape",
+      "desc": "The vile barber takes the Disengage or Hide action."
+    },
+    {
+      "name": "Pilfer",
+      "desc": "The vile barber takes the Use an Object action or makes a Dexterity (Sleight of Hand) check."
+    },
+    {
+      "name": "Shadow Step",
+      "desc": "The vile barber magically teleports from an area of dim light or darkness it currently occupies, along with any equipment it is wearing or carrying, up to 80 feet to any other area of dim light or darkness it can see. The barber then has advantage on the first melee attack it makes before the end of the turn."
+    }
+  ]
+}

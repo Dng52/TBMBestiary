@@ -1,0 +1,45 @@
+{
+  "name": "Amnizu",
+  "tags": [
+    "medium",
+    "fiend",
+    "cr18",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "fiend",
+  "alignment": "lawful evil",
+  "cr": "18 (20,000 XP)",
+  "hp": "202  (27d8 + 81)",
+  "ac": "21 (natural armor)",
+  "speed": "30 ft., fly 40 ft.",
+  "saves": "Dex +7, Con +9, Wis +7, Cha +10",
+  "skills": "Perception +7",
+  "immunities": "fire, poison",
+  "resistance": "cold; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered",
+  "conimmunities": "charmed, poisoned",
+  "senses": "darkvision 120 ft., passive Perception 17",
+  "languages": "Common, Infernal, telepathy 1,000 ft.",
+  "abilities": {
+    "str": 11,
+    "dex": 13,
+    "con": 16,
+    "int": 20,
+    "wis": 12,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Devil's Sight",
+      "desc": "Magical darkness doesn't impede the amnizu's darkvision."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The amnizu's innate spellcasting ability is Intelligence (spell save DC 19, +11 to hit with spell attacks). The amnizu can innately cast the following spells, requiring no material components: * At will: <i>charm person, command</i> * 3/day each: <i>dominate person, fireball</i> * 1/day each: <i>dominate monster, feeblemind</i>"
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The amnizu has advantage on saving throws against spells and other magical effects."
+    }
+  ]
+}

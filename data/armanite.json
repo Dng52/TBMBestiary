@@ -1,0 +1,39 @@
+{
+  "name": "Armanite",
+  "tags": [
+    "large",
+    "fiend",
+    "cr7",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Large",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "7 (2900 XP)",
+  "hp": "84  (8d10 + 40)",
+  "ac": "16 (natural armor)",
+  "speed": "60 ft.",
+  "immunities": "poison",
+  "resistance": "cold, fire, lightning",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 120 ft., passive Perception 11",
+  "languages": "Abyssal, telepathy 120 ft.",
+  "abilities": {
+    "str": 21,
+    "dex": 18,
+    "con": 21,
+    "int": 8,
+    "wis": 12,
+    "cha": 13
+  },
+  "traits": [
+    {
+      "name": "Magic Resistance",
+      "desc": "The armanite has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The armanite's weapon attacks are magical."
+    }
+  ]
+}

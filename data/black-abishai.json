@@ -1,0 +1,49 @@
+{
+  "name": "Black Abishai",
+  "tags": [
+    "medium",
+    "fiend",
+    "cr7",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "fiend",
+  "alignment": "lawful evil",
+  "cr": "7 (2900 XP)",
+  "hp": "58  (9d8 + 18)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft., fly 40 ft.",
+  "saves": "Dex +6, Wis +6",
+  "skills": "Perception +6, Stealth +6",
+  "immunities": "acid, fire, poison",
+  "resistance": "cold; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 120 ft., passive Perception 16",
+  "languages": "Draconic, Infernal, telepathy 120 ft.",
+  "abilities": {
+    "str": 14,
+    "dex": 17,
+    "con": 14,
+    "int": 13,
+    "wis": 16,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Devil's Sight",
+      "desc": "Magical darkness doesn't impede the abishai's darkvision."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The abishai has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The abishai's weapon attacks are magical."
+    },
+    {
+      "name": "Shadow Stealth",
+      "desc": "While in dim light or darkness, the abishai can take the Hide action as a bonus action."
+    }
+  ]
+}

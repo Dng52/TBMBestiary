@@ -1,0 +1,46 @@
+{
+  "name": "Stone Delver",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr7",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "chaotic evil",
+  "cr": "7 (2,900 XP)",
+  "hp": "114 (12d10 + 48)",
+  "ac": "19 (natural armor)",
+  "speed": "30 ft., burrow 30 ft.",
+  "senses": "darkvision 120 ft., tremorsense 120 ft., passive Perception 10",
+  "languages": "Terran",
+  "abilities": {
+    "str": 21,
+    "dex": 14,
+    "con": 18,
+    "int": 7,
+    "wis": 10,
+    "cha": 9
+  },
+  "traits": [
+    {
+      "name": "Six Limb Charge",
+      "desc": "If the stone delver moves at least 20 feet straight towards a target and then hits it with a claw attack on the same turn, the target takes an extra 10 (3d6) slashing damage. If the target is a creature, it must succeed on a DC 16 Strength saving throw or be knocked prone. If the stone delver hit its initial target on the same turn and knocked it prone, it can use a bonus action to make up to four claw attacks against targets that are adjacent to the initial target."
+    },
+    {
+      "name": "Tunneler",
+      "desc": "The stone delver can burrow through solid stone at half its burrowing speed leaving a 5 foot wide, 10-foot-high tunnel in its wake."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The stone delver makes three claw attacks."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 10 (1d10+5) slashing damage."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "name": "Allip",
+  "tags": [
+    "medium",
+    "undead",
+    "cr5",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "5 (1800 XP)",
+  "hp": "40  (9d8)",
+  "ac": "13",
+  "speed": "0 ft., fly 40 ft. (hover)",
+  "saves": "Int +6, Wis +5",
+  "skills": "Perception +5, Stealth +6",
+  "immunities": "cold, necrotic, poison",
+  "resistance": "acid, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "charmed, exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
+  "senses": "darkvision 60 ft., passive Perception 15",
+  "languages": "the languages it knew in life",
+  "abilities": {
+    "str": 6,
+    "dex": 17,
+    "con": 10,
+    "int": 17,
+    "wis": 15,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Incorporeal Movement",
+      "desc": "The allip can move through other creatures and objects as if they were difficult terrain. It takes 5 (1d10) force damage if it ends its turn inside an object."
+    }
+  ]
+}

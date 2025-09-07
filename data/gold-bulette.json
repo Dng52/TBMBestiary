@@ -1,0 +1,64 @@
+{
+  "name": "Gold Bulette",
+  "tags": [
+    "huge",
+    "monstrosity",
+    "cr17",
+    "tome-of-horrors"
+  ],
+  "size": "Huge",
+  "type": "monstrosity",
+  "alignment": "chaotic good",
+  "cr": "17 (18,000 XP)",
+  "hp": "232 (16d12 + 128)",
+  "ac": "20 (natural armor)",
+  "speed": "60 ft., burrow 60 ft.",
+  "saves": "Dex +9, Wis +8",
+  "skills": "Perception +14",
+  "senses": "truesight 120 ft., passive Perception 24",
+  "languages": "Common, Draconic, Dwarven, Elven, Goblin, Orc",
+  "abilities": {
+    "str": 24,
+    "dex": 16,
+    "con": 26,
+    "int": 18,
+    "wis": 14,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Detect Evil and Good",
+      "desc": "The bulette knows if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of it and where the creature is located. The bulette also knows if there is a place or object within 30 feet of it that has been consecrated or desecrated."
+    },
+    {
+      "name": "Goldbringer",
+      "desc": "If killed, the body of a gold bulette flashes brightly in a nova light that blinds all who can see it permanently (or until cured), which its body condenses into a gold-plated sandstone statue-like version of itself. Stripping off its outer plating and breaking up its remaining body will yield the equivalent of 50,000 gold pieces and 25\u201350 gemstones of varying value."
+    },
+    {
+      "name": "Karmic Curse",
+      "desc": "Killing a gold bulette permanently entangles all creatures present at the event with tiny planar threads binding them to both the positive and negative planes of existence. This curse will manifest itself as advantage or disadvantage on all future saving throws made by the affected bulette slayers, with a 50% chance at the time each saving throw is made of the effect being beneficial or baleful. The curse can only be removed by the successful casting of a remove curse spell performed while on the astral plane."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The bulette\u2019s innate spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). It can cast the following spells at will without requiring material components: disintegrate, fireball, fly, heal, lightning bolt, magic missile, teleport."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The bulette has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Multi-Planar Connection",
+      "desc": "Because their arcane natures tie gold bulettes to both the positive and negative planes, they also simultaneously exist on both of those planes as either a mediumsized globule of light or shadow, respectively."
+    },
+    {
+      "name": "Unlimited Spell Use",
+      "desc": "The gold bulette has multiple spells encoded into its brain stem, including (but not limited to) the spells listed above. Because the gold bulette\u2019s multi-planar connection acts as a source of magic and power, it can use each spell as many times per days as desired."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 59 (8d12 + 7) piercing damage."
+    }
+  ]
+}

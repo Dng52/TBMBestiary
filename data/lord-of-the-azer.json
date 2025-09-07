@@ -1,0 +1,66 @@
+{
+  "name": "Lord of the Azer",
+  "tags": [
+    "large",
+    "elemental",
+    "cr8",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Large",
+  "type": "elemental",
+  "alignment": "lawful evil",
+  "cr": "8 (3,900 XP)",
+  "hp": "130 (16d10 + 42)",
+  "ac": "18 (plate mail)",
+  "speed": "30 ft.",
+  "saves": "Str +8, Con +6",
+  "skills": "Athletics +8, Arcana +4, Intimidation +5",
+  "immunities": "fire, poison",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 90 ft., passive Perception 10",
+  "languages": "Ignan, Common",
+  "abilities": {
+    "str": 20,
+    "dex": 10,
+    "con": 16,
+    "int": 13,
+    "wis": 10,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Legendary Resistance (1/Day)",
+      "desc": "If the azer fails a saving throw, it can choose to succeed instead. This effect is granted by the Azer\u2019s crown, so it if it somehow lost, this ability cannot be used."
+    },
+    {
+      "name": "Heated Body",
+      "desc": "A creature that touches the azer or hits it with a melee attack while within 5 feet of it takes 6 (1d12) fire damage."
+    },
+    {
+      "name": "Heated Weapons",
+      "desc": "When the azer hits with a metal melee or ranged weapon, it deals an extra 7 (2d6) fire damage (included in the attack)."
+    },
+    {
+      "name": "Illumination",
+      "desc": "The azer sheds bright light in a 15-foot radius and dim light for an additional 15 feet."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The azer makes two attacks with its maul or two with its throwing hammers."
+    },
+    {
+      "name": "Maul",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 12 (2d6 + 5) bludgeoning damage, plus 7 (2d6) fire damage."
+    },
+    {
+      "name": "Throwing Hammer",
+      "desc": "Ranged Weapon Attack: +8 to hit, range 20/60 ft., one target. Hit: 8 (1d6 + 5) bludgeoning damage plus 7 (2d6) fire damage."
+    },
+    {
+      "name": "Molten Slam (Recharge 5-6)",
+      "desc": "The azer slams his maul down with such devastating force that the ground itself cracks open in a 30-foot cone and releases lava. Each creature in that area must make a DC 15 Dexterity saving throw, taking 44 (8d10) fire damage on a failed save, or half as much damage on a successful one."
+    }
+  ]
+}

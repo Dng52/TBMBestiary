@@ -1,0 +1,29 @@
+{
+  "name": "Astral Dreadnought (A)",
+  "tags": [
+    "gargantuan",
+    "titan",
+    "cr21",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Gargantuan",
+  "type": "titan",
+  "alignment": "unaligned",
+  "cr": "21 (33,000 XP)",
+  "hp": "297 (17d20+119)",
+  "ac": "20 (natural armor)",
+  "speed": "15 ft., fly 80 ft. (hover)",
+  "saves": "Dex +5, Wis +9",
+  "skills": "Perception +9",
+  "conimmunities": "Charmed, exhaustion, frightened, paralyzed, petrified, poisoned, prone, stunned",
+  "senses": "Darkvision 120 ft., passive Perception 19",
+  "languages": "---",
+  "abilities": {
+    "str": 28,
+    "dex": 7,
+    "con": 25,
+    "int": 5,
+    "wis": 14,
+    "cha": 18
+  }
+}

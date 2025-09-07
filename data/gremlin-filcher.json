@@ -1,0 +1,68 @@
+{
+  "name": "Gremlin Filcher",
+  "tags": [
+    "small",
+    "fey",
+    "cr5",
+    "tome-of-horrors"
+  ],
+  "size": "Small",
+  "type": "fey",
+  "alignment": "chaotic evil",
+  "cr": "5 (1,800 XP)",
+  "hp": "45 (10d6 + 10)",
+  "ac": "15 (studded leather)",
+  "speed": "20 ft.",
+  "saves": "Dex +6, Int +5",
+  "skills": "Acrobatics +6, Arcana +5, Perception +5, Sleight of Hand +9, Stealth +9",
+  "senses": "passive Perception 15",
+  "languages": "Common, Goblin, Sylvan",
+  "abilities": {
+    "str": 7,
+    "dex": 17,
+    "con": 13,
+    "int": 14,
+    "wis": 14,
+    "cha": 15
+  },
+  "traits": [
+    {
+      "name": "Knot Expert",
+      "desc": "The gremlin has advantage on any check or saving throw to break free of any effect grappling or restraining it when the effect is made of rope or rope-like objects."
+    },
+    {
+      "name": "Evasion",
+      "desc": "If the gremlin filcher is subjected to an efect that allows it to make a Dexterity saving throw to take only half damage, the filcher instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+    },
+    {
+      "name": "Sneak Attack",
+      "desc": "Once per turn, the filcher deals an extra 14 (4d6) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the gremlin that isn\u2019t incapacitated and the gremlin doesn\u2019t have disadvantage on the attack roll."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The gremlin\u2019s innate spellcasting ability is Charisma (spell save DC 13, +5 to hit with spell attacks). It can cast the following spells without requiring material components. * At will: <i>arcane lock, knock</i> * 3/day: <i>find traps</i> * 1/day: <i>passwall</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The filcher makes two shortsword attacks and one bite attack."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) piercing damage."
+    },
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage."
+    },
+    {
+      "name": "Cunning Action",
+      "desc": "The gremlin filcher can take the Dash, Disengage, or Hide actions."
+    },
+    {
+      "name": "Fast Hands",
+      "desc": "The gremlin filcher can use a bonus action to use an object or to make a Dexterity (Sleight of Hand) check to pickpocket one object on a target\u2019s body which it is not holding. The target makes an opposed Dexterity (Acrobatics) check if it is aware of the gremlin\u2019s presence, avoiding the attempt if the target wins. If the target is unaware of the gremlin, the filcher\u2019s attempt to pickpocket the target succeeds."
+    }
+  ]
+}

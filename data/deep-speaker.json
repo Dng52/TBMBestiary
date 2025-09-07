@@ -1,0 +1,48 @@
+{
+  "name": "Deep Speaker",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr3",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "any alignment",
+  "cr": "3 (700 XP)",
+  "hp": "58 (9d8 + 18)",
+  "ac": "12 (15 with <i>mage armor</i>)",
+  "speed": "30 ft.",
+  "saves": "Wis +5, Cha +6",
+  "skills": "Arcana +4, History +4, Perception +5, Religion +4",
+  "senses": "darkvision 120 ft., passive Perception 14",
+  "languages": "Any two languages, telepathy 30 ft.",
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 15,
+    "int": 12,
+    "wis": 14,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Deep Knowledge",
+      "desc": "The speaker can read all writing."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The speaker is a 6th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 14, +6 to hit with spell attacks). It regains its expended spellslots when it finishes a short or long rest. The speaker has the following warlock spells prepared: * Cantrips (at will): <i>chill touch, eldritch blast, mage hand</i> * 1st-3rd level (2 3rd-level slots): <i>clairvoyance, detect thoughts, dissonant whispers, mage armor, phantasmal force, sending, Tasha's hideous laughter</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    },
+    {
+      "name": "Entropic Ward (1/Short Rest)",
+      "desc": "When an enemy makes an attack roll against the speaker, it can use its reaction to impose disadvantage on that roll and the next attack roll the speaker makes against that creature is made with advantage."
+    }
+  ]
+}

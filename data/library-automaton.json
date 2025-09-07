@@ -1,0 +1,45 @@
+{
+  "name": "Library Automaton",
+  "tags": [
+    "small",
+    "construct",
+    "cr1/2",
+    "tome-of-beasts"
+  ],
+  "size": "Small",
+  "type": "construct",
+  "alignment": "lawful neutral",
+  "cr": "1/2 (100 XP)",
+  "hp": "7 (2d6)",
+  "ac": "13 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "History +4, Investigation +4",
+  "immunities": "poison",
+  "conimmunities": "charmed, poisoned",
+  "senses": "blindsight 60 ft., truesight 10 ft., passive Perception 11",
+  "languages": "Common, Machine Speech",
+  "abilities": {
+    "str": 8,
+    "dex": 13,
+    "con": 10,
+    "int": 14,
+    "wis": 12,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Extra-Dimensional Book Repository",
+      "desc": "A small door on the chest of the library automaton opens into an extra.dimensional bookcase. This bookcase functions exactly as a bag of holding except that it can store only written materials such as books, scrolls, tomes, parchment, folders, notebooks, spellbooks, and the like."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Gaze of Confusion",
+      "desc": "The library automaton chooses one creature it can see within 40 feet. The target must succeed on a DC 12 Intelligence saving throw or take 9 (3d4 + 2) psychic damage and have disadvantage on Intelligence-based checks, saving throws, and attacks until the end of its next turn. If the saving throw succeeds, then the target takes half damage and suffers no other effect."
+    },
+    {
+      "name": "Bibliotelekinesis",
+      "desc": "This ability functions as the cantrip <i>mage hand</i> but can be used only on books, scrolls, maps, and other printed or written materials."
+    }
+  ]
+}

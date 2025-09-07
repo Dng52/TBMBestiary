@@ -1,0 +1,52 @@
+{
+  "name": "Shadow Assassin",
+  "tags": [
+    "medium",
+    "undead",
+    "cr9",
+    "dungeon-of-the-mad-mage"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "chaotic evil",
+  "cr": "9 (5,000 XP)",
+  "hp": "78 (12d8 + 24)",
+  "ac": "14",
+  "speed": "40 ft.",
+  "saves": "Dex +8, Int +5",
+  "skills": "Perception +9, Stealth +12",
+  "immunities": "necrotic, poison",
+  "resistance": "acid, cold, fire, lightning, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "vulnerability": "radiant",
+  "conimmunities": "exhaustion, frightened, grappled, paralyzed, petrified, poisoned, prone, restrained",
+  "senses": "darkvision 60 ft., passive Perception 19",
+  "languages": "understands the languages it knew in life but can\u2019t speak",
+  "abilities": {
+    "str": 6,
+    "dex": 19,
+    "con": 14,
+    "int": 13,
+    "wis": 12,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Amorphous",
+      "desc": "The assassin can move through a space as narrow as 1 inch wide without squeezing."
+    },
+    {
+      "name": "Shadow Stealth",
+      "desc": "While in dim light or darkness, the assassin can take the Hide action as a bonus action."
+    },
+    {
+      "name": "Sunlight Weakness",
+      "desc": "While in sunlight, the assassin has disadvantage on attack rolls, ability checks, and saving throws."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The assassin makes two Shadow Blade attacks. **Shadow Blade.** Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage plus 10 (3d6) necrotic damage. Unless the target is immune to necrotic damage, the target\u2019s Strength score is reduced by 1d4 each time it is hit by this attack. The target dies if its Strength is reduced to 0. The reduction lasts until the target finishes a short or long rest. If a non-evil humanoid dies from this attack, a shadow (see the *Monster Manual*) rises from the corpse 1d4 hours later."
+    }
+  ]
+}

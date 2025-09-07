@@ -1,0 +1,47 @@
+{
+  "name": "Clubneck",
+  "tags": [
+    "medium",
+    "monstrosity",
+    "cr1",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "monstrosity",
+  "alignment": "neutral",
+  "cr": "1 (200 XP)",
+  "hp": "22 (4d8 + 4)",
+  "ac": "13 (natural armor)",
+  "speed": "40 ft.",
+  "skills": "Perception +2, Stealth +3",
+  "senses": "darkvision 60 ft., passive Perception 12",
+  "languages": "--",
+  "abilities": {
+    "str": 14,
+    "dex": 13,
+    "con": 12,
+    "int": 2,
+    "wis": 10,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Charge",
+      "desc": "If the clubneck moves at least 20 feet straight toward a target and then hits with its beak on the same turn, the target takes an extra 3 (1d6) damage. If the target is a creature, it must succeed on a DC 12 Strength saving throw or be knocked prone."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The clubneck makes three attacks: one with its beak and two with its claws."
+    },
+    {
+      "name": "Beak",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) slashing damage."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) slashing damage."
+    }
+  ]
+}

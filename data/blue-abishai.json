@@ -1,0 +1,49 @@
+{
+  "name": "Blue Abishai",
+  "tags": [
+    "medium",
+    "fiend",
+    "cr17",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "fiend",
+  "alignment": "lawful evil",
+  "cr": "17 (18,000 XP)",
+  "hp": "195  (26d8 + 78)",
+  "ac": "19 (natural armor)",
+  "speed": "30 ft., fly 50 ft.",
+  "saves": "Int +12, Wis +12",
+  "skills": "Arcana +12",
+  "immunities": "fire, lightning, poison",
+  "resistance": "cold; bludgeoning, piercing, and slashing from nonmagical attacks that aren't silvered",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 120 ft., passive Perception 16",
+  "languages": "Draconic, Infernal, telepathy 120 ft.",
+  "abilities": {
+    "str": 15,
+    "dex": 14,
+    "con": 17,
+    "int": 22,
+    "wis": 23,
+    "cha": 18
+  },
+  "traits": [
+    {
+      "name": "Devil's Sight",
+      "desc": "Magical darkness doesn't impede the abishai's darkvision."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The abishai has advantage on saving throws against spells and other magical effects."
+    },
+    {
+      "name": "Magic Weapons",
+      "desc": "The abishai's weapon attacks are magical."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The abishai is a 13th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). The abishai has the following wizard spells prepared: * Cantrips (at will): <i>friends, mage hand, message, minor illusion, shocking grasp</i> * 1st level (4 slots): <i>chromatic orb, disguise self, expeditious retreat, magic missile, charm person, thunderwave</i> * 2nd level (3 slots): <i>darkness, mirror image, misty step</i> * 3rd level (3 slots): <i>dispel magic, fear, lightning bolt</i> * 4th level (3 slots): <i>dimension door, greater invisibility, ice storm</i> * 5th level (2 slots): <i>cone of cold, wall of force</i> * 6th level (1 slot): <i>chain lightning</i> * 7th level (1 slot): <i>teleport</i>"
+    }
+  ]
+}

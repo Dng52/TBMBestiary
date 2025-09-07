@@ -1,0 +1,53 @@
+{
+  "name": "Greater Death Butterfly Swarm",
+  "tags": [
+    "huge",
+    "swarm",
+    "cr6",
+    "tome-of-beasts"
+  ],
+  "size": "Huge",
+  "type": "swarm",
+  "alignment": "chaotic evil",
+  "cr": "6 (2300 XP)",
+  "hp": "84 (13d12)",
+  "ac": "15 (natural armor)",
+  "speed": "5 ft., fly 40 ft. (hover)",
+  "resistance": "bludgeoning, piercing, and slashing",
+  "vulnerability": "cold, fire",
+  "conimmunities": "charmed, frightened, paralyzed, petrified, prone, restrained, petrified",
+  "senses": "darkvision 60 ft., passive Perception 12",
+  "languages": "--",
+  "abilities": {
+    "str": 1,
+    "dex": 16,
+    "con": 10,
+    "int": 1,
+    "wis": 15,
+    "cha": 12
+  },
+  "traits": [
+    {
+      "name": "Potent Poison",
+      "desc": "The death butterfly swarm's poison affects corporeal undead who are otherwise immune to poison."
+    },
+    {
+      "name": "Swarm",
+      "desc": "The swarm can occupy another creature's space and vice versa, and the swarm can move through any opening large enough for a Tiny insect. The swarm can't regain hit points or gain temporary hit point."
+    },
+    {
+      "name": "Weight of Wings",
+      "desc": "As death butterfly swarm but with DC 16 Dexterity saving throw"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The swarm makes a Bite attack against every target in its spaces."
+    },
+    {
+      "name": "Bites",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 0 ft., every target in the swarm's space. Hit: 24 (6d6 +3) piercing damage, or 13 (3d6 + 3) piercing damage if the swarm has half of its hit points or fewer. The target also takes 17 (5d6) poison damage and becomes poisoned for 1d4 rounds; a successful DC 15 Constitution saving throw reduces poison damage by half and prevents the poisoned condition."
+    }
+  ]
+}

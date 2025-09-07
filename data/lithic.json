@@ -1,0 +1,55 @@
+{
+  "name": "Lithic",
+  "tags": [
+    "medium",
+    "elemental",
+    "cr3",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "neutral",
+  "cr": "3 (700 XP)",
+  "hp": "45 (7d8 + 14)",
+  "ac": "17 (natural armor)",
+  "speed": "30 ft., burrow 30 ft.",
+  "skills": "Perception +2, Stealth +3",
+  "immunities": "poison",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons",
+  "vulnerability": "thunder",
+  "conimmunities": "exhaustion, paralyzed, petrified, poisoned, unconscious",
+  "senses": "darkvision 60 ft., tremorsense 60 ft., passive Perception 12",
+  "languages": "Terran",
+  "abilities": {
+    "str": 17,
+    "dex": 12,
+    "con": 15,
+    "int": 10,
+    "wis": 11,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Blend With Stone",
+      "desc": "The lythic has advantage on Dexterity (Stealth) checks in rocky terrain, and can take the Hide action whenever it is within 10 feet of some sort of stone, and remains hidden unless it moves or attacks."
+    },
+    {
+      "name": "Earth Glide",
+      "desc": "The elemental can burrow through nonmagical, unworked earth and stone. While doing so, the elemental doesn\u2019t disturb the material it moves through."
+    },
+    {
+      "name": "Fury of the Earth",
+      "desc": "Whenever the lythic starts its turn with half its hit points or fewer, it flies into a berserker-like rage. On each of its turns while berserk, the lythic deals an additional 7 (2d6) damage with its slam attack."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The lythic makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) bludgeoning damage."
+    }
+  ]
+}

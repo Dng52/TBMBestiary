@@ -1,0 +1,63 @@
+{
+  "name": "Deathlock Wight (A)",
+  "tags": [
+    "medium",
+    "undead",
+    "cr3",
+    "tales-from-the-yawning-portal"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "neutral evil",
+  "cr": "3 (700 XP)",
+  "hp": "37 (5d8+15)",
+  "ac": "12 (15 with mage armor)",
+  "speed": "30 ft.",
+  "saves": "Wis +4",
+  "skills": "Arcana +3, Perception +4",
+  "immunities": "poison",
+  "resistance": "necrotic; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "exhaustion, poisoned",
+  "senses": "darkvision 60 ft.",
+  "languages": "the languages it knew in life",
+  "abilities": {
+    "str": 11,
+    "dex": 14,
+    "con": 16,
+    "int": 12,
+    "wis": 14,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Source",
+      "desc": "tales from the yawning portal,  page 233"
+    },
+    {
+      "name": "Undead Nature",
+      "desc": "A wight doesn't require air, food, drink, or sleep."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The wight's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no verbal or material components: * At will: <i>detect magic, disguise self, mage armor</i> * 1/day each: <i>fear, hold person, misty step</i>"
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the wight has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The wight attacks twice with Grave Bolt."
+    },
+    {
+      "name": "Grave Bolt",
+      "desc": "Ranged Spell Attack: +5 to hit, range 120 ft., one target. Hit: 7 (1d8 + 3) necrotic damage."
+    },
+    {
+      "name": "Life Drain",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 9 (2d6 + 2) necrotic damage. The target must succeed on a DC 13 Constitution saving throw or its hit point maximum is reduced by an amount equal to the damage taken. This reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain by this attack rises 24 hours later as a zombie under the wight's control, unless the humanoid is restored to life or its body is destroyed. The wight can have no more than twelve zombies under its control at one time."
+    }
+  ]
+}

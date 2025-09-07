@@ -1,0 +1,54 @@
+{
+  "name": "Ice Elemental",
+  "tags": [
+    "large",
+    "elemental",
+    "cr5",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Large",
+  "type": "elemental",
+  "alignment": "neutral",
+  "cr": "5 (1,800 XP)",
+  "hp": "114 (12d10 + 48)",
+  "ac": "15 (natural armor)",
+  "speed": "40 ft.",
+  "immunities": "poison, cold",
+  "resistance": "bludgeoning, piercing, and slashing damage from nonmagical weapons",
+  "vulnerability": "thunder, fire",
+  "conimmunities": "exhaustion, paralyzed, petrified, poisoned, unconscious",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Aquan",
+  "abilities": {
+    "str": 17,
+    "dex": 10,
+    "con": 18,
+    "int": 5,
+    "wis": 10,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Frozen Form",
+      "desc": "The ground within a 15ft. radius sphere centered on the elemental is considered difficult terrain as it becomes lightly frozen. Whenever a creature enters or moves within this area for the first time on a turn, they must succeed on a DC 14 Dexterity saving throw or fall prone."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The elemental makes two slam attacks."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5ft., one target. Hit: 12 (2d8 + 3) bludgeoning damage."
+    },
+    {
+      "name": "Ice Shard",
+      "desc": "Ranged Weapon Attack: +6 to hit, range 30/120 ft., one target. Hit: 12 (2d8 + 3) piercing damage and 9 (2d8) cold damage."
+    },
+    {
+      "name": "Frost Explosion (Recharge 4-6)",
+      "desc": "The elemental sends out a flurry of frozen shards and snow. Each creature within the area of the elemental\u2019s Frozen Form feature must make a DC 14 Constitution saving throw. On a failure, a target takes 22 (5d8) cold damage and its movement speed is reduced to 0 until the end of its next turn. If the saving throw is a success, the target takes no damage and has its speed halved until the end of its next turn."
+    }
+  ]
+}

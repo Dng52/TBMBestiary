@@ -1,0 +1,50 @@
+{
+  "name": "Goat-Man",
+  "tags": [
+    "medium",
+    "monstrosity",
+    "cr3",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "monstrosity",
+  "alignment": "chaotic evil",
+  "cr": "3 (700 XP)",
+  "hp": "65 (10d8 + 20)",
+  "ac": "14 (natural armor)",
+  "speed": "40 ft.",
+  "saves": "Dex +4",
+  "skills": "Acrobatics +4, Athletics +6, Stealth +6",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered",
+  "conimmunities": "charmed, frightened",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "Common, Giant, Trollkin, but cannot speak",
+  "abilities": {
+    "str": 19,
+    "dex": 14,
+    "con": 14,
+    "int": 10,
+    "wis": 13,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Headbutt",
+      "desc": "If the goat-man moves at least 10 feet straight toward a creature and then hits it with a slam attack on the same turn, the target must succeed on a DC 14 Strength saving throw or be knocked prone and stunned for 1 round. If the target is prone, the goat-man can make one bite attack against it immediately as a bonus action."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The goat-man makes one bite attack and one slam attack."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) piercing damage."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage."
+    }
+  ]
+}

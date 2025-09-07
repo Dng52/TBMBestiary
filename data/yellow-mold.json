@@ -1,0 +1,38 @@
+{
+  "name": "Yellow Mold",
+  "tags": [
+    "medium",
+    "plant",
+    "cr2",
+    "homebrew"
+  ],
+  "size": "Medium",
+  "type": "plant",
+  "alignment": "unaligned",
+  "cr": "2 (450 XP)",
+  "hp": "5 (1d6 + 2)",
+  "ac": "5",
+  "speed": "0 ft.",
+  "immunities": "poison",
+  "conimmunities": "charmed, frightened, poisoned, prone, stunned",
+  "senses": "passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 1,
+    "dex": 1,
+    "con": 15,
+    "int": 1,
+    "wis": 10,
+    "cha": 1
+  },
+  "traits": [
+    {
+      "name": "Light Sensitivity",
+      "desc": "Sunlight or any amount of fire damage instantly destroys one patch of yellow mold."
+    },
+    {
+      "name": "Poison Spores",
+      "desc": "If touched, the yellow mold ejects a cloud of spores that fills a 10-foot cube originating from the mold. Each creature in the area must succeed on a DC 15 Constitution saving throw or take 11 (2d10) poison damage and become poisoned for 1 minute. While poisoned in this way, the creature takes 5 (1d10) poison damage at the start of each of its turns.  The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a successful save."
+    }
+  ]
+}

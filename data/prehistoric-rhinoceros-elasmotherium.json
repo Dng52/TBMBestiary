@@ -1,0 +1,51 @@
+{
+  "name": "Prehistoric Rhinoceros (Elasmotherium)",
+  "tags": [
+    "large",
+    "beast",
+    "cr12",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "12 (8,400 XP)",
+  "hp": "237 (19d10 + 133)",
+  "ac": "15 (natural armor)",
+  "speed": "50 ft.",
+  "skills": "Perception +9",
+  "senses": "passive Perception 19",
+  "languages": "--",
+  "abilities": {
+    "str": 27,
+    "dex": 10,
+    "con": 25,
+    "int": 2,
+    "wis": 13,
+    "cha": 2
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "desc": "The Elasmotherium has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Siege Monster",
+      "desc": "The Elasmotherium deals double damage to objects and structures."
+    },
+    {
+      "name": "Trample",
+      "desc": "If the Elasmotherium moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a DC 18 Strength saving throw or be knocked prone. If the target is prone, the Elasmotherium can make stomp on the target as a bonus action."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Gore",
+      "desc": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 43 (10d6 + 8) piercing damage."
+    },
+    {
+      "name": "Stomp",
+      "desc": "Melee Weapon Attack: +12 to hit, reach 5 ft., one target. Hit: 34 (4d12 + 8) bludgeoning damage and the target must succeed on a DC 17 Constitution saving throw or be stunned for 1 minute. The stunned creature can repeat the saving throw on each of its turns, ending the effect on a success."
+    }
+  ]
+}

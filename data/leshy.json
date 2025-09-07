@@ -1,0 +1,55 @@
+{
+  "name": "Leshy",
+  "tags": [
+    "medium",
+    "monstrosity",
+    "cr1",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "monstrosity",
+  "alignment": "chaotic neutral",
+  "cr": "1 (200 XP)",
+  "hp": "84 (13d8 + 26)",
+  "ac": "14 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Deception +5, Perception +4, Stealth +3, Survival +4",
+  "senses": "darkvision 60 ft., passive Perception 14",
+  "languages": "Common, Elvish, Sylvan",
+  "abilities": {
+    "str": 16,
+    "dex": 12,
+    "con": 14,
+    "int": 14,
+    "wis": 15,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The leshy's innate spellcasting ability is Charisma (spell save DC 13). It can innately cast the following spells, requiring no material components: * At will: <i>animal friendship, pass without trace, speak with animals</i> * 1/day each: <i>entangle, plant growth, shillelagh, speak with plants, hideous laughter</i>"
+    },
+    {
+      "name": "Camouflage",
+      "desc": "A leshy has advantage on Stealth checks if it is at least lightly obscured by foliage."
+    },
+    {
+      "name": "Mimicry",
+      "desc": "A leshy can mimic the calls and voices of any creature it has heard. To use this ability, the leshy makes a Charisma (Deception) check. Listeners who succeed on an opposed Wisdom (Insight) or Intelligence (Nature).DM's choice.realize that something is mimicking the sound. The leshy has advantage on the check if it's mimicking a general type of creature (a crow's call, a bear's roar) and not a specific individual's voice."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The leshy makes two club attacks."
+    },
+    {
+      "name": "Change Size",
+      "desc": "The leshy appears to change its size, becoming as tall as a massive oak (Gargantuan) or as short as a blade of grass (Tiny). The change is entirely illusory, so the leshy's statistics do not change."
+    },
+    {
+      "name": "Club",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage."
+    }
+  ]
+}

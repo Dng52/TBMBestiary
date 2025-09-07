@@ -1,0 +1,35 @@
+{
+  "name": "Earth Elemental Myrmidon (B)",
+  "tags": [
+    "medium",
+    "elemental",
+    "cr7",
+    "mordenkainens-tome-of-foes"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "neutral",
+  "cr": "7 (2900 XP)",
+  "hp": "127  (17d8 + 51)",
+  "ac": "18 (plate)",
+  "speed": "30 ft.",
+  "immunities": "poison",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "paralyzed, petrified, poisoned, prone",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Terran, one language of its creator's choice",
+  "abilities": {
+    "str": 18,
+    "dex": 10,
+    "con": 17,
+    "int": 8,
+    "wis": 10,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Magic Weapons",
+      "desc": "The myrmidon's weapon attacks are magical."
+    }
+  ]
+}

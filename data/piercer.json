@@ -1,0 +1,42 @@
+{
+  "name": "Piercer",
+  "tags": [
+    "large",
+    "monstrosity",
+    "cr1/2",
+    "monster-manual"
+  ],
+  "size": "Large",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "1/2 (100 XP)",
+  "hp": "22 (3d8+9)",
+  "ac": "15 (natural armor)",
+  "speed": "5 ft., climb 5 ft.",
+  "skills": "Stealth +5",
+  "senses": "blindsight 30 ft., darkvision 60 ft.",
+  "abilities": {
+    "str": 10,
+    "dex": 13,
+    "con": 16,
+    "int": 1,
+    "wis": 7,
+    "cha": 3
+  },
+  "traits": [
+    {
+      "name": "False Appearance",
+      "desc": "While the piercer remains motionless on the ceiling, it is indistinguishable from a normal stalactite."
+    },
+    {
+      "name": "Spider Climb",
+      "desc": "The piercer can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Drop",
+      "desc": "Melee Weapon Attack: +3 to hit, one creature directly underneath the piercer. Hit: 3 (1d6) piercing damage per 10 feet fallen, up to 21 (6d6). Miss: The piercer takes half the normal falling damage for the distance fallen."
+    }
+  ]
+}

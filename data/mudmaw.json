@@ -1,0 +1,51 @@
+{
+  "name": "Mudmaw",
+  "tags": [
+    "huge",
+    "monstosity",
+    "cr6",
+    "homebrew"
+  ],
+  "size": "Huge",
+  "type": "monstrosity",
+  "alignment": "unaligned",
+  "cr": "6 (2,300 XP)",
+  "hp": "133 (14d12 + 42)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft., swim 30 ft.",
+  "skills": "Stealth +5",
+  "senses": "passive Perception 10",
+  "languages": "--",
+  "abilities": {
+    "str": 21,
+    "dex": 9,
+    "con": 17,
+    "int": 2,
+    "wis": 10,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "False Appearance",
+      "desc": "While the mudmaw remains motionless, it is indistinguishable from a floating log."
+    },
+    {
+      "name": "Hold Breath",
+      "desc": "The mudmaw can hold its breath for 15 minutes."
+    },
+    {
+      "name": "Soften Earth",
+      "desc": "While on land, the ground in a 15 feet radius around the mudmaw is difficult terrain."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one creature. Hit: 21 (3d10 + 5) piercing damage."
+    },
+    {
+      "name": "Tentacles",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 20 ft., one creature. Hit: The target is grappled (escape DC 16). Until this grapple ends, the target is restrained and has disadvantage on Strength checks and Strength saving throws, and the mudmaw can\u2019t use its tentacles on another target."
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "name": "Kuo-Toa Archpriest",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr6",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "neutral evil",
+  "cr": "6 (2,300 XP)",
+  "hp": "97 (13d8+39)",
+  "ac": "13 (natural armor)",
+  "speed": "31 ft., swim 30 ft.",
+  "skills": "Perception +9, Religion +6",
+  "senses": "darkvision 120 ft.",
+  "languages": "Undercommon",
+  "abilities": {
+    "str": 16,
+    "dex": 14,
+    "con": 16,
+    "int": 13,
+    "wis": 16,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Amphibious",
+      "desc": "The kuo-toa can breathe air and water."
+    },
+    {
+      "name": "Otherwordly Perception",
+      "desc": "The kuo-toa can sense the presence of any creature within 30 feet of it that is invisible or on the Ethereal Plane. It can pinpoint such a creature that is moving."
+    },
+    {
+      "name": "Slippery",
+      "desc": "The kuo-toa has advantage on ability checks and saving throws made to escape a grapple."
+    },
+    {
+      "name": "Sunlight Sensitivity",
+      "desc": "While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom (Perception) checks that rely on sight."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The kuo-toa is a 10th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 14, +6 to hit with spell attacks). The kuo-toa has the following cleric spells prepared: * Cantrips (at will): <i>guidance, sacred flame, thaumaturgy</i> * 1st level (4 slots): <i>detect magic, sanctuary, shield of faith</i> * 2nd level (3 slots): <i>hold person, spiritual weapon</i> * 3rd level (3 slots): <i>spirit guardians, tongues</i> * 4th level (3 slots): <i>control water, divination</i> * 5th level (2 slots): <i>mass cure wounds, scrying</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The kuo-toa makes two melee attacks."
+    },
+    {
+      "name": "Scepter",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) bludgeoning damage plus 14 (4d6) lightning damage."
+    },
+    {
+      "name": "Unarmed Strike",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 (1d4 + 3) bludgeoning damage."
+    }
+  ]
+}

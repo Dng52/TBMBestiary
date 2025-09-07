@@ -1,0 +1,77 @@
+{
+  "name": "Fraz-Urb'luu (A)",
+  "tags": [
+    "large",
+    "fiend",
+    "cr23",
+    "out-of-the-abyss"
+  ],
+  "size": "Large",
+  "type": "fiend",
+  "alignment": "chaotic evil",
+  "cr": "23 (50,000 XP)",
+  "hp": "350 (28d10+196)",
+  "ac": "18 (natural armor)",
+  "speed": "40 ft., fly 40 ft.",
+  "saves": "Dex +8, Con +15, Int +15, Wis +14",
+  "skills": "Deception +15, Perception +14, Stealth +8",
+  "immunities": "poison; bludgeoning, piercing, and slashing that is nonmagical",
+  "resistance": "cold, fire, lightning",
+  "conimmunities": "charmed, exhaustion, frightened, poisoned",
+  "senses": "truesight 120 ft.",
+  "languages": "all, telepathy 120 ft.",
+  "abilities": {
+    "str": 29,
+    "dex": 12,
+    "con": 25,
+    "int": 26,
+    "wis": 24,
+    "cha": 26
+  },
+  "traits": [
+    {
+      "name": "Innate Spellcasting",
+      "desc": "Fraz-Urb'luu's spellcasting ability is Charisma (spell save DC 23). Fraz-Urb'luu can innately cast the following spells, requiring no material components: * At will: <i>alter self </i>(can become medium-sized when changing his appearance)<i>, detect magic, dispel magic, phantasamal force</i> * 3/day each: <i>confusion, dream, mislead, programmed illusion, seeming</i> * 1/day each: <i>mirage arcane, modify memory, project image</i>"
+    },
+    {
+      "name": "Legendary Resistance (3/Day)",
+      "desc": "If Fraz-Urb'luu fails a saving throw, he can choose to succeed instead."
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "Fraz-Urb'luu has advantage on saving throws against spell and other magic effects."
+    },
+    {
+      "name": "Magic Weapon",
+      "desc": "Fraz-Urb'luu's weapon attacks are magical."
+    },
+    {
+      "name": "Undetectable",
+      "desc": "Fraz-Urb'luu can't be targeted by divination magic, perceived through magical scrying sensors, or detected by abilities that sense demons or fiends."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Fraz-Urb'luu makes three attacks: one with his bite and two with his fists."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 23 (4d6 + 9) piercing damage."
+    },
+    {
+      "name": "Fist",
+      "desc": "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 27 (4d8 + 9) bludgeoning damage."
+    }
+  ],
+  "legendary": [
+    {
+      "name": "Tail",
+      "desc": "Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 31 (4d10 + 9) bludgeoning damage. If the target is a Large or smaller creature, it is also grappled (escape DC 24). The grappled target is also restrained. Fraz-Urb'luu can grapple only one creature with his tail at a time."
+    },
+    {
+      "name": "Phantasmal Killer (Costs 2 Actions)",
+      "desc": "Fraz-Urb'luu casts phantasmal killer, no concentration required."
+    }
+  ]
+}

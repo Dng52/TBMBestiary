@@ -1,0 +1,61 @@
+{
+  "name": "Dragon Knight",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr6",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "evil (50 percent) or lawful good (50 percent)",
+  "cr": "6 (2,300 XP)",
+  "hp": "128 (15d10 + 45)",
+  "ac": "19 (splint mail, shield)",
+  "speed": "30 ft.",
+  "saves": "Str +7, Con +6",
+  "skills": "Athletics +7, Insight +4, Intimidation +5, Perception +4",
+  "resistance": "see <i>Draconic Worship</i> below",
+  "senses": "passive Perception 14",
+  "languages": "Common, Draconic, and the languages of the race of the knight",
+  "abilities": {
+    "str": 19,
+    "dex": 8,
+    "con": 16,
+    "int": 10,
+    "wis": 12,
+    "cha": 14
+  },
+  "traits": [
+    {
+      "name": "Draconic Worship",
+      "desc": "The dragon knight worships a metallic or chromatic dragon and uses abilities that correspond to the dragon\u2019s breath weapon damage. The knight also has resistance to that type of damage. This worship is made obvious in the knight\u2019s armor and weaponry."
+    },
+    {
+      "name": "Draconic Insight",
+      "desc": "The knight automatically succeeds on saving throws against breath weapons."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The knight makes three attacks: two with its longsword and one with its shield slam."
+    },
+    {
+      "name": "Longsword",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5ft., one target. Hit: 8 (1d8 + 4) slashing damage."
+    },
+    {
+      "name": "Shield Slam",
+      "desc": "Melee Weapon Attack: +7 to hit, reach 5ft., one target. Hit: 6 (1d4 + 4) bludgeoning damage and the target must succeed on a DC 14 Strength saving throw or be pushed 5ft."
+    },
+    {
+      "name": "Shield Flare (Recharge 5-6)",
+      "desc": "The knight holds up its shield and channels magical energy through it to release a burst of power in a 15 foot cone. Each enemy in that area must make a DC 14 Dexterity saving throw, taking 27 (6d8) damage (corresponding to the type of dragon the knight worships)."
+    },
+    {
+      "name": "Dragon\u2019s Fury (1/Day)",
+      "desc": "The knight makes four longsword attacks this turn and the attacks are considered magical."
+    }
+  ]
+}

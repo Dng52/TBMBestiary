@@ -1,0 +1,44 @@
+{
+  "name": "Shadow Hunter Hatchling",
+  "tags": [
+    "medium",
+    "monstrosity",
+    "cr2",
+    "tome-of-horrors"
+  ],
+  "size": "Medium",
+  "type": "monstrosity",
+  "alignment": "neutral",
+  "cr": "2 (450 XP)",
+  "hp": "55 (10d8 + 10)",
+  "ac": "13 (natural armor)",
+  "speed": "30 ft., climb 40 ft., swim 20 ft.",
+  "skills": "Perception +4, Stealth +3",
+  "conimmunities": "prone",
+  "senses": "darkvision 60 ft., tremorsense 60 ft., passive Perception 14",
+  "languages": "--",
+  "abilities": {
+    "str": 16,
+    "dex": 13,
+    "con": 12,
+    "int": 5,
+    "wis": 10,
+    "cha": 3
+  },
+  "traits": [
+    {
+      "name": "Keen Smell",
+      "desc": "The shadow hunter has advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    {
+      "name": "Shadow Stealth",
+      "desc": "While in dim light or darkness, the shadow hunter can take the Hide action as a bonus action."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (1d6 + 3) piercing damage and 10 (3d6) poison damage. The target must succeed on a DC 13 Constitution saving throw or be poisoned for 1 hour."
+    }
+  ]
+}

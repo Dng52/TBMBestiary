@@ -1,0 +1,56 @@
+{
+  "name": "Azer Prototype",
+  "tags": [
+    "medium",
+    "elemental",
+    "cr1",
+    "nerzugals-extended-bestiary"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "lawful neutral",
+  "cr": "1 (200 XP)",
+  "hp": "27 (5d6 + 10)",
+  "ac": "15 (natural armor)",
+  "speed": "30 ft.",
+  "immunities": "fire, poison",
+  "conimmunities": "poisoned",
+  "senses": "passive Perception 11",
+  "languages": "Ignan",
+  "abilities": {
+    "str": 15,
+    "dex": 12,
+    "con": 14,
+    "int": 12,
+    "wis": 12,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "Heated Body",
+      "desc": "A creature that touches the azer or hits it with a melee attack while within 5 feet of it takes 3 (1d6) fire damage."
+    },
+    {
+      "name": "Heated Weapons",
+      "desc": "When the azer hits with a metal melee weapon, it deals an extra 2 (1d4) fire damage (included in the attack)."
+    },
+    {
+      "name": "Illumination",
+      "desc": "The azer sheds bright light in a 10-foot radius and dim light for an additional 10 feet."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The azer makes one attack with its mace and one with its off-hand strike."
+    },
+    {
+      "name": "Mace",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage plus 2 (1d4) fire damage."
+    },
+    {
+      "name": "Off-hand Strike",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5ft., one target. Hit: 3 (1d6) bludgeoning damage plus 2 (1d4) fire damage."
+    }
+  ]
+}

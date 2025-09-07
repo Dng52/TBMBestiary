@@ -1,0 +1,50 @@
+{
+  "name": "Tabaxi Hunter",
+  "tags": [
+    "Medium",
+    "humanoid",
+    "cr1",
+    "tomb-of-annihilation"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic good",
+  "cr": "1 (200 XP)",
+  "hp": "40 (9d8)",
+  "ac": "14 (leather armor)",
+  "speed": "30 ft., climb 20 ft.",
+  "skills": "Athletics +2, Perception +4, Stealth +5, Survival +6",
+  "senses": "darkvision 60 ft., passive Perception 14",
+  "abilities": {
+    "str": 10,
+    "dex": 17,
+    "con": 11,
+    "int": 13,
+    "wis": 14,
+    "cha": 15
+  },
+  "traits": [
+    {
+      "name": "Feline agility",
+      "desc": "When the tabaxi moves on its turn in combat, it can double its speed until the end of the turn. Once it uses this ability, the tabaxi can't use it again until it moves 0 feet on one of its turns."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The tabaxi makes two attacks with its claws, its shortsword, or its shortbow."
+    },
+    {
+      "name": "Claws",
+      "desc": "Melee Weapon Attack: +2 to hit, reach 5 ft., one target. Hit: 2 (ld4) slashing damage."
+    },
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 6 (l d6 +3) slashing damage."
+    },
+    {
+      "name": "Shortbow",
+      "desc": "Ranged Weapon Attack: +5 to hit, range 80/320 ft., one target. Hit: 6 (ld6 +3) piercing damage."
+    }
+  ]
+}

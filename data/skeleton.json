@@ -1,0 +1,38 @@
+{
+  "name": "Skeleton",
+  "tags": [
+    "medium",
+    "undead",
+    "cr1/4",
+    "monster-manual"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "lawful evil",
+  "cr": "1/4 (50 XP)",
+  "hp": "13 (2d8+4)",
+  "ac": "13 (armor scraps)",
+  "speed": "30 ft.",
+  "vulnerability": "bludgeoning",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 60 ft.",
+  "languages": "understands all languages it spoke in life but can't speak",
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 15,
+    "int": 6,
+    "wis": 8,
+    "cha": 5
+  },
+  "actions": [
+    {
+      "name": "Shortsword",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    },
+    {
+      "name": "Shortbow",
+      "desc": "Ranged Weapon Attack: +4 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage."
+    }
+  ]
+}

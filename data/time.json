@@ -1,0 +1,59 @@
+{
+  "name": "Time",
+  "tags": [
+    "large",
+    "construct",
+    "cr9",
+    "strongholds-and-followers"
+  ],
+  "size": "Large",
+  "type": "construct",
+  "alignment": "lawful neutral",
+  "cr": "9 (5,000 XP)",
+  "hp": "161 (17d10 + 68)",
+  "ac": "19 (natural armor)",
+  "speed": "40 ft.",
+  "conimmunities": "charmed, exhaustion, frightened, paralyzed, petrified, poisoned",
+  "senses": "truesight 60 ft., passive Perception 14",
+  "languages": "all those of the creature who summoned it",
+  "abilities": {
+    "str": 18,
+    "dex": 20,
+    "con": 18,
+    "int": 15,
+    "wis": 11,
+    "cha": 10
+  },
+  "traits": [
+    {
+      "name": "The Law of Time",
+      "desc": "Enemies within 15 feet cannot take bonus actions or reactions."
+    },
+    {
+      "name": "Chaos Vulnerability",
+      "desc": "The Inexorables have disadvantage on all saving throws against spells."
+    },
+    {
+      "name": "Inexorable",
+      "desc": "The Inexorables are immune to any effects that would slow them or deny them actions or movement."
+    },
+    {
+      "name": "Time Is Inexorable (Recharge 6)",
+      "desc": "At the end of the round, after all creatures have acted, Time takes another turn."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Time makes three slam attacks."
+    },
+    {
+      "name": "Slam",
+      "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 16 (2d10 + 5) bludgeoning damage."
+    },
+    {
+      "name": "Haste (Recharge 5\u20136)",
+      "desc": "Until the end of its next turn, Time magically gains a +2 bonus to its AC, has advantage on Dexterity saving throws, and can use its slam attack as a bonus action."
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "Axe Beak",
+  "tags": [
+    "large",
+    "beast",
+    "cr1/4",
+    "monster-manual"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1/4 (50 XP)",
+  "hp": "19 (3d10+3)",
+  "ac": "11",
+  "speed": "50 ft.",
+  "abilities": {
+    "str": 14,
+    "dex": 12,
+    "con": 12,
+    "int": 2,
+    "wis": 10,
+    "cha": 5
+  },
+  "actions": [
+    {
+      "name": "Beak",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) slashing damage."
+    }
+  ]
+}

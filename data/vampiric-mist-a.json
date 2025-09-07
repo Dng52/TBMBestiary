@@ -1,0 +1,61 @@
+{
+  "name": "Vampiric Mist (A)",
+  "tags": [
+    "medium",
+    "undead",
+    "cr3",
+    "tales-from-the-yawning-portal"
+  ],
+  "size": "Medium",
+  "type": "undead",
+  "alignment": "chaotic evil",
+  "cr": "3 (700 XP)",
+  "hp": "45 (6d8+18)",
+  "ac": "13",
+  "speed": "0 ft., fly 30 ft. (hover)",
+  "saves": "Wis +3",
+  "immunities": "poison",
+  "resistance": "acid, cold, lightning, necrotic, thunder; bludgeoning, piercing, and slashing from nonmagical attacks",
+  "conimmunities": "charmed, exhaustion, grappled, paralyzed, petrified, poisoned, prone, restrained",
+  "senses": "darkvision 60 ft.",
+  "abilities": {
+    "str": 6,
+    "dex": 16,
+    "con": 16,
+    "int": 6,
+    "wis": 12,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Source",
+      "desc": "tales from the yawning portal,  page 247"
+    },
+    {
+      "name": "Undead Nature",
+      "desc": "A vampiric mist doesn't require air or sleep."
+    },
+    {
+      "name": "Blood Sense",
+      "desc": "The vampiric mist can sense living creatures that have blood or similar vital fluids in a radius of 60 feet ."
+    },
+    {
+      "name": "Forbiddance",
+      "desc": "The vampiric mist can 't enter a residence without an invitation from one of the occupants."
+    },
+    {
+      "name": "Misty Form",
+      "desc": "The vampiric mist can occupy another creature's space and vice versa. In addition, if air can pass through a space, the mist can pass through it without squeezing. Each foot of movement in water costs it 2 extra feet, rather than 1 extra foot. The mist can't manipulate objects in any way that requires hands; it can apply simple force only."
+    },
+    {
+      "name": "Sunlight Hypersensitivity",
+      "desc": "The vampiric mist takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, the mist has disadvantage on attack rolls and ability checks."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Blood Drain",
+      "desc": "One creature in the vampiric mist's space must make a DC 13 Constitution saving throw (undead and constructs automatically succeed). On a failed save, the target takes 10 (2d6 + 3) necrotic damage, its hit point maximum is reduced by an amount equal to the necrotic damage taken, and the mist regains hit points equal to that amount. >This reduction to the target's hit point maximum lasts until the target finishes a long rest. It dies if this effect reduces its hit point maximum to 0."
+    }
+  ]
+}

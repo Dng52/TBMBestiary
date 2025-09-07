@@ -1,0 +1,74 @@
+{
+  "name": "Baba Yaga's Hut",
+  "tags": [
+    "gargantuan",
+    "construct",
+    "cr12",
+    "homebrew"
+  ],
+  "size": "Gargantuan",
+  "type": "construct",
+  "alignment": "chaotic neutral",
+  "cr": "12 (8,400 XP)",
+  "hp": "154 (11d20 + 33)",
+  "ac": "17",
+  "speed": "30 ft.",
+  "saves": "Str +10, Con +6",
+  "immunities": "poison, psychic",
+  "resistance": "bludgeoning, piercing, and slashing from nonmagical weapons",
+  "conimmunities": "charmed, exhausted, frightened, paralyzed, petrified, poisoned, prone",
+  "senses": "darkvision 60 ft., passive Perception 10",
+  "languages": "Understands Common and Sylvan but can't speak",
+  "abilities": {
+    "str": 23,
+    "dex": 9,
+    "con": 17,
+    "int": 7,
+    "wis": 10,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "False Appearance",
+      "desc": "While the hut remains motionless, it is indistinguishable from an ordinary (albeit hideously decorated) hut."
+    },
+    {
+      "name": "Immutable Form",
+      "desc": "Baba Yaga's Hut is immune to any spell or effect that would alter its form."
+    },
+    {
+      "name": "Siege Monster",
+      "desc": "Baba Yaga's Hut deals double damage to objects and structures."
+    },
+    {
+      "name": "A Witch's Best Friend",
+      "desc": "While within 60 feet of Baba Yaga, the hut gains access to a limited spell list, as detailed under Shared Spellcasting."
+    },
+    {
+      "name": "Shared Spellcasting",
+      "desc": "While Baba Yaga and her hut are within 60 feet of one another, they can each cast the following spells but must share the spell slots among themselves. For casting these spells, the hut is a 7thlevel spellcaster. Its spellcasting ability is Charisma (spell save DC is 15, +7 to hit with spell attacks). The hut knows the following spells, requiring no material components: * Cantrips (at will): <i>druid craft, minor illusion, thorn whip</i> * 1st level (4 slots): <i>entangle, ray of sickness</i> * 2nd level (3 slots): <i>flaming sphere, moonbeam</i> * 3rd level (3 slots): <i>call lightning, plant growth</i> * 4th level (1 slot): <i>blight</i>"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Baba Yaga's Hut makes two attacks. One with its kick and one with its Gaping Maw."
+    },
+    {
+      "name": "Kick",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit 39 (6d10+6) bludgeoning damage. On a hit, targets Large or smaller must make a DC 15 Strength saving throw or be knocked prone."
+    },
+    {
+      "name": "Gaping Maw",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit 32 (6d12+6) piercing damage. On a hit, targets Large or smaller are grappled as the hut attempts to eat the target."
+    },
+    {
+      "name": "Swallow",
+      "desc": "The hut makes one gaping maw attack against a Large or smaller target it is grappling. If the attack hits, the target is swallowed and the grapple ends. The swallowed target has total cover against attacks and other effects outside the hut as they float aimlessly in an extradimensional space. As an action at the end of their turn, a swallowed creature can make a DC 17 Intelligence Saving Throw to find a means of escape from the hut. On a success, the creature is spit out in an unoccupied space within 5 feet of the hut. If the hut dies, it spits up all swallowed creatures and objects."
+    },
+    {
+      "name": "Mega Hop (Recharge 5-6)",
+      "desc": "Baba Yaga's Hut hops high into the air, landing in an unoccupied space within 120 feet of its original location. All creatures within a 30- foot radius must make a Strength saving throw DC 18 or take 51 (10d8+6) thunder damage and be knocked prone. On a successful save, a creature takes half damage and is not knocked prone."
+    }
+  ]
+}

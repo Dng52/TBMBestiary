@@ -1,0 +1,58 @@
+{
+  "name": "Maladar Dictum",
+  "tags": [
+    "huge",
+    "aberration",
+    "cr10",
+    "strongholds-and-followers"
+  ],
+  "size": "Huge",
+  "type": "aberration",
+  "alignment": "chaotic neutral",
+  "cr": "10 (5,900 XP)",
+  "hp": "210 (20d12 + 80)",
+  "ac": "20 (plate, shield)",
+  "speed": "30 ft.",
+  "saves": "Str +9, Dex +6, Con +8, Wis +4, Cha +7",
+  "skills": "Athletics +9, Deception +7, Insight +4, Intimidation +7",
+  "resistance": "psychic",
+  "conimmunities": "charmed, petrified",
+  "senses": "darkvision 60 ft., passive Perception 14",
+  "languages": "Common, Deep Speech, Primordial",
+  "abilities": {
+    "str": 20,
+    "dex": 15,
+    "con": 19,
+    "int": 15,
+    "wis": 10,
+    "cha": 16
+  },
+  "traits": [
+    {
+      "name": "Formless Shape",
+      "desc": "Maladar is immune to any spell or effect that would alter his form."
+    },
+    {
+      "name": "Reform",
+      "desc": "Each time Maladar takes damage in combat, his arm grows another limb, increasing the damage of his smash attack by 1d8. There is no limit to the number of limbs, tentacles, and claws Maladar can grow this way."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "Maladar makes two attacks with Changer plus one smash attack."
+    },
+    {
+      "name": "Changer (Greatsword)",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 7 (2d6) necrotic damage."
+    },
+    {
+      "name": "Smash",
+      "desc": "Melee Weapon Attack: +9 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage."
+    },
+    {
+      "name": "Lord of Chaos",
+      "desc": "Maladar has a 50% chance of summoning a member of his court in an adjacent unoccupied space. If successful, roll a d12 and consult the below chart. Each member of his court may only be summoned once per day in this manner. If the same member is summoned twice, nothing happens. * 1-4: Baron Malgas * 5\u20137: Korsoth Vastikan * 8\u20139: The Queen of Bones * 10\u201311: Lord Rall * 12: Uursovk"
+    }
+  ]
+}

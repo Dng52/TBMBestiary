@@ -1,0 +1,44 @@
+{
+  "name": "Ambush Drake",
+  "tags": [
+    "medium",
+    "dragon",
+    "cr1/2",
+    "tyranny-of-dragons"
+  ],
+  "size": "Medium",
+  "type": "dragon",
+  "alignment": "unaligned",
+  "cr": "1/2 (100 XP)",
+  "hp": "22 (4d6+8)",
+  "ac": "13 (natural armor)",
+  "speed": "30 ft.",
+  "skills": "Perception +4, Stealth +4",
+  "resistance": "poison",
+  "senses": "darkvision 60 ft.",
+  "languages": "understands Draconic but can't speak it",
+  "abilities": {
+    "str": 13,
+    "dex": 15,
+    "con": 14,
+    "int": 4,
+    "wis": 11,
+    "cha": 6
+  },
+  "traits": [
+    {
+      "name": "Pack Tactics",
+      "desc": "The drake has advantage on an attack roll against a creature if at least one of the drake's allies is within 5 feet of the creature and the ally isn't incapacitated."
+    },
+    {
+      "name": "Surprise Attack",
+      "desc": "If the drake surprises a creature and hits it with an attack during the first round of combat, the target takes an extra 7 (2d6) damage from the attack."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) piercing damage."
+    }
+  ]
+}

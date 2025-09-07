@@ -1,0 +1,64 @@
+{
+  "name": "Bingley",
+  "tags": [
+    "small",
+    "humanoid",
+    "cr3",
+    "out-of-the-box-5e"
+  ],
+  "size": "Small",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "3 (700 XP)",
+  "hp": "49 (9d6 + 18)",
+  "ac": "12 in humanoid form, 13 in wolf or hybrid form",
+  "speed": "25 ft., 35 ft. in wolf form",
+  "skills": "Perception +4, Stealth +4",
+  "immunities": "Bludgeoning, Piercing, And Slashing From Nonmagical Attacks That Aren\u2019t Silvered",
+  "senses": "passive Perception 14",
+  "languages": "Common, Halfling (can\u2019t speak in wolf form)",
+  "abilities": {
+    "str": 15,
+    "dex": 15,
+    "con": 14,
+    "int": 10,
+    "wis": 11,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Brave",
+      "desc": "Bingley has advantage on saving throws against being frightened."
+    },
+    {
+      "name": "Halfling Nimbleness",
+      "desc": "Bingley can move through the space of a Medium or larger creature. Keen Hearing and Smell. Bingley has advantage on Wisdom (Perception) checks that rely on hearing or smell."
+    },
+    {
+      "name": "Lucky",
+      "desc": "When Bingley rolls a 1 on an attack roll, ability check, or saving throw, he can reroll the die and must use the new roll."
+    },
+    {
+      "name": "Shapechanger",
+      "desc": "Bingley can use its action to polymorph into a wolf-humanoid hybrid or into a wolf, or back into his true form, which is humanoid. His statistics, other than its AC, are the same in each form. Any equipment he is wearing or carrying isn\u2019t transformed. It reverts to its true form if it dies."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack (Humanoid or Hybrid Form Only)",
+      "desc": " Bingley makes two attacks: two with his spear (humanoid form) or one with his bite and one with his claws (hybrid form)."
+    },
+    {
+      "name": "Bite (Wolf or Hybrid Form Only)",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d8 + 2) piercing damage. If the target is a humanoid, it must succeed on a DC 12 Constitution saving throw or be cursed with werewolf lycanthropy."
+    },
+    {
+      "name": "Claws (Hybrid Form Only)",
+      "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (2d4 + 2) slashing damage."
+    },
+    {
+      "name": "Spear (Humanoid Form Only)",
+      "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one creature. Hit: 5 (1d6 + 2) piercing damage, or 6 (1d8 + 2) piercing damage if used with two hands to make a melee attack."
+    }
+  ]
+}

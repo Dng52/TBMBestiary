@@ -1,0 +1,39 @@
+{
+  "name": "Noble Streynor",
+  "tags": [
+    "large",
+    "beast",
+    "cr3",
+    "tome-of-horrors"
+  ],
+  "size": "Large",
+  "type": "beast",
+  "alignment": "unaligned",
+  "cr": "1 (200 XP)",
+  "hp": "19 (3d10 + 3)",
+  "ac": "14",
+  "speed": "50 ft.",
+  "skills": "Perception +7",
+  "senses": "darkvision 60 ft., passive Perception 17",
+  "languages": "--",
+  "abilities": {
+    "str": 18,
+    "dex": 14,
+    "con": 13,
+    "int": 2,
+    "wis": 17,
+    "cha": 7
+  },
+  "traits": [
+    {
+      "name": "Keen Hearing and Smell",
+      "desc": "The noble streynor has advantage on Wisdom (Perception) checks that rely on hearing or smell up to 300 yards away."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack +6 to hit, reach 5 ft., one target. Hit: 11 (3d4 + 4) piercing damage."
+    }
+  ]
+}

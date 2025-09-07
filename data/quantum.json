@@ -1,0 +1,57 @@
+{
+  "name": "Quantum",
+  "tags": [
+    "huge",
+    "aberration",
+    "cr20",
+    "tome-of-horrors"
+  ],
+  "size": "Huge",
+  "type": "aberration",
+  "alignment": "neutral",
+  "cr": "20 (25,000 XP)",
+  "hp": "448 (39d12 + 195)",
+  "ac": "20 (natural armor)",
+  "speed": "0 ft., fly 40 ft.",
+  "saves": "Wis +8, Cha +9",
+  "skills": "Acrobatics +16, Insight +14, Perception +14, Religion +12",
+  "immunities": "bludgeoning, piercing, and slashing from nonmagical weapons",
+  "senses": "darkvision 60 ft., passive Perception 24",
+  "languages": "Common, Quantum",
+  "abilities": {
+    "str": 30,
+    "dex": 18,
+    "con": 20,
+    "int": 11,
+    "wis": 14,
+    "cha": 17
+  },
+  "traits": [
+    {
+      "name": "Displacement",
+      "desc": "The quantum projects a magical illusion that makes it appear to be standing near its actual location, causing attack rolls against it to have disadvantage. If it is hit by an attack, this trait is disrupted until the end of its next turn. This trait is also disrupted while the quantum is incapacitated or has a speed of 0."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The quantum\u2019s spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). It can innately cast <i>dimension door</i> once per day, requiring no material components."
+    },
+    {
+      "name": "Quantum Form (3/day)",
+      "desc": "A quantum can move in such a way as to appear in two places at once, at a distance no greater than 30 feet. This is a bonus action that provokes an attack of opportunity and lasts only one round. While occupying two spaces simultaneously, each representation of the quantum can perform one action normally. Using this ability, the same quantum could attack two different opponents, or attack one opponent while opening a door to escape, and so on. At the end of the round, both instances of the quantum return to the space it originally occupied before activating this ability."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The quantum makes two attacks with its tentacles."
+    },
+    {
+      "name": "Tentacles",
+      "desc": "Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 31 (6d6 + 10) bludgeoning damage."
+    },
+    {
+      "name": "Disintegration (3/day)",
+      "desc": "Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: the target must make a DC 18 Constitution saving throw, taking 140 (40d6) force damage on a failed save, or 42 (12d6) force damage on a successful one. If the damage reduces the target to 0 hit points, it is disintegrated."
+    }
+  ]
+}

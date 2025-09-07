@@ -1,0 +1,62 @@
+{
+  "name": "Devilbound Gnomish Prince",
+  "tags": [
+    "small",
+    "Humanoid",
+    "cr9",
+    "tome-of-beasts"
+  ],
+  "size": "Small",
+  "type": "Humanoid",
+  "alignment": "any evil",
+  "cr": "9 (5000 XP)",
+  "hp": "104 (19d6 + 38)",
+  "ac": "12 (15 with mage armor)",
+  "speed": "25 ft.",
+  "saves": "Con +6, Int +7, Cha +10",
+  "skills": "Arcana +7, Deception +10, History +7, Persuasion +10",
+  "resistance": "cold, fire, poison; bludgeoning, piercing, and slashing damage from nonmagical weapons that aren't silvered",
+  "conimmunities": "poisoned",
+  "senses": "darkvision 60 ft., passive Perception 11",
+  "languages": "Common, Infernal, Gnomish",
+  "abilities": {
+    "str": 10,
+    "dex": 14,
+    "con": 15,
+    "int": 16,
+    "wis": 12,
+    "cha": 22
+  },
+  "traits": [
+    {
+      "name": "Banishing Word (1/Day)",
+      "desc": "When the devilbound gnomish prince hits with an attack, he can choose to banish the target to the Eleven Hells. The target vanishes from its current location and is incapacitated until its return. At the end of the devilbound gnomish prince's next turn, the target returns to the spot it previously occupied or the nearest unoccupied space and takes 55 (10d10) psychic damage."
+    },
+    {
+      "name": "Infernal Blessing",
+      "desc": "The devilbound gnomish prince gains 21 temporary hit points when it reduces a hostile creature to 0 hit points."
+    },
+    {
+      "name": "Infernal Tie",
+      "desc": "The devilbound gnomish prince can perceive through his imp's senses, communicate telepathically through its mind, and speak through his imp's mouth as long as both of them are on the same plane of existence."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The devilbound gnomish prince's innate spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). He can innately cast the following spells, requiring no material components: At will: detect magic, false life, mage armor 1/rest each: create undead, forcecage, power word stun"
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The devilbound gnomish prince has advantage on all saving throws against spells and magical effects."
+    },
+    {
+      "name": "Spellcasting",
+      "desc": "The devilbound gnomish prince is a 15th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 18, +10 to hit with spell attacks). The devilbound gnomish prince has the following warlock spells prepared: Cantrips (at will): chill touch, eldritch blast, minor illusion, prestidigitation 5th level (3 slots):banishment, command, contact other plane, counterspell, dimension door, fireball, fly, flame strike, hallow, hex, hold monster, invisibility, scorching ray, scrying, wall of fire, witch bolt"
+    }
+  ],
+  "actions": [
+    {
+      "name": "Dagger",
+      "desc": "Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage."
+    }
+  ]
+}

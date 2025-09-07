@@ -1,0 +1,56 @@
+{
+  "name": "Likho",
+  "tags": [
+    "medium",
+    "monstrosity",
+    "cr6",
+    "tome-of-beasts"
+  ],
+  "size": "Medium",
+  "type": "monstrosity",
+  "alignment": "chaotic evil",
+  "cr": "6 (2300 XP)",
+  "hp": "90 (12d8 + 36)",
+  "ac": "15 (natural armor)",
+  "speed": "40 ft.",
+  "saves": "Dex +7, Cha +8",
+  "skills": "Acrobatics +7, Perception +6, Stealth +10",
+  "senses": "darkvision 60 ft., passive Perception 16",
+  "languages": "Common, Goblin, Void Speech",
+  "abilities": {
+    "str": 16,
+    "dex": 18,
+    "con": 16,
+    "int": 13,
+    "wis": 16,
+    "cha": 21
+  },
+  "traits": [
+    {
+      "name": "Pounce",
+      "desc": "If the likho moves at least 20 feet straight toward a creature and then hits it with a claw attack on the same turn, that target must succeed on a DC 14 Strength saving throw or be knocked prone. If the target is prone, the likho can use a bonus action to make two additional claw attacks against it."
+    },
+    {
+      "name": "Innate Spellcasting",
+      "desc": "The likho's innate spellcasting ability is Charisma (spell save DC 16). It can innately cast the following spells, requiring no material components: At will: message 3/day each: crown of madness, mirror image, ray of enfeeblement 1/day: bestow curse"
+    },
+    {
+      "name": "Magic Resistance",
+      "desc": "The likho has advantage on saving throws against spells and other magical effects."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The likho makes two claw attacks."
+    },
+    {
+      "name": "Claw",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) slashing damage."
+    },
+    {
+      "name": "Disruptive Gaze",
+      "desc": "As a bonus action, the likho directs its gaze at any single creature it can see and afflicts it with a temporary bout of bad luck. The targeted creature has disadvantage on attack rolls, saving throws, and skill checks until the end of its next turn."
+    }
+  ]
+}

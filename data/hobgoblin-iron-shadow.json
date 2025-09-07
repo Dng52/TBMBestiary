@@ -1,0 +1,55 @@
+{
+  "name": "Hobgoblin Iron Shadow",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr2",
+    "volos-guide"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "lawful evil",
+  "cr": "2 (450 XP)",
+  "hp": "32 (5d8+10)",
+  "ac": "15",
+  "speed": "40 ft.",
+  "skills": "Acrobatics +5, Athletics +4, Stealth +5",
+  "senses": "darkvision 60 ft.",
+  "languages": "Common, Goblin",
+  "abilities": {
+    "str": 14,
+    "dex": 16,
+    "con": 15,
+    "int": 14,
+    "wis": 15,
+    "cha": 11
+  },
+  "traits": [
+    {
+      "name": "Spellcasting",
+      "desc": "The hobgoblin is a 2nd-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 12, +4 to hit with spell attacks). It has the following wizard spells prepared: * Cantrips (at will): <i>minor illusion, prestidigitation, true strike</i> * 1st level (3 slots): <i>charm person, disguise self, expeditious retreat, silent image</i>"
+    },
+    {
+      "name": "Unarmored Defense",
+      "desc": "While the hobgoblin is wearing no armor and wielding no shield, its AC includes its Wisdom modifier."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack",
+      "desc": "The hobgoblin makes four attacks, each of which can be an unarmed strike or a dart attack. It can also use Shadow Jaunt once, either before or after one of the attacks."
+    },
+    {
+      "name": "Unarmed Strike",
+      "desc": "Melee Weapon Attack: +5 to hit, reach 5 it, one target. Hit: 5 (1d4+3) bludgeoning damage."
+    },
+    {
+      "name": "Dart",
+      "desc": "Ranged Weapon Attack: +5 to hit, range 20/60 it, one target. Hit: 5 (1d4+3) piercing damage."
+    },
+    {
+      "name": "Shadow Jaunt",
+      "desc": "The hobgoblin magically teleports, along with any equipment it is wearing or carrying, up to 30 feet to an unoccupied space it can see. Both the space it is leaving and its destination must be in dim light or darkness."
+    }
+  ]
+}

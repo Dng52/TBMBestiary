@@ -1,0 +1,52 @@
+{
+  "name": "Werecrocodile",
+  "tags": [
+    "medium",
+    "humanoid",
+    "cr5",
+    "homebrew"
+  ],
+  "size": "Medium",
+  "type": "humanoid",
+  "alignment": "chaotic evil",
+  "cr": "5 (1,800 XP)",
+  "hp": "104 (16d8 + 32)",
+  "ac": "10 in humanoid form, 12 (natural armor) in crocodile or hybrid form",
+  "speed": "30 ft. (20 ft., swim 30 ft. in crocodile or hybrid form)",
+  "skills": "Stealth +3",
+  "immunities": "bludgeoning, piercing, and slashing from nonmagical attacks not made with silvered weapons",
+  "senses": "passive Perception 10",
+  "languages": "Common (can't speak in crocodile form)",
+  "abilities": {
+    "str": 16,
+    "dex": 10,
+    "con": 14,
+    "int": 10,
+    "wis": 10,
+    "cha": 8
+  },
+  "traits": [
+    {
+      "name": "Shapechanger",
+      "desc": "The werecrocodile can use its action to polymorph into a Large crocodile-humanoid hybrid or into a Large crocodile, or back into its true form, which is humanoid. Its statistics, other than its size and AC, are the same in each form. Any equipment is is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+    },
+    {
+      "name": "Hold Breath",
+      "desc": "The werecrocodile can hold its breath for 15 minutes."
+    }
+  ],
+  "actions": [
+    {
+      "name": "Multiattack (Humanoid or Hybrid Form Only)",
+      "desc": "The werecrocodile makes two attacks with its halberd."
+    },
+    {
+      "name": "Halberd",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 8 (1d10 + 3) slashing damage."
+    },
+    {
+      "name": "Bite",
+      "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one creature. Hit: 8 (1d10 + 3) piercing damage, and the target is grappled (escape DC 13). Until this grapple ends, the target is restrained, and the crocodile can't bite another target. If the target is a humanoid, it must succeed on a DC 13 Constitution saving throw or be cursed with werecrocodile lycanthropy."
+    }
+  ]
+}
