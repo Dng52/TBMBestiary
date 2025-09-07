@@ -23,10 +23,10 @@ function cleanCR(cr) {
 // -----------------------------
 async function loadMonsters() {
   try {
-    // Fetch the prebuilt index
+    // Fetch prebuilt monsters.json
     const validMonsters = await fetch("data/monsters.json")
       .then(r => { 
-        if (!r.ok) throw new Error(`Failed to load monsters.json: ${r.status}`); 
+        if (!r.ok) throw new Error(`Failed to load monsters.json: ${r.status}`);
         return r.json();
       });
 
@@ -144,18 +144,10 @@ async function loadMonsters() {
       const query = searchEl.value.toLowerCase();
 
       const filtered = validMonsters.filter(m => {
-        // Search
         if (query && !m.name.toLowerCase().includes(query)) return false;
-
-        // Type filter (AND logic)
         if (activeTypes.size > 0 && !activeTypes.has(m.type)) return false;
-
-        // CR filter (OR logic)
         if (activeCRs.size > 0 && !activeCRs.has(m._cleanCR)) return false;
-
-        // Source filter (OR logic)
         if (activeSources.size > 0 && !activeSources.has(m.tags[m.tags.length - 1])) return false;
-
         return true;
       });
 
@@ -180,7 +172,7 @@ async function loadMonsters() {
 
         const li = document.createElement("div");
         li.className = "monster-link";
-        li.innerHTML = `<a href="monster.html?file=${encodeURIComponent(m.file)}">${m.name}</a>`;
+        li.innerHTML = `<a href="monster.html?file=${encodeURIComponent(m._file)}">${m.name}</a>`;
         listEl.appendChild(li);
       });
     }

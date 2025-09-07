@@ -31,9 +31,13 @@ jobs:
 
           const monsters = files.map(f => {
             const content = JSON.parse(fs.readFileSync(path.join(dataDir, f)));
+            const displayName = content.name || path.basename(f, '.json');
             return {
-              name: content.name || path.basename(f, '.json'),
-              file: f
+              ...content,                // include all original monster data
+              _file: f,                  // helper for links
+              _displayName: displayName, // helper for display headings
+              name: displayName,         // keep top-level name
+              file: f                     // original file reference
             };
           });
 
