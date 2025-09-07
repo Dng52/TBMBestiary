@@ -1,17 +1,17 @@
 // Parse CR for sorting: converts fractions to decimal, ignores XP
 function parseCR(cr) {
-  if (!cr) return 0;
+  if (!cr) return NaN; // treat missing as NaN
 
   cr = cr.replace(/\(.*?\)/, "").trim(); // Remove XP
 
   if (cr === "0") return 0;
   if (cr.includes("/")) {
     const [num, den] = cr.split("/").map(Number);
-    return den ? num / den : 0;
+    return den ? num / den : NaN;
   }
 
   const val = parseFloat(cr);
-  return isNaN(val) ? 0 : val;
+  return isNaN(val) ? NaN : val;
 }
 
 // Clean CR string for display (removes XP)
@@ -36,8 +36,8 @@ async function loadMonsters() {
         const m = await res.json();
         m._file = e.file;
         m._displayName = e.name;
-        m._cleanCR = cleanCR(m.cr);
-        m._crSortValue = parseCR(m.cr);
+        m._cleanCR = cleanCR(m.cr);        // for headings
+        m._crSortValue = parseCR(m.cr);    // numeric value for sorting
         return m;
       } catch (err) {
         console.error(`Failed to load ${e.file}:`, err);
@@ -48,9 +48,19 @@ async function loadMonsters() {
     // Remove any failed loads
     const validMonsters = monsters.filter(m => m);
 
-    // Sort by CR numeric value, then name
+    // Sort by CR numeric value, putting NaN CRs at the bottom, then name
     validMonsters.sort((a, b) => {
-      if (a._crSortValue !== b._crSortValue) return a._crSortValue - b._crSortValue;
+      const crA = a._crSortValue;
+      const crB = b._crSortValue;
+
+      const aIsNaN = isNaN(crA);
+      const bIsNaN = isNaN(crB);
+
+      if (aIsNaN && bIsNaN) return a._displayName.localeCompare(b._displayName);
+      if (aIsNaN) return 1; // a goes after b
+      if (bIsNaN) return -1; // b goes after a
+
+      if (crA !== crB) return crA - crB;
       return a._displayName.localeCompare(b._displayName);
     });
 
@@ -86,12 +96,13 @@ async function loadMonsters() {
       let currentCR = null;
 
       data.forEach(m => {
-        const crVal = m._cleanCR || "?";
+        // Display 'Undefined' for non-numeric CR
+        let crVal = isNaN(m._crSortValue) ? "Undefined" : m._cleanCR;
 
         if (crVal !== currentCR) {
           currentCR = crVal;
           const heading = document.createElement("h3");
-          heading.textContent = `CR ${crVal}`;
+          heading.textContent = crVal === "Undefined" ? "CR Undefined" : `CR ${crVal}`;
           listEl.appendChild(heading);
         }
 
