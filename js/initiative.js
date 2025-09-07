@@ -36,7 +36,6 @@ async function loadMonsters() {
       const aNaN = isNaN(crA), bNaN = isNaN(crB);
       const nameA = a._displayName || a.name || a._file || "";
       const nameB = b._displayName || b.name || b._file || "";
-
       if (aNaN && bNaN) return nameA.localeCompare(nameB);
       if (aNaN) return 1;
       if (bNaN) return -1;
@@ -52,6 +51,7 @@ async function loadMonsters() {
     const crEl = document.getElementById("cr-filters");
     const sourceEl = document.getElementById("source-filters");
     const searchEl = document.getElementById("search");
+    const trackerBody = document.querySelector("#initiative-table tbody");
 
     const activeTypes = new Set();
     const activeCRs = new Set();
@@ -134,28 +134,31 @@ async function loadMonsters() {
         const li = document.createElement("div");
         li.className = "monster-link";
         li.textContent = m._displayName || m.name || m._file;
-        li.dataset.file = m._file;
-        li.dataset.name = m._displayName || m.name;
-        li.dataset.ac = m.ac || "";
-        li.dataset.hp = m.hp || "";
-        li.dataset.cr = m.cr || "";
-        li.addEventListener("click", () => displayStatBlock(m));
+        li.addEventListener("click", () => addToTracker(m));
         listEl.appendChild(li);
       });
     }
 
     // -----------------------------
-    // Display Stat Block
+    // Add monster to initiative tracker
     // -----------------------------
-    function displayStatBlock(monster) {
-      const container = document.getElementById("stat-block");
-      container.innerHTML = `
-        <h2>${monster._displayName || monster.name}</h2>
-        <p><strong>CR:</strong> ${monster.cr || "?"}</p>
-        <p><strong>AC:</strong> ${monster.ac || "?"}</p>
-        <p><strong>HP:</strong> ${monster.hp || "?"}</p>
-        <p><strong>Type:</strong> ${monster.type || "?"}</p>
+    function addToTracker(monster) {
+      const row = document.createElement("tr");
+
+      row.innerHTML = `
+        <td>${monster._displayName || monster.name}</td>
+        <td><input type="number" value="0" style="width: 50px;"></td>
+        <td>${monster.ac || "?"}</td>
+        <td>${monster.hp || "?"}</td>
+        <td><input type="text" style="width: 100%;"></td>
+        <td><button class="remove-btn">Remove</button></td>
       `;
+
+      row.querySelector(".remove-btn").addEventListener("click", () => {
+        trackerBody.removeChild(row);
+      });
+
+      trackerBody.appendChild(row);
     }
 
     renderList(monsters);
