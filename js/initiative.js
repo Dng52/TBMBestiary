@@ -142,11 +142,15 @@ async function loadMonsters() {
           heading.textContent = crVal === "Undefined" ? "CR Undefined" : `CR ${crVal}`;
           listEl.appendChild(heading);
         }
-        const li = document.createElement("div");
-        li.className = "monster-link";
-        li.textContent = m._displayName || m.name || m._file;
-        li.addEventListener("click", () => addToTracker(m));
-        listEl.appendChild(li);
+		const li = document.createElement("div");
+		li.className = "monster-link";
+		li.innerHTML = `<a href="#">${m._displayName || m.name || m._file}</a>`;
+		li.querySelector("a").addEventListener("click", (e) => {
+		  e.preventDefault();
+		  addToTracker(m);
+		});
+		listEl.appendChild(li);
+
       });
     }
 
