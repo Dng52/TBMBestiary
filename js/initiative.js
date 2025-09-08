@@ -52,7 +52,7 @@ async function loadMonsters() {
     const sourceEl = document.getElementById("source-filters");
     const searchEl = document.getElementById("search");
     const trackerBody = document.getElementById("tracker-body");
-    const statBlockContainer = document.getElementById("stat-block");
+    const statBlockContainer = document.getElementById("stat-block"); // Right panel
 
     const activeTypes = new Set();
     const activeCRs = new Set();
@@ -63,7 +63,7 @@ async function loadMonsters() {
     }
 
     // -----------------------------
-    // Filters
+    // Filters (Types, CR, Source)
     // -----------------------------
     const creatureTypes = [
       "aberration","beast","celestial","construct","dragon",
@@ -145,10 +145,11 @@ async function loadMonsters() {
         }
         const li = document.createElement("div");
         li.className = "monster-link";
-        li.textContent = m._displayName || m.name || m._file;
-        li.addEventListener("click", () => {
+        li.innerHTML = `<a href="#">${m._displayName || m.name || m._file}</a>`;
+        li.querySelector("a").addEventListener("click", (e) => {
+          e.preventDefault();
           addToTracker(m);
-          displayStatBlock(m);
+          displayStatBlock(m); // Display in right panel
         });
         listEl.appendChild(li);
       });
@@ -159,57 +160,52 @@ async function loadMonsters() {
     // -----------------------------
     function addToTracker(monster) {
       const row = document.createElement("tr");
-
       let hpValue = "?";
       if (monster.hp) {
         const match = monster.hp.match(/\d+/);
         if (match) hpValue = match[0];
       }
+      const startHP = isNaN(parseInt(hpValue)) ? 0 : parseInt(hpValue);
 
       row.innerHTML = `
         <td>${monster._displayName || monster.name}</td>
         <td><input type="number" value="0" style="width: 50px;"></td>
         <td>${monster.ac || "?"}</td>
-        <td><input type="number" value="${hpValue}" style="width: 60px;"></td>
+        <td></td>
         <td><input type="text" style="width: 100%;"></td>
         <td><button class="remove-btn">Remove</button></td>
       `;
 
-      row.querySelector(".remove-btn").addEventListener("click", () => {
-        row.remove();
-      });
+      const hpCell = row.querySelector("td:nth-child(4)");
+      const hpInput = document.createElement("input");
+      hpInput.type = "text";
+      hpInput.style.width = "60px";
+      hpInput.value = startHP;
+      hpInput.dataset.currentHp = startHP;
+      hpCell.appendChild(hpInput);
 
-      const hpInput = row.querySelector("td:nth-child(4) input");
       hpInput.addEventListener("keydown", (e) => {
         if (e.key === "Enter") {
           e.preventDefault();
+          let current = parseInt(hpInput.dataset.currentHp, 10) || 0;
           const raw = hpInput.value.trim();
-          const current = parseInt(hpInput.getAttribute("data-current") || hpInput.value, 10) || 0;
-
           if (/^[+-]\d+$/.test(raw)) {
-            const change = parseInt(raw, 10);
-            const newValue = Math.max(0, current + change);
-            hpInput.value = newValue;
-            hpInput.setAttribute("data-current", newValue);
-          } else {
-            const val = parseInt(raw, 10);
-            if (!isNaN(val)) {
-              hpInput.value = val;
-              hpInput.setAttribute("data-current", val);
-            }
+            current += parseInt(raw, 10);
+          } else if (/^\d+$/.test(raw)) {
+            current = parseInt(raw, 10);
           }
+          if (current < 0) current = 0;
+          hpInput.dataset.currentHp = current;
+          hpInput.value = current;
         }
       });
 
-      if (!isNaN(parseInt(hpValue))) {
-        hpInput.setAttribute("data-current", hpValue);
-      }
-
+      row.querySelector(".remove-btn").addEventListener("click", () => row.remove());
       trackerBody.appendChild(row);
     }
 
     // -----------------------------
-    // Display stat block in right panel
+    // Display monster stat block in right panel
     // -----------------------------
     function displayStatBlock(monster) {
       const displayName = monster._displayName || monster.name || monster._file;
@@ -234,10 +230,7 @@ async function loadMonsters() {
 
         <div class="abilities">
           ${Object.entries(monster.abilities || {}).map(([k,v]) => `
-            <div>
-              <h4>${k.toUpperCase()}</h4>
-              <p>${formatAbility(v)}</p>
-            </div>
+            <div><h4>${k.toUpperCase()}</h4><p>${formatAbility(v)}</p></div>
           `).join("")}
         </div>
 
@@ -255,10 +248,12 @@ async function loadMonsters() {
 
         <hr class="orange-border">
 
-        ${monster.traits?.map(t => `<p><strong><em>${t.name}.</em></strong> ${t.desc}</p>`).join("") || ""}
+        ${monster.traits?.length ? monster.traits.map(t => `<p><strong><em>${t.name}.</em></strong> ${t.desc}</p>`).join("") : ""}
         ${monster.actions?.length ? `<h3>Actions</h3>${monster.actions.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}` : ""}
         ${monster.reactions?.length ? `<h3>Reactions</h3>${monster.reactions.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}` : ""}
-        ${monster.legendary?.length ? `<h3>Legendary Actions</h3><p>The ${displayName} can take ${monster.legendarynumber || 3} legendary actions. Only one legendary action option can be used at a time, regaining spent actions at the start of its turn.</p>${monster.legendary.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}` : ""}
+        ${monster.legendary?.length ? `<h3>Legendary Actions</h3><p>The ${displayName} can take ${monster.legendarynumber || 3} legendary actions. Only one can be used at a time. Regains spent actions at the start of its turn.</p>${monster.legendary.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}` : ""}
+        ${monster.lairactions?.length ? `<h3>Lair Actions</h3>${monster.lairactions.map(l => `<p>${l.description || ""}</p>${l.bullets?.length ? `<ul>${l.bullets.map(b=>`<li>${b}</li>`).join("")}</ul>` : ""}`).join("")}` : ""}
+        ${monster.regionaleffects?.length ? `<h3>Regional Effects</h3>${monster.regionaleffects.map(r => `<p>${r.description || ""}</p>${r.bullets?.length ? `<ul>${r.bullets.map(b=>`<li>${b}</li>`).join("")}</ul>` : ""}${r.secondaryDescription ? `<p>${r.secondaryDescription}</p>` : ""}`).join("")}` : ""}
       `;
 
       statBlockContainer.innerHTML = html;
