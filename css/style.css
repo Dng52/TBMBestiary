@@ -256,6 +256,8 @@ strong em {
 }
 .monster-link {
   margin: 0.3rem 0;
+  display: block;
+  
 }
 .monster-link a {
   font-family: 'Bookmania', Georgia, serif;
