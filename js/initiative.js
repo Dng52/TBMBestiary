@@ -174,6 +174,61 @@ function addToTracker(monster) {
   } catch (err) {
     console.error("Failed to load monsters:", err);
   }
+  
+// -----------------------------
+// Add monster to initiative tracker
+// -----------------------------
+function addToTracker(monster) {
+  const row = document.createElement("tr");
+
+  // Extract numeric HP (take the first number before any parentheses)
+  let hpValue = "?";
+  if (monster.hp) {
+    const match = monster.hp.match(/\d+/);
+    if (match) hpValue = parseInt(match[0]);
+  }
+
+  row.innerHTML = `
+    <td>${monster._displayName || monster.name}</td>
+    <td><input type="number" value="0" style="width: 50px;"></td>
+    <td>${monster.ac || "?"}</td>
+    <td><input type="text" value="${hpValue}" style="width: 60px;"></td>
+    <td><input type="text" style="width: 100%;"></td>
+    <td><button class="remove-btn">Remove</button></td>
+  `;
+
+  // Make HP math-editable
+  const hpInput = row.querySelector("td:nth-child(4) input");
+  hpInput.addEventListener("keydown", e => {
+    if (e.key === "Enter") {
+      let current = parseInt(hpInput.value);
+      if (isNaN(current)) current = 0;
+
+      const input = e.target.value.trim();
+
+      if (/^[\+\-\*\/]\d+$/.test(input)) {
+        const num = parseInt(input.slice(1));
+        switch (input[0]) {
+          case "+": current += num; break;
+          case "-": current -= num; break;
+          case "*": current *= num; break;
+          case "/": current = Math.floor(current / num); break;
+        }
+      } else if (!isNaN(parseInt(input))) {
+        current = parseInt(input);
+      }
+
+      hpInput.value = current;
+    }
+  });
+
+  row.querySelector(".remove-btn").addEventListener("click", () => {
+    row.remove();
+  });
+
+  trackerBody.appendChild(row);
+}
+
 }
 
 loadMonsters();

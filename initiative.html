@@ -5,153 +5,83 @@
   <title>Initiative Tracker</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
-    /* =========================
-       FULL SCREEN LAYOUT
-       ========================= */
     body {
       display: flex;
-      min-height: 100vh;
       margin: 0;
-      background-image: url("https://i.imgur.com/8XflKRc.png");
-      background-attachment: fixed;
-      background-size: cover;
-      color: #2c2c2c;
-      font-family: 'Bookmania', Georgia, serif;
+      height: 100vh;
+      font-family: Arial, sans-serif;
     }
-
-    .panel {
-      padding: 1rem;
+    #filters {
+      width: 25%;
+      padding: 1em;
+      border-right: 1px solid #ccc;
       overflow-y: auto;
     }
-
-    #left-panel {
+    #tracker {
+      width: 50%;
+      padding: 1em;
+      border-right: 1px solid #ccc;
+      overflow-y: auto;
+    }
+    #details {
       width: 25%;
-      border-right: 2px solid #FFBF00;
+      padding: 1em;
+      overflow-y: auto;
     }
-
-    #middle-panel {
-      width: 35%;
-      border-right: 2px solid #FFBF00;
+    .creature {
+      cursor: pointer;
+      padding: 0.25em;
     }
-
-    #right-panel {
-      width: 40%;
+    .creature:hover {
+      background: #f0f0f0;
     }
-
-    /* =========================
-       FILTERS INLINE CHECKBOXES
-       ========================= */
-    .filter-group {
+    .tracker-entry {
+      border: 1px solid #ccc;
+      padding: 0.5em;
+      margin-bottom: 0.5em;
+      border-radius: 4px;
+    }
+    .tracker-entry input {
+      width: 60px;
+    }
+    .checkbox-group {
       display: flex;
       flex-wrap: wrap;
-      margin-bottom: 1rem;
+      gap: 1em;
     }
-
-    .filter-group label {
-      display: inline-flex;
-      align-items: center;
-      margin-right: 1rem;
-      font-family: 'Bookmania', Georgia, serif;
-      font-size: 0.95rem;
-      color: #492468;
+    .checkbox-group label {
+      white-space: nowrap;
+    }
+    .remove-btn {
+      margin-left: 10px;
+      color: red;
       cursor: pointer;
-    }
-
-    .filter-group input[type="checkbox"] {
-      margin-right: 0.25rem;
-      cursor: pointer;
-    }
-
-    #search {
-      width: 95%;
-      padding: 0.4rem;
-      margin-bottom: 1rem;
-      font-size: 1rem;
-      border: 2px solid #492468;
-      border-radius: 5px;
-    }
-
-    /* =========================
-       MONSTER LIST
-       ========================= */
-    #monster-list h3 {
-      margin-top: 1rem;
-      font-size: 1.3rem;
-      font-family: 'AlmendraSC', Georgia, serif;
-      color: #492468;
-      border-bottom: 2px solid #FFBF00;
-      display: inline-block;
-      padding-bottom: 0.2rem;
-    }
-
-    .monster-link {
-      margin: 0.2rem 0;
-      cursor: pointer;
-    }
-
-    .monster-link:hover {
-      color: #FFBF00;
-    }
-
-    /* =========================
-       INITIATIVE TRACKER TABLE
-       ========================= */
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-bottom: 1rem;
-    }
-
-    table th, table td {
-      border: 1px solid #888;
-      padding: 0.4rem 0.6rem;
-      text-align: left;
-      font-size: 0.95rem;
-    }
-
-    table th {
-      background: #EAEDEF;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-
-  <!-- LEFT PANEL: MONSTERS & FILTERS -->
-  <div class="panel" id="left-panel">
-    <input type="text" id="search" placeholder="Search by name...">
-
-    <div class="filter-group" id="type-filters"></div>
-    <div class="filter-group" id="cr-filters"></div>
-    <div class="filter-group" id="source-filters"></div>
-
-    <div id="monster-list"></div>
+  <div id="filters">
+    <h2>Filters</h2>
+    <div id="filterOptions" class="checkbox-group"></div>
+    <h2>Creatures</h2>
+    <div id="creatureList"></div>
   </div>
 
-<!-- MIDDLE PANEL: INITIATIVE TRACKER -->
-<div class="panel" id="middle-panel">
-  <table id="initiative-table">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Initiative</th>
-        <th>AC</th>
-        <th>HP</th>
-        <th>Notes</th>
-        <th>Remove</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Rows get added here dynamically -->
-    </tbody>
-  </table>
-</div>
-
-
-  <!-- RIGHT PANEL: STAT BLOCK -->
-  <div class="panel" id="right-panel">
-    <div id="stat-block"></div>
+  <div id="tracker">
+    <h2>Initiative Tracker</h2>
+    <div id="initiativeList"></div>
   </div>
 
-  <script src="js/initiative.js"></script>
+  <div id="details">
+    <h2>Details</h2>
+    <p><strong>Name:</strong> <span id="creatureName"></span></p>
+    <p><strong>AC:</strong> <span id="creatureAC"></span></p>
+    <p><strong>HP:</strong> <span id="creatureHP"></span></p>
+    <p><strong>Notes:</strong></p>
+    <textarea id="creatureNotes" rows="5" style="width:100%;"></textarea>
+  </div>
+
+  <script src="initiative.js"></script>
 </body>
 </html>
