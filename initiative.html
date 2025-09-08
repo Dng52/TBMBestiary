@@ -5,83 +5,124 @@
   <title>Initiative Tracker</title>
   <link rel="stylesheet" href="css/style.css">
   <style>
-    body {
-      display: flex;
+    /* Full screen layout for initiative tracker */
+    body, html {
+      height: 100%;
       margin: 0;
-      height: 100vh;
-      font-family: Arial, sans-serif;
+      padding: 0;
+      display: flex;
+      font-family: 'Bookmania', Georgia, serif;
     }
-    #filters {
+
+    .panel {
+      padding: 1rem;
+      overflow-y: auto;
+    }
+
+    #left-panel {
       width: 25%;
-      padding: 1em;
-      border-right: 1px solid #ccc;
-      overflow-y: auto;
+      border-right: 2px solid #FFBF00;
     }
-    #tracker {
-      width: 50%;
-      padding: 1em;
-      border-right: 1px solid #ccc;
-      overflow-y: auto;
+
+    #middle-panel {
+      width: 40%;
+      border-right: 2px solid #FFBF00;
     }
-    #details {
-      width: 25%;
-      padding: 1em;
-      overflow-y: auto;
+
+    #right-panel {
+      width: 35%;
     }
-    .creature {
-      cursor: pointer;
-      padding: 0.25em;
-    }
-    .creature:hover {
-      background: #f0f0f0;
-    }
-    .tracker-entry {
-      border: 1px solid #ccc;
-      padding: 0.5em;
-      margin-bottom: 0.5em;
-      border-radius: 4px;
-    }
-    .tracker-entry input {
-      width: 60px;
-    }
-    .checkbox-group {
+
+    /* Checkboxes inline */
+    .filter-group {
       display: flex;
       flex-wrap: wrap;
-      gap: 1em;
+      margin-bottom: 1rem;
     }
-    .checkbox-group label {
-      white-space: nowrap;
+
+    .filter-group label {
+      margin-right: 1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 0.9rem;
+    }
+
+    .filter-group input[type="checkbox"] {
+      margin-right: 0.3rem;
+    }
+
+    /* Monster list */
+    #monster-list {
+      margin-top: 1rem;
+    }
+    .monster-link {
+      cursor: pointer;
+      margin: 0.2rem 0;
+    }
+    .monster-link:hover {
+      color: #FFBF00;
+    }
+
+    /* Tracker table */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #888;
+      padding: 0.3rem;
+      text-align: center;
+    }
+    input[type="number"], input[type="text"] {
+      width: 80%;
     }
     .remove-btn {
-      margin-left: 10px;
-      color: red;
       cursor: pointer;
-      font-weight: bold;
+      background: #492468;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      padding: 0.2rem 0.5rem;
     }
   </style>
 </head>
 <body>
-  <div id="filters">
-    <h2>Filters</h2>
-    <div id="filterOptions" class="checkbox-group"></div>
-    <h2>Creatures</h2>
-    <div id="creatureList"></div>
+
+  <!-- Left Panel: Monster List & Filters -->
+  <div id="left-panel" class="panel">
+    <input id="search" type="text" placeholder="Search by name">
+    
+    <div id="type-filters" class="filter-group"></div>
+    <div id="cr-filters" class="filter-group"></div>
+    <div id="source-filters" class="filter-group"></div>
+
+    <div id="monster-list"></div>
   </div>
 
-  <div id="tracker">
+  <!-- Middle Panel: Initiative Tracker -->
+  <div id="middle-panel" class="panel">
     <h2>Initiative Tracker</h2>
-    <div id="initiativeList"></div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Initiative</th>
+          <th>AC</th>
+          <th>HP</th>
+          <th>Notes</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody id="tracker-body"></tbody>
+    </table>
   </div>
 
-  <div id="details">
-    <h2>Details</h2>
-    <p><strong>Name:</strong> <span id="creatureName"></span></p>
-    <p><strong>AC:</strong> <span id="creatureAC"></span></p>
-    <p><strong>HP:</strong> <span id="creatureHP"></span></p>
-    <p><strong>Notes:</strong></p>
-    <textarea id="creatureNotes" rows="5" style="width:100%;"></textarea>
+  <!-- Right Panel: Stat Block -->
+  <div id="right-panel" class="panel">
+    <div id="stat-block"></div>
   </div>
 
-  <script src="initiative.js"></script>
+  <script src="js/initiative.js"></script>
 </body>
 </html>

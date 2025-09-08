@@ -64,8 +64,14 @@ async function loadMonsters() {
     // -----------------------------
     // Filters
     // -----------------------------
-    const creatureTypes = ["aberration","beast","celestial","construct","dragon","elemental","fey","fiend","giant","humanoid","monstrosity","ooze","plant","undead"];
-    typeEl.innerHTML = creatureTypes.map(t => `<label><input type="checkbox" data-type="${t}">${t}</label>`).join("");
+    const creatureTypes = [
+      "aberration","beast","celestial","construct","dragon",
+      "elemental","fey","fiend","giant","humanoid",
+      "monstrosity","ooze","plant","undead"
+    ];
+    typeEl.innerHTML = creatureTypes.map(t =>
+      `<label><input type="checkbox" data-type="${t}">${t}</label>`
+    ).join("");
     typeEl.querySelectorAll("input").forEach(cb => {
       cb.addEventListener("change", () => {
         activeTypes.clear();
@@ -74,9 +80,12 @@ async function loadMonsters() {
       });
     });
 
-    const uniqueCRs = [...new Set(monsters.map(m => isNaN(m._crSortValue) ? null : m._cleanCR).filter(Boolean))]
-      .sort((a,b) => parseCR(a)-parseCR(b));
-    crEl.innerHTML = uniqueCRs.map(cr => `<label><input type="checkbox" data-cr="${cr}">${cr}</label>`).join("");
+    const uniqueCRs = [...new Set(monsters.map(m =>
+      isNaN(m._crSortValue) ? null : m._cleanCR).filter(Boolean)
+    )].sort((a,b) => parseCR(a)-parseCR(b));
+    crEl.innerHTML = uniqueCRs.map(cr =>
+      `<label><input type="checkbox" data-cr="${cr}">${cr}</label>`
+    ).join("");
     crEl.querySelectorAll("input").forEach(cb => {
       cb.addEventListener("change", () => {
         activeCRs.clear();
@@ -85,8 +94,12 @@ async function loadMonsters() {
       });
     });
 
-    const uniqueSources = [...new Set(monsters.map(m => m.tags[m.tags.length-1]).filter(Boolean))].sort();
-    sourceEl.innerHTML = uniqueSources.map(src => `<label><input type="checkbox" data-source="${src}">${formatSource(src)}</label>`).join("");
+    const uniqueSources = [...new Set(monsters.map(m =>
+      m.tags[m.tags.length-1]).filter(Boolean)
+    )].sort();
+    sourceEl.innerHTML = uniqueSources.map(src =>
+      `<label><input type="checkbox" data-source="${src}">${formatSource(src)}</label>`
+    ).join("");
     sourceEl.querySelectorAll("input").forEach(cb => {
       cb.addEventListener("change", () => {
         activeSources.clear();
@@ -137,34 +150,64 @@ async function loadMonsters() {
       });
     }
 
- // -----------------------------
-// Add monster to initiative tracker
-// -----------------------------
-function addToTracker(monster) {
-  const row = document.createElement("tr");
+    // -----------------------------
+    // Add monster to initiative tracker
+    // -----------------------------
+    function addToTracker(monster) {
+      const row = document.createElement("tr");
 
-  // Extract numeric HP (take the first number before any parentheses)
-  let hpValue = "?";
-  if (monster.hp) {
-    const match = monster.hp.match(/\d+/);
-    if (match) hpValue = match[0];
-  }
+      // Extract numeric HP (take the first number before any parentheses)
+      let hpValue = "?";
+      if (monster.hp) {
+        const match = monster.hp.match(/\d+/);
+        if (match) hpValue = match[0];
+      }
 
-  row.innerHTML = `
-    <td>${monster._displayName || monster.name}</td>
-    <td><input type="number" value="0" style="width: 50px;"></td>
-    <td>${monster.ac || "?"}</td>
-    <td><input type="number" value="${hpValue}" style="width: 60px;"></td>
-    <td><input type="text" style="width: 100%;"></td>
-    <td><button class="remove-btn">Remove</button></td>
-  `;
+      row.innerHTML = `
+        <td>${monster._displayName || monster.name}</td>
+        <td><input type="number" value="0" style="width: 50px;"></td>
+        <td>${monster.ac || "?"}</td>
+        <td><input type="number" value="${hpValue}" style="width: 60px;"></td>
+        <td><input type="text" style="width: 100%;"></td>
+        <td><button class="remove-btn">Remove</button></td>
+      `;
 
-  row.querySelector(".remove-btn").addEventListener("click", () => {
-    row.remove();
-  });
+      // Remove row button
+      row.querySelector(".remove-btn").addEventListener("click", () => {
+        row.remove();
+      });
 
-  trackerBody.appendChild(row);
-}
+      // Make HP math-editable
+      const hpInput = row.querySelector("td:nth-child(4) input");
+      hpInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          const raw = hpInput.value.trim();
+          const current = parseInt(hpInput.getAttribute("data-current") || hpInput.value, 10) || 0;
+
+          if (/^[+-]\d+$/.test(raw)) {
+            const change = parseInt(raw, 10);
+            const newValue = Math.max(0, current + change);
+            hpInput.value = newValue;
+            hpInput.setAttribute("data-current", newValue);
+          } else {
+            // If it's a plain number, just replace current
+            const val = parseInt(raw, 10);
+            if (!isNaN(val)) {
+              hpInput.value = val;
+              hpInput.setAttribute("data-current", val);
+            }
+          }
+        }
+      });
+
+      // Initialize current HP
+      if (!isNaN(parseInt(hpValue))) {
+        hpInput.setAttribute("data-current", hpValue);
+      }
+
+      trackerBody.appendChild(row);
+    }
 
     // -----------------------------
     // Initial render
@@ -174,61 +217,6 @@ function addToTracker(monster) {
   } catch (err) {
     console.error("Failed to load monsters:", err);
   }
-  
-// -----------------------------
-// Add monster to initiative tracker
-// -----------------------------
-function addToTracker(monster) {
-  const row = document.createElement("tr");
-
-  // Extract numeric HP (take the first number before any parentheses)
-  let hpValue = "?";
-  if (monster.hp) {
-    const match = monster.hp.match(/\d+/);
-    if (match) hpValue = parseInt(match[0]);
-  }
-
-  row.innerHTML = `
-    <td>${monster._displayName || monster.name}</td>
-    <td><input type="number" value="0" style="width: 50px;"></td>
-    <td>${monster.ac || "?"}</td>
-    <td><input type="text" value="${hpValue}" style="width: 60px;"></td>
-    <td><input type="text" style="width: 100%;"></td>
-    <td><button class="remove-btn">Remove</button></td>
-  `;
-
-  // Make HP math-editable
-  const hpInput = row.querySelector("td:nth-child(4) input");
-  hpInput.addEventListener("keydown", e => {
-    if (e.key === "Enter") {
-      let current = parseInt(hpInput.value);
-      if (isNaN(current)) current = 0;
-
-      const input = e.target.value.trim();
-
-      if (/^[\+\-\*\/]\d+$/.test(input)) {
-        const num = parseInt(input.slice(1));
-        switch (input[0]) {
-          case "+": current += num; break;
-          case "-": current -= num; break;
-          case "*": current *= num; break;
-          case "/": current = Math.floor(current / num); break;
-        }
-      } else if (!isNaN(parseInt(input))) {
-        current = parseInt(input);
-      }
-
-      hpInput.value = current;
-    }
-  });
-
-  row.querySelector(".remove-btn").addEventListener("click", () => {
-    row.remove();
-  });
-
-  trackerBody.appendChild(row);
-}
-
 }
 
 loadMonsters();
