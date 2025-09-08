@@ -51,7 +51,7 @@ async function loadMonsters() {
     const crEl = document.getElementById("cr-filters");
     const sourceEl = document.getElementById("source-filters");
     const searchEl = document.getElementById("search");
-    const trackerBody = document.querySelector("#initiative-table tbody");
+    const trackerBody = document.getElementById("tracker-body");
 
     const activeTypes = new Set();
     const activeCRs = new Set();
@@ -162,49 +162,51 @@ async function loadMonsters() {
         const match = monster.hp.match(/\d+/);
         if (match) hpValue = match[0];
       }
+      const startHP = isNaN(parseInt(hpValue)) ? 0 : parseInt(hpValue);
 
       row.innerHTML = `
         <td>${monster._displayName || monster.name}</td>
         <td><input type="number" value="0" style="width: 50px;"></td>
         <td>${monster.ac || "?"}</td>
-        <td><input type="number" value="${hpValue}" style="width: 60px;"></td>
+        <td></td>
         <td><input type="text" style="width: 100%;"></td>
         <td><button class="remove-btn">Remove</button></td>
       `;
+
+      // Create the HP input separately so we can attach special logic
+      const hpCell = row.querySelector("td:nth-child(4)");
+      const hpInput = document.createElement("input");
+      hpInput.type = "text";
+      hpInput.style.width = "60px";
+      hpInput.value = startHP;
+      hpInput.dataset.currentHp = startHP;
+      hpCell.appendChild(hpInput);
+
+      // Handle Enter key math
+      hpInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          let current = parseInt(hpInput.dataset.currentHp, 10) || 0;
+          const raw = hpInput.value.trim();
+
+          if (/^[+-]\d+$/.test(raw)) {
+            // relative adjustment
+            current += parseInt(raw, 10);
+          } else if (/^\d+$/.test(raw)) {
+            // replace with a plain number
+            current = parseInt(raw, 10);
+          }
+          if (current < 0) current = 0;
+
+          hpInput.dataset.currentHp = current;
+          hpInput.value = current;
+        }
+      });
 
       // Remove row button
       row.querySelector(".remove-btn").addEventListener("click", () => {
         row.remove();
       });
-
-      // Make HP math-editable
-      const hpInput = row.querySelector("td:nth-child(4) input");
-      hpInput.addEventListener("keydown", (e) => {
-        if (e.key === "Enter") {
-          e.preventDefault();
-          const raw = hpInput.value.trim();
-          const current = parseInt(hpInput.getAttribute("data-current") || hpInput.value, 10) || 0;
-
-          if (/^[+-]\d+$/.test(raw)) {
-            const change = parseInt(raw, 10);
-            const newValue = Math.max(0, current + change);
-            hpInput.value = newValue;
-            hpInput.setAttribute("data-current", newValue);
-          } else {
-            // If it's a plain number, just replace current
-            const val = parseInt(raw, 10);
-            if (!isNaN(val)) {
-              hpInput.value = val;
-              hpInput.setAttribute("data-current", val);
-            }
-          }
-        }
-      });
-
-      // Initialize current HP
-      if (!isNaN(parseInt(hpValue))) {
-        hpInput.setAttribute("data-current", hpValue);
-      }
 
       trackerBody.appendChild(row);
     }
