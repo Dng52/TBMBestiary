@@ -52,6 +52,7 @@ async function loadMonsters() {
     const sourceEl = document.getElementById("source-filters");
     const searchEl = document.getElementById("search");
     const trackerBody = document.getElementById("tracker-body");
+    const statBlockContainer = document.getElementById("stat-block");
 
     const activeTypes = new Set();
     const activeCRs = new Set();
@@ -142,15 +143,14 @@ async function loadMonsters() {
           heading.textContent = crVal === "Undefined" ? "CR Undefined" : `CR ${crVal}`;
           listEl.appendChild(heading);
         }
-		const li = document.createElement("div");
-		li.className = "monster-link";
-		li.innerHTML = `<a href="#">${m._displayName || m.name || m._file}</a>`;
-		li.querySelector("a").addEventListener("click", (e) => {
-		  e.preventDefault();
-		  addToTracker(m);
-		});
-		listEl.appendChild(li);
-
+        const li = document.createElement("div");
+        li.className = "monster-link";
+        li.textContent = m._displayName || m.name || m._file;
+        li.addEventListener("click", () => {
+          addToTracker(m);
+          displayStatBlock(m);
+        });
+        listEl.appendChild(li);
       });
     }
 
@@ -160,59 +160,108 @@ async function loadMonsters() {
     function addToTracker(monster) {
       const row = document.createElement("tr");
 
-      // Extract numeric HP (take the first number before any parentheses)
       let hpValue = "?";
       if (monster.hp) {
         const match = monster.hp.match(/\d+/);
         if (match) hpValue = match[0];
       }
-      const startHP = isNaN(parseInt(hpValue)) ? 0 : parseInt(hpValue);
 
       row.innerHTML = `
         <td>${monster._displayName || monster.name}</td>
         <td><input type="number" value="0" style="width: 50px;"></td>
         <td>${monster.ac || "?"}</td>
-        <td></td>
+        <td><input type="number" value="${hpValue}" style="width: 60px;"></td>
         <td><input type="text" style="width: 100%;"></td>
         <td><button class="remove-btn">Remove</button></td>
       `;
 
-      // Create the HP input separately so we can attach special logic
-      const hpCell = row.querySelector("td:nth-child(4)");
-      const hpInput = document.createElement("input");
-      hpInput.type = "text";
-      hpInput.style.width = "60px";
-      hpInput.value = startHP;
-      hpInput.dataset.currentHp = startHP;
-      hpCell.appendChild(hpInput);
-
-      // Handle Enter key math
-      hpInput.addEventListener("keydown", (e) => {
-        if (e.key === "Enter") {
-          e.preventDefault();
-          let current = parseInt(hpInput.dataset.currentHp, 10) || 0;
-          const raw = hpInput.value.trim();
-
-          if (/^[+-]\d+$/.test(raw)) {
-            // relative adjustment
-            current += parseInt(raw, 10);
-          } else if (/^\d+$/.test(raw)) {
-            // replace with a plain number
-            current = parseInt(raw, 10);
-          }
-          if (current < 0) current = 0;
-
-          hpInput.dataset.currentHp = current;
-          hpInput.value = current;
-        }
-      });
-
-      // Remove row button
       row.querySelector(".remove-btn").addEventListener("click", () => {
         row.remove();
       });
 
+      const hpInput = row.querySelector("td:nth-child(4) input");
+      hpInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          e.preventDefault();
+          const raw = hpInput.value.trim();
+          const current = parseInt(hpInput.getAttribute("data-current") || hpInput.value, 10) || 0;
+
+          if (/^[+-]\d+$/.test(raw)) {
+            const change = parseInt(raw, 10);
+            const newValue = Math.max(0, current + change);
+            hpInput.value = newValue;
+            hpInput.setAttribute("data-current", newValue);
+          } else {
+            const val = parseInt(raw, 10);
+            if (!isNaN(val)) {
+              hpInput.value = val;
+              hpInput.setAttribute("data-current", val);
+            }
+          }
+        }
+      });
+
+      if (!isNaN(parseInt(hpValue))) {
+        hpInput.setAttribute("data-current", hpValue);
+      }
+
       trackerBody.appendChild(row);
+    }
+
+    // -----------------------------
+    // Display stat block in right panel
+    // -----------------------------
+    function displayStatBlock(monster) {
+      const displayName = monster._displayName || monster.name || monster._file;
+      const formatAbility = (score) => {
+        const mod = Math.floor((score - 10) / 2);
+        const sign = mod >= 0 ? `+${mod}` : mod;
+        return `${score} (${sign})`;
+      };
+
+      let html = `
+        <div class="creature-heading">
+          <h1>${displayName}</h1>
+          <h5>${monster.size || "Medium"} ${monster.type || ""}${monster.alignment ? `, ${monster.alignment}` : ""}</h5>
+        </div>
+        <hr class="orange-border">
+
+        <div class="property-line"><h4>Armor Class&nbsp</h4><p>${monster.ac}</p></div>
+        <div class="property-line"><h4>Hit Points&nbsp</h4><p>${monster.hp}</p></div>
+        ${monster.speed ? `<div class="property-line"><h4>Speed&nbsp</h4><p>${monster.speed}</p></div>` : ""}
+
+        <hr class="orange-border">
+
+        <div class="abilities">
+          ${Object.entries(monster.abilities || {}).map(([k,v]) => `
+            <div>
+              <h4>${k.toUpperCase()}</h4>
+              <p>${formatAbility(v)}</p>
+            </div>
+          `).join("")}
+        </div>
+
+        <hr class="orange-border">
+
+        ${monster.saves ? `<div class="property-line"><h4>Saving Throws&nbsp</h4><p>${monster.saves}</p></div>` : ""}
+        ${monster.skills ? `<div class="property-line"><h4>Skills&nbsp</h4><p>${monster.skills}</p></div>` : ""}
+        ${monster.immunities ? `<div class="property-line"><h4>Damage Immunities&nbsp</h4><p>${monster.immunities}</p></div>` : ""}
+        ${monster.resistance ? `<div class="property-line"><h4>Damage Resistance&nbsp</h4><p>${monster.resistance}</p></div>` : ""}
+        ${monster.vulnerability ? `<div class="property-line"><h4>Damage Vulnerability&nbsp</h4><p>${monster.vulnerability}</p></div>` : ""}
+        ${monster.conimmunities ? `<div class="property-line"><h4>Condition Immunities&nbsp</h4><p>${monster.conimmunities}</p></div>` : ""}
+        ${monster.senses ? `<div class="property-line"><h4>Senses&nbsp</h4><p>${monster.senses}</p></div>` : ""}
+        ${monster.languages ? `<div class="property-line"><h4>Languages&nbsp</h4><p>${monster.languages}</p></div>` : ""}
+        <div class="property-line"><h4>Challenge&nbsp</h4><p>${monster.cr}</p></div>
+
+        <hr class="orange-border">
+
+        ${monster.traits?.map(t => `<p><strong><em>${t.name}.</em></strong> ${t.desc}</p>`).join("") || ""}
+        ${monster.actions?.length ? `<h3>Actions</h3>${monster.actions.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}` : ""}
+        ${monster.reactions?.length ? `<h3>Reactions</h3>${monster.reactions.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}` : ""}
+        ${monster.legendary?.length ? `<h3>Legendary Actions</h3><p>The ${displayName} can take ${monster.legendarynumber || 3} legendary actions. Only one legendary action option can be used at a time, regaining spent actions at the start of its turn.</p>${monster.legendary.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}` : ""}
+      `;
+
+      statBlockContainer.innerHTML = html;
     }
 
     // -----------------------------
