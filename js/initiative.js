@@ -214,27 +214,35 @@ async function loadMonsters() {
     // -----------------------------
     // Attach hover & click to monster links
     // -----------------------------
- function attachStatBlockEvents() {
+function attachStatBlockEvents() {
   document.querySelectorAll("#monster-list .monster-link a").forEach(link => {
     const monster = link.monsterRef;
 
-    // Hover shows preview stat block
+    // Hover shows stat block preview
     link.addEventListener("mouseenter", () => {
-      displayStatBlock(monster);
+      if (!statBlockLocked) displayStatBlock(monster);
     });
 
-    // Click always adds to tracker and updates stat block
+    link.addEventListener("mouseleave", () => {
+      if (!statBlockLocked) statBlockContainer.innerHTML = "";
+    });
+
+    // Click always adds a new row and updates stat block
     link.addEventListener("click", (e) => {
       e.preventDefault();
 
-      // Add a new row to the initiative tracker
+      // Always add a new copy to the tracker
       addToTracker(monster);
 
-      // Update stat block to clicked monster
+      // Lock stat block to clicked monster
+      statBlockLocked = true;
+      lockedMonster = monster;
       displayStatBlock(monster);
     });
   });
 }
+
+
 
 
     // -----------------------------
@@ -286,44 +294,9 @@ function addToTracker(monster) {
 
   row.querySelector(".remove-btn").addEventListener("click", () => row.remove());
 
-  // Track currently highlighted row
-  let lockedRow = null;
-
-  const nameCell = row.querySelector(".monster-name");
-
-  nameCell.addEventListener("mouseenter", () => {
-    if (lockedRow !== row) {
-      nameCell.style.backgroundColor = "#ffd"; // hover color
-    }
-    displayStatBlock(monster);
-  });
-
-  nameCell.addEventListener("mouseleave", () => {
-    if (lockedRow !== row) {
-      nameCell.style.backgroundColor = ""; // reset
-    }
-    if (!statBlockLocked) statBlockContainer.innerHTML = "";
-  });
-
-  nameCell.addEventListener("click", () => {
-    if (lockedRow === row) {
-      lockedRow = null;
-      nameCell.style.backgroundColor = "";
-      statBlockLocked = false;
-      lockedMonster = null;
-      statBlockContainer.innerHTML = "";
-    } else {
-      if (lockedRow) lockedRow.querySelector(".monster-name").style.backgroundColor = ""; // reset previous
-      lockedRow = row;
-      nameCell.style.backgroundColor = "#ffa"; // lock color
-      statBlockLocked = true;
-      lockedMonster = monster;
-      displayStatBlock(monster);
-    }
-  });
-
   trackerBody.appendChild(row);
 }
+
 
 
 
