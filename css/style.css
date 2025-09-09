@@ -409,3 +409,10 @@ strong em {
   background-color: #FFBF00;
   cursor: pointer;
 }
+.right-panel {
+  flex: 0 0 400px;   /* 👈 fixed starting width */
+  max-width: 100%;   /* prevent overflow */
+  min-width: 250px;  /* sensible minimum */
+  overflow-y: auto;
+}
+

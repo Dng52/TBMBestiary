@@ -245,8 +245,6 @@ addBlankButton.addEventListener("click", () => {
     listEl.appendChild(tr);
   });
 }
-
-
     // -----------------------------
     // Display monster stat block
     // -----------------------------
@@ -327,10 +325,6 @@ function attachStatBlockEvents() {
     });
   });
 }
-
-
-
-
     // -----------------------------
     // Add monster to initiative tracker
     // -----------------------------
@@ -417,12 +411,6 @@ function addToTracker(monster) {
   trackerBody.appendChild(row);
 }
 
-
-
-
-
-
-
     // -----------------------------
     // Initial render
     // -----------------------------
@@ -473,6 +461,34 @@ makeResizable(
   document.getElementById("right-panel")
 );
 
+//Right panel resize
+const resizer = document.querySelector('.resizer-right'); // adjust selector
+const rightPanel = document.querySelector('.right-panel');
+
+let x = 0;
+let panelWidth = 0;
+
+const mouseDownHandler = function (e) {
+  x = e.clientX;
+  panelWidth = rightPanel.getBoundingClientRect().width;
+
+  document.addEventListener('mousemove', mouseMoveHandler);
+  document.addEventListener('mouseup', mouseUpHandler);
+};
+
+const mouseMoveHandler = function (e) {
+  const dx = e.clientX - x;
+  const newWidth = panelWidth - dx; // drag left shrinks, right expands
+  rightPanel.style.width = `${newWidth}px`;   // 👈 direct pixel width
+  rightPanel.style.flex = `0 0 ${newWidth}px`; // 👈 lock it in
+};
+
+const mouseUpHandler = function () {
+  document.removeEventListener('mousemove', mouseMoveHandler);
+  document.removeEventListener('mouseup', mouseUpHandler);
+};
+
+resizer.addEventListener('mousedown', mouseDownHandler);
 
 
 
