@@ -226,8 +226,9 @@ async function loadMonsters() {
           if (!statBlockLocked) statBlockContainer.innerHTML = "";
         });
 
-       link.addEventListener("click", (e) => {
+	link.addEventListener("click", (e) => {
 	  e.preventDefault();
+
 	  if (lockedMonster === monster) {
 		statBlockLocked = false;
 		lockedMonster = null;
@@ -237,8 +238,11 @@ async function loadMonsters() {
 		lockedMonster = monster;
 		displayStatBlock(monster);
 
-  }
-});
+		// Always add to tracker
+		addToTracker(monster);
+	  }
+	});
+
 
       });
     }
