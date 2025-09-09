@@ -61,6 +61,31 @@ async function loadMonsters() {
     function formatSource(name) {
       return name.split('-').map(w => w[0].toUpperCase() + w.slice(1)).join(' ');
     }
+	
+const rollButton = document.getElementById("roll-initiative-btn");
+
+rollButton.addEventListener("click", () => {
+  document.querySelectorAll("#tracker-body tr").forEach(row => {
+    const monsterName = row.dataset.monsterName;
+    const monster = monsters.find(m => (m._displayName || m.name || m._file) === monsterName);
+    if (!monster) return;
+
+    // Determine Dex modifier
+    let dexMod = 0;
+    if (monster.abilities && typeof monster.abilities.dex === "number") {
+      dexMod = Math.floor((monster.abilities.dex - 10) / 2);
+    }
+
+    // Roll d20 + Dex
+    const roll = Math.floor(Math.random() * 20) + 1;
+    const initiative = roll + dexMod;
+
+    // Fill initiative input (assume it's the 2nd cell: <td><input>)
+    const initInput = row.querySelector("td:nth-child(2) input");
+    if (initInput) initInput.value = initiative;
+  });
+});
+
 
     // -----------------------------
     // Filters (Types, CR, Source)

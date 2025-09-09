@@ -106,23 +106,28 @@
     <div id="monster-list"></div>
   </div>
 
-  <!-- Middle Panel: Initiative Tracker -->
-  <div id="middle-panel" class="panel">
-    <h2>Initiative Tracker</h2>
-    <table id="initiative-table">
-      <thead>
-        <tr>
-          <th>Name</th>
-          <th>Initiative</th>
-          <th>AC</th>
-          <th>HP</th>
-          <th>Notes</th>
-          <th>Remove</th>
-        </tr>
-      </thead>
-      <tbody id="tracker-body"></tbody>
-    </table>
+ <!-- Middle Panel: Initiative Tracker -->
+<div id="middle-panel" class="panel">
+  <div id="tracker-header" style="display: flex; align-items: center; gap: 10px; margin-bottom: 0.5rem;">
+    <h2 style="margin: 0;">Initiative Tracker</h2>
+    <button id="roll-initiative-btn" style="padding: 0.3rem 0.6rem; cursor: pointer;">Roll Initiative</button>
   </div>
+
+  <table id="initiative-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Initiative</th>
+        <th>AC</th>
+        <th>HP</th>
+        <th>Notes</th>
+        <th>Remove</th>
+      </tr>
+    </thead>
+    <tbody id="tracker-body"></tbody>
+  </table>
+</div>
+
 
   <!-- Right Panel: Stat Block -->
   <div id="right-panel" class="panel">
