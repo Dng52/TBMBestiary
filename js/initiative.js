@@ -432,29 +432,33 @@ function addToTracker(monster) {
     console.error("Failed to load monsters:", err);
   }
   
-    // -----------------------------
-    // Resizer
-    // -----------------------------
+	// -----------------------------
+	// Resizer
+	// -----------------------------
 	function makeResizable(resizer, leftPanel, rightPanel) {
-	  let x = 0;
-	  let leftWidth = 0;
+	  let startX = 0;
+	  let startWidth = 0;
 
 	  const mouseDownHandler = function (e) {
-		x = e.clientX;
-		leftWidth = leftPanel.getBoundingClientRect().width;
+		startX = e.clientX;
+		startWidth = leftPanel.getBoundingClientRect().width;
 
 		document.addEventListener("mousemove", mouseMoveHandler);
 		document.addEventListener("mouseup", mouseUpHandler);
+
+		// prevent selecting text while dragging
+		document.body.style.userSelect = "none";
 	  };
 
 	  const mouseMoveHandler = function (e) {
-		const dx = e.clientX - x;
-		leftPanel.style.width = `${leftWidth + dx}px`;
+		const dx = e.clientX - startX;
+		leftPanel.style.width = `${startWidth + dx}px`;
 	  };
 
 	  const mouseUpHandler = function () {
 		document.removeEventListener("mousemove", mouseMoveHandler);
 		document.removeEventListener("mouseup", mouseUpHandler);
+		document.body.style.userSelect = ""; // restore selection
 	  };
 
 	  resizer.addEventListener("mousedown", mouseDownHandler);
@@ -472,6 +476,7 @@ function addToTracker(monster) {
 	  document.getElementById("middle-panel"),
 	  document.getElementById("right-panel")
 	);
+
 
 
 }
