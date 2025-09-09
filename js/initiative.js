@@ -91,8 +91,45 @@ sortButton.addEventListener("click", () => {
     const bVal = parseInt(b.querySelector("td:nth-child(2) input").value, 10) || 0;
     return bVal - aVal; // descending order
   });
+// -----------------------------
+// Add Blank Entry Button
+// -----------------------------
+const addBlankButton = document.getElementById("add-blank-btn");
+addBlankButton.addEventListener("click", () => {
+  const row = document.createElement("tr");
 
-  rows.forEach(row => trackerBody.appendChild(row));
+  row.innerHTML = `
+    <td class="monster-name">Custom Entry</td>
+    <td><input type="number" value="0" style="width: 50px;"></td>
+    <td><input type="text" style="width: 50px;"></td>
+    <td><input type="text" style="width: 60px;"></td>
+    <td><input type="text" style="width: 100%;"></td>
+    <td><button class="remove-btn">Remove</button></td>
+  `;
+
+  // Remove button
+  row.querySelector(".remove-btn").addEventListener("click", () => row.remove());
+
+  // Optional hover & click highlight
+  const nameCell = row.querySelector(".monster-name");
+  nameCell.addEventListener("mouseenter", () => {
+    if (!lockedRow) nameCell.style.backgroundColor = "#ffd";
+  });
+  nameCell.addEventListener("mouseleave", () => {
+    if (!lockedRow) nameCell.style.backgroundColor = "";
+  });
+  nameCell.addEventListener("click", () => {
+    if (lockedRow === row) {
+      lockedRow = null;
+      nameCell.style.backgroundColor = "";
+    } else {
+      if (lockedRow) lockedRow.querySelector(".monster-name").style.backgroundColor = "";
+      lockedRow = row;
+      nameCell.style.backgroundColor = "#ffa";
+    }
+  });
+
+  trackerBody.appendChild(row);
 });
 
 
