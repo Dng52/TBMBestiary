@@ -4,51 +4,42 @@
 @font-face {
   font-family: 'AlmendraSC';
   src: url('../fonts/AlmendraSC-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 400; font-style: normal;
 }
 @font-face {
   font-family: 'AlmendraSC';
   src: url('../fonts/AlmendraSC-Italic.woff2') format('woff2');
-  font-weight: 400;
-  font-style: italic;
+  font-weight: 400; font-style: italic;
 }
 @font-face {
   font-family: 'AlmendraSC';
   src: url('../fonts/AlmendraSC-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
+  font-weight: 700; font-style: normal;
 }
 @font-face {
   font-family: 'AlmendraSC';
   src: url('../fonts/AlmendraSC-BoldItalic.woff2') format('woff2');
-  font-weight: 700;
-  font-style: italic;
+  font-weight: 700; font-style: italic;
 }
-
 @font-face {
   font-family: 'Bookmania';
   src: url('../fonts/Bookmania-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
+  font-weight: 400; font-style: normal;
 }
 @font-face {
   font-family: 'Bookmania';
   src: url('../fonts/Bookmania-RegularItalic.woff2') format('woff2');
-  font-weight: 400;
-  font-style: italic;
+  font-weight: 400; font-style: italic;
 }
 @font-face {
   font-family: 'Bookmania';
   src: url('../fonts/Bookmania-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
+  font-weight: 700; font-style: normal;
 }
 @font-face {
   font-family: 'Bookmania';
   src: url('../fonts/Bookmania-BoldItalic.woff2') format('woff2');
-  font-weight: 700;
-  font-style: italic;
+  font-weight: 700; font-style: italic;
 }
 
 /* =========================
@@ -61,6 +52,8 @@ body {
   background-size: cover;
   color: #2c2c2c;
   line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
@@ -74,314 +67,96 @@ body {
    ========================= */
 .stat-block {
   border: 1px solid #999;
-  background: #EAEDEF; /* stat block background */
-  padding-bottom: 1rem;
-  padding-top: 0.25rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  background: #EAEDEF;
+  padding: 0.25rem 1rem 1rem 1rem;
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
 /* =========================
    HEADINGS
    ========================= */
-h1 {
-  font-family: 'AlmendraSC', Georgia, serif;
-  font-weight: 700;
-  color: #492468;
-  margin: 0;
-  font-size: 2rem;
-}
-
-h2 {
-  font-family: 'Bookmania', Georgia, serif;
-  font-weight: 700;
-  color: #492468;
-  margin: 0 0 0.5rem 0;
-  font-size: 1.2rem;
-}
-
-h3 {
-  font-family: 'AlmendraSC', Georgia, serif;
-  font-weight: 400;
-  color: #492468;
-  border-bottom: 3px solid #FFBF00; /* gold underline */
-  margin-top: 1rem;
-  font-size: 1.1rem;
-}
-
-h4 {
-  font-family: 'Bookmania', Georgia, serif;
-  color: #492468;
-  margin-top: 0.5em;
-  margin-bottom: 0.2em;
-}
-
-h5 {
-  font-family: 'Bookmania', Georgia, serif;
-  color: #492468;
-  margin-top: 0.5em;
-  margin-bottom: 0.2em;
-  font-style: italic;
-}
+h1 { font-family: 'AlmendraSC', Georgia, serif; font-weight: 700; color: #492468; margin: 0; font-size: 2rem; }
+h2 { font-family: 'Bookmania', Georgia, serif; font-weight: 700; color: #492468; margin: 0 0 0.5rem 0; font-size: 1.2rem; }
+h3 { font-family: 'AlmendraSC', Georgia, serif; font-weight: 400; color: #492468; border-bottom: 3px solid #FFBF00; margin-top: 1rem; font-size: 1.1rem; }
+h4 { font-family: 'Bookmania', Georgia, serif; color: #492468; margin: 0.5em 0 0.2em 0; }
+h5 { font-family: 'Bookmania', Georgia, serif; color: #492468; margin: 0.5em 0 0.2em 0; font-style: italic; }
 
 /* =========================
    DIVIDERS
    ========================= */
-.orange-border {
-  border-top: 3px solid #FFBF00; /* gold border */
-  margin: 0.5rem 0;
-}
+.orange-border { border-top: 3px solid #FFBF00; margin: 0.5rem 0; }
 
 /* =========================
    PROPERTY LINES
    ========================= */
-.property-line {
-  display: flex;
-  justify-content: start;
-  margin: 0.25rem 0;
-}
-.property-line h4 {
-  margin: 0;
-}
-.property-line p {
-  margin: 0;
-}
+.property-line { display: flex; justify-content: start; margin: 0.25rem 0; }
+.property-line h4 { margin: 0; min-width: 6ch; }
+.property-line p { margin: 0; overflow-wrap: break-word; }
 
 /* =========================
    ABILITY SCORES
    ========================= */
-.abilities {
-  display: flex;
-  justify-content: space-between;
-  margin: 1rem 0;
-}
-.abilities div {
-  text-align: center;
-  flex: 1;
-}
-.abilities h4 {
-  margin: 0;
-}
-.abilities p {
-  margin: 0;
-}
+.abilities { display: flex; justify-content: space-between; margin: 1rem 0; }
+.abilities div { text-align: center; flex: 1; }
+.abilities h4, .abilities p { margin: 0; }
 
 /* =========================
    TEXT & ACTIONS
    ========================= */
-p {
-  margin: 0.5rem 0;
-}
-
-strong em {
-  font-weight: bold;
-  font-style: italic;
-}
+p { margin: 0.5rem 0; }
+strong em { font-weight: bold; font-style: italic; }
 
 /* =========================
-   CREATURE TYPES HEADER
+   FILTERS / SEARCH
    ========================= */
-#creature-types {
-  font-family: 'Bookmania', Georgia, serif;
-  text-align: center;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-  color: #492468;
-}
-
-/* =========================
-   SEARCH BAR
-   ========================= */
-#search {
-  display: block;
-  margin: 0.5rem auto 1.5rem auto;
-  padding: 0.5rem;
-  font-size: 1rem;
-  width: 60%;
-  border: 2px solid #492468;
-  border-radius: 5px;
-  font-family: 'Bookmania', Georgia, serif;
-}
-
-/* =========================
-   FILTER BUTTONS
-   ========================= */
-.filter-bar {
-  margin: 0.5em 0 1em;
-  text-align: center;
-}
-
-.filter-button {
-  display: inline-block;
-  margin: 0 0.4em 0.2em 0; /* horizontal and small vertical spacing */
-  padding: 0.3em 0.6em;
-  border-radius: 4px;
-  cursor: pointer;
-  background: #f4f4f4;
-  transition: background 0.2s, color 0.2s;
-  font-family: 'Bookmania', Georgia, serif;
-  font-size: 0.95rem;
-}
-
-.filter-button:last-child::after {
-  content: "";
-}
-
-.filter-button:hover {
-  background: #ddd;
-}
-
-.filter-button.active {
-  background: #492468;
-  color: #fff;
-  font-weight: bold;
-}
-
-/* =========================
-   MONSTER LIST
-   ========================= */
-#monster-list {
-  text-align: start;
-  margin-left: 10%;
-}
-#monster-list h3 {
-  margin-top: 1rem;
-  font-size: 1.6rem;
-  font-family: 'AlmendraSC', Georgia, serif;
-  color: #492468;
-  border-bottom: 2px solid #FFBF00;
-  display: inline-block;
-  padding-bottom: 0.2rem;
-}
-.monster-link {
-  margin: 0.3rem 0;
-  display: block;
-  
-}
-.monster-link a {
-  font-family: 'Bookmania', Georgia, serif;
-  font-size: 1.3rem;
-  margin-left: 8%;
-  text-decoration: none;
-  color: #492468;
-  transition: color 0.2s;
-}
-.monster-link a:hover {
-  color: #FFBF00;
-}
-.filter-button {
-  cursor: pointer;
-  padding: 2px 6px;
-  margin: 2px;
-  border: 1px solid #888;
-  border-radius: 4px;
-  display: inline-block;
-}
-.filter-button.active {
-  background: #444;
-  color: #fff;
-}
-/* Make checkbox groups flow horizontally */
-.filter-group label {
-  display: inline-flex;       /* inline with the next item */
-  align-items: center;        /* vertically align checkbox and text */
-  margin-right: 1rem;         /* space between items */
-  font-family: 'Bookmania', Georgia, serif;
-  font-size: 0.95rem;
-  color: #492468;
-}
-
-.filter-group input[type="checkbox"] {
-  margin-right: 0.25rem;      /* small gap between checkbox and text */
-}
-.filter-group {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 0.5rem;
-}
-#go-back-btn {
-  display: block;
-  margin: 10px 0;
-  padding: 6px 10px;
-  font-size: 14px;
-  cursor: pointer;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-#go-back-btn:hover {
-  background-color: #e0e0e0;
-}
+#search { display: block; margin: 0.5rem auto 1.5rem; padding: 0.5rem; font-size: 1rem; width: 60%; border: 2px solid #492468; border-radius: 5px; font-family: 'Bookmania', Georgia, serif; }
+.filter-bar { margin: 0.5em 0 1em; text-align: center; }
+.filter-button { display: inline-block; margin: 0 0.4em 0.2em 0; padding: 0.3em 0.6em; border-radius: 4px; cursor: pointer; background: #f4f4f4; transition: background 0.2s, color 0.2s; font-family: 'Bookmania', Georgia, serif; font-size: 0.95rem; border: 1px solid #888; }
+.filter-button:hover { background: #ddd; }
+.filter-button.active { background: #492468; color: #fff; font-weight: bold; }
+.filter-group { display: flex; flex-wrap: wrap; margin-bottom: 0.5rem; }
+.filter-group label { display: inline-flex; align-items: center; margin-right: 1rem; font-family: 'Bookmania', Georgia, serif; font-size: 0.95rem; color: #492468; }
+.filter-group input[type="checkbox"] { margin-right: 0.25rem; }
 
 /* =========================
    CREATURE TABLE
    ========================= */
 .creature-table {
-  table-layout: fixed;   
+  table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
 }
 
-.creature-table th,
-.creature-table td {
-  overflow: hidden;          
-  text-overflow: ellipsis;
-  white-space: nowrap;       
+.creature-table th, .creature-table td {
   border: 1px solid #888;
   padding: 0.3rem;
   text-align: center;
-
-  /* 👇 Prevent hover from changing layout */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   box-sizing: border-box;
 }
 
-.creature-table th:nth-child(1), 
-.creature-table td:nth-child(1) {
-  width: 40%; /* Name */
-}
+.creature-table th:nth-child(1),
+.creature-table td:nth-child(1) { width: 40%; }
+.creature-table th:nth-child(2),
+.creature-table td:nth-child(2) { width: 20%; }
+.creature-table th:nth-child(3),
+.creature-table td:nth-child(3) { width: 15%; }
+.creature-table th:nth-child(4),
+.creature-table td:nth-child(4) { width: 25%; }
 
-.creature-table th:nth-child(2), 
-.creature-table td:nth-child(2) {
-  width: 20%; /* Type */
-}
+.creature-table th { background-color: #222; color: #fff; }
+.creature-table tbody tr { height: 2rem; }
+.creature-table tbody tr:hover { background-color: #FFBF00; cursor: pointer; }
+.creature-table td.creature-name { font-weight: bold; text-align: left; padding-left: 0.5rem; }
 
-.creature-table th:nth-child(3), 
-.creature-table td:nth-child(3) {
-  width: 15%; /* CR */
-}
-
-.creature-table th:nth-child(4), 
-.creature-table td:nth-child(4) {
-  width: 25%; /* Source */
-}
-
-.creature-table th {
-  background-color: #222;
-  color: #fff;
-}
-
-.creature-table tbody tr {
-  /* lock in height so hover can’t cause resize */
-  height: 2rem; 
-}
-
-.creature-table tbody tr:hover {
-  background-color: #FFBF00;  
-  cursor: pointer;
-}
-
-.creature-table td.creature-name {
-  font-weight: bold;
-}
-
-
+/* =========================
+   RESIZER
+   ========================= */
 .resizer {
   width: 5px;
   background: #FFBF00;
   cursor: col-resize;
   height: 100%;
 }
-
-
