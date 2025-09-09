@@ -237,10 +237,6 @@ async function loadMonsters() {
 		lockedMonster = monster;
 		displayStatBlock(monster);
 
-		// Add to tracker
-		if (!Array.from(trackerBody.children).some(r => r.dataset.monsterName === monster._displayName || r.dataset.monsterName === monster.name)) {
-		  addToTracker(monster);
-    }
   }
 });
 
@@ -296,39 +292,45 @@ function addToTracker(monster) {
 
   row.querySelector(".remove-btn").addEventListener("click", () => row.remove());
 
-  // Hover + click highlight for name cell
+  // Track currently highlighted row
+  let lockedRow = null;
+
   const nameCell = row.querySelector(".monster-name");
 
   nameCell.addEventListener("mouseenter", () => {
-    if (!statBlockLocked) {
+    if (lockedRow !== row) {
       nameCell.style.backgroundColor = "#ffd"; // hover color
-      displayStatBlock(monster);
     }
+    displayStatBlock(monster);
   });
 
   nameCell.addEventListener("mouseleave", () => {
-    if (!statBlockLocked) {
+    if (lockedRow !== row) {
       nameCell.style.backgroundColor = ""; // reset
-      statBlockContainer.innerHTML = "";
     }
+    if (!statBlockLocked) statBlockContainer.innerHTML = "";
   });
 
   nameCell.addEventListener("click", () => {
-    if (lockedMonster === monster) {
+    if (lockedRow === row) {
+      lockedRow = null;
+      nameCell.style.backgroundColor = "";
       statBlockLocked = false;
       lockedMonster = null;
-      nameCell.style.backgroundColor = ""; // remove lock color
       statBlockContainer.innerHTML = "";
     } else {
+      if (lockedRow) lockedRow.querySelector(".monster-name").style.backgroundColor = ""; // reset previous
+      lockedRow = row;
+      nameCell.style.backgroundColor = "#ffa"; // lock color
       statBlockLocked = true;
       lockedMonster = monster;
       displayStatBlock(monster);
-      nameCell.style.backgroundColor = "#ffa"; // lock color
     }
   });
 
   trackerBody.appendChild(row);
 }
+
 
 
 
