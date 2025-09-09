@@ -165,8 +165,9 @@ async function loadMonsters() {
     // -----------------------------
     // Display monster stat block
     // -----------------------------
-    let statBlockLocked = false;
-    let lockedMonster = null;
+	let lockedRow = null; // track which tracker row is highlighted / locked
+	let statBlockLocked = false;
+	let lockedMonster = null;
 
     function displayStatBlock(monster) {
       const displayName = monster._displayName || monster.name || monster._file;
