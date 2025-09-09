@@ -314,16 +314,24 @@ strong em {
 #go-back-btn:hover {
   background-color: #e0e0e0;
 }
+
+/* =========================
+   CREATURE TABLE
+   ========================= */
 .creature-table {
-  table-layout: fixed;
+  table-layout: fixed;   /* 👈 Prevent expansion */
   width: 100%;
+  border-collapse: collapse;
 }
 
 .creature-table th,
 .creature-table td {
-  overflow: hidden;
+  overflow: hidden;          /* 👈 Prevent spillover */
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: nowrap;       /* 👈 Prevent wrapping */
+  border: 1px solid #888;
+  padding: 0.3rem;
+  text-align: center;
 }
 
 .creature-table th:nth-child(1), 
@@ -351,8 +359,8 @@ strong em {
   color: #fff;
 }
 
-.creature-table tr:hover {
-  background-color: #FFBF00;
+.creature-table tbody tr:hover {
+  background-color: #f0e6d2;  /* 👈 lighter hover, doesn’t resize */
   cursor: pointer;
 }
 
@@ -366,4 +374,5 @@ strong em {
   cursor: col-resize;
   height: 100%;
 }
+
 
