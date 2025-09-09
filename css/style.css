@@ -409,10 +409,37 @@ strong em {
   background-color: #FFBF00;
   cursor: pointer;
 }
-.right-panel {
-  flex: 0 0 400px;   /* 👈 fixed starting width */
-  max-width: 100%;   /* prevent overflow */
-  min-width: 250px;  /* sensible minimum */
+#right-panel {
+  flex: 0 0 400px;   /* fixed starting width */
+  min-width: 250px;
+  max-width: 800px;
   overflow-y: auto;
+  box-sizing: border-box;
+
+}
+/* =========================
+   FIXED PANELS
+   ========================= */
+#left-panel {
+  flex: 0 0 300px;   /* fixed starting width */
+  min-width: 200px;  /* prevent collapsing */
+  max-width: 600px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+#middle-panel {
+  flex: 0 0 600px;   /* fixed starting width */
+  min-width: 400px;
+  max-width: 1000px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+/* Prevent content (tables etc.) from forcing panels to grow */
+.panel {
+  overflow-x: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
 }
 

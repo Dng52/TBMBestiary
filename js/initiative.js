@@ -423,72 +423,59 @@ function addToTracker(monster) {
 	// -----------------------------
 	// Resizer
 	// -----------------------------
-function makeResizable(resizer, leftPanel, rightPanel) {
+document.querySelectorAll('.resizer').forEach(resizer => {
+  const leftPanel = resizer.previousElementSibling;
+  const rightPanel = resizer.nextElementSibling;
+
   let x = 0;
-  let leftWidth = 0;
+  let leftPanelWidth = 0;
 
   const mouseDownHandler = function (e) {
     x = e.clientX;
-    leftWidth = leftPanel.getBoundingClientRect().width;
 
-    document.addEventListener("mousemove", mouseMoveHandler);
-    document.addEventListener("mouseup", mouseUpHandler);
+    // store the current left panel width
+    leftPanelWidth = parseInt(
+      window.getComputedStyle(leftPanel).flexBasis,
+      10
+    );
+
+    // attach listeners
+    document.addEventListener('mousemove', mouseMoveHandler);
+    document.addEventListener('mouseup', mouseUpHandler);
+
+    // visually indicate resize
+    resizer.style.cursor = 'col-resize';
+    document.body.style.cursor = 'col-resize';
+    leftPanel.style.userSelect = 'none';
+    leftPanel.style.pointerEvents = 'none';
+    rightPanel.style.userSelect = 'none';
+    rightPanel.style.pointerEvents = 'none';
   };
 
   const mouseMoveHandler = function (e) {
     const dx = e.clientX - x;
-    leftPanel.style.width = `${leftWidth + dx}px`;
+    const newLeftWidth = ((leftPanelWidth + dx));
+
+    // Apply new width with flex-basis
+    leftPanel.style.flex = `0 0 ${newLeftWidth}px`;
   };
 
   const mouseUpHandler = function () {
-    document.removeEventListener("mousemove", mouseMoveHandler);
-    document.removeEventListener("mouseup", mouseUpHandler);
+    // remove listeners
+    document.removeEventListener('mousemove', mouseMoveHandler);
+    document.removeEventListener('mouseup', mouseUpHandler);
+
+    resizer.style.removeProperty('cursor');
+    document.body.style.removeProperty('cursor');
+    leftPanel.style.removeProperty('user-select');
+    leftPanel.style.removeProperty('pointer-events');
+    rightPanel.style.removeProperty('user-select');
+    rightPanel.style.removeProperty('pointer-events');
   };
 
-  resizer.addEventListener("mousedown", mouseDownHandler);
-}
+  resizer.addEventListener('mousedown', mouseDownHandler);
+});
 
-// Apply to left/middle and middle/right
-makeResizable(
-  document.getElementById("resizer-left"),
-  document.getElementById("left-panel"),
-  document.getElementById("middle-panel")
-);
-
-makeResizable(
-  document.getElementById("resizer-right"),
-  document.getElementById("middle-panel"),
-  document.getElementById("right-panel")
-);
-
-//Right panel resize
-const resizer = document.querySelector('.resizer-right'); // adjust selector
-const rightPanel = document.querySelector('.right-panel');
-
-let x = 0;
-let panelWidth = 0;
-
-const mouseDownHandler = function (e) {
-  x = e.clientX;
-  panelWidth = rightPanel.getBoundingClientRect().width;
-
-  document.addEventListener('mousemove', mouseMoveHandler);
-  document.addEventListener('mouseup', mouseUpHandler);
-};
-
-const mouseMoveHandler = function (e) {
-  const dx = e.clientX - x;
-  const newWidth = panelWidth - dx; // drag left shrinks, right expands
-  rightPanel.style.width = `${newWidth}px`;   // 👈 direct pixel width
-  rightPanel.style.flex = `0 0 ${newWidth}px`; // 👈 lock it in
-};
-
-const mouseUpHandler = function () {
-  document.removeEventListener('mousemove', mouseMoveHandler);
-  document.removeEventListener('mouseup', mouseUpHandler);
-};
-
-resizer.addEventListener('mousedown', mouseDownHandler);
 
 
 
