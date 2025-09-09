@@ -262,7 +262,7 @@ function addToTracker(monster) {
   const startHP = isNaN(parseInt(hpValue)) ? 0 : parseInt(hpValue);
 
   row.innerHTML = `
-    <td>${monster._displayName || monster.name}</td>
+    <td class="monster-name">${monster._displayName || monster.name}</td>
     <td><input type="number" value="0" style="width: 50px;"></td>
     <td>${monster.ac || "?"}</td>
     <td></td>
@@ -296,27 +296,40 @@ function addToTracker(monster) {
 
   row.querySelector(".remove-btn").addEventListener("click", () => row.remove());
 
-  // Attach hover/click events for stat block
-  row.addEventListener("mouseenter", () => {
-    if (!statBlockLocked) displayStatBlock(monster);
+  // Hover + click highlight for name cell
+  const nameCell = row.querySelector(".monster-name");
+
+  nameCell.addEventListener("mouseenter", () => {
+    if (!statBlockLocked) {
+      nameCell.style.backgroundColor = "#ffd"; // hover color
+      displayStatBlock(monster);
+    }
   });
-  row.addEventListener("mouseleave", () => {
-    if (!statBlockLocked) statBlockContainer.innerHTML = "";
+
+  nameCell.addEventListener("mouseleave", () => {
+    if (!statBlockLocked) {
+      nameCell.style.backgroundColor = ""; // reset
+      statBlockContainer.innerHTML = "";
+    }
   });
-  row.addEventListener("click", () => {
+
+  nameCell.addEventListener("click", () => {
     if (lockedMonster === monster) {
       statBlockLocked = false;
       lockedMonster = null;
+      nameCell.style.backgroundColor = ""; // remove lock color
       statBlockContainer.innerHTML = "";
     } else {
       statBlockLocked = true;
       lockedMonster = monster;
       displayStatBlock(monster);
+      nameCell.style.backgroundColor = "#ffa"; // lock color
     }
   });
 
   trackerBody.appendChild(row);
 }
+
 
 
     // -----------------------------
