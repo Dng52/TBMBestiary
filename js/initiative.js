@@ -226,69 +226,98 @@ async function loadMonsters() {
           if (!statBlockLocked) statBlockContainer.innerHTML = "";
         });
 
-        link.addEventListener("click", (e) => {
-          e.preventDefault();
-          if (lockedMonster === monster) {
-            statBlockLocked = false;
-            lockedMonster = null;
-            statBlockContainer.innerHTML = "";
-          } else {
-            statBlockLocked = true;
-            lockedMonster = monster;
-            displayStatBlock(monster);
-          }
-        });
+       link.addEventListener("click", (e) => {
+	  e.preventDefault();
+	  if (lockedMonster === monster) {
+		statBlockLocked = false;
+		lockedMonster = null;
+		statBlockContainer.innerHTML = "";
+	  } else {
+		statBlockLocked = true;
+		lockedMonster = monster;
+		displayStatBlock(monster);
+
+		// Add to tracker
+		if (!Array.from(trackerBody.children).some(r => r.dataset.monsterName === monster._displayName || r.dataset.monsterName === monster.name)) {
+		  addToTracker(monster);
+    }
+  }
+});
+
       });
     }
 
     // -----------------------------
     // Add monster to initiative tracker
     // -----------------------------
-    function addToTracker(monster) {
-      const row = document.createElement("tr");
-      let hpValue = "?";
-      if (monster.hp) {
-        const match = monster.hp.match(/\d+/);
-        if (match) hpValue = match[0];
+function addToTracker(monster) {
+  const row = document.createElement("tr");
+  row.dataset.monsterName = monster._displayName || monster.name || monster._file;
+
+  let hpValue = "?";
+  if (monster.hp) {
+    const match = monster.hp.match(/\d+/);
+    if (match) hpValue = match[0];
+  }
+  const startHP = isNaN(parseInt(hpValue)) ? 0 : parseInt(hpValue);
+
+  row.innerHTML = `
+    <td>${monster._displayName || monster.name}</td>
+    <td><input type="number" value="0" style="width: 50px;"></td>
+    <td>${monster.ac || "?"}</td>
+    <td></td>
+    <td><input type="text" style="width: 100%;"></td>
+    <td><button class="remove-btn">Remove</button></td>
+  `;
+
+  const hpCell = row.querySelector("td:nth-child(4)");
+  const hpInput = document.createElement("input");
+  hpInput.type = "text";
+  hpInput.style.width = "60px";
+  hpInput.value = startHP;
+  hpInput.dataset.currentHp = startHP;
+  hpCell.appendChild(hpInput);
+
+  hpInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      let current = parseInt(hpInput.dataset.currentHp, 10) || 0;
+      const raw = hpInput.value.trim();
+      if (/^[+-]\d+$/.test(raw)) {
+        current += parseInt(raw, 10);
+      } else if (/^\d+$/.test(raw)) {
+        current = parseInt(raw, 10);
       }
-      const startHP = isNaN(parseInt(hpValue)) ? 0 : parseInt(hpValue);
-
-      row.innerHTML = `
-        <td>${monster._displayName || monster.name}</td>
-        <td><input type="number" value="0" style="width: 50px;"></td>
-        <td>${monster.ac || "?"}</td>
-        <td></td>
-        <td><input type="text" style="width: 100%;"></td>
-        <td><button class="remove-btn">Remove</button></td>
-      `;
-
-      const hpCell = row.querySelector("td:nth-child(4)");
-      const hpInput = document.createElement("input");
-      hpInput.type = "text";
-      hpInput.style.width = "60px";
-      hpInput.value = startHP;
-      hpInput.dataset.currentHp = startHP;
-      hpCell.appendChild(hpInput);
-
-      hpInput.addEventListener("keydown", (e) => {
-        if (e.key === "Enter") {
-          e.preventDefault();
-          let current = parseInt(hpInput.dataset.currentHp, 10) || 0;
-          const raw = hpInput.value.trim();
-          if (/^[+-]\d+$/.test(raw)) {
-            current += parseInt(raw, 10);
-          } else if (/^\d+$/.test(raw)) {
-            current = parseInt(raw, 10);
-          }
-          if (current < 0) current = 0;
-          hpInput.dataset.currentHp = current;
-          hpInput.value = current;
-        }
-      });
-
-      row.querySelector(".remove-btn").addEventListener("click", () => row.remove());
-      trackerBody.appendChild(row);
+      if (current < 0) current = 0;
+      hpInput.dataset.currentHp = current;
+      hpInput.value = current;
     }
+  });
+
+  row.querySelector(".remove-btn").addEventListener("click", () => row.remove());
+
+  // Attach hover/click events for stat block
+  row.addEventListener("mouseenter", () => {
+    if (!statBlockLocked) displayStatBlock(monster);
+  });
+  row.addEventListener("mouseleave", () => {
+    if (!statBlockLocked) statBlockContainer.innerHTML = "";
+  });
+  row.addEventListener("click", () => {
+    if (lockedMonster === monster) {
+      statBlockLocked = false;
+      lockedMonster = null;
+      statBlockContainer.innerHTML = "";
+    } else {
+      statBlockLocked = true;
+      lockedMonster = monster;
+      displayStatBlock(monster);
+    }
+  });
+
+  trackerBody.appendChild(row);
+}
+
 
     // -----------------------------
     // Initial render
