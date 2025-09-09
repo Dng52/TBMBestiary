@@ -88,21 +88,16 @@
 </head>
 <body>
 
-  <!-- Left Panel: Filters + Monster List -->
-  <div id="left-panel" class="panel">
-<a id="go-back-btn" href="index.html" class="panel-button">⬅ Go Back</a>
-    <input id="search" type="text" placeholder="Search by name">
-
-    <h4>Type</h4>
-    <div id="type-filters" class="filter-group"></div>
-
-    <h4>CR</h4>
-    <div id="cr-filters" class="filter-group"></div>
-
-    <h4>Source</h4>
-    <div id="source-filters" class="filter-group"></div>
-
-<div id="left-panel">
+<!-- Left Panel -->
+<div id="left-panel" class="panel">
+  <a id="go-back-btn" href="index.html" class="panel-button">⬅ Go Back</a>
+  <input id="search" type="text" placeholder="Search by name">
+  <h4>Type</h4>
+  <div id="type-filters" class="filter-group"></div>
+  <h4>CR</h4>
+  <div id="cr-filters" class="filter-group"></div>
+  <h4>Source</h4>
+  <div id="source-filters" class="filter-group"></div>
   <h2>Creatures</h2>
   <table id="creature-table" class="creature-table">
     <thead>
@@ -113,14 +108,14 @@
         <th>Source</th>
       </tr>
     </thead>
-    <tbody id="monster-list">
-      <!-- Creatures will be injected here -->
-    </tbody>
+    <tbody id="monster-list"></tbody>
   </table>
 </div>
-  </div>
 
- <!-- Middle Panel: Initiative Tracker -->
+<!-- Resizer between left and middle -->
+<div class="resizer" id="resizer-left"></div>
+
+<!-- Middle Panel -->
 <div id="middle-panel" class="panel">
   <h2>
     Initiative Tracker
@@ -143,12 +138,14 @@
   </table>
 </div>
 
+<!-- Resizer between middle and right -->
+<div class="resizer" id="resizer-right"></div>
 
+<!-- Right Panel -->
+<div id="right-panel" class="panel">
+  <div id="stat-block"></div>
+</div>
 
-  <!-- Right Panel: Stat Block -->
-  <div id="right-panel" class="panel">
-    <div id="stat-block"></div>
-  </div>
 
   <script src="js/initiative.js"></script>
 </body>

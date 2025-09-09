@@ -360,4 +360,10 @@ strong em {
   font-weight: bold;
 }
 
+.resizer {
+  width: 5px;
+  background: #FFBF00;
+  cursor: col-resize;
+  height: 100%;
+}
 

@@ -431,6 +431,51 @@ function addToTracker(monster) {
   } catch (err) {
     console.error("Failed to load monsters:", err);
   }
+  
+    // -----------------------------
+    // Resizer
+    // -----------------------------
+	function makeResizable(resizer, leftPanel, rightPanel) {
+	  let x = 0;
+	  let leftWidth = 0;
+
+	  const mouseDownHandler = function (e) {
+		x = e.clientX;
+		leftWidth = leftPanel.getBoundingClientRect().width;
+
+		document.addEventListener("mousemove", mouseMoveHandler);
+		document.addEventListener("mouseup", mouseUpHandler);
+	  };
+
+	  const mouseMoveHandler = function (e) {
+		const dx = e.clientX - x;
+		leftPanel.style.width = `${leftWidth + dx}px`;
+	  };
+
+	  const mouseUpHandler = function () {
+		document.removeEventListener("mousemove", mouseMoveHandler);
+		document.removeEventListener("mouseup", mouseUpHandler);
+	  };
+
+	  resizer.addEventListener("mousedown", mouseDownHandler);
+	}
+
+	// Apply to left/middle and middle/right
+	makeResizable(
+	  document.getElementById("resizer-left"),
+	  document.getElementById("left-panel"),
+	  document.getElementById("middle-panel")
+	);
+
+	makeResizable(
+	  document.getElementById("resizer-right"),
+	  document.getElementById("middle-panel"),
+	  document.getElementById("right-panel")
+	);
+
+
 }
 
 loadMonsters();
+
+
