@@ -63,28 +63,38 @@ async function loadMonsters() {
     }
 	
 const rollButton = document.getElementById("roll-initiative-btn");
-
 rollButton.addEventListener("click", () => {
   document.querySelectorAll("#tracker-body tr").forEach(row => {
     const monsterName = row.dataset.monsterName;
     const monster = monsters.find(m => (m._displayName || m.name || m._file) === monsterName);
     if (!monster) return;
 
-    // Determine Dex modifier
     let dexMod = 0;
     if (monster.abilities && typeof monster.abilities.dex === "number") {
       dexMod = Math.floor((monster.abilities.dex - 10) / 2);
     }
 
-    // Roll d20 + Dex
     const roll = Math.floor(Math.random() * 20) + 1;
     const initiative = roll + dexMod;
 
-    // Fill initiative input (assume it's the 2nd cell: <td><input>)
     const initInput = row.querySelector("td:nth-child(2) input");
     if (initInput) initInput.value = initiative;
   });
 });
+
+// Sort button listener should be separate
+const sortButton = document.getElementById("sort-initiative-btn");
+sortButton.addEventListener("click", () => {
+  const rows = Array.from(trackerBody.querySelectorAll("tr"));
+  rows.sort((a, b) => {
+    const aVal = parseInt(a.querySelector("td:nth-child(2) input").value, 10) || 0;
+    const bVal = parseInt(b.querySelector("td:nth-child(2) input").value, 10) || 0;
+    return bVal - aVal; // descending order
+  });
+
+  rows.forEach(row => trackerBody.appendChild(row));
+});
+
 
 
     // -----------------------------
