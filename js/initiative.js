@@ -420,9 +420,6 @@ function addToTracker(monster) {
     console.error("Failed to load monsters:", err);
   }
   
-	// -----------------------------
-	// Resizer
-	// -----------------------------
 // -----------------------------
 // Resizers (LEFT & RIGHT handles)
 // -----------------------------
