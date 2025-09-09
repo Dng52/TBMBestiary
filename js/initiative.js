@@ -129,34 +129,71 @@ async function loadMonsters() {
       renderList(filtered);
     }
 
-    // -----------------------------
-    // Render Monster List
-    // -----------------------------
-    function renderList(data) {
-      listEl.innerHTML = "";
-      let currentCR = null;
-      data.forEach(m => {
-        const crVal = isNaN(m._crSortValue) ? "Undefined" : m._cleanCR;
-        if (crVal !== currentCR) {
-          currentCR = crVal;
-          const heading = document.createElement("h3");
-          heading.textContent = crVal === "Undefined" ? "CR Undefined" : `CR ${crVal}`;
-          listEl.appendChild(heading);
-        }
-        const li = document.createElement("div");
-        li.className = "monster-link";
-        li.innerHTML = `<a href="#">${m._displayName || m.name || m._file}</a>`;
-        li.querySelector("a").addEventListener("click", (e) => {
-          e.preventDefault();
-          addToTracker(m);
-          displayStatBlock(m); // Display in right panel
-        });
-        listEl.appendChild(li);
-      });
+// -----------------------------
+// Render Monster List
+// -----------------------------
+function renderList(data) {
+  listEl.innerHTML = "";
+  let currentCR = null;
 
-      // Attach hover & click events for stat blocks
-      attachStatBlockEvents(data);
+  data.forEach(m => {
+    const crVal = isNaN(m._crSortValue) ? "Undefined" : m._cleanCR;
+
+    if (crVal !== currentCR) {
+      currentCR = crVal;
+      const heading = document.createElement("h3");
+      heading.textContent = crVal === "Undefined" ? "CR Undefined" : `CR ${crVal}`;
+      listEl.appendChild(heading);
     }
+
+    const li = document.createElement("div");
+    li.className = "monster-link";
+
+    const link = document.createElement("a");
+    link.href = "#";
+    link.textContent = m._displayName || m.name || m._file;
+    link.monsterRef = m; // <-- store monster object directly
+
+    li.appendChild(link);
+    listEl.appendChild(li);
+  });
+
+  // Attach hover & click events after rendering
+  attachStatBlockEvents();
+}
+
+// -----------------------------
+// Attach hover & click to monster links
+// -----------------------------
+function attachStatBlockEvents() {
+  document.querySelectorAll("#monster-list .monster-link a").forEach(link => {
+    const monster = link.monsterRef; // get monster object directly
+
+    link.addEventListener("mouseenter", () => {
+      if (!statBlockLocked) displayStatBlock(monster);
+    });
+
+    link.addEventListener("mouseleave", () => {
+      if (!statBlockLocked) document.getElementById("stat-block").innerHTML = "";
+    });
+
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      if (lockedMonster === monster) {
+        // Unlock if same monster clicked
+        statBlockLocked = false;
+        lockedMonster = null;
+        document.getElementById("stat-block").innerHTML = "";
+      } else {
+        statBlockLocked = true;
+        lockedMonster = monster;
+        displayStatBlock(monster);
+      }
+    });
+  });
+}
+
 
     // -----------------------------
     // Add monster to initiative tracker
