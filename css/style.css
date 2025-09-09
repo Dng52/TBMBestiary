@@ -319,19 +319,22 @@ strong em {
    CREATURE TABLE
    ========================= */
 .creature-table {
-  table-layout: fixed;   /* 👈 Prevent expansion */
+  table-layout: fixed;   
   width: 100%;
   border-collapse: collapse;
 }
 
 .creature-table th,
 .creature-table td {
-  overflow: hidden;          /* 👈 Prevent spillover */
+  overflow: hidden;          
   text-overflow: ellipsis;
-  white-space: nowrap;       /* 👈 Prevent wrapping */
+  white-space: nowrap;       
   border: 1px solid #888;
   padding: 0.3rem;
   text-align: center;
+
+  /* 👇 Prevent hover from changing layout */
+  box-sizing: border-box;
 }
 
 .creature-table th:nth-child(1), 
@@ -359,14 +362,20 @@ strong em {
   color: #fff;
 }
 
+.creature-table tbody tr {
+  /* lock in height so hover can’t cause resize */
+  height: 2rem; 
+}
+
 .creature-table tbody tr:hover {
-  background-color: #f0e6d2;  /* 👈 lighter hover, doesn’t resize */
+  background-color: #FFBF00;  
   cursor: pointer;
 }
 
 .creature-table td.creature-name {
   font-weight: bold;
 }
+
 
 .resizer {
   width: 5px;
