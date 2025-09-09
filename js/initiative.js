@@ -295,30 +295,30 @@ function addToTracker(monster) {
   row.querySelector(".remove-btn").addEventListener("click", () => row.remove());
 
   // --- Tracker row hover & click for stat block ---
-  let lockedRow = null;
-
   const nameCell = row.querySelector(".monster-name");
 
+  // Hover temporarily shows stat block
   nameCell.addEventListener("mouseenter", () => {
     if (!statBlockLocked) displayStatBlock(monster);
-    nameCell.style.backgroundColor = "#ffd"; // hover color
+    if (!lockedRow) nameCell.style.backgroundColor = "#ffd"; // hover color
   });
 
   nameCell.addEventListener("mouseleave", () => {
     if (!statBlockLocked) statBlockContainer.innerHTML = "";
-    nameCell.style.backgroundColor = ""; // reset
+    if (!lockedRow) nameCell.style.backgroundColor = ""; // reset hover
   });
 
+  // Click locks/unlocks the stat block and highlight
   nameCell.addEventListener("click", () => {
     if (lockedRow === row) {
-      // unlock
+      // Clicking same row unlocks it
       lockedRow = null;
       statBlockLocked = false;
       lockedMonster = null;
       statBlockContainer.innerHTML = "";
       nameCell.style.backgroundColor = "";
     } else {
-      // lock new row
+      // Clicking a new row
       if (lockedRow) lockedRow.querySelector(".monster-name").style.backgroundColor = "";
       lockedRow = row;
       statBlockLocked = true;
@@ -330,6 +330,7 @@ function addToTracker(monster) {
 
   trackerBody.appendChild(row);
 }
+
 
 
 
