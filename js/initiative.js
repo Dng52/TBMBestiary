@@ -52,7 +52,7 @@ async function loadMonsters() {
     const sourceEl = document.getElementById("source-filters");
     const searchEl = document.getElementById("search");
     const trackerBody = document.getElementById("tracker-body");
-    const statBlockContainer = document.getElementById("stat-block"); // Right panel
+    const statBlockContainer = document.getElementById("stat-block");
 
     const activeTypes = new Set();
     const activeCRs = new Set();
@@ -129,71 +129,117 @@ async function loadMonsters() {
       renderList(filtered);
     }
 
-// -----------------------------
-// Render Monster List
-// -----------------------------
-function renderList(data) {
-  listEl.innerHTML = "";
-  let currentCR = null;
+    // -----------------------------
+    // Render Monster List
+    // -----------------------------
+    function renderList(data) {
+      listEl.innerHTML = "";
+      let currentCR = null;
 
-  data.forEach(m => {
-    const crVal = isNaN(m._crSortValue) ? "Undefined" : m._cleanCR;
+      data.forEach(m => {
+        const crVal = isNaN(m._crSortValue) ? "Undefined" : m._cleanCR;
 
-    if (crVal !== currentCR) {
-      currentCR = crVal;
-      const heading = document.createElement("h3");
-      heading.textContent = crVal === "Undefined" ? "CR Undefined" : `CR ${crVal}`;
-      listEl.appendChild(heading);
+        if (crVal !== currentCR) {
+          currentCR = crVal;
+          const heading = document.createElement("h3");
+          heading.textContent = crVal === "Undefined" ? "CR Undefined" : `CR ${crVal}`;
+          listEl.appendChild(heading);
+        }
+
+        const li = document.createElement("div");
+        li.className = "monster-link";
+
+        const link = document.createElement("a");
+        link.href = "#";
+        link.textContent = m._displayName || m.name || m._file;
+        link.monsterRef = m; // store monster object directly
+
+        li.appendChild(link);
+        listEl.appendChild(li);
+      });
+
+      // Attach hover & click events
+      attachStatBlockEvents();
     }
 
-    const li = document.createElement("div");
-    li.className = "monster-link";
+    // -----------------------------
+    // Display monster stat block
+    // -----------------------------
+    let statBlockLocked = false;
+    let lockedMonster = null;
 
-    const link = document.createElement("a");
-    link.href = "#";
-    link.textContent = m._displayName || m.name || m._file;
-    link.monsterRef = m; // <-- store monster object directly
+    function displayStatBlock(monster) {
+      const displayName = monster._displayName || monster.name || monster._file;
+      const formatAbility = (score) => {
+        const mod = Math.floor((score - 10) / 2);
+        const sign = mod >= 0 ? `+${mod}` : mod;
+        return `${score} (${sign})`;
+      };
 
-    li.appendChild(link);
-    listEl.appendChild(li);
-  });
+      let html = `
+        <div class="creature-heading">
+          <h1>${displayName}</h1>
+          <h5>${monster.size || "Medium"} ${monster.type || ""}${monster.alignment ? `, ${monster.alignment}` : ""}</h5>
+        </div>
+        <hr class="orange-border">
+        <div class="property-line"><h4>Armor Class&nbsp</h4><p>${monster.ac}</p></div>
+        <div class="property-line"><h4>Hit Points&nbsp</h4><p>${monster.hp}</p></div>
+        ${monster.speed ? `<div class="property-line"><h4>Speed&nbsp</h4><p>${monster.speed}</p></div>` : ""}
+        <hr class="orange-border">
+        <div class="abilities">
+          ${Object.entries(monster.abilities || {}).map(([k,v]) => `<div><h4>${k.toUpperCase()}</h4><p>${formatAbility(v)}</p></div>`).join("")}
+        </div>
+        <hr class="orange-border">
+        ${monster.saves ? `<div class="property-line"><h4>Saving Throws&nbsp</h4><p>${monster.saves}</p></div>` : ""}
+        ${monster.skills ? `<div class="property-line"><h4>Skills&nbsp</h4><p>${monster.skills}</p></div>` : ""}
+        ${monster.immunities ? `<div class="property-line"><h4>Damage Immunities&nbsp</h4><p>${monster.immunities}</p></div>` : ""}
+        ${monster.resistance ? `<div class="property-line"><h4>Damage Resistance&nbsp</h4><p>${monster.resistance}</p></div>` : ""}
+        ${monster.vulnerability ? `<div class="property-line"><h4>Damage Vulnerability&nbsp</h4><p>${monster.vulnerability}</p></div>` : ""}
+        ${monster.conimmunities ? `<div class="property-line"><h4>Condition Immunities&nbsp</h4><p>${monster.conimmunities}</p></div>` : ""}
+        ${monster.senses ? `<div class="property-line"><h4>Senses&nbsp</h4><p>${monster.senses}</p></div>` : ""}
+        ${monster.languages ? `<div class="property-line"><h4>Languages&nbsp</h4><p>${monster.languages}</p></div>` : ""}
+        <div class="property-line"><h4>Challenge&nbsp</h4><p>${monster.cr}</p></div>
+        <hr class="orange-border">
+        ${monster.traits?.length ? monster.traits.map(t => `<p><strong><em>${t.name}.</em></strong> ${t.desc}</p>`).join("") : ""}
+        ${monster.actions?.length ? `<h3>Actions</h3>${monster.actions.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}` : ""}
+        ${monster.reactions?.length ? `<h3>Reactions</h3>${monster.reactions.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}` : ""}
+        ${monster.legendary?.length ? `<h3>Legendary Actions</h3><p>The ${displayName} can take ${monster.legendarynumber || 3} legendary actions. Only one can be used at a time. Regains spent actions at the start of its turn.</p>${monster.legendary.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}` : ""}
+        ${monster.lairactions?.length ? `<h3>Lair Actions</h3>${monster.lairactions.map(l => `<p>${l.description || ""}</p>${l.bullets?.length ? `<ul>${l.bullets.map(b=>`<li>${b}</li>`).join("")}</ul>` : ""}`).join("")}` : ""}
+        ${monster.regionaleffects?.length ? `<h3>Regional Effects</h3>${monster.regionaleffects.map(r => `<p>${r.description || ""}</p>${r.bullets?.length ? `<ul>${r.bullets.map(b=>`<li>${b}</li>`).join("")}</ul>` : ""}${r.secondaryDescription ? `<p>${r.secondaryDescription}</p>` : ""}`).join("")}` : ""}
+      `;
 
-  // Attach hover & click events after rendering
-  attachStatBlockEvents();
-}
+      statBlockContainer.innerHTML = html;
+    }
 
-// -----------------------------
-// Attach hover & click to monster links
-// -----------------------------
-function attachStatBlockEvents() {
-  document.querySelectorAll("#monster-list .monster-link a").forEach(link => {
-    const monster = link.monsterRef; // get monster object directly
+    // -----------------------------
+    // Attach hover & click to monster links
+    // -----------------------------
+    function attachStatBlockEvents() {
+      document.querySelectorAll("#monster-list .monster-link a").forEach(link => {
+        const monster = link.monsterRef; // use stored monster
 
-    link.addEventListener("mouseenter", () => {
-      if (!statBlockLocked) displayStatBlock(monster);
-    });
+        link.addEventListener("mouseenter", () => {
+          if (!statBlockLocked) displayStatBlock(monster);
+        });
 
-    link.addEventListener("mouseleave", () => {
-      if (!statBlockLocked) document.getElementById("stat-block").innerHTML = "";
-    });
+        link.addEventListener("mouseleave", () => {
+          if (!statBlockLocked) statBlockContainer.innerHTML = "";
+        });
 
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-
-      if (lockedMonster === monster) {
-        // Unlock if same monster clicked
-        statBlockLocked = false;
-        lockedMonster = null;
-        document.getElementById("stat-block").innerHTML = "";
-      } else {
-        statBlockLocked = true;
-        lockedMonster = monster;
-        displayStatBlock(monster);
-      }
-    });
-  });
-}
-
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+          if (lockedMonster === monster) {
+            statBlockLocked = false;
+            lockedMonster = null;
+            statBlockContainer.innerHTML = "";
+          } else {
+            statBlockLocked = true;
+            lockedMonster = monster;
+            displayStatBlock(monster);
+          }
+        });
+      });
+    }
 
     // -----------------------------
     // Add monster to initiative tracker
@@ -242,85 +288,6 @@ function attachStatBlockEvents() {
 
       row.querySelector(".remove-btn").addEventListener("click", () => row.remove());
       trackerBody.appendChild(row);
-    }
-
-    // -----------------------------
-    // Display monster stat block in right panel
-    // -----------------------------
-    let statBlockLocked = false; // Lock toggle
-    let lockedMonster = null;    // Currently locked monster
-
-    function displayStatBlock(monster) {
-      const displayName = monster._displayName || monster.name || monster._file;
-      const formatAbility = (score) => {
-        const mod = Math.floor((score - 10) / 2);
-        const sign = mod >= 0 ? `+${mod}` : mod;
-        return `${score} (${sign})`;
-      };
-
-      let html = `
-        <div class="creature-heading">
-          <h1>${displayName}</h1>
-          <h5>${monster.size || "Medium"} ${monster.type || ""}${monster.alignment ? `, ${monster.alignment}` : ""}</h5>
-        </div>
-        <hr class="orange-border">
-        <div class="property-line"><h4>Armor Class&nbsp</h4><p>${monster.ac}</p></div>
-        <div class="property-line"><h4>Hit Points&nbsp</h4><p>${monster.hp}</p></div>
-        ${monster.speed ? `<div class="property-line"><h4>Speed&nbsp</h4><p>${monster.speed}</p></div>` : ""}
-        <hr class="orange-border">
-        <div class="abilities">
-          ${Object.entries(monster.abilities || {}).map(([k,v]) => `<div><h4>${k.toUpperCase()}</h4><p>${formatAbility(v)}</p></div>`).join("")}
-        </div>
-        <hr class="orange-border">
-        ${monster.saves ? `<div class="property-line"><h4>Saving Throws&nbsp</h4><p>${monster.saves}</p></div>` : ""}
-        ${monster.skills ? `<div class="property-line"><h4>Skills&nbsp</h4><p>${monster.skills}</p></div>` : ""}
-        ${monster.immunities ? `<div class="property-line"><h4>Damage Immunities&nbsp</h4><p>${monster.immunities}</p></div>` : ""}
-        ${monster.resistance ? `<div class="property-line"><h4>Damage Resistance&nbsp</h4><p>${monster.resistance}</p></div>` : ""}
-        ${monster.vulnerability ? `<div class="property-line"><h4>Damage Vulnerability&nbsp</h4><p>${monster.vulnerability}</p></div>` : ""}
-        ${monster.conimmunities ? `<div class="property-line"><h4>Condition Immunities&nbsp</h4><p>${monster.conimmunities}</p></div>` : ""}
-        ${monster.senses ? `<div class="property-line"><h4>Senses&nbsp</h4><p>${monster.senses}</p></div>` : ""}
-        ${monster.languages ? `<div class="property-line"><h4>Languages&nbsp</h4><p>${monster.languages}</p></div>` : ""}
-        <div class="property-line"><h4>Challenge&nbsp</h4><p>${monster.cr}</p></div>
-        <hr class="orange-border">
-        ${monster.traits?.length ? monster.traits.map(t => `<p><strong><em>${t.name}.</em></strong> ${t.desc}</p>`).join("") : ""}
-        ${monster.actions?.length ? `<h3>Actions</h3>${monster.actions.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}` : ""}
-        ${monster.reactions?.length ? `<h3>Reactions</h3>${monster.reactions.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}` : ""}
-        ${monster.legendary?.length ? `<h3>Legendary Actions</h3><p>The ${displayName} can take ${monster.legendarynumber || 3} legendary actions. Only one can be used at a time. Regains spent actions at the start of its turn.</p>${monster.legendary.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}` : ""}
-        ${monster.lairactions?.length ? `<h3>Lair Actions</h3>${monster.lairactions.map(l => `<p>${l.description || ""}</p>${l.bullets?.length ? `<ul>${l.bullets.map(b=>`<li>${b}</li>`).join("")}</ul>` : ""}`).join("")}` : ""}
-        ${monster.regionaleffects?.length ? `<h3>Regional Effects</h3>${monster.regionaleffects.map(r => `<p>${r.description || ""}</p>${r.bullets?.length ? `<ul>${r.bullets.map(b=>`<li>${b}</li>`).join("")}</ul>` : ""}${r.secondaryDescription ? `<p>${r.secondaryDescription}</p>` : ""}`).join("")}` : ""}
-      `;
-
-      statBlockContainer.innerHTML = html;
-    }
-
-    // -----------------------------
-    // Attach hover & click to monster links
-    // -----------------------------
-    function attachStatBlockEvents(monstersArray) {
-      document.querySelectorAll("#monster-list .monster-link a").forEach(link => {
-        const monsterName = link.textContent;
-        const monster = monstersArray.find(m => (m._displayName || m.name || m._file) === monsterName);
-
-        link.addEventListener("mouseenter", () => {
-          if (!statBlockLocked) displayStatBlock(monster);
-        });
-        link.addEventListener("mouseleave", () => {
-          if (!statBlockLocked) statBlockContainer.innerHTML = "";
-        });
-        link.addEventListener("click", (e) => {
-          e.preventDefault();
-          if (lockedMonster === monster) {
-            // Unlock if same monster clicked
-            statBlockLocked = false;
-            lockedMonster = null;
-            statBlockContainer.innerHTML = "";
-          } else {
-            statBlockLocked = true;
-            lockedMonster = monster;
-            displayStatBlock(monster);
-          }
-        });
-      });
     }
 
     // -----------------------------
