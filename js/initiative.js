@@ -209,35 +209,43 @@ addBlankButton.addEventListener("click", () => {
     // -----------------------------
     // Render Monster List
     // -----------------------------
-    function renderList(data) {
-      listEl.innerHTML = "";
-      let currentCR = null;
+ function renderList(data) {
+  listEl.innerHTML = ""; // Clear table body
 
-      data.forEach(m => {
-        const crVal = isNaN(m._crSortValue) ? "Undefined" : m._cleanCR;
+  data.forEach(monster => {
+    const tr = document.createElement("tr");
 
-        if (crVal !== currentCR) {
-          currentCR = crVal;
-          const heading = document.createElement("h3");
-          heading.textContent = crVal === "Undefined" ? "CR Undefined" : `CR ${crVal}`;
-          listEl.appendChild(heading);
-        }
+    // Get Source = last tag
+    const source = monster.tags && monster.tags.length > 0
+      ? monster.tags[monster.tags.length - 1]
+      : "Unknown";
 
-        const li = document.createElement("div");
-        li.className = "monster-link";
+    tr.innerHTML = `
+      <td class="creature-name">${monster._displayName || monster.name || monster._file}</td>
+      <td>${monster.type || "—"}</td>
+      <td>${monster._cleanCR || "—"}</td>
+      <td>${source}</td>
+    `;
 
-        const link = document.createElement("a");
-        link.href = "#";
-        link.textContent = m._displayName || m.name || m._file;
-        link.monsterRef = m; // store monster object directly
+    // Add event handlers
+    tr.addEventListener("mouseenter", () => {
+      if (!statBlockLocked) displayStatBlock(monster);
+    });
+    tr.addEventListener("mouseleave", () => {
+      if (!statBlockLocked) statBlockContainer.innerHTML = "";
+    });
+    tr.addEventListener("click", (e) => {
+      e.preventDefault();
+      addToTracker(monster);
+      statBlockLocked = true;
+      lockedMonster = monster;
+      displayStatBlock(monster);
+    });
 
-        li.appendChild(link);
-        listEl.appendChild(li);
-      });
+    listEl.appendChild(tr);
+  });
+}
 
-      // Attach hover & click events
-      attachStatBlockEvents();
-    }
 
     // -----------------------------
     // Display monster stat block

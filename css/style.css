@@ -314,5 +314,31 @@ strong em {
 #go-back-btn:hover {
   background-color: #e0e0e0;
 }
+.creature-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.creature-table th,
+.creature-table td {
+  border: 1px solid #444;
+  padding: 6px 10px;
+  text-align: left;
+}
+
+.creature-table th {
+  background-color: #222;
+  color: #fff;
+}
+
+.creature-table tr:hover {
+  background-color: #333;
+  cursor: pointer;
+}
+
+.creature-table td.creature-name {
+  font-weight: bold;
+}
 
 
