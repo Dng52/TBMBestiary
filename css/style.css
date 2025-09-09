@@ -352,7 +352,7 @@ strong em {
    RESIZER
    ========================= */
 .resizer {
-  width: 5px;
+  width: 15px;
   background: #FFBF00;
   cursor: col-resize;
   height: 100%;
