@@ -423,61 +423,68 @@ function addToTracker(monster) {
 	// -----------------------------
 	// Resizer
 	// -----------------------------
-document.querySelectorAll('.resizer').forEach(resizer => {
-  const leftPanel = resizer.previousElementSibling;
-  const rightPanel = resizer.nextElementSibling;
+// -----------------------------
+// Resizers (LEFT & RIGHT handles)
+// -----------------------------
+document.querySelectorAll('.resizer').forEach((handle) => {
+  const left = handle.previousElementSibling;
+  const right = handle.nextElementSibling;
+  if (!left || !right) return; // guard
 
-  let x = 0;
-  let leftPanelWidth = 0;
+  let startX = 0;
+  let startLeftW = 0;
+  let startRightW = 0;
 
-  const mouseDownHandler = function (e) {
-    x = e.clientX;
+  const onMouseDown = (e) => {
+    e.preventDefault(); // <-- prevents native drag/text selection jumps
+    startX = e.clientX;
 
-    // store the current left panel width
-    leftPanelWidth = parseInt(
-      window.getComputedStyle(leftPanel).flexBasis,
-      10
-    );
+    // robust measurement even if flex-basis is 'auto'
+    startLeftW = left.getBoundingClientRect().width;
+    startRightW = right.getBoundingClientRect().width;
 
-    // attach listeners
-    document.addEventListener('mousemove', mouseMoveHandler);
-    document.addEventListener('mouseup', mouseUpHandler);
+    document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mouseup', onMouseUp);
 
-    // visually indicate resize
-    resizer.style.cursor = 'col-resize';
     document.body.style.cursor = 'col-resize';
-    leftPanel.style.userSelect = 'none';
-    leftPanel.style.pointerEvents = 'none';
-    rightPanel.style.userSelect = 'none';
-    rightPanel.style.pointerEvents = 'none';
+    left.style.userSelect = 'none';
+    right.style.userSelect = 'none';
+    left.style.pointerEvents = 'none';
+    right.style.pointerEvents = 'none';
   };
 
- const mouseMoveHandler = function (e) {
-  const dx = e.clientX - x;
-  const newLeftWidth = leftPanelWidth + dx;
+  const onMouseMove = (e) => {
+    const dx = e.clientX - startX;
 
-  // Apply new width only by changing flex-basis
-  leftPanel.style.flexBasis = `${newLeftWidth}px`;
-};
+    const minLeft = parseFloat(getComputedStyle(left).minWidth) || 150;
+    const minRight = parseFloat(getComputedStyle(right).minWidth) || 150;
 
+    // Move boundary by dx (left grows when dx>0)
+    let newLeft = Math.max(minLeft, startLeftW + dx);
+    let newRight = Math.max(minRight, startRightW - dx);
 
-  const mouseUpHandler = function () {
-    // remove listeners
-    document.removeEventListener('mousemove', mouseMoveHandler);
-    document.removeEventListener('mouseup', mouseUpHandler);
+    // preserve original total width to avoid layout creep
+    const total = startLeftW + startRightW;
+    if (Math.round(newLeft + newRight) !== Math.round(total)) newRight = total - newLeft;
 
-    resizer.style.removeProperty('cursor');
+    // Lock both panels to explicit pixel widths so they don't switch to auto
+    left.style.flex = `0 0 ${newLeft}px`;
+    right.style.flex = `0 0 ${newRight}px`;
+  };
+
+  const onMouseUp = () => {
+    document.removeEventListener('mousemove', onMouseMove);
+    document.removeEventListener('mouseup', onMouseUp);
+
     document.body.style.removeProperty('cursor');
-    leftPanel.style.removeProperty('user-select');
-    leftPanel.style.removeProperty('pointer-events');
-    rightPanel.style.removeProperty('user-select');
-    rightPanel.style.removeProperty('pointer-events');
+    left.style.removeProperty('user-select');
+    right.style.removeProperty('user-select');
+    left.style.removeProperty('pointer-events');
+    right.style.removeProperty('pointer-events');
   };
 
-  resizer.addEventListener('mousedown', mouseDownHandler);
+  handle.addEventListener('mousedown', onMouseDown);
 });
-
-
 
 
 }

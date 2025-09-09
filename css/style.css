@@ -356,6 +356,7 @@ strong em {
   background: #FFBF00;
   cursor: col-resize;
   height: 100%;
+  flex: 0 0 15px;
 }
 
 .initiative-table {
