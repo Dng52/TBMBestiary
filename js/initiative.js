@@ -82,7 +82,7 @@ rollButton.addEventListener("click", () => {
   });
 });
 
-// Sort button listener should be separate
+// Sort button listener
 const sortButton = document.getElementById("sort-initiative-btn");
 sortButton.addEventListener("click", () => {
   const rows = Array.from(trackerBody.querySelectorAll("tr"));
@@ -91,6 +91,10 @@ sortButton.addEventListener("click", () => {
     const bVal = parseInt(b.querySelector("td:nth-child(2) input").value, 10) || 0;
     return bVal - aVal; // descending order
   });
+
+  rows.forEach(row => trackerBody.appendChild(row));
+}); // <-- close the listener here!
+
 // -----------------------------
 // Add Blank Entry Button
 // -----------------------------
@@ -110,7 +114,7 @@ addBlankButton.addEventListener("click", () => {
   // Remove button
   row.querySelector(".remove-btn").addEventListener("click", () => row.remove());
 
-  // Optional hover & click highlight
+  // Hover & click highlight
   const nameCell = row.querySelector(".monster-name");
   nameCell.addEventListener("mouseenter", () => {
     if (!lockedRow) nameCell.style.backgroundColor = "#ffd";
