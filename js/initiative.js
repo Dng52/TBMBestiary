@@ -53,6 +53,21 @@ async function loadMonsters() {
     const searchEl = document.getElementById("search");
     const trackerBody = document.getElementById("tracker-body");
     const statBlockContainer = document.getElementById("stat-block");
+const goBackButton = document.getElementById("go-back-btn");
+const mainMenu = document.getElementById("main-menu"); // Make sure your main menu has this ID
+const trackerContainer = document.getElementById("tracker-container"); // The whole tracker area
+const leftPanel = document.getElementById("left-panel");
+const rightPanel = document.getElementById("right-panel"); // If you have a right panel for stat blocks
+
+goBackButton.addEventListener("click", () => {
+  // Hide tracker panels
+  trackerContainer.style.display = "none";
+  leftPanel.style.display = "none";
+  rightPanel.style.display = "none";
+
+  // Show main menu
+  mainMenu.style.display = "block";
+});
 
     const activeTypes = new Set();
     const activeCRs = new Set();

@@ -300,5 +300,19 @@ strong em {
   flex-wrap: wrap;
   margin-bottom: 0.5rem;
 }
+#go-back-btn {
+  display: block;
+  margin: 10px 0;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#go-back-btn:hover {
+  background-color: #e0e0e0;
+}
 
 
