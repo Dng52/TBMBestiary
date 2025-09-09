@@ -214,40 +214,28 @@ async function loadMonsters() {
     // -----------------------------
     // Attach hover & click to monster links
     // -----------------------------
-    function attachStatBlockEvents() {
-      document.querySelectorAll("#monster-list .monster-link a").forEach(link => {
-        const monster = link.monsterRef; // use stored monster
+ function attachStatBlockEvents() {
+  document.querySelectorAll("#monster-list .monster-link a").forEach(link => {
+    const monster = link.monsterRef;
 
-        link.addEventListener("mouseenter", () => {
-          if (!statBlockLocked) displayStatBlock(monster);
-        });
+    // Hover shows preview stat block
+    link.addEventListener("mouseenter", () => {
+      displayStatBlock(monster);
+    });
 
-        link.addEventListener("mouseleave", () => {
-          if (!statBlockLocked) statBlockContainer.innerHTML = "";
-        });
+    // Click always adds to tracker and updates stat block
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
 
-		link.addEventListener("click", (e) => {
-		  e.preventDefault();
+      // Add a new row to the initiative tracker
+      addToTracker(monster);
 
-		  // Always add to tracker
-		  addToTracker(monster);
+      // Update stat block to clicked monster
+      displayStatBlock(monster);
+    });
+  });
+}
 
-		  // Toggle stat block lock independently
-		  if (lockedMonster === monster) {
-			statBlockLocked = false;
-			lockedMonster = null;
-			statBlockContainer.innerHTML = "";
-		  } else {
-			statBlockLocked = true;
-			lockedMonster = monster;
-			displayStatBlock(monster);
-		  }
-		});
-
-
-
-      });
-    }
 
     // -----------------------------
     // Add monster to initiative tracker
