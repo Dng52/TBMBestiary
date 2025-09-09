@@ -465,8 +465,10 @@ document.querySelectorAll('.resizer').forEach((handle) => {
     if (Math.round(newLeft + newRight) !== Math.round(total)) newRight = total - newLeft;
 
     // Lock both panels to explicit pixel widths so they don't switch to auto
-    left.style.flex = `0 0 ${newLeft}px`;
-    right.style.flex = `0 0 ${newRight}px`;
+	// Only set width, not flex shrink/grow
+	left.style.width = `${newLeft}px`;
+	right.style.width = `${newRight}px`;
+
   };
 
   const onMouseUp = () => {
