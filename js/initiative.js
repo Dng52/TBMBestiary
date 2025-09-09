@@ -103,7 +103,7 @@ addBlankButton.addEventListener("click", () => {
   const row = document.createElement("tr");
 
   row.innerHTML = `
-    <td class="monster-name">Custom Entry</td>
+    <td class="monster-name"><input type="text" value="Custom Entry" style="width: 100%;"></td>
     <td><input type="number" value="0" style="width: 50px;"></td>
     <td><input type="text" style="width: 50px;"></td>
     <td><input type="text" style="width: 60px;"></td>
@@ -114,7 +114,7 @@ addBlankButton.addEventListener("click", () => {
   // Remove button
   row.querySelector(".remove-btn").addEventListener("click", () => row.remove());
 
-  // Hover & click highlight
+  // Hover & click highlight (still works on the <td>, not the input itself)
   const nameCell = row.querySelector(".monster-name");
   nameCell.addEventListener("mouseenter", () => {
     if (!lockedRow) nameCell.style.backgroundColor = "#ffd";
@@ -135,6 +135,7 @@ addBlankButton.addEventListener("click", () => {
 
   trackerBody.appendChild(row);
 });
+
 
 
 
