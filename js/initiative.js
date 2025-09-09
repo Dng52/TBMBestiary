@@ -226,22 +226,24 @@ async function loadMonsters() {
           if (!statBlockLocked) statBlockContainer.innerHTML = "";
         });
 
-	link.addEventListener("click", (e) => {
-	  e.preventDefault();
+		link.addEventListener("click", (e) => {
+		  e.preventDefault();
 
-	  if (lockedMonster === monster) {
-		statBlockLocked = false;
-		lockedMonster = null;
-		statBlockContainer.innerHTML = "";
-	  } else {
-		statBlockLocked = true;
-		lockedMonster = monster;
-		displayStatBlock(monster);
+		  // Always add to tracker
+		  addToTracker(monster);
 
-		// Always add to tracker
-		addToTracker(monster);
-	  }
-	});
+		  // Toggle stat block lock independently
+		  if (lockedMonster === monster) {
+			statBlockLocked = false;
+			lockedMonster = null;
+			statBlockContainer.innerHTML = "";
+		  } else {
+			statBlockLocked = true;
+			lockedMonster = monster;
+			displayStatBlock(monster);
+		  }
+		});
+
 
 
       });
