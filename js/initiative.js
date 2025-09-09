@@ -432,50 +432,23 @@ function addToTracker(monster) {
     console.error("Failed to load monsters:", err);
   }
   
-	// -----------------------------
-	// Resizer
-	// -----------------------------
-	function makeResizable(resizer, leftPanel, rightPanel) {
-	  let startX = 0;
-	  let startWidth = 0;
+// -----------------------------
+// Resizer
+// -----------------------------
+function makeResizable(resizer, leftPanel, rightPanel) { ... }
 
-	  const mouseDownHandler = function (e) {
-		startX = e.clientX;
-		startWidth = leftPanel.getBoundingClientRect().width;
+makeResizable(
+  document.getElementById("resizer-left"),
+  document.getElementById("left-panel"),
+  document.getElementById("middle-panel")
+);
 
-		document.addEventListener("mousemove", mouseMoveHandler);
-		document.addEventListener("mouseup", mouseUpHandler);
+makeResizable(
+  document.getElementById("resizer-right"),
+  document.getElementById("middle-panel"),
+  document.getElementById("right-panel")
+);
 
-		// prevent selecting text while dragging
-		document.body.style.userSelect = "none";
-	  };
-
-	  const mouseMoveHandler = function (e) {
-		const dx = e.clientX - startX;
-		leftPanel.style.width = `${startWidth + dx}px`;
-	  };
-
-	  const mouseUpHandler = function () {
-		document.removeEventListener("mousemove", mouseMoveHandler);
-		document.removeEventListener("mouseup", mouseUpHandler);
-		document.body.style.userSelect = ""; // restore selection
-	  };
-
-	  resizer.addEventListener("mousedown", mouseDownHandler);
-	}
-
-	// Apply to left/middle and middle/right
-	makeResizable(
-	  document.getElementById("resizer-left"),
-	  document.getElementById("left-panel"),
-	  document.getElementById("middle-panel")
-	);
-
-	makeResizable(
-	  document.getElementById("resizer-right"),
-	  document.getElementById("middle-panel"),
-	  document.getElementById("right-panel")
-	);
 
 
 
