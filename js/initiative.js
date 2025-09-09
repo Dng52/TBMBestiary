@@ -452,13 +452,14 @@ document.querySelectorAll('.resizer').forEach(resizer => {
     rightPanel.style.pointerEvents = 'none';
   };
 
-  const mouseMoveHandler = function (e) {
-    const dx = e.clientX - x;
-    const newLeftWidth = ((leftPanelWidth + dx));
+ const mouseMoveHandler = function (e) {
+  const dx = e.clientX - x;
+  const newLeftWidth = leftPanelWidth + dx;
 
-    // Apply new width with flex-basis
-    leftPanel.style.flex = `0 0 ${newLeftWidth}px`;
-  };
+  // Apply new width only by changing flex-basis
+  leftPanel.style.flexBasis = `${newLeftWidth}px`;
+};
+
 
   const mouseUpHandler = function () {
     // remove listeners
