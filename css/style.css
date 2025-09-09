@@ -412,7 +412,7 @@ strong em {
   cursor: pointer;
 }
 #right-panel {
-  flex: 0 0 400px;   /* fixed starting width */
+  flex: 1;   
   min-width: 250px;
   max-width: 800px;
   overflow-y: auto;
