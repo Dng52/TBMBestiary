@@ -498,6 +498,72 @@ document.querySelectorAll('.resizer').forEach((handle) => {
   handle.addEventListener('mousedown', onMouseDown);
 });
 
+// === SAVE TRACKER ===
+document.getElementById("save-tracker-btn").addEventListener("click", () => {
+  const rows = document.querySelectorAll("#tracker-body tr");
+  let trackerData = [];
+
+  rows.forEach(row => {
+    const cells = row.querySelectorAll("td");
+    trackerData.push({
+      name: cells[0].querySelector("input")?.value || cells[0].innerText,
+      initiative: cells[1].querySelector("input")?.value || "",
+      ac: cells[2].querySelector("input")?.value || "",
+      hp: cells[3].querySelector("input")?.value || "",
+      notes: cells[4].querySelector("input")?.value || ""
+    });
+  });
+
+  const blob = new Blob([JSON.stringify(trackerData, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "initiative_tracker.json";
+  a.click();
+
+  URL.revokeObjectURL(url);
+});
+
+// === LOAD TRACKER ===
+document.getElementById("load-tracker-btn").addEventListener("click", () => {
+  document.getElementById("load-tracker-input").click();
+});
+
+document.getElementById("load-tracker-input").addEventListener("change", (event) => {
+  const file = event.target.files[0];
+  if (!file) return;
+
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    try {
+      const trackerData = JSON.parse(e.target.result);
+
+      const tbody = document.getElementById("tracker-body");
+      tbody.innerHTML = ""; // Clear current tracker
+
+      trackerData.forEach(entry => {
+        const row = document.createElement("tr");
+
+        row.innerHTML = `
+          <td><input type="text" value="${entry.name}"></td>
+          <td><input type="number" value="${entry.initiative}"></td>
+          <td><input type="number" value="${entry.ac}"></td>
+          <td><input type="number" value="${entry.hp}"></td>
+          <td><input type="text" value="${entry.notes}"></td>
+          <td><button class="remove-btn">X</button></td>
+        `;
+
+        row.querySelector(".remove-btn").addEventListener("click", () => row.remove());
+        tbody.appendChild(row);
+      });
+    } catch (err) {
+      alert("Error loading tracker file!");
+    }
+  };
+
+  reader.readAsText(file);
+});
 
 }
 
