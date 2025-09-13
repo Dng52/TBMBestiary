@@ -510,7 +510,8 @@ document.getElementById("save-tracker-btn").addEventListener("click", () => {
       initiative: cells[1].querySelector("input")?.value || "",
       ac: cells[2].querySelector("input")?.value || "",
       hp: cells[3].querySelector("input")?.value || "",
-      notes: cells[4].querySelector("input")?.value || ""
+      notes: cells[4].querySelector("input")?.value || "",
+      monsterId: row.dataset.monsterId || null  // preserve link to stat block
     });
   });
 
@@ -524,6 +525,7 @@ document.getElementById("save-tracker-btn").addEventListener("click", () => {
 
   URL.revokeObjectURL(url);
 });
+
 
 // === LOAD TRACKER ===
 document.getElementById("load-tracker-btn").addEventListener("click", () => {
@@ -544,6 +546,9 @@ document.getElementById("load-tracker-input").addEventListener("change", (event)
 
       trackerData.forEach(entry => {
         const row = document.createElement("tr");
+        if (entry.monsterId) {
+          row.dataset.monsterId = entry.monsterId; // keep the reference
+        }
 
         row.innerHTML = `
           <td><input type="text" value="${entry.name}"></td>
@@ -554,7 +559,22 @@ document.getElementById("load-tracker-input").addEventListener("change", (event)
           <td><button class="remove-btn">X</button></td>
         `;
 
+        // Remove button
         row.querySelector(".remove-btn").addEventListener("click", () => row.remove());
+
+        // Restore stat block functionality if linked to a monster
+        if (entry.monsterId) {
+          row.addEventListener("mouseenter", () => {
+            showStatBlock(entry.monsterId); // <- reuse your existing function
+          });
+          row.addEventListener("mouseleave", () => {
+            hideStatBlock();
+          });
+          row.addEventListener("click", () => {
+            toggleStatBlock(entry.monsterId); // <- reuse your existing toggle function
+          });
+        }
+
         tbody.appendChild(row);
       });
     } catch (err) {
@@ -564,6 +584,7 @@ document.getElementById("load-tracker-input").addEventListener("change", (event)
 
   reader.readAsText(file);
 });
+
 
 }
 
