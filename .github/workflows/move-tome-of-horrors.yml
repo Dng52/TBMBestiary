@@ -12,16 +12,12 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up Node.js
+      - name: Run move script
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      - name: Install dependencies
-        run: npm install
-
-      - name: Move tome-of-horrors JSON files
-        run: node .github/scripts/move-tome-of-horrors.js
+      - run: node .github/scripts/move-tome-of-horrors.js
 
       - name: Commit changes
         run: |
