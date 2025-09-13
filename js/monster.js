@@ -71,9 +71,22 @@ async function loadMonster() {
 
       <hr class="orange-border">
 
-      ${monster.traits && monster.traits.length ? `
-        ${monster.traits.map(t => `<p><strong><em>${t.name}.</em></strong> ${t.desc}</p>`).join("")}
-      ` : ""}
+	${monster.traits?.map(t => {
+	  if (t.desc.includes("*")) {
+		// Split on "*" and trim
+		const parts = t.desc.split("*").map(s => s.trim()).filter(Boolean);
+		const first = parts.shift(); // intro sentence
+		return `
+		  <p><strong><em>${t.name}.</em></strong> ${first}</p>
+		  <ul>
+			${parts.map(p => `<li>${p}</li>`).join("")}
+		  </ul>
+		`;
+	  } else {
+		return `<p><strong><em>${t.name}.</em></strong> ${t.desc}</p>`;
+	  }
+	}).join("") || ""}
+
 
       ${monster.actions && monster.actions.length ? `
         <h3>Actions</h3>
