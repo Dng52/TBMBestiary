@@ -284,7 +284,22 @@ addBlankButton.addEventListener("click", () => {
         ${monster.languages ? `<div class="property-line"><h4>Languages&nbsp</h4><p>${monster.languages}</p></div>` : ""}
         <div class="property-line"><h4>Challenge&nbsp</h4><p>${monster.cr}</p></div>
         <hr class="orange-border">
-        ${monster.traits?.length ? monster.traits.map(t => `<p><strong><em>${t.name}.</em></strong> ${t.desc}</p>`).join("") : ""}
+        ${monster.traits?.map(t => {
+  if (t.desc.includes("*")) {
+    // Split on "*" and trim
+    const parts = t.desc.split("*").map(s => s.trim()).filter(Boolean);
+    const first = parts.shift(); // intro sentence
+    return `
+      <p><strong><em>${t.name}.</em></strong> ${first}</p>
+      <ul>
+        ${parts.map(p => `<li>${p}</li>`).join("")}
+      </ul>
+    `;
+  } else {
+    return `<p><strong><em>${t.name}.</em></strong> ${t.desc}</p>`;
+  }
+}).join("") || ""}
+
         ${monster.actions?.length ? `<h3>Actions</h3>${monster.actions.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}` : ""}
         ${monster.reactions?.length ? `<h3>Reactions</h3>${monster.reactions.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}` : ""}
         ${monster.legendary?.length ? `<h3>Legendary Actions</h3><p>The ${displayName} can take ${monster.legendarynumber || 3} legendary actions. Only one can be used at a time. Regains spent actions at the start of its turn.</p>${monster.legendary.map(a => `<p><strong><em>${a.name}.</em></strong> ${a.desc}</p>`).join("")}` : ""}
