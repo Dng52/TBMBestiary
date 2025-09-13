@@ -16,7 +16,7 @@ files.forEach(file => {
   try {
     const content = JSON.parse(fs.readFileSync(filePath, "utf8"));
 
-    if (content.tags && content.tags.includes("tome-of-horrors")) {
+    if (content.tags && content.tags.includes("homebrew")) {
       const newPath = path.join(oldDataDir, file);
       fs.renameSync(filePath, newPath);
       console.log(`Moved ${file} to /olddata`);
