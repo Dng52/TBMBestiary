@@ -29979,10 +29979,6 @@
       "file": "aarakocra.json"
     },
     {
-      "name": "Abasheen",
-      "file": "abasheen.json"
-    },
-    {
       "name": "Abjurer",
       "file": "abjurer.json"
     },
@@ -29995,24 +29991,12 @@
       "file": "abominable-yeti.json"
     },
     {
-      "name": "Abyssal Harvester",
-      "file": "abyssal-harvester.json"
-    },
-    {
-      "name": "Abyssal Larva",
-      "file": "abyssal-larva.json"
-    },
-    {
       "name": "Abyssal Wretch (A)",
       "file": "abyssal-wretch-a.json"
     },
     {
       "name": "Abyssal Wretch (B)",
       "file": "abyssal-wretch-b.json"
-    },
-    {
-      "name": "Acid Elemental",
-      "file": "acid-elemental.json"
     },
     {
       "name": "Acolyte",
@@ -30043,16 +30027,8 @@
       "file": "adult-bronze-dragon.json"
     },
     {
-      "name": "Adult Cloud Dragon",
-      "file": "adult-cloud-dragon.json"
-    },
-    {
       "name": "Adult Copper Dragon",
       "file": "adult-copper-dragon.json"
-    },
-    {
-      "name": "Adult Dungeon Dragon",
-      "file": "adult-dungeon-dragon.json"
     },
     {
       "name": "Adult Emerald Dragon",
@@ -30063,20 +30039,12 @@
       "file": "adult-gold-dragon.json"
     },
     {
-      "name": "Adult Gray Dragon",
-      "file": "adult-gray-dragon.json"
-    },
-    {
       "name": "Adult Green Dragon",
       "file": "adult-green-dragon.json"
     },
     {
       "name": "Adult Kruthik",
       "file": "adult-kruthik.json"
-    },
-    {
-      "name": "Adult Mist Dragon",
-      "file": "adult-mist-dragon.json"
     },
     {
       "name": "Adult Oblex",
@@ -30107,10 +30075,6 @@
       "file": "adult-white-dragon.json"
     },
     {
-      "name": "Advanced Demilich",
-      "file": "advanced-demilich.json"
-    },
-    {
       "name": "Aeorian Absorber",
       "file": "aeorian-absorber.json"
     },
@@ -30123,16 +30087,8 @@
       "file": "aeorian-reverser.json"
     },
     {
-      "name": "Aerial Assault Gnome",
-      "file": "aerial-assault-gnome.json"
-    },
-    {
       "name": "Aerisi Kalinoth",
       "file": "aerisi-kalinoth.json"
-    },
-    {
-      "name": "Aeshma (Rage Demon)",
-      "file": "aeshma.json"
     },
     {
       "name": "Air Elemental Myrmidon (A)",
@@ -30145,10 +30101,6 @@
     {
       "name": "Air Elemental",
       "file": "air-elemental.json"
-    },
-    {
-      "name": "Albino Cave Spider",
-      "file": "albino-cave-spider.json"
     },
     {
       "name": "Albino Dwarf Spirit Warrior",
@@ -30175,10 +30127,6 @@
       "file": "alkilith.json"
     },
     {
-      "name": "Allip (ToH)",
-      "file": "allip-toh.json"
-    },
-    {
       "name": "Allip",
       "file": "allip.json"
     },
@@ -30191,16 +30139,8 @@
       "file": "almiraj.json"
     },
     {
-      "name": "Amalgamation",
-      "file": "amalgamation.json"
-    },
-    {
       "name": "Amazon Warrior",
       "file": "amazon-warrior.json"
-    },
-    {
-      "name": "Amber Ooze",
-      "file": "amber-ooze.json"
     },
     {
       "name": "Ambush Drake",
@@ -30217,10 +30157,6 @@
     {
       "name": "Amnizu",
       "file": "amnizu.json"
-    },
-    {
-      "name": "Amphisbaena",
-      "file": "amphisbaena.json"
     },
     {
       "name": "Ancient Amethyst Dragon",
@@ -30243,16 +30179,8 @@
       "file": "ancient-bronze-dragon.json"
     },
     {
-      "name": "Ancient Cloud Dragon",
-      "file": "ancient-cloud-dragon.json"
-    },
-    {
       "name": "Ancient Copper Dragon",
       "file": "ancient-copper-dragon.json"
-    },
-    {
-      "name": "Ancient Dungeon Dragon",
-      "file": "ancient-dungeon-dragon.json"
     },
     {
       "name": "Ancient Emerald Dragon",
@@ -30263,16 +30191,8 @@
       "file": "ancient-gold-dragon.json"
     },
     {
-      "name": "Ancient Gray Dragon",
-      "file": "ancient-gray-dragon.json"
-    },
-    {
       "name": "Ancient Green Dragon",
       "file": "ancient-green-dragon.json"
-    },
-    {
-      "name": "Ancient Mist Dragon",
-      "file": "ancient-mist-dragon.json"
     },
     {
       "name": "Ancient Red Dragon",
@@ -30367,10 +30287,6 @@
       "file": "archdruid.json"
     },
     {
-      "name": "Archer Bush",
-      "file": "archer-bush.json"
-    },
-    {
       "name": "Archer",
       "file": "archer.json"
     },
@@ -30391,16 +30307,8 @@
       "file": "armed-skeleton.json"
     },
     {
-      "name": "Armor Plated Beaver",
-      "file": "armor-plated-beaver.json"
-    },
-    {
       "name": "Ash Marshall",
       "file": "ash-marshall.json"
-    },
-    {
-      "name": "Asrai",
-      "file": "asrai.json"
     },
     {
       "name": "Assassin Vine",
@@ -30471,10 +30379,6 @@
       "file": "azer.json"
     },
     {
-      "name": "Azizou (Pain Demon)",
-      "file": "azizou.json"
-    },
-    {
       "name": "Baba Lysaga",
       "file": "baba-lysaga.json"
     },
@@ -30505,10 +30409,6 @@
     {
       "name": "Bael",
       "file": "bael.json"
-    },
-    {
-      "name": "Balban (Brute Demon)",
-      "file": "balban.json"
     },
     {
       "name": "Balhannoth",
@@ -30543,20 +30443,12 @@
       "file": "barbed-devil.json"
     },
     {
-      "name": "Barbegazi (Ice Gnome)",
-      "file": "barbegazi.json"
-    },
-    {
       "name": "Bard",
       "file": "bard.json"
     },
     {
       "name": "Barghest",
       "file": "barghest.json"
-    },
-    {
-      "name": "Barizou (Assassin Demon)",
-      "file": "barizou.json"
     },
     {
       "name": "Barlgura",
@@ -30569,14 +30461,6 @@
     {
       "name": "Barovian Witch",
       "file": "barovian-witch.json"
-    },
-    {
-      "name": "Barrow Wight",
-      "file": "barrow-wight.json"
-    },
-    {
-      "name": "Basilisk Zombie",
-      "file": "basilisk-zombie.json"
     },
     {
       "name": "Basilisk",
@@ -30603,18 +30487,6 @@
       "file": "bebilith.json"
     },
     {
-      "name": "Bedlam",
-      "file": "bedlam.json"
-    },
-    {
-      "name": "Beetlor",
-      "file": "beetlor.json"
-    },
-    {
-      "name": "Behir Zombie",
-      "file": "behir-zombie.json"
-    },
-    {
       "name": "Behir",
       "file": "behir.json"
     },
@@ -30625,10 +30497,6 @@
     {
       "name": "Beholder",
       "file": "beholder.json"
-    },
-    {
-      "name": "Belabra",
-      "file": "belabra.json"
     },
     {
       "name": "Beldora",
@@ -30647,24 +30515,12 @@
       "file": "bheur-hag.json"
     },
     {
-      "name": "Biclops",
-      "file": "biclops.json"
-    },
-    {
-      "name": "Bighorn Bison",
-      "file": "bighorn-bison.json"
-    },
-    {
       "name": "Black Abishai",
       "file": "black-abishai.json"
     },
     {
       "name": "Black Bear",
       "file": "black-bear.json"
-    },
-    {
-      "name": "Black Bulette",
-      "file": "black-bulette.json"
     },
     {
       "name": "Black Dragon Wyrmling",
@@ -30683,24 +30539,8 @@
       "file": "black-guard-drake.json"
     },
     {
-      "name": "Black Orc Champion",
-      "file": "black-orc-champion.json"
-    },
-    {
-      "name": "Black Orc High Priest of Orcus",
-      "file": "black-orc-high-priest-of-orcus.json"
-    },
-    {
-      "name": "Black Orc",
-      "file": "black-orc.json"
-    },
-    {
       "name": "Black Pudding",
       "file": "black-pudding.json"
-    },
-    {
-      "name": "Black Skeleton",
-      "file": "black-skeleton.json"
     },
     {
       "name": "Blackguard",
@@ -30711,24 +30551,8 @@
       "file": "blagothkus.json"
     },
     {
-      "name": "Bleeding Horror Minotaur",
-      "file": "bleeding-horror-minotaur.json"
-    },
-    {
-      "name": "Blindheim",
-      "file": "blindheim.json"
-    },
-    {
       "name": "Blink Dog",
       "file": "blink-dog.json"
-    },
-    {
-      "name": "Blister Beetle",
-      "file": "blister-beetle.json"
-    },
-    {
-      "name": "Blood Bush",
-      "file": "blood-bush.json"
     },
     {
       "name": "Blood Hawk",
@@ -30739,40 +30563,8 @@
       "file": "blood-hunter.json"
     },
     {
-      "name": "Blood Orc Elder Warrior",
-      "file": "blood-orc-elder-warrior.json"
-    },
-    {
-      "name": "Blood Orc",
-      "file": "blood-orc.json"
-    },
-    {
-      "name": "Blood Orchid Grand Savant",
-      "file": "blood-orchid-grand-savant.json"
-    },
-    {
-      "name": "Blood Orchid Savant",
-      "file": "blood-orchid-savant.json"
-    },
-    {
-      "name": "Blood Orchid",
-      "file": "blood-orchid.json"
-    },
-    {
-      "name": "Blood Wight",
-      "file": "blood-wight.json"
-    },
-    {
-      "name": "Blood Golem",
-      "file": "blood_golem.json"
-    },
-    {
       "name": "Blue Abishai",
       "file": "blue-abishai.json"
-    },
-    {
-      "name": "Blue Bulette",
-      "file": "blue-bulette.json"
     },
     {
       "name": "Blue Dragon Wyrmling",
@@ -30791,24 +30583,8 @@
       "file": "boar.json"
     },
     {
-      "name": "Boarfolk Rager",
-      "file": "boarfolk-rager.json"
-    },
-    {
-      "name": "Boarfolk",
-      "file": "boarfolk.json"
-    },
-    {
       "name": "Bodak",
       "file": "bodak.json"
-    },
-    {
-      "name": "Bog Beast",
-      "file": "bog-beast.json"
-    },
-    {
-      "name": "Bog Creeper",
-      "file": "bog-creeper.json"
     },
     {
       "name": "Boggle",
@@ -30817,10 +30593,6 @@
     {
       "name": "Bomb Automaton",
       "file": "bomb-automaton.json"
-    },
-    {
-      "name": "Bone Crawler",
-      "file": "bone-crawler.json"
     },
     {
       "name": "Bone Devil Polearm",
@@ -30859,24 +30631,12 @@
       "file": "brass-dragon-wyrmling.json"
     },
     {
-      "name": "Brass Man",
-      "file": "brass-man.json"
-    },
-    {
       "name": "Breex Vandermast",
       "file": "breex-vandermast.json"
     },
     {
       "name": "Bridesmaid of Zuggtmoy",
       "file": "bridesmaid-of-zuggtmoy.json"
-    },
-    {
-      "name": "Brine Sea Serpent",
-      "file": "brine-sea-serpent.json"
-    },
-    {
-      "name": "Brine Zombie",
-      "file": "brine-zombie.json"
     },
     {
       "name": "Bristled Moorbounder",
@@ -30891,10 +30651,6 @@
       "file": "bronze-dragon-wyrmling.json"
     },
     {
-      "name": "Bronze Minotaur",
-      "file": "bronze-minotaur.json"
-    },
-    {
       "name": "Bronze Scout",
       "file": "bronze-scout.json"
     },
@@ -30905,14 +30661,6 @@
     {
       "name": "Brown Bear",
       "file": "brown-bear.json"
-    },
-    {
-      "name": "Brown Mold",
-      "file": "brown-mold.json"
-    },
-    {
-      "name": "Brownie",
-      "file": "brownie.json"
     },
     {
       "name": "Bugbear Chief",
@@ -30935,24 +30683,12 @@
       "file": "bullywug.json"
     },
     {
-      "name": "Burning Ghat",
-      "file": "burning-ghat.json"
-    },
-    {
       "name": "Burrowshark",
       "file": "burrowshark.json"
     },
     {
       "name": "Cadaver Collector",
       "file": "cadaver-collector.json"
-    },
-    {
-      "name": "Cadaver Lord",
-      "file": "cadaver-lord.json"
-    },
-    {
-      "name": "Cadaver",
-      "file": "cadaver.json"
     },
     {
       "name": "Cambion",
@@ -30975,28 +30711,12 @@
       "file": "captain-othelstan.json"
     },
     {
-      "name": "Carrion Claw",
-      "file": "carrion-claw.json"
-    },
-    {
       "name": "Carrion Crawler",
       "file": "carrion-crawler.json"
     },
     {
-      "name": "Carrion Moth",
-      "file": "carrion-moth.json"
-    },
-    {
-      "name": "Caryatid Column",
-      "file": "caryatid-column.json"
-    },
-    {
       "name": "Cat",
       "file": "cat.json"
-    },
-    {
-      "name": "Caterprism",
-      "file": "caterprism.json"
     },
     {
       "name": "Catoblepas",
@@ -31007,28 +30727,8 @@
       "file": "cave-bear.json"
     },
     {
-      "name": "Cave Beetle",
-      "file": "cave-beetle.json"
-    },
-    {
       "name": "Cave Fisher",
       "file": "cave-fisher.json"
-    },
-    {
-      "name": "Cave Giant",
-      "file": "cave-giant.json"
-    },
-    {
-      "name": "Cave Leech",
-      "file": "cave-leech.json"
-    },
-    {
-      "name": "Cave Troll",
-      "file": "cave-troll.json"
-    },
-    {
-      "name": "Cavern Lizard",
-      "file": "cavern-lizard.json"
     },
     {
       "name": "Centaur Mummy",
@@ -31039,20 +30739,8 @@
       "file": "centaur.json"
     },
     {
-      "name": "Cerberus",
-      "file": "cerberus.json"
-    },
-    {
-      "name": "Chaaor (Beast Demon)",
-      "file": "chaaor.json"
-    },
-    {
       "name": "Chain Devil",
       "file": "chain-devil.json"
-    },
-    {
-      "name": "Chalkydri Angel",
-      "file": "chalkydri-angel.json"
     },
     {
       "name": "Chamberlain of Zuggtmoy",
@@ -31065,10 +30753,6 @@
     {
       "name": "Change",
       "file": "change.json"
-    },
-    {
-      "name": "Chaos Beast",
-      "file": "chaos-beast.json"
     },
     {
       "name": "Chasme",
@@ -31091,10 +30775,6 @@
       "file": "choldrith.json"
     },
     {
-      "name": "Choronzon (Chaos Demon)",
-      "file": "choronzon.json"
-    },
-    {
       "name": "Chupacabra",
       "file": "chupacabra.json"
     },
@@ -31109,18 +30789,6 @@
     {
       "name": "Chwinga",
       "file": "chwinga.json"
-    },
-    {
-      "name": "Cinder Ghoul",
-      "file": "cinder-ghoul.json"
-    },
-    {
-      "name": "Cinder Knight",
-      "file": "cinder-knight.json"
-    },
-    {
-      "name": "Clamor",
-      "file": "clamor.json"
     },
     {
       "name": "Clawfish Companion",
@@ -31139,10 +30807,6 @@
       "file": "cloaker.json"
     },
     {
-      "name": "Cloud Dragon Wyrmling",
-      "file": "cloud-dragon-wyrmling.json"
-    },
-    {
       "name": "Cloud Giant Smiling One",
       "file": "cloud-giant-smiling-one.json"
     },
@@ -31151,16 +30815,8 @@
       "file": "cloud-giant.json"
     },
     {
-      "name": "Clubneck",
-      "file": "clubneck.json"
-    },
-    {
       "name": "Cockatrice",
       "file": "cockatrice.json"
-    },
-    {
-      "name": "Common Time Elemental",
-      "file": "common-time-elemental.json"
     },
     {
       "name": "Commoner",
@@ -31171,20 +30827,12 @@
       "file": "conjurer.json"
     },
     {
-      "name": "Conshee",
-      "file": "conshee.json"
-    },
-    {
       "name": "Constrictor Snake",
       "file": "constrictor-snake.json"
     },
     {
       "name": "Copper Dragon Wyrmling",
       "file": "copper-dragon-wyrmling.json"
-    },
-    {
-      "name": "Copper Mouse Dragon",
-      "file": "copper-mouse-dragon.json"
     },
     {
       "name": "Core Spawn Crawler",
@@ -31203,14 +30851,6 @@
       "file": "core-spawn-worm.json"
     },
     {
-      "name": "Corpse Candle",
-      "file": "corpse-candle.json"
-    },
-    {
-      "name": "Corpse Rook",
-      "file": "corpse-rook.json"
-    },
-    {
       "name": "Corpse Flower",
       "file": "corpseflower.json"
     },
@@ -31227,10 +30867,6 @@
       "file": "crab.json"
     },
     {
-      "name": "Crabman",
-      "file": "crabman.json"
-    },
-    {
       "name": "Crag Cat",
       "file": "crag-cat.json"
     },
@@ -31241,10 +30877,6 @@
     {
       "name": "Crawling Claw",
       "file": "crawling-claw.json"
-    },
-    {
-      "name": "Crimson Basilisk",
-      "file": "crimson-basilisk.json"
     },
     {
       "name": "Criosphinx",
@@ -31263,14 +30895,6 @@
       "file": "crushing-wave-reaver.json"
     },
     {
-      "name": "Crypt Thing",
-      "file": "crypt-thing.json"
-    },
-    {
-      "name": "Crystalline Horror",
-      "file": "crystalline-horror.json"
-    },
-    {
       "name": "Cult Fanatic",
       "file": "cult-fanatic.json"
     },
@@ -31287,20 +30911,12 @@
       "file": "cyclops.json"
     },
     {
-      "name": "Dagon, Demon Prince of the Sea",
-      "file": "dagon.json"
-    },
-    {
       "name": "Dao",
       "file": "dao.json"
     },
     {
       "name": "Darathra Shendrel",
       "file": "darathra-shendrel.json"
-    },
-    {
-      "name": "Dark Cadejo",
-      "file": "dark-cadejo.json"
     },
     {
       "name": "Dark Tide Knight",
@@ -31323,10 +30939,6 @@
       "file": "darz-helgar.json"
     },
     {
-      "name": "Death Cow",
-      "file": "death-cow.json"
-    },
-    {
       "name": "Death Dog",
       "file": "death-dog.json"
     },
@@ -31345,10 +30957,6 @@
     {
       "name": "Death Tyrant",
       "file": "death-tyrant.json"
-    },
-    {
-      "name": "Death Watch Beetle",
-      "file": "death-watch-beetle.json"
     },
     {
       "name": "Death",
@@ -31371,16 +30979,8 @@
       "file": "deathlock.json"
     },
     {
-      "name": "Decapus",
-      "file": "decapus.json"
-    },
-    {
       "name": "Deep Gnome (Svirfneblin)",
       "file": "deep-gnome-(svirfneblin).json"
-    },
-    {
-      "name": "Deep Hunter Sea Serpent",
-      "file": "deep-hunter-sea-serpent.json"
     },
     {
       "name": "Deep Rothe",
@@ -31395,10 +30995,6 @@
       "file": "deer.json"
     },
     {
-      "name": "Defender Globe",
-      "file": "defender-globe.json"
-    },
-    {
       "name": "Deinonychus",
       "file": "deinonychus.json"
     },
@@ -31409,22 +31005,6 @@
     {
       "name": "Demogorgon",
       "file": "demogorgon.json"
-    },
-    {
-      "name": "Demon Spider",
-      "file": "demon-spider.json"
-    },
-    {
-      "name": "Demonic Knight",
-      "file": "demonic-knight.json"
-    },
-    {
-      "name": "Demonic Mist",
-      "file": "demonic-mist.json"
-    },
-    {
-      "name": "Derghodemon (Cockroach Demon)",
-      "file": "derghodemon.json"
     },
     {
       "name": "Derro Savant (A)",
@@ -31443,16 +31023,8 @@
       "file": "deva.json"
     },
     {
-      "name": "Devil Dog",
-      "file": "devil-dog.json"
-    },
-    {
       "name": "Devourer",
       "file": "devourer.json"
-    },
-    {
-      "name": "Devouring Mist",
-      "file": "devouring-mist.json"
     },
     {
       "name": "Dhergoloth",
@@ -31461,10 +31033,6 @@
     {
       "name": "Dimetrodon",
       "file": "dimetrodon.json"
-    },
-    {
-      "name": "Diminutive Fire Crab",
-      "file": "diminutive-fire-crab.json"
     },
     {
       "name": "Dire Penguin",
@@ -31499,10 +31067,6 @@
       "file": "dominion.json"
     },
     {
-      "name": "Doombat",
-      "file": "doombat.json"
-    },
-    {
       "name": "Doppelganger",
       "file": "doppelganger.json"
     },
@@ -31513,10 +31077,6 @@
     {
       "name": "Draft Horse",
       "file": "draft-horse.json"
-    },
-    {
-      "name": "Dragon Crab",
-      "file": "dragon-crab.json"
     },
     {
       "name": "Dragon Turtle",
@@ -31703,16 +31263,8 @@
       "file": "duergar.json"
     },
     {
-      "name": "Dungeon Dragon Wyrmling",
-      "file": "dungeon-dragon-wyrmling.json"
-    },
-    {
       "name": "Duodrone",
       "file": "duodrone.json"
-    },
-    {
-      "name": "Dust Ghoul",
-      "file": "dust-ghoul.json"
     },
     {
       "name": "Dust Mephit",
@@ -31787,52 +31339,16 @@
       "file": "eidolon.json"
     },
     {
-      "name": "Elder Acid Elemental",
-      "file": "elder-acid-elemental.json"
-    },
-    {
       "name": "Elder Brain",
       "file": "elder-brain.json"
-    },
-    {
-      "name": "Elder Gravity Elemental",
-      "file": "elder-gravity-elemental.json"
     },
     {
       "name": "Elder Oblex",
       "file": "elder-oblex.json"
     },
     {
-      "name": "Elder Obsidian Elemental",
-      "file": "elder-obsidian-elemental.json"
-    },
-    {
-      "name": "Elder Spell Parrot",
-      "file": "elder-spell-parrot.json"
-    },
-    {
       "name": "Elder Tempest",
       "file": "elder-tempest.json"
-    },
-    {
-      "name": "Electrum Mouse Dragon",
-      "file": "electrum-mouse-dragon.json"
-    },
-    {
-      "name": "Elemental Air Dragon",
-      "file": "elemental-air-dragon.json"
-    },
-    {
-      "name": "Elemental Earth Dragon",
-      "file": "elemental-earth-dragon.json"
-    },
-    {
-      "name": "Elemental Fire Dragon",
-      "file": "elemental-fire-dragon.json"
-    },
-    {
-      "name": "Elemental Water Dragon",
-      "file": "elemental-water-dragon.json"
     },
     {
       "name": "Elephant",
@@ -31847,20 +31363,12 @@
       "file": "elk.json"
     },
     {
-      "name": "Elusa Hound",
-      "file": "elusa-hound.json"
-    },
-    {
       "name": "Emerald Dragon Wyrmling",
       "file": "emerald-dragon-wyrmling.json"
     },
     {
       "name": "Empyrean",
       "file": "empyrean.json"
-    },
-    {
-      "name": "Encephalon Gorger",
-      "file": "encephalon-gorger.json"
     },
     {
       "name": "Enchanter",
@@ -31899,14 +31407,6 @@
       "file": "evoker.json"
     },
     {
-      "name": "Eye Killer",
-      "file": "eye-killer.json"
-    },
-    {
-      "name": "Eye of the Deep",
-      "file": "eye-of-the-deep.json"
-    },
-    {
       "name": "Ezmerelda d'Avenir",
       "file": "ezmerelda-davenir.json"
     },
@@ -31943,14 +31443,6 @@
       "file": "faldric-the-archer.json"
     },
     {
-      "name": "Fallen Empyreal Angel",
-      "file": "fallen-empyreal-angel.json"
-    },
-    {
-      "name": "Fanged Sea Serpent",
-      "file": "fanged-sea-serpent.json"
-    },
-    {
       "name": "Fate",
       "file": "fate.json"
     },
@@ -31975,10 +31467,6 @@
       "file": "female-steeder-b.json"
     },
     {
-      "name": "Ferrous Worm",
-      "file": "ferrous-worm.json"
-    },
-    {
       "name": "Fire Elemental Myrmidon (A)",
       "file": "fire-elemental-myrmidon-a.json"
     },
@@ -31999,32 +31487,12 @@
       "file": "fire-giant.json"
     },
     {
-      "name": "Fire Goblin",
-      "file": "fire-goblin.json"
-    },
-    {
-      "name": "Fire Lizard",
-      "file": "fire-lizard.json"
-    },
-    {
       "name": "Fire Mote",
       "file": "fire-mote.json"
     },
     {
-      "name": "Fire Nymph",
-      "file": "fire-nymph.json"
-    },
-    {
-      "name": "Fire Phantom",
-      "file": "fire-phantom.json"
-    },
-    {
       "name": "Fire Snake",
       "file": "fire-snake.json"
-    },
-    {
-      "name": "Fire Whale",
-      "file": "fire-whale.json"
     },
     {
       "name": "Firenewt Warlock of Imix",
@@ -32063,10 +31531,6 @@
       "file": "flumph.json"
     },
     {
-      "name": "Fly Dragon",
-      "file": "fly-dragon.json"
-    },
-    {
       "name": "Flying Monkey",
       "file": "flying-monkey.json"
     },
@@ -32079,20 +31543,8 @@
       "file": "flying-sword.json"
     },
     {
-      "name": "Fogwarden",
-      "file": "fogwarden.json"
-    },
-    {
       "name": "Fomorian",
       "file": "fomorian.json"
-    },
-    {
-      "name": "Forgotten One",
-      "file": "forgotten-one.json"
-    },
-    {
-      "name": "Four-Armed Gargoyle",
-      "file": "four-armed-gargoyle.json"
     },
     {
       "name": "Fraz-Urb'luu (A)",
@@ -32115,10 +31567,6 @@
       "file": "froghemoth.json"
     },
     {
-      "name": "Frost Dwarf",
-      "file": "frost-dwarf.json"
-    },
-    {
       "name": "Frost Giant Everlasting One",
       "file": "frost-giant-everlasting-one.json"
     },
@@ -32133,10 +31581,6 @@
     {
       "name": "Frost Goblin",
       "file": "frost-goblin.json"
-    },
-    {
-      "name": "Frost Man",
-      "file": "frost-man.json"
     },
     {
       "name": "Frost Salamander",
@@ -32155,24 +31599,8 @@
       "file": "frulam-mondath.json"
     },
     {
-      "name": "Fuath Gremlin",
-      "file": "fuath-gremlin.json"
-    },
-    {
-      "name": "Fungus Gargoyle",
-      "file": "fungus-gargoyle.json"
-    },
-    {
       "name": "Galeb Duhr",
       "file": "galeb-duhr.json"
-    },
-    {
-      "name": "Gallows Tree Zombie",
-      "file": "gallows-tree-zombie.json"
-    },
-    {
-      "name": "Gallows Tree",
-      "file": "gallows-tree.json"
     },
     {
       "name": "Gar Shatterkeel",
@@ -32203,18 +31631,6 @@
       "file": "gelatinous-cube.json"
     },
     {
-      "name": "Gelid Beetle",
-      "file": "gelid-beetle.json"
-    },
-    {
-      "name": "Gem Dog",
-      "file": "gem-dog.json"
-    },
-    {
-      "name": "Geruzou (Slime Demon)",
-      "file": "geruzou.json"
-    },
-    {
       "name": "Geryon (variant)",
       "file": "geryon-variant.json"
     },
@@ -32231,10 +31647,6 @@
       "file": "ghalta-primal-hunger.json"
     },
     {
-      "name": "Gharros (Scorpion Demon)",
-      "file": "gharros.json"
-    },
-    {
       "name": "Ghast",
       "file": "ghast.json"
     },
@@ -32243,20 +31655,8 @@
       "file": "ghelryn-foehammer.json"
     },
     {
-      "name": "Ghost-Faced Battle Priest",
-      "file": "ghost-faced-battle-priest.json"
-    },
-    {
-      "name": "Ghost-Faced Orc",
-      "file": "ghost-faced-orc.json"
-    },
-    {
       "name": "Ghost",
       "file": "ghost.json"
-    },
-    {
-      "name": "Ghoul Wolf",
-      "file": "ghoul-wolf.json"
     },
     {
       "name": "Ghoul",
@@ -32299,10 +31699,6 @@
       "file": "giant-crocodile.json"
     },
     {
-      "name": "Giant Dire Abyssal Frog",
-      "file": "giant-dire-abyssal-frog.json"
-    },
-    {
       "name": "Giant Eagle",
       "file": "giant-eagle.json"
     },
@@ -32313,10 +31709,6 @@
     {
       "name": "Giant Fire Beetle",
       "file": "giant-fire-beetle.json"
-    },
-    {
-      "name": "Giant Diseased Fly",
-      "file": "giant-fly-toh.json"
     },
     {
       "name": "Giant Four-Armed Gargoyle",
@@ -32331,16 +31723,8 @@
       "file": "giant-goat.json"
     },
     {
-      "name": "Giant Hamster",
-      "file": "giant-hamster.json"
-    },
-    {
       "name": "Giant Hyena",
       "file": "giant-hyena.json"
-    },
-    {
-      "name": "Giant Leech",
-      "file": "giant-leech.json"
     },
     {
       "name": "Giant Lightning Eel",
@@ -32349,10 +31733,6 @@
     {
       "name": "Giant Lizard",
       "file": "giant-lizard.json"
-    },
-    {
-      "name": "Giant Lynx",
-      "file": "giant-lynx.json"
     },
     {
       "name": "Giant Octopus",
@@ -32375,10 +31755,6 @@
       "file": "giant-rat.json"
     },
     {
-      "name": "Giant Rhinoceros Beetle",
-      "file": "giant-rhinoceros-beetle.json"
-    },
-    {
       "name": "Giant Scorpion",
       "file": "giant-scorpion.json"
     },
@@ -32387,16 +31763,8 @@
       "file": "giant-sea-horse.json"
     },
     {
-      "name": "Giant Seahorse",
-      "file": "giant-seahorse.json"
-    },
-    {
       "name": "Giant Shark",
       "file": "giant-shark.json"
-    },
-    {
-      "name": "Giant Sloth",
-      "file": "giant-sloth.json"
     },
     {
       "name": "Giant Snapping Turtle",
@@ -32419,10 +31787,6 @@
       "file": "giant-subterranean-lizard.json"
     },
     {
-      "name": "Giant Tick",
-      "file": "giant-tick.json"
-    },
-    {
       "name": "Giant Toad",
       "file": "giant-toad.json"
     },
@@ -32435,10 +31799,6 @@
       "file": "giant-wasp.json"
     },
     {
-      "name": "Giant Water Beetle",
-      "file": "giant-water-beetle.json"
-    },
-    {
       "name": "Giant Weasel",
       "file": "giant-weasel.json"
     },
@@ -32447,24 +31807,12 @@
       "file": "giant-wolf-spider.json"
     },
     {
-      "name": "Gibbering Abomination",
-      "file": "gibbering-abomination.json"
-    },
-    {
       "name": "Gibbering Mouther",
       "file": "gibbering-mouther.json"
     },
     {
-      "name": "Gibbering Orb",
-      "file": "gibbering-orb.json"
-    },
-    {
       "name": "Giff",
       "file": "giff.json"
-    },
-    {
-      "name": "Gilded Sea Serpent",
-      "file": "gilded-sea-serpent.json"
     },
     {
       "name": "Girallon Zombie",
@@ -32523,24 +31871,12 @@
       "file": "gladiator.json"
     },
     {
-      "name": "Glass Wyrm",
-      "file": "glass-wyrm.json"
-    },
-    {
-      "name": "Gloom Crawler",
-      "file": "gloom-crawler.json"
-    },
-    {
       "name": "Gloom Weaver",
       "file": "gloom-weaver.json"
     },
     {
       "name": "Gloomstalker",
       "file": "gloomstalker.json"
-    },
-    {
-      "name": "Gnasher Lizard",
-      "file": "gnasher-lizard.json"
     },
     {
       "name": "Gnoll Beastmage",
@@ -32587,24 +31923,12 @@
       "file": "goblin.json"
     },
     {
-      "name": "Gold Bulette",
-      "file": "gold-bulette.json"
-    },
-    {
       "name": "Gold Dragon Wyrmling",
       "file": "gold-dragon-wyrmling.json"
     },
     {
-      "name": "Gold Mouse Dragon",
-      "file": "gold-mouse-dragon.json"
-    },
-    {
       "name": "Goliath Warrior",
       "file": "goliath-warrior.json"
-    },
-    {
-      "name": "Gorgimera",
-      "file": "gorgimera.json"
     },
     {
       "name": "Gorgon",
@@ -32613,18 +31937,6 @@
     {
       "name": "Goristro",
       "file": "goristro.json"
-    },
-    {
-      "name": "Gorson, the Blood Duke",
-      "file": "gorson.json"
-    },
-    {
-      "name": "Gravity Elemental",
-      "file": "gravity-elemental.json"
-    },
-    {
-      "name": "Gray Dragon Wyrmling",
-      "file": "gray-dragon-wyrmling.json"
     },
     {
       "name": "Gray Ooze (Psychic)",
@@ -32651,30 +31963,6 @@
       "file": "grazzt-b.json"
     },
     {
-      "name": "Greater Acid Elemental",
-      "file": "greater-acid-elemental.json"
-    },
-    {
-      "name": "Greater Fire Crab",
-      "file": "greater-fire-crab.json"
-    },
-    {
-      "name": "Greater Gravity Elemental",
-      "file": "greater-gravity-elemental.json"
-    },
-    {
-      "name": "Greater Lightning Elemental",
-      "file": "greater-lightning-elemental.json"
-    },
-    {
-      "name": "Greater Obsidian Elemental",
-      "file": "greater-obsidian-elemental.json"
-    },
-    {
-      "name": "Greater Thaumaturmite",
-      "file": "greater-thaumaturmite.json"
-    },
-    {
       "name": "Greater Zombie",
       "file": "greater-zombie.json"
     },
@@ -32683,20 +31971,12 @@
       "file": "green-abishai.json"
     },
     {
-      "name": "Green Bulette",
-      "file": "green-bulette.json"
-    },
-    {
       "name": "Green Dragon Wyrmling",
       "file": "green-dragon-wyrmling.json"
     },
     {
       "name": "Green Guard Drake",
       "file": "green-guard-drake.json"
-    },
-    {
-      "name": "Green Guardian Gargoyle",
-      "file": "green-guardian-gargoyle.json"
     },
     {
       "name": "Green Hag",
@@ -32711,32 +31991,8 @@
       "file": "green-slime.json"
     },
     {
-      "name": "Greenskin Orc Elf Hunter",
-      "file": "greenskin-orc-elf-hunter.json"
-    },
-    {
-      "name": "Greenskin Orc",
-      "file": "greenskin-orc.json"
-    },
-    {
       "name": "Grell",
       "file": "grell.json"
-    },
-    {
-      "name": "Gremlin Filcher",
-      "file": "gremlin-filcher.json"
-    },
-    {
-      "name": "Gremlin",
-      "file": "gremlin.json"
-    },
-    {
-      "name": "Greruor (Frog Demon)",
-      "file": "greruor.json"
-    },
-    {
-      "name": "Gribbon",
-      "file": "gribbon.json"
     },
     {
       "name": "Grick Alpha",
@@ -32779,20 +32035,12 @@
       "file": "guard.json"
     },
     {
-      "name": "Guardian Demon",
-      "file": "guardian-demon.json"
-    },
-    {
       "name": "Guardian Naga",
       "file": "guardian-naga.json"
     },
     {
       "name": "Guardian Portrait",
       "file": "guardian-portrait.json"
-    },
-    {
-      "name": "Gulper Eel",
-      "file": "gulper-eel.json"
     },
     {
       "name": "Gynosphinx",
@@ -32835,18 +32083,6 @@
       "file": "hell-hound.json"
     },
     {
-      "name": "Hell Moth",
-      "file": "hell-moth.json"
-    },
-    {
-      "name": "Hellbender",
-      "file": "hellbender.json"
-    },
-    {
-      "name": "Hellcat",
-      "file": "hellcat.json"
-    },
-    {
       "name": "Hellenrae",
       "file": "hellenrae.json"
     },
@@ -32857,10 +32093,6 @@
     {
       "name": "Helmed Horror",
       "file": "helmed-horror.json"
-    },
-    {
-      "name": "Herald of Tsathogga",
-      "file": "herald-of-tsathogga.json"
     },
     {
       "name": "Hezrou",
@@ -32931,26 +32163,6 @@
       "file": "howling-hatred-priest.json"
     },
     {
-      "name": "Hsagrath",
-      "file": "hsagrath.json"
-    },
-    {
-      "name": "Huecuva",
-      "file": "huecuva.json"
-    },
-    {
-      "name": "Huge Acid Elemental",
-      "file": "huge-acid-elemental.json"
-    },
-    {
-      "name": "Huge Gravity Elemental",
-      "file": "huge-gravity-elemental.json"
-    },
-    {
-      "name": "Huge Obsidian Elemental",
-      "file": "huge-obsidian-elemental.json"
-    },
-    {
       "name": "Hulking Crab",
       "file": "hulking-crab.json"
     },
@@ -32979,16 +32191,8 @@
       "file": "hutijin.json"
     },
     {
-      "name": "Hybrid Revenant",
-      "file": "hybrid-revenant.json"
-    },
-    {
       "name": "Hydra",
       "file": "hydra.json"
-    },
-    {
-      "name": "Hydrodemon",
-      "file": "hydrodemon.json"
     },
     {
       "name": "Hydroloth",
@@ -33023,14 +32227,6 @@
       "file": "ice-toad.json"
     },
     {
-      "name": "Ice Troll",
-      "file": "ice-troll.json"
-    },
-    {
-      "name": "Ice Golem",
-      "file": "ice_golem.json"
-    },
-    {
       "name": "Illithilich",
       "file": "illithilich.json"
     },
@@ -33053,10 +32249,6 @@
     {
       "name": "Invisible Stalker",
       "file": "invisible-stalker.json"
-    },
-    {
-      "name": "Iron Cobra",
-      "file": "iron-cobra-toh.json"
     },
     {
       "name": "Iron Cobra",
@@ -33083,10 +32275,6 @@
       "file": "izek-strazni.json"
     },
     {
-      "name": "Jack-in-Irons Giant",
-      "file": "jack-in-irons-giant.json"
-    },
-    {
       "name": "Jackal",
       "file": "jackal.json"
     },
@@ -33097,10 +32285,6 @@
     {
       "name": "Jaculi",
       "file": "jaculi.json"
-    },
-    {
-      "name": "Jade Colossus",
-      "file": "jade-colossus.json"
     },
     {
       "name": "Jamna Gleamsilver",
@@ -33115,28 +32299,12 @@
       "file": "juiblex.json"
     },
     {
-      "name": "Jynx",
-      "file": "jynx.json"
-    },
-    {
       "name": "Kalka-Kylla",
       "file": "kalka-kylla.json"
     },
     {
       "name": "Kamadan",
       "file": "kamadan.json"
-    },
-    {
-      "name": "Kamasuhn",
-      "file": "kamasuhn.json"
-    },
-    {
-      "name": "Karina",
-      "file": "karina.json"
-    },
-    {
-      "name": "Kathlin",
-      "file": "kathlin.json"
     },
     {
       "name": "Kelpie",
@@ -33149,10 +32317,6 @@
     {
       "name": "Ki-rin",
       "file": "ki-rin.json"
-    },
-    {
-      "name": "Killer Frog",
-      "file": "killer-frog.json"
     },
     {
       "name": "Killer Whale",
@@ -33191,10 +32355,6 @@
       "file": "korsoth-vastikan.json"
     },
     {
-      "name": "Kostchtchie, Demon Prince of Wrath",
-      "file": "kostchtchie.json"
-    },
-    {
       "name": "Kraken Priest",
       "file": "kraken-priest.json"
     },
@@ -33209,10 +32369,6 @@
     {
       "name": "Kryptydid",
       "file": "kryptydid.json"
-    },
-    {
-      "name": "Kua-Lij",
-      "file": "kua-lij.json"
     },
     {
       "name": "Kuo-Toa Archpriest",
@@ -33243,28 +32399,12 @@
       "file": "langdedrosa-cyanwrath.json"
     },
     {
-      "name": "Lantern Goat",
-      "file": "lantern-goat.json"
-    },
-    {
-      "name": "Lava Child",
-      "file": "lava-child-toh.json"
-    },
-    {
       "name": "Lava Child",
       "file": "lava-child.json"
     },
     {
-      "name": "Lead Skeleton",
-      "file": "lead-skeleton.json"
-    },
-    {
       "name": "Lemure",
       "file": "lemure.json"
-    },
-    {
-      "name": "Leprechaun",
-      "file": "leprechaun.json"
     },
     {
       "name": "Leshen",
@@ -33279,20 +32419,8 @@
       "file": "lesser-erinyes.json"
     },
     {
-      "name": "Lesser Gibbering Orb",
-      "file": "lesser-gibbering-orb.json"
-    },
-    {
-      "name": "Lesser Lightning Elemental",
-      "file": "lesser-lightning-elemental.json"
-    },
-    {
       "name": "Lesser Marilith",
       "file": "lesser-marilith.json"
-    },
-    {
-      "name": "Lesser Thaumaturmite",
-      "file": "lesser-thaumaturmite.json"
     },
     {
       "name": "Leucrotta",
@@ -33303,10 +32431,6 @@
       "file": "leviathan.json"
     },
     {
-      "name": "Lich Shade",
-      "file": "lich-shade.json"
-    },
-    {
       "name": "Lich",
       "file": "lich.json"
     },
@@ -33315,28 +32439,8 @@
       "file": "lifferlas.json"
     },
     {
-      "name": "Light Cadejo",
-      "file": "light-cadejo.json"
-    },
-    {
-      "name": "Lightning Mephit",
-      "file": "lightning-mephit.json"
-    },
-    {
-      "name": "Lightning Weird",
-      "file": "lightning-weird.json"
-    },
-    {
       "name": "Lion",
       "file": "lion.json"
-    },
-    {
-      "name": "Lithic",
-      "file": "lithic.json"
-    },
-    {
-      "name": "Livestone",
-      "file": "livestone.json"
     },
     {
       "name": "Living Trap",
@@ -33367,14 +32471,6 @@
       "file": "lord-rall.json"
     },
     {
-      "name": "Lost Limb",
-      "file": "lost-limb.json"
-    },
-    {
-      "name": "Lurker Above/Below",
-      "file": "lurker-above.json"
-    },
-    {
       "name": "Machine Lieutenant",
       "file": "machine-lieutenant.json"
     },
@@ -33395,20 +32491,8 @@
       "file": "magma-mephit.json"
     },
     {
-      "name": "Magma Ooze",
-      "file": "magma-ooze.json"
-    },
-    {
       "name": "Magmin",
       "file": "magmin.json"
-    },
-    {
-      "name": "Magmoid",
-      "file": "magmoid.json"
-    },
-    {
-      "name": "Magnesium Golem",
-      "file": "magnesium_golem.json"
     },
     {
       "name": "Maladar Dictum",
@@ -33427,10 +32511,6 @@
       "file": "malformed-kraken.json"
     },
     {
-      "name": "Malignant Mouth",
-      "file": "malignant-mouth.json"
-    },
-    {
       "name": "Mammoth",
       "file": "mammoth.json"
     },
@@ -33443,24 +32523,12 @@
       "file": "manticore.json"
     },
     {
-      "name": "Mantidrake",
-      "file": "mantidrake.json"
-    },
-    {
       "name": "Mantis Knight",
       "file": "mantis-knight.json"
     },
     {
       "name": "Mantrap",
       "file": "mantrap.json"
-    },
-    {
-      "name": "Maphistal, Second of Orcus",
-      "file": "maphistal.json"
-    },
-    {
-      "name": "Margoyle",
-      "file": "margoyle.json"
     },
     {
       "name": "Marid",
@@ -33495,10 +32563,6 @@
       "file": "mastiff.json"
     },
     {
-      "name": "Mastodon",
-      "file": "mastodon.json"
-    },
-    {
       "name": "Maurezhi",
       "file": "maurezhi.json"
     },
@@ -33515,40 +32579,12 @@
       "file": "mechanical-golem.json"
     },
     {
-      "name": "Medium Acid Elemental",
-      "file": "medium-acid-elemental.json"
-    },
-    {
-      "name": "Medium Fire Crab",
-      "file": "medium-fire-crab.json"
-    },
-    {
-      "name": "Medium Gravity Elemental",
-      "file": "medium-gravity-elemental.json"
-    },
-    {
-      "name": "Medium Lightning Elemental",
-      "file": "medium-lightning-elemental.json"
-    },
-    {
-      "name": "Medium Obsidian Elemental",
-      "file": "medium-obsidian-elemental.json"
-    },
-    {
       "name": "Medusa",
       "file": "medusa.json"
     },
     {
       "name": "Meenlock",
       "file": "meenlock.json"
-    },
-    {
-      "name": "Mehrim (Goat Demon)",
-      "file": "mehrim.json"
-    },
-    {
-      "name": "Memory Moss",
-      "file": "memory-moss.json"
     },
     {
       "name": "Merfolk",
@@ -33571,16 +32607,8 @@
       "file": "merrow.json"
     },
     {
-      "name": "Metallic Ooze",
-      "file": "metallic-ooze.json"
-    },
-    {
       "name": "Mezzoloth",
       "file": "mezzoloth.json"
-    },
-    {
-      "name": "Mimi",
-      "file": "mimi.json"
     },
     {
       "name": "Mimic",
@@ -33619,18 +32647,6 @@
       "file": "miros-xelbrin.json"
     },
     {
-      "name": "Mist Dragon Wyrmling",
-      "file": "mist-dragon-wyrmling.json"
-    },
-    {
-      "name": "Mobat",
-      "file": "mobat.json"
-    },
-    {
-      "name": "Mohrg",
-      "file": "mohrg.json"
-    },
-    {
       "name": "Moloch",
       "file": "moloch.json"
     },
@@ -33663,10 +32679,6 @@
       "file": "moorbounder.json"
     },
     {
-      "name": "Mordnaissant",
-      "file": "mordnaissant.json"
-    },
-    {
       "name": "Morkoth",
       "file": "morkoth.json"
     },
@@ -33681,10 +32693,6 @@
     {
       "name": "Mud Mephit",
       "file": "mud-mephit.json"
-    },
-    {
-      "name": "Mudbog",
-      "file": "mudbog.json"
     },
     {
       "name": "Mudmaw",
@@ -33703,16 +32711,8 @@
       "file": "mummy-lord.json"
     },
     {
-      "name": "Mummy of the Deep",
-      "file": "mummy-of-the-deep.json"
-    },
-    {
       "name": "Mummy",
       "file": "mummy.json"
-    },
-    {
-      "name": "Mustard Jelly",
-      "file": "mustard-jelly.json"
     },
     {
       "name": "Myconid Adult",
@@ -33819,10 +32819,6 @@
       "file": "neronvain.json"
     },
     {
-      "name": "Netherspark",
-      "file": "netherspark.json"
-    },
-    {
       "name": "Nezahal, Primal Tide",
       "file": "nezahal-primal-tide.json"
     },
@@ -33847,24 +32843,12 @@
       "file": "nilbog.json"
     },
     {
-      "name": "Noble Streynor",
-      "file": "noble-streynor.json"
-    },
-    {
-      "name": "Noble Time Elemental",
-      "file": "noble-time-elemental.json"
-    },
-    {
       "name": "Noble",
       "file": "noble.json"
     },
     {
       "name": "Nothic",
       "file": "nothic.json"
-    },
-    {
-      "name": "Nuckalavee",
-      "file": "nuckalavee.json"
     },
     {
       "name": "Nupperibo",
@@ -33879,20 +32863,8 @@
       "file": "oaken-bolter.json"
     },
     {
-      "name": "Oakman",
-      "file": "oakman.json"
-    },
-    {
       "name": "Oblex Spawn",
       "file": "oblexspawn.json"
-    },
-    {
-      "name": "Obsidian Elemental",
-      "file": "obsidian-elemental.json"
-    },
-    {
-      "name": "Obsidian Minotaur",
-      "file": "obsidian-minotaur.json"
     },
     {
       "name": "Ochre Jelly",
@@ -33931,10 +32903,6 @@
       "file": "ogremoch.json"
     },
     {
-      "name": "Oil Shark",
-      "file": "oil-shark.json"
-    },
-    {
       "name": "Oinoloth",
       "file": "oinoloth.json"
     },
@@ -33955,20 +32923,8 @@
       "file": "oni.json"
     },
     {
-      "name": "Onyx Deer",
-      "file": "onyx-deer.json"
-    },
-    {
-      "name": "Ooze Golem",
-      "file": "ooze-golem.json"
-    },
-    {
       "name": "Ooze Master",
       "file": "ooze-master.json"
-    },
-    {
-      "name": "Ophidian",
-      "file": "ophidian.json"
     },
     {
       "name": "Orc Berserker",
@@ -34009,10 +32965,6 @@
     {
       "name": "Orchid Count",
       "file": "orchid-count.json"
-    },
-    {
-      "name": "Orcus, Demon Prince of the Undead",
-      "file": "orcus-toh.json"
     },
     {
       "name": "Orcus",
@@ -34063,10 +33015,6 @@
       "file": "panther.json"
     },
     {
-      "name": "Pazuzu, Demon Prince of Air",
-      "file": "pazuzu.json"
-    },
-    {
       "name": "Pegasus",
       "file": "pegasus.json"
     },
@@ -34091,24 +33039,8 @@
       "file": "phase-spider.json"
     },
     {
-      "name": "Phasma",
-      "file": "phasma.json"
-    },
-    {
-      "name": "Phlogiston Bush",
-      "file": "phlogiston-bush.json"
-    },
-    {
       "name": "Phoenix",
       "file": "phoenix.json"
-    },
-    {
-      "name": "Phooka",
-      "file": "phooka.json"
-    },
-    {
-      "name": "Phycomid",
-      "file": "phycomid.json"
     },
     {
       "name": "Pidlwick II",
@@ -34135,16 +33067,8 @@
       "file": "pixie.json"
     },
     {
-      "name": "Plague Zombie",
-      "file": "plague-zombie.json"
-    },
-    {
       "name": "Planetar",
       "file": "planetar.json"
-    },
-    {
-      "name": "Platinum Mouse Dragon",
-      "file": "platinum-mouse-dragon.json"
     },
     {
       "name": "Plesiosaurus",
@@ -34171,22 +33095,6 @@
       "file": "pony.json"
     },
     {
-      "name": "Prehistoric Beaver",
-      "file": "prehistoric-beaver.json"
-    },
-    {
-      "name": "Prehistoric Honey Badger",
-      "file": "prehistoric-honey-badger.json"
-    },
-    {
-      "name": "Prehistoric Rhinoceros (Elasmotherium)",
-      "file": "prehistoric-rhinoceros-elasmotherium.json"
-    },
-    {
-      "name": "Prehistoric Rhinoceros (Embolotherium)",
-      "file": "prehistoric-rhinoceros-embolotherium.json"
-    },
-    {
       "name": "Priest of Entropy",
       "file": "priest-of-entropy.json"
     },
@@ -34197,10 +33105,6 @@
     {
       "name": "Princip",
       "file": "princip.json"
-    },
-    {
-      "name": "Prism Spider",
-      "file": "prism-spider.json"
     },
     {
       "name": "Pseudodragon",
@@ -34215,24 +33119,12 @@
       "file": "pteranodon.json"
     },
     {
-      "name": "Purple Moss",
-      "file": "purple-moss.json"
-    },
-    {
-      "name": "Purple Worm Zombie",
-      "file": "purple-worm-zombie.json"
-    },
-    {
       "name": "Purple Worm",
       "file": "purple-worm.json"
     },
     {
       "name": "Purple Wormling",
       "file": "purple-wormling.json"
-    },
-    {
-      "name": "Pyre Zombie",
-      "file": "pyre-zombie.json"
     },
     {
       "name": "Quackthulhu",
@@ -34255,10 +33147,6 @@
       "file": "quaggoth.json"
     },
     {
-      "name": "Quantum",
-      "file": "quantum.json"
-    },
-    {
       "name": "Quasit",
       "file": "quasit.json"
     },
@@ -34279,16 +33167,8 @@
       "file": "quipper.json"
     },
     {
-      "name": "Raggoth",
-      "file": "raggoth.json"
-    },
-    {
       "name": "Rahadin",
       "file": "rahadin.json"
-    },
-    {
-      "name": "Rakklethorn Toad",
-      "file": "rakklethorn-toad.json"
     },
     {
       "name": "Rakshasa",
@@ -34303,22 +33183,6 @@
       "file": "rath-modar.json"
     },
     {
-      "name": "Ravager Beetle",
-      "file": "ravager-beetle.json"
-    },
-    {
-      "name": "Ravager Spawn (Brawler Form)",
-      "file": "ravager-spawn-brawler-form.json"
-    },
-    {
-      "name": "Ravager Spawn (Crawler Form)",
-      "file": "ravager-spawn-crawler-form.json"
-    },
-    {
-      "name": "Ravager Spawn (Flier Form)",
-      "file": "ravager-spawn-flier-form.json"
-    },
-    {
       "name": "Raven",
       "file": "raven.json"
     },
@@ -34329,10 +33193,6 @@
     {
       "name": "Red Abishai",
       "file": "red-abishai.json"
-    },
-    {
-      "name": "Red Bulette",
-      "file": "red-bulette.json"
     },
     {
       "name": "Red Dragon Wyrmling",
@@ -34363,28 +33223,12 @@
       "file": "reef-shark.json"
     },
     {
-      "name": "Reigon",
-      "file": "reigon.json"
-    },
-    {
-      "name": "Reliquary Guardian",
-      "file": "reliquary-guardian.json"
-    },
-    {
       "name": "Remorhaz",
       "file": "remorhaz.json"
     },
     {
       "name": "Remote Traveler",
       "file": "remote-traveler.json"
-    },
-    {
-      "name": "Requiem Beetle",
-      "file": "requiem-beetle.json"
-    },
-    {
-      "name": "Retch Hound",
-      "file": "retch-hound.json"
     },
     {
       "name": "Retriever",
@@ -34411,20 +33255,8 @@
       "file": "riding-horse.json"
     },
     {
-      "name": "Riptide Horror",
-      "file": "riptide-horror.json"
-    },
-    {
-      "name": "River Troll",
-      "file": "river-troll.json"
-    },
-    {
       "name": "Roc",
       "file": "roc.json"
-    },
-    {
-      "name": "Rock Troll",
-      "file": "rock-troll.json"
     },
     {
       "name": "Rocket Automaton",
@@ -34443,10 +33275,6 @@
       "file": "rottroll.json"
     },
     {
-      "name": "Royal Time Elemental",
-      "file": "royal-time-elemental.json"
-    },
-    {
       "name": "Ruby Dragon Wyrmling",
       "file": "ruby-dragon-wyrmling.json"
     },
@@ -34463,16 +33291,8 @@
       "file": "rutterkin.json"
     },
     {
-      "name": "Saber-Toothed Jaguar",
-      "file": "saber-toothed-jaguar.json"
-    },
-    {
       "name": "Saber-Toothed Tiger",
       "file": "saber-toothed-tiger.json"
-    },
-    {
-      "name": "Sabrewing",
-      "file": "sabrewing.json"
     },
     {
       "name": "Sacred Stone Monk",
@@ -34503,18 +33323,6 @@
       "file": "salamander.json"
     },
     {
-      "name": "Salt Drake",
-      "file": "salt-drake.json"
-    },
-    {
-      "name": "Sand Giant",
-      "file": "sand-giant.json"
-    },
-    {
-      "name": "Sand Kraken",
-      "file": "sand-kraken.json"
-    },
-    {
       "name": "Sapphire Dragon Wyrmling",
       "file": "sapphire-dragon-wyrmling.json"
     },
@@ -34525,10 +33333,6 @@
     {
       "name": "Satyr",
       "file": "satyr.json"
-    },
-    {
-      "name": "Saw-Toothed Beetle",
-      "file": "saw-toothed-beetle.json"
     },
     {
       "name": "Scaladar",
@@ -34547,16 +33351,8 @@
       "file": "scout.json"
     },
     {
-      "name": "Scylla",
-      "file": "scylla.json"
-    },
-    {
       "name": "Sea Fury",
       "file": "sea-fury.json"
-    },
-    {
-      "name": "Sea Giant",
-      "file": "sea-giant.json"
     },
     {
       "name": "Sea Hag",
@@ -34575,16 +33371,8 @@
       "file": "sea-spawn.json"
     },
     {
-      "name": "Sepia Snake",
-      "file": "sepia-snake.json"
-    },
-    {
       "name": "Seraph (SaF)",
       "file": "seraph-saf.json"
-    },
-    {
-      "name": "Seraph",
-      "file": "seraph.json"
     },
     {
       "name": "Serpent Guard",
@@ -34595,16 +33383,8 @@
       "file": "severin.json"
     },
     {
-      "name": "Shadelock",
-      "file": "shadelock.json"
-    },
-    {
       "name": "Shadow Assassin",
       "file": "shadow-assassin.json"
-    },
-    {
-      "name": "Shadow Captain",
-      "file": "shadow-captain.json"
     },
     {
       "name": "Shadow Dancer",
@@ -34613,14 +33393,6 @@
     {
       "name": "Shadow Demon",
       "file": "shadow-demon.json"
-    },
-    {
-      "name": "Shadow Hunter Hatchling",
-      "file": "shadow-hunter-hatchling.json"
-    },
-    {
-      "name": "Shadow Hunter",
-      "file": "shadow-hunter.json"
     },
     {
       "name": "Shadow Mastiff Alpha",
@@ -34655,10 +33427,6 @@
       "file": "shield-guardian.json"
     },
     {
-      "name": "Shipbreaker Sea Serpent",
-      "file": "shipbreaker-sea-serpent.json"
-    },
-    {
       "name": "Shoalar Quanderil",
       "file": "shoalar-quanderil.json"
     },
@@ -34687,16 +33455,8 @@
       "file": "sildar-hallwinter.json"
     },
     {
-      "name": "Silid",
-      "file": "silid.json"
-    },
-    {
       "name": "Silver Dragon Wyrmling",
       "file": "silver-dragon-wyrmling.json"
-    },
-    {
-      "name": "Silver Mouse Dragon",
-      "file": "silver-mouse-dragon.json"
     },
     {
       "name": "Sir Baric Nylef",
@@ -34719,10 +33479,6 @@
       "file": "siren.json"
     },
     {
-      "name": "Skeleton Knight",
-      "file": "skeleton-knight.json"
-    },
-    {
       "name": "Skeleton",
       "file": "skeleton.json"
     },
@@ -34733,14 +33489,6 @@
     {
       "name": "Skull Lord",
       "file": "skull-lord.json"
-    },
-    {
-      "name": "Skull Spider",
-      "file": "skull-spider.json"
-    },
-    {
-      "name": "Skulleton",
-      "file": "skulleton.json"
     },
     {
       "name": "Skyweaver",
@@ -34755,40 +33503,12 @@
       "file": "slithering-tracker.json"
     },
     {
-      "name": "Sloth Viper",
-      "file": "sloth-viper.json"
-    },
-    {
-      "name": "Small Acid Elemental",
-      "file": "small-acid-elemental.json"
-    },
-    {
-      "name": "Small Gravity Elemental",
-      "file": "small-gravity-elemental.json"
-    },
-    {
-      "name": "Small Obsidian Elemental",
-      "file": "small-obsidian-elemental.json"
-    },
-    {
-      "name": "Smoke Dragon",
-      "file": "smoke-dragon.json"
-    },
-    {
       "name": "Smoke Mephit",
       "file": "smoke-mephit.json"
     },
     {
       "name": "Solar",
       "file": "solar.json"
-    },
-    {
-      "name": "Sonechard, General of Orcus",
-      "file": "sonechard.json"
-    },
-    {
-      "name": "Soot Mephit",
-      "file": "soot-mephit.json"
     },
     {
       "name": "Soul Monger",
@@ -34815,14 +33535,6 @@
       "file": "specter.json"
     },
     {
-      "name": "Spell Parrot",
-      "file": "spell-parrot.json"
-    },
-    {
-      "name": "Spellgorged Zombie",
-      "file": "spellgorged-zombie.json"
-    },
-    {
       "name": "Spider",
       "file": "spider.json"
     },
@@ -34837,18 +33549,6 @@
     {
       "name": "Spirit Troll",
       "file": "spirit-troll.json"
-    },
-    {
-      "name": "Spitting Sea Serpent",
-      "file": "spitting-sea-serpent.json"
-    },
-    {
-      "name": "Splinter Drake",
-      "file": "splinter-drake.json"
-    },
-    {
-      "name": "Spökvatten",
-      "file": "spokvatten.json"
     },
     {
       "name": "Spring Eladrin",
@@ -34895,10 +33595,6 @@
       "file": "stegosaurus.json"
     },
     {
-      "name": "Stench Beetle",
-      "file": "stench-beetle.json"
-    },
-    {
       "name": "Stench Kow",
       "file": "stench-kow.json"
     },
@@ -34915,20 +33611,12 @@
       "file": "stone-defender.json"
     },
     {
-      "name": "Stone Delver",
-      "file": "stone-delver.json"
-    },
-    {
       "name": "Stone Giant Dreamwalker",
       "file": "stone-giant-dreamwalker.json"
     },
     {
       "name": "Stone Giant",
       "file": "stone-giant.json"
-    },
-    {
-      "name": "Stone Goblin",
-      "file": "stone-goblin.json"
     },
     {
       "name": "Stone Golem",
@@ -34953,10 +33641,6 @@
     {
       "name": "Storm Magistrate",
       "file": "storm-magistrate.json"
-    },
-    {
-      "name": "Stormwarden",
-      "file": "stormwarden.json"
     },
     {
       "name": "Strahd von Zarovich",
@@ -34987,10 +33671,6 @@
       "file": "sunbird-phoenix.json"
     },
     {
-      "name": "Swamp Troll",
-      "file": "swamp-troll.json"
-    },
-    {
       "name": "Swarm of Bats",
       "file": "swarm-of-bats.json"
     },
@@ -35007,16 +33687,8 @@
       "file": "swarm-of-cranium-rats.json"
     },
     {
-      "name": "Swarm of Grigs",
-      "file": "swarm-of-grigs.json"
-    },
-    {
       "name": "Swarm of Insects",
       "file": "swarm-of-insects.json"
-    },
-    {
-      "name": "Swarm of Poisonous Frogs",
-      "file": "swarm-of-poisonous-frogs.json"
     },
     {
       "name": "Swarm of Poisonous Snakes",
@@ -35055,10 +33727,6 @@
       "file": "swavain-basilisk.json"
     },
     {
-      "name": "Sword Wight",
-      "file": "sword-wight.json"
-    },
-    {
       "name": "Sword Wraith Commander",
       "file": "sword-wraith-commander.json"
     },
@@ -35075,16 +33743,8 @@
       "file": "tabaxi-minstrel.json"
     },
     {
-      "name": "Tainted Servant of Tsathogga",
-      "file": "tainted-servant-of-tsathogga.json"
-    },
-    {
       "name": "Talis the White",
       "file": "talis-the-white.json"
-    },
-    {
-      "name": "Tallow Golem",
-      "file": "tallow-golem.json"
     },
     {
       "name": "Tanarukk",
@@ -35109,14 +33769,6 @@
     {
       "name": "The Angry",
       "file": "the-angry.json"
-    },
-    {
-      "name": "The Folly",
-      "file": "the-folly.json"
-    },
-    {
-      "name": "The Horned Lord",
-      "file": "the-horned-lord.json"
     },
     {
       "name": "The Hungry",
@@ -35145,18 +33797,6 @@
     {
       "name": "The Queen of Bones",
       "file": "the-queen-of-bones.json"
-    },
-    {
-      "name": "The Ravager (Brawler Form)",
-      "file": "the-ravager-brawler-form.json"
-    },
-    {
-      "name": "The Ravager (Crawler Form)",
-      "file": "the-ravager-crawler-form.json"
-    },
-    {
-      "name": "The Ravager (Flier Form)",
-      "file": "the-ravager-flier-form.json"
     },
     {
       "name": "The Wretched",
@@ -35231,16 +33871,8 @@
       "file": "tortle.json"
     },
     {
-      "name": "Translucent Bulette",
-      "file": "translucent-bulette.json"
-    },
-    {
       "name": "Transmuter",
       "file": "transmuter.json"
-    },
-    {
-      "name": "Transposer",
-      "file": "transposer.json"
     },
     {
       "name": "Trapper",
@@ -35279,10 +33911,6 @@
       "file": "tridrone.json"
     },
     {
-      "name": "Troblin",
-      "file": "troblin.json"
-    },
-    {
       "name": "Troglodyte Champion of Laogzed",
       "file": "troglodyte-champion-of-laogzed.json"
     },
@@ -35293,34 +33921,6 @@
     {
       "name": "Troll",
       "file": "troll.json"
-    },
-    {
-      "name": "Tsathar Monk",
-      "file": "tsathar-monk.json"
-    },
-    {
-      "name": "Tsathar Priest",
-      "file": "tsathar-priest.json"
-    },
-    {
-      "name": "Tsathar Sorcerer",
-      "file": "tsathar-sorcerer.json"
-    },
-    {
-      "name": "Tsathar",
-      "file": "tsathar.json"
-    },
-    {
-      "name": "Tsathogga, the Frog God",
-      "file": "tsathogga.json"
-    },
-    {
-      "name": "T'shann",
-      "file": "tshann.json"
-    },
-    {
-      "name": "Tunnel Worm",
-      "file": "tunnel-worm.json"
     },
     {
       "name": "Twig Blight",
@@ -35349,18 +33949,6 @@
     {
       "name": "Umber Hulk",
       "file": "umber-hulk.json"
-    },
-    {
-      "name": "Umbral Eye Killer",
-      "file": "umbral-eye-killer.json"
-    },
-    {
-      "name": "Undead Ooze",
-      "file": "undead-ooze.json"
-    },
-    {
-      "name": "Undead Swordsman",
-      "file": "undead-swordsman.json"
     },
     {
       "name": "Unicorn",
@@ -35459,20 +34047,8 @@
       "file": "vladimir-horngaard.json"
     },
     {
-      "name": "Volcano Giant",
-      "file": "volcano-giant.json"
-    },
-    {
-      "name": "Vrock Zombie",
-      "file": "vrock-zombie.json"
-    },
-    {
       "name": "Vrock",
       "file": "vrock.json"
-    },
-    {
-      "name": "Vulgar Mouse Dragon",
-      "file": "vulgar-mouse-dragon.json"
     },
     {
       "name": "Vulture",
@@ -35525,10 +34101,6 @@
     {
       "name": "Water Elemental",
       "file": "water-elemental.json"
-    },
-    {
-      "name": "Water Goblin",
-      "file": "water-goblin.json"
     },
     {
       "name": "Water Weird",
@@ -35631,10 +34203,6 @@
       "file": "will-o-wisp.json"
     },
     {
-      "name": "Wind Goblin",
-      "file": "wind-goblin.json"
-    },
-    {
       "name": "Windharrow",
       "file": "wind-harrow.json"
     },
@@ -35651,14 +34219,6 @@
       "file": "winter-wolf.json"
     },
     {
-      "name": "Witch-Doll Golem",
-      "file": "witch-doll-golem.json"
-    },
-    {
-      "name": "Wizard's Shackle",
-      "file": "wizards-shackle.json"
-    },
-    {
       "name": "Woggle",
       "file": "woggle.json"
     },
@@ -35667,32 +34227,8 @@
       "file": "wolf.json"
     },
     {
-      "name": "Wood Giant",
-      "file": "wood-giant.json"
-    },
-    {
-      "name": "Wood Goblin",
-      "file": "wood-goblin.json"
-    },
-    {
-      "name": "Wood Golem",
-      "file": "wood-golem.json"
-    },
-    {
       "name": "Wood Woad",
       "file": "wood-woad.json"
-    },
-    {
-      "name": "Woods Ape",
-      "file": "woods-ape.json"
-    },
-    {
-      "name": "Woolly Mammoth",
-      "file": "woolly-mammoth.json"
-    },
-    {
-      "name": "Woolly Rhinoceros",
-      "file": "woolly-rhinoceros.json"
     },
     {
       "name": "Worg",
@@ -35701,10 +34237,6 @@
     {
       "name": "Wraith",
       "file": "wraith.json"
-    },
-    {
-      "name": "Wrath Dragon",
-      "file": "wrath-dragon.json"
     },
     {
       "name": "Wyvern",
@@ -35791,16 +34323,8 @@
       "file": "young-bronze-dragon.json"
     },
     {
-      "name": "Young Cloud Dragon",
-      "file": "young-cloud-dragon.json"
-    },
-    {
       "name": "Young Copper Dragon",
       "file": "young-copper-dragon.json"
-    },
-    {
-      "name": "Young Dungeon Dragon",
-      "file": "young-dungeon-dragon.json"
     },
     {
       "name": "Young Emerald Dragon",
@@ -35811,20 +34335,12 @@
       "file": "young-gold-dragon.json"
     },
     {
-      "name": "Young Gray Dragon",
-      "file": "young-gray-dragon.json"
-    },
-    {
       "name": "Young Green Dragon",
       "file": "young-green-dragon.json"
     },
     {
       "name": "Young Kruthik",
       "file": "young-kruthik.json"
-    },
-    {
-      "name": "Young Mist Dragon",
-      "file": "young-mist-dragon.json"
     },
     {
       "name": "Young Red Dragon",
