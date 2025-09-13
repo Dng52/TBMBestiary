@@ -498,10 +498,13 @@ document.querySelectorAll('.resizer').forEach((handle) => {
   handle.addEventListener('mousedown', onMouseDown);
 });
 
+// Reference tracker table body
+const trackerBody = document.getElementById("tracker-body");
+
 // === SAVE TRACKER ===
 document.getElementById("save-tracker-btn").addEventListener("click", () => {
-  const rows = document.querySelectorAll("#tracker-body tr");
-  let trackerData = [];
+  const rows = trackerBody.querySelectorAll("tr");
+  const trackerData = [];
 
   rows.forEach(row => {
     const cells = row.querySelectorAll("td");
@@ -511,7 +514,7 @@ document.getElementById("save-tracker-btn").addEventListener("click", () => {
       ac: cells[2].querySelector("input")?.value || "",
       hp: cells[3].querySelector("input")?.value || "",
       notes: cells[4].querySelector("input")?.value || "",
-      monsterId: row.dataset.monsterId || null  // preserve link to stat block
+      monsterId: row.dataset.monsterId || null
     });
   });
 
@@ -526,7 +529,6 @@ document.getElementById("save-tracker-btn").addEventListener("click", () => {
   URL.revokeObjectURL(url);
 });
 
-
 // === LOAD TRACKER ===
 document.getElementById("load-tracker-input").addEventListener("change", (event) => {
   const file = event.target.files?.[0];
@@ -536,7 +538,7 @@ document.getElementById("load-tracker-input").addEventListener("change", (event)
   reader.onload = (e) => {
     let trackerData;
     try {
-      trackerData = JSON.parse(e.target.result);
+      trackerData = JSON.parse(e.target.result.toString());
     } catch (err) {
       alert("Invalid tracker file (not JSON).");
       return;
@@ -546,46 +548,47 @@ document.getElementById("load-tracker-input").addEventListener("change", (event)
     trackerBody.innerHTML = "";
 
     trackerData.forEach(entry => {
-      // Try to find the original monster (prefer id, fallback to displayName/name/_file)
       let monster = null;
+
+      // Try to match monster by ID first
       if (entry.monsterId) {
-        monster = monsters.find(m => (m.id && String(m.id) === String(entry.monsterId)));
+        monster = monsters.find(m => String(m.id) === String(entry.monsterId));
       }
+      // Fallback: match by name/displayName/_file
       if (!monster && entry.name) {
         monster = monsters.find(m => (m._displayName || m.name || m._file) === entry.name);
       }
 
       if (monster) {
-        // Use your existing addToTracker so the row has the same listeners & data attributes
+        // Use addToTracker so listeners + statblock linkage are intact
         addToTracker(monster);
 
-        // Grab the newly appended row (addToTracker appends it)
         const row = trackerBody.lastElementChild;
 
-        // Set initiative (column 2 input)
+        // Initiative
         const initInput = row.querySelector("td:nth-child(2) input");
-        if (initInput && entry.initiative !== undefined) initInput.value = entry.initiative;
+        if (initInput) initInput.value = entry.initiative ?? "";
 
-        // AC is a text cell in addToTracker — overwrite it if saved
+        // AC
         const acCell = row.querySelector("td:nth-child(3)");
-        if (acCell && entry.ac !== undefined) acCell.textContent = entry.ac;
+        if (acCell) acCell.textContent = entry.ac ?? "";
 
-        // HP input is inside column 4 (we created a text input there in addToTracker)
+        // HP
         const hpInput = row.querySelector("td:nth-child(4) input");
-        if (hpInput && entry.hp !== undefined) {
-          hpInput.value = entry.hp;
-          hpInput.dataset.currentHp = entry.hp;
+        if (hpInput) {
+          hpInput.value = entry.hp ?? "";
+          hpInput.dataset.currentHp = entry.hp ?? "";
         }
 
-        // Notes input (column 5)
+        // Notes
         const notesInput = row.querySelector("td:nth-child(5) input");
-        if (notesInput && entry.notes !== undefined) notesInput.value = entry.notes;
+        if (notesInput) notesInput.value = entry.notes ?? "";
 
-        // Keep the monsterId if present
+        // Preserve monsterId
         if (entry.monsterId) row.dataset.monsterId = entry.monsterId;
 
       } else {
-        // No matching monster → create an editable (custom) row like Add Blank Entry
+        // Add a custom row (like Add Blank Entry)
         const row = document.createElement("tr");
         row.innerHTML = `
           <td class="monster-name"><input type="text" value="${(entry.name||"Custom Entry").replace(/"/g,'&quot;')}" style="width: 100%;"></td>
@@ -595,10 +598,10 @@ document.getElementById("load-tracker-input").addEventListener("change", (event)
           <td><input type="text" value="${entry.notes ?? ""}" style="width: 100%;"></td>
           <td><button class="remove-btn">Remove</button></td>
         `;
-        // Remove button
+
         row.querySelector(".remove-btn").addEventListener("click", () => row.remove());
 
-        // keep the same hover/highlight behaviour for the name cell if you want
+        // Optional: highlight + lock-on-click behavior
         const nameCell = row.querySelector(".monster-name");
         nameCell.addEventListener("mouseenter", () => {
           if (!lockedRow) nameCell.style.backgroundColor = "#ffd";
@@ -624,6 +627,7 @@ document.getElementById("load-tracker-input").addEventListener("change", (event)
 
   reader.readAsText(file);
 });
+
 
 
 
