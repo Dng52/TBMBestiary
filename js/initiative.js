@@ -60,6 +60,7 @@ async function loadMonsters() {
     const searchEl = document.getElementById("search");
     const trackerBody = document.getElementById("tracker-body");
     const statBlockContainer = document.getElementById("stat-block");
+	
 
     const activeTypes = new Set();
     const activeCRs = new Set();
@@ -255,10 +256,6 @@ addBlankButton.addEventListener("click", () => {
     // -----------------------------
     // Display monster stat block
     // -----------------------------
-	let lockedRow = null; // track which tracker row is highlighted / locked
-	let statBlockLocked = false;
-	let lockedMonster = null;
-
     function displayStatBlock(monster) {
       const displayName = monster._displayName || monster.name || monster._file;
       const formatAbility = (score) => {
@@ -550,6 +547,10 @@ document.getElementById("load-tracker-input").addEventListener("change", (event)
       alert("Invalid tracker file (not JSON).");
       return;
     }
+// Make "Load Tracker" button open the hidden file input
+document.getElementById("load-tracker-btn").addEventListener("click", () => {
+  document.getElementById("load-tracker-input").click();
+});
 
     trackerBody.innerHTML = "";
 
