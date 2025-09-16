@@ -532,7 +532,9 @@ document.getElementById("save-tracker-btn").addEventListener("click", () => {
 
   URL.revokeObjectURL(url);
 });
-
+ document.getElementById("load-tracker-btn").addEventListener("click", () => {
+    document.getElementById("load-tracker-input").click();
+  });
 // === LOAD TRACKER ===
 document.getElementById("load-tracker-input").addEventListener("change", (event) => {
   const file = event.target.files?.[0];
@@ -547,10 +549,6 @@ document.getElementById("load-tracker-input").addEventListener("change", (event)
       alert("Invalid tracker file (not JSON).");
       return;
     }
-// Make "Load Tracker" button open the hidden file input
-document.getElementById("load-tracker-btn").addEventListener("click", () => {
-  document.getElementById("load-tracker-input").click();
-});
 
     trackerBody.innerHTML = "";
 
