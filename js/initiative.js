@@ -565,21 +565,62 @@ document.getElementById("load-tracker-input").addEventListener("change", (event)
       }
 
       if (monster) {
+        // Use existing addToTracker to keep event listeners/stat block linking
         addToTracker(monster);
         const row = trackerBody.lastElementChild;
 
-        // restore initiative, hp, notes...
-        row.querySelector("td:nth-child(2) input").value = entry.initiative ?? "";
-        row.querySelector("td:nth-child(3)").textContent = entry.ac ?? "";
+        // Restore saved values
+        const initInput = row.querySelector("td:nth-child(2) input");
+        if (initInput) initInput.value = entry.initiative ?? "";
+
+        const acCell = row.querySelector("td:nth-child(3)");
+        if (acCell) acCell.textContent = entry.ac ?? "";
+
         const hpInput = row.querySelector("td:nth-child(4) input");
         if (hpInput) {
           hpInput.value = entry.hp ?? "";
           hpInput.dataset.currentHp = entry.hp ?? "";
         }
-        row.querySelector("td:nth-child(5) input").value = entry.notes ?? "";
+
+        const notesInput = row.querySelector("td:nth-child(5) input");
+        if (notesInput) notesInput.value = entry.notes ?? "";
+
+        if (entry.monsterId) row.dataset.monsterId = entry.monsterId;
+
       } else {
-        // fallback: custom row
-        ...
+        // No match → add a custom row (like Add Blank Entry)
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td class="monster-name"><input type="text" value="${(entry.name||"Custom Entry").replace(/"/g,'&quot;')}" style="width: 100%;"></td>
+          <td><input type="number" value="${entry.initiative ?? 0}" style="width: 50px;"></td>
+          <td><input type="text" value="${entry.ac ?? ""}" style="width: 50px;"></td>
+          <td><input type="text" value="${entry.hp ?? ""}" style="width: 60px;"></td>
+          <td><input type="text" value="${entry.notes ?? ""}" style="width: 100%;"></td>
+          <td><button class="remove-btn">Remove</button></td>
+        `;
+
+        row.querySelector(".remove-btn").addEventListener("click", () => row.remove());
+
+        // Optional: hover/click highlight like normal rows
+        const nameCell = row.querySelector(".monster-name");
+        nameCell.addEventListener("mouseenter", () => {
+          if (!lockedRow) nameCell.style.backgroundColor = "#ffd";
+        });
+        nameCell.addEventListener("mouseleave", () => {
+          if (!lockedRow) nameCell.style.backgroundColor = "";
+        });
+        nameCell.addEventListener("click", () => {
+          if (lockedRow === row) {
+            lockedRow = null;
+            nameCell.style.backgroundColor = "";
+          } else {
+            if (lockedRow) lockedRow.querySelector(".monster-name").style.backgroundColor = "";
+            lockedRow = row;
+            nameCell.style.backgroundColor = "#ffa";
+          }
+        });
+
+        trackerBody.appendChild(row);
       }
     });
   };
