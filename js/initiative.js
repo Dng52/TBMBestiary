@@ -515,7 +515,7 @@ document.getElementById("save-tracker-btn").addEventListener("click", () => {
     trackerData.push({
       name: cells[0].querySelector("input")?.value || cells[0].innerText,
       initiative: cells[1].querySelector("input")?.value || "",
-      ac: cells[2].querySelector("input")?.value || "",
+	  ac: cells[2].querySelector("input")?.value ?? cells[2].textContent ?? "",
       hp: cells[3].querySelector("input")?.value || "",
       notes: cells[4].querySelector("input")?.value || "",
       monsterId: row.dataset.monsterId || null
