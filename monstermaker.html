@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monster Maker</title>
+<style>
+  body { font-family: sans-serif; padding: 20px; max-width: 900px; margin: auto; }
+  input, textarea, select { width: 100%; margin-bottom: 10px; padding: 5px; }
+  label { font-weight: bold; margin-top: 10px; display: block; }
+  #stat-block { border: 1px solid #ccc; padding: 10px; margin-top: 20px; background: #f9f9f9; }
+</style>
+</head>
+<body>
+
+<h1>Monster Maker</h1>
+
+<form id="monster-form">
+  <label>Name</label>
+  <input type="text" id="monster-name" placeholder="Goblin">
+
+  <label>Type</label>
+  <input type="text" id="monster-type" placeholder="Humanoid">
+
+  <label>Size</label>
+  <select id="monster-size">
+    <option>Small</option>
+    <option>Medium</option>
+    <option>Large</option>
+    <option>Huge</option>
+    <option>Gargantuan</option>
+  </select>
+
+  <label>Alignment</label>
+  <input type="text" id="monster-alignment" placeholder="Neutral Evil">
+
+  <label>Armor Class (AC)</label>
+  <input type="number" id="monster-ac" placeholder="15">
+
+  <label>Hit Points (HP)</label>
+  <input type="number" id="monster-hp" placeholder="30">
+
+  <label>Speed</label>
+  <input type="text" id="monster-speed" placeholder="30 ft.">
+
+  <label>Abilities (JSON format)</label>
+  <textarea id="monster-abilities" placeholder='{"str":10,"dex":14,"con":12,"int":8,"wis":10,"cha":10}'></textarea>
+
+  <label>Actions (JSON Array)</label>
+  <textarea id="monster-actions" placeholder='[{"name":"Slash","desc":"Melee weapon attack: +4 to hit, 1d6+2 slashing damage"}]'></textarea>
+
+  <label>Traits (JSON Array)</label>
+  <textarea id="monster-traits" placeholder='[{"name":"Nimble Escape","desc":"The goblin can take the Disengage or Hide action as a bonus action."}]'></textarea>
+
+  <label>Challenge Rating (CR)</label>
+  <input type="text" id="monster-cr" placeholder="1/4">
+
+  <button type="button" id="preview-btn">Preview Stat Block</button>
+  <button type="button" id="save-btn">Save as JSON</button>
+</form>
+
+<div id="stat-block"></div>
+
+<script>
+const form = document.getElementById("monster-form");
+const statBlock = document.getElementById("stat-block");
+
+// --- Preview Stat Block ---
+document.getElementById("preview-btn").addEventListener("click", () => {
+  const monster = getMonsterData();
+  statBlock.innerHTML = formatStatBlock(monster);
+});
+
+// --- Save JSON ---
+document.getElementById("save-btn").addEventListener("click", () => {
+  const monster = getMonsterData();
+  const blob = new Blob([JSON.stringify(monster, null, 2)], {type:"application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `${monster.name || "monster"}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+});
+
+// --- Collect Data from Form ---
+function getMonsterData() {
+  let abilities = {};
+  let actions = [];
+  let traits = [];
+
+  try { abilities = JSON.parse(document.getElementById("monster-abilities").value) } catch {}
+  try { actions = JSON.parse(document.getElementById("monster-actions").value) } catch {}
+  try { traits = JSON.parse(document.getElementById("monster-traits").value) } catch {}
+
+  return {
+    name: document.getElementById("monster-name").value,
+    type: document.getElementById("monster-type").value,
+    size: document.getElementById("monster-size").value,
+    alignment: document.getElementById("monster-alignment").value,
+    ac: document.getElementById("monster-ac").value,
+    hp: document.getElementById("monster-hp").value,
+    speed: document.getElementById("monster-speed").value,
+    abilities,
+    actions,
+    traits,
+    cr: document.getElementById("monster-cr").value
+  };
+}
+
+// --- Format Stat Block ---
+function formatStatBlock(m) {
+  const formatAbility = (score) => {
+    const mod = Math.floor((score - 10) / 2);
+    return `${score} (${mod >= 0 ? '+'+mod : mod})`;
+  };
+
+  return `
+    <h2>${m.name}</h2>
+    <p>${m.size} ${m.type}${m.alignment ? ", "+m.alignment : ""}</p>
+    <p><strong>AC:</strong> ${m.ac} | <strong>HP:</strong> ${m.hp} | <strong>Speed:</strong> ${m.speed}</p>
+    <hr>
+    <h3>Abilities</h3>
+    <p>STR: ${formatAbility(m.abilities.str || 0)}, DEX: ${formatAbility(m.abilities.dex || 0)}, CON: ${formatAbility(m.abilities.con || 0)}, INT: ${formatAbility(m.abilities.int || 0)}, WIS: ${formatAbility(m.abilities.wis || 0)}, CHA: ${formatAbility(m.abilities.cha || 0)}</p>
+    <hr>
+    ${m.traits.length ? `<h3>Traits</h3>${m.traits.map(t => `<p><strong>${t.name}:</strong> ${t.desc}</p>`).join("")}` : ""}
+    ${m.actions.length ? `<h3>Actions</h3>${m.actions.map(a => `<p><strong>${a.name}:</strong> ${a.desc}</p>`).join("")}` : ""}
+    <hr>
+    <p><strong>Challenge:</strong> ${m.cr}</p>
+  `;
+}
+</script>
+
+</body>
+</html>
