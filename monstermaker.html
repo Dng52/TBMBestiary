@@ -74,8 +74,14 @@
 
   <div class="section">
     <h3>Abilities</h3>
-    <div id="abilities-list"></div>
-    <button type="button" id="add-ability-btn">Add Ability</button>
+    <div class="row">
+      <input type="number" id="str" placeholder="STR">
+      <input type="number" id="dex" placeholder="DEX">
+      <input type="number" id="con" placeholder="CON">
+      <input type="number" id="int" placeholder="INT">
+      <input type="number" id="wis" placeholder="WIS">
+      <input type="number" id="cha" placeholder="CHA">
+    </div>
   </div>
 
   <div class="section">
@@ -101,11 +107,11 @@
 
 <script>
 // --- Helper to add row ---
-function createRow(container, placeholders, isNameDesc = false) {
+function createRow(container, placeholders) {
   const row = document.createElement("div");
   row.classList.add("row");
 
-  placeholders.forEach((ph, i) => {
+  placeholders.forEach(ph => {
     const input = document.createElement("input");
     input.placeholder = ph;
     row.appendChild(input);
@@ -121,9 +127,6 @@ function createRow(container, placeholders, isNameDesc = false) {
 }
 
 // --- Dynamic Fields ---
-document.getElementById("add-ability-btn").addEventListener("click", () => {
-  createRow(document.getElementById("abilities-list"), ["STR", "DEX", "CON", "INT", "WIS", "CHA"]);
-});
 document.getElementById("add-trait-btn").addEventListener("click", () => {
   createRow(document.getElementById("traits-list"), ["Name", "Description"]);
 });
@@ -133,20 +136,6 @@ document.getElementById("add-action-btn").addEventListener("click", () => {
 
 // --- Collect Monster Data ---
 function getMonsterData() {
-  const abilitiesRows = document.getElementById("abilities-list").querySelectorAll(".row");
-  const abilities = {};
-  abilitiesRows.forEach(row => {
-    const inputs = row.querySelectorAll("input");
-    if(inputs.length === 6){
-      abilities.str = parseInt(inputs[0].value) || 0;
-      abilities.dex = parseInt(inputs[1].value) || 0;
-      abilities.con = parseInt(inputs[2].value) || 0;
-      abilities.int = parseInt(inputs[3].value) || 0;
-      abilities.wis = parseInt(inputs[4].value) || 0;
-      abilities.cha = parseInt(inputs[5].value) || 0;
-    }
-  });
-
   const traits = [];
   document.getElementById("traits-list").querySelectorAll(".row").forEach(row => {
     const [name, desc] = row.querySelectorAll("input");
@@ -167,7 +156,14 @@ function getMonsterData() {
     ac: document.getElementById("monster-ac").value,
     hp: document.getElementById("monster-hp").value,
     speed: document.getElementById("monster-speed").value,
-    abilities,
+    abilities: {
+      str: parseInt(document.getElementById("str").value) || 0,
+      dex: parseInt(document.getElementById("dex").value) || 0,
+      con: parseInt(document.getElementById("con").value) || 0,
+      int: parseInt(document.getElementById("int").value) || 0,
+      wis: parseInt(document.getElementById("wis").value) || 0,
+      cha: parseInt(document.getElementById("cha").value) || 0,
+    },
     traits,
     actions,
     cr: document.getElementById("monster-cr").value
@@ -187,7 +183,7 @@ function formatStatBlock(m) {
     <p><strong>AC:</strong> ${m.ac} | <strong>HP:</strong> ${m.hp} | <strong>Speed:</strong> ${m.speed}</p>
     <hr>
     <h3>Abilities</h3>
-    <p>STR: ${formatAbility(m.abilities.str || 0)}, DEX: ${formatAbility(m.abilities.dex || 0)}, CON: ${formatAbility(m.abilities.con || 0)}, INT: ${formatAbility(m.abilities.int || 0)}, WIS: ${formatAbility(m.abilities.wis || 0)}, CHA: ${formatAbility(m.abilities.cha || 0)}</p>
+    <p>STR: ${formatAbility(m.abilities.str)}, DEX: ${formatAbility(m.abilities.dex)}, CON: ${formatAbility(m.abilities.con)}, INT: ${formatAbility(m.abilities.int)}, WIS: ${formatAbility(m.abilities.wis)}, CHA: ${formatAbility(m.abilities.cha)}</p>
     <hr>
     ${m.traits.length ? `<h3>Traits</h3>${m.traits.map(t => `<p><strong>${t.name}:</strong> ${t.desc}</p>`).join("")}` : ""}
     ${m.actions.length ? `<h3>Actions</h3>${m.actions.map(a => `<p><strong>${a.name}:</strong> ${a.desc}</p>`).join("")}` : ""}
