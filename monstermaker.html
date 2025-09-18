@@ -333,27 +333,34 @@ function createRegionalBlock(containerId) {
   addBulletBtn.type = "button";
   addBulletBtn.textContent = "Add Bullet";
 
-  addBulletBtn.addEventListener("click", () => {
-    const bulletWrapper = document.createElement("div");
-    bulletWrapper.style.display = "flex";
-    bulletWrapper.style.alignItems = "center";
-    bulletWrapper.style.marginBottom = "5px";
+addBulletBtn.addEventListener("click", () => {
+  const bulletWrapper = document.createElement("div");
+  bulletWrapper.style.display = "flex";
+  bulletWrapper.style.alignItems = "center";
+  bulletWrapper.style.marginBottom = "5px";
 
-    const bulletInput = document.createElement("input");
-    bulletInput.type = "text";
-    bulletInput.placeholder = "Bullet";
-    bulletInput.style.flex = "1";
+  const bulletInput = document.createElement("input");
+  bulletInput.type = "text";
+  bulletInput.placeholder = "Bullet";
+  bulletInput.style.flex = "1";
+  bulletInput.style.padding = "5px";
 
-    const removeBulletBtn = document.createElement("button");
-    removeBulletBtn.type = "button";
-    removeBulletBtn.textContent = "✖";
-    removeBulletBtn.style.marginLeft = "5px";
-    removeBulletBtn.addEventListener("click", () => bulletWrapper.remove());
+  const removeBulletBtn = document.createElement("button");
+  removeBulletBtn.type = "button";
+  removeBulletBtn.textContent = "✖";
+  removeBulletBtn.style.marginLeft = "5px";
+  removeBulletBtn.style.flex = "0 0 auto";
+  removeBulletBtn.style.padding = "2px 6px";   // small and neat
+  removeBulletBtn.style.fontSize = "14px";
+  removeBulletBtn.style.lineHeight = "1";
 
-    bulletWrapper.appendChild(bulletInput);
-    bulletWrapper.appendChild(removeBulletBtn);
-    bulletsDiv.appendChild(bulletWrapper);
-  });
+  removeBulletBtn.addEventListener("click", () => bulletWrapper.remove());
+
+  bulletWrapper.appendChild(bulletInput);
+  bulletWrapper.appendChild(removeBulletBtn);
+  bulletsDiv.appendChild(bulletWrapper);
+});
+
 
   const secondaryInput = document.createElement("textarea");
   secondaryInput.placeholder = "Secondary Description";
