@@ -84,41 +84,42 @@
 	</div>
 
 
-   <div class="section">
-    <h3>Traits</h3>
-    <div id="traits-list"></div>
-    <button type="button" id="add-trait-btn">Add Trait</button>
-  </div>
+<div class="section">
+  <h3>Traits</h3>
+  <div id="traits-list"></div>
+  <button type="button" id="add-trait-btn">Add Trait</button>
+</div>
 
-  <div class="section">
-    <h3>Actions</h3>
-    <div id="actions-list"></div>
-    <button type="button" id="add-action-btn">Add Action</button>
-  </div>
+<div class="section">
+  <h3>Actions</h3>
+  <div id="actions-list"></div>
+  <button type="button" id="add-action-btn">Add Action</button>
+</div>
 
-  <div class="section">
-    <h3>Reactions</h3>
-    <div id="reactions-list"></div>
-    <button type="button" id="add-reaction-btn">Add Reaction</button>
-  </div>
+<div class="section">
+  <h3>Reactions</h3>
+  <div id="reactions-list"></div>
+  <button type="button" id="add-reaction-btn">Add Reaction</button>
+</div>
 
-  <div class="section">
-    <h3>Legendary Actions</h3>
-    <div id="legendary-list"></div>
-    <button type="button" id="add-legendary-btn">Add Legendary Action</button>
-  </div>
+<div class="section">
+  <h3>Legendary Actions</h3>
+  <div id="legendary-list"></div>
+  <button type="button" id="add-legendary-btn">Add Legendary Action</button>
+</div>
 
-  <div class="section">
-    <h3>Lair Actions</h3>
-    <div id="lair-list"></div>
-    <button type="button" id="add-lair-btn">Add Lair Action</button>
-  </div>
+<div class="section">
+  <h3>Lair Actions</h3>
+  <div id="lair-list"></div>
+  <button type="button" id="add-lair-btn">Add Lair Action</button>
+</div>
 
-  <div class="section">
-    <h3>Regional Effects</h3>
-    <div id="regional-list"></div>
-    <button type="button" id="add-regional-btn">Add Regional Effect</button>
-  </div>
+<div class="section">
+  <h3>Regional Effects</h3>
+  <div id="regional-list"></div>
+  <button type="button" id="add-regional-btn">Add Regional Effect</button>
+</div>
+
 
   <label>Challenge Rating (CR)</label>
   <input type="text" id="monster-cr" placeholder="1/4">
@@ -235,45 +236,118 @@ document.getElementById("save-btn").addEventListener("click", () => {
   URL.revokeObjectURL(url);
 });
 
-function createTextBlock(containerId, placeholder) {
+// Helper to create Name + Description entry (traits, actions, reactions, legendary)
+function createNameDescBlock(containerId, type) {
   const div = document.createElement("div");
-  const textarea = document.createElement("textarea");
-  textarea.placeholder = placeholder;
-  textarea.rows = 3;
-  textarea.cols = 50;
-  div.appendChild(textarea);
+
+  const nameInput = document.createElement("input");
+  nameInput.type = "text";
+  nameInput.placeholder = `${type} Name`;
+
+  const descInput = document.createElement("textarea");
+  descInput.placeholder = `${type} Description`;
+  descInput.rows = 3;
+  descInput.cols = 50;
+
+  div.appendChild(nameInput);
+  div.appendChild(document.createElement("br"));
+  div.appendChild(descInput);
+
   document.getElementById(containerId).appendChild(div);
 }
 
-// Traits
+// Helper for Lair Actions (description + bullet list)
+function createLairBlock(containerId) {
+  const div = document.createElement("div");
+
+  const descInput = document.createElement("textarea");
+  descInput.placeholder = "Lair Action Description";
+  descInput.rows = 3;
+  descInput.cols = 50;
+
+  const bulletsDiv = document.createElement("div");
+  const addBulletBtn = document.createElement("button");
+  addBulletBtn.type = "button";
+  addBulletBtn.textContent = "Add Bullet";
+
+  addBulletBtn.addEventListener("click", () => {
+    const bulletInput = document.createElement("input");
+    bulletInput.type = "text";
+    bulletInput.placeholder = "Bullet";
+    bulletsDiv.appendChild(bulletInput);
+    bulletsDiv.appendChild(document.createElement("br"));
+  });
+
+  div.appendChild(descInput);
+  div.appendChild(document.createElement("br"));
+  div.appendChild(bulletsDiv);
+  div.appendChild(addBulletBtn);
+
+  document.getElementById(containerId).appendChild(div);
+}
+
+// Helper for Regional Effects (description + bullets + secondaryDescription)
+function createRegionalBlock(containerId) {
+  const div = document.createElement("div");
+
+  const descInput = document.createElement("textarea");
+  descInput.placeholder = "Regional Effect Description";
+  descInput.rows = 3;
+  descInput.cols = 50;
+
+  const bulletsDiv = document.createElement("div");
+  const addBulletBtn = document.createElement("button");
+  addBulletBtn.type = "button";
+  addBulletBtn.textContent = "Add Bullet";
+
+  addBulletBtn.addEventListener("click", () => {
+    const bulletInput = document.createElement("input");
+    bulletInput.type = "text";
+    bulletInput.placeholder = "Bullet";
+    bulletsDiv.appendChild(bulletInput);
+    bulletsDiv.appendChild(document.createElement("br"));
+  });
+
+  const secondaryInput = document.createElement("textarea");
+  secondaryInput.placeholder = "Secondary Description";
+  secondaryInput.rows = 2;
+  secondaryInput.cols = 50;
+
+  div.appendChild(descInput);
+  div.appendChild(document.createElement("br"));
+  div.appendChild(bulletsDiv);
+  div.appendChild(addBulletBtn);
+  div.appendChild(document.createElement("br"));
+  div.appendChild(secondaryInput);
+
+  document.getElementById(containerId).appendChild(div);
+}
+
+// Event listeners
 document.getElementById("add-trait-btn").addEventListener("click", () => {
-  createTextBlock("traits-list", "Enter trait...");
+  createNameDescBlock("traits-list", "Trait");
 });
 
-// Actions
 document.getElementById("add-action-btn").addEventListener("click", () => {
-  createTextBlock("actions-list", "Enter action...");
+  createNameDescBlock("actions-list", "Action");
 });
 
-// Reactions
 document.getElementById("add-reaction-btn").addEventListener("click", () => {
-  createTextBlock("reactions-list", "Enter reaction...");
+  createNameDescBlock("reactions-list", "Reaction");
 });
 
-// Legendary Actions
 document.getElementById("add-legendary-btn").addEventListener("click", () => {
-  createTextBlock("legendary-list", "Enter legendary action...");
+  createNameDescBlock("legendary-list", "Legendary Action");
 });
 
-// Lair Actions
 document.getElementById("add-lair-btn").addEventListener("click", () => {
-  createTextBlock("lair-list", "Enter lair action...");
+  createLairBlock("lair-list");
 });
 
-// Regional Effects
 document.getElementById("add-regional-btn").addEventListener("click", () => {
-  createTextBlock("regional-list", "Enter regional effect...");
+  createRegionalBlock("regional-list");
 });
+
 
 
 </script>
