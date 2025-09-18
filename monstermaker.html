@@ -63,6 +63,9 @@
 <label>Speed</label>
 <input type="text" id="monster-speed" placeholder="30 ft.">
 
+<label>Source</label>
+<input type="text" id="monster-source" placeholder="Monster Manual">
+
 <div class="section">
 <h3>Abilities</h3>
 <div class="row">
@@ -185,40 +188,63 @@ container.appendChild(row);
 
 // --- Collect Monster Data ---
 function getMonsterData() {
-const abilities = {
-str: parseInt(document.getElementById("str").value) || 0,
-dex: parseInt(document.getElementById("dex").value) || 0,
-con: parseInt(document.getElementById("con").value) || 0,
-int: parseInt(document.getElementById("int").value) || 0,
-wis: parseInt(document.getElementById("wis").value) || 0,
-cha: parseInt(document.getElementById("cha").value) || 0,
-};
-
-const traits = [];
-document.getElementById("traits-list").querySelectorAll(".row").forEach(row => {
-const [name, desc] = row.querySelectorAll("input");
-if(name.value) traits.push({name: name.value, desc: desc.value});
-});
-
-const actions = [];
-document.getElementById("actions-list").querySelectorAll(".row").forEach(row => {
-const [name, desc] = row.querySelectorAll("input");
-if(name.value) actions.push({name: name.value, desc: desc.value});
-});
-
-return {
-name: document.getElementById("monster-name").value,
-type: document.getElementById("monster-type").value,
-size: document.getElementById("monster-size").value,
-alignment: document.getElementById("monster-alignment").value,
-ac: document.getElementById("monster-ac").value,
-hp: document.getElementById("monster-hp").value,
-speed: document.getElementById("monster-speed").value,
-abilities,
-traits,
-actions,
-cr: document.getElementById("monster-cr").value
-};
+  return {
+    name: document.getElementById("monster-name").value,
+    tags: document.getElementById("monster-tags").value.split(",").map(t => t.trim()).filter(Boolean),
+    size: document.getElementById("monster-size").value,
+    type: document.getElementById("monster-type").value,
+    alignment: document.getElementById("monster-alignment").value,
+    cr: document.getElementById("monster-cr").value,
+    hp: document.getElementById("monster-hp").value,
+    ac: document.getElementById("monster-ac").value,
+    speed: document.getElementById("monster-speed").value,
+    source: document.getElementById("monster-source").value,
+    abilities: {
+      str: parseInt(document.getElementById("str").value) || 0,
+      dex: parseInt(document.getElementById("dex").value) || 0,
+      con: parseInt(document.getElementById("con").value) || 0,
+      int: parseInt(document.getElementById("int").value) || 0,
+      wis: parseInt(document.getElementById("wis").value) || 0,
+      cha: parseInt(document.getElementById("cha").value) || 0
+    },
+    saves: document.getElementById("monster-saves").value,
+    skills: document.getElementById("monster-skills").value,
+    immunities: document.getElementById("monster-immunities").value,
+    resistance: document.getElementById("monster-resistance").value,
+    vulnerability: document.getElementById("monster-vulnerability").value,
+    conimmunities: document.getElementById("monster-conimmunities").value,
+    senses: document.getElementById("monster-senses").value,
+    languages: document.getElementById("monster-languages").value,
+    legendarynumber: document.getElementById("monster-legendarynumber").value,
+    traits: Array.from(document.querySelectorAll("#traits-container .trait")).map(trait => ({
+      name: trait.querySelector(".trait-name").value,
+      desc: trait.querySelector(".trait-desc").value
+    })),
+    actions: Array.from(document.querySelectorAll("#actions-container .action")).map(action => ({
+      name: action.querySelector(".action-name").value,
+      desc: action.querySelector(".action-desc").value
+    })),
+    reactions: Array.from(document.querySelectorAll("#reactions-container .reaction")).map(reaction => ({
+      name: reaction.querySelector(".reaction-name").value,
+      desc: reaction.querySelector(".reaction-desc").value
+    })),
+    legendary: Array.from(document.querySelectorAll("#legendary-container .legendary")).map(legendary => ({
+      name: legendary.querySelector(".legendary-name").value,
+      desc: legendary.querySelector(".legendary-desc").value
+    })),
+    description: document.getElementById("monster-description").value,
+    lairactions: Array.from(document.querySelectorAll("#lairactions-container .lairaction")).map(lair => ({
+      description: lair.querySelector(".lair-desc").value,
+      bullets: Array.from(lair.querySelectorAll(".lair-bullet")).map(b => b.value).filter(Boolean)
+    })),
+    regionaleffects: Array.from(document.querySelectorAll("#regionaleffects-container .regionaleffect")).map(region => ({
+      description: region.querySelector(".regional-desc").value,
+      bullets: Array.from(region.querySelectorAll(".regional-bullet")).map(b => b.value).filter(Boolean),
+      secondaryDescription: region.querySelector(".regional-secondary-desc").value
+    })),
+    _file: "custom_monster_template.json",
+    _displayName: document.getElementById("monster-name").value
+  };
 }
 
 // --- Format Stat Block ---
