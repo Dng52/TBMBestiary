@@ -1,282 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Monster Maker</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Monster Maker</title>
+<style>
+  body { font-family: sans-serif; max-width: 900px; margin: auto; padding: 20px; }
+  input, select, textarea, button { margin-bottom: 10px; padding: 5px; width: 100%; }
+  label { font-weight: bold; margin-top: 10px; display: block; }
+  .section { border: 1px solid #ccc; padding: 10px; margin-top: 10px; background: #f9f9f9; }
+  .row { display: flex; gap: 10px; margin-bottom: 5px; }
+  .row input { flex: 1; }
+  .row button { flex: 0 0 80px; }
+  #stat-block { border: 1px solid #ccc; padding: 10px; margin-top: 20px; background: #fffbe0; }
+</style>
 </head>
 <body>
-  <h1>Monster Maker</h1>
 
-  <!-- Basic Info -->
+<h1>Monster Maker</h1>
+
+<form id="monster-form">
+  <label>Name</label>
+  <input type="text" id="monster-name" placeholder="Goblin">
+
+  <label>Type</label>
+  <select id="monster-type">
+    <option value="aberration">Aberration</option>
+    <option value="beast">Beast</option>
+    <option value="celestial">Celestial</option>
+    <option value="construct">Construct</option>
+    <option value="dragon">Dragon</option>
+    <option value="elemental">Elemental</option>
+    <option value="fey">Fey</option>
+    <option value="fiend">Fiend</option>
+    <option value="giant">Giant</option>
+    <option value="humanoid">Humanoid</option>
+    <option value="monstrosity">Monstrosity</option>
+    <option value="ooze">Ooze</option>
+    <option value="plant">Plant</option>
+    <option value="undead">Undead</option>
+  </select>
+
+  <label>Alignment</label>
+  <select id="monster-alignment">
+    <option>Lawful Good</option>
+    <option>Lawful Neutral</option>
+    <option>Lawful Evil</option>
+    <option>Neutral Good</option>
+    <option>True Neutral</option>
+    <option>Neutral Evil</option>
+    <option>Chaotic Good</option>
+    <option>Chaotic Neutral</option>
+    <option>Chaotic Evil</option>
+  </select>
+
+  <label>Size</label>
+  <select id="monster-size">
+    <option>Small</option>
+    <option>Medium</option>
+    <option>Large</option>
+    <option>Huge</option>
+    <option>Gargantuan</option>
+  </select>
+
+  <label>AC</label>
+  <input type="number" id="monster-ac" placeholder="15">
+
+  <label>HP</label>
+  <input type="number" id="monster-hp" placeholder="30">
+
+  <label>Speed</label>
+  <input type="text" id="monster-speed" placeholder="30 ft.">
+
   <div class="section">
-    <h2>Basic Info</h2>
-    <label>Name: <input type="text" id="name"></label>
-    <label>Size:
-      <select id="size">
-        <option value="Tiny">Tiny</option>
-        <option value="Small">Small</option>
-        <option value="Medium">Medium</option>
-        <option value="Large">Large</option>
-        <option value="Huge">Huge</option>
-        <option value="Gargantuan">Gargantuan</option>
-      </select>
-    </label>
-    <label>Type:
-      <select id="type">
-        <option value="aberration">Aberration</option>
-        <option value="beast">Beast</option>
-        <option value="celestial">Celestial</option>
-        <option value="construct">Construct</option>
-        <option value="dragon">Dragon</option>
-        <option value="elemental">Elemental</option>
-        <option value="fey">Fey</option>
-        <option value="fiend">Fiend</option>
-        <option value="giant">Giant</option>
-        <option value="humanoid">Humanoid</option>
-        <option value="monstrosity">Monstrosity</option>
-        <option value="ooze">Ooze</option>
-        <option value="plant">Plant</option>
-        <option value="undead">Undead</option>
-      </select>
-    </label>
-    <label>Alignment:
-      <select id="alignment">
-        <option value="lawful good">Lawful Good</option>
-        <option value="neutral good">Neutral Good</option>
-        <option value="chaotic good">Chaotic Good</option>
-        <option value="lawful neutral">Lawful Neutral</option>
-        <option value="true neutral">True Neutral</option>
-        <option value="chaotic neutral">Chaotic Neutral</option>
-        <option value="lawful evil">Lawful Evil</option>
-        <option value="neutral evil">Neutral Evil</option>
-        <option value="chaotic evil">Chaotic Evil</option>
-      </select>
-    </label>
-    <label>Armor Class: <input type="text" id="ac"></label>
-    <label>Hit Points: <input type="text" id="hp"></label>
-    <label>Challenge Rating (CR): <input type="text" id="cr"></label>
-    <label>Source: <input type="text" id="source"></label>
+    <h3>Abilities</h3>
+    <div id="abilities-list"></div>
+    <button type="button" id="add-ability-btn">Add Ability</button>
   </div>
 
-  <!-- Speeds -->
   <div class="section">
-    <h2>Speeds</h2>
-    <div id="speed-list"></div>
-    <button type="button" onclick="addSpeed()">+ Add Speed</button>
+    <h3>Traits</h3>
+    <div id="traits-list"></div>
+    <button type="button" id="add-trait-btn">Add Trait</button>
   </div>
 
-  <!-- Ability Scores -->
   <div class="section">
-    <h2>Ability Scores</h2>
-    <div style="display:flex; gap:10px;">
-      <label>STR: <input type="number" id="str"></label>
-      <label>DEX: <input type="number" id="dex"></label>
-      <label>CON: <input type="number" id="con"></label>
-      <label>INT: <input type="number" id="int"></label>
-      <label>WIS: <input type="number" id="wis"></label>
-      <label>CHA: <input type="number" id="cha"></label>
-    </div>
+    <h3>Actions</h3>
+    <div id="actions-list"></div>
+    <button type="button" id="add-action-btn">Add Action</button>
   </div>
 
-  <!-- Extra Fields -->
-  <div class="section">
-    <h2>Other Stats</h2>
-    <label>Saving Throws: <input type="text" id="saves"></label>
-    <label>Skills: <input type="text" id="skills"></label>
-    <label>Damage Immunities: <input type="text" id="immunities"></label>
-    <label>Damage Resistances: <input type="text" id="resistance"></label>
-    <label>Damage Vulnerabilities: <input type="text" id="vulnerability"></label>
-    <label>Condition Immunities: <input type="text" id="conimmunities"></label>
-    <label>Senses: <input type="text" id="senses"></label>
-    <label>Languages: <input type="text" id="languages"></label>
-    <label>Legendary Actions per Round: <input type="text" id="legendarynumber"></label>
-    <label>Description: <textarea id="description"></textarea></label>
-  </div>
+  <label>Challenge Rating (CR)</label>
+  <input type="text" id="monster-cr" placeholder="1/4">
 
-  <!-- Traits -->
-  <div class="section">
-    <h2>Traits</h2>
-    <div id="traits"></div>
-    <button type="button" onclick="addTrait()">+ Add Trait</button>
-  </div>
+  <button type="button" id="preview-btn">Preview Stat Block</button>
+  <button type="button" id="save-btn">Save as JSON</button>
+</form>
 
-  <!-- Actions -->
-  <div class="section">
-    <h2>Actions</h2>
-    <div id="actions"></div>
-    <button type="button" onclick="addAction()">+ Add Action</button>
-  </div>
+<div id="stat-block"></div>
 
-  <!-- Reactions -->
-  <div class="section">
-    <h2>Reactions</h2>
-    <div id="reactions"></div>
-    <button type="button" onclick="addReaction()">+ Add Reaction</button>
-  </div>
+<script>
+// --- Helper to add row ---
+function createRow(container, placeholders, isNameDesc = false) {
+  const row = document.createElement("div");
+  row.classList.add("row");
 
-  <!-- Legendary Actions -->
-  <div class="section">
-    <h2>Legendary Actions</h2>
-    <div id="legendaryActions"></div>
-    <button type="button" onclick="addLegendaryAction()">+ Add Legendary Action</button>
-  </div>
+  placeholders.forEach((ph, i) => {
+    const input = document.createElement("input");
+    input.placeholder = ph;
+    row.appendChild(input);
+  });
 
-  <!-- Lair Actions -->
-  <div class="section">
-    <h2>Lair Actions</h2>
-    <label>Lair Description: <textarea id="lairDescription"></textarea></label>
-    <div id="lairBullets"></div>
-    <button type="button" onclick="addLairBullet()">+ Add Lair Bullet</button>
-  </div>
+  const removeBtn = document.createElement("button");
+  removeBtn.textContent = "Remove";
+  removeBtn.type = "button";
+  removeBtn.addEventListener("click", () => row.remove());
+  row.appendChild(removeBtn);
 
-  <!-- Regional Effects -->
-  <div class="section">
-    <h2>Regional Effects</h2>
-    <label>Regional Description: <textarea id="regionalDescription"></textarea></label>
-    <div id="regionalBullets"></div>
-    <button type="button" onclick="addRegionalBullet()">+ Add Regional Bullet</button>
-    <label>Secondary Description: <textarea id="regionalSecondary"></textarea></label>
-  </div>
+  container.appendChild(row);
+}
 
-  <button onclick="saveMonster()">Save Monster JSON</button>
+// --- Dynamic Fields ---
+document.getElementById("add-ability-btn").addEventListener("click", () => {
+  createRow(document.getElementById("abilities-list"), ["STR", "DEX", "CON", "INT", "WIS", "CHA"]);
+});
+document.getElementById("add-trait-btn").addEventListener("click", () => {
+  createRow(document.getElementById("traits-list"), ["Name", "Description"]);
+});
+document.getElementById("add-action-btn").addEventListener("click", () => {
+  createRow(document.getElementById("actions-list"), ["Name", "Description"]);
+});
 
-  <script>
-    function addSpeed(type = "", value = "") {
-      const div = document.createElement("div");
-      div.innerHTML = `
-        <input type="text" placeholder="Type (e.g. fly)" value="${type}">
-        <input type="text" placeholder="Speed (e.g. 30 ft.)" value="${value}">
-        <button type="button" onclick="this.parentElement.remove()">Remove</button>
-      `;
-      document.getElementById("speed-list").appendChild(div);
+// --- Collect Monster Data ---
+function getMonsterData() {
+  const abilitiesRows = document.getElementById("abilities-list").querySelectorAll(".row");
+  const abilities = {};
+  abilitiesRows.forEach(row => {
+    const inputs = row.querySelectorAll("input");
+    if(inputs.length === 6){
+      abilities.str = parseInt(inputs[0].value) || 0;
+      abilities.dex = parseInt(inputs[1].value) || 0;
+      abilities.con = parseInt(inputs[2].value) || 0;
+      abilities.int = parseInt(inputs[3].value) || 0;
+      abilities.wis = parseInt(inputs[4].value) || 0;
+      abilities.cha = parseInt(inputs[5].value) || 0;
     }
+  });
 
-    function addTrait(name = "", desc = "") {
-      const div = document.createElement("div");
-      div.innerHTML = `<input type="text" placeholder="Trait Name" value="${name}">
-        <textarea placeholder="Trait Description">${desc}</textarea>
-        <button type="button" onclick="this.parentElement.remove()">Remove</button>`;
-      document.getElementById("traits").appendChild(div);
-    }
+  const traits = [];
+  document.getElementById("traits-list").querySelectorAll(".row").forEach(row => {
+    const [name, desc] = row.querySelectorAll("input");
+    if(name.value) traits.push({name: name.value, desc: desc.value});
+  });
 
-    function addAction(name = "", desc = "") {
-      const div = document.createElement("div");
-      div.innerHTML = `<input type="text" placeholder="Action Name" value="${name}">
-        <textarea placeholder="Action Description">${desc}</textarea>
-        <button type="button" onclick="this.parentElement.remove()">Remove</button>`;
-      document.getElementById("actions").appendChild(div);
-    }
+  const actions = [];
+  document.getElementById("actions-list").querySelectorAll(".row").forEach(row => {
+    const [name, desc] = row.querySelectorAll("input");
+    if(name.value) actions.push({name: name.value, desc: desc.value});
+  });
 
-    function addReaction(name = "", desc = "") {
-      const div = document.createElement("div");
-      div.innerHTML = `<input type="text" placeholder="Reaction Name" value="${name}">
-        <textarea placeholder="Reaction Description">${desc}</textarea>
-        <button type="button" onclick="this.parentElement.remove()">Remove</button>`;
-      document.getElementById("reactions").appendChild(div);
-    }
+  return {
+    name: document.getElementById("monster-name").value,
+    type: document.getElementById("monster-type").value,
+    size: document.getElementById("monster-size").value,
+    alignment: document.getElementById("monster-alignment").value,
+    ac: document.getElementById("monster-ac").value,
+    hp: document.getElementById("monster-hp").value,
+    speed: document.getElementById("monster-speed").value,
+    abilities,
+    traits,
+    actions,
+    cr: document.getElementById("monster-cr").value
+  };
+}
 
-    function addLegendaryAction(name = "", desc = "") {
-      const div = document.createElement("div");
-      div.innerHTML = `<input type="text" placeholder="Legendary Action Name" value="${name}">
-        <textarea placeholder="Legendary Action Description">${desc}</textarea>
-        <button type="button" onclick="this.parentElement.remove()">Remove</button>`;
-      document.getElementById("legendaryActions").appendChild(div);
-    }
+// --- Format Stat Block ---
+const statBlock = document.getElementById("stat-block");
+function formatStatBlock(m) {
+  const formatAbility = (score) => {
+    const mod = Math.floor((score - 10) / 2);
+    return `${score} (${mod >= 0 ? '+'+mod : mod})`;
+  };
+  return `
+    <h2>${m.name}</h2>
+    <p>${m.size} ${m.type}${m.alignment ? ", "+m.alignment : ""}</p>
+    <p><strong>AC:</strong> ${m.ac} | <strong>HP:</strong> ${m.hp} | <strong>Speed:</strong> ${m.speed}</p>
+    <hr>
+    <h3>Abilities</h3>
+    <p>STR: ${formatAbility(m.abilities.str || 0)}, DEX: ${formatAbility(m.abilities.dex || 0)}, CON: ${formatAbility(m.abilities.con || 0)}, INT: ${formatAbility(m.abilities.int || 0)}, WIS: ${formatAbility(m.abilities.wis || 0)}, CHA: ${formatAbility(m.abilities.cha || 0)}</p>
+    <hr>
+    ${m.traits.length ? `<h3>Traits</h3>${m.traits.map(t => `<p><strong>${t.name}:</strong> ${t.desc}</p>`).join("")}` : ""}
+    ${m.actions.length ? `<h3>Actions</h3>${m.actions.map(a => `<p><strong>${a.name}:</strong> ${a.desc}</p>`).join("")}` : ""}
+    <hr>
+    <p><strong>Challenge:</strong> ${m.cr}</p>
+  `;
+}
 
-    function addLairBullet(text = "") {
-      const div = document.createElement("div");
-      div.innerHTML = `<input type="text" placeholder="Lair Effect Bullet" value="${text}">
-        <button type="button" onclick="this.parentElement.remove()">Remove</button>`;
-      document.getElementById("lairBullets").appendChild(div);
-    }
+// --- Buttons ---
+document.getElementById("preview-btn").addEventListener("click", () => {
+  const monster = getMonsterData();
+  statBlock.innerHTML = formatStatBlock(monster);
+});
 
-    function addRegionalBullet(text = "") {
-      const div = document.createElement("div");
-      div.innerHTML = `<input type="text" placeholder="Regional Effect Bullet" value="${text}">
-        <button type="button" onclick="this.parentElement.remove()">Remove</button>`;
-      document.getElementById("regionalBullets").appendChild(div);
-    }
+document.getElementById("save-btn").addEventListener("click", () => {
+  const monster = getMonsterData();
+  const blob = new Blob([JSON.stringify(monster, null, 2)], {type:"application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `${monster.name || "monster"}.json`;
+  a.click();
+  URL.revokeObjectURL(url);
+});
+</script>
 
-    function saveMonster() {
-      const name = document.getElementById("name").value || "Custom Monster";
-      const size = document.getElementById("size").value;
-      const type = document.getElementById("type").value;
-      const cr = document.getElementById("cr").value;
-      const source = document.getElementById("source").value;
-
-      const monster = {
-        name: name,
-        tags: [size.toLowerCase(), type.toLowerCase(), "cr" + cr, source || "homebrew"],
-        size: size,
-        type: type,
-        alignment: document.getElementById("alignment").value,
-        cr: cr,
-        hp: document.getElementById("hp").value,
-        ac: document.getElementById("ac").value,
-        speed: Array.from(document.querySelectorAll("#speed-list div")).map(div => {
-          const [t, v] = div.querySelectorAll("input");
-          return `${t.value} ${v.value}`;
-        }).join(", "),
-        abilities: {
-          str: parseInt(document.getElementById("str").value) || 0,
-          dex: parseInt(document.getElementById("dex").value) || 0,
-          con: parseInt(document.getElementById("con").value) || 0,
-          int: parseInt(document.getElementById("int").value) || 0,
-          wis: parseInt(document.getElementById("wis").value) || 0,
-          cha: parseInt(document.getElementById("cha").value) || 0
-        },
-        saves: document.getElementById("saves").value,
-        skills: document.getElementById("skills").value,
-        immunities: document.getElementById("immunities").value,
-        resistance: document.getElementById("resistance").value,
-        vulnerability: document.getElementById("vulnerability").value,
-        conimmunities: document.getElementById("conimmunities").value,
-        senses: document.getElementById("senses").value,
-        languages: document.getElementById("languages").value,
-        legendarynumber: document.getElementById("legendarynumber").value,
-        traits: Array.from(document.querySelectorAll("#traits div")).map(div => ({
-          name: div.querySelector("input").value,
-          desc: div.querySelector("textarea").value
-        })),
-        actions: Array.from(document.querySelectorAll("#actions div")).map(div => ({
-          name: div.querySelector("input").value,
-          desc: div.querySelector("textarea").value
-        })),
-        reactions: Array.from(document.querySelectorAll("#reactions div")).map(div => ({
-          name: div.querySelector("input").value,
-          desc: div.querySelector("textarea").value
-        })),
-        legendary: Array.from(document.querySelectorAll("#legendaryActions div")).map(div => ({
-          name: div.querySelector("input").value,
-          desc: div.querySelector("textarea").value
-        })),
-        description: document.getElementById("description").value,
-        lairactions: [
-          {
-            description: document.getElementById("lairDescription").value,
-            bullets: Array.from(document.querySelectorAll("#lairBullets input")).map(i => i.value)
-          }
-        ],
-        regionaleffects: [
-          {
-            description: document.getElementById("regionalDescription").value,
-            bullets: Array.from(document.querySelectorAll("#regionalBullets input")).map(i => i.value),
-            secondaryDescription: document.getElementById("regionalSecondary").value
-          }
-        ],
-        _file: name.toLowerCase().replace(/\s+/g, "_") + ".json",
-        _displayName: name
-      };
-
-      const blob = new Blob([JSON.stringify(monster, null, 2)], { type: "application/json" });
-      const url = URL.createObjectURL(blob);
-      const a = document.createElement("a");
-      a.href = url;
-      a.download = monster._file;
-      a.click();
-      URL.revokeObjectURL(url);
-    }
-  </script>
 </body>
 </html>
