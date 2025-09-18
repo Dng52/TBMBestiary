@@ -239,6 +239,7 @@ document.getElementById("save-btn").addEventListener("click", () => {
 // Helper to create Name + Description entry (traits, actions, reactions, legendary)
 function createNameDescBlock(containerId, type) {
   const div = document.createElement("div");
+  div.classList.add("entry-block");
 
   const nameInput = document.createElement("input");
   nameInput.type = "text";
@@ -249,9 +250,16 @@ function createNameDescBlock(containerId, type) {
   descInput.rows = 3;
   descInput.cols = 50;
 
+  const removeBtn = document.createElement("button");
+  removeBtn.type = "button";
+  removeBtn.textContent = "Remove";
+  removeBtn.addEventListener("click", () => div.remove());
+
   div.appendChild(nameInput);
   div.appendChild(document.createElement("br"));
   div.appendChild(descInput);
+  div.appendChild(document.createElement("br"));
+  div.appendChild(removeBtn);
 
   document.getElementById(containerId).appendChild(div);
 }
@@ -259,6 +267,7 @@ function createNameDescBlock(containerId, type) {
 // Helper for Lair Actions (description + bullet list)
 function createLairBlock(containerId) {
   const div = document.createElement("div");
+  div.classList.add("entry-block");
 
   const descInput = document.createElement("textarea");
   descInput.placeholder = "Lair Action Description";
@@ -278,10 +287,17 @@ function createLairBlock(containerId) {
     bulletsDiv.appendChild(document.createElement("br"));
   });
 
+  const removeBtn = document.createElement("button");
+  removeBtn.type = "button";
+  removeBtn.textContent = "Remove";
+  removeBtn.addEventListener("click", () => div.remove());
+
   div.appendChild(descInput);
   div.appendChild(document.createElement("br"));
   div.appendChild(bulletsDiv);
   div.appendChild(addBulletBtn);
+  div.appendChild(document.createElement("br"));
+  div.appendChild(removeBtn);
 
   document.getElementById(containerId).appendChild(div);
 }
@@ -289,6 +305,7 @@ function createLairBlock(containerId) {
 // Helper for Regional Effects (description + bullets + secondaryDescription)
 function createRegionalBlock(containerId) {
   const div = document.createElement("div");
+  div.classList.add("entry-block");
 
   const descInput = document.createElement("textarea");
   descInput.placeholder = "Regional Effect Description";
@@ -313,15 +330,23 @@ function createRegionalBlock(containerId) {
   secondaryInput.rows = 2;
   secondaryInput.cols = 50;
 
+  const removeBtn = document.createElement("button");
+  removeBtn.type = "button";
+  removeBtn.textContent = "Remove";
+  removeBtn.addEventListener("click", () => div.remove());
+
   div.appendChild(descInput);
   div.appendChild(document.createElement("br"));
   div.appendChild(bulletsDiv);
   div.appendChild(addBulletBtn);
   div.appendChild(document.createElement("br"));
   div.appendChild(secondaryInput);
+  div.appendChild(document.createElement("br"));
+  div.appendChild(removeBtn);
 
   document.getElementById(containerId).appendChild(div);
 }
+
 
 // Event listeners
 document.getElementById("add-trait-btn").addEventListener("click", () => {
