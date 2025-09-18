@@ -143,14 +143,6 @@ row.appendChild(removeBtn);
 container.appendChild(row);
 }
 
-// --- Dynamic Fields ---
-document.getElementById("add-trait-btn").addEventListener("click", () => {
-createRow(document.getElementById("traits-list"), ["Name", "Description"]);
-});
-document.getElementById("add-action-btn").addEventListener("click", () => {
-createRow(document.getElementById("actions-list"), ["Name", "Description"]);
-});
-
 // --- Collect Monster Data ---
 function getMonsterData() {
 const abilities = {

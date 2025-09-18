@@ -451,13 +451,19 @@ strong em {
   box-sizing: border-box;
 }
 
-/* only apply to dynamic entry rows, NOT the abilities row */
-.row:not(.abilities-row) label {
+/* Make rows display horizontally */
+.row {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start; /* optional */
-  font-weight: bold;
+  gap: 10px; /* space between each ability */
+  flex-wrap: wrap; /* optional: allows wrapping on small screens */
 }
+
+/* Keep labels compact instead of full width */
+.row label {
+  display: flex;
+  flex-direction: column; /* keeps STR above the input */
+  align-items: center;
+  width: auto; /* prevents stretching */
 
 /* ability inputs remain small and horizontal */
 .abilities-row input { 
