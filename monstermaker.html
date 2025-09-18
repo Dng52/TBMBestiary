@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Monster Maker</title>
 <style>
-  body { font-family: sans-serif; max-width: 900px; margin: auto; padding: 20px; }
-  input, select, textarea, button { margin-bottom: 10px; padding: 5px; width: 100%; }
-  label { font-weight: bold; margin-top: 10px; display: block; }
-  .section { border: 1px solid #ccc; padding: 10px; margin-top: 10px; background: #f9f9f9; }
-  .row { display: flex; gap: 10px; margin-bottom: 5px; }
-  .row input { flex: 1; }
-  #stat-block { border: 1px solid #ccc; padding: 10px; margin-top: 20px; background: #fffbe0; }
+body { font-family: sans-serif; max-width: 900px; margin: auto; padding: 20px; }
+input, select, textarea, button { margin-bottom: 10px; padding: 5px; width: 100%; }
+label { font-weight: bold; margin-top: 10px; display: block; }
+.section { border: 1px solid #ccc; padding: 10px; margin-top: 10px; background: #f9f9f9; }
+.row { display: flex; gap: 10px; margin-bottom: 5px; }
+.row input { flex: 1; }
+#stat-block { border: 1px solid #ccc; padding: 10px; margin-top: 20px; background: #fffbe0; }
 </style>
 </head>
 <body>
@@ -19,113 +19,113 @@
 <h1>Monster Maker</h1>
 
 <form id="monster-form">
-  <label>Name</label>
-  <input type="text" id="monster-name" placeholder="Goblin">
+<label>Name</label>
+<input type="text" id="monster-name" placeholder="Goblin">
 
-  <label>Type</label>
-  <select id="monster-type">
-    <option value="aberration">Aberration</option>
-    <option value="beast">Beast</option>
-    <option value="celestial">Celestial</option>
-    <option value="construct">Construct</option>
-    <option value="dragon">Dragon</option>
-    <option value="elemental">Elemental</option>
-    <option value="fey">Fey</option>
-    <option value="fiend">Fiend</option>
-    <option value="giant">Giant</option>
-    <option value="humanoid">Humanoid</option>
-    <option value="monstrosity">Monstrosity</option>
-    <option value="ooze">Ooze</option>
-    <option value="plant">Plant</option>
-    <option value="undead">Undead</option>
-  </select>
+<label>Type</label>
+<select id="monster-type">
+<option value="aberration">Aberration</option>
+<option value="beast">Beast</option>
+<option value="celestial">Celestial</option>
+<option value="construct">Construct</option>
+<option value="dragon">Dragon</option>
+<option value="elemental">Elemental</option>
+<option value="fey">Fey</option>
+<option value="fiend">Fiend</option>
+<option value="giant">Giant</option>
+<option value="humanoid">Humanoid</option>
+<option value="monstrosity">Monstrosity</option>
+<option value="ooze">Ooze</option>
+<option value="plant">Plant</option>
+<option value="undead">Undead</option>
+</select>
 
-  <label>Alignment</label>
-  <select id="monster-alignment">
-    <option>Lawful Good</option>
-    <option>Lawful Neutral</option>
-    <option>Lawful Evil</option>
-    <option>Neutral Good</option>
-    <option>True Neutral</option>
-    <option>Neutral Evil</option>
-    <option>Chaotic Good</option>
-    <option>Chaotic Neutral</option>
-    <option>Chaotic Evil</option>
-  </select>
+<label>Alignment</label>
+<select id="monster-alignment">
+<option>Lawful Good</option>
+<option>Lawful Neutral</option>
+<option>Lawful Evil</option>
+<option>Neutral Good</option>
+<option>True Neutral</option>
+<option>Neutral Evil</option>
+<option>Chaotic Good</option>
+<option>Chaotic Neutral</option>
+<option>Chaotic Evil</option>
+</select>
 
-  <label>Size</label>
-  <select id="monster-size">
-    <option>Small</option>
-    <option>Medium</option>
-    <option>Large</option>
-    <option>Huge</option>
-    <option>Gargantuan</option>
-  </select>
+<label>Size</label>
+<select id="monster-size">
+<option>Small</option>
+<option>Medium</option>
+<option>Large</option>
+<option>Huge</option>
+<option>Gargantuan</option>
+</select>
 
-  <label>AC</label>
-  <input type="number" id="monster-ac" placeholder="15">
+<label>AC</label>
+<input type="number" id="monster-ac" placeholder="15">
 
-  <label>HP</label>
-  <input type="number" id="monster-hp" placeholder="30">
+<label>HP</label>
+<input type="number" id="monster-hp" placeholder="30">
 
-  <label>Speed</label>
-  <input type="text" id="monster-speed" placeholder="30 ft.">
-
-	<div class="section">
-	  <h3>Abilities</h3>
-	  <div class="row abilities-row">
-		<label>STR <input type="number" id="str" placeholder="0"></label>
-		<label>DEX <input type="number" id="dex" placeholder="0"></label>
-		<label>CON <input type="number" id="con" placeholder="0"></label>
-		<label>INT <input type="number" id="int" placeholder="0"></label>
-		<label>WIS <input type="number" id="wis" placeholder="0"></label>
-		<label>CHA <input type="number" id="cha" placeholder="0"></label>
-	  </div>
-	</div>
-
+<label>Speed</label>
+<input type="text" id="monster-speed" placeholder="30 ft.">
 
 <div class="section">
-  <h3>Traits</h3>
-  <div id="traits-list"></div>
-  <button type="button" id="add-trait-btn">Add Trait</button>
+<h3>Abilities</h3>
+<div class="row">
+<label>STR <input type="number" id="str" placeholder="0"></label>
+<label>DEX <input type="number" id="dex" placeholder="0"></label>
+<label>CON <input type="number" id="con" placeholder="0"></label>
+<label>INT <input type="number" id="int" placeholder="0"></label>
+<label>WIS <input type="number" id="wis" placeholder="0"></label>
+<label>CHA <input type="number" id="cha" placeholder="0"></label>
 </div>
-
-<div class="section">
-  <h3>Actions</h3>
-  <div id="actions-list"></div>
-  <button type="button" id="add-action-btn">Add Action</button>
-</div>
-
-<div class="section">
-  <h3>Reactions</h3>
-  <div id="reactions-list"></div>
-  <button type="button" id="add-reaction-btn">Add Reaction</button>
-</div>
-
-<div class="section">
-  <h3>Legendary Actions</h3>
-  <div id="legendary-list"></div>
-  <button type="button" id="add-legendary-btn">Add Legendary Action</button>
-</div>
-
-<div class="section">
-  <h3>Lair Actions</h3>
-  <div id="lair-list"></div>
-  <button type="button" id="add-lair-btn">Add Lair Action</button>
-</div>
-
-<div class="section">
-  <h3>Regional Effects</h3>
-  <div id="regional-list"></div>
-  <button type="button" id="add-regional-btn">Add Regional Effect</button>
 </div>
 
 
-  <label>Challenge Rating (CR)</label>
-  <input type="text" id="monster-cr" placeholder="1/4">
+<div class="section">
+<h3>Traits</h3>
+<div id="traits-list"></div>
+<button type="button" id="add-trait-btn">Add Trait</button>
+</div>
 
-  <button type="button" id="preview-btn">Preview Stat Block</button>
-  <button type="button" id="save-btn">Save as JSON</button>
+<div class="section">
+<h3>Actions</h3>
+<div id="actions-list"></div>
+<button type="button" id="add-action-btn">Add Action</button>
+</div>
+
+<div class="section">
+<h3>Reactions</h3>
+<div id="reactions-list"></div>
+<button type="button" id="add-reaction-btn">Add Reaction</button>
+</div>
+
+<div class="section">
+<h3>Legendary Actions</h3>
+<div id="legendary-list"></div>
+<button type="button" id="add-legendary-btn">Add Legendary Action</button>
+</div>
+
+<div class="section">
+<h3>Lair Actions</h3>
+<div id="lair-list"></div>
+<button type="button" id="add-lair-btn">Add Lair Action</button>
+</div>
+
+<div class="section">
+<h3>Regional Effects</h3>
+<div id="regional-list"></div>
+<button type="button" id="add-regional-btn">Add Regional Effect</button>
+</div>
+
+
+<label>Challenge Rating (CR)</label>
+<input type="text" id="monster-cr" placeholder="1/4">
+
+<button type="button" id="preview-btn">Preview Stat Block</button>
+<button type="button" id="save-btn">Save as JSON</button>
 </form>
 
 <div id="stat-block"></div>
@@ -133,107 +133,107 @@
 <script>
 // --- Helper to add row ---
 function createRow(container, placeholders) {
-  const row = document.createElement("div");
-  row.classList.add("row");
+const row = document.createElement("div");
+row.classList.add("row");
 
-  placeholders.forEach((ph) => {
-    const input = document.createElement("input");
-    input.placeholder = ph;
-    row.appendChild(input);
-  });
+placeholders.forEach((ph) => {
+const input = document.createElement("input");
+input.placeholder = ph;
+row.appendChild(input);
+});
 
-  const removeBtn = document.createElement("button");
-  removeBtn.textContent = "Remove";
-  removeBtn.type = "button";
-  removeBtn.addEventListener("click", () => row.remove());
-  row.appendChild(removeBtn);
+const removeBtn = document.createElement("button");
+removeBtn.textContent = "Remove";
+removeBtn.type = "button";
+removeBtn.addEventListener("click", () => row.remove());
+row.appendChild(removeBtn);
 
-  container.appendChild(row);
+container.appendChild(row);
 }
 
 // --- Dynamic Fields ---
 document.getElementById("add-trait-btn").addEventListener("click", () => {
-  createRow(document.getElementById("traits-list"), ["Name", "Description"]);
+createRow(document.getElementById("traits-list"), ["Name", "Description"]);
 });
 document.getElementById("add-action-btn").addEventListener("click", () => {
-  createRow(document.getElementById("actions-list"), ["Name", "Description"]);
+createRow(document.getElementById("actions-list"), ["Name", "Description"]);
 });
 
 // --- Collect Monster Data ---
 function getMonsterData() {
-  const abilities = {
-    str: parseInt(document.getElementById("str").value) || 0,
-    dex: parseInt(document.getElementById("dex").value) || 0,
-    con: parseInt(document.getElementById("con").value) || 0,
-    int: parseInt(document.getElementById("int").value) || 0,
-    wis: parseInt(document.getElementById("wis").value) || 0,
-    cha: parseInt(document.getElementById("cha").value) || 0,
-  };
+const abilities = {
+str: parseInt(document.getElementById("str").value) || 0,
+dex: parseInt(document.getElementById("dex").value) || 0,
+con: parseInt(document.getElementById("con").value) || 0,
+int: parseInt(document.getElementById("int").value) || 0,
+wis: parseInt(document.getElementById("wis").value) || 0,
+cha: parseInt(document.getElementById("cha").value) || 0,
+};
 
-  const traits = [];
-  document.getElementById("traits-list").querySelectorAll(".row").forEach(row => {
-    const [name, desc] = row.querySelectorAll("input");
-    if(name.value) traits.push({name: name.value, desc: desc.value});
-  });
+const traits = [];
+document.getElementById("traits-list").querySelectorAll(".row").forEach(row => {
+const [name, desc] = row.querySelectorAll("input");
+if(name.value) traits.push({name: name.value, desc: desc.value});
+});
 
-  const actions = [];
-  document.getElementById("actions-list").querySelectorAll(".row").forEach(row => {
-    const [name, desc] = row.querySelectorAll("input");
-    if(name.value) actions.push({name: name.value, desc: desc.value});
-  });
+const actions = [];
+document.getElementById("actions-list").querySelectorAll(".row").forEach(row => {
+const [name, desc] = row.querySelectorAll("input");
+if(name.value) actions.push({name: name.value, desc: desc.value});
+});
 
-  return {
-    name: document.getElementById("monster-name").value,
-    type: document.getElementById("monster-type").value,
-    size: document.getElementById("monster-size").value,
-    alignment: document.getElementById("monster-alignment").value,
-    ac: document.getElementById("monster-ac").value,
-    hp: document.getElementById("monster-hp").value,
-    speed: document.getElementById("monster-speed").value,
-    abilities,
-    traits,
-    actions,
-    cr: document.getElementById("monster-cr").value
-  };
+return {
+name: document.getElementById("monster-name").value,
+type: document.getElementById("monster-type").value,
+size: document.getElementById("monster-size").value,
+alignment: document.getElementById("monster-alignment").value,
+ac: document.getElementById("monster-ac").value,
+hp: document.getElementById("monster-hp").value,
+speed: document.getElementById("monster-speed").value,
+abilities,
+traits,
+actions,
+cr: document.getElementById("monster-cr").value
+};
 }
 
 // --- Format Stat Block ---
 const statBlock = document.getElementById("stat-block");
 function formatStatBlock(m) {
-  const formatAbility = (score) => {
-    const mod = Math.floor((score - 10) / 2);
-    return `${score} (${mod >= 0 ? '+'+mod : mod})`;
-  };
-  return `
-    <h2>${m.name}</h2>
-    <p>${m.size} ${m.type}${m.alignment ? ", "+m.alignment : ""}</p>
-    <p><strong>AC:</strong> ${m.ac} | <strong>HP:</strong> ${m.hp} | <strong>Speed:</strong> ${m.speed}</p>
-    <hr>
-    <h3>Abilities</h3>
-    <p>STR: ${formatAbility(m.abilities.str)}, DEX: ${formatAbility(m.abilities.dex)}, CON: ${formatAbility(m.abilities.con)}, INT: ${formatAbility(m.abilities.int)}, WIS: ${formatAbility(m.abilities.wis)}, CHA: ${formatAbility(m.abilities.cha)}</p>
-    <hr>
-    ${m.traits.length ? `<h3>Traits</h3>${m.traits.map(t => `<p><strong>${t.name}:</strong> ${t.desc}</p>`).join("")}` : ""}
-    ${m.actions.length ? `<h3>Actions</h3>${m.actions.map(a => `<p><strong>${a.name}:</strong> ${a.desc}</p>`).join("")}` : ""}
-    <hr>
-    <p><strong>Challenge:</strong> ${m.cr}</p>
-  `;
+const formatAbility = (score) => {
+const mod = Math.floor((score - 10) / 2);
+return `${score} (${mod >= 0 ? '+'+mod : mod})`;
+};
+return `
+   <h2>${m.name}</h2>
+   <p>${m.size} ${m.type}${m.alignment ? ", "+m.alignment : ""}</p>
+   <p><strong>AC:</strong> ${m.ac} | <strong>HP:</strong> ${m.hp} | <strong>Speed:</strong> ${m.speed}</p>
+   <hr>
+   <h3>Abilities</h3>
+   <p>STR: ${formatAbility(m.abilities.str)}, DEX: ${formatAbility(m.abilities.dex)}, CON: ${formatAbility(m.abilities.con)}, INT: ${formatAbility(m.abilities.int)}, WIS: ${formatAbility(m.abilities.wis)}, CHA: ${formatAbility(m.abilities.cha)}</p>
+   <hr>
+   ${m.traits.length ? `<h3>Traits</h3>${m.traits.map(t => `<p><strong>${t.name}:</strong> ${t.desc}</p>`).join("")}` : ""}
+   ${m.actions.length ? `<h3>Actions</h3>${m.actions.map(a => `<p><strong>${a.name}:</strong> ${a.desc}</p>`).join("")}` : ""}
+   <hr>
+   <p><strong>Challenge:</strong> ${m.cr}</p>
+ `;
 }
 
 // --- Buttons ---
 document.getElementById("preview-btn").addEventListener("click", () => {
-  const monster = getMonsterData();
-  statBlock.innerHTML = formatStatBlock(monster);
+const monster = getMonsterData();
+statBlock.innerHTML = formatStatBlock(monster);
 });
 
 document.getElementById("save-btn").addEventListener("click", () => {
-  const monster = getMonsterData();
-  const blob = new Blob([JSON.stringify(monster, null, 2)], {type:"application/json"});
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = `${monster.name || "monster"}.json`;
-  a.click();
-  URL.revokeObjectURL(url);
+const monster = getMonsterData();
+const blob = new Blob([JSON.stringify(monster, null, 2)], {type:"application/json"});
+const url = URL.createObjectURL(blob);
+const a = document.createElement("a");
+a.href = url;
+a.download = `${monster.name || "monster"}.json`;
+a.click();
+URL.revokeObjectURL(url);
 });
 
 // Helper to create Name + Description entry (traits, actions, reactions, legendary)
@@ -275,36 +275,21 @@ function createLairBlock(containerId) {
   descInput.cols = 50;
 
   const bulletsDiv = document.createElement("div");
-
   const addBulletBtn = document.createElement("button");
   addBulletBtn.type = "button";
   addBulletBtn.textContent = "Add Bullet";
 
   addBulletBtn.addEventListener("click", () => {
-    const bulletWrapper = document.createElement("div");
-    bulletWrapper.style.display = "flex";
-    bulletWrapper.style.alignItems = "center";
-    bulletWrapper.style.marginBottom = "5px";
-
     const bulletInput = document.createElement("input");
     bulletInput.type = "text";
     bulletInput.placeholder = "Bullet";
-    bulletInput.style.flex = "1";
-
-    const removeBulletBtn = document.createElement("button");
-    removeBulletBtn.type = "button";
-    removeBulletBtn.textContent = "✖";
-    removeBulletBtn.style.marginLeft = "5px";
-    removeBulletBtn.addEventListener("click", () => bulletWrapper.remove());
-
-    bulletWrapper.appendChild(bulletInput);
-    bulletWrapper.appendChild(removeBulletBtn);
-    bulletsDiv.appendChild(bulletWrapper);
+    bulletsDiv.appendChild(bulletInput);
+    bulletsDiv.appendChild(document.createElement("br"));
   });
 
   const removeBtn = document.createElement("button");
   removeBtn.type = "button";
-  removeBtn.textContent = "Remove Block";
+  removeBtn.textContent = "Remove";
   removeBtn.addEventListener("click", () => div.remove());
 
   div.appendChild(descInput);
@@ -328,39 +313,17 @@ function createRegionalBlock(containerId) {
   descInput.cols = 50;
 
   const bulletsDiv = document.createElement("div");
-
   const addBulletBtn = document.createElement("button");
   addBulletBtn.type = "button";
   addBulletBtn.textContent = "Add Bullet";
 
-addBulletBtn.addEventListener("click", () => {
-  const bulletWrapper = document.createElement("div");
-  bulletWrapper.style.display = "flex";
-  bulletWrapper.style.alignItems = "center";
-  bulletWrapper.style.marginBottom = "5px";
-
-  const bulletInput = document.createElement("input");
-  bulletInput.type = "text";
-  bulletInput.placeholder = "Bullet";
-  bulletInput.style.flex = "1";
-  bulletInput.style.padding = "5px";
-
-  const removeBulletBtn = document.createElement("button");
-  removeBulletBtn.type = "button";
-  removeBulletBtn.textContent = "✖";
-  removeBulletBtn.style.marginLeft = "5px";
-  removeBulletBtn.style.flex = "0 0 auto";
-  removeBulletBtn.style.padding = "2px 6px";   // small and neat
-  removeBulletBtn.style.fontSize = "14px";
-  removeBulletBtn.style.lineHeight = "1";
-
-  removeBulletBtn.addEventListener("click", () => bulletWrapper.remove());
-
-  bulletWrapper.appendChild(bulletInput);
-  bulletWrapper.appendChild(removeBulletBtn);
-  bulletsDiv.appendChild(bulletWrapper);
-});
-
+  addBulletBtn.addEventListener("click", () => {
+    const bulletInput = document.createElement("input");
+    bulletInput.type = "text";
+    bulletInput.placeholder = "Bullet";
+    bulletsDiv.appendChild(bulletInput);
+    bulletsDiv.appendChild(document.createElement("br"));
+  });
 
   const secondaryInput = document.createElement("textarea");
   secondaryInput.placeholder = "Secondary Description";
@@ -369,7 +332,7 @@ addBulletBtn.addEventListener("click", () => {
 
   const removeBtn = document.createElement("button");
   removeBtn.type = "button";
-  removeBtn.textContent = "Remove Block";
+  removeBtn.textContent = "Remove";
   removeBtn.addEventListener("click", () => div.remove());
 
   div.appendChild(descInput);
@@ -388,27 +351,27 @@ addBulletBtn.addEventListener("click", () => {
 
 // Event listeners
 document.getElementById("add-trait-btn").addEventListener("click", () => {
-  createNameDescBlock("traits-list", "Trait");
+createNameDescBlock("traits-list", "Trait");
 });
 
 document.getElementById("add-action-btn").addEventListener("click", () => {
-  createNameDescBlock("actions-list", "Action");
+createNameDescBlock("actions-list", "Action");
 });
 
 document.getElementById("add-reaction-btn").addEventListener("click", () => {
-  createNameDescBlock("reactions-list", "Reaction");
+createNameDescBlock("reactions-list", "Reaction");
 });
 
 document.getElementById("add-legendary-btn").addEventListener("click", () => {
-  createNameDescBlock("legendary-list", "Legendary Action");
+createNameDescBlock("legendary-list", "Legendary Action");
 });
 
 document.getElementById("add-lair-btn").addEventListener("click", () => {
-  createLairBlock("lair-list");
+createLairBlock("lair-list");
 });
 
 document.getElementById("add-regional-btn").addEventListener("click", () => {
-  createRegionalBlock("regional-list");
+createRegionalBlock("regional-list");
 });
 
 
