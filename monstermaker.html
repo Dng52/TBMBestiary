@@ -275,21 +275,36 @@ function createLairBlock(containerId) {
   descInput.cols = 50;
 
   const bulletsDiv = document.createElement("div");
+
   const addBulletBtn = document.createElement("button");
   addBulletBtn.type = "button";
   addBulletBtn.textContent = "Add Bullet";
 
   addBulletBtn.addEventListener("click", () => {
+    const bulletWrapper = document.createElement("div");
+    bulletWrapper.style.display = "flex";
+    bulletWrapper.style.alignItems = "center";
+    bulletWrapper.style.marginBottom = "5px";
+
     const bulletInput = document.createElement("input");
     bulletInput.type = "text";
     bulletInput.placeholder = "Bullet";
-    bulletsDiv.appendChild(bulletInput);
-    bulletsDiv.appendChild(document.createElement("br"));
+    bulletInput.style.flex = "1";
+
+    const removeBulletBtn = document.createElement("button");
+    removeBulletBtn.type = "button";
+    removeBulletBtn.textContent = "✖";
+    removeBulletBtn.style.marginLeft = "5px";
+    removeBulletBtn.addEventListener("click", () => bulletWrapper.remove());
+
+    bulletWrapper.appendChild(bulletInput);
+    bulletWrapper.appendChild(removeBulletBtn);
+    bulletsDiv.appendChild(bulletWrapper);
   });
 
   const removeBtn = document.createElement("button");
   removeBtn.type = "button";
-  removeBtn.textContent = "Remove";
+  removeBtn.textContent = "Remove Block";
   removeBtn.addEventListener("click", () => div.remove());
 
   div.appendChild(descInput);
@@ -313,16 +328,31 @@ function createRegionalBlock(containerId) {
   descInput.cols = 50;
 
   const bulletsDiv = document.createElement("div");
+
   const addBulletBtn = document.createElement("button");
   addBulletBtn.type = "button";
   addBulletBtn.textContent = "Add Bullet";
 
   addBulletBtn.addEventListener("click", () => {
+    const bulletWrapper = document.createElement("div");
+    bulletWrapper.style.display = "flex";
+    bulletWrapper.style.alignItems = "center";
+    bulletWrapper.style.marginBottom = "5px";
+
     const bulletInput = document.createElement("input");
     bulletInput.type = "text";
     bulletInput.placeholder = "Bullet";
-    bulletsDiv.appendChild(bulletInput);
-    bulletsDiv.appendChild(document.createElement("br"));
+    bulletInput.style.flex = "1";
+
+    const removeBulletBtn = document.createElement("button");
+    removeBulletBtn.type = "button";
+    removeBulletBtn.textContent = "✖";
+    removeBulletBtn.style.marginLeft = "5px";
+    removeBulletBtn.addEventListener("click", () => bulletWrapper.remove());
+
+    bulletWrapper.appendChild(bulletInput);
+    bulletWrapper.appendChild(removeBulletBtn);
+    bulletsDiv.appendChild(bulletWrapper);
   });
 
   const secondaryInput = document.createElement("textarea");
@@ -332,7 +362,7 @@ function createRegionalBlock(containerId) {
 
   const removeBtn = document.createElement("button");
   removeBtn.type = "button";
-  removeBtn.textContent = "Remove";
+  removeBtn.textContent = "Remove Block";
   removeBtn.addEventListener("click", () => div.remove());
 
   div.appendChild(descInput);
@@ -346,6 +376,7 @@ function createRegionalBlock(containerId) {
 
   document.getElementById(containerId).appendChild(div);
 }
+
 
 
 // Event listeners
