@@ -487,32 +487,31 @@ strong em {
   text-align: center; 
 }
 
-/* Text input and textarea style */
-input[type="text"],
-input[type="number"],
-textarea {
-  width: 100%;           /* full width */
-  max-width: 500px;      /* optional max width */
-  padding: 8px 12px;     /* internal spacing */
-  margin: 4px 0 12px 0;  /* spacing between fields */
-  font-size: 14px;       /* readable text */
+/* All form inputs and textareas inside #monster-form */
+#monster-form input,
+#monster-form textarea {
+  width: 100%;            /* full width */
+  max-width: 500px;       /* optional max width */
+  padding: 8px 12px;      /* internal spacing */
+  margin: 4px 0 12px 0;   /* spacing between fields */
+  font-size: 14px;        /* readable text */
   border: 2px solid #ccc; /* subtle border */
-  border-radius: 12px;   /* rounded corners */
-  outline: none;         /* remove default outline */
+  border-radius: 12px;    /* rounded corners */
+  outline: none;          /* remove default outline */
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Focus effect */
-input[type="text"]:focus,
-input[type="number"]:focus,
-textarea:focus {
+#monster-form input:focus,
+#monster-form textarea:focus {
   border-color: #492468;          /* purple border on focus */
   box-shadow: 0 0 6px rgba(73, 36, 104, 0.4); /* subtle glow */
 }
 
 /* Placeholder style */
-input::placeholder,
-textarea::placeholder {
+#monster-form input::placeholder,
+#monster-form textarea::placeholder {
   color: #aaa;
   font-style: italic;
 }
+
