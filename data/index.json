@@ -1,5 +1,9 @@
 [
   {
+    "name": "Xorn (TBM)",
+    "file": "Xorn (TBM).json"
+  },
+  {
     "name": "Aarakocra",
     "file": "aarakocra.json"
   },
