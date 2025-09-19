@@ -316,17 +316,20 @@ document.getElementById("save-btn").addEventListener("click", () => {
 });
 
 
-// Helper to create Name + Description entry (traits, actions, reactions, legendary)
-function createNameDescBlock(containerId, type) {
+<script>
+// --- Helper: create Name + Description entry (Traits, Actions, Reactions, Legendary)
+function createNameDescBlock(containerId, typeClass, typeLabel) {
   const div = document.createElement("div");
-  div.classList.add("entry-block");
+  div.classList.add(typeClass);
 
   const nameInput = document.createElement("input");
   nameInput.type = "text";
-  nameInput.placeholder = `${type} Name`;
+  nameInput.placeholder = `${typeLabel} Name`;
+  nameInput.classList.add(`${typeClass}-name`);
 
   const descInput = document.createElement("textarea");
-  descInput.placeholder = `${type} Description`;
+  descInput.placeholder = `${typeLabel} Description`;
+  descInput.classList.add(`${typeClass}-desc`);
   descInput.rows = 3;
   descInput.cols = 50;
 
@@ -344,36 +347,33 @@ function createNameDescBlock(containerId, type) {
   document.getElementById(containerId).appendChild(div);
 }
 
-// Helper for Lair Actions (description + bullet list)
+// --- Helper: Lair Action (description + bullets)
 function createLairBlock(containerId) {
   const div = document.createElement("div");
-  div.classList.add("entry-block");
+  div.classList.add("lairaction");
 
   const descInput = document.createElement("textarea");
   descInput.placeholder = "Lair Action Description";
+  descInput.classList.add("lair-desc");
   descInput.rows = 3;
   descInput.cols = 50;
 
   const bulletsDiv = document.createElement("div");
+
   const addBulletBtn = document.createElement("button");
   addBulletBtn.type = "button";
   addBulletBtn.textContent = "Add Bullet";
-
   addBulletBtn.addEventListener("click", () => {
     const bulletWrapper = document.createElement("div");
-    bulletWrapper.style.display = "flex";
-    bulletWrapper.style.alignItems = "center";
-    bulletWrapper.style.marginBottom = "4px";
 
     const bulletInput = document.createElement("input");
     bulletInput.type = "text";
     bulletInput.placeholder = "Bullet";
-    bulletInput.style.flex = "1";
+    bulletInput.classList.add("lair-bullet");
 
     const removeBulletBtn = document.createElement("button");
     removeBulletBtn.type = "button";
-    removeBulletBtn.textContent = "✖";
-    removeBulletBtn.style.marginLeft = "6px";
+    removeBulletBtn.textContent = "✕";
     removeBulletBtn.addEventListener("click", () => bulletWrapper.remove());
 
     bulletWrapper.appendChild(bulletInput);
@@ -397,36 +397,33 @@ function createLairBlock(containerId) {
   document.getElementById(containerId).appendChild(div);
 }
 
-// Helper for Regional Effects (description + bullets + secondaryDescription)
+// --- Helper: Regional Effect (description + bullets + secondaryDescription)
 function createRegionalBlock(containerId) {
   const div = document.createElement("div");
-  div.classList.add("entry-block");
+  div.classList.add("regionaleffect");
 
   const descInput = document.createElement("textarea");
   descInput.placeholder = "Regional Effect Description";
+  descInput.classList.add("regional-desc");
   descInput.rows = 3;
   descInput.cols = 50;
 
   const bulletsDiv = document.createElement("div");
+
   const addBulletBtn = document.createElement("button");
   addBulletBtn.type = "button";
   addBulletBtn.textContent = "Add Bullet";
-
   addBulletBtn.addEventListener("click", () => {
     const bulletWrapper = document.createElement("div");
-    bulletWrapper.style.display = "flex";
-    bulletWrapper.style.alignItems = "center";
-    bulletWrapper.style.marginBottom = "4px";
 
     const bulletInput = document.createElement("input");
     bulletInput.type = "text";
     bulletInput.placeholder = "Bullet";
-    bulletInput.style.flex = "1";
+    bulletInput.classList.add("regional-bullet");
 
     const removeBulletBtn = document.createElement("button");
     removeBulletBtn.type = "button";
-    removeBulletBtn.textContent = "✖";
-    removeBulletBtn.style.marginLeft = "6px";
+    removeBulletBtn.textContent = "✕";
     removeBulletBtn.addEventListener("click", () => bulletWrapper.remove());
 
     bulletWrapper.appendChild(bulletInput);
@@ -437,6 +434,7 @@ function createRegionalBlock(containerId) {
 
   const secondaryInput = document.createElement("textarea");
   secondaryInput.placeholder = "Secondary Description";
+  secondaryInput.classList.add("regional-secondary-desc");
   secondaryInput.rows = 2;
   secondaryInput.cols = 50;
 
@@ -456,6 +454,33 @@ function createRegionalBlock(containerId) {
 
   document.getElementById(containerId).appendChild(div);
 }
+
+// --- Button bindings ---
+document.getElementById("add-trait-btn").addEventListener("click", () =>
+  createNameDescBlock("traits-list", "trait", "Trait")
+);
+
+document.getElementById("add-action-btn").addEventListener("click", () =>
+  createNameDescBlock("actions-list", "action", "Action")
+);
+
+document.getElementById("add-reaction-btn").addEventListener("click", () =>
+  createNameDescBlock("reactions-list", "reaction", "Reaction")
+);
+
+document.getElementById("add-legendary-btn").addEventListener("click", () =>
+  createNameDescBlock("legendary-list", "legendary", "Legendary Action")
+);
+
+document.getElementById("add-lair-btn").addEventListener("click", () =>
+  createLairBlock("lair-list")
+);
+
+document.getElementById("add-regional-btn").addEventListener("click", () =>
+  createRegionalBlock("regional-list")
+);
+</script>
+
 
 
 
