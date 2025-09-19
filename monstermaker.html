@@ -142,7 +142,7 @@
   <div id="legendary-list"></div>
   <button type="button" id="add-legendary-btn">Add Legendary Action</button>
   
-  <label for="monster-legendarynumber">Number of Legendary Actions</label>
+  <label for="monster-legendarynumber">Legendary Actions per Round</label>
   <input type="number" id="monster-legendarynumber" placeholder="e.g. 3">
 </div>
 
@@ -344,11 +344,26 @@ function createLairBlock(containerId) {
   addBulletBtn.textContent = "Add Bullet";
 
   addBulletBtn.addEventListener("click", () => {
+    const bulletWrapper = document.createElement("div");
+    bulletWrapper.style.display = "flex";
+    bulletWrapper.style.alignItems = "center";
+    bulletWrapper.style.marginBottom = "4px";
+
     const bulletInput = document.createElement("input");
     bulletInput.type = "text";
     bulletInput.placeholder = "Bullet";
-    bulletsDiv.appendChild(bulletInput);
-    bulletsDiv.appendChild(document.createElement("br"));
+    bulletInput.style.flex = "1";
+
+    const removeBulletBtn = document.createElement("button");
+    removeBulletBtn.type = "button";
+    removeBulletBtn.textContent = "✖";
+    removeBulletBtn.style.marginLeft = "6px";
+    removeBulletBtn.addEventListener("click", () => bulletWrapper.remove());
+
+    bulletWrapper.appendChild(bulletInput);
+    bulletWrapper.appendChild(removeBulletBtn);
+
+    bulletsDiv.appendChild(bulletWrapper);
   });
 
   const removeBtn = document.createElement("button");
@@ -382,11 +397,26 @@ function createRegionalBlock(containerId) {
   addBulletBtn.textContent = "Add Bullet";
 
   addBulletBtn.addEventListener("click", () => {
+    const bulletWrapper = document.createElement("div");
+    bulletWrapper.style.display = "flex";
+    bulletWrapper.style.alignItems = "center";
+    bulletWrapper.style.marginBottom = "4px";
+
     const bulletInput = document.createElement("input");
     bulletInput.type = "text";
     bulletInput.placeholder = "Bullet";
-    bulletsDiv.appendChild(bulletInput);
-    bulletsDiv.appendChild(document.createElement("br"));
+    bulletInput.style.flex = "1";
+
+    const removeBulletBtn = document.createElement("button");
+    removeBulletBtn.type = "button";
+    removeBulletBtn.textContent = "✖";
+    removeBulletBtn.style.marginLeft = "6px";
+    removeBulletBtn.addEventListener("click", () => bulletWrapper.remove());
+
+    bulletWrapper.appendChild(bulletInput);
+    bulletWrapper.appendChild(removeBulletBtn);
+
+    bulletsDiv.appendChild(bulletWrapper);
   });
 
   const secondaryInput = document.createElement("textarea");
@@ -410,6 +440,7 @@ function createRegionalBlock(containerId) {
 
   document.getElementById(containerId).appendChild(div);
 }
+
 
 
 
