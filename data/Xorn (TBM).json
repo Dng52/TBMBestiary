@@ -1,0 +1,39 @@
+{
+  "name": "Xorn (TBM)",
+  "tags": [
+    "The Bountiful Mimic"
+  ],
+  "size": "Medium",
+  "type": "elemental",
+  "alignment": "True Neutral",
+  "cr": "5",
+  "hp": "73 (7d8 + 42)",
+  "ac": "19 (natural armor)",
+  "speed": "20 ft., burrow 20 ft.",
+  "abilities": {
+    "str": 17,
+    "dex": 10,
+    "con": 22,
+    "int": 11,
+    "wis": 10,
+    "cha": 11
+  },
+  "saves": "",
+  "skills": "Perception +6, Stealth +3",
+  "immunities": "cold, fire",
+  "resistance": "lightning",
+  "vulnerability": "",
+  "conimmunities": "",
+  "senses": "darkvision 60 ft., tremorsense 60 ft., passive perception 16",
+  "languages": "Terran",
+  "legendarynumber": "",
+  "traits": [],
+  "actions": [],
+  "reactions": [],
+  "legendary": [],
+  "description": "Xorns are rocky skinned burrowers that live on the Elemental Plane of Earth, continuously consuming raw materials found in the endless expanse. With a voracious appetite for treasure, they may not be beyond bargaining for their meals, but their 3 claws and serrated maw means they can take it by force when needed. Caves with xorns nearby are often filled with gems for later consumption.",
+  "lairactions": [],
+  "regionaleffects": [],
+  "_file": "Xorn (TBM).json",
+  "_displayName": "Xorn (TBM)"
+}
