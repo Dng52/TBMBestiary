@@ -283,14 +283,22 @@ statBlock.innerHTML = formatStatBlock(monster);
 });
 
 document.getElementById("save-btn").addEventListener("click", () => {
-const monster = getMonsterData();
-const blob = new Blob([JSON.stringify(monster, null, 2)], {type:"application/json"});
-const url = URL.createObjectURL(blob);
-const a = document.createElement("a");
-a.href = url;
-a.download = `${monster.name || "monster"}.json`;
-a.click();
-URL.revokeObjectURL(url);
+  const monster = getMonsterData();
+
+  // build filename from monster name (fallback to "monster")
+  const filename = `${monster.name || "monster"}.json`;
+  monster._file = filename;  // inject into JSON
+  monster._displayName = monster.name || "Unnamed Monster"; // optional: also keep display name
+
+  const blob = new Blob([JSON.stringify(monster, null, 2)], {type:"application/json"});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = filename;
+  a.click();
+  URL.revokeObjectURL(url);
+});
+
 });
 
 // Helper to create Name + Description entry (traits, actions, reactions, legendary)
