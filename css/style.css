@@ -79,6 +79,11 @@ button:hover {
   background-color: #6a359c; /* lighter purple on hover */
 }
 
+button:link {
+  color: #fff;
+}
+
+
 .wrapper {
   width: 100%;
   max-width: none;
