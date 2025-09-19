@@ -201,9 +201,9 @@ function getMonsterData() {
     tags: [
       document.getElementById("monster-size").value,
       document.getElementById("monster-type").value,
-      "cr" + (document.getElementById("monster-cr").value || ""),
+      "cr" + document.getElementById("monster-cr").value,
       document.getElementById("monster-source").value || "homebrew"
-    ].filter(Boolean),
+    ],
     size: document.getElementById("monster-size").value,
     type: document.getElementById("monster-type").value,
     alignment: document.getElementById("monster-alignment").value,
@@ -228,44 +228,45 @@ function getMonsterData() {
     senses: document.getElementById("senses").value,
     languages: document.getElementById("languages").value,
     legendarynumber: document.getElementById("monster-legendarynumber").value,
-    
+
     traits: Array.from(document.querySelectorAll("#traits-container .trait")).map(trait => ({
       name: trait.querySelector(".trait-name").value,
       desc: trait.querySelector(".trait-desc").value
     })),
-    
+
     actions: Array.from(document.querySelectorAll("#actions-container .action")).map(action => ({
       name: action.querySelector(".action-name").value,
       desc: action.querySelector(".action-desc").value
     })),
-    
+
     reactions: Array.from(document.querySelectorAll("#reactions-container .reaction")).map(reaction => ({
       name: reaction.querySelector(".reaction-name").value,
       desc: reaction.querySelector(".reaction-desc").value
     })),
-    
+
     legendary: Array.from(document.querySelectorAll("#legendary-container .legendary")).map(legendary => ({
       name: legendary.querySelector(".legendary-name").value,
       desc: legendary.querySelector(".legendary-desc").value
     })),
-    
+
     description: document.getElementById("monster-description").value,
-    
+
     lairactions: Array.from(document.querySelectorAll("#lairactions-container .lairaction")).map(lair => ({
       description: lair.querySelector(".lair-desc").value,
       bullets: Array.from(lair.querySelectorAll(".lair-bullet")).map(b => b.value).filter(Boolean)
     })),
-    
+
     regionaleffects: Array.from(document.querySelectorAll("#regionaleffects-container .regionaleffect")).map(region => ({
       description: region.querySelector(".regional-desc").value,
       bullets: Array.from(region.querySelectorAll(".regional-bullet")).map(b => b.value).filter(Boolean),
       secondaryDescription: region.querySelector(".regional-secondary-desc").value
     })),
-    
+
     _file: "custom_monster_template.json",
     _displayName: document.getElementById("monster-name").value
   };
 }
+
 
 
 // --- Format Stat Block ---
