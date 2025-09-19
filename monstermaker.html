@@ -64,7 +64,7 @@
 <input type="text" id="monster-speed" placeholder="30 ft.">
 
 <label>Source</label>
-<input type="text" id="monster-tags" placeholder="Monster Manual">
+<input type="text" id="monster-source" placeholder="Monster Manual">
 
 <div class="section">
 <h3>Abilities</h3>
@@ -190,7 +190,7 @@ container.appendChild(row);
 function getMonsterData() {
   return {
     name: document.getElementById("monster-name").value,
-    tags: document.getElementById("monster-tags").value.split(",").map(t => t.trim()).filter(Boolean),
+    tags: [document.getElementById("monster-source").value || "homebrew"],
     size: document.getElementById("monster-size").value,
     type: document.getElementById("monster-type").value,
     alignment: document.getElementById("monster-alignment").value,
@@ -198,7 +198,6 @@ function getMonsterData() {
     hp: document.getElementById("monster-hp").value,
     ac: document.getElementById("monster-ac").value,
     speed: document.getElementById("monster-speed").value,
-    source: document.getElementById("monster-source").value,
     abilities: {
       str: parseInt(document.getElementById("str").value) || 0,
       dex: parseInt(document.getElementById("dex").value) || 0,
