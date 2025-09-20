@@ -1,0 +1,3 @@
+node buildMonsters.js
+
+pause
