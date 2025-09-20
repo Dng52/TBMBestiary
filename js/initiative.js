@@ -370,7 +370,7 @@ function addToTracker(monster) {
   const hpCell = row.querySelector("td:nth-child(4)");
   const hpInput = document.createElement("input");
   hpInput.type = "text";
-  hpInput.classList.add("style-input);
+  hpInput.classList.add("style-input");
   hpInput.style.width = "60px";
   hpInput.value = startHP;
   hpInput.dataset.currentHp = startHP;
