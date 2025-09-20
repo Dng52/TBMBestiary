@@ -511,13 +511,12 @@ strong em {
 
 /* Force all tracker/table inputs to same size and shrink properly */
 .style-input {
-  width: 60px;           /* consistent width */
-  max-width: 100%;       /* won't exceed cell */
-  box-sizing: border-box; 
-  padding: 2px 4px;      /* optional */
+  width: 100%;           /* fill the cell */
+  min-width: 0;          /* allow shrinking */
+  box-sizing: border-box;
+  padding: 2px 4px;
   font-size: 14px;
-  min-width: 0;          /* allow shrinking in table/flex */
-  text-align: center;    /* numbers centered by default */
+  text-align: center;    /* numbers centered */
 }
 
 #monster-form input.style-input:focus,
