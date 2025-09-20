@@ -409,36 +409,6 @@ strong em {
   box-sizing: border-box;
 }
 
-.initiative-table th:nth-child(1),
-.initiative-table td:nth-child(1) {
-  width: 40%; /* Name */
-}
-
-.initiative-table th:nth-child(2),
-.initiative-table td:nth-child(2) {
-  width: 15%; /* Init */
-}
-
-.initiative-table th:nth-child(3),
-.initiative-table td:nth-child(3) {
-  width: 10%; /* AC */
-}
-
-.initiative-table th:nth-child(4),
-.initiative-table td:nth-child(4) {
-  width: 10%; /* HP */
-}
-
-.initiative-table th:nth-child(5),
-.initiative-table td:nth-child(5) {
-  width: 15%; /* Notes */
-}
-
-.initiative-table th:nth-child(6),
-.initiative-table td:nth-child(6) {
-  width: 10%; /* Remove button */
-}
-
 .initiative-table tbody tr:hover {
   background-color: #FFBF00;
   cursor: pointer;
