@@ -7007,6 +7007,78 @@
     "_displayName": "Bearded Devil"
   },
   {
+    "name": "Behir (TBM)",
+    "tags": [
+      "Gargantuan",
+      "monstrosity",
+      "cr11",
+      "The Bountiful Mimic"
+    ],
+    "size": "Gargantuan",
+    "type": "monstrosity",
+    "alignment": "neutral evil",
+    "cr": "11",
+    "hp": "168 (16d12 + 64)",
+    "ac": "17 (natural armor)",
+    "speed": "50ft., climb 40ft.",
+    "abilities": {
+      "str": 23,
+      "dex": 16,
+      "con": 18,
+      "int": 7,
+      "wis": 14,
+      "cha": 12
+    },
+    "saves": "",
+    "skills": "Perception +6, Stealth +7",
+    "immunities": "lightning, poison",
+    "resistance": "",
+    "vulnerability": "",
+    "conimmunities": "",
+    "senses": "darkvision 90ft., passive perception 16",
+    "languages": "Draconic",
+    "legendarynumber": "",
+    "traits": [
+      {
+        "name": "Reckless Frenzy",
+        "desc": "When the behir uses the Lightning Breath action, it may make an additional Bite attack as a bonus action. Additionally, after the behir uses the Lightning Breath action, all attacks the behir make have advantage, but attack rolls against the behir have advantage. This effect ends at the end of the behir's next turn."
+      },
+      {
+        "name": "Cold Blooded",
+        "desc": "When the behir takes cold damage, its movement speed is cut in half until the end of its next turn."
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The behir makes two attacks: one with its bite and one to constrict."
+      },
+      {
+        "name": "Bite",
+        "desc": "*Melee Weapon Attack:* +10 to hit, reach 10ft., one target. *Hit:* 22 (3d10 + 6) piercing damage."
+      },
+      {
+        "name": "Constrict",
+        "desc": "*Melee Weapon Attack:* +10 to hit, reach 5 ft., one Large or smaller creature. *Hit:* 17 (2d10 + 6) bludgeoning damage plus 17 (2d10 + 6) slashing damage. The target is grappled (escape DC 16) if the behir isn't already constricting a creature, and the target is restrained until this grapple ends."
+      },
+      {
+        "name": "Lightning Breath (Recharge 5–6)",
+        "desc": "The behir exhales a line of lightning that is 20 feet long and 5 feet wide. Each creature in that line must make a DC 16 Dexterity saving throw, taking 66 (12d10) lightning damage on a failed save, or half as much damage on a successful one. The damage is increased by 12d10 if the target is a dragon. Additionally, this feature recharges if the behir consumes metal such as coins, armor, or weapons."
+      },
+      {
+        "name": "Swallow",
+        "desc": "The behir makes one bite attack against a Medium or smaller target it is grappling. If the attack hits, the target is also swallowed, and the grapple ends. While swallowed, the target is blinded and restrained, it has total cover against attacks and other effects outside the behir, and it takes 21 (6d6) acid damage at the start of each of the behir's turns. A behir can have only one creature swallowed at a time.\n\nIf the behir takes 30 damage or more on a single turn from the swallowed creature, the behir must succeed on a DC 14 Constitution saving throw at the end of that turn or regurgitate the creature, which falls prone in a space within 10 feet of the behir. If the behir dies, a swallowed creature is no longer restrained by it and can escape from the corpse by using 15 feet of movement, exiting prone."
+      }
+    ],
+    "reactions": [],
+    "legendary": [],
+    "description": "Behirs are cavern predators that hide in waiting for unsuspecting prey, slinking around with their surprisingly stealthy, serpentine body. Their blue, leathery skin is stretched over layers of fat that make the behir able to absorb most injected poisons. An organ close to the behir's stomach dissolves metals for the storage of electricity that the behir can expel in a devastating lightning breath attack. However, such attacks are not focused and the lightning scrambles the behir's brain leading to violent outbursts and confusion. It has been said behirs were created by frost giants as a means to take on dragons; their lightning seems to harm dragon-kind particularly well.",
+    "lairactions": [],
+    "regionaleffects": [],
+    "_file": "Behir (TBM).json",
+    "_displayName": "Behir (TBM)"
+  },
+  {
     "name": "Behir",
     "tags": [
       "huge",
@@ -27786,6 +27858,10 @@
     "_displayName": "Imp"
   },
   [
+    {
+      "name": "Remorhaz (TBM)",
+      "file": "Remorhaz (TBM).json"
+    },
     {
       "name": "Xorn (TBM)",
       "file": "Xorn (TBM).json"
