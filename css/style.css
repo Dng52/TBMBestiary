@@ -524,16 +524,6 @@ strong em {
   color: #aaa;
   font-style: italic;
 }
-.style-input {
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  background: #f2f2f2;
-  padding: 4px;
-  border-radius: 5px;
-  outline: none;
-}
 
 #monster-form input.style-input,
 #tracker-body input.style-input,
