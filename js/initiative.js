@@ -111,14 +111,13 @@ addBlankButton.addEventListener("click", () => {
   const row = document.createElement("tr");
 
   row.innerHTML = `
-    <td class="monster-name"><input type="text" value="Custom Entry" style="width: 100%;"></td>
-    <td><input type="number" value="0" style="width: 50px;"></td>
-    <td><input type="text" style="width: 50px;"></td>
-    <td><input type="text" style="width: 60px;"></td>
-    <td><input type="text" style="width: 100%;"></td>
+    <td class="monster-name"><input class="style-input" type="text" value="Custom Entry"></td>
+    <td><input class="style-input" type="number" value="0"></td>
+    <td><input class="style-input" type="text" value=""></td>
+    <td><input class="style-input" type="text" value=""></td>
+    <td><input class="style-input" type="text" value=""></td>
     <td><button class="remove-btn">Remove</button></td>
   `;
-
   // Remove button
   row.querySelector(".remove-btn").addEventListener("click", () => row.remove());
 
