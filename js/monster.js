@@ -94,10 +94,13 @@ async function loadMonster() {
 	}).join("") || ""}
 
 
-	${monster.actions?.map(a =>
-	<h3>Actions</h3>
-	  `<p><strong><em>${a.name}.</em></strong> ${formatTextWithItalics(a.desc)}</p>`
-	).join("") || ""}
+	${monster.actions && monster.actions.length ? `
+	  <h3>Actions</h3>
+	  ${monster.actions.map(a =>
+		`<p><strong><em>${a.name}.</em></strong> ${formatTextWithItalics(a.desc)}</p>`
+	  ).join("")}
+	` : ""}
+
 
 
       ${monster.reactions && monster.reactions.length ? `
