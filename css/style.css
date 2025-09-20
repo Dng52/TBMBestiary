@@ -396,6 +396,7 @@ strong em {
   width: 100%;
   table-layout: auto;
   border-collapse: collapse;
+  border-radius: 5px;
 }
 
 .initiative-table th,
