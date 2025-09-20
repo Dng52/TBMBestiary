@@ -508,6 +508,18 @@ strong em {
   outline: none;
   box-sizing: border-box;
 }
+
+/* Force all tracker/table inputs to same size and shrink properly */
+.style-input {
+  width: 60px;           /* consistent width */
+  max-width: 100%;       /* won't exceed cell */
+  box-sizing: border-box; 
+  padding: 2px 4px;      /* optional */
+  font-size: 14px;
+  min-width: 0;          /* allow shrinking in table/flex */
+  text-align: center;    /* numbers centered by default */
+}
+
 #monster-form input.style-input:focus,
 #tracker-body input.style-input:focus {
   border-color: rgba(73,36,104,0.6);
