@@ -27,6 +27,12 @@ async function loadMonster() {
       const sign = mod >= 0 ? `+${mod}` : mod;
       return `${score} (${sign})`;
     };
+	
+	function formatTextWithItalics(text) {
+	  if (!text) return "";
+	  // Replace *something* with <em>something</em>
+	  return text.replace(/\*(.*?)\*/g, "<em>$1</em>");
+	}
 
     // Build the stat block
     container.innerHTML = `
