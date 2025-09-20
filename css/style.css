@@ -543,30 +543,15 @@ strong em {
   border-color: rgba(73,36,104,0.6);
   box-shadow: 0 0 6px rgba(73,36,104,0.25);
 }
-/* Name field */
-.initiative-table td:nth-child(1) .style-input {
+/* Make all table inputs fill their cell and scale with it */
+.initiative-table td .style-input {
   width: 100%;
+  box-sizing: border-box;
+  text-align: center; /* default center; can override per column if needed */
+  padding: 4px;
 }
-
-/* Initiative */
-.initiative-table td:nth-child(2) .style-input {
-  width: 50px;
-  text-align: center;
-}
-
-/* AC */
-.initiative-table td:nth-child(3) .style-input {
-  width: 50px;
-  text-align: center;
-}
-
-/* HP */
-.initiative-table td:nth-child(4) .style-input {
-  width: 60px;
-  text-align: center;
-}
-
-/* Notes */
+.initiative-table td:nth-child(1) .style-input,
 .initiative-table td:nth-child(5) .style-input {
-  width: 100%;
+  text-align: left; /* Name and Notes aligned left */
 }
+
