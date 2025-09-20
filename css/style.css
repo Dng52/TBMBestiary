@@ -83,9 +83,11 @@ button:link {
   color: #fff;
 }
 
-a:link {
+.nav-link:link,
+.nav-link:visited {
   color: #fff;
 }
+
 
 .wrapper {
   width: 100%;
