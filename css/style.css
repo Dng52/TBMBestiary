@@ -106,7 +106,6 @@ button:link {
    STAT BLOCK
    ========================= */
 .stat-block {
-  background: rgba(100,100,100,0.3); /* stat block background */
   padding-bottom: 1rem;
   padding-top: 0.25rem;
   padding-right: 1rem;
@@ -553,4 +552,31 @@ strong em {
 #tracker-body input.style-input:focus {
   border-color: rgba(73,36,104,0.6);
   box-shadow: 0 0 6px rgba(73,36,104,0.25);
+}
+/* Name field */
+.initiative-table td:nth-child(1) .style-input {
+  width: 100%;
+}
+
+/* Initiative */
+.initiative-table td:nth-child(2) .style-input {
+  width: 50px;
+  text-align: center;
+}
+
+/* AC */
+.initiative-table td:nth-child(3) .style-input {
+  width: 50px;
+  text-align: center;
+}
+
+/* HP */
+.initiative-table td:nth-child(4) .style-input {
+  width: 60px;
+  text-align: center;
+}
+
+/* Notes */
+.initiative-table td:nth-child(5) .style-input {
+  width: 100%;
 }

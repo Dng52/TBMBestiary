@@ -589,15 +589,28 @@ document.getElementById("load-tracker-input").addEventListener("change", (event)
 
       } else {
         // No match → add a custom row (like Add Blank Entry)
-        const row = document.createElement("tr");
-        row.innerHTML = `
-          <td class="monster-name"><input class="style-input" type="text" value="${(entry.name||"Custom Entry").replace(/"/g,'&quot;')}" style="width: 100%;"></td>
-          <td><input class="style-input" type="number" value="${entry.initiative ?? 0}" style="width: 50px;"></td>
-          <td><input class="style-input" type="text" value="${entry.ac ?? ""}" style="width: 50px;"></td>
-		  <td><input class="style-input" type="text" value="${entry.hp ?? ""}" style="width: 60px;"></td>
-          <td><input class="style-input" type="text" value="${entry.notes ?? ""}" style="width: 100%;"></td>
-          <td><button class="remove-btn">Remove</button></td>
-        `;
+		const row = document.createElement("tr");
+		row.innerHTML = `
+		  <td class="monster-name">
+			<input class="style-input" type="text" value="${(entry.name || "Custom Entry").replace(/"/g,'&quot;')}">
+		  </td>
+		  <td>
+			<input class="style-input" type="number" value="${entry.initiative ?? 0}">
+		  </td>
+		  <td>
+			<input class="style-input" type="text" value="${entry.ac ?? ""}">
+		  </td>
+		  <td>
+			<input class="style-input" type="text" value="${entry.hp ?? ""}">
+		  </td>
+		  <td>
+			<input class="style-input" type="text" value="${entry.notes ?? ""}">
+		  </td>
+		  <td>
+			<button class="remove-btn">Remove</button>
+		  </td>
+		`;
+
 
         row.querySelector(".remove-btn").addEventListener("click", () => row.remove());
 
