@@ -95,6 +95,7 @@ async function loadMonster() {
 
 
 	${monster.actions?.map(a =>
+	<h3>Actions</h3>
 	  `<p><strong><em>${a.name}.</em></strong> ${formatTextWithItalics(a.desc)}</p>`
 	).join("") || ""}
 
