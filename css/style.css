@@ -106,7 +106,7 @@ button:link {
    STAT BLOCK
    ========================= */
 .stat-block {
-  background: rgba (100,100,100,0.3); /* stat block background */
+  background: rgba(100,100,100,0.3); /* stat block background */
   padding-bottom: 1rem;
   padding-top: 0.25rem;
   padding-right: 1rem;
@@ -491,7 +491,7 @@ strong em {
   flex-direction: column; /* keeps STR above the input */
   align-items: center;
   width: auto; /* prevents stretching */
-
+}
 /* ability inputs remain small and horizontal */
 .abilities-row input { 
   width: 60px; 
@@ -534,4 +534,23 @@ strong em {
   padding: 4px;
   border-radius: 5px;
   outline: none;
+}
+
+#monster-form input.style-input,
+#tracker-body input.style-input,
+.initiative-table input.style-input {
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: 4px;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+}
+#monster-form input.style-input:focus,
+#tracker-body input.style-input:focus {
+  border-color: rgba(73,36,104,0.6);
+  box-shadow: 0 0 6px rgba(73,36,104,0.25);
 }
