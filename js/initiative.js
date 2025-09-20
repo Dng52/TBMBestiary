@@ -360,7 +360,7 @@ function addToTracker(monster) {
   row.innerHTML = `
     <td class="monster-name">${monster._displayName || monster.name}</td>
     <td><input class="style-input" type="number" value="0"></td>
-    <td><input class="style-input" type="text" value="${monster.ac || ""}"></td>
+	<td>${monster.ac || ""}</td>
     <td></td>
     <td><input class="style-input" type="text" value=""></td>
     <td><button class="remove-btn">Remove</button></td>
