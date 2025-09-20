@@ -394,7 +394,7 @@ strong em {
 
 .initiative-table {
   width: 100%;
-  table-layout: fixed;  /* fixes column widths */
+  table-layout: auto;
   border-collapse: collapse;
 }
 
@@ -515,13 +515,27 @@ strong em {
 }
 /* Make all table inputs fill their cell and scale with it */
 .initiative-table td .style-input {
-  width: 100%;
+  width: 100%;         /* fill the cell */
   box-sizing: border-box;
-  text-align: center; /* default center; can override per column if needed */
+  text-align: center;   /* default center */
   padding: 4px;
+  min-width: 30px;      /* prevents shrinking too far */
 }
 .initiative-table td:nth-child(1) .style-input,
 .initiative-table td:nth-child(5) .style-input {
   text-align: left; /* Name and Notes aligned left */
 }
-
+.initiative-table td:nth-child(2) .style-input,
+.initiative-table td:nth-child(3) .style-input,
+.initiative-table td:nth-child(4) .style-input {
+  width: 100%;          /* still fills cell but cell can shrink */
+  max-width: 60px;      /* optional max width for small numbers */
+  text-align: center;
+}
+.initiative-table td:nth-child(5) .style-input {
+  min-width: 80px;
+}
+.initiative-table th:nth-child(n),
+.initiative-table td:nth-child(n) {
+  width: auto;
+}
