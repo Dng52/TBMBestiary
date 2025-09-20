@@ -533,7 +533,7 @@ strong em {
   text-align: center;
 }
 .initiative-table td:nth-child(5) .style-input {
-  min-width: 80px;
+  min-width: 10px;
 }
 .initiative-table th:nth-child(n),
 .initiative-table td:nth-child(n) {
