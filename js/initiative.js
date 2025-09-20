@@ -593,7 +593,7 @@ document.getElementById("load-tracker-input").addEventListener("change", (event)
           <td class="monster-name"><input type="text" value="${(entry.name||"Custom Entry").replace(/"/g,'&quot;')}" style="width: 100%;"></td>
           <td><input type="number" value="${entry.initiative ?? 0}" style="width: 50px;"></td>
           <td><input type="text" value="${entry.ac ?? ""}" style="width: 50px;"></td>
-          <td><input type="text" value="${entry.hp ?? ""}" style="width: 60px;"></td>
+          <td>class="style-input"<input type="text" value="${entry.hp ?? ""}" style="width: 60px;"></td>
           <td><input type="text" value="${entry.notes ?? ""}" style="width: 100%;"></td>
           <td><button class="remove-btn">Remove</button></td>
         `;
