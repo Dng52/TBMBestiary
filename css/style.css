@@ -107,7 +107,7 @@ button:link {
    ========================= */
 .stat-block {
   border: 1px solid #999;
-  background: #EAEDEF; /* stat block background */
+  background: rgba (100,100,100,0.3); /* stat block background */
   padding-bottom: 1rem;
   padding-top: 0.25rem;
   padding-right: 1rem;
