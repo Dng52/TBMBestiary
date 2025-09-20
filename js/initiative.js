@@ -370,6 +370,7 @@ function addToTracker(monster) {
   const hpCell = row.querySelector("td:nth-child(4)");
   const hpInput = document.createElement("input");
   hpInput.type = "text";
+  hpInput.classList.add("style-input);
   hpInput.style.width = "60px";
   hpInput.value = startHP;
   hpInput.dataset.currentHp = startHP;
@@ -590,11 +591,11 @@ document.getElementById("load-tracker-input").addEventListener("change", (event)
         // No match → add a custom row (like Add Blank Entry)
         const row = document.createElement("tr");
         row.innerHTML = `
-          <td class="monster-name"><input type="text" value="${(entry.name||"Custom Entry").replace(/"/g,'&quot;')}" style="width: 100%;"></td>
-          <td><input type="number" value="${entry.initiative ?? 0}" style="width: 50px;"></td>
-          <td><input type="text" value="${entry.ac ?? ""}" style="width: 50px;"></td>
+          <td class="monster-name"><input class="style-input" type="text" value="${(entry.name||"Custom Entry").replace(/"/g,'&quot;')}" style="width: 100%;"></td>
+          <td><input class="style-input" type="number" value="${entry.initiative ?? 0}" style="width: 50px;"></td>
+          <td><input class="style-input" type="text" value="${entry.ac ?? ""}" style="width: 50px;"></td>
 		  <td><input class="style-input" type="text" value="${entry.hp ?? ""}" style="width: 60px;"></td>
-          <td><input type="text" value="${entry.notes ?? ""}" style="width: 100%;"></td>
+          <td><input class="style-input" type="text" value="${entry.notes ?? ""}" style="width: 100%;"></td>
           <td><button class="remove-btn">Remove</button></td>
         `;
 
