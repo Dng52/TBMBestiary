@@ -106,7 +106,6 @@ button:link {
    STAT BLOCK
    ========================= */
 .stat-block {
-  border: 1px solid #999;
   background: rgba (100,100,100,0.3); /* stat block background */
   padding-bottom: 1rem;
   padding-top: 0.25rem;
