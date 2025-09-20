@@ -525,7 +525,7 @@ strong em {
   color: #aaa;
   font-style: italic;
 }
-.style input {
+.style-input {
 	border: none;
 	-webkit-appearance: none;
 	-ms-appearance: none;
