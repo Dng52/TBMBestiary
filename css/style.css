@@ -519,7 +519,7 @@ strong em {
   box-sizing: border-box;
   text-align: center;   /* default center */
   padding: 4px;
-  min-width: 30px;      /* prevents shrinking too far */
+  min-width: 20px;      /* prevents shrinking too far */
 }
 .initiative-table td:nth-child(1) .style-input,
 .initiative-table td:nth-child(5) .style-input {

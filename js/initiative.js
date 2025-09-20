@@ -472,8 +472,8 @@ document.querySelectorAll('.resizer').forEach((handle) => {
   const onMouseMove = (e) => {
     const dx = e.clientX - startX;
 
-    const minLeft = parseFloat(getComputedStyle(left).minWidth) || 150;
-    const minRight = parseFloat(getComputedStyle(right).minWidth) || 150;
+	const minLeft = parseFloat(getComputedStyle(left).minWidth);
+	const minRight = parseFloat(getComputedStyle(right).minWidth);
 
     // Move boundary by dx (left grows when dx>0)
     let newLeft = Math.max(minLeft, startLeftW + dx);
@@ -484,9 +484,9 @@ document.querySelectorAll('.resizer').forEach((handle) => {
     if (Math.round(newLeft + newRight) !== Math.round(total)) newRight = total - newLeft;
 
     // Lock both panels to explicit pixel widths so they don't switch to auto
-    left.style.flex = `0 0 ${newLeft}px`;
-    right.style.removeProperty('flex');
-  };
+	left.style.flex = `0 0 ${newLeft}px`;
+	right.style.flex = `1 1 auto`; 
+
 
   const onMouseUp = () => {
     document.removeEventListener('mousemove', onMouseMove);
